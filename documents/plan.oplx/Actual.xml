@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="dpzL3Isr3RP">
+  <start-date>2013-12-09T00:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>Resource 1</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t7"/>
+    <child-task idref="t25"/>
+    <child-task idref="t8"/>
+  </task>
+  <task id="t1">
+    <title>Planning</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-17T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t2"/>
+    <child-task idref="t4"/>
+    <child-task idref="t3"/>
+    <child-task idref="t5"/>
+    <child-task idref="t6"/>
+    <child-task idref="t34"/>
+  </task>
+  <task id="t2">
+    <title>Create module logic process document (UML Model, Class Model)</title>
+    <effort>58500</effort>
+    <start-constraint-date>2013-12-17T00:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t3">
+    <title>Create JSON data standard document</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-19T00:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t4">
+    <title>Design database structure</title>
+    <effort>31500</effort>
+    <start-constraint-date>2013-12-17T08:30:00.000Z</start-constraint-date>
+  </task>
+  <task id="t5">
+    <title>Create Unit Test planning document</title>
+    <effort>88200</effort>
+    <start-constraint-date>2013-12-20T00:15:00.000Z</start-constraint-date>
+  </task>
+  <task id="t6">
+    <title>Create code standard document</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-20T00:15:00.000Z</start-constraint-date>
+  </task>
+  <task id="t7">
+    <title>Coding</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-19T00:15:00.000Z</start-constraint-date>
+    <child-task idref="t19"/>
+    <child-task idref="t18"/>
+    <child-task idref="t13"/>
+    <child-task idref="t22"/>
+    <child-task idref="t17"/>
+    <child-task idref="t12"/>
+    <child-task idref="t16"/>
+    <child-task idref="t33"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+  </task>
+  <task id="t8">
+    <title>Testing</title>
+    <effort>1382400</effort>
+    <start-constraint-date>2013-12-19T08:45:00.000Z</start-constraint-date>
+  </task>
+  <task id="t12">
+    <title>Javascript</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-23T00:15:00.000Z</start-constraint-date>
+    <child-task idref="t142"/>
+    <child-task idref="t139"/>
+    <child-task idref="t84"/>
+    <child-task idref="t85"/>
+    <child-task idref="t31"/>
+    <child-task idref="t36"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t13">
+    <title>PHP (Need more detail after get requirement)</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-20T00:15:00.000Z</start-constraint-date>
+    <child-task idref="t15"/>
+    <child-task idref="t14"/>
+    <child-task idref="t76"/>
+    <child-task idref="t35"/>
+    <child-task idref="t46"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t14">
+    <title>Develop modules</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-23T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t51"/>
+    <child-task idref="t47"/>
+    <child-task idref="t48"/>
+    <child-task idref="t49"/>
+    <child-task idref="t50"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t15">
+    <title>Unit Test</title>
+    <effort>775800</effort>
+    <start-constraint-date>2013-12-20T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t19"/>
+  </task>
+  <task id="t16">
+    <title> Intergration</title>
+    <effort>146700</effort>
+    <start-constraint-date>2014-01-16T00:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.564706" g="0.376471" b="0.74902"/>
+      </value>
+    </style>
+  </task>
+  <task id="t17">
+    <title>HTML,CSS</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-26T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t143"/>
+    <child-task idref="t38"/>
+    <child-task idref="t39"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.902726" g="0.394159" b="0.110085"/>
+      </value>
+    </style>
+  </task>
+  <task id="t18">
+    <title>Create database</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-19T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+  </task>
+  <task id="t19">
+    <title>Create basic structure, create folder</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-18T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+  </task>
+  <task id="t22">
+    <title>Develop Email parse tool (Python)</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-26T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t45"/>
+    <child-task idref="t44"/>
+    <child-task idref="t43"/>
+    <child-task idref="t42"/>
+    <child-task idref="t41"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.439216" b="0.803922"/>
+      </value>
+    </style>
+  </task>
+  <task id="t24">
+    <title>SSL Configration</title>
+    <effort>81900</effort>
+    <start-constraint-date>2014-01-29T01:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t25">
+    <title>Server Configration</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-16T01:15:00.000Z</start-constraint-date>
+    <child-task idref="t144"/>
+    <child-task idref="t28"/>
+    <child-task idref="t26"/>
+    <child-task idref="t27"/>
+    <child-task idref="t24"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t26">
+    <title>Memcache Cache</title>
+    <effort>88200</effort>
+    <start-constraint-date>2014-01-21T01:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t27">
+    <title>Server Cluster</title>
+    <effort>87300</effort>
+    <start-constraint-date>2014-01-24T01:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t28">
+    <title>Varnish Static Cache</title>
+    <effort>86400</effort>
+    <start-constraint-date>2014-01-28T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t13"/>
+  </task>
+  <task id="t31">
+    <title>Animations</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-01T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t86"/>
+    <child-task idref="t87"/>
+    <child-task idref="t88"/>
+    <child-task idref="t106"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t140"/>
+  </task>
+  <task id="t33">
+    <title>Optimization</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-16T01:00:00.000Z</start-constraint-date>
+    <child-task idref="t134"/>
+    <child-task idref="t135"/>
+    <child-task idref="t137"/>
+    <child-task idref="t138"/>
+    <style>
+      <value key="font-fill">
+        <color r="0" g="0" b="0"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+  </task>
+  <task id="t34">
+    <title>Design backend office Wireframe layout</title>
+    <effort>58500</effort>
+    <start-constraint-date>2013-12-23T08:45:00.000Z</start-constraint-date>
+  </task>
+  <task id="t35">
+    <title>Develop backend office</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-21T08:30:00.000Z</start-constraint-date>
+    <child-task idref="t75"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t36">
+    <title>Backend Office</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-01T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t114"/>
+    <child-task idref="t115"/>
+    <child-task idref="t119"/>
+    <child-task idref="t131"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t141"/>
+  </task>
+  <task id="t38">
+    <title>Frontend</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-27T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t140"/>
+    <child-task idref="t141"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.9" g="0.392969" b="0.109752"/>
+      </value>
+    </style>
+  </task>
+  <task id="t39">
+    <title>Backend Office</title>
+    <effort>88200</effort>
+    <start-constraint-date>2014-01-01T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.9" g="0.392969" b="0.109752"/>
+      </value>
+    </style>
+  </task>
+  <task id="t41">
+    <title>Covert and store video</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-01T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.439216" b="0.803922"/>
+      </value>
+    </style>
+  </task>
+  <task id="t42">
+    <title>Covert and store photo</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-31T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.439216" b="0.803922"/>
+      </value>
+    </style>
+  </task>
+  <task id="t43">
+    <title>Parse attachment</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-30T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.439216" b="0.803922"/>
+      </value>
+    </style>
+  </task>
+  <task id="t44">
+    <title>Parse Email subject</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-27T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.439216" b="0.803922"/>
+      </value>
+    </style>
+  </task>
+  <task id="t45">
+    <title>Fetch Email from Gmail</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-26T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.439216" b="0.803922"/>
+      </value>
+    </style>
+  </task>
+  <task id="t46">
+    <title>API Encryption</title>
+    <effort>59400</effort>
+    <start-constraint-date>2014-01-22T08:30:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t47">
+    <title>Node (Photo and Video)</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-30T08:45:00.000Z</start-constraint-date>
+    <child-task idref="t62"/>
+    <child-task idref="t61"/>
+    <child-task idref="t60"/>
+    <child-task idref="t59"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t48">
+    <title>Comment</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-15T00:15:00.000Z</start-constraint-date>
+    <child-task idref="t69"/>
+    <child-task idref="t68"/>
+    <child-task idref="t67"/>
+    <child-task idref="t79"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t49">
+    <title>Like</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-15T01:00:00.000Z</start-constraint-date>
+    <child-task idref="t72"/>
+    <child-task idref="t71"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t50">
+    <title>Flag</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-10T08:45:00.000Z</start-constraint-date>
+    <child-task idref="t74"/>
+    <child-task idref="t73"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t51">
+    <title>User</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-20T08:30:00.000Z</start-constraint-date>
+    <child-task idref="t52"/>
+    <child-task idref="t53"/>
+    <child-task idref="t54"/>
+    <child-task idref="t55"/>
+    <child-task idref="t78"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t52">
+    <title>Create(register)</title>
+    <effort>58500</effort>
+    <start-constraint-date>2013-12-20T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t53">
+    <title>Login</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-25T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t54">
+    <title>Update</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-26T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t55">
+    <title>Delete</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-26T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t59">
+    <title>Search by Hashtag</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-14T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t60">
+    <title>List</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-07T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t66"/>
+    <child-task idref="t65"/>
+    <child-task idref="t64"/>
+    <child-task idref="t63"/>
+    <child-task idref="t80"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t61">
+    <title>Update</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-06T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t62">
+    <title>Create</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-31T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t89"/>
+    <child-task idref="t91"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t63">
+    <title>List by random</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-10T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t64">
+    <title>List by content type(photo,video)</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-09T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t65">
+    <title>List by country</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-07T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t66">
+    <title>List by date(latest)</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-07T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t67">
+    <title>Delete</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-16T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t68">
+    <title>Update</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-16T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t69">
+    <title>Create</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-15T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t71">
+    <title>Delete</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-16T01:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t72">
+    <title>Create</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-15T01:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t73">
+    <title>Flag comment</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-13T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t74">
+    <title>Flag node(Photo and Video)</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-10T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t75">
+    <title>Role permission</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-21T08:30:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t76">
+    <title>Multiple Lanuage </title>
+    <type>group</type>
+    <start-constraint-date>2014-01-20T00:30:00.000Z</start-constraint-date>
+    <child-task idref="t82"/>
+    <child-task idref="t81"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t78">
+    <title>List</title>
+    <effort>58500</effort>
+    <start-constraint-date>2013-12-27T00:30:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t79">
+    <title>List</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-17T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t80">
+    <title>List by status(published, unpublished, blocked)</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-13T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t81">
+    <title>English</title>
+    <effort>58500</effort>
+    <start-constraint-date>2014-01-20T00:30:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t82">
+    <title>French</title>
+    <effort>58500</effort>
+    <start-constraint-date>2014-01-20T00:30:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t84">
+    <title>Model Layer, Control Layer</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-25T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t94"/>
+    <child-task idref="t93"/>
+    <child-task idref="t92"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t85">
+    <title>Views Layer</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-06T00:15:00.000Z</start-constraint-date>
+    <child-task idref="t107"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t140"/>
+  </task>
+  <task id="t86">
+    <title>Photo wall</title>
+    <effort>114300</effort>
+    <start-constraint-date>2014-01-01T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t87">
+    <title>Open big photo</title>
+    <effort>57600</effort>
+    <start-constraint-date>2014-01-07T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t88">
+    <title>Move to next/previous photo</title>
+    <effort>89100</effort>
+    <start-constraint-date>2014-01-08T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t89">
+    <title>Covert and store photo</title>
+    <effort>86400</effort>
+    <start-constraint-date>2013-12-31T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t91">
+    <title>Covert and store video</title>
+    <effort>58500</effort>
+    <start-constraint-date>2014-01-02T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <task id="t92">
+    <title>Key shortcuts</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-30T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t93">
+    <title>Node(photo,video)</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-25T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t95"/>
+    <child-task idref="t96"/>
+    <child-task idref="t97"/>
+    <child-task idref="t98"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t94">
+    <title>User</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-24T08:45:00.000Z</start-constraint-date>
+    <child-task idref="t103"/>
+    <child-task idref="t104"/>
+    <child-task idref="t105"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t95">
+    <title>Post photo</title>
+    <effort>58500</effort>
+    <start-constraint-date>2013-12-30T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t96">
+    <title>Post video</title>
+    <effort>58500</effort>
+    <start-constraint-date>2014-01-01T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t97">
+    <title>List</title>
+    <type>group</type>
+    <start-constraint-date>2013-12-25T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t99"/>
+    <child-task idref="t100"/>
+    <child-task idref="t101"/>
+    <child-task idref="t102"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t98">
+    <title>Search by Hashtag</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-30T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t99">
+    <title>List by date(latest)</title>
+    <effort>29700</effort>
+    <start-constraint-date>2013-12-25T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t100">
+    <title>List by country</title>
+    <effort>30600</effort>
+    <start-constraint-date>2013-12-25T08:30:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t101">
+    <title>List by content type(photo,video)</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-26T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t102">
+    <title>List by random</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-30T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t103">
+    <title>Register</title>
+    <effort>58500</effort>
+    <start-constraint-date>2013-12-25T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t104">
+    <title>Login</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-27T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t105">
+    <title>Update user information</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-27T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t106">
+    <title>Elements animation</title>
+    <effort>115200</effort>
+    <start-constraint-date>2014-01-14T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t107">
+    <title>Bind html templates</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-06T00:15:00.000Z</start-constraint-date>
+    <child-task idref="t109"/>
+    <child-task idref="t108"/>
+    <child-task idref="t110"/>
+    <child-task idref="t111"/>
+    <child-task idref="t112"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t108">
+    <title>Node</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-07T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t109">
+    <title>User</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-06T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t110">
+    <title>Comment</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-08T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t111">
+    <title>Like</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-08T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t112">
+    <title>Flag</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-09T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t114">
+    <title>Node(photo, video)</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-01T01:15:00.000Z</start-constraint-date>
+    <child-task idref="t124"/>
+    <child-task idref="t125"/>
+    <child-task idref="t116"/>
+    <child-task idref="t117"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t115">
+    <title>User</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-02T08:45:00.000Z</start-constraint-date>
+    <child-task idref="t126"/>
+    <child-task idref="t127"/>
+    <child-task idref="t120"/>
+    <child-task idref="t121"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t116">
+    <title>Update</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-06T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t117">
+    <title>Delete</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-06T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t119">
+    <title>Comment</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-10T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t128"/>
+    <child-task idref="t129"/>
+    <child-task idref="t130"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t120">
+    <title>Update</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-08T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t121">
+    <title>Delete</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-09T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t124">
+    <title>List</title>
+    <effort>54000</effort>
+    <start-constraint-date>2014-01-01T01:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t125">
+    <title>Filter by type, country, date, status</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-03T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t126">
+    <title>List</title>
+    <effort>58500</effort>
+    <start-constraint-date>2014-01-02T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t127">
+    <title>Filter by country, date, status</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-07T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t128">
+    <title>List</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-09T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t129">
+    <title>Update</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-13T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t130">
+    <title>Delete</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-13T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t131">
+    <title>Flag</title>
+    <type>group</type>
+    <start-constraint-date>2014-01-14T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t132"/>
+    <child-task idref="t133"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t132">
+    <title>List flagged node</title>
+    <effort>30600</effort>
+    <start-constraint-date>2014-01-14T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t133">
+    <title>List flagged comment</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-15T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t134">
+    <title>IE8+</title>
+    <effort>87300</effort>
+    <start-constraint-date>2014-01-16T01:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+  </task>
+  <task id="t135">
+    <title>Firefox</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-21T00:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+  </task>
+  <task id="t137">
+    <title>Safari</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-22T00:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+  </task>
+  <task id="t138">
+    <title>Chrome</title>
+    <effort>28800</effort>
+    <start-constraint-date>2014-01-23T01:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+  </task>
+  <task id="t139">
+    <title>Unit Test</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-24T00:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t140">
+    <title>Code base on draft layouts</title>
+    <effort>88200</effort>
+    <start-constraint-date>2013-12-27T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.9" g="0.392969" b="0.109752"/>
+      </value>
+    </style>
+  </task>
+  <task id="t141">
+    <title>Update base on final layouts</title>
+    <effort>89100</effort>
+    <start-constraint-date>2013-12-26T08:45:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.9" g="0.392969" b="0.109752"/>
+      </value>
+    </style>
+  </task>
+  <task id="t142">
+    <title>Create basic structure, create folder</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-21T16:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t143">
+    <title>Create basic structure, create folder</title>
+    <effort>28800</effort>
+    <start-constraint-date>2013-12-26T00:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.9" g="0.392969" b="0.109752"/>
+      </value>
+    </style>
+  </task>
+  <task id="t144">
+    <title>IP address restriction</title>
+    <effort>31500</effort>
+    <start-constraint-date>2014-01-16T01:15:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

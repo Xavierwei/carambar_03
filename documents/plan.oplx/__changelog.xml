@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.0</version>
+  <task-change-set user="Tony " date="2013-12-09T09:31:58.139Z" timestamp="2013-12-09T09:31:58.139Z">
+    <change idref="t7" to="t-1" to-position="1" resolved="yes">
+      <change idref="t7" attribute="title" type="string" to="编码阶段"/>
+    </change>
+    <change idref="t8" to="t-1" to-position="2" resolved="yes">
+      <change idref="t8" attribute="title" type="string" to="测试"/>
+    </change>
+    <change idref="t9" to="t-1" to-position="3" resolved="yes">
+      <change idref="t9" attribute="title" type="string" to="交付"/>
+    </change>
+    <change idref="t1" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t1" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t1" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t1" attribute="title" type="string" from="Task 1" to="项目设计阶段" resolved="yes"/>
+    <change idref="t1" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t1" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t1" attribute="startConstraintDate" type="date" to="2013-12-10T00:00:00.000Z" resolved="yes"/>
+    <change idref="t1" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t2" to="t1" to-position="0" resolved="yes">
+      <change idref="t2" attribute="effort" type="real" from="28800" to="88200"/>
+      <change idref="t2" attribute="startConstraintDate" type="date" to="2013-12-10T00:00:00.000Z"/>
+      <change idref="t2" attribute="title" type="string" to="编写各个模块流程文档，类结构(UML流程图)"/>
+    </change>
+    <change idref="t4" to="t1" to-position="1" resolved="yes">
+      <change idref="t4" attribute="effort" type="real" from="28800" to="31500"/>
+      <change idref="t4" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t4" attribute="title" type="string" to="设计数据库结构，编写文档"/>
+    </change>
+    <change idref="t3" to="t1" to-position="2" resolved="yes">
+      <change idref="t3" attribute="startConstraintDate" type="date" to="2013-12-12T00:00:00.000Z"/>
+      <change idref="t3" attribute="title" type="string" to="编写JSON结构文档 （先前确认JSON格式可以让前后端同时开发）"/>
+    </change>
+    <change idref="t5" to="t1" to-position="3" resolved="yes">
+      <change idref="t5" attribute="startConstraintDate" type="date" to="2013-12-12T00:00:00.000Z"/>
+      <change idref="t5" attribute="title" type="string" to="编写单元测试计划"/>
+    </change>
+    <change idref="t6" to="t1" to-position="4" resolved="yes">
+      <change idref="t6" attribute="startConstraintDate" type="date" to="2013-12-13T00:00:00.000Z"/>
+      <change idref="t6" attribute="title" type="string" to="编写代码规范文档（划分目录结构，制定命名规则，制定代码注释规则）"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-09T09:35:12.561Z" timestamp="2013-12-09T09:35:12.561Z">
+    <change idref="t7" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t7" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t7" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t7" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t7" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t7" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t7" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t7" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t7" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t7" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t7" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t13" to="t7" to-position="0" resolved="yes">
+      <change idref="t13" attribute="title" type="string" to="PHP ()"/>
+    </change>
+    <change idref="t12" to="t7" to-position="1" resolved="yes">
+      <change idref="t12" attribute="title" type="string" to="Task 1"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-09T09:35:58.699Z" timestamp="2013-12-09T09:35:58.699Z">
+    <change idref="t12" attribute="title" type="string" from="Task 1" to="JS (文档制定后需细化)" resolved="yes"/>
+    <change idref="t13" attribute="title" type="string" from="PHP ()" to="PHP (文档制定后需细化)" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-11T05:18:59.446Z" timestamp="2013-12-11T05:18:59.446Z">
+    <change idref="t25" to="t-1" to-position="2" resolved="yes">
+      <change idref="t25" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t25" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t25" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t25" attribute="title" type="string" to="服务器配置"/>
+    </change>
+    <change idref="t1" attribute="startConstraintDate" type="date" from="2013-12-10T00:00:00.000Z" to="2013-12-11T00:00:00.000Z" resolved="yes"/>
+    <change idref="t34" to="t1" to-position="5" resolved="yes">
+      <change idref="t34" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t34" attribute="title" type="string" to="后台界面Wireframe设计"/>
+    </change>
+    <change idref="t2" attribute="startConstraintDate" type="date" from="2013-12-10T00:00:00.000Z" to="2013-12-11T00:00:00.000Z" resolved="yes"/>
+    <change idref="t2" attribute="title" type="string" from="编写各个模块流程文档，类结构(UML流程图)" to="编写各个模块流程文档，类结构(UML建模)" resolved="yes"/>
+    <change idref="t3" attribute="startConstraintDate" type="date" from="2013-12-12T00:00:00.000Z" to="2013-12-13T00:00:00.000Z" resolved="yes"/>
+    <change idref="t4" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2013-12-12T00:00:00.000Z" resolved="yes"/>
+    <change idref="t5" attribute="startConstraintDate" type="date" from="2013-12-12T00:00:00.000Z" to="2013-12-13T00:00:00.000Z" resolved="yes"/>
+    <change idref="t6" attribute="startConstraintDate" type="date" from="2013-12-13T00:00:00.000Z" to="2013-12-16T00:00:00.000Z" resolved="yes"/>
+    <change idref="t7" attribute="startConstraintDate" type="date" to="2013-12-17T00:00:00.000Z" resolved="yes"/>
+    <change idref="t19" to="t7" to-position="0" resolved="yes">
+      <change idref="t19" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t19" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t19" attribute="title" type="string" to="建立底层结构和文件夹"/>
+    </change>
+    <change idref="t18" to="t7" to-position="1" resolved="yes">
+      <change idref="t18" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t18" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t18" attribute="title" type="string" to="数据库建立"/>
+    </change>
+    <change idref="t22" to="t7" to-position="3" resolved="yes">
+      <change idref="t22" attribute="effort" type="real" from="28800" to="204300"/>
+      <change idref="t22" attribute="startConstraintDate" type="date" to="2013-12-20T08:45:00.000Z"/>
+      <change idref="t22" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t22" attribute="title" type="string" to="Python 开发 POP3/IMAP Email获取"/>
+    </change>
+    <change idref="t17" to="t7" to-position="5" resolved="yes">
+      <change idref="t17" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t17" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t17" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t17" attribute="title" type="string" to="HTML,CSS"/>
+    </change>
+    <change idref="t16" to="t7" to-position="6" resolved="yes">
+      <change idref="t16" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t16" attribute="title" type="string" to="前后端整合"/>
+    </change>
+    <change idref="t33" to="t7" to-position="7" resolved="yes">
+      <change idref="t33" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t33" attribute="title" type="string" to="浏览器优化"/>
+    </change>
+    <change idref="t12" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t12" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t12" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t12" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t12" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t12" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t12" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t12" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t12" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t12" attribute="startConstraintDate" type="date" to="2013-12-18T00:00:00.000Z" resolved="yes"/>
+    <change idref="t12" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t12" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t32" to="t12" to-position="0" resolved="yes">
+      <change idref="t32" attribute="effort" type="real" from="28800" to="203400"/>
+      <change idref="t32" attribute="startConstraintDate" type="date" to="2013-12-18T00:00:00.000Z"/>
+      <change idref="t32" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}"/>
+      <change idref="t32" attribute="title" type="string" to="功能交互"/>
+    </change>
+    <change idref="t31" to="t12" to-position="1" resolved="yes">
+      <change idref="t31" attribute="effort" type="real" from="28800" to="174600"/>
+      <change idref="t31" attribute="startConstraintDate" type="date" to="2013-12-25T00:00:00.000Z"/>
+      <change idref="t31" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}"/>
+      <change idref="t31" attribute="title" type="string" to="动画效果"/>
+    </change>
+    <change idref="t30" to="t12" to-position="2" resolved="yes">
+      <change idref="t30" attribute="effort" type="real" from="28800" to="117000"/>
+      <change idref="t30" attribute="startConstraintDate" type="date" to="2013-12-30T08:30:00.000Z"/>
+      <change idref="t30" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}"/>
+      <change idref="t30" attribute="title" type="string" to="API接口整合"/>
+    </change>
+    <change idref="t36" to="t12" to-position="3" resolved="yes">
+      <change idref="t36" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t36" attribute="title" type="string" to="后台管理功能开发"/>
+    </change>
+    <change idref="t13" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t13" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t13" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t13" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t13" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t13" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t13" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t13" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t13" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t13" attribute="startConstraintDate" type="date" to="2013-12-18T00:15:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t13" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t15" to="t13" to-position="0" resolved="yes">
+      <change idref="t15" attribute="effort" type="real" from="28800" to="87300"/>
+      <change idref="t15" attribute="internalPrerequisitesString" type="string" to="19FS"/>
+      <change idref="t15" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t15" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}"/>
+      <change idref="t15" attribute="title" type="string" to="单元测试代码编写"/>
+    </change>
+    <change idref="t14" to="t13" to-position="1" resolved="yes">
+      <change idref="t14" attribute="effort" type="real" from="28800" to="290700"/>
+      <change idref="t14" attribute="startConstraintDate" type="date" to="2013-12-20T08:45:00.000Z"/>
+      <change idref="t14" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}"/>
+      <change idref="t14" attribute="title" type="string" to="模块代码开发"/>
+    </change>
+    <change idref="t35" to="t13" to-position="2" resolved="yes">
+      <change idref="t35" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t35" attribute="title" type="string" to="后台管理开发"/>
+    </change>
+    <change idref="t38" to="t17" to-position="0" resolved="yes">
+      <change idref="t38" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t38" attribute="title" type="string" to="前端界面"/>
+    </change>
+    <change idref="t39" to="t17" to-position="1" resolved="yes">
+      <change idref="t39" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t39" attribute="title" type="string" to="后端界面"/>
+    </change>
+    <change idref="t28" to="t25" to-position="0" resolved="yes">
+      <change idref="t28" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t28" attribute="title" type="string" to="页面静态化(Varnish)"/>
+    </change>
+    <change idref="t27" to="t25" to-position="1" resolved="yes">
+      <change idref="t27" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t27" attribute="title" type="string" to="服务器集群配置"/>
+    </change>
+    <change idref="t26" to="t25" to-position="2" resolved="yes">
+      <change idref="t26" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t26" attribute="title" type="string" to="Memcache缓存"/>
+    </change>
+    <change idref="t24" to="t25" to-position="3" resolved="yes">
+      <change idref="t24" attribute="startConstraintDate" type="date" to="2013-12-11T00:00:00.000Z"/>
+      <change idref="t24" attribute="title" type="string" to="SSL配置"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-11T05:20:52.161Z" timestamp="2013-12-11T05:20:52.161Z">
+    <change idref="t7" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t12" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t13" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t17" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.110085&quot;;
+        g = &quot;0.394159&quot;;
+        r = &quot;0.902726&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t35" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2014-01-06T00:00:00.000Z" resolved="yes"/>
+    <change idref="t35" attribute="effort" type="real" from="28800" to="145800" resolved="yes"/>
+    <change idref="t35" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t36" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2014-01-06T00:30:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="effort" type="real" from="28800" to="144000" resolved="yes"/>
+    <change idref="t36" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t38" attribute="effort" type="real" from="28800" to="203400" resolved="yes"/>
+    <change idref="t38" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.109752&quot;;
+        g = &quot;0.392969&quot;;
+        r = &quot;0.9&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t39" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2013-12-26T00:00:00.000Z" resolved="yes"/>
+    <change idref="t39" attribute="effort" type="real" from="28800" to="88200" resolved="yes"/>
+    <change idref="t39" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.109752&quot;;
+        g = &quot;0.392969&quot;;
+        r = &quot;0.9&quot;;
+    };
+}" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-11T05:25:16.301Z" timestamp="2013-12-11T05:25:16.301Z">
+    <change idref="t16" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2014-01-13T00:00:00.000Z" resolved="yes"/>
+    <change idref="t16" attribute="title" type="string" from="前后端整合" to="整站整合" resolved="yes"/>
+    <change idref="t16" attribute="effort" type="real" from="28800" to="145800" resolved="yes"/>
+    <change idref="t16" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.376471&quot;;
+        r = &quot;0.564706&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t24" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2014-01-24T00:15:00.000Z" resolved="yes"/>
+    <change idref="t24" attribute="effort" type="real" from="28800" to="81900" resolved="yes"/>
+    <change idref="t24" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t25" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2014-01-13T00:00:00.000Z" resolved="yes"/>
+    <change idref="t25" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t26" from="t25" from-position="2" to="t25" to-position="1" resolved="yes"/>
+    <change idref="t26" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2014-01-15T08:45:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="effort" type="real" from="28800" to="89100" resolved="yes"/>
+    <change idref="t26" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t27" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2014-01-20T08:45:00.000Z" resolved="yes"/>
+    <change idref="t27" attribute="effort" type="real" from="28800" to="89100" resolved="yes"/>
+    <change idref="t27" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t28" attribute="effort" type="real" from="28800" to="86400" resolved="yes"/>
+    <change idref="t28" attribute="internalPrerequisitesString" type="string" to="13FS" resolved="yes"/>
+    <change idref="t28" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t33" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2014-01-17T08:45:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="effort" type="real" from="28800" to="117000" resolved="yes"/>
+    <change idref="t33" attribute="styleDict" type="dict" to="{
+    &quot;font-fill&quot; =     {
+        b = 0;
+        g = 0;
+        r = 0;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-11T05:26:24.262Z" timestamp="2013-12-11T05:26:24.262Z">
+    <change idref="t8" attribute="effort" type="real" from="28800" to="1584000" resolved="yes"/>
+    <change idref="t8" attribute="startConstraintDate" type="date" to="2013-12-17T00:00:00.000Z" resolved="yes"/>
+    <change idref="t9" attribute="startConstraintDate" type="date" to="2014-03-04T00:30:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-11T05:27:14.946Z" timestamp="2013-12-11T05:27:14.946Z">
+    <change idref="t14" attribute="title" type="string" from="模块代码开发" to="模块代码开发(文档制定后需细化)" resolved="yes"/>
+    <change idref="t31" attribute="title" type="string" from="动画效果" to="动画效果(文档制定后需细化)" resolved="yes"/>
+    <change idref="t32" attribute="title" type="string" from="功能交互" to="功能交互(文档制定后需细化)" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-11T05:27:22.454Z" timestamp="2013-12-11T05:27:22.454Z">
+    <change idref="t15" attribute="title" type="string" from="单元测试代码编写" to="单元测试代码编写(文档制定后需细化)" resolved="yes"/>
+    <change idref="t30" attribute="title" type="string" from="API接口整合" to="API接口整合(文档制定后需细化)" resolved="yes"/>
+    <change idref="t35" attribute="title" type="string" from="后台管理开发" to="后台管理开发(文档制定后需细化)" resolved="yes"/>
+    <change idref="t36" attribute="title" type="string" from="后台管理功能开发" to="后台管理功能开发(文档制定后需细化)" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-11T05:41:50.888Z" timestamp="2013-12-11T05:41:50.888Z">
+    <change idref="t34" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2013-12-17T00:00:00.000Z" resolved="yes"/>
+    <change idref="t34" attribute="effort" type="real" from="28800" to="60300" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-13T04:55:29.936Z" timestamp="2013-12-13T04:55:29.936Z">
+    <change idref="t1" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2013-12-16T00:15:00.000Z" resolved="yes"/>
+    <change idref="t2" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2013-12-16T00:15:00.000Z" resolved="yes"/>
+    <change idref="t3" attribute="startConstraintDate" type="date" from="2013-12-13T00:00:00.000Z" to="2013-12-18T00:15:00.000Z" resolved="yes"/>
+    <change idref="t4" attribute="startConstraintDate" type="date" from="2013-12-12T00:00:00.000Z" to="2013-12-17T00:15:00.000Z" resolved="yes"/>
+    <change idref="t5" attribute="startConstraintDate" type="date" from="2013-12-13T00:00:00.000Z" to="2013-12-18T00:15:00.000Z" resolved="yes"/>
+    <change idref="t6" attribute="startConstraintDate" type="date" from="2013-12-16T00:00:00.000Z" to="2013-12-19T00:15:00.000Z" resolved="yes"/>
+    <change idref="t7" attribute="startConstraintDate" type="date" from="2013-12-17T00:00:00.000Z" to="2013-12-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t12" attribute="startConstraintDate" type="date" from="2013-12-18T00:00:00.000Z" to="2013-12-23T00:15:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="startConstraintDate" type="date" from="2013-12-18T00:15:00.000Z" to="2013-12-23T00:30:00.000Z" resolved="yes"/>
+    <change idref="t14" attribute="startConstraintDate" type="date" from="2013-12-20T08:45:00.000Z" to="2013-12-26T00:00:00.000Z" resolved="yes"/>
+    <change idref="t15" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2013-12-23T00:30:00.000Z" resolved="yes"/>
+    <change idref="t16" attribute="startConstraintDate" type="date" from="2014-01-13T00:00:00.000Z" to="2014-01-16T00:15:00.000Z" resolved="yes"/>
+    <change idref="t17" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2013-12-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t18" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2013-12-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t19" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2013-12-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t22" attribute="startConstraintDate" type="date" from="2013-12-20T08:45:00.000Z" to="2013-12-26T00:00:00.000Z" resolved="yes"/>
+    <change idref="t24" attribute="startConstraintDate" type="date" from="2014-01-24T00:15:00.000Z" to="2014-01-29T00:30:00.000Z" resolved="yes"/>
+    <change idref="t25" attribute="startConstraintDate" type="date" from="2014-01-13T00:00:00.000Z" to="2014-01-16T00:45:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="startConstraintDate" type="date" from="2014-01-15T08:45:00.000Z" to="2014-01-21T00:00:00.000Z" resolved="yes"/>
+    <change idref="t27" attribute="startConstraintDate" type="date" from="2014-01-20T08:45:00.000Z" to="2014-01-24T00:00:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2014-01-16T00:45:00.000Z" resolved="yes"/>
+    <change idref="t30" attribute="startConstraintDate" type="date" from="2013-12-30T08:30:00.000Z" to="2014-01-02T08:45:00.000Z" resolved="yes"/>
+    <change idref="t31" attribute="startConstraintDate" type="date" from="2013-12-25T00:00:00.000Z" to="2013-12-30T00:15:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="startConstraintDate" type="date" from="2013-12-18T00:00:00.000Z" to="2013-12-23T00:15:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="startConstraintDate" type="date" from="2014-01-17T08:45:00.000Z" to="2014-01-23T00:00:00.000Z" resolved="yes"/>
+    <change idref="t34" attribute="startConstraintDate" type="date" from="2013-12-17T00:00:00.000Z" to="2013-12-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t35" attribute="startConstraintDate" type="date" from="2014-01-06T00:00:00.000Z" to="2014-01-09T00:15:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="startConstraintDate" type="date" from="2014-01-06T00:30:00.000Z" to="2014-01-09T00:45:00.000Z" resolved="yes"/>
+    <change idref="t38" attribute="startConstraintDate" type="date" from="2013-12-11T00:00:00.000Z" to="2013-12-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t39" attribute="startConstraintDate" type="date" from="2013-12-26T00:00:00.000Z" to="2013-12-31T00:15:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-13T04:56:19.971Z" timestamp="2013-12-13T04:56:19.971Z">
+    <change idref="t12" attribute="title" type="string" from="JS (文档制定后需细化)" to="JS (需求确认后需细化)" resolved="yes"/>
+    <change idref="t13" attribute="title" type="string" from="PHP (文档制定后需细化)" to="PHP (需求确认后需细化)" resolved="yes"/>
+    <change idref="t14" attribute="title" type="string" from="模块代码开发(文档制定后需细化)" to="模块代码开发(需求确认后需细化)" resolved="yes"/>
+    <change idref="t15" attribute="title" type="string" from="单元测试代码编写(文档制定后需细化)" to="单元测试代码编写(需求确认后需细化)" resolved="yes"/>
+    <change idref="t30" attribute="title" type="string" from="API接口整合(文档制定后需细化)" to="API接口整合(需求确认后需细化)" resolved="yes"/>
+    <change idref="t31" attribute="title" type="string" from="动画效果(文档制定后需细化)" to="动画效果(需求确认后需细化)" resolved="yes"/>
+    <change idref="t32" attribute="title" type="string" from="功能交互(文档制定后需细化)" to="功能交互(需求确认后需细化)" resolved="yes"/>
+    <change idref="t35" attribute="title" type="string" from="后台管理开发(文档制定后需细化)" to="后台管理开发(需求确认后需细化)" resolved="yes"/>
+    <change idref="t36" attribute="title" type="string" from="后台管理功能开发(文档制定后需细化)" to="后台管理功能开发(需求确认后需细化)" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-13T08:51:46.326Z" timestamp="2013-12-13T08:51:46.326Z">
+    <change idref="t1" attribute="title" type="string" from="项目设计阶段" to="Planning"/>
+    <change idref="t2" attribute="title" type="string" from="编写各个模块流程文档，类结构(UML建模)" to="Create module logic process document (UML Model, Class Model)"/>
+    <change idref="t3" attribute="title" type="string" from="编写JSON结构文档 （先前确认JSON格式可以让前后端同时开发）" to="Create JSON data standard document"/>
+    <change idref="t4" attribute="title" type="string" from="设计数据库结构，编写文档" to="Design database structure"/>
+    <change idref="t5" attribute="title" type="string" from="编写单元测试计划" to="Create Unit Test planning document"/>
+    <change idref="t6" attribute="title" type="string" from="编写代码规范文档（划分目录结构，制定命名规则，制定代码注释规则）" to="Create code standard document"/>
+    <change idref="t7" attribute="title" type="string" from="编码阶段" to="Coding"/>
+    <change idref="t12" attribute="title" type="string" from="JS (需求确认后需细化)" to="Javascript (Need more detail after get requirement)"/>
+    <change idref="t13" attribute="title" type="string" from="PHP (需求确认后需细化)" to="PHP (Need more detail after get requirement)"/>
+    <change idref="t14" attribute="title" type="string" from="模块代码开发(需求确认后需细化)" to="Develop modules"/>
+    <change idref="t15" attribute="title" type="string" from="单元测试代码编写(需求确认后需细化)" to="Create Unit Test"/>
+    <change idref="t18" attribute="title" type="string" from="数据库建立" to="Create database"/>
+    <change idref="t19" attribute="title" type="string" from="建立底层结构和文件夹" to="Create basic structure, create folder"/>
+    <change idref="t22" attribute="title" type="string" from="Python 开发 POP3/IMAP Email获取" to="Develop Email parse tool (Python)"/>
+    <change idref="t25" attribute="title" type="string" from="服务器配置" to="Server Configration"/>
+    <change idref="t34" attribute="title" type="string" from="后台界面Wireframe设计" to="Design backend office Wireframe layout"/>
+    <change idref="t35" attribute="title" type="string" from="后台管理开发(需求确认后需细化)" to="Develop backend office"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-13T08:53:23.350Z" timestamp="2013-12-13T08:53:23.350Z">
+    <change idref="t33" attribute="title" type="string" from="浏览器优化" to="Optimization" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-13T08:53:57.698Z" timestamp="2013-12-13T08:53:57.698Z">
+    <change idref="t16" attribute="title" type="string" from="整站整合" to="Full site intergration" resolved="yes"/>
+    <change idref="t26" attribute="title" type="string" from="Memcache缓存" to="Memcache Cache" resolved="yes"/>
+    <change idref="t28" attribute="title" type="string" from="页面静态化(Varnish)" to="Static page (Varnish)" resolved="yes"/>
+    <change idref="t38" attribute="title" type="string" from="前端界面" to="Frontend" resolved="yes"/>
+    <change idref="t39" attribute="title" type="string" from="后端界面" to="Backend office" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-13T08:54:39.452Z" timestamp="2013-12-13T08:54:39.452Z">
+    <change idref="t9" from="t-1" from-position="4" resolved="yes">
+      <change idref="t9" attribute="startConstraintDate" type="date" to="2014-03-04T00:30:00.000Z"/>
+      <change idref="t9" attribute="title" type="string" to="交付"/>
+    </change>
+    <change idref="t8" attribute="title" type="string" from="测试" to="Testing" resolved="yes"/>
+    <change idref="t24" attribute="title" type="string" from="SSL配置" to="SSL Configration" resolved="yes"/>
+    <change idref="t27" attribute="title" type="string" from="服务器集群配置" to="Server Cluster" resolved="yes"/>
+    <change idref="t28" attribute="title" type="string" from="Static page (Varnish)" to="Varnish Static Cache" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-13T08:55:22.546Z" timestamp="2013-12-13T08:55:22.546Z">
+    <change idref="t30" attribute="title" type="string" from="API接口整合(需求确认后需细化)" to="API intergration" resolved="yes"/>
+    <change idref="t31" attribute="title" type="string" from="动画效果(需求确认后需细化)" to="Animations" resolved="yes"/>
+    <change idref="t32" attribute="title" type="string" from="功能交互(需求确认后需细化)" to="Interactive functions" resolved="yes"/>
+    <change idref="t36" attribute="title" type="string" from="后台管理功能开发(需求确认后需细化)" to="Backend functions" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:21:40.403Z" timestamp="2013-12-22T11:21:40.403Z">
+    <change idref="t1" attribute="startConstraintDate" type="date" from="2013-12-16T00:15:00.000Z" to="2013-12-19T00:00:00.000Z" resolved="yes"/>
+    <change idref="t2" attribute="startConstraintDate" type="date" from="2013-12-16T00:15:00.000Z" to="2013-12-18T08:15:00.000Z" resolved="yes"/>
+    <change idref="t2" attribute="effort" type="real" from="88200" to="58500" resolved="yes"/>
+    <change idref="t3" attribute="startConstraintDate" type="date" from="2013-12-18T00:15:00.000Z" to="2013-12-19T00:00:00.000Z" resolved="yes"/>
+    <change idref="t4" attribute="startConstraintDate" type="date" from="2013-12-17T00:15:00.000Z" to="2013-12-19T08:30:00.000Z" resolved="yes"/>
+    <change idref="t5" attribute="startConstraintDate" type="date" from="2013-12-18T00:15:00.000Z" to="2013-12-23T00:00:00.000Z" resolved="yes"/>
+    <change idref="t5" attribute="effort" type="real" from="28800" to="59400" resolved="yes"/>
+    <change idref="t6" attribute="startConstraintDate" type="date" from="2013-12-19T00:15:00.000Z" to="2013-12-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t8" attribute="startConstraintDate" type="date" from="2013-12-17T00:00:00.000Z" to="2013-12-25T00:15:00.000Z" resolved="yes"/>
+    <change idref="t12" attribute="title" type="string" from="Javascript (Need more detail after get requirement)" to="Javascript" resolved="yes"/>
+    <change idref="t22" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t22" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t22" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t22" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t22" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t22" attribute="effort" type="real" from="204300" resolved="yes"/>
+    <change idref="t22" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t22" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t22" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t22" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t22" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t45" to="t22" to-position="0" resolved="yes">
+      <change idref="t45" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t45" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t45" attribute="title" type="string" to="Fetch Email from Gmail"/>
+    </change>
+    <change idref="t44" to="t22" to-position="1" resolved="yes">
+      <change idref="t44" attribute="startConstraintDate" type="date" to="2013-12-27T00:00:00.000Z"/>
+      <change idref="t44" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t44" attribute="title" type="string" to="Parse Email subject"/>
+    </change>
+    <change idref="t43" to="t22" to-position="2" resolved="yes">
+      <change idref="t43" attribute="startConstraintDate" type="date" to="2013-12-30T00:00:00.000Z"/>
+      <change idref="t43" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t43" attribute="title" type="string" to="Parse attachment"/>
+    </change>
+    <change idref="t42" to="t22" to-position="3" resolved="yes">
+      <change idref="t42" attribute="startConstraintDate" type="date" to="2013-12-31T00:00:00.000Z"/>
+      <change idref="t42" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t42" attribute="title" type="string" to="Covert and store photo"/>
+    </change>
+    <change idref="t41" to="t22" to-position="4" resolved="yes">
+      <change idref="t41" attribute="startConstraintDate" type="date" to="2014-01-01T00:15:00.000Z"/>
+      <change idref="t41" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t41" attribute="title" type="string" to="Covert and store video"/>
+    </change>
+    <change idref="t34" attribute="startConstraintDate" type="date" from="2013-12-20T00:15:00.000Z" to="2013-12-23T08:45:00.000Z" resolved="yes"/>
+    <change idref="t34" attribute="effort" type="real" from="60300" to="58500" resolved="yes"/>
+    <change idref="t38" attribute="startConstraintDate" type="date" from="2013-12-20T00:15:00.000Z" to="2013-12-26T00:00:00.000Z" resolved="yes"/>
+    <change idref="t39" attribute="startConstraintDate" type="date" from="2013-12-31T00:15:00.000Z" to="2014-01-01T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:25:49.184Z" timestamp="2013-12-22T11:25:49.184Z">
+    <change idref="t2" attribute="startConstraintDate" type="date" from="2013-12-18T08:15:00.000Z" to="2013-12-19T00:00:00.000Z" resolved="yes"/>
+    <change idref="t46" to="t13" to-position="3" resolved="yes">
+      <change idref="t46" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t46" attribute="title" type="string" to="API Encryption"/>
+    </change>
+    <change idref="t14" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t14" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t14" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t14" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t14" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t14" attribute="effort" type="real" from="290700" resolved="yes"/>
+    <change idref="t14" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t14" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t14" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t14" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t14" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t51" to="t14" to-position="0" resolved="yes">
+      <change idref="t51" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t51" attribute="startConstraintDate" type="date" to="2013-12-25T08:45:00.000Z"/>
+      <change idref="t51" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t51" attribute="title" type="string" to="User"/>
+    </change>
+    <change idref="t47" to="t14" to-position="1" resolved="yes">
+      <change idref="t47" attribute="startConstraintDate" type="date" to="2013-12-25T08:45:00.000Z"/>
+      <change idref="t47" attribute="title" type="string" to="Node (Photo and Video)"/>
+    </change>
+    <change idref="t48" to="t14" to-position="2" resolved="yes">
+      <change idref="t48" attribute="startConstraintDate" type="date" to="2013-12-25T08:45:00.000Z"/>
+      <change idref="t48" attribute="title" type="string" to="Comment"/>
+    </change>
+    <change idref="t49" to="t14" to-position="3" resolved="yes">
+      <change idref="t49" attribute="startConstraintDate" type="date" to="2013-12-25T08:45:00.000Z"/>
+      <change idref="t49" attribute="title" type="string" to="Like"/>
+    </change>
+    <change idref="t50" to="t14" to-position="4" resolved="yes">
+      <change idref="t50" attribute="startConstraintDate" type="date" to="2013-12-26T00:00:00.000Z"/>
+      <change idref="t50" attribute="title" type="string" to="Flag"/>
+    </change>
+    <change idref="t52" to="t51" to-position="0" resolved="yes">
+      <change idref="t52" attribute="startConstraintDate" type="date" to="2013-12-25T08:45:00.000Z"/>
+      <change idref="t52" attribute="title" type="string" to="Create(Register)"/>
+    </change>
+    <change idref="t53" to="t51" to-position="1" resolved="yes">
+      <change idref="t53" attribute="startConstraintDate" type="date" to="2013-12-25T08:45:00.000Z"/>
+      <change idref="t53" attribute="title" type="string" to="Login"/>
+    </change>
+    <change idref="t54" to="t51" to-position="2" resolved="yes">
+      <change idref="t54" attribute="startConstraintDate" type="date" to="2013-12-25T08:45:00.000Z"/>
+      <change idref="t54" attribute="title" type="string" to="Update"/>
+    </change>
+    <change idref="t55" to="t51" to-position="3" resolved="yes">
+      <change idref="t55" attribute="startConstraintDate" type="date" to="2013-12-25T08:45:00.000Z"/>
+      <change idref="t55" attribute="title" type="string" to="Delete"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:27:37.119Z" timestamp="2013-12-22T11:27:37.119Z">
+    <change idref="t47" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t47" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t47" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t47" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t47" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t47" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t47" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t47" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t47" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t47" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t47" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t62" to="t47" to-position="0" resolved="yes">
+      <change idref="t62" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t62" attribute="title" type="string" to="Create"/>
+    </change>
+    <change idref="t61" to="t47" to-position="1" resolved="yes">
+      <change idref="t61" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t61" attribute="title" type="string" to="Update"/>
+    </change>
+    <change idref="t60" to="t47" to-position="2" resolved="yes">
+      <change idref="t60" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t60" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t60" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t60" attribute="title" type="string" to="List"/>
+    </change>
+    <change idref="t59" to="t47" to-position="3" resolved="yes">
+      <change idref="t59" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t59" attribute="title" type="string" to="Search by Hashtag"/>
+    </change>
+    <change idref="t54" attribute="startConstraintDate" type="date" from="2013-12-25T08:45:00.000Z" to="2013-12-27T00:00:00.000Z" resolved="yes"/>
+    <change idref="t55" attribute="startConstraintDate" type="date" from="2013-12-25T08:45:00.000Z" to="2013-12-30T00:00:00.000Z" resolved="yes"/>
+    <change idref="t66" to="t60" to-position="0" resolved="yes">
+      <change idref="t66" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t66" attribute="title" type="string" to="Task 4"/>
+    </change>
+    <change idref="t65" to="t60" to-position="1" resolved="yes">
+      <change idref="t65" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t65" attribute="title" type="string" to="Task 3"/>
+    </change>
+    <change idref="t64" to="t60" to-position="2" resolved="yes">
+      <change idref="t64" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t64" attribute="title" type="string" to="Task 2"/>
+    </change>
+    <change idref="t63" to="t60" to-position="3" resolved="yes">
+      <change idref="t63" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t63" attribute="title" type="string" to="Task 1"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:28:42.419Z" timestamp="2013-12-22T11:28:42.419Z">
+    <change idref="t63" attribute="title" type="string" from="Task 1" to="List by random" resolved="yes"/>
+    <change idref="t64" attribute="title" type="string" from="Task 2" to="List by content type" resolved="yes"/>
+    <change idref="t65" attribute="title" type="string" from="Task 3" to="List by country" resolved="yes"/>
+    <change idref="t66" attribute="title" type="string" from="Task 4" to="List by date" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:29:04.961Z" timestamp="2013-12-22T11:29:04.961Z">
+    <change idref="t48" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t48" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t48" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t48" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t48" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t48" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t48" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t48" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t48" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t48" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t48" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t69" to="t48" to-position="0" resolved="yes">
+      <change idref="t69" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t69" attribute="title" type="string" to="Create"/>
+    </change>
+    <change idref="t68" to="t48" to-position="1" resolved="yes">
+      <change idref="t68" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t68" attribute="title" type="string" to="Update"/>
+    </change>
+    <change idref="t67" to="t48" to-position="2" resolved="yes">
+      <change idref="t67" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t67" attribute="title" type="string" to="Delete"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:30:24.826Z" timestamp="2013-12-22T11:30:24.826Z">
+    <change idref="t35" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t35" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t35" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t35" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t35" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t35" attribute="effort" type="real" from="145800" resolved="yes"/>
+    <change idref="t35" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t35" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t35" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t35" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t35" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t75" to="t35" to-position="0" resolved="yes">
+      <change idref="t75" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t75" attribute="title" type="string" to="Role permission"/>
+    </change>
+    <change idref="t49" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t49" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t49" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t49" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t49" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t49" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t49" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t49" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t49" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t49" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t49" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t72" to="t49" to-position="0" resolved="yes">
+      <change idref="t72" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t72" attribute="title" type="string" to="Create"/>
+    </change>
+    <change idref="t71" to="t49" to-position="1" resolved="yes">
+      <change idref="t71" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t71" attribute="title" type="string" to="Delete"/>
+    </change>
+    <change idref="t50" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t50" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t50" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t50" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t50" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t50" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t50" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t50" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t50" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t50" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t50" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t74" to="t50" to-position="0" resolved="yes">
+      <change idref="t74" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t74" attribute="title" type="string" to="Flag node(Photo and Video)"/>
+    </change>
+    <change idref="t73" to="t50" to-position="1" resolved="yes">
+      <change idref="t73" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t73" attribute="title" type="string" to="Flag comment"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:31:25.199Z" timestamp="2013-12-22T11:31:25.199Z">
+    <change idref="t76" to="t13" to-position="2" resolved="yes">
+      <change idref="t76" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t76" attribute="title" type="string" to="Multiple Lanuage "/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:32:08.472Z" timestamp="2013-12-22T11:32:08.472Z">
+    <change idref="t79" to="t48" to-position="3" resolved="yes">
+      <change idref="t79" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t79" attribute="title" type="string" to="List"/>
+    </change>
+    <change idref="t78" to="t51" to-position="4" resolved="yes">
+      <change idref="t78" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t78" attribute="title" type="string" to="List"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:32:47.533Z" timestamp="2013-12-22T11:32:47.533Z">
+    <change idref="t80" to="t60" to-position="4" resolved="yes">
+      <change idref="t80" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t80" attribute="title" type="string" to="List by status(published, unpublished, blocked)"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:33:11.213Z" timestamp="2013-12-22T11:33:11.213Z">
+    <change idref="t64" attribute="title" type="string" from="List by content type" to="List by content type(photo,video)" resolved="yes"/>
+    <change idref="t66" attribute="title" type="string" from="List by date" to="List by date(latest)" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:33:18.620Z" timestamp="2013-12-22T11:33:18.620Z">
+    <change idref="t52" attribute="title" type="string" from="Create(Register)" to="Create(register)" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:33:51.401Z" timestamp="2013-12-22T11:33:51.401Z">
+    <change idref="t76" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t76" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t76" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t76" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t76" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t76" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t76" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t76" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t76" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t76" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t76" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t82" to="t76" to-position="0" resolved="yes">
+      <change idref="t82" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t82" attribute="title" type="string" to="French"/>
+    </change>
+    <change idref="t81" to="t76" to-position="1" resolved="yes">
+      <change idref="t81" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t81" attribute="title" type="string" to="English"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:36:04.268Z" timestamp="2013-12-22T11:36:04.268Z">
+    <change idref="t32" from="t12" from-position="0" resolved="yes">
+      <change idref="t32" attribute="effort" type="real" from="28800" to="203400"/>
+      <change idref="t32" attribute="startConstraintDate" type="date" to="2013-12-23T00:15:00.000Z"/>
+      <change idref="t32" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}"/>
+      <change idref="t32" attribute="title" type="string" to="Interactive functions"/>
+    </change>
+    <change idref="t84" to="t12" to-position="0" resolved="yes">
+      <change idref="t84" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t84" attribute="title" type="string" to="Model Layer, Control Layer"/>
+    </change>
+    <change idref="t85" to="t12" to-position="1" resolved="yes">
+      <change idref="t85" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t85" attribute="title" type="string" to="Views Layer"/>
+    </change>
+    <change idref="t31" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t31" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t31" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t31" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t31" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t31" attribute="effort" type="real" from="174600" resolved="yes"/>
+    <change idref="t31" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t31" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t31" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t31" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t31" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t86" to="t31" to-position="0" resolved="yes">
+      <change idref="t86" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t86" attribute="title" type="string" to="Photo wall"/>
+    </change>
+    <change idref="t87" to="t31" to-position="1" resolved="yes">
+      <change idref="t87" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t87" attribute="title" type="string" to="Open big photo"/>
+    </change>
+    <change idref="t88" to="t31" to-position="2" resolved="yes">
+      <change idref="t88" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t88" attribute="title" type="string" to="Move to next/previous photo"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:37:14.658Z" timestamp="2013-12-22T11:37:14.658Z">
+    <change idref="t62" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t62" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t62" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t62" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t62" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t62" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t62" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t62" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t62" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t62" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t62" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t89" to="t62" to-position="0" resolved="yes">
+      <change idref="t89" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t89" attribute="title" type="string" to="Covert and store photo"/>
+    </change>
+    <change idref="t91" to="t62" to-position="1" resolved="yes">
+      <change idref="t91" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t91" attribute="title" type="string" to="Covert and store video"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:38:06.949Z" timestamp="2013-12-22T11:38:06.949Z">
+    <change idref="t84" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t84" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t84" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t84" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t84" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t84" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t84" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t84" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t84" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t84" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t84" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t92" to="t84" to-position="0" resolved="yes">
+      <change idref="t92" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t92" attribute="title" type="string" to="Keyshort"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:38:32.485Z" timestamp="2013-12-22T11:38:32.485Z">
+    <change idref="t92" attribute="title" type="string" from="Keyshort" to="Key shortcuts" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:40:26.402Z" timestamp="2013-12-22T11:40:26.402Z">
+    <change idref="t93" to="t84" to-position="0" resolved="yes">
+      <change idref="t93" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t93" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t93" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t93" attribute="title" type="string" to="Node(photo,video)"/>
+    </change>
+    <change idref="t94" to="t84" to-position="1" resolved="yes">
+      <change idref="t94" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t94" attribute="title" type="string" to="Task 1"/>
+    </change>
+    <change idref="t99" to="t97" to-position="0" resolved="yes">
+      <change idref="t99" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t99" attribute="title" type="string" to="List by date(latest)"/>
+    </change>
+    <change idref="t100" to="t97" to-position="1" resolved="yes">
+      <change idref="t100" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t100" attribute="title" type="string" to="List by country"/>
+    </change>
+    <change idref="t101" to="t97" to-position="2" resolved="yes">
+      <change idref="t101" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t101" attribute="title" type="string" to="List by content type(photo,video)"/>
+    </change>
+    <change idref="t102" to="t97" to-position="3" resolved="yes">
+      <change idref="t102" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t102" attribute="title" type="string" to="List by random"/>
+    </change>
+    <change idref="t95" to="t93" to-position="0" resolved="yes">
+      <change idref="t95" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t95" attribute="title" type="string" to="Post photo"/>
+    </change>
+    <change idref="t96" to="t93" to-position="1" resolved="yes">
+      <change idref="t96" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t96" attribute="title" type="string" to="Post video"/>
+    </change>
+    <change idref="t97" to="t93" to-position="2" resolved="yes">
+      <change idref="t97" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t97" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t97" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t97" attribute="title" type="string" to="List"/>
+    </change>
+    <change idref="t98" to="t93" to-position="3" resolved="yes">
+      <change idref="t98" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t98" attribute="title" type="string" to="Task 2"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:40:42.486Z" timestamp="2013-12-22T11:40:42.486Z">
+    <change idref="t98" attribute="title" type="string" from="Task 2" to="Search by Hashtag" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:41:33.813Z" timestamp="2013-12-22T11:41:33.813Z">
+    <change idref="t94" from="t84" from-position="1" to="t84" to-position="0" resolved="yes"/>
+    <change idref="t94" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t94" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t94" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t94" attribute="title" type="string" from="Task 1" to="User" resolved="yes"/>
+    <change idref="t94" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t94" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t94" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t94" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t94" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t94" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t94" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t94" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t103" to="t94" to-position="0" resolved="yes">
+      <change idref="t103" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t103" attribute="title" type="string" to="Register"/>
+    </change>
+    <change idref="t104" to="t94" to-position="1" resolved="yes">
+      <change idref="t104" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t104" attribute="title" type="string" to="Login"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:41:57.018Z" timestamp="2013-12-22T11:41:57.018Z">
+    <change idref="t105" to="t94" to-position="2" resolved="yes">
+      <change idref="t105" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t105" attribute="title" type="string" to="Update user information"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:43:21.755Z" timestamp="2013-12-22T11:43:21.755Z">
+    <change idref="t17" attribute="startConstraintDate" type="date" from="2013-12-20T00:15:00.000Z" to="2013-12-26T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:43:39.315Z" timestamp="2013-12-22T11:43:39.315Z">
+    <change idref="t86" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-30T00:15:00.000Z" resolved="yes"/>
+    <change idref="t87" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-30T00:00:00.000Z" resolved="yes"/>
+    <change idref="t88" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-30T00:15:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:47:25.714Z" timestamp="2013-12-22T11:47:25.714Z">
+    <change idref="t30" from="t12" from-position="3" resolved="yes">
+      <change idref="t30" attribute="effort" type="real" from="28800" to="117000"/>
+      <change idref="t30" attribute="startConstraintDate" type="date" to="2014-01-02T08:45:00.000Z"/>
+      <change idref="t30" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}"/>
+      <change idref="t30" attribute="title" type="string" to="API intergration"/>
+    </change>
+    <change idref="t106" to="t31" to-position="3" resolved="yes">
+      <change idref="t106" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t106" attribute="title" type="string" to="Elements animation"/>
+    </change>
+    <change idref="t85" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t85" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t85" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t85" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t85" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t85" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t85" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t85" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t85" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t85" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t85" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t107" to="t85" to-position="0" resolved="yes">
+      <change idref="t107" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t107" attribute="title" type="string" to="Bind html template"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:47:49.250Z" timestamp="2013-12-22T11:47:49.250Z">
+    <change idref="t107" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t107" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t107" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t107" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t107" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t107" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t107" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t107" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t107" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t107" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t107" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t109" to="t107" to-position="0" resolved="yes">
+      <change idref="t109" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t109" attribute="title" type="string" to="User"/>
+    </change>
+    <change idref="t108" to="t107" to-position="1" resolved="yes">
+      <change idref="t108" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t108" attribute="title" type="string" to="Node"/>
+    </change>
+    <change idref="t110" to="t107" to-position="2" resolved="yes">
+      <change idref="t110" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t110" attribute="title" type="string" to="Comment"/>
+    </change>
+    <change idref="t111" to="t107" to-position="3" resolved="yes">
+      <change idref="t111" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t111" attribute="title" type="string" to="Like"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:47:58.232Z" timestamp="2013-12-22T11:47:58.232Z">
+    <change idref="t112" to="t107" to-position="4" resolved="yes">
+      <change idref="t112" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t112" attribute="title" type="string" to="Flag"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:48:13.200Z" timestamp="2013-12-22T11:48:13.200Z">
+    <change idref="t107" attribute="title" type="string" from="Bind html template" to="Bind html templates" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:49:55.137Z" timestamp="2013-12-22T11:49:55.137Z">
+    <change idref="t113" to="t12" to-position="4" resolved="yes">
+      <change idref="t113" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t113" attribute="title" type="string" to="Task 1"/>
+    </change>
+    <change idref="t36" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t36" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t36" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t36" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t36" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t36" attribute="effort" type="real" from="144000" resolved="yes"/>
+    <change idref="t36" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t36" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t36" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t36" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t36" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t114" to="t36" to-position="0" resolved="yes">
+      <change idref="t114" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t114" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t114" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t114" attribute="title" type="string" to="Node(photo, video)"/>
+    </change>
+    <change idref="t115" to="t36" to-position="1" resolved="yes">
+      <change idref="t115" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t115" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t115" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t115" attribute="title" type="string" to="User"/>
+    </change>
+    <change idref="t119" to="t36" to-position="2" resolved="yes">
+      <change idref="t119" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t119" attribute="title" type="string" to="Task 2"/>
+    </change>
+    <change idref="t124" to="t114" to-position="0" resolved="yes">
+      <change idref="t124" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t124" attribute="title" type="string" to="List"/>
+    </change>
+    <change idref="t125" to="t114" to-position="1" resolved="yes">
+      <change idref="t125" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t125" attribute="title" type="string" to="Filter"/>
+    </change>
+    <change idref="t116" to="t114" to-position="2" resolved="yes">
+      <change idref="t116" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t116" attribute="title" type="string" to="Update"/>
+    </change>
+    <change idref="t117" to="t114" to-position="3" resolved="yes">
+      <change idref="t117" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t117" attribute="title" type="string" to="Delete"/>
+    </change>
+    <change idref="t120" to="t115" to-position="0" resolved="yes">
+      <change idref="t120" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t120" attribute="title" type="string" to="Update"/>
+    </change>
+    <change idref="t121" to="t115" to-position="1" resolved="yes">
+      <change idref="t121" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t121" attribute="title" type="string" to="Delete"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:50:34.981Z" timestamp="2013-12-22T11:50:34.981Z">
+    <change idref="t126" to="t115" to-position="0" resolved="yes">
+      <change idref="t126" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t126" attribute="title" type="string" to="List"/>
+    </change>
+    <change idref="t127" to="t115" to-position="1" resolved="yes">
+      <change idref="t127" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t127" attribute="title" type="string" to="Filter by country, date, status"/>
+    </change>
+    <change idref="t125" attribute="title" type="string" from="Filter" to="Filter by type, country, date, status" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:52:02.867Z" timestamp="2013-12-22T11:52:02.867Z">
+    <change idref="t36" attribute="title" type="string" from="Backend functions" to="Backend Office" resolved="yes"/>
+    <change idref="t39" attribute="title" type="string" from="Backend office" to="Backend Office" resolved="yes"/>
+    <change idref="t119" attribute="title" type="string" from="Task 2" to="Comment" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:52:24.345Z" timestamp="2013-12-22T11:52:24.345Z">
+    <change idref="t16" attribute="title" type="string" from="Full site intergration" to=" Intergration" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:54:40.182Z" timestamp="2013-12-22T11:54:40.182Z">
+    <change idref="t113" from="t12" from-position="4" resolved="yes">
+      <change idref="t113" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t113" attribute="title" type="string" to="Task 1"/>
+    </change>
+    <change idref="t131" to="t36" to-position="3" resolved="yes">
+      <change idref="t131" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t131" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t131" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t131" attribute="title" type="string" to="Flag"/>
+    </change>
+    <change idref="t119" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t119" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t119" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t119" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t119" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t119" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t119" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t119" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t119" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t119" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t119" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t128" to="t119" to-position="0" resolved="yes">
+      <change idref="t128" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t128" attribute="title" type="string" to="List"/>
+    </change>
+    <change idref="t129" to="t119" to-position="1" resolved="yes">
+      <change idref="t129" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t129" attribute="title" type="string" to="Update"/>
+    </change>
+    <change idref="t130" to="t119" to-position="2" resolved="yes">
+      <change idref="t130" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t130" attribute="title" type="string" to="Delete"/>
+    </change>
+    <change idref="t132" to="t131" to-position="0" resolved="yes">
+      <change idref="t132" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t132" attribute="title" type="string" to="List flagged node"/>
+    </change>
+    <change idref="t133" to="t131" to-position="1" resolved="yes">
+      <change idref="t133" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t133" attribute="title" type="string" to="List flagged comment"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:56:33.829Z" timestamp="2013-12-22T11:56:33.829Z">
+    <change idref="t33" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t33" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t33" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t33" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="effort" type="real" from="117000" resolved="yes"/>
+    <change idref="t33" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t33" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t134" to="t33" to-position="0" resolved="yes">
+      <change idref="t134" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t134" attribute="title" type="string" to="IE8+"/>
+    </change>
+    <change idref="t135" to="t33" to-position="1" resolved="yes">
+      <change idref="t135" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t135" attribute="title" type="string" to="Firefox"/>
+    </change>
+    <change idref="t137" to="t33" to-position="2" resolved="yes">
+      <change idref="t137" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t137" attribute="title" type="string" to="Safari"/>
+    </change>
+    <change idref="t138" to="t33" to-position="3" resolved="yes">
+      <change idref="t138" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t138" attribute="title" type="string" to="Chrome"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:57:24.408Z" timestamp="2013-12-22T11:57:24.408Z">
+    <change idref="t15" attribute="title" type="string" from="Create Unit Test" to="Unit Test" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:57:42.442Z" timestamp="2013-12-22T11:57:42.442Z">
+    <change idref="t139" to="t12" to-position="0" resolved="yes">
+      <change idref="t139" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t139" attribute="title" type="string" to="Unit Test"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:58:47.260Z" timestamp="2013-12-22T11:58:47.260Z">
+    <change idref="t15" attribute="effort" type="real" from="87300" to="819900" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T11:59:26.491Z" timestamp="2013-12-22T11:59:26.491Z">
+    <change idref="t38" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t38" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t38" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t38" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t38" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t38" attribute="effort" type="real" from="203400" resolved="yes"/>
+    <change idref="t38" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t38" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t38" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t38" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t38" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t140" to="t38" to-position="0" resolved="yes">
+      <change idref="t140" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t140" attribute="title" type="string" to="Code base on draft layouts"/>
+    </change>
+    <change idref="t141" to="t38" to-position="1" resolved="yes">
+      <change idref="t141" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t141" attribute="title" type="string" to="Update base on final layouts"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:00:01.531Z" timestamp="2013-12-22T12:00:01.531Z">
+    <change idref="t78" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-26T01:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:00:53.923Z" timestamp="2013-12-22T12:00:53.923Z">
+    <change idref="t52" attribute="effort" type="real" from="28800" to="58500" resolved="yes"/>
+    <change idref="t53" attribute="startConstraintDate" type="date" from="2013-12-25T08:45:00.000Z" to="2013-12-27T00:00:00.000Z" resolved="yes"/>
+    <change idref="t54" attribute="startConstraintDate" type="date" from="2013-12-27T00:00:00.000Z" to="2013-12-30T00:30:00.000Z" resolved="yes"/>
+    <change idref="t55" attribute="startConstraintDate" type="date" from="2013-12-30T00:00:00.000Z" to="2013-12-30T00:30:00.000Z" resolved="yes"/>
+    <change idref="t78" attribute="startConstraintDate" type="date" from="2013-12-26T01:00:00.000Z" to="2013-12-31T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:01:03.329Z" timestamp="2013-12-22T12:01:03.329Z">
+    <change idref="t78" attribute="startConstraintDate" type="date" from="2013-12-31T00:00:00.000Z" to="2013-12-30T00:30:00.000Z" resolved="yes"/>
+    <change idref="t78" attribute="effort" type="real" from="28800" to="58500" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:03:34.957Z" timestamp="2013-12-22T12:03:34.957Z">
+    <change idref="t48" attribute="startConstraintDate" type="date" from="2013-12-25T08:45:00.000Z" to="2014-01-15T00:15:00.000Z" resolved="yes"/>
+    <change idref="t49" attribute="startConstraintDate" type="date" from="2013-12-25T08:45:00.000Z" to="2014-01-20T00:00:00.000Z" resolved="yes"/>
+    <change idref="t50" attribute="startConstraintDate" type="date" from="2013-12-26T00:00:00.000Z" to="2014-01-20T00:00:00.000Z" resolved="yes"/>
+    <change idref="t59" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-14T00:00:00.000Z" resolved="yes"/>
+    <change idref="t61" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-06T00:00:00.000Z" resolved="yes"/>
+    <change idref="t63" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-10T00:00:00.000Z" resolved="yes"/>
+    <change idref="t64" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-09T00:00:00.000Z" resolved="yes"/>
+    <change idref="t65" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-07T08:45:00.000Z" resolved="yes"/>
+    <change idref="t66" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-07T00:00:00.000Z" resolved="yes"/>
+    <change idref="t67" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-16T00:00:00.000Z" resolved="yes"/>
+    <change idref="t68" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-16T00:00:00.000Z" resolved="yes"/>
+    <change idref="t69" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-15T00:15:00.000Z" resolved="yes"/>
+    <change idref="t71" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-21T00:15:00.000Z" resolved="yes"/>
+    <change idref="t72" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-20T00:00:00.000Z" resolved="yes"/>
+    <change idref="t73" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-23T00:00:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-22T00:00:00.000Z" resolved="yes"/>
+    <change idref="t79" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-17T00:00:00.000Z" resolved="yes"/>
+    <change idref="t80" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-13T00:00:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-01T00:00:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="effort" type="real" from="28800" to="59400" resolved="yes"/>
+    <change idref="t91" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-02T08:45:00.000Z" resolved="yes"/>
+    <change idref="t91" attribute="effort" type="real" from="28800" to="58500" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:03:54.568Z" timestamp="2013-12-22T12:03:54.568Z">
+    <change idref="t50" attribute="startConstraintDate" type="date" from="2014-01-20T00:00:00.000Z" to="2014-01-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t73" attribute="startConstraintDate" type="date" from="2014-01-23T00:00:00.000Z" to="2014-01-21T00:15:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="startConstraintDate" type="date" from="2014-01-22T00:00:00.000Z" to="2014-01-20T00:15:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:05:07.827Z" timestamp="2013-12-22T12:05:07.827Z">
+    <change idref="t35" attribute="startConstraintDate" type="date" from="2014-01-09T00:15:00.000Z" to="2014-01-23T08:45:00.000Z" resolved="yes"/>
+    <change idref="t46" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-24T08:45:00.000Z" resolved="yes"/>
+    <change idref="t46" attribute="effort" type="real" from="28800" to="59400" resolved="yes"/>
+    <change idref="t75" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-23T08:45:00.000Z" resolved="yes"/>
+    <change idref="t76" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-22T00:15:00.000Z" resolved="yes"/>
+    <change idref="t81" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-22T00:15:00.000Z" resolved="yes"/>
+    <change idref="t81" attribute="effort" type="real" from="28800" to="58500" resolved="yes"/>
+    <change idref="t82" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-22T00:15:00.000Z" resolved="yes"/>
+    <change idref="t82" attribute="effort" type="real" from="28800" to="58500" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:06:16.306Z" timestamp="2013-12-22T12:06:16.306Z">
+    <change idref="t15" attribute="effort" type="real" from="819900" to="775800" resolved="yes"/>
+    <change idref="t47" attribute="startConstraintDate" type="date" from="2013-12-25T08:45:00.000Z" to="2013-12-31T08:45:00.000Z" resolved="yes"/>
+    <change idref="t60" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-07T00:00:00.000Z" resolved="yes"/>
+    <change idref="t62" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-31T08:45:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:06:25.725Z" timestamp="2013-12-22T12:06:25.725Z">
+    <change idref="t45" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-26T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:07:40.401Z" timestamp="2013-12-22T12:07:40.401Z">
+    <change idref="t142" to="t12" to-position="0" resolved="yes">
+      <change idref="t142" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t142" attribute="title" type="string" to="Create basic structure, create folder"/>
+    </change>
+    <change idref="t143" to="t17" to-position="0" resolved="yes">
+      <change idref="t143" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t143" attribute="title" type="string" to="Create basic structure, create folder"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:16:09.092Z" timestamp="2013-12-22T12:16:09.092Z">
+    <change idref="t31" attribute="startConstraintDate" type="date" from="2013-12-30T00:15:00.000Z" to="2014-01-01T00:00:00.000Z" resolved="yes"/>
+    <change idref="t31" attribute="internalPrerequisitesString" type="string" to="140FS" resolved="yes"/>
+    <change idref="t33" attribute="startConstraintDate" type="date" from="2014-01-23T00:00:00.000Z" to="2014-01-08T06:00:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="startConstraintDate" type="date" from="2014-01-09T00:45:00.000Z" to="2014-01-01T00:00:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="internalPrerequisitesString" type="string" to="141FS" resolved="yes"/>
+    <change idref="t85" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-06T00:15:00.000Z" resolved="yes"/>
+    <change idref="t85" attribute="internalPrerequisitesString" type="string" to="140FS" resolved="yes"/>
+    <change idref="t86" attribute="startConstraintDate" type="date" from="2013-12-30T00:15:00.000Z" to="2014-01-01T00:15:00.000Z" resolved="yes"/>
+    <change idref="t86" attribute="effort" type="real" from="28800" to="114300" resolved="yes"/>
+    <change idref="t87" attribute="startConstraintDate" type="date" from="2013-12-30T00:00:00.000Z" to="2014-01-07T00:00:00.000Z" resolved="yes"/>
+    <change idref="t87" attribute="effort" type="real" from="28800" to="57600" resolved="yes"/>
+    <change idref="t88" attribute="startConstraintDate" type="date" from="2013-12-30T00:15:00.000Z" to="2014-01-08T08:45:00.000Z" resolved="yes"/>
+    <change idref="t88" attribute="effort" type="real" from="28800" to="89100" resolved="yes"/>
+    <change idref="t92" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-30T08:45:00.000Z" resolved="yes"/>
+    <change idref="t95" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-30T00:00:00.000Z" resolved="yes"/>
+    <change idref="t95" attribute="effort" type="real" from="28800" to="58500" resolved="yes"/>
+    <change idref="t96" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-01T00:00:00.000Z" resolved="yes"/>
+    <change idref="t96" attribute="effort" type="real" from="28800" to="58500" resolved="yes"/>
+    <change idref="t97" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-25T00:00:00.000Z" resolved="yes"/>
+    <change idref="t98" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-30T08:45:00.000Z" resolved="yes"/>
+    <change idref="t99" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-25T00:00:00.000Z" resolved="yes"/>
+    <change idref="t99" attribute="effort" type="real" from="28800" to="29700" resolved="yes"/>
+    <change idref="t100" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-25T08:30:00.000Z" resolved="yes"/>
+    <change idref="t100" attribute="effort" type="real" from="28800" to="30600" resolved="yes"/>
+    <change idref="t101" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-26T08:45:00.000Z" resolved="yes"/>
+    <change idref="t102" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-30T00:00:00.000Z" resolved="yes"/>
+    <change idref="t103" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-25T00:00:00.000Z" resolved="yes"/>
+    <change idref="t103" attribute="effort" type="real" from="28800" to="58500" resolved="yes"/>
+    <change idref="t104" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-27T00:15:00.000Z" resolved="yes"/>
+    <change idref="t105" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-27T00:15:00.000Z" resolved="yes"/>
+    <change idref="t106" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-14T00:00:00.000Z" resolved="yes"/>
+    <change idref="t106" attribute="effort" type="real" from="28800" to="115200" resolved="yes"/>
+    <change idref="t107" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-06T00:15:00.000Z" resolved="yes"/>
+    <change idref="t108" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-07T00:00:00.000Z" resolved="yes"/>
+    <change idref="t109" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-06T00:15:00.000Z" resolved="yes"/>
+    <change idref="t110" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-08T00:15:00.000Z" resolved="yes"/>
+    <change idref="t111" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-08T08:45:00.000Z" resolved="yes"/>
+    <change idref="t112" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-09T08:45:00.000Z" resolved="yes"/>
+    <change idref="t114" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-01T01:15:00.000Z" resolved="yes"/>
+    <change idref="t115" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-02T00:00:00.000Z" resolved="yes"/>
+    <change idref="t116" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-06T00:00:00.000Z" resolved="yes"/>
+    <change idref="t117" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-06T00:00:00.000Z" resolved="yes"/>
+    <change idref="t119" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-01T02:45:00.000Z" resolved="yes"/>
+    <change idref="t120" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-08T00:00:00.000Z" resolved="yes"/>
+    <change idref="t121" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-09T00:00:00.000Z" resolved="yes"/>
+    <change idref="t124" attribute="effort" type="real" from="28800" to="54000" resolved="yes"/>
+    <change idref="t125" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-03T00:15:00.000Z" resolved="yes"/>
+    <change idref="t126" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-02T08:45:00.000Z" resolved="yes"/>
+    <change idref="t126" attribute="effort" type="real" from="28800" to="58500" resolved="yes"/>
+    <change idref="t127" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-07T00:15:00.000Z" resolved="yes"/>
+    <change idref="t128" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-09T08:45:00.000Z" resolved="yes"/>
+    <change idref="t129" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-13T00:00:00.000Z" resolved="yes"/>
+    <change idref="t130" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-13T00:00:00.000Z" resolved="yes"/>
+    <change idref="t132" attribute="effort" type="real" from="28800" to="57600" resolved="yes"/>
+    <change idref="t139" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-24T00:15:00.000Z" resolved="yes"/>
+    <change idref="t140" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-27T00:00:00.000Z" resolved="yes"/>
+    <change idref="t140" attribute="effort" type="real" from="28800" to="88200" resolved="yes"/>
+    <change idref="t141" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-26T08:45:00.000Z" resolved="yes"/>
+    <change idref="t141" attribute="effort" type="real" from="28800" to="89100" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:16:30.936Z" timestamp="2013-12-22T12:16:30.936Z">
+    <change idref="t132" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-14T00:00:00.000Z" resolved="yes"/>
+    <change idref="t132" attribute="effort" type="real" from="57600" to="30600" resolved="yes"/>
+    <change idref="t133" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-15T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:20:01.890Z" timestamp="2013-12-22T12:20:01.890Z">
+    <change idref="t17" from="t7" from-position="5" to="t7" to-position="4" resolved="yes"/>
+    <change idref="t8" attribute="effort" type="real" from="1584000" to="1382400" resolved="yes"/>
+    <change idref="t16" attribute="startConstraintDate" type="date" from="2014-01-16T00:15:00.000Z" to="2014-01-28T08:45:00.000Z" resolved="yes"/>
+    <change idref="t16" attribute="effort" type="real" from="145800" to="146700" resolved="yes"/>
+    <change idref="t24" attribute="startConstraintDate" type="date" from="2014-01-29T00:30:00.000Z" to="2014-02-11T00:00:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="startConstraintDate" type="date" from="2014-01-21T00:00:00.000Z" to="2014-02-03T00:00:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="effort" type="real" from="89100" to="88200" resolved="yes"/>
+    <change idref="t27" attribute="startConstraintDate" type="date" from="2014-01-24T00:00:00.000Z" to="2014-02-06T00:00:00.000Z" resolved="yes"/>
+    <change idref="t27" attribute="effort" type="real" from="89100" to="87300" resolved="yes"/>
+    <change idref="t28" attribute="startConstraintDate" type="date" from="2014-01-16T00:45:00.000Z" to="2014-01-28T08:45:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="startConstraintDate" type="date" from="2014-01-08T06:00:00.000Z" to="2014-01-29T00:00:00.000Z" resolved="yes"/>
+    <change idref="t115" attribute="startConstraintDate" type="date" from="2014-01-02T00:00:00.000Z" to="2014-01-02T08:45:00.000Z" resolved="yes"/>
+    <change idref="t119" attribute="startConstraintDate" type="date" from="2014-01-01T02:45:00.000Z" to="2014-01-10T00:00:00.000Z" resolved="yes"/>
+    <change idref="t131" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-14T00:00:00.000Z" resolved="yes"/>
+    <change idref="t134" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-29T00:00:00.000Z" resolved="yes"/>
+    <change idref="t134" attribute="effort" type="real" from="28800" to="87300" resolved="yes"/>
+    <change idref="t135" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-31T08:45:00.000Z" resolved="yes"/>
+    <change idref="t137" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-02-03T08:45:00.000Z" resolved="yes"/>
+    <change idref="t138" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-02-05T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:20:21.395Z" timestamp="2013-12-22T12:20:21.395Z">
+    <change idref="t25" attribute="startConstraintDate" type="date" from="2014-01-16T00:45:00.000Z" to="2014-01-28T08:45:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:20:49.771Z" timestamp="2013-12-22T12:20:49.771Z">
+    <change idref="t124" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-01T01:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:21:01.492Z" timestamp="2013-12-22T12:21:01.492Z">
+    <change idref="t38" attribute="startConstraintDate" type="date" from="2013-12-26T00:00:00.000Z" to="2013-12-27T00:00:00.000Z" resolved="yes"/>
+    <change idref="t84" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-25T00:00:00.000Z" resolved="yes"/>
+    <change idref="t93" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-25T00:00:00.000Z" resolved="yes"/>
+    <change idref="t143" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-26T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:21:35.668Z" timestamp="2013-12-22T12:21:35.668Z">
+    <change idref="t46" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t47" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t48" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t49" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t50" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t51" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t52" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t53" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t54" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t55" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t59" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t60" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t61" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t62" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t63" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t64" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t65" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t66" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t67" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t68" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t69" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t71" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t72" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t73" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t74" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t75" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t76" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t78" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t79" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t80" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t81" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t82" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t84" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t85" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t86" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t87" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t88" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t89" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t91" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t92" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t93" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t94" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t95" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t96" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t97" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t98" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t99" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t100" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t101" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t102" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t103" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t104" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t105" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t106" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t107" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t108" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t109" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t110" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t111" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t112" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t114" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t115" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t116" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t117" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t119" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t120" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t121" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t124" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t125" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t126" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t127" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t128" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t129" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t130" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t131" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t132" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t133" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t139" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t140" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.109752&quot;;
+        g = &quot;0.392969&quot;;
+        r = &quot;0.9&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t141" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.109752&quot;;
+        g = &quot;0.392969&quot;;
+        r = &quot;0.9&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t142" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.490196&quot;;
+        g = &quot;0.694118&quot;;
+        r = &quot;0.380392&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t143" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.109752&quot;;
+        g = &quot;0.392969&quot;;
+        r = &quot;0.9&quot;;
+    };
+}" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:22:06.206Z" timestamp="2013-12-22T12:22:06.206Z">
+    <change idref="t134" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t135" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t137" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t138" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:30:32.665Z" timestamp="2013-12-22T12:30:32.665Z">
+    <change idref="t144" to="t25" to-position="0" resolved="yes">
+      <change idref="t144" attribute="startConstraintDate" type="date" to="2013-12-21T16:00:00.000Z"/>
+      <change idref="t144" attribute="title" type="string" to="IP Limitation"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="tony" date="2013-12-22T12:31:46.852Z" timestamp="2013-12-22T12:31:46.852Z">
+    <change idref="t144" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2014-01-29T00:15:00.000Z" resolved="yes"/>
+    <change idref="t144" attribute="title" type="string" from="IP Limitation" to="IP address restriction" resolved="yes"/>
+    <change idref="t144" attribute="effort" type="real" from="28800" to="31500" resolved="yes"/>
+    <change idref="t144" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-23T05:54:58.974Z" timestamp="2013-12-23T05:54:58.974Z">
+    <change idref="t8" attribute="startConstraintDate" type="date" from="2013-12-25T00:15:00.000Z" to="2013-12-12T01:15:00.000Z" resolved="yes"/>
+    <change idref="t16" attribute="startConstraintDate" type="date" from="2014-01-28T08:45:00.000Z" to="2014-01-16T00:45:00.000Z" resolved="yes"/>
+    <change idref="t24" attribute="startConstraintDate" type="date" from="2014-02-11T00:00:00.000Z" to="2014-01-29T01:00:00.000Z" resolved="yes"/>
+    <change idref="t25" attribute="startConstraintDate" type="date" from="2014-01-28T08:45:00.000Z" to="2014-01-16T01:15:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="startConstraintDate" type="date" from="2014-02-03T00:00:00.000Z" to="2014-01-21T01:00:00.000Z" resolved="yes"/>
+    <change idref="t27" attribute="startConstraintDate" type="date" from="2014-02-06T00:00:00.000Z" to="2014-01-24T01:00:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="startConstraintDate" type="date" from="2014-01-28T08:45:00.000Z" to="2014-01-29T01:30:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="startConstraintDate" type="date" from="2014-01-29T00:00:00.000Z" to="2014-01-16T01:00:00.000Z" resolved="yes"/>
+    <change idref="t35" attribute="startConstraintDate" type="date" from="2014-01-23T08:45:00.000Z" to="2014-01-21T08:30:00.000Z" resolved="yes"/>
+    <change idref="t46" attribute="startConstraintDate" type="date" from="2014-01-24T08:45:00.000Z" to="2014-01-22T08:30:00.000Z" resolved="yes"/>
+    <change idref="t49" attribute="startConstraintDate" type="date" from="2014-01-20T00:00:00.000Z" to="2014-01-15T01:00:00.000Z" resolved="yes"/>
+    <change idref="t50" attribute="startConstraintDate" type="date" from="2014-01-20T00:15:00.000Z" to="2014-01-10T08:45:00.000Z" resolved="yes"/>
+    <change idref="t71" attribute="startConstraintDate" type="date" from="2014-01-21T00:15:00.000Z" to="2014-01-16T01:15:00.000Z" resolved="yes"/>
+    <change idref="t72" attribute="startConstraintDate" type="date" from="2014-01-20T00:00:00.000Z" to="2014-01-15T01:00:00.000Z" resolved="yes"/>
+    <change idref="t73" attribute="startConstraintDate" type="date" from="2014-01-21T00:15:00.000Z" to="2014-01-13T08:45:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="startConstraintDate" type="date" from="2014-01-20T00:15:00.000Z" to="2014-01-10T08:45:00.000Z" resolved="yes"/>
+    <change idref="t75" attribute="startConstraintDate" type="date" from="2014-01-23T08:45:00.000Z" to="2014-01-21T08:30:00.000Z" resolved="yes"/>
+    <change idref="t76" attribute="startConstraintDate" type="date" from="2014-01-22T00:15:00.000Z" to="2014-01-20T00:30:00.000Z" resolved="yes"/>
+    <change idref="t81" attribute="startConstraintDate" type="date" from="2014-01-22T00:15:00.000Z" to="2014-01-20T00:30:00.000Z" resolved="yes"/>
+    <change idref="t82" attribute="startConstraintDate" type="date" from="2014-01-22T00:15:00.000Z" to="2014-01-20T00:30:00.000Z" resolved="yes"/>
+    <change idref="t134" attribute="startConstraintDate" type="date" from="2014-01-29T00:00:00.000Z" to="2014-01-16T01:00:00.000Z" resolved="yes"/>
+    <change idref="t135" attribute="startConstraintDate" type="date" from="2014-01-31T08:45:00.000Z" to="2014-01-21T00:45:00.000Z" resolved="yes"/>
+    <change idref="t137" attribute="startConstraintDate" type="date" from="2014-02-03T08:45:00.000Z" to="2014-01-22T00:45:00.000Z" resolved="yes"/>
+    <change idref="t138" attribute="startConstraintDate" type="date" from="2014-02-05T00:00:00.000Z" to="2014-01-23T01:00:00.000Z" resolved="yes"/>
+    <change idref="t144" attribute="startConstraintDate" type="date" from="2014-01-29T00:15:00.000Z" to="2014-01-16T01:15:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-23T05:55:17.957Z" timestamp="2013-12-23T05:55:17.957Z">
+    <change idref="t28" attribute="startConstraintDate" type="date" from="2014-01-29T01:30:00.000Z" to="2014-01-28T08:45:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-23T05:55:23.475Z" timestamp="2013-12-23T05:55:23.475Z">
+    <change idref="t94" attribute="startConstraintDate" type="date" from="2013-12-21T16:00:00.000Z" to="2013-12-24T08:45:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-23T06:22:16.966Z" timestamp="2013-12-23T06:22:16.966Z">
+    <change idref="t1" attribute="startConstraintDate" type="date" from="2013-12-19T00:00:00.000Z" to="2013-12-16T02:45:00.000Z" resolved="yes"/>
+    <change idref="t2" attribute="startConstraintDate" type="date" from="2013-12-19T00:00:00.000Z" to="2013-12-17T00:00:00.000Z" resolved="yes"/>
+    <change idref="t4" attribute="startConstraintDate" type="date" from="2013-12-19T08:30:00.000Z" to="2013-12-17T08:30:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-23T06:24:18.344Z" timestamp="2013-12-23T06:24:18.344Z">
+    <change idref="t5" attribute="startConstraintDate" type="date" from="2013-12-23T00:00:00.000Z" to="2013-12-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t5" attribute="effort" type="real" from="59400" to="88200" resolved="yes"/>
+    <change idref="t7" attribute="startConstraintDate" type="date" from="2013-12-20T00:15:00.000Z" to="2013-12-19T00:15:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="startConstraintDate" type="date" from="2013-12-23T00:30:00.000Z" to="2013-12-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t14" attribute="startConstraintDate" type="date" from="2013-12-26T00:00:00.000Z" to="2013-12-23T00:00:00.000Z" resolved="yes"/>
+    <change idref="t15" attribute="startConstraintDate" type="date" from="2013-12-23T00:30:00.000Z" to="2013-12-20T00:15:00.000Z" resolved="yes"/>
+    <change idref="t18" attribute="startConstraintDate" type="date" from="2013-12-20T00:15:00.000Z" to="2013-12-19T00:00:00.000Z" resolved="yes"/>
+    <change idref="t19" attribute="startConstraintDate" type="date" from="2013-12-20T00:15:00.000Z" to="2013-12-18T08:45:00.000Z" resolved="yes"/>
+    <change idref="t47" attribute="startConstraintDate" type="date" from="2013-12-31T08:45:00.000Z" to="2013-12-30T08:45:00.000Z" resolved="yes"/>
+    <change idref="t51" attribute="startConstraintDate" type="date" from="2013-12-25T08:45:00.000Z" to="2013-12-20T08:30:00.000Z" resolved="yes"/>
+    <change idref="t52" attribute="startConstraintDate" type="date" from="2013-12-25T08:45:00.000Z" to="2013-12-20T08:45:00.000Z" resolved="yes"/>
+    <change idref="t53" attribute="startConstraintDate" type="date" from="2013-12-27T00:00:00.000Z" to="2013-12-25T00:00:00.000Z" resolved="yes"/>
+    <change idref="t54" attribute="startConstraintDate" type="date" from="2013-12-30T00:30:00.000Z" to="2013-12-26T00:15:00.000Z" resolved="yes"/>
+    <change idref="t55" attribute="startConstraintDate" type="date" from="2013-12-30T00:30:00.000Z" to="2013-12-26T00:15:00.000Z" resolved="yes"/>
+    <change idref="t62" attribute="startConstraintDate" type="date" from="2013-12-31T08:45:00.000Z" to="2013-12-31T00:00:00.000Z" resolved="yes"/>
+    <change idref="t78" attribute="startConstraintDate" type="date" from="2013-12-30T00:30:00.000Z" to="2013-12-27T00:30:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="startConstraintDate" type="date" from="2014-01-01T00:00:00.000Z" to="2013-12-31T00:15:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="effort" type="real" from="59400" to="86400" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-23T06:24:25.039Z" timestamp="2013-12-23T06:24:25.039Z">
+    <change idref="t1" attribute="startConstraintDate" type="date" from="2013-12-16T02:45:00.000Z" to="2013-12-17T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Tony " date="2013-12-23T06:26:39.619Z" timestamp="2013-12-23T06:26:39.619Z">
+    <change idref="t8" attribute="startConstraintDate" type="date" from="2013-12-12T01:15:00.000Z" to="2013-12-19T08:45:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <metadata-change-set user="Tony " date="2013-12-09T09:31:58.139Z" timestamp="2013-12-09T09:31:58.139Z">
+    <change idref="m1" attribute="fixedDate" type="date" from="2007-01-01T20:00:00.000Z" to="2013-12-09T00:00:00.000Z" resolved="yes"/>
+  </metadata-change-set>
+</changelog>

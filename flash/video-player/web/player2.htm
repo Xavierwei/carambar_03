@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<object id="player" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="800" height="600">
+  <param name="allowScriptAccess" value="always"/>
+  <param name="movie" value="player2.swf"/>
+  <param name="flashVars" value="source=http://zero.flashwing.net/my/16.flv&skinMode=show"/>
+  <param name="quality" value="high"/>
+  <embed name="player" src="player2.swf" flashVars="source=http://zero.flashwing.net/my/16.flv&skinMode=show" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="800" height="600" allowScriptAccess="always"></embed>
+</object>
+
+<br/>
+<br/>
+
+<script language="javascript">
+	function getPlayer(){
+		var player=document.getElementById("player");
+		if(player.play){
+			return player;
+		}
+		return document.getElementsByName("player")[0];
+	}
+</script>
+
+<input type='button' value='play()' onclick='javaScript:getPlayer().play();'></input>
+<input type='button' value='pause()' onclick='javaScript:getPlayer().pause();'></input>
+<input type='button' value='stop()' onclick='javaScript:getPlayer().stop();'></input>

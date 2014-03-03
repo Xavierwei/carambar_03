@@ -1,0 +1,82 @@
+<div class="nodes-list-wrap">
+	<div class="nodes-filter filter">
+        <div class="new-row">
+            <div class="btn-group">
+	            <label>Type</label>
+	            <div>
+		            <button type="button" class="btn btn-default" ng-model="filter.type" btn-radio="'all'">All</button>
+		            <button type="button" class="btn btn-default" ng-model="filter.type" btn-radio="'photo'">Photo</button>
+		            <button type="button" class="btn btn-default" ng-model="filter.type" btn-radio="'video'">Video</button>
+	            </div>
+            </div>
+
+            <div class="btn-group">
+	            <label>Status</label>
+	            <div>
+		            <button type="button" class="btn btn-default ng-pristine ng-valid active" ng-model="filter.status" btn-radio="'all'">All</button>
+		            <button type="button" class="btn btn-default" ng-model="filter.status" btn-radio="1">Published</button>
+		            <button type="button" class="btn btn-default" ng-model="filter.status" btn-radio="0">Unpublished</button>
+	            </div>
+            </div>
+
+            <div class="btn-group">
+	            <label>Country</label>
+	            <div>
+	                <button type="button" class="btn btn-default dropdown-toggle dropdown-country" data-toggle="dropdown">
+	                    {{filter.country.country_name}} <span class="caret"></span>
+	                </button>
+	                <ul class="dropdown-menu" role="menu">
+	                    <li ng-click="filterCountry({country_name:'All Country', country_id:''})"><a>All country</a></li>
+	                    <li ng-repeat="country in countries" ng-click="filterCountry(country)"><a>{{country.country_name}}</a></li>
+	                </ul>
+	            </div>
+            </div>
+        </div>
+        <div class="new-row advance-row">
+            <div class="btn-group">
+                <label>Hashtag</label>
+                <input search-input type="text" class="form-control" ng-model="filter.hashtag" />
+            </div>
+
+            <div class="btn-group">
+                <label>Email address</label>
+                <input search-input type="text" class="form-control" ng-model="filter.email" />
+            </div>
+            <div class="btn-group btn-group-search">
+                <button class="btn btn-danger" ng-click="search()"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+            <div class="btn-group btn-group-search">
+                <button class="btn btn-default" ng-click="reset()"><span class="glyphicon glyphicon-repeat"></span></button>
+            </div>
+        </div>
+		<div class="clear"></div>
+	</div>
+	<ul node class="nodes-list {{hideList}}">
+	    <li nodeli ng-repeat="node in nodes" title="{{node.description}}" class="status-{{node.status}}">
+	        <div class="image">
+		        <img ng-src="{{node.file | thumbnail}}" width="200" height="200" />
+		        <div class="black-overlay"></div>
+                <div class="item-loading" ng-show="node.itemLoading"></div>
+		        <a href="javascript:void(0)" class="switch switch-{{node.status}}" ng-click="updateStatus(node)"></a>
+		        <div ng-show="node.flagcount" class="flag flag{{node.flagcount}}">Flagged: {{node.flagcount}}</div>
+	        </div>
+	        <div class="type icon-{{node.type}}">{{node.type}}</div>
+	        <div class="user">
+	            <div class="avatar"><img ng-src="{{node.user.avatar | avatar}}" width="40" height="40" /></div>
+	            <div class="date">{{node.datetime*1000 | date:'MMM d, y HH:mm a'}}</div>
+	            <div class="name"><strong>{{node.user.firstname}} {{node.user.lastname}}</strong></div>
+	        </div>
+	        <div class="clear"></div>
+	        <a href="../../#/nid/{{node.nid}}" class="open" target="_blank">Open</a>
+	        <div class="clear"></div>
+	    </li>
+	</ul>
+	<div class="clear"></div>
+	<div class="list-no-result" ng-show="noResult">No results under this filter.</div>
+	<div class="list-loading" ng-show="hideList"></div>
+
+    <div class="pager-wrap" ng-show="bigTotalItems">
+        <pagination on-select-page="pageChanged(page)" total-items="bigTotalItems" items-per-page="itemsPerPage" page="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages"></pagination>
+    </div>
+
+</div>

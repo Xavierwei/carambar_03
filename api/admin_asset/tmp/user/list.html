@@ -1,0 +1,16 @@
+<ul class="users-list">
+    <li ng-repeat="user in users" ng-class="user.status">
+        <div class="avatar"><img ng-src="{{user.avatar}}" width="40" height="40" /></div>
+        <div class="user-info">
+            <div class="name"><strong>{{user.firstname}} {{user.lastname}}</strong></div>
+            <div class="country">{{user.country.country_name}}</div>
+            <div class="email">{{user.company_email}}</div>
+            <div class="email">{{user.personal_email}}</div>
+        </div>
+        <div class="clear"></div>
+        <div class="btns">
+            <a class="btn btn-default btn-xs" href="#/user/edit/{{user.uid}}">Edit</a>
+            <a class="btn btn-default btn-xs" href="javascript:void(0)" ng-click="delete(user)">Delete</a>
+        </div>
+    </li>
+</ul>

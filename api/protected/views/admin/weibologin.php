@@ -1,0 +1,1 @@
+<a style="background:#DC0000;display:block;width:400px;padding: 10px 20px;color:#fff;" target="_blank" href="<?php echo $weiboUrl;?>">The weibo token is expired, the fetch function stopped, you need login weibo using Avene account again!</a>

@@ -1,0 +1,526 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenUpload\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 1.6.4\n"
+"Language: fr\n"
+
+msgid "CONNECT"
+msgstr "Se connecter"
+
+msgid "POST_A_PHOTO"
+msgstr "Poster une photo"
+
+msgid "POST_A_VIDEO"
+msgstr "Poster une vidéo"
+
+msgid "RECENT"
+msgstr "Récent"
+
+msgid "POPULAR"
+msgstr "Populaire"
+
+msgid "RANDOM"
+msgstr "Aléatoire"
+
+msgid "PHOTO"
+msgstr "Photo"
+
+msgid "VIDEO"
+msgstr "Vidéo"
+
+msgid "All"
+msgstr "Tout"
+
+msgid "RESULTS"
+msgstr "Résultats"
+
+msgid "CANCEL"
+msgstr "Annuler"
+
+msgid "CONFIRM"
+msgstr "Confirmer"
+
+msgid "CONTENT_OF_THE_DAY"
+msgstr "Contenu du jour"
+
+msgid "CONTENT_OF_THE_MONTH"
+msgstr "Contenu du mois"
+
+msgid "LOGOUT"
+msgstr "Déconnexion"
+
+msgid "HASHTAG_TIP"
+msgstr ""
+"Le <span>HASHTAG</span> (mot dièse) est un mot clé précédé du signe # qui "
+"permet d’identifier un contenu lors de sa création, ou de le rechercher."
+
+msgid "HASHTAG_EXAMPLES"
+msgstr "Exemples : #espritd’équipe #sociétégénérale #olympiades"
+
+msgid "REPORT_THIS"
+msgstr "ÊTES-VOUS SÛR DE VOULOIR SIGNALER CE "
+
+msgid "DELETE_THIS"
+msgstr "ÊTES-VOUS SÛR DE VOULOIR SUPPRIMER CE "
+
+msgid "UPLOAD"
+msgstr "Télécharger"
+
+msgid "PHOTO_FORMATE"
+msgstr "Votre photo doit être au format JPG, PNG ou GIF"
+
+msgid "PHOTO_RESOLUTION"
+msgstr ""
+"Pour une résolution optimale, merci d’utiliser un format d’au moins 450x450 "
+"px"
+
+msgid "PHOTO_SIZE"
+msgstr "La taille de votre fichier ne doit pas dépasser 5MB"
+
+msgid "VIDEO_FORMATE"
+msgstr "Votre vidéo doit être au format MOV, AVI, MPEG, MP4, WMV ou 3GP"
+
+msgid "VIDEO_RESOLUTION"
+msgstr ""
+"Pour une résolution optimale, merci d’utiliser un format d’au moins 400x400 "
+"px"
+
+msgid "VIDEO_SIZE"
+msgstr "La taille de votre fichier ne doit pas dépasser 7MB"
+
+msgid "SELECT"
+msgstr "Choisir un fichier"
+
+msgid "SELECT_AGAIN"
+msgstr "Sélectionnez à nouveau"
+
+msgid "UPLOAD_IN_PROGRESS"
+msgstr "Téléchargement en cours…"
+
+msgid "ENTER_DESCRIPTION"
+msgstr ""
+"Entrez votre description ici avec les hashtags correspondants # (Ex: "
+"#Meeting très productif à la #SG)"
+
+msgid "UPLOAD_TERM"
+msgstr ""
+"Je déclare posséder la totalité des droits sur cette image/vidéo et avoir "
+"obtenu l’autorisation des personnes ainsi que des responsables des biens y "
+"figurant.J’accepte les conditions d’utilisations de ce site."
+
+msgid "PUBLISH"
+msgstr "Publier"
+
+msgid "YOU_PUBLISHED"
+msgstr "Vous avez publié votre"
+
+msgid "THANKS_COMMENT"
+msgstr "Merci pour votre commentaire!"
+
+msgid "LOGIN_BEFORE_COMMENT"
+msgstr "Vous devez vous connecter avant de poster un commentaire."
+
+msgid "LOGIN_BEFORE_LIKE"
+msgstr "Vous devez vous connecter avant de liker."
+
+msgid "COMMENTS"
+msgstr "commentaires"
+
+msgid "LOADING_COMMENTS"
+msgstr "Chargement des commentaires"
+
+msgid "COMMENT"
+msgstr "commentaire"
+
+msgid "LIKE"
+msgstr "like"
+
+msgid "LIKES"
+msgstr "likes"
+
+msgid "UNLIKE"
+msgstr "unlike"
+
+msgid "SUBMIT"
+msgstr "Soumettre"
+
+msgid "WRITE_YOUR_COMMENT"
+msgstr "écrire votre commentaire …"
+
+msgid "FIRST_COMMENT"
+msgstr "Soyez le premier à commenter ce contenu"
+
+msgid "PHOTOS_POSTED"
+msgstr "Photos postées"
+
+msgid "PHOTO_POSTED"
+msgstr "Photo postée"
+
+msgid "VIDEOS_POSTED"
+msgstr "Vidéos postées"
+
+msgid "VIDEO_POSTED"
+msgstr "Vidéo postée"
+
+msgid "CONTENTS_OF_DAY"
+msgstr "Contenus du jour"
+
+msgid "CONTENTS_OF_MONTH"
+msgstr "Contenus du mois"
+
+msgid "EDIT_PROFILE"
+msgstr "éditer le profil"
+
+msgid "CHOOSE_FILE"
+msgstr "choisissez un fichier"
+
+msgid "EMAIL_PROFESSIONNEL"
+msgstr "E-mail professionnel"
+
+msgid "EMAIL_PERSONNEL"
+msgstr "E-mail personnel"
+
+msgid "COMPANY_EMAIL_TERM"
+msgstr ""
+"Si vous souhaitez envoyer du contenu sur le Wall avec une adresse email "
+"autre que votre e-mail professionnel"
+
+msgid "PERSONAL_EMAIL_TERM"
+msgstr ""
+"Je déclare posséder la totalité des droits sur cette image/vidéo et avoir "
+"obtenu l’autorisation des personnes ainsi que des responsables des biens y "
+"figurant.J’accepte les conditions d’utilisations de ce site."
+
+msgid "PERSONAL_EMAIL_INFO"
+msgstr ""
+"Ces informations sont nécessaires pour permettre l'envoi d'image/vidéo via "
+"un mail autre que votre mail professionnel. Vous disposez d’un droit "
+"d'accès, de rectification aux données à caractère personnel vous concernant "
+"ainsi qu’un droit d'opposition aux traitements de vos données, sous réserve "
+"de justifier d’un motif légitime. Pour plus d’information "
+
+msgid "CLICK_HERE"
+msgstr "cliquez ici"
+
+msgid "OPTIONAL"
+msgstr "optionnel"
+
+msgid "COUNTRY"
+msgstr "Pays"
+
+msgid "SELECT_YOUR_COUNTRY"
+msgstr "sélectionner votre pays"
+
+msgid "SAVE"
+msgstr "sauvegarder"
+
+msgid "NO_RESULTS_THIS_SEARCH"
+msgstr "aucun résultat pour cette recherche"
+
+msgid "NO_RESULTS"
+msgstr "aucun résultat"
+
+msgid "POPULAR_HASHTAGS"
+msgstr "Les #hashtags les plus populaires"
+
+msgid "ERROR_CONDITION"
+msgstr "S'il vous plaît vérifier l'état"
+
+msgid "ERROR_EMAIL"
+msgstr "S'il vous plaît entrer e-mail correcte."
+
+msgid "ERROR_EXIST_EMAIL"
+msgstr "Votre adresse e-mail déjà utilisée."
+
+msgid "ERROR_WRITE_DESCRIPTION"
+msgstr "S'il vous plaît écrivez une description."
+
+msgid "ERROR_DESCRIPTION_LIMITED"
+msgstr "La description est limitée à 140 caractères."
+
+msgid "ERROR_COMMENT_LIMITED"
+msgstr "The comment is limited to 140 characters."
+
+msgid "ERROR_DESCRIPTION_ILLEGAL"
+msgstr "Le hashtag peut ne peut avoir des caractères illégaux."
+
+msgid "ERROR_WRONG_USERNAME_PASSWORD"
+msgstr "Identifiants incorrects."
+
+msgid "DAY"
+msgstr "jour"
+
+msgid "JANUARY"
+msgstr "Janvier"
+
+msgid "FEBRUARY"
+msgstr "Février"
+
+msgid "MARCH"
+msgstr "Mars"
+
+msgid "APRIL"
+msgstr "Avril"
+
+msgid "MAY"
+msgstr "Mai"
+
+msgid "JUNE"
+msgstr "Juin"
+
+msgid "JULY"
+msgstr "Juillet"
+
+msgid "AUGUST"
+msgstr "Août"
+
+msgid "SEPTEMBER"
+msgstr "Septembre"
+
+msgid "OCTOBER"
+msgstr "Octobre"
+
+msgid "NOVEMBER"
+msgstr "Novembre"
+
+msgid "DECEMBER"
+msgstr "Décembre"
+
+msgid "ALBANIA"
+msgstr "Albanie"
+
+msgid "ALGERIA"
+msgstr "Algérie"
+
+msgid "ARABIA"
+msgstr "Arabia"
+
+msgid "ARGENTINA"
+msgstr "Argentine"
+
+msgid "AUSTRALIA"
+msgstr "Australie"
+
+msgid "AUSTRIA"
+msgstr "Autriche"
+
+msgid "BAHAMAS"
+msgstr "Bahamas"
+
+msgid "BELGIUM"
+msgstr "Belgique"
+
+msgid "BENIN"
+msgstr "Bénin"
+
+msgid "BRAZIL"
+msgstr "Brésil"
+
+msgid "BULGARIA"
+msgstr "Bulgarie"
+
+msgid "BURKINA_FASO"
+msgstr "Burkina Faso"
+
+msgid "CANADA"
+msgstr "Canada"
+
+msgid "CHAD"
+msgstr "Tchad"
+
+msgid "CHILE"
+msgstr "Chili"
+
+msgid "CHINA"
+msgstr "Chine"
+
+msgid "CROATIA"
+msgstr "Croatie"
+
+msgid "CYPRUS"
+msgstr "Chypre"
+
+msgid "CZECH_REPUBLIC"
+msgstr "République tchèque"
+
+msgid "DENMARK"
+msgstr "Danemark"
+
+msgid "EGYPT"
+msgstr "Egypte"
+
+msgid "EQUATORIAL_GUINEA"
+msgstr "Guinée équatoriale"
+
+msgid "ESTONIA"
+msgstr "Etats-Unis"
+
+msgid "FINLAND"
+msgstr "Finlande"
+
+msgid "FRANCE"
+msgstr "France"
+
+msgid "GEORGIA"
+msgstr "Géorgie"
+
+msgid "GERMANY"
+msgstr "Allemagne"
+
+msgid "GHANA"
+msgstr "Ghana"
+
+msgid "GREECE"
+msgstr "Grèce"
+
+msgid "GUINEA"
+msgstr "Guinée"
+
+msgid "HUNGARY"
+msgstr "Hongrie"
+
+msgid "INDIA"
+msgstr "Inde"
+
+msgid "IRELAND"
+msgstr "Irlande"
+
+msgid "ITALY"
+msgstr "Italie"
+
+msgid "JAPAN"
+msgstr "Japon"
+
+msgid "JORDAN"
+msgstr "Jordanie"
+
+msgid "KOREA"
+msgstr "Corée"
+
+msgid "LATVIA"
+msgstr "Lettonie"
+
+msgid "LEBANON"
+msgstr "Liban"
+
+msgid "LITHUANIA"
+msgstr "Lituanie"
+
+msgid "LUXEMBOURG"
+msgstr "Luxembourg"
+
+msgid "MACEDONIA"
+msgstr "Macédoine"
+
+msgid "MADAGASCAR"
+msgstr "Madagascar"
+
+msgid "MAURITANIA"
+msgstr "Mauritanie"
+
+msgid "MEXICO"
+msgstr "Mexique"
+
+msgid "MOLDOVA"
+msgstr "République de Moldavie"
+
+msgid "MOROCCO"
+msgstr "Maroc"
+
+msgid "NETHERLANDS"
+msgstr "Pays-Bas"
+
+msgid "NEW_CALEDONIA"
+msgstr "Nouvelle-Calédonie"
+
+msgid "NORWAY"
+msgstr "Norvège"
+
+msgid "PANAMA"
+msgstr "Panama"
+
+msgid "PERU"
+msgstr "Pérou"
+
+msgid "POLAND"
+msgstr "Pologne"
+
+msgid "PORTUGAL"
+msgstr "Portugal"
+
+msgid "REPUBLIC_OF_IVORY_COAST"
+msgstr "Cote d'Ivoire"
+
+msgid "REPUBLIC_OF_MONTENEGRO"
+msgstr "Montenegro"
+
+msgid "REUNION"
+msgstr "Réunion, La"
+
+msgid "ROMANIA"
+msgstr "Roumanie"
+
+msgid "RUSSIAN_FEDERATION"
+msgstr "Russie"
+
+msgid "SAUDI"
+msgstr "Arabie Saoudite"
+
+msgid "SENEGAL"
+msgstr "Sénégal"
+
+msgid "SERBIA"
+msgstr "Serbie"
+
+msgid "SINGAPORE"
+msgstr "Singapour"
+
+msgid "SLOVAKIA"
+msgstr "Slovaquie"
+
+msgid "SLOVENIA"
+msgstr "Slovénie"
+
+msgid "SOUTH_AFRICA"
+msgstr "Afrique du Sud"
+
+msgid "SPAIN"
+msgstr "Espagne"
+
+msgid "SWEDEN"
+msgstr "Suède"
+
+msgid "SWITZERLAND"
+msgstr "Suisse"
+
+msgid "TUNISIA"
+msgstr "Tunisie"
+
+msgid "TURKEY"
+msgstr "Turquie"
+
+msgid "UK"
+msgstr "Royaume-Uni"
+
+msgid "UKRAINE"
+msgstr "Ukraine"
+
+msgid "UNITED_ARAB_EMIRATES"
+msgstr "Emirats Arabes Units"
+
+msgid "URUGUAY"
+msgstr "Uruguay"
+
+msgid "USA"
+msgstr "Etats-Unis"
+
+msgid "VIETNAM"
+msgstr "Vietnam"
