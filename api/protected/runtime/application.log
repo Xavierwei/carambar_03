@@ -395,3 +395,376 @@ REQUEST_URI=/carambar/api/twitter/fetch
 in /Applications/MAMP/htdocs/carambar/api/protected/models/NodeAR.php (678)
 in /Applications/MAMP/htdocs/carambar/api/protected/controllers/TwitterController.php (53)
 in /Applications/MAMP/htdocs/carambar/api/index.php (27)
+2014/03/06 14:51:25 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/2014/3/4/v298_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 14:51:25 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/2014/3/4/v299_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 14:51:32 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/v168_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 14:51:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('twitter')
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/api/twitter/
+---
+2014/03/06 14:52:16 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/api/twitter_sdk/twitteroauth.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/twitter/login
+in /Applications/MAMP/htdocs/carambar_03/api/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/TwitterController.php (11)
+in /Applications/MAMP/htdocs/carambar_03/api/index.php (27)
+2014/03/06 14:55:46 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/2014/3/4/v299_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 14:55:46 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/2014/3/4/v298_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 14:55:52 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/2014/3/4/v299_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 14:55:52 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/2014/3/4/v298_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 14:56:01 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/v168_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 15:06:57 [error] [exception.CException] exception 'CException' with message 'Property "TwitterController.twitter" is not defined.' in /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/TwitterController.php(14): CComponent->__get('twitter')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/actions/CInlineAction.php(49): TwitterController->actionLogin()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('twitter/login')
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CApplication->run()
+#9 {main}
+REQUEST_URI=/carambar_03/api/twitter/login
+---
+2014/03/06 15:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/login
+---
+2014/03/06 15:37:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/login
+---
+2014/03/06 15:37:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/login
+---
+2014/03/06 15:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/login
+---
+2014/03/06 15:37:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/login
+---
+2014/03/06 15:37:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/login
+---
+2014/03/06 15:37:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/login
+---
+2014/03/06 15:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/login
+---
+2014/03/06 15:39:02 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/api/twitter_sdk/twitteroauth.php:114)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/api/index.php(27): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/twitter/callback?oauth_token=GmUEHOQPxSN7hNvVAYqEhJCRHUCADnB2AVCmBQ4&oauth_verifier=4ccVYds5ycAtfz8Lq2QUBdDJ1Si1hRTpKVYmY4xTE
+in /Applications/MAMP/htdocs/carambar_03/api/twitter_sdk/twitteroauth.php (114)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/TwitterController.php (24)
+in /Applications/MAMP/htdocs/carambar_03/api/index.php (27)
+2014/03/06 16:06:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "facebook/login".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('facebook/login')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/facebook/login
+---
+2014/03/06 16:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "facebook/login".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('facebook/login')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/facebook/login
+---
+2014/03/06 16:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "facebook".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('facebook')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/api/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/api/facebook
+---
+2014/03/06 16:07:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('facebook')
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar_03/api/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/api/facebook
+---
+2014/03/06 16:19:23 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(32): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/2014/3/4/v299_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 16:19:23 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(32): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/2014/3/4/v298_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 16:33:17 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---
+2014/03/06 16:34:00 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---
+2014/03/06 16:34:30 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---
+2014/03/06 16:41:37 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---
+2014/03/06 17:12:11 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---
+2014/03/06 17:12:14 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---
+2014/03/06 17:12:18 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---
+2014/03/06 17:12:30 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(32): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/2014/3/4/v298_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 17:12:30 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(417): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/api/protected/models/NodeAR.php(494): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/api/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/api/index.php(32): CWebApplication->run()
+REQUEST_URI=/carambar_03/api/uploads/2014/3/4/v299_250_250.jpg
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/api/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/06 17:12:37 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---
+2014/03/06 17:12:49 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---
+2014/03/06 17:12:52 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---
+2014/03/06 17:13:02 [error] [exception.FacebookApiException] OAuthException: (#200) The user hasn't authorized the application to perform this action
+REQUEST_URI=/carambar_03/api/facebook/post
+---

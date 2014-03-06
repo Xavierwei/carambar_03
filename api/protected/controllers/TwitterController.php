@@ -11,7 +11,7 @@ class TwitterController extends Controller {
 		$temporary_credentials = $twitter->getRequestToken(TWITTER_CALLBACK_URL);
 		$_SESSION['oauth_token'] = $temporary_credentials['oauth_token'];
 		$_SESSION['oauth_token_secret'] = $temporary_credentials['oauth_token_secret'];
-		$redirect_url = $this->twitter->getAuthorizeURL($temporary_credentials);
+		$redirect_url = $twitter->getAuthorizeURL($temporary_credentials);
 		echo "<a href='{$redirect_url}'>Login with Twitter</a>";
 	}
 
@@ -20,19 +20,22 @@ class TwitterController extends Controller {
 	 * Store the account OAuthToken
 	 */
 	public function actionCallback() {
-		$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY, $_SESSION['oauth_token'],$_SESSION['oauth_token_secret']);
+		$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY, $_SESSION['oauth_token'], $_SESSION['oauth_token_secret']);
 		$token_credentials = $twitter->getAccessToken($_REQUEST['oauth_verifier']);
+		// if the account is in oauth table, update the token
 		$oauth = OauthAR::model()->findByAttributes(array('media'=>$this::MEDIA));
-		if(!$oauth) {
-			$oauth = new OauthAR();
+		if($oauth) {
+			$oauth->media = $this::MEDIA;
+			$oauth->username = $token_credentials['screen_name'];
+			$oauth->token = $token_credentials['oauth_token'];
+			$oauth->token_secret = $token_credentials['oauth_token_secret'];
+			if($oauth->save()) {
+				echo 'save';
+			}
 		}
-		$oauth->media = $this::MEDIA;
-		$oauth->username = $token_credentials['screen_name'];
-		$oauth->token = $token_credentials['oauth_token'];
-		$oauth->token_secret = $token_credentials['oauth_token_secret'];
-		if($oauth->save()) {
-			echo 'success';
-		}
+		Yii::app()->session['oauth_token'] = $token_credentials['oauth_token'];
+		Yii::app()->session['oauth_token_secret'] = $token_credentials['oauth_token_secret'];
+		echo 'success';
 	}
 
 
@@ -68,6 +71,18 @@ class TwitterController extends Controller {
 		$url = 'https://www.youtube.com/watch?v=iQQ35CiF1vk&feature=youtu.be';
 		$media = NodeAR::model()->getVideoThumbnail($url, 'youtube');
 		print $media;
+	}
+
+
+	/**
+	 * POST twitter
+	 */
+	public function actionPost(){
+		$oauth_token = Yii::app()->session['oauth_token'];
+		$oauth_token_secret = Yii::app()->session['oauth_token_secret'];
+		$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY, $oauth_token, $oauth_token_secret);
+		$results = $twitter->post('statuses/update', array('status'=>'test it'));
+		print_r($results);
 	}
 
 

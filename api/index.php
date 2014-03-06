@@ -14,14 +14,19 @@ $simplesamlphp = ROOT."/simplesamlphp";
 include_once( $simplesamlphp.'/lib/_autoload.php' );
 
 // require instagram sdk
-$instagram_sdk = dirname(__FILE__)."/instagram_sdk";
+$instagram_sdk = dirname(__FILE__)."/sdk/instagram_sdk";
 include_once( $instagram_sdk.'/config.php' );
 include_once( $instagram_sdk.'/instagram.class.php' );
 
 // require twitter sdk
-$twitter_sdk = dirname(__FILE__)."/twitter_sdk";
+$twitter_sdk = dirname(__FILE__)."/sdk/twitter_sdk";
 include_once( $twitter_sdk.'/config.php' );
 include_once( $twitter_sdk.'/twitteroauth.php' );
+
+// require facebook sdk
+$twitter_sdk = dirname(__FILE__)."/sdk/facebook_sdk";
+include_once( $twitter_sdk.'/config.php' );
+include_once( $twitter_sdk.'/facebook.php' );
 
 require_once($yii);
 Yii::createWebApplication($config)->run();
