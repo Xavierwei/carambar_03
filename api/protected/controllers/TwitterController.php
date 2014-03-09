@@ -7,12 +7,17 @@ class TwitterController extends Controller {
 	 * Get Instagram login URL
 	 */
 	public function actionLogin() {
-		$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY);
-		$temporary_credentials = $twitter->getRequestToken(TWITTER_CALLBACK_URL);
-		$_SESSION['oauth_token'] = $temporary_credentials['oauth_token'];
-		$_SESSION['oauth_token_secret'] = $temporary_credentials['oauth_token_secret'];
-		$redirect_url = $twitter->getAuthorizeURL($temporary_credentials);
-		echo "<a href='{$redirect_url}'>Login with Twitter</a>";
+		if(!isset(Yii::app()->session['oauth_token'])) {
+			$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY);
+			$temporary_credentials = $twitter->getRequestToken(TWITTER_CALLBACK_URL);
+			Yii::app()->session['tmp_oauth_token'] = $temporary_credentials['oauth_token'];
+			Yii::app()->session['tmp_oauth_token_secret'] = $temporary_credentials['oauth_token_secret'];
+			$redirect_url = $twitter->getAuthorizeURL($temporary_credentials);
+			return $this->responseJSON($redirect_url, "success");
+		}
+		else {
+			return $this->responseJSON('login', "success");
+		}
 	}
 
 
@@ -20,10 +25,10 @@ class TwitterController extends Controller {
 	 * Store the account OAuthToken
 	 */
 	public function actionCallback() {
-		$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY, $_SESSION['oauth_token'], $_SESSION['oauth_token_secret']);
+		$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY, Yii::app()->session['tmp_oauth_token'], Yii::app()->session['tmp_oauth_token_secret']);
 		$token_credentials = $twitter->getAccessToken($_REQUEST['oauth_verifier']);
 		// if the account is in oauth table, update the token
-		$oauth = OauthAR::model()->findByAttributes(array('media'=>$this::MEDIA));
+		$oauth = OauthAR::model()->findByAttributes(array('media'=>$this::MEDIA, 'username'=>$token_credentials['screen_name']));
 		if($oauth) {
 			$oauth->media = $this::MEDIA;
 			$oauth->username = $token_credentials['screen_name'];
@@ -35,7 +40,26 @@ class TwitterController extends Controller {
 		}
 		Yii::app()->session['oauth_token'] = $token_credentials['oauth_token'];
 		Yii::app()->session['oauth_token_secret'] = $token_credentials['oauth_token_secret'];
-		echo 'success';
+
+
+
+		// Create the new user if user doesn't exist in database
+		if( !$user = UserAR::model()->findByAttributes(array('name'=>'t_'.$token_credentials['screen_name'])) ) {
+			$user = UserAR::model()->createSNSLogin('t_'.$token_credentials['screen_name'], $token_credentials['user_id']);
+		}
+
+		// Identity local site user data
+		$userIdentify = new UserIdentity($user->name, md5($token_credentials['user_id']));
+
+		// Save user status in session
+		if (!$userIdentify->authenticate()) {
+		}
+		else {
+			Yii::app()->user->login($userIdentify);
+			$this->redirect('../../index');
+		}
+
+
 	}
 
 
@@ -47,17 +71,41 @@ class TwitterController extends Controller {
 		$oauth_token = $oauth->token;
 		$oauth_token_secret = $oauth->token_secret;
 		$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY, $oauth_token, $oauth_token_secret);
-		$results = $twitter->get('search/tweets', array('q'=>'dailymotion', 'count'=>100, 'result_type'=>'recent'));
+		$results = $twitter->get('search/tweets', array('q'=>'9263', 'count'=>50, 'result_type'=>'recent'));
+
 		foreach($results->statuses as $item) {
+			$snsVideoLink = $snsPicture = $snsDatetime = $snsDescription = $snsId = $snsLocation = $snsScreenName = NULL;
 			if(isset($item->entities->urls[0]->expanded_url)) {
-				$url = $item->entities->urls[0]->expanded_url;
-				$media = NodeAR::model()->getVideoSource($url);
-				if($media) {
-					$imageUrl = NodeAR::model()->getVideoThumbnail($url, $media);
-					echo "<img src='{$imageUrl}' />";
-				}
+				$snsVideoLink = $item->entities->urls[0]->expanded_url;
 			}
+
+			if(isset($item->entities->media[0]->media_url)) {
+				$snsPicture =$item->entities->media[0]->media_url;
+			}
+
+			if(isset($item->created_at)) {
+				$snsDatetime = strtotime($item->created_at);
+			}
+
+			if(isset($item->text)) {
+				$snsDescription = $item->text;
+			}
+
+			if(isset($item->id)) {
+				$snsId = $item->id;
+			}
+
+			if(isset($item->user->location)) {
+				$snsLocation = $item->user->location;
+			}
+
+			if(isset($item->user->screen_name)) {
+				$snsScreenName = $item->user->screen_name;
+			}
+
+			NodeAR::model()->saveNode($snsVideoLink, $snsPicture, $snsDatetime, $snsDescription, $snsId, $snsScreenName, $snsLocation, $this::MEDIA);
 		}
+		$this->cleanAllCache();
 	}
 
 
@@ -78,11 +126,22 @@ class TwitterController extends Controller {
 	 * POST twitter
 	 */
 	public function actionPost(){
+		$request = Yii::app()->getRequest();
+		$content = htmlspecialchars($request->getPost("content"));
+		if(strlen($content) == 0) {
+			return $this->responseError(702);
+		}
+
+		if(strlen($content) > 140) {
+			return $this->responseError(703);
+		}
+
 		$oauth_token = Yii::app()->session['oauth_token'];
 		$oauth_token_secret = Yii::app()->session['oauth_token_secret'];
 		$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY, $oauth_token, $oauth_token_secret);
-		$results = $twitter->post('statuses/update', array('status'=>'test it'));
-		print_r($results);
+		$results = $twitter->post('statuses/update', array('status'=>$content));
+
+		return $this->responseJSON($results, "success");
 	}
 
 

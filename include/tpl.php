@@ -339,7 +339,11 @@
 <script type="text/tpl" id="node-item-template">
 	<div data-a="node" data-d="nid={{nid}}" class="main-item pic-item main-item-{{nid}}">
 		<a>
+			{{#if image}}
 			<img src="./api{{image}}" width="180" />
+			{{else}}
+			{{description}}
+			{{/if}}
 			<div class="item-info" >
         <div class="item-info-wrap">
           <div class="item-time"><span class="item-timeicon">{{formatDate}}</span></div>

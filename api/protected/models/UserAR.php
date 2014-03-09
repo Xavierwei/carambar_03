@@ -91,16 +91,13 @@ class UserAR extends CActiveRecord{
 	}
 
 
-	public function createSAMLRegisterTest($attributes) {
+	public function createSNSLogin($screen_name, $uid) {
 		$newUser = new UserAR();
 		$newUser->datetime = time();
-		$newUser->name = $attributes['uid'][0];
-		$newUser->company_email = $attributes['eduPersonPrincipalName'][0];
-		$newUser->sso_id = md5($attributes['uid'][0]);
-		$newUser->firstname = $attributes['givenName'][0];
-		$newUser->lastname = $attributes['sn'][0];
+		$newUser->name = $screen_name;
+		$newUser->sso_id = md5($uid);
 		$newUser->role = self::ROLE_AUTHEN;
-		$newUser->country_id = 30;
+		$newUser->country_id = 0;
 
 		if ($newUser->validate()) {
 			$newUser->save();

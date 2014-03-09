@@ -19,67 +19,80 @@ class FacebookController extends Controller {
 	 */
 	public function actionLogin() {
 		$user = $this->facebook->getUser();
-		print_r($user);
 		if(!$user) {
 			$loginUrl = $this->facebook->getLoginUrl();
-			echo "<a href='{$loginUrl}'>Login with Facebook</a>";
+			return $this->responseJSON($loginUrl, "success");
 		}
 		else {
-			$user_profile = $this->facebook->api('/me');
-			print_r($user_profile);
+			return $this->responseJSON('login', "success");
 		}
 
 	}
 
 
-
 	/**
-	 * Fetch the media
+	 * Fetch facebook
 	 */
 	public function actionFetch(){
 		$oauth = OauthAR::model()->findByAttributes(array('media'=>$this::MEDIA));
 		$oauth_token = $oauth->token;
-		$oauth_token_secret = $oauth->token_secret;
-		$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY, $oauth_token, $oauth_token_secret);
-		$results = $twitter->get('search/tweets', array('q'=>'dailymotion', 'count'=>100, 'result_type'=>'recent'));
-		foreach($results->statuses as $item) {
-			if(isset($item->entities->urls[0]->expanded_url)) {
-				$url = $item->entities->urls[0]->expanded_url;
-				$media = NodeAR::model()->getVideoSource($url);
-				if($media) {
-					$imageUrl = NodeAR::model()->getVideoThumbnail($url, $media);
-					echo "<img src='{$imageUrl}' />";
-				}
+		$this->facebook->setAccessToken($oauth_token);
+		$results = $this->facebook->api('/search', 'GET',
+			array(
+				'q' => 'snow'
+			));
+
+
+		foreach($results['data'] as $item) {
+			$snsVideoLink = $snsPicture = $snsDatetime = $snsDescription = $snsId = $snsLocation = $snsScreenName = NULL;
+			if(isset($item['link'])) {
+				$snsVideoLink = $item['link'];
 			}
+
+			if(isset($item['picture'])) {
+				$snsPicture = $item['picture'];
+			}
+
+			if(isset($item['created_time'])) {
+				$snsDatetime = strtotime($item['created_time']);
+			}
+
+			if(isset($item['story']) || isset($item['message'])) {
+				$snsDescription = isset($item['story']) ? $item['story'] : $item['message'];
+			}
+
+			if(isset($item['id'])) {
+				$snsId = $item['id'];
+			}
+
+			if(isset($item['from']['name'])) {
+				$snsScreenName = $item['from']['name'];
+			}
+
+			NodeAR::model()->saveNode($snsVideoLink, $snsPicture, $snsDatetime, $snsDescription, $snsId, $snsScreenName, $snsLocation, $this::MEDIA);
 		}
-	}
-
-
-	public function actionCheckVideo(){
-		$url = 'https://www.youtube.com/watch?v=iQQ35CiF1vk&feature=youtu.be';
-		$media = NodeAR::model()->getVideoSource($url);
-		print $media;
-	}
-
-	public function actionGetThumbnail(){
-		$url = 'https://www.youtube.com/watch?v=iQQ35CiF1vk&feature=youtu.be';
-		$media = NodeAR::model()->getVideoThumbnail($url, 'youtube');
-		print $media;
+		$this->cleanAllCache();
 	}
 
 
 	/**
-	 * POST twitter
+	 * POST Facebook
 	 */
 	public function actionPost(){
-		$ret_obj = $this->facebook->api('/me/feed', 'POST',
+		$request = Yii::app()->getRequest();
+		$content = htmlspecialchars($request->getPost("content"));
+		if(strlen($content) == 0) {
+			return $this->responseError(702);
+		}
+
+		if(strlen($content) > 140) {
+			return $this->responseError(703);
+		}
+		$results = $this->facebook->api('/me/feed', 'POST',
 			array(
-				'link' => 'www.example.com',
-				'message' => 'Posting with the PHP SDK!'
+				'message' => $content
 			));
 
-		print_r($ret_obj);
+		return $this->responseJSON($results, "success");
 	}
-
-
 }

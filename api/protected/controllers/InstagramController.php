@@ -55,11 +55,45 @@ class InstagramController extends Controller {
 		$this->instagram->setAccessToken($oauthData);
 
 		$tag = Yii::app()->params['tag'];
-		$media = $this->instagram->getTagMedia($tag);
-		foreach ($media->data as $entry) {
-			echo "<img src=\"{$entry->images->thumbnail->url}\">";
+		$media = $this->instagram->getTagMedia($tag, 50);
+		foreach ($media->data as $item) {
+			$snsVideoLink = $snsPicture = $snsDatetime = $snsDescription = $snsId = $snsLocation = $snsScreenName = NULL;
+			if(isset($item->videos->standard_resolution->url)) {
+				$snsVideoLink = $item->videos->standard_resolution->url;
+			}
+
+			if(isset($item->images->standard_resolution->url)) {
+				$snsPicture = $item->images->standard_resolution->url;
+			}
+
+			if(isset($item->created_time)) {
+				$snsDatetime = $item->created_time;
+			}
+
+			if(isset($item->caption->text)) {
+				$snsDescription = $item->caption->text;
+			}
+
+			if(isset($item->id)) {
+				$snsId = $item->id;
+			}
+
+			if(isset($item->location->latitude) && isset($item->location->longitude)) {
+				$snsLocation = NodeAR::model()->actionGetLocation($item->location->latitude, $item->location->longitude);
+			}
+
+			if(isset($item->user->username)) {
+				$snsScreenName = $item->user->username;
+			}
+
+			if(NodeAR::model()->uniqueMid($snsId)) {
+				NodeAR::model()->saveNode($snsVideoLink, $snsPicture, $snsDatetime, $snsDescription, $snsId, $snsScreenName, $snsLocation, $this::MEDIA);
+			}
 		}
+		$this->cleanAllCache();
 	}
+
+
 
 
 }

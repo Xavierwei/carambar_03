@@ -43,8 +43,9 @@ return array(
 			// Provide a custom name for the session id to differentiate it
 			// from the default PHPSESSID
 			// Cannot use dots in the session id :(
-			'sessionName' => 'sg_session_id',
-			'timeout' => 60*60*24
+			'autoStart' => true,
+			'timeout' => 1440,
+			'cookieMode' => 'only',
 		),
 		// uncomment the following to enable URLs in path-format
 		'urlManager'=>array(

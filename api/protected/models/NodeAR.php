@@ -51,13 +51,21 @@ class NodeAR extends CActiveRecord{
 
 	public function rules() {
 		return array(
-		    array("uid, file, country_id, type", "required"),
-		    array("uid", "uidExist"),
-		    array("country_id", "countryExist"),
-		    array("created , type, datetime, status, description, nid, hashtag, user_liked,user_flagged, like, flag, topday, topmonth", "safe"),
+		    array("type", "required"),
+		    array("created , mid, file, media, screen_name, location, type, datetime, status, description, nid, hashtag, user_liked,user_flagged, like, flag, topday, topmonth, reward, url", "safe"),
 		);
 	}
-  
+
+	public function uniqueMid($attribute, $params = array()) {
+		$count = self::model()->findByAttributes(array("mid" => $attribute));
+		if ($count) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+
 	public function uidExist($attribute, $params = array()) {
 		$uid = $this->{$attribute};
 
@@ -99,16 +107,8 @@ class NodeAR extends CActiveRecord{
 	public function beforeSave() {
 		parent::beforeSave();
 
-		$hashtags = $this->getHashTag();
-		// 在添加时 需要制定一个默认的 status = publichsed
 		if (!$this->{$this->getPrimaryKey()}) {
-		    $this->setAttribute("status", self::PUBLICHSED);
-		    $this->setAttribute("datetime", time());
-		    $this->setAttribute("created", time());
-		}
-		$this->setAttribute("hashtag", serialize($hashtags));
-		foreach($hashtags as $tag) {
-			TagAR::model()->saveTag($tag);
+		    $this->setAttribute("status", self::UNPUBLISHED);
 		}
 
 		return TRUE;
@@ -153,51 +153,53 @@ class NodeAR extends CActiveRecord{
 	}
   
     public function afterSave() {
-		$type = $this->type;
-		if ($type == "photo") {
-				$name = "p". $this->nid;
-		}
-		else {
-				$name = "v". $this->nid;
-		}
 
+//		$type = $this->type;
+//		if ($type == "photo") {
+//				$name = "p". $this->nid;
+//		}
+//		else {
+//				$name = "v". $this->nid;
+//		}
+//
+	    $name = $this->nid;
 		$ext = pathinfo($this->file, PATHINFO_EXTENSION);
 		$newname = $name.'.'.$ext;
 
 		$paths = explode("/", $this->file);
 		$paths[count($paths) - 1] = $newname;
 		$newpath = implode("/", $paths);
-
-		if (file_exists(ROOT.$this->file)) {
+//
+		if (file_exists(ROOT.$this->file) && $ext) {
 			rename(ROOT.$this->file, ROOT. $newpath);
 			// 文件重命名后 修改数据库
 			$this->updateByPk($this->nid, array("file" => $newpath));
 			$this->file = $newpath;
 
-			if($type == 'photo') {
-				$this->makeImageThumbnail(ROOT.$newpath, ROOT.str_replace('.jpg', '_250_250.jpg', $newpath), 250, 250, false);
-				$this->makeImageThumbnail(ROOT.$newpath, ROOT.str_replace('.jpg', '_640_640.jpg', $newpath), 650, 650, false);
-			}
-			else {
-				$newImgPath = str_replace('.mp4', '.jpg', $newpath);
-				$this->makeVideoThumbnail(ROOT.$newImgPath, ROOT.str_replace('.jpg', '_250_250.jpg', $newImgPath), 250, 250, false);
-				$this->makeVideoThumbnail(ROOT.$newImgPath, ROOT.str_replace('.jpg', '_640_640.jpg', $newImgPath), 650, 650, false);
-			}
+//			if($type == 'photo') {
+//				$this->makeImageThumbnail(ROOT.$newpath, ROOT.str_replace('.jpg', '_250_250.jpg', $newpath), 250, 250, false);
+//				$this->makeImageThumbnail(ROOT.$newpath, ROOT.str_replace('.jpg', '_640_640.jpg', $newpath), 650, 650, false);
+//			}
+//			else {
+//				$newImgPath = str_replace('.mp4', '.jpg', $newpath);
+//				$this->makeVideoThumbnail(ROOT.$newImgPath, ROOT.str_replace('.jpg', '_250_250.jpg', $newImgPath), 250, 250, false);
+//				$this->makeVideoThumbnail(ROOT.$newImgPath, ROOT.str_replace('.jpg', '_640_640.jpg', $newImgPath), 650, 650, false);
+//			}
 		}
-
-		// Generate WMV for no flash IE8
-		if ($type == "video") {
-			$topath = ROOT.$newpath;
-			$wmvpath = str_replace('.mp4','.wmv',$topath);
-			exec("ffmpeg -i {$topath} -y -vf {$wmvpath}", $output, $status);
-		}
-		// Load user/country
-		$userAr = new UserAR();
-		$userAr->setAttributes($userAr->getOutputRecordInArray(UserAR::model()->findByPk($this->uid)));
-		$this->user = $userAr;
-
-		$this->country = CountryAR::model()->findByPk($this->country_id);
-
+//
+//		// Generate WMV for no flash IE8
+//		if ($type == "video") {
+//			$topath = ROOT.$newpath;
+//			$wmvpath = str_replace('.mp4','.wmv',$topath);
+//			exec("ffmpeg -i {$topath} -y -vf {$wmvpath}", $output, $status);
+//		}
+//		// Load user/country
+//		$userAr = new UserAR();
+//		$userAr->setAttributes($userAr->getOutputRecordInArray(UserAR::model()->findByPk($this->uid)));
+//		$this->user = $userAr;
+//
+//		$this->country = CountryAR::model()->findByPk($this->country_id);
+//
 		return TRUE;
     }
 
@@ -670,12 +672,11 @@ class NodeAR extends CActiveRecord{
 			case 'vimeo':
 				preg_match("/http:\/\/vimeo\.com\/([\d]+)/i", $url, $matches);
 				if(isset($matches[1])) {
-					echo $url;
 					$id = $matches[1];
 					if ($id) {
 						try {
 							$url = "http://vimeo.com/api/v2/video/{$id}.json";
-							$ret = file_get_contents($url);
+							$ret = @file_get_contents($url);
 							if ($ret) {
 								$data = json_decode($ret);
 								$vimeo = array_shift($data);
@@ -693,7 +694,7 @@ class NodeAR extends CActiveRecord{
 				$id = strtok(basename($url), '_');
 				if(isset($id)) {
 					try {
-						$ret = file_get_contents("https://api.dailymotion.com/video/$id?fields=thumbnail_large_url");
+						$ret = @file_get_contents("https://api.dailymotion.com/video/$id?fields=thumbnail_large_url");
 						if ($ret) {
 							$data = json_decode($ret, TRUE);
 							return $data['thumbnail_large_url'];
@@ -710,10 +711,10 @@ class NodeAR extends CActiveRecord{
 				$id = isset($matches['1']) ? $matches[1] : NULL;
 				if($id) {
 					try {
-						$vine = file_get_contents("http://vine.co/v/{$id}");
+						$vine = @file_get_contents("http://vine.co/v/{$id}");
 						$matches = array();
 						preg_match('/property="og:image" content="(.*?)"/', $vine, $matches);
-						$thumbnail = ($matches[1]) ? $matches[1] : false;
+						$thumbnail = (isset($matches[1])) ? $matches[1] : false;
 						if ($thumbnail) {
 							return $thumbnail;
 						}
@@ -725,6 +726,63 @@ class NodeAR extends CActiveRecord{
 				break;
 		}
 
+	}
+
+
+	public function saveRemoteImage($url) {
+
+		$tmp = ROOT."/uploads/tmp";
+		$dir = ROOT."/uploads";
+		if (!is_dir($dir)) {
+			mkdir($dir, 0777, TRUE);
+		}
+
+		$dir .= '/'.date("Y/n/j");
+		if (!is_dir($dir)) {
+			mkdir($dir, 0777, TRUE);
+		}
+
+		$tmp_filename = $tmp.'/'.md5(uniqid());
+		file_put_contents($tmp_filename, @file_get_contents($url));
+
+		if(file_exists($tmp_filename)) {
+			exec("/usr/bin/file -b --mime {$tmp_filename}", $output, $status);
+			$mime = explode(';',$output[0]);
+			$mime = $mime[0];
+			$extname = explode('/',$mime);
+			$extname = $extname[1];
+			switch($extname) {
+				case 'gif':
+					$srcImg = @imagecreatefromgif($tmp_filename);
+					break;
+				case 'png':
+					$srcImg = @imagecreatefrompng($tmp_filename);
+					break;
+				case 'bmp':
+					$srcImg = @imagecreatefromwbmp($tmp_filename);
+					break;
+				default:
+					$srcImg = @imagecreatefromjpeg($tmp_filename);
+
+			}
+			if(isset($srcImg)) {
+				$to = $dir.'/'.md5(uniqid()).'.jpg';
+				@imagejpeg($srcImg, $to, 90);
+				unlink($tmp_filename);
+				if(file_exists($to)) {
+					return str_replace(ROOT, '', $to);
+				}
+				else {
+					return false;
+				}
+			}
+			else {
+				return false;
+			}
+		}
+		else {
+			return false;
+		}
 	}
 
 
@@ -749,6 +807,107 @@ class NodeAR extends CActiveRecord{
 
 			return $params;
 		}
+	}
 
+	/***
+	 * Get Location by latlng
+	 */
+	public function actionGetLocation($lat, $lng) {
+		$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=".$lat.",".$lng."&sensor=false";
+		$ret = @file_get_contents($url);
+		if ($ret) {
+			$data = json_decode($ret, TRUE);
+			$location = '';
+			$places = $data['results'][0]['address_components'];
+			foreach($places as $place) {
+				if($place['types'][0] == 'locality')
+				{
+					$location .= $place['long_name'];
+				}
+				if($place['types'][0] == 'country')
+				{
+					$location .= ', '.$place['long_name'];
+				}
+			}
+			return $location;
+		}
+	}
+
+
+	public function saveNode($snsVideoLink, $snsPicture, $snsDatetime, $snsDescription, $snsId, $snsScreenName, $snsLocation, $media) {
+		// check if the video
+		if($snsVideoLink) {
+			$url = $snsVideoLink;
+			if($media == 'instagram') {
+				$videoMedia = 'instagram';
+			}
+			else {
+				$videoMedia = $this->getVideoSource($url);
+			}
+			if($videoMedia) {
+				// save the video url
+				$videoUrl = $url;
+				if($media == 'instagram') {
+					$imgPath = $this->saveRemoteImage($snsPicture);
+				}
+				else {
+					// get image url
+					$imageUrl = $this->getVideoThumbnail($url, $videoMedia);
+					// save image to local
+					$imgPath = $this->saveRemoteImage($imageUrl);
+				}
+				if($imgPath) {
+					$type = 'video';
+				}
+			}
+		}
+
+		// if not video, then check if it is picture
+		if(!isset($videoMedia) && $snsPicture) {
+			$imgPath = $this->saveRemoteImage($snsPicture);
+			if($imgPath) {
+				$type = 'photo';
+			}
+		}
+
+		// build node
+		$node = new NodeAR();
+		if(isset($imgPath)) {
+			$node->file = $imgPath;
+		}
+
+		if(isset($videoMedia)) {
+			$node->url = $videoUrl;
+			$node->from = $videoMedia;
+		}
+		$node->datetime = $snsDatetime;
+
+		if($snsDescription) {
+			$node->description = $snsDescription;
+			if(strlen($node->description) > 140) {
+				return false;
+			}
+		}
+
+		if($snsScreenName) {
+			$node->screen_name = $snsScreenName;
+		}
+
+		if($snsLocation) {
+			$node->location = $snsLocation;
+		}
+
+		if($snsDescription || $node->file) {
+			if(!isset($type)) {
+				$type = 'text';
+			}
+			$node->type = $type;
+			$node->media = $media;
+			$node->mid = $snsId;
+			if ($node->validate()) {
+				$node->save();
+				return true;
+			}
+		}
 	}
 }

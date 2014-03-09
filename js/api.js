@@ -50,7 +50,15 @@ define(function( require , exports , model ){
         neighbor: {path: './api/index.php/node/getneighbor', method:'get'},
         countryList: {path: './json/country.json', method:'get', cache: true},
         i18n_en: {path: './lang/en.json', method:'get', async: false, cache:true},
-        i18n_fr: {path: './lang/fr.json', method:'get', async: false, cache:true}
+        i18n_fr: {path: './lang/fr.json', method:'get', async: false, cache:true},
+
+
+		vote: {path: './api/index.php/video/vote', method:'post'},
+		voteResult: {path: './api/index.php/video/votelist', method:'get'},
+		countdown: {path: './api/index.php/video/countdown', method:'get'},
+		facebookLogin: {path: './api/index.php/facebook/login', method:'get'},
+		twitterLogin: {path: './api/index.php/twitter/login', method:'get'},
+		postTwitter: {path: './api/index.php/twitter/post', method:'post'}
     };
 
     // 内部API

@@ -112,6 +112,15 @@ class Controller extends CController
       return $this;
     }
 
+	public function cleanAllCache() {
+		$keys = Yii::app()->cache->get("keys");
+		foreach ($keys as $key) {
+			Yii::app()->cache->delete($key);
+		}
+
+		return $keys;
+	}
+
     // 在这里加缓存功能
     public function responseJSON($data, $message, $ext = array()) {
       $request = Yii::app()->getRequest();

@@ -331,7 +331,10 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                     }
                 }
                 // fix video type
-                node.image = node.file.replace( node.type == 'video' ? '.mp4' : '.jpg' , THUMBNAIL_IMG_SIZE + '.jpg');
+				if(node.file) {
+
+					node.image = node.file.replace( node.type == 'video' ? '.mp4' : '.jpg' , THUMBNAIL_IMG_SIZE + '.jpg');
+				}
                 node.formatDate = date;
 				node.country.country_name = _e[node.country.i18n];
                 node.str_like = node.likecount > 1 ? 'Likes' : 'Like';

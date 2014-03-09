@@ -11,17 +11,16 @@ class UserIdentity extends CUserIdentity
   
   public function authenticate()
   {
-    $user = UserAR::model()->findByAttributes(array("company_email" => $this->username));
+    $user = UserAR::model()->findByAttributes(array("name" => $this->username));
     if (!$user) {
       $this->errorCode = self::ERROR_USERNAME_INVALID;
     }
-    else if ($user->sso_id != md5($this->password)) {
+    else if ($user->sso_id != $this->password) {
       $this->errorCode = self::ERROR_PASSWORD_INVALID;
     }
     else {
       $this->_id = $user->uid;
       $this->setState("name", $user->name);
-      $this->setState("country_id", $user->country_id);
       $this->setState("role", $user->role);
       
       $this->errorCode = self::ERROR_NONE;
