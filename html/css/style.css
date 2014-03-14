@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*
+ * carambar
+ * zx 2014 03 12
+ */
+
+/* Reset
+================================================================================================= */
+body{color:#000;font-size:12px;line-height:1.666em;background: #feee00 url('../images/bg.jpg') repeat-x top center}
+body{font-family:Arial,sans-serif;}
+h1,h2,h3{font-size:100%;}
+body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
+img{margin:0;line-height:normal;}
+em,i{font-style:normal;text-decoration:none}
+ul{list-style:none;}
+
+/* Commonly Used
+================================================================================================= */
+a{text-decoration:none;color:#000;outline: none;}
+a:hover{color:#e82426}
+.cs-clear{+zoom:1;}
+.cs-clear:before,
+.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+
+
+/* Header Used
+================================================================================================= */
+.header{height: 130px;background: url('../images/hdbg.gif') no-repeat bottom center;width:100%}
+    .hdcontent{width:1000px;margin: 0 auto;position: relative;}
+        .nav1{background: url('../images/nav.png') no-repeat 0 0;width: 120px;height: 25px;position: absolute;top:48px;left:50%;margin: 0 0 0 -345px}
+        .nav2{background: url('../images/nav.png') no-repeat -120px 0;width: 120px;height: 25px;position: absolute;top:48px;left:50%;margin: 0 0 0 235px}
+        .nav1on{}
+        .nav2on{}
+
+/* Section  Used
+================================================================================================= */
+.videopart{width:808px;height:339px;padding:16px 25px 0;margin: 55px auto 0;position: relative;background: url('../images/videopart.png') no-repeat;}
+.videopart1{width:598px;}
+    .videomod{float: left;width: 556px;height: 309px}
+    .videotxt{float: left;display:inline;margin:8px 0 0 8px;width: 214px;height: 250px;background:#dadada ;color:#12103b;padding:0 10px;}
+        h2{text-transform:Uppercase;font-size: 18px;font-weight: normal;padding: 18px 0 5px}
+        .videotxt-item{font-size:12px;padding:4px 0 0;overflow: hidden;}
+            .videotxt-item h3{color:#e00025;text-transform:Uppercase;font-weight: normal;}
+            .videotxt-item span{display: block;text-align: right;padding:0px;border-top: #12103b solid 1px;}
+    .videoshare{position: absolute;bottom:22px;right: 35px}
+        .videoshare a{background: url('../img/videoshare.png') no-repeat 0 0;width: 32px;height: 32px;display: block;margin: 0 0 12px;}
+        /*.videoshare .share-t{background-position: 0 -40px}*/
+        .videoshare .share-t{background: url('../images/share_t.png') no-repeat;width: 43px;height: 43px;}
+        .videoshare .share-y{background-position: 0 -80px}
+        .videoshare .share-i{background-position: 0 -120px}
+
+.sec-blue{background: #39376d url('../images/sec1_blue.png') repeat-x;height: 174px;width:100%;margin: 34px 0 0;}
+    .sec-bluecon{width:895px;margin: 0 auto;position: relative;}
+        .sec-bluepho{width:240px;height: 187px;background: url('../images/sec1-bluepho.png') no-repeat;position: absolute;top:-12px;left:0}
+        .sec-bluenum{height: 150px;width:268px;border-right: #fff solid 1px;position: absolute;background: url('../images/sec1-bluepho.png') no-repeat -240px -30px;left:240px;top:12px; }
+        .sec-bluetime{height: 150px;width:358px;border-left: #000 solid 2px;position: absolute;background: url('../images/sec1-bluepho.png') no-repeat -513px -30px;left:509px;top:12px;}
+
+
+.videolistbg{background: url('../images/videolistbg.png') repeat-x;}
+.videolist{background: url('../images/videolist.jpg') no-repeat center;height: 307px;margin: 40px 0 0}
+    .video-con{width:798px;margin: 0 auto;padding: 108px 0 0;}
+    .videolist-item{float:left;position: relative;width: 250px;height: 170px;text-align: center;font-size:18px;color:#fff;display: inline;margin-left:12px;}
+        .videolist-box{background: #fff;width:248px;height: 132px;padding:2px;}
+        .videolist-txt{line-height: 30px;}
+        .video-icon{background: url('../images/video_icon.png') no-repeat;width: 64px;height: 98px;position: absolute;left:-15px;top:-32px}
+        .videolist-boxnull{border: #2b2761 dotted 5px;height:126px;width: 242px; }
+
+.sec2{background: url('../images/sec2_bg.png') repeat-x top left;height: 230px;margin: 38px 0 0}
+    .sec2-txt{background: url('../images/sec2_txt.jpg') no-repeat center top;height: 230px}
+
+/* footer Used
+================================================================================================= */
+.footer{font-size: 10px;color: #040d3e;text-transform:Uppercase;text-align: center;line-height: 28px;}
