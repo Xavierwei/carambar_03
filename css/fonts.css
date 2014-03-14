@@ -27,6 +27,7 @@
 .preload3 {font-family:'HelveticaNeueLTStd-Lt';font-size:0;position:fixed;bottom:0;left:0;}
 
 body,input,textarea{font-family:'HelveticaNeueLTStd-MdCn', arial, sans-serif;text-transform: uppercase;}
+input,textarea {text-transform:none;}
 .count {letter-spacing:1px;}
 .item-info {font-family: 'Myriad Pro', arial;font-size:10px;}
 .menu-item h6 {font-size:12px;}

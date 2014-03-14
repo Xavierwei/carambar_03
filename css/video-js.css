@@ -214,7 +214,7 @@ The default control bar that is a container for most of the controls.
     display: block;
   position: absolute;
   left: 25px;
-  right: 35px;
+  right: 75px;
   width: auto;
   font-size: 0.3em;
   height: 1em;
@@ -307,17 +307,14 @@ The default control bar that is a container for most of the controls.
 --------------------------------------------------------------------------------
 */
 .vjs-default-skin .vjs-fullscreen-control {
-  width: 3.8em;
-  cursor: pointer;
-  float: right;
+    cursor: pointer;
+    display: block;
+    background: url('../img/icon_video_full.png') no-repeat;
+    width:16px;height:15px;
+    position: absolute;
+    right:15px;bottom:26px;
 }
-.vjs-default-skin .vjs-fullscreen-control:before {
-  content: "\e000";
-}
-/* Switch to the exit icon when the player is in fullscreen */
-.vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control:before {
-  content: "\e00b";
-}
+
 /* Big Play Button (play button at start)
 --------------------------------------------------------------------------------
 Positioning of the play button in the center or other corners can be done more
@@ -671,5 +668,5 @@ body.vjs-full-window {
 }
 
 
-.video-btn-zoom {background:#000 url('../img/icon_video_zoom.gif') no-repeat 4px 4px;background-color:rgba(0,0,0,0.7);width:20px;height:20px;position: absolute;right:8px;bottom:47px;}
-.video-btn-zoom.active {background-position:-24px 4px;}
+.video-btn-zoom {background:url('../img/icon_video_zoom.png') no-repeat 0px 0px;width:17px;height:17px;position: absolute;right:45px;bottom:47px;}
+.video-btn-zoom.active {background-position:-33px 0px;}

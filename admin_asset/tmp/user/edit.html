@@ -1,0 +1,14 @@
+<form name="form" class="css-form" novalidate xmlns="http://www.w3.org/1999/html">
+    <div>firstname<input class="form-control" type="text" ng-model="user.firstname" name="firstname" required /></div>
+    <div>lastname<input class="form-control" type="text" ng-model="user.lastname" name="lastname" required /></div>
+    <div>company_email<input class="form-control" type="text" ng-model="user.company_email" name="company_email" required /></div>
+    <div>personal_email<input class="form-control" type="text" ng-model="user.personal_email" name="personal_email" required /></div>
+    <div>countryid<input class="form-control" type="text" ng-model="user.country.country_id" name="country_id" required /></div>
+    <div>status<input class="form-control" type="text" ng-model="user.status" name="status" required /></div>
+    <div>Invalid:
+        <span ng-show="form.firstname.$error.required">Missing firstname.</span>
+    </div>
+    <button ng-click="update(user)"
+            ng-disabled="form.$invalid || isUnchanged(user)">SAVE</button>
+    <button ng-click="delete(user)">Delete</button>
+</form>

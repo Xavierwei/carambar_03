@@ -1,0 +1,9 @@
+<ul class="nodes">
+    <li ng-repeat="node in nodes">
+        <p>{{node.type}}</p>
+        <p>{{node.file}}</p>
+        <p>{{node.status}}</p>
+        <p>{{node.datetime}}</p>
+    </li>
+</ul>
+<div ng-show="error" ng-class="red: error">1111{{error}}</div>

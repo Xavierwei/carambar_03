@@ -1,2 +1,2 @@
 .page-loading {position:absolute;}
-.old-ie {display:block;position: absolute;width:700px;text-align: center;top:100px;margin-left:-450px;}
+.old-ie {display:block!important;position: absolute;width:700px;text-align: center;top:100px;margin-left:-450px;}

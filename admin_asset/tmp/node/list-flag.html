@@ -1,0 +1,29 @@
+<div class="nodes-list-wrap">
+
+	<ul node class="nodes-list {{hideList}}">
+	    <li nodeli ng-repeat="node in nodes" title="{{node.description}}" class="status-{{node.status}}">
+	        <div class="image">
+		        <img ng-src="{{node.file | thumbnail}}" width="200" height="200" />
+		        <div class="black-overlay"></div>
+		        <a href="javascript:void(0)" class="switch switch-{{node.status}}" ng-click="updateStatus(node)"></a>
+		        <div ng-show="node.flagcount" class="flag flag{{node.flagcount}}">Flagged: {{node.flagcount}}</div>
+	        </div>
+	        <div class="type icon-{{node.type}}">{{node.type}}</div>
+	        <div class="user">
+	            <div class="avatar"><img ng-src="{{node.user.avatar | avatar}}" width="40" height="40" /></div>
+	            <div class="date">{{node.datetime*1000 | date:'MMM d, y HH:mm a'}}</div>
+	            <div class="name"><strong>{{node.user.firstname}} {{node.user.lastname}}</strong></div>
+	        </div>
+	        <div class="clear"></div>
+	        <a href="../../#/nid/{{node.nid}}" class="open" target="_blank">Open</a>
+	        <div class="clear"></div>
+	    </li>
+	</ul>
+	<div class="clear"></div>
+	<div class="list-no-result" ng-show="noResult">No results.</div>
+	<div class="list-loading" ng-show="hideList"></div>
+	<div class="pager">
+		<div class="page-prev btn-lg btn-default" ng-click="prevPage()" ng-hide="first">Prev</div>
+		<div class="page-next btn-lg btn-default" ng-click="nextPage()" ng-hide="end">Next</div>
+	</div>
+</div>

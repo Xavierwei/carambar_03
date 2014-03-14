@@ -3,6 +3,7 @@
 .btn:hover
 {opacity:0.8;filter:alpha(opacity=80);}
 
+.sec4-right-tit,
 .count-userinfo,.com-ipt,.select-option p,.editfi-country-option p,
 .search-sub,.search-ipt,.menu-item-arrow,.menu-item,.com-counts .clickable,.count-item,.user,
 a
@@ -10,10 +11,16 @@ a
 
 
 
-.popload-icon,.loading-list {
-    -moz-animation: rotate 5s linear infinite;
-    -webkit-animation: rotate 5s linear infinite;
-    animation: rotate 5s linear infinite;
+.popload-icon {
+    -moz-animation: loadRotate 5s linear infinite;
+    -webkit-animation: loadRotate 5s linear infinite;
+    animation: loadRotate 5s linear infinite;
+}
+
+.loading-list {
+    -moz-animation: loadRotate 5s linear infinite;
+    -webkit-animation: loadRotate 5s linear infinite;
+    animation: loadRotate 5s linear infinite;
 }
 
 .flashing {
@@ -43,17 +50,17 @@ a
     100% {opacity:1;top:50%;}
 }
 
-@-webkit-keyframes rotate {
+@-webkit-keyframes loadRotate {
     0% {-webkit-transform: rotate(0deg);}
     100% {-webkit-transform: rotate(720deg);}
 }
 
-@-moz-keyframes rotate {
+@-moz-keyframes loadRotate {
     0% {-moz-transform: rotate(0deg);}
     100% {-moz-transform: rotate(720deg);}
 }
 
-@keyframes rotate {
+@keyframes loadRotate {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(720deg);}
 }

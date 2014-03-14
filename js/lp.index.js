@@ -5,6 +5,26 @@ LP.use(['jquery', 'api', 'easing'] , function( $ , api ){
     'use strict'
 
 	var time_left;
+    $(document.body)
+        .delegate('#twitter-content', 'keyup', function(){
+            var leftLength = 140 - 18 - $(this).val().length;
+            $('#twitter-words-limit').find('span').text(leftLength);
+            if(leftLength < 0) {
+                $('#twitter-words-limit').addClass('out');
+            }
+            else {
+                $('#twitter-words-limit').removeClass('out');
+            }
+        })
+        .delegate('.sec4-right-txt', 'click', function(){
+            if(!$(this).hasClass('opened')) {
+                $(this).addClass('opened').next().animate({height:203}, 500, 'easeInOutQuart');
+                $(this).siblings('.sec4-right-txt').removeClass('opened').next().animate({height:0}, 500, 'easeInOutQuart');
+            }
+        })
+
+
+
 
 	LP.action('vote', function(data){
 		if($(this).hasClass('voting')) return;
@@ -30,7 +50,7 @@ LP.use(['jquery', 'api', 'easing'] , function( $ , api ){
 	});
 
 	LP.action('submit-twitter', function(){
-		var content = $('#twitter-content').val();
+		var content = '#GOODLUCKCARAMBAR ' + $('#twitter-content').val();
 		api.ajax('postTwitter', {content: content}, function( result ){
 			console.log(result);
 			if(result.success) {
@@ -38,6 +58,16 @@ LP.use(['jquery', 'api', 'easing'] , function( $ , api ){
 			}
 		});
 	});
+
+    LP.action('submit-facebook', function(){
+        var content = '#GOODLUCKCARAMBAR ' + $('#facebook-content').val();
+        api.ajax('postFacebook', {content: content}, function( result ){
+            console.log(result);
+            if(result.success) {
+                alert('Success Posted!');
+            }
+        });
+    });
 
 	function init() {
 
@@ -65,17 +95,33 @@ LP.use(['jquery', 'api', 'easing'] , function( $ , api ){
 
 
 		api.ajax('facebookLogin', function( result ){
-			if(result.data !== 'login') {
-				$('.facebook-wrap .login-btn a').attr('href', result.data);
-			}
+            if(result.data !== 'login') {
+                $('#facebook-login-link').fadeIn().attr('href', result.data);
+            }
+            else {
+                $('#facebook-content-wrap').fadeIn();
+                if($('.sec4-right-txt').hasClass('opened')) {
+                    $('#facebook-content-wrap').height(0);
+                }
+                else {
+                    $('#facebook-content-wrap').prev().addClass('opened')
+                }
+            }
 		});
+
 
 		api.ajax('twitterLogin', function( result ){
 			if(result.data !== 'login') {
-				$('.twitter-wrap .login-btn a').attr('href', result.data);
+				$('#twitter-login-link').fadeIn().attr('href', result.data);
 			}
 			else {
-				$('.twitter-wrap .content-box').fadeIn();
+				$('#twitter-content-wrap').fadeIn();
+                if($('.sec4-right-txt').hasClass('opened')) {
+                    $('#twitter-content-wrap').height(0);
+                }
+                else {
+                    $('#twitter-content-wrap').prev().addClass('opened')
+                }
 			}
 		})
 

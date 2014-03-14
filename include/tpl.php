@@ -7,7 +7,7 @@
 				{{_e.CONNECT}}
 			</a>
 			<!--  -->
-			<div class="logo" data-a="back_home"></div>
+			<div class="logo logo-{{lang}}" data-a="back_home"></div>
 			<!--  -->
 
 			<div class="search clear">
@@ -68,13 +68,18 @@
 	<div class="flag-confirm-modal pop-modal">
 		<div class="flag-confirm-text">{{_e.REPORT_THIS}} <span></span>?</div>
 		<button class="btn cancel" data-a="cancel_modal">{{_e.CANCEL}}</button>
-		<button class="btn ok" data-a="">{{_e.CONFIRM}}</button>
+		<button class="btn ok" data-a="user">{{_e.CONFIRM}}</button>
 	</div>
 
 	<div class="delete-confirm-modal pop-modal">
 		<div class="flag-confirm-text">{{_e.DELETE_THIS}} <span></span>?</div>
 		<button class="btn cancel" data-a="cancel_modal">{{_e.CANCEL}}</button>
 		<button class="btn ok" data-a="">{{_e.CONFIRM}}</button>
+	</div>
+
+	<div class="saveuser-confirm-modal pop-modal">
+		<button class="btn cancel" data-a="cancel_modal">{{_e.CANCEL}}</button>
+		<button class="btn ok" data-a="save_user">{{_e.CONFIRM}}</button>
 	</div>
 	<!-- modal -->
 </script>
@@ -97,10 +102,12 @@
                     <li>{{_e.VIDEO_FORMATE}}</li>
                     <li>{{_e.VIDEO_RESOLUTION}}</li>
                     <li>{{_e.VIDEO_SIZE}}</li>
+					<li class="damaged">{{_e.ERROR_VIDEO_CORRUPTED}}</li>
                     {{else}}
                     <li>{{_e.PHOTO_FORMATE}}</li>
                     <li>{{_e.PHOTO_RESOLUTION}}</li>
                     <li>{{_e.PHOTO_SIZE}}</li>
+					<li class="damaged">{{_e.ERROR_PHOTO_CORRUPTED}}</li>
                     {{/ifvideo}}
                   </ul>
                   <div class="error"></div>
@@ -125,7 +132,7 @@
                 </div>
                 <div class="poploading">
                   <div class="popload-percent"><p></p></div>
-                  <p>{{_e.UPLOAD_IN_PROGRESS}} ...</p>
+                  <p>{{_e.UPLOAD_IN_PROGRESS}}</p>
                 </div>
               </div>
               <!--  -->
@@ -184,14 +191,15 @@
 					<div class="popfile-drag-box" data-a="select_photo"></div>
 					<ul class="step1-tips">
 						<li>{{_e.PHOTO_FORMATE}}</li>
-						<li>{{_e.PHOTO_RESOLUTION}}</li>
+						<li>{{_e.AVATAR_RESOLUTION}}</li>
 						<li>{{_e.PHOTO_SIZE}}</li>
+						<li class="damaged">{{_e.ERROR_PHOTO_CORRUPTED}}</li>
 					</ul>
 					<div class="error"></div>
 					<div class="step1-btns">
 						<div class="popfile-btn btn" id="select-btn">
 							{{_e.SELECT}}
-							<input type="file" name="file" />
+							<input type="file" name="file" accept="{{accept}}" />
 						</div>
 					</div>
 					<div class="step2-btns"><div class="popfile-btn btn" data-a="upload_photo">{{_e.UPLOAD}}</div><div class="popfile-btn btn">{{_e.SELECT_AGAIN}}</div></div>
@@ -309,7 +317,7 @@
 			<div class="inner-loading"></div>
 			<div class="inner-info">
 				<div class="inner-shade"></div>
-				{{#if description}}<div class="inner-infocom">{{description}}</div>{{/if}}
+				{{#if description}}<div class="inner-infocom">{{{description}}}</div>{{/if}}
 				<div class="inner-infoicon"><div class="{{type}}"></div></div>
 			</div>
 			{{#if user_flagged}}
@@ -339,11 +347,7 @@
 <script type="text/tpl" id="node-item-template">
 	<div data-a="node" data-d="nid={{nid}}" class="main-item pic-item main-item-{{nid}}">
 		<a>
-			{{#if image}}
-			<img src="./api{{image}}" width="180" />
-			{{else}}
-			{{description}}
-			{{/if}}
+			<img src="./{{image}}" width="180" />
 			<div class="item-info" >
         <div class="item-info-wrap">
           <div class="item-time"><span class="item-timeicon">{{formatDate}}</span></div>
@@ -384,7 +388,7 @@
 		<!-- inner -->
 		<div class="count-inner">
 			<div class="count-user">
-				<div class="count-userpho"><img src="./api{{avatar}}" width="60"  /><div class="avatar-ie-round"></div></div>
+				<div class="count-userpho"><img src="./api{{avatar}}" width="64" /><div class="avatar-ie-round"></div></div>
 				<div class="count-userinfo">
 					<p class="name">{{firstname}} {{lastname}}</p>
 					<p class="location">{{country.country_name}}</p>
@@ -408,7 +412,7 @@
 						<div class="editfi-com">
 							<input class="edit-email" type="text" value="{{personal_email}}" /> <em>({{_e.OPTIONAL}})</em>
 							<div class="edit-email-error">{{_e.ERROR_EMAIL}}</div>
-							<div class="editfi-condition btn">{{_e.PERSONAL_EMAIL_TERM}}</div>
+							<div class="editfi-condition">{{_e.PERSONAL_EMAIL_TERM}}</div>
 							<div class="editfi-condition-error">{{_e.ERROR_CONDITION}}</div>
 							<div class="editfi-information">{{_e.PERSONAL_EMAIL_INFO}} <a href="#">{{_e.CLICK_HERE}}</a></div>
 						</div>
@@ -431,7 +435,6 @@
 						<a class="user-edit-save btn" data-a="save_user">{{_e.SAVE}}</a>
 						<a class="user-edit-cancel btn" data-a="cancel_user_edit">{{_e.CANCEL}}</a>
 					</div>
-					<a class="user-edit-save btn" data-a="save_user">{{_e.SAVE}}</a>
 				</form>
 				<div class="user-edit-loading"></div>
 			</div>
@@ -443,7 +446,7 @@
 <script type="text/tpl" id="comment-item-template">
 	<div class="comlist-item comlist-item-{{cid}}">
 		<div class="comlist-tit"><span>{{user.firstname}} {{user.lastname}} </span> - {{date}} {{month}}</div>
-		<div class="comlist-con">{{content}}</div>
+		<div class="comlist-con">{{{content}}}</div>
 		{{#if mycomment}}
 		<div class="comlist-delete btn2" data-a="delete" data-d="cid={{cid}}&type=comment"></div>
 		{{/if}}
@@ -480,18 +483,19 @@
 
 <!-- wmv-player-tpl -->
 <script type="text/tpl" id="wmv-player-template">
-  <iframe style="display:none" onload="this.style.display='block';" src="wmv_player.php?file={{file}}" scrolling="no" frameborder="0"></iframe>
+  <iframe id="wmv-iframe" style="display:none" onload="this.style.display='block';" src="wmv_player.php?file={{file}}" scrolling="no" frameborder="0"></iframe>
 </script>
 
 <!-- flash-player-tpl -->
 <script type="text/tpl" id="flash-player-template">
-  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="100%" height="100%">
-    <param name="allowScriptAccess" value="always"/>
-    <param name="movie" value="flash/player.swf"/>
-    <param name="flashVars" value="source=../api{{file}}&skinMode=show&fengmian=../api{{image}}"/>
-    <param name="quality" value="high"/>
+  <object id="flash-player" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="100%" height="100%">
+	<param name="allowScriptAccess" value="always"/>
+	<param name="movie" value="flash/player.swf"/>
+	<param name="flashVars" value="source=../api{{file}}&skinMode=show&onPlay=flashPlay()&onPause=flashPause()&onPlayComplete=flashplayComplete()&fengmian=./api{{image}}"/>
+	<param name="quality" value="high"/>
 	<param name="wmode" value="opaque"/>
-    <embed name="player" src="flash/player.swf" flashVars="source=../api{{file}}&skinMode=show&fengmian=/sgwall/api{{image}}" quality="high" wmode="opaque" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="100%" height="100%" allowScriptAccess="always"></embed>
+	<param name="allowFullScreen" value="true"/>
+    <embed id="flash-player-embed" name="player" src="flash/player.swf" flashVars="source=../api{{file}}&skinMode=show&onPlay=flashPlay()&onPause=flashPause()&onPlayComplete=flashplayComplete()&fengmian=./api{{image}}" allowFullScreen="true" quality="high" wmode="opaque" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="100%" height="100%" allowScriptAccess="always"></embed>
   </object>
 </script>
 

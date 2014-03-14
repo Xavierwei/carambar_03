@@ -2,8 +2,8 @@
 
 .pop-photo .poptxt-pic {display: none;}
 .pop-photo .poptxt-textarea {float:none;width:400px;}
-.pop-video .poptxt-pic {display: none;}
-.pop-video .poptxt-textarea {float:none;width:400px;}
+.pop-video.pop-video-noflash .poptxt-pic {display: none;}
+.pop-video.pop-video-noflash .poptxt-textarea {float:none;width:400px;}
 .poptxt-check,.poptxt-check.checked {background-position:0 2px;}
 .poptxt-cancel,.poptxt-submit,.popfile-btn,.pophd {line-height:40px;}
 .search-ipt {background: url('../img/search_input_placeholder.gif') no-repeat 3px 3px;}
@@ -17,6 +17,7 @@
 .pop-inner {position: absolute;background: #fff;width:100%;height:330px;}
 .pop-success {width:100%;}
 .popload-icon {background: url('../img/icon_upload_loading.gif') no-repeat;}
+.step1-tips li.damaged {top:88px;}
 
 .count-userpho img {border:none;}
 .count-userpho .avatar-ie-round {background:url('../img/ie8_avatar_round_62.png') no-repeat;width:62px;height: 62px;position: absolute;top:0;left:0;z-index: 2;}

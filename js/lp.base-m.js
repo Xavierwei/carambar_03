@@ -6,6 +6,7 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
 
     var pagenum = 8;
     var isIE8 = $('html').hasClass('ie8');
+    var isAndroid = navigator.userAgent.toLowerCase().indexOf('android') > 0;
     var API_FOLDER = "../api";
     var THUMBNAIL_IMG_SIZE = "_640_640";
     var BIG_IMG_SIZE = "_640_640";
@@ -1412,7 +1413,15 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
         if(!$('.flag-confirm-modal').is(':visible')) {
             $('.modal-overlay').fadeIn(700);
             $('.flag-confirm-modal').fadeIn(700).dequeue().animate({top:'50%'}, 700, 'easeOutQuart');
-            $('.flag-confirm-modal .flag-confirm-text span').html(data.type);
+
+            if(data.type == 'node') {
+                var type = _e['CONTENT'];
+            }
+            else {
+                var type = _e['COMMENT'];
+            }
+            $('.flag-confirm-modal .flag-confirm-text span').html(type);
+
             $('.flag-confirm-modal .ok').attr('data-a','flag');
             if(data.type == 'node') {
                 $('.flag-confirm-modal .ok').attr('data-d','nid=' + data.nid + '&type=node');
@@ -1440,7 +1449,13 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
         if(!$('.delete-confirm-modal').is(':visible')) {
             $('.modal-overlay').fadeIn(700);
             $('.delete-confirm-modal').fadeIn(700).dequeue().animate({top:'50%'}, 700, 'easeOutQuart');
-            $('.delete-confirm-modal .flag-confirm-text span').html(data.type);
+            if(data.type == 'node') {
+                var type = _e['CONTENT'];
+            }
+            else {
+                var type = _e['COMMENT'];
+            }
+            $('.delete-confirm-modal .flag-confirm-text span').html(type);
             $('.delete-confirm-modal .ok').attr('data-a','delete');
             if(data.type == 'node') {
                 $('.delete-confirm-modal .ok').attr('data-d','nid=' + data.nid + '&type=node');
@@ -1501,6 +1516,89 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
         }
     });
 
+    var fileUploadDone = function(data) {
+        if(!data.result.success) {
+            if(typeof data.result.message.error != "undefined" && data.result.message.error == 508) {
+                setTimeout(function(){
+                    var type = $('#node_post_form input[name="type"]').val();
+                    api.ajax('upload' , {'type':type, 'tmp_file': data.result.message.tmp_file} , function( result ){
+                        var data = {};
+                        data.result = result;
+                        fileUploadDone(data);
+                    });
+                }, 1000*5);
+                return;
+            }
+            switch(data.result.message){
+                case 502:
+                    var errorIndex = 0;
+                    break;
+                case 501:
+                    var errorIndex = 2;
+                    break;
+                case 503:
+                    var errorIndex = 1;
+                    break;
+                case 509:
+                    var errorIndex = 3;
+                    break;
+            }
+            $('.pop-inner').fadeOut(400);
+            $('.pop-file').delay(800).fadeIn(400);
+            $('.step1-tips li').removeClass('error');
+            $('.step1-tips li').eq(errorIndex).addClass('error');
+        } else {
+            var rdata = data.result.data;
+
+            if(rdata.type == 'video') {
+                $('.poptxt-pic-inner').show();
+                $('.poptxt-pic img')
+                    .unbind('load.forinnershow')
+                    .bind('load.forinnershow' , function(){
+                        $('.pop-inner').delay(400).fadeOut(400);
+                        $('.pop-txt').delay(1200).fadeIn(400);
+                    })
+                    .attr('src', API_FOLDER + rdata.file.replace('.mp4', /*THUMBNAIL_IMG_SIZE + */'.jpg'));
+
+                $('.poptxt-submit').attr('data-d','file='+ rdata.file +'&type=' + rdata.type);
+
+            } else {
+                if (data.files && data.files[0] && window.FileReader ) {
+                    //..create loading
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        // change checkpage img
+                        $('.poptxt-pic img')
+                            .unbind('load.forinnershow')
+                            .bind('load.forinnershow' , function(){
+                                $('.pop-inner').delay(400).fadeOut(400);
+                                $('.pop-txt').delay(1200).fadeIn(400);
+                                setTimeout(function(){
+                                    transformMgr.initialize( $('.poptxt-pic-inner') );
+                                } , 1700 );
+                            })
+                            .attr('src', e.target.result/*.replace('.jpg', THUMBNAIL_IMG_SIZE + '.jpg')*/);
+                        $('.poptxt-submit').attr('data-d','file='+ rdata.file +'&type=' + rdata.type);
+                    };
+                    reader.readAsDataURL(data.files[0]);
+                } else {
+                    $('.poptxt-pic img')
+                        .unbind('load.forinnershow')
+                        .bind('load.forinnershow' , function(){
+                            $('.pop-inner').delay(400).fadeOut(400);
+                            $('.pop-txt').delay(1200).fadeIn(400);
+                            setTimeout(function(){
+                                transformMgr.initialize( $('.poptxt-pic-inner') );
+                            } , 1700 );
+                        })
+                        .attr('src', API_FOLDER + rdata.file/*.replace('.jpg', THUMBNAIL_IMG_SIZE + '.jpg')*/);
+                    $('.poptxt-submit').attr('data-d','file='+ rdata.file +'&type=' + rdata.type);
+
+                }
+            }
+        }
+    }
+
     //upload photo
     LP.action('pop_upload' , function( data ){
         // close user side bar
@@ -1515,6 +1613,9 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
         }
         $('.side .menu-item.'+type).addClass('active');
         data._e = _e;
+        if(isAndroid) {
+            data.device = 'android';
+        }
         LP.compile( "pop-template" , data,  function( html ){
             $(document.body).append( html );
             $('.overlay').fadeIn();
@@ -1525,7 +1626,13 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
             var $fileupload = $('#fileupload');
             if(type == 'video') {
                 acceptFileTypes = /(\.|\/)(mov|wmv|mp4|avi|mpg|mpeg|3gp)$/i;
-                var maxFileSize = 7 * 1024000;
+                if(isAndroid) {
+                    var maxFileSize = 16 * 1024000;
+                }
+                else {
+                    var maxFileSize = 7 * 1024000;
+                }
+
             } else {
                 acceptFileTypes = /(\.|\/)(gif|jpe?g|png)$/i;
                 var maxFileSize = 5 * 1024000;
@@ -1569,75 +1676,7 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
 						$('.pop-file').delay(400).fadeIn(400);
 					})
 					.bind('fileuploaddone', function (e, data) {
-						if(!data.result.success) {
-							switch(data.result.message){
-								case 502:
-									var errorIndex = 0;
-									break;
-								case 501:
-									var errorIndex = 2;
-									break;
-								case 503:
-									var errorIndex = 1;
-									break;
-							}
-							$('.pop-inner').fadeOut(400);
-							$('.pop-file').delay(800).fadeIn(400);
-							$('.step1-tips li').removeClass('error');
-							$('.step1-tips li').eq(errorIndex).addClass('error');
-						} else {
-							var rdata = data.result.data;
-
-							if(rdata.type == 'video') {
-								$('.poptxt-pic-inner').show();
-								$('.poptxt-pic img')
-									.unbind('load.forinnershow')
-									.bind('load.forinnershow' , function(){
-										$('.pop-inner').delay(400).fadeOut(400);
-										$('.pop-txt').delay(1200).fadeIn(400);
-									})
-									.attr('src', API_FOLDER + rdata.file.replace('.mp4', /*THUMBNAIL_IMG_SIZE + */'.jpg'));
-								// TODO:: why need timeout?
-//                                setTimeout(function(){
-//                                    $('.poptxt-pic img').attr('src',$('.poptxt-pic img').attr('src') + '?' + new Date().getTime() );
-//                                },2000);
-								$('.poptxt-submit').attr('data-d','file='+ rdata.file +'&type=' + rdata.type);
-
-							} else {
-								if (data.files && data.files[0] && window.FileReader ) {
-									//..create loading
-									var reader = new FileReader();
-									reader.onload = function (e) {
-										// change checkpage img
-										$('.poptxt-pic img')
-											.unbind('load.forinnershow')
-											.bind('load.forinnershow' , function(){
-												$('.pop-inner').delay(400).fadeOut(400);
-												$('.pop-txt').delay(1200).fadeIn(400);
-                                                setTimeout(function(){
-                                                    transformMgr.initialize( $('.poptxt-pic-inner') );
-                                                } , 1700 );
-											})
-											.attr('src', e.target.result/*.replace('.jpg', THUMBNAIL_IMG_SIZE + '.jpg')*/);
-										$('.poptxt-submit').attr('data-d','file='+ rdata.file +'&type=' + rdata.type);
-									};
-									reader.readAsDataURL(data.files[0]);
-								} else {
-									$('.poptxt-pic img')
-										.unbind('load.forinnershow')
-										.bind('load.forinnershow' , function(){
-											$('.pop-inner').delay(400).fadeOut(400);
-											$('.pop-txt').delay(1200).fadeIn(400);
-                                            setTimeout(function(){
-                                                transformMgr.initialize( $('.poptxt-pic-inner') );
-                                            } , 1700 );
-										})
-										.attr('src', API_FOLDER + rdata.file/*.replace('.jpg', THUMBNAIL_IMG_SIZE + '.jpg')*/);
-									$('.poptxt-submit').attr('data-d','file='+ rdata.file +'&type=' + rdata.type);
-
-								}
-							}
-						}
+                        fileUploadDone(data);
 					});
 			});
 
@@ -1650,6 +1689,7 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
     LP.action('avatar_upload' , function( data ){
         var acceptFileTypes;
         data._e = _e;
+        data.accept = 'image/*';
         LP.compile( "pop-avatar-template" , data,  function( html ){
             $(document.body).append( html );
             $('.overlay').fadeIn();
@@ -1711,6 +1751,9 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
 								case 503:
 									var errorIndex = 1;
 									break;
+                                case 509:
+                                    var errorIndex = 3;
+                                    break;
 							}
 							$('.pop-inner').fadeOut(400);
 							$('.pop-file').delay(800).fadeIn(400);
@@ -2026,30 +2069,38 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
 
     //save user updates
     LP.action('save_user' , function(){
-        $('.user-edit-loading').fadeIn();
-        if($('.edit-email-error').is(':visible')) return;
-        if(!$('.editfi-condition').hasClass('checked')) {
-            $('.editfi-condition-error').fadeIn();
-            $('.user-edit-loading').fadeOut();
-            return;
+        if(!$('.saveuser-confirm-modal').is(':visible')) {
+            $('.modal-overlay').fadeIn(700);
+            $('.saveuser-confirm-modal').fadeIn(700).dequeue().animate({top:'50%'}, 700, 'easeOutQuart');
         }
-        var user = {uid:$('.side').data('user').uid, personal_email: $('.user-edit-page .edit-email').val(), country_id: $('.user-edit-page .editfi-country-box').data('id')}
-        api.ajax('saveUser', user, function( result ){
-            if(result.success) {
-                $('.user-edit-page').fadeOut(400);
-                $('.avatar-file').fadeOut();
-                $('.count-com').delay(400).fadeIn(400);
-                $('.count-edit').fadeIn();
-                $('.count-userpho').removeAttr('data-a', 'avatar_upload');
-                $('.count-userinfo').removeClass('count-userinfo-edit');
-				$('.count-userinfo .location').html($('.user-edit-page .editfi-country-box').html());
+        else {
+            $('.user-edit-loading').fadeIn();
+            if($('.edit-email-error').is(':visible')) return;
+            if(!$('.editfi-condition').hasClass('checked')) {
+                $('.editfi-condition-error').fadeIn();
+                $('.user-edit-loading').fadeOut();
+                LP.triggerAction('cancel_modal');
+                return;
             }
-            else if(result.message === 603) {
-                $('.edit-email-error').html(_e.ERROR_EXIST_EMAIL).fadeIn();
-            }
-        }, null, function(){
-            $('.user-edit-loading').fadeOut();
-        });
+            var user = {uid:$('.side').data('user').uid, personal_email: $('.user-edit-page .edit-email').val(), country_id: $('.user-edit-page .editfi-country-box').data('id')}
+            api.ajax('saveUser', user, function( result ){
+                if(result.success) {
+                    $('.user-edit-page').fadeOut(400);
+                    $('.avatar-file').fadeOut();
+                    $('.count-com').delay(400).fadeIn(400);
+                    $('.count-edit').fadeIn();
+                    $('.count-userpho').removeAttr('data-a', 'avatar_upload');
+                    $('.count-userinfo').removeClass('count-userinfo-edit');
+                    $('.count-userinfo .location').html($('.user-edit-page .editfi-country-box').html());
+                }
+                else if(result.message === 603) {
+                    $('.edit-email-error').html(_e.ERROR_EXIST_EMAIL).fadeIn();
+                }
+            }, null, function(){
+                $('.user-edit-loading').fadeOut();
+            });
+            LP.triggerAction('cancel_modal');
+        }
     });
 
 
@@ -2475,7 +2526,7 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
 
             aMonth = [_e.JANUARY,_e.FEBRUARY,_e.MARCH,_e.APRIL,_e.MAY,_e.JUNE,_e.JULY,_e.AUGUST,_e.SEPTEMBER,_e.OCTOBER,_e.NOVEMBER,_e.DECEMBER];
 
-            LP.compile( 'base-template' , {_e:_e} , function( html ){
+            LP.compile( 'base-template' , {_e:_e, lang:lang} , function( html ){
                 $('body').prepend(html);
                 $main = $('.main');
                 $mainWrap = $('.main-wrap');
@@ -2528,7 +2579,7 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
 
 				var $countryList = $('.select-country-option-list');
                 $countryList.empty();
-                $countryList.append('<option data-api="recent">All</option>');
+                $countryList.append('<option data-api="recent">'+_e.ALL+'</option>');
                 api.ajax('countryList', function( result ){
                     $.each(result, function(index, item){
                         var html = '<option value="country_id=' + item.country_id + '" data-api="recent">' + _e[item.i18n] + '</option>';
@@ -2627,13 +2678,13 @@ LP.use(['jquery', 'api', 'easing', 'transit', 'fileupload',  'hammer', 'mousewhe
                     $('.comment-msg-error').hide();
                     $('.com-ipt').val().length;
                     if($('.com-ipt').val().length == 0) {
-                        $('.comment-msg-error').fadeIn().html('You should write something.');
+                        $('.comment-msg-error').fadeIn().html(_e.WRTIE_COMMENT);
                         $submitBtn.removeClass('disabled');
                         return false;
                     }
                     if($('.com-ipt').val().length > 140) {
                         $submitBtn.removeClass('disabled');
-                        $('.comment-msg-error').fadeIn().html('The description is limited to 140 characters.');
+                        $('.comment-msg-error').fadeIn().html(_e.ERROR_COMMENT_LIMITED);
                         return false;
                     }
 					$('.com-loading').fadeIn();

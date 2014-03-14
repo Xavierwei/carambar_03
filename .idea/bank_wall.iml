@@ -7,10 +7,10 @@
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar://$MODULE_DIR$/api/codecept.phar" />
+          <root url="phar://$MODULE_DIR$/codecept.phar" />
         </CLASSES>
         <SOURCES>
-          <root url="phar://$MODULE_DIR$/api/codecept.phar" />
+          <root url="phar://$MODULE_DIR$/codecept.phar" />
         </SOURCES>
       </library>
     </orderEntry>

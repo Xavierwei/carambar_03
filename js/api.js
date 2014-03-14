@@ -23,42 +23,43 @@ define(function( require , exports , model ){
     // 配置
     var _api = {
         // searchHosts: {path: '/Ajax/searchHosts' , data: {key: ''} , m: '检索小组' , method: 'get' },
-        commentList: {path: './api/index.php/comment/list', method:'get'},
-        recent: {path: './api/index.php/node/list', method: 'get', cache: true},
-        getPageByNid: {path: './api/index.php/node/getPageByNid', method: 'get'},
+        commentList: {path: './index.php/comment/list', method:'get'},
+        recent: {path: './index.php/node/list', method: 'get', cache: true},
+        getPageByNid: {path: './index.php/node/getPageByNid', method: 'get'},
         getNode: {path: './admin/app/json/node/photo.json'},
-        nodeList: {path: './api/index.php/node/list?$orderby=datetime&pagenum=100'},
-        tagTopThree: {path: './api/index.php/tag/topthree', method:'get'},
-        deleteNode: {path: './api/index.php/node/delete', method:'post'},
-        like: {path: './api/index.php/like/post'},
-        unlike: {path: './api/index.php/like/delete'},
+        nodeList: {path: './index.php/node/list?$orderby=datetime&pagenum=100'},
+        tagTopThree: {path: './index.php/tag/topthree', method:'get'},
+        deleteNode: {path: './index.php/node/delete', method:'post'},
+        like: {path: './index.php/like/post'},
+        unlike: {path: './index.php/like/delete'},
         // 
-        flag: {path: './api/index.php/flag/post', method:'post'},
-        flaggedComments: {path: './api/index.php/comment/flaggedcommentslist', method:'get'},
-        deleteComment: {path: './api/index.php/comment/delete', method:'post'},
+        flag: {path: './index.php/flag/post', method:'post'},
+        flaggedComments: {path: './index.php/comment/flaggedcommentslist', method:'get'},
+        deleteComment: {path: './index.php/comment/delete', method:'post'},
         // get user info
-        login: {path: './api/index.php/user/login'},
-        logout: {path: './api/index.php/user/logout'},
-        user: {path: './api/index.php/user/getcurrent' , method: 'get'},
-		token: {path: './api/index.php/user/gettoken' , method: 'get'},
+        login: {path: './index.php/user/login'},
+        logout: {path: './index.php/user/logout'},
+        user: {path: './index.php/user/getcurrent' , method: 'get'},
+		token: {path: './index.php/user/gettoken' , method: 'get'},
         //user: {path: './json/user.json' , method: 'get'},
-        saveUser: {path: './api/index.php/user/put' , method: 'post'},
-        saveAvatar: {path: './api/index.php/user/saveavatar' , method: 'post'},
+        saveUser: {path: './index.php/user/put' , method: 'post'},
+        saveAvatar: {path: './index.php/user/saveavatar' , method: 'post'},
         // get user's nodes
         userNode: {path: './admin/app/json/node/recent.json' , data:{ uid: 0 , page: 1 }, method: 'get'},
-        saveNode: {path: './api/index.php/node/post'},
-        neighbor: {path: './api/index.php/node/getneighbor', method:'get'},
+        saveNode: {path: './index.php/node/post'},
+        neighbor: {path: './index.php/node/getneighbor', method:'get'},
         countryList: {path: './json/country.json', method:'get', cache: true},
         i18n_en: {path: './lang/en.json', method:'get', async: false, cache:true},
         i18n_fr: {path: './lang/fr.json', method:'get', async: false, cache:true},
 
 
-		vote: {path: './api/index.php/video/vote', method:'post'},
-		voteResult: {path: './api/index.php/video/votelist', method:'get'},
-		countdown: {path: './api/index.php/video/countdown', method:'get'},
-		facebookLogin: {path: './api/index.php/facebook/login', method:'get'},
-		twitterLogin: {path: './api/index.php/twitter/login', method:'get'},
-		postTwitter: {path: './api/index.php/twitter/post', method:'post'}
+		vote: {path: './index.php/video/vote', method:'post'},
+		voteResult: {path: './index.php/video/votelist', method:'get'},
+		countdown: {path: './index.php/video/countdown', method:'get'},
+		facebookLogin: {path: './index.php/facebook/login', method:'get'},
+		twitterLogin: {path: './index.php/twitter/login', method:'get'},
+		postTwitter: {path: './index.php/twitter/post', method:'post'},
+        postFacebook: {path: './index.php/facebook/post', method:'post'}
     };
 
     // 内部API
