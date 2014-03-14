@@ -183,7 +183,7 @@ LP.use(['jquery', 'api', 'easing', 'skrollr'] , function( $ , api ){
 				smoothScrollingDuration:0,
 				smoothScrolling:true,
 				easing:'outCubic',
-				scale:10
+				scale:5
 			});
 		},timeoffset);
 

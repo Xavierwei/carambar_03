@@ -7,9 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <title></title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+	<style>
+		#stats {z-index: 99999;position: fixed;}
+	</style>
 </head>
 <body>
-    <div class="header" data-style="margin-top:-200px" data-animate="margin-top:0" data-delay="0" data-time="500" data-easing="easeOutQuart">
+    <div class="header"
+         data-style="margin-top:-200px" data-animate="margin-top:0" data-delay="0" data-time="500" data-easing="easeOutQuart"
+         data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,600px,0);">
         <div class="hdcontent">
             <a class="nav1 nav1on" href="#"></a>
             <a class="nav2" href="#"></a>
@@ -20,10 +25,10 @@
 	        <!-- #Presentation Block -->
             <div class="presentation">
 	            <div class="skyline"
-	                 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,600px,0);"></div>
+	                 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,200px,0);"></div>
 	            <div class="blue-road"
 	                 data-style="opacity:0;" data-animate="opacity:1;" data-delay="0" data-time="800"
-	                 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,400px,0);"></div>
+	                 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,200px,0);"></div>
 	            <div class="presentation-box">
 		            <div class="carambar-man" data-style="left:-1000px" data-animate="left:85px" data-delay="0" data-time="800" data-easing="easeOutQuart"></div>
 		            <div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500">
@@ -44,8 +49,9 @@
 		            <a href="#" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
 	            </div>
             </div>
-	        <div class="challenge">
-				<div class="map_bg"></div>
+	        <div class="challenge_bg">
+				<div class="map_bg"
+				     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,-400px,0);"></div>
 	        </div>
 	        <!-- /Presentation Block -->
             <!-- 视频区域 -->
@@ -127,5 +133,27 @@
     <script type="text/javascript" src="../js/sea/plugin-shim.js"></script>
     <script type="text/javascript" src="../js/lp.core.js"></script>
     <script type="text/javascript" src="../js/lp.index.js"></script>
+    <script type="text/javascript" src="../js/plugin/state.js"></script>
+	<script type="text/javascript">
+		var stats = new Stats();
+		stats.setMode(0); // 0: fps, 1: ms
+
+		// Align top-left
+		stats.domElement.style.position = 'fixed';
+		stats.domElement.style.left = '0px';
+		stats.domElement.style.top = '0px';
+
+		document.body.appendChild( stats.domElement );
+
+		setInterval( function () {
+
+			stats.begin();
+
+			// your code goes here
+
+			stats.end();
+
+		}, 1000 / 60 );
+	</script>
 </body>
 </html>
