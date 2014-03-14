@@ -7,8 +7,8 @@ class IndexController extends Controller {
 		$phase = isset($_GET['phase']) ? $_GET['phase'] : 1;
 
 		// get top video
-		$topVideo = VideoAR::model()->getVideoList(1, 1);
-		$topVideo = $topVideo[0]->mid;
+//		$topVideo = VideoAR::model()->getVideoList(1, 1);
+//		$topVideo = $topVideo[0]->mid;
 
 		// get vote video
 		$voteVideos = VideoAR::model()->getVideoList(3, 3);
@@ -31,7 +31,7 @@ class IndexController extends Controller {
 		}
 
 		$this->render('index', array(
-			'topVideo'		=> $topVideo,
+//			'topVideo'		=> $topVideo,
 			'homeVideos'	=> $homeVideos,
 			'voteVideos'	=> $voteVideos,
 			'voteResults'	=> $voteResults,

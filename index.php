@@ -10,8 +10,6 @@ defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
 define("ROOT", dirname(__FILE__));
 define("DOCUMENT_ROOT", $_SERVER['DOCUMENT_ROOT']);
-$simplesamlphp = ROOT."/simplesamlphp";
-include_once( $simplesamlphp.'/lib/_autoload.php' );
 
 // require instagram sdk
 $instagram_sdk = dirname(__FILE__)."/sdk/instagram_sdk";
