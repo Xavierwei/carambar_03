@@ -75,7 +75,7 @@ a:hover{color:#e82426}
 
 /* presentation
 ================================================================================================= */
-.presentation {background: url(../images/presentation_bg.gif) repeat-x top;height:645px;position: relative;padding-top:1px;-webkit-box-shadow: 0 10px 20px 0 #363636;box-shadow: 0 10px 20px 0 #363636;}
+.presentation {position: relative;z-index:9;background: url(../images/presentation_bg.gif) repeat-x top;height:645px;padding-top:1px;-webkit-box-shadow: 0 10px 20px 0 #363636;box-shadow: 0 10px 20px 0 #363636;}
 .skyline {background: url(../images/presentation_skyline.png) no-repeat center top;height:600px;bottom:0;position: absolute;width:100%;}
 .blue-road {background: url(../images/blue_road.png) no-repeat center;height:162px;position:absolute;top:331px;width:100%;}
 .presentation-box {width:1000px;height:430px;margin:80px auto 0 auto;position: relative;}
@@ -91,3 +91,9 @@ a:hover{color:#e82426}
         .indicator-btn:active {background-position:-794px 0;}
 .goto-support-bg {background: url(../images/goto_star.png) no-repeat center;width:100%;height:46px;position: relative;z-index:10;}
     .goto-support {background:#ffeb00 url(../images/goto_btn.gif) no-repeat center;width:406px;height:46px;text-indent:-999em;margin:0 auto;display: block;}
+
+
+/* challenge
+================================================================================================= */
+.challenge {position:relative;z-index:8;}
+.map_bg {position: absolute;background:url(../images/map_bg.jpg) no-repeat top;background-size:100% auto;width:100%;height:304px;}
