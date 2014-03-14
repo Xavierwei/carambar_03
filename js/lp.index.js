@@ -1,7 +1,7 @@
 /*
  * page base action
  */
-LP.use(['jquery', 'api', 'easing'] , function( $ , api ){
+LP.use(['jquery', 'api', 'easing', 'skrollr'] , function( $ , api ){
     'use strict'
 
 	var time_left;
@@ -177,20 +177,15 @@ LP.use(['jquery', 'api', 'easing'] , function( $ , api ){
 				}
 			});
 
-		var timeoffset = isUglyIe?0:2000;
-//		setTimeout(function(){
-//			$('.section,.ball_round').show();
-//			s = skrollr.init({
-//				smoothScrollingDuration:0,
-//				smoothScrolling:true,
-//				easing:'outCubic',
-//				scale:10
-//			});
-//			if(getQueryString('pos') == 'home'){
-//				s.animateTo(1571*skrollr_scale);
-//			}
-//
-//		},timeoffset);
+		var timeoffset = isUglyIe?0:1600;
+		setTimeout(function(){
+			var s = skrollr.init({
+				smoothScrollingDuration:0,
+				smoothScrolling:true,
+				easing:'outCubic',
+				scale:10
+			});
+		},timeoffset);
 
 
 	}
