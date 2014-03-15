@@ -20,7 +20,7 @@ class FacebookController extends Controller {
 	public function actionLogin() {
 		$user = $this->facebook->getUser();
 		if(!$user) {
-			$loginUrl = $this->facebook->getLoginUrl(array('req_perms' => 'email'));
+			$loginUrl = $this->facebook->getLoginUrl(array('scope' => 'email'));
 			//echo "<a href='{$loginUrl}'>login</a>";
 			return $this->responseJSON($loginUrl, "success");
 		}
@@ -29,11 +29,9 @@ class FacebookController extends Controller {
 			$_ = $request->getParam("code");
 			if($_) {
 				$user_profile = $this->facebook->api('/me','GET');
-				print_r($user_profile);
-				exit();
 				// Create the new user if user doesn't exist in database
 				if( !$user = UserAR::model()->findByAttributes(array('name'=>'f_'.$user_profile['username'])) ) {
-					$user = UserAR::model()->createSNSLogin('f_'.$user_profile['username'], $user_profile['id']);
+					$user = UserAR::model()->createSNSLogin('f_'.$user_profile['username'], $user_profile['id'], $user_profile['email']);
 				}
 
 				// Identity local site user data
@@ -108,6 +106,7 @@ class FacebookController extends Controller {
 	public function actionPost(){
 		$request = Yii::app()->getRequest();
 		$content = htmlspecialchars($request->getPost("content"));
+		$img = $request->getPost("img");
 		if(strlen($content) == 0) {
 			return $this->responseError(702);
 		}
@@ -115,12 +114,24 @@ class FacebookController extends Controller {
 		if(strlen($content) > 140) {
 			return $this->responseError(703);
 		}
-		$results = $this->facebook->api('/me/photos', 'POST',
-			array(
-				'source'=>'multipart/form-data',
-				'url'=> 'http://s3.amazonaws.com/rapgenius/haha1.gif',
-				'message' => $content
-			));
+		if(!empty($img)) {
+			$results = $this->facebook->api('/me/photos', 'POST',
+				array(
+					'source'=>'multipart/form-data',
+					//'url'=> Yii::app()->params['siteurl'].$img,
+					'url' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
+					'message' => $content
+				));
+		}
+		else {
+			$results = $this->facebook->api('/me/feed', 'POST',
+				array(
+					//'source'=>'multipart/form-data',
+					//'picture' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
+					'message' => $content
+				));
+		}
+
 
 		return $this->responseJSON($results, "success");
 	}

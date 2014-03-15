@@ -89,7 +89,7 @@
 			    <!--  -->
 			    <div class="share">
 				    <div class="share-fb">
-					    <a href="#" class="share-fbbtn"></a>
+					    <a href="#" class="share-fbbtn" data-a="open_facebook"></a>
 				    </div>
 				    <div class="share-t">
 					    <textarea class="share-txt"></textarea>
@@ -133,26 +133,30 @@
 	        </div>
 
 
-            <div class="facebook-post">
-                <div class="facebook-post-title"></div>
-                <div class="facebook-post-img" id="fileupload">
-                    <input type="file" accept="image/*" name="file">
-                </div>
-                <div class="poptxt-pic">
-                    <a class="pop-zoomout-btn" data-a="pop-zoomout-btn" href="#">Zoom In</a>
-                    <a class="pop-zoomin-btn" data-a="pop-zoomin-btn" href="#">Zoom Out</a>
-                    <a class="pop-rright-btn" data-a="pop-rright-btn" href="#">Turn Right</a>
-                    <a class="pop-rleft-btn" data-a="pop-rleft-btn" href="#">Turn Left</a>
-                    <div class="poptxt-pic-inner">
-                        <img style="pointer-events:none" />
-                    </div>
-                </div></div>
-                <div class="facebook-post-textarea">
-                    <textarea rows="" cols=""></textarea>
-                </div>
-                <div class="facebook-post-icon"></div>
-                <div class="facebook-post-submit"></div>
-            </div>
+            <!--<div class="facebook-post">-->
+                <!--<div class="facebook-post-title"></div>-->
+                <!--<div class="facebook-post-img" id="fileupload">-->
+                    <!--<input type="file" accept="image/*" name="file">-->
+                <!--</div>-->
+                <!--<div class="poptxt-pic">-->
+                    <!--<a class="pop-zoomout-btn" data-a="pop-zoomout-btn" href="javascript:void(0)">Zoom In</a>-->
+                    <!--<a class="pop-zoomin-btn" data-a="pop-zoomin-btn" href="javascript:void(0)">Zoom Out</a>-->
+                    <!--<div class="poptxt-pic-inner">-->
+                        <!--<img style="pointer-events:none" />-->
+                    <!--</div>-->
+                <!--</div></div>-->
+                <!--<div class="facebook-post-textarea">-->
+                    <!--<textarea rows="" cols=""></textarea>-->
+                <!--</div>-->
+                <!--<div class="facebook-post-icon"></div>-->
+                <!--<div class="facebook-post-submit"></div>-->
+            <!--</div>-->
+
+
+
+    <!--  -->
+
+    <!--  -->
 
 
 
@@ -169,13 +173,52 @@
     <!-- Templates -->
     <!-- #youtube-player-tpl -->
     <script type="text/tpl" id="youtube-player-template">
-        <div class="popup video-popup" data-a="close_popup">
+        <div class="pop video-popup" data-a="close_popup">
             <div class="popup-close"></div>
             <iframe width="825" height="640" src="//www.youtube.com/embed/7-h4gSeXb5s?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
     </script>
     <!-- /youtube-player-tpl -->
 
+    <!-- #facebook-post-tpl -->
+    <script type="text/tpl" id="facebook-post-template">
+        <div class="pop pop-fb">
+            <div class="pop-close" data-a="close_popup"></div>
+            <div class="pop-fttit">PUBLIER VOTRE SOUTIEN avec le #goodluckcarambar</div>
+            <div class="pop-ft-form cs-clear">
+                <div class="facebook-post-img-wrap">
+                    <div class="facebook-post-img" id="fileupload">
+                        <input type="file" accept="image/*" name="file">
+                    </div>
+
+                    <div class="facebook-post-load">
+                        <div class="popload-percent"><p></p></div>
+                        <div class="popload-text">Téléchargement en cours…</div>
+                    </div>
+
+                    <div class="poptxt-pic">
+                        <a class="pop-zoomout-btn" data-a="pop-zoomout-btn" href="javascript:void(0)">Zoom In</a>
+                        <a class="pop-zoomin-btn" data-a="pop-zoomin-btn" href="javascript:void(0)">Zoom Out</a>
+                        <div class="poptxt-pic-inner">
+                            <img style="pointer-events:none" />
+                        </div>
+                    </div>
+                </div>
+                <div class="pop-ft-text">
+                    <div class="pop-ft-ftit">votre commentaire</div>
+                    <input id="facebook-img" type="hidden" />
+                    <textarea id="facebook-content"></textarea>
+                </div>
+            </div>
+            <div class="pop-ft-check">
+                <input type="checkbox" />
+                <span>j'ai lu et j'accepte le règlement du jeu</span>
+            </div>
+            <div class="pop-ft-icon"></div>
+            <div class="pop-ft-btn" data-a="submit-facebook"></div>
+        </div>
+    </script>
+    <!-- #facebook-post-tpl -->
 
     <script type="text/javascript" src="../js/plugin/modernizr-2.5.3.min.js"></script>
     <script type="text/javascript" src="../js/sea/sea-debug.js" data-config="../config.js"></script>

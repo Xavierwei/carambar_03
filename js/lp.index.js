@@ -1,7 +1,7 @@
 /*
  * page base action
  */
-LP.use(['jquery', 'api', 'easing', 'skrollr'] , function( $ , api ){
+LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
     'use strict'
 
 	var time_left;
@@ -34,11 +34,155 @@ LP.use(['jquery', 'api', 'easing', 'skrollr'] , function( $ , api ){
     });
 
     /**
+     * Popup open Facebook
+     */
+    //-----------------------------------------------------------------------
+    // init drag event for image upload
+    // after image upload, init it's size to fix the window
+    // use raephael js to rotate, scale , and drag the image photo
+    var transformMgr;
+    LP.use('imgUtil' , function( imgUtil ){
+        transformMgr = imgUtil;
+    });
+
+    var fileUploadDone = function(data){
+        if(!data.result.success) {
+            switch(data.result.message){
+                case 502:
+                    var errorIndex = 0;
+                    break;
+                case 501:
+                    var errorIndex = 2;
+                    break;
+                case 503:
+                    var errorIndex = 1;
+                    break;
+                case 509:
+                    var errorIndex = 3;
+                    break;
+            }
+            $('.pop-inner').fadeOut(400);
+            $('.pop-file').delay(800).fadeIn(400);
+            $('.step1-tips li').removeClass('error');
+            $('.step1-tips li').eq(errorIndex).addClass('error');
+        } else {
+            $('.facebook-post-load').fadeOut(400);
+            $('.poptxt-pic-inner').css({opacity:0});
+            var rdata = data.result.data;
+            if (data.files && data.files[0] && window.FileReader ) {
+                //..create loading
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    // change checkpage img
+                    $('.poptxt-pic img')
+                        .unbind('load.forinnershow')
+                        .bind('load.forinnershow' , function(){
+                            if($('.poptxt-pic-inner').hasClass('loaded')) return;
+                            $('.poptxt-pic-inner').addClass('loaded');
+                            $('.pop-inner').delay(400).fadeOut(400);
+                            $('.pop-txt').delay(1200).fadeIn(400);
+                            setTimeout(function(){
+                                $('.poptxt-pic').fadeIn();
+                                transformMgr.initialize( $('.poptxt-pic-inner') );
+                                var b64 = $('.poptxt-pic-inner img').attr('src');
+                                var bin = atob(b64.split(',')[1]);
+                                var exif = EXIF.readFromBinaryFile(new BinaryFile(bin));
+                                if(exif.Orientation != undefined && exif.Orientation != 1){
+                                    var oldWidth = $('.poptxt-pic-inner img').width();
+                                    var oldHeight = $('.poptxt-pic-inner img').height();
+                                    $('.poptxt-pic-inner img').addClass('fromserver').height(oldWidth).width(oldHeight).attr('src', API_FOLDER + data.result.data.file).css('opacity',0);
+                                    setTimeout(function(){
+                                        $('.poptxt-pic-inner img.fromserver').ensureLoad(function(){
+                                            if($(this).attr('src').indexOf('api')) {
+                                                $(this).animate({'opacity':1});
+                                            }
+                                        });
+                                        transformMgr.initialize( $('.poptxt-pic-inner') );
+                                    },500);
+                                }
+
+                            } , 1700 );
+                        })
+                        .attr('src', e.target.result/*.replace('.jpg', THUMBNAIL_IMG_SIZE + '.jpg')*/);
+                    //$('.poptxt-submit').attr('data-d','file='+ rdata.file +'&type=' + rdata.type);
+                    $('#facebook-img').val(rdata.file);
+                };
+                reader.readAsDataURL(data.files[0]);
+                $('.poptxt-pic-inner').delay(3000).animate({opacity:1});
+            } else {
+                $('.poptxt-pic img')
+                    .unbind('load.forinnershow')
+                    .bind('load.forinnershow' , function(){
+                        $('.pop-inner').delay(400).fadeOut(400);
+                        $('.pop-txt').delay(1200).fadeIn(400);
+                        setTimeout(function(){
+                            transformMgr.initialize( $('.poptxt-pic-inner') );
+                        } , 1700 );
+                    })
+                    .attr('src', API_FOLDER + rdata.file/*.replace('.jpg', THUMBNAIL_IMG_SIZE + '.jpg')*/);
+                $('.poptxt-submit').attr('data-d','file='+ rdata.file +'&type=' + rdata.type);
+            }
+        }
+    }
+
+    LP.action('open_facebook', function(data) {
+        LP.compile( 'facebook-post-template' , data , function( html ){
+            $('.overlay').fadeIn();
+            $('body').append(html);
+            var $fileupload = $('#fileupload');
+            var acceptFileTypes = /(\.|\/)(gif|jpe?g|png)$/i;
+            var maxFileSize = 5 * 1024000;
+            LP.use('fileupload' , function(){
+                $fileupload.fileupload({
+                    url: '../index.php/uploads/upload',
+                    datatype:"json",
+                    autoUpload:false,
+                    dropZone: $fileupload
+                })
+                    .bind('fileuploadadd', function (e, data) {
+                        $('.step1-tips li').removeClass('error');
+                        if(!acceptFileTypes.test(data.files[0].name.toLowerCase())) {
+                            $('.step1-tips li').eq(0).addClass('error');
+                        }
+                        else if(data.files[0].size > maxFileSize) {
+                            $('.step1-tips li').eq(2).addClass('error');
+                        }
+                        else {
+                            data.submit();
+                        }
+                    })
+                    .bind('fileuploadstart', function (e, data) {
+                        $('.facebook-post-img').fadeOut(400);
+                        $('.facebook-post-load').delay(400).fadeIn(400);
+                    })
+                    .bind('fileuploadprogress', function (e, data) {
+                        var rate = data._progress.loaded / data._progress.total * 100;
+                        var $bar = $('.popload-percent p');
+                        var currentRate = $bar.data('rate');
+                        if(!currentRate) {
+                            currentRate = 0;
+                        }
+                        if(rate > currentRate) {
+                            $bar.data('rate',rate).css({width:rate + '%'});
+                        }
+                    })
+                    .bind('fileuploadfail', function() {
+                        $('.pop-inner').fadeOut(400);
+                        $('.pop-file').delay(400).fadeIn(400);
+                    })
+                    .bind('fileuploaddone', function (e, data) {
+                        fileUploadDone(data);
+                    });
+            });
+        });
+    });
+
+    /**
      * Close popup
      */
     LP.action('close_popup', function() {
         $('.overlay').fadeOut();
-        $('.popup').fadeOut();
+        $('.pop').fadeOut();
     });
 
 
@@ -79,8 +223,9 @@ LP.use(['jquery', 'api', 'easing', 'skrollr'] , function( $ , api ){
 	});
 
     LP.action('submit-facebook', function(){
+        var img = $('#facebook-img').val();
         var content = '#GOODLUCKCARAMBAR ' + $('#facebook-content').val();
-        api.ajax('postFacebook', {content: content}, function( result ){
+        api.ajax('postFacebook', {content: content, img: img}, function( result ){
             console.log(result);
             if(result.success) {
                 alert('Success Posted!');
@@ -206,140 +351,42 @@ LP.use(['jquery', 'api', 'easing', 'skrollr'] , function( $ , api ){
 		},timeoffset);
 
 
-        var $fileupload = $('#fileupload');
-        var acceptFileTypes = /(\.|\/)(gif|jpe?g|png)$/i;
-        var maxFileSize = 5 * 1024000;
-        LP.use('fileupload' , function(){
-            $fileupload.fileupload({
-                url: '../index.php/uploads/upload',
-                datatype:"json",
-                autoUpload:false
-            })
-                .bind('fileuploadadd', function (e, data) {
-                    $('.step1-tips li').removeClass('error');
-                    if(!acceptFileTypes.test(data.files[0].name.toLowerCase())) {
-                        $('.step1-tips li').eq(0).addClass('error');
-                    }
-                    else if(data.files[0].size > maxFileSize) {
-                        $('.step1-tips li').eq(2).addClass('error');
-                    }
-                    else {
-                        data.submit();
-                    }
-                })
-                .bind('fileuploadstart', function (e, data) {
-                    alert(1);
-                    $('.pop-inner').fadeOut(400);
-                    $('.pop-load').delay(400).fadeIn(400);
-                })
-                .bind('fileuploadprogress', function (e, data) {
-                    var rate = data._progress.loaded / data._progress.total * 100;
-                    var $bar = $('.popload-percent p');
-                    var currentRate = $bar.data('rate');
-                    if(!currentRate) {
-                        currentRate = 0;
-                    }
-                    if(rate > currentRate) {
-                        $bar.data('rate',rate).css({width:rate + '%'});
-                    }
-                })
-                .bind('fileuploadfail', function() {
-                    $('.pop-inner').fadeOut(400);
-                    $('.pop-file').delay(400).fadeIn(400);
-                })
-                .bind('fileuploaddone', function (e, data) {
-                    fileUploadDone(data);
-                });
-        });
+
 	}
 
-
-    //-----------------------------------------------------------------------
-    // init drag event for image upload
-    // after image upload, init it's size to fix the window
-    // use raephael js to rotate, scale , and drag the image photo
-    var transformMgr;
-    LP.use('imgUtil' , function( imgUtil ){
-        transformMgr = imgUtil;
+    $(document).bind('dragover', function (e) {
+        var dropZone = $('#fileupload'),
+            timeout = window.dropZoneTimeout;
+        if (!timeout) {
+            dropZone.addClass('in');
+        } else {
+            clearTimeout(timeout);
+        }
+        var found = false,
+            node = e.target;
+        do {
+            if (node === dropZone[0]) {
+                found = true;
+                break;
+            }
+            node = node.parentNode;
+        } while (node != null);
+        if (found) {
+            dropZone.addClass('hover');
+        } else {
+            dropZone.removeClass('hover');
+        }
+        window.dropZoneTimeout = setTimeout(function () {
+            window.dropZoneTimeout = null;
+            dropZone.removeClass('in hover');
+        }, 100);
     });
 
-    var fileUploadDone = function(data){
-        if(!data.result.success) {
-            switch(data.result.message){
-                case 502:
-                    var errorIndex = 0;
-                    break;
-                case 501:
-                    var errorIndex = 2;
-                    break;
-                case 503:
-                    var errorIndex = 1;
-                    break;
-                case 509:
-                    var errorIndex = 3;
-                    break;
-            }
-            $('.pop-inner').fadeOut(400);
-            $('.pop-file').delay(800).fadeIn(400);
-            $('.step1-tips li').removeClass('error');
-            $('.step1-tips li').eq(errorIndex).addClass('error');
-        } else {
-            $('.poptxt-pic-inner').css({opacity:0});
-            var rdata = data.result.data;
-            if (data.files && data.files[0] && window.FileReader ) {
-                //..create loading
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    // change checkpage img
-                    $('.poptxt-pic img')
-                        .unbind('load.forinnershow')
-                        .bind('load.forinnershow' , function(){
-                            if($('.poptxt-pic-inner').hasClass('loaded')) return;
-                            $('.poptxt-pic-inner').addClass('loaded');
-                            $('.pop-inner').delay(400).fadeOut(400);
-                            $('.pop-txt').delay(1200).fadeIn(400);
-                            setTimeout(function(){
-                                alert(1);
-                                transformMgr.initialize( $('.poptxt-pic-inner') );
-                                var b64 = $('.poptxt-pic-inner img').attr('src');
-                                var bin = atob(b64.split(',')[1]);
-                                var exif = EXIF.readFromBinaryFile(new BinaryFile(bin));
-                                if(exif.Orientation != undefined && exif.Orientation != 1){
-                                    var oldWidth = $('.poptxt-pic-inner img').width();
-                                    var oldHeight = $('.poptxt-pic-inner img').height();
-                                    $('.poptxt-pic-inner img').addClass('fromserver').height(oldWidth).width(oldHeight).attr('src', API_FOLDER + data.result.data.file).css('opacity',0);
-                                    setTimeout(function(){
-                                        $('.poptxt-pic-inner img.fromserver').ensureLoad(function(){
-                                            if($(this).attr('src').indexOf('api')) {
-                                                $(this).animate({'opacity':1});
-                                            }
-                                        });
-                                        transformMgr.initialize( $('.poptxt-pic-inner') );
-                                    },500);
-                                }
 
-                            } , 1700 );
-                        })
-                        .attr('src', e.target.result/*.replace('.jpg', THUMBNAIL_IMG_SIZE + '.jpg')*/);
-                    $('.poptxt-submit').attr('data-d','file='+ rdata.file +'&type=' + rdata.type);
-                };
-                reader.readAsDataURL(data.files[0]);
-                $('.poptxt-pic-inner').delay(3000).animate({opacity:1});
-            } else {
-                $('.poptxt-pic img')
-                    .unbind('load.forinnershow')
-                    .bind('load.forinnershow' , function(){
-                        $('.pop-inner').delay(400).fadeOut(400);
-                        $('.pop-txt').delay(1200).fadeIn(400);
-                        setTimeout(function(){
-                            transformMgr.initialize( $('.poptxt-pic-inner') );
-                        } , 1700 );
-                    })
-                    .attr('src', API_FOLDER + rdata.file/*.replace('.jpg', THUMBNAIL_IMG_SIZE + '.jpg')*/);
-                $('.poptxt-submit').attr('data-d','file='+ rdata.file +'&type=' + rdata.type);
-            }
-        }
-    }
+
+
+
+
 
 	$(window).scroll(function(){
 		console.log($(window).scrollTop());
