@@ -25,10 +25,10 @@ a:hover{color:#e82426}
 
 /* Header Used
 ================================================================================================= */
-.header{height: 130px;background: url('../images/hdbg.gif') no-repeat bottom center;width:100%}
+.header{height: 164px;background: url('../images/hdbg.png') no-repeat bottom center;width:100%}
     .hdcontent{width:1000px;margin: 0 auto;position: relative;}
-        .nav1{background: url('../images/nav.png') no-repeat 0 0;width: 120px;height: 25px;position: absolute;top:48px;left:50%;margin: 0 0 0 -345px}
-        .nav2{background: url('../images/nav.png') no-repeat -120px 0;width: 120px;height: 25px;position: absolute;top:48px;left:50%;margin: 0 0 0 235px}
+        .nav1{background: url('../images/nav.png') no-repeat 0 0;width: 120px;height: 25px;position: absolute;top:27px;left:50%;margin: 0 0 0 -300px}
+        .nav2{background: url('../images/nav.png') no-repeat -120px 0;width: 150px;height: 25px;position: absolute;top:27px;left:50%;margin: 0 0 0 190px}
         .nav1on{}
         .nav2on{}
 
@@ -114,6 +114,11 @@ a:hover{color:#e82426}
 
 .pholist{background: url('../images/pholist.png') repeat-x center;height: 153px;margin: 15px auto 0;width:812px;padding:0 0 0 24px;}
     .phoitem{float:left;background:#000;padding: 3px;width: 126px;height: 121px;display: inline;margin:15px 13px;}
+
+
+
+.topdemo{background: url('../images/topdemo.png') no-repeat center;height: 377px}
+
 
 /* footer Used
 ================================================================================================= */
