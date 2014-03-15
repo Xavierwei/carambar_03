@@ -346,7 +346,8 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
 			var s = skrollr.init({
 				smoothScrollingDuration:0,
 				smoothScrolling:true,
-				easing:'outCubic'
+				easing:'outCubic',
+				forceHeight: false
 			});
 		},timeoffset);
 

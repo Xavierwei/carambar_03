@@ -12,6 +12,7 @@
 	<div class="presentation">
 		<div class="skyline"
 		     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,100px,0);"></div>
+		<?php if($phase == 1 || $phase == 2 || $phase == 3):?>
 		<div class="blue-road"
 		     data-style="opacity:0;" data-animate="opacity:1;" data-delay="0" data-time="800"
 		     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);"></div>
@@ -43,6 +44,60 @@
 		<div class="goto-support-bg" data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,70px,0);">
 			<a href="#" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
 		</div>
+		<?php endif;?>
+		<?php if($phase == 4 || $phase == 5):?>
+		<div class="videopart cs-clear">
+			<div class="videopart-tit"></div>
+			<!-- Video -->
+			<div class="videomod"><iframe width="548" height="304" src="//www.youtube.com/embed/7-h4gSeXb5s?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe></div>
+			<!-- Twitter -->
+			<div class="videotxt">
+				<!-- <h2>#goodluckcarambar</h2> -->
+				<div class="videotxt-item">
+					<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
+					<h3>#GOODLUCKCARAMBAR</h3>
+					<span>@bonbon</span>
+				</div>
+				<div class="videotxt-item">
+					<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
+					<h3>#GOODLUCKCARAMBAR</h3>
+					<span>@bonbon</span>
+				</div>
+				<div class="videotxt-item">
+					<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
+					<h3>#GOODLUCKCARAMBAR</h3>
+					<span>@bonbon</span>
+				</div>
+			</div>
+			<!--  -->
+			<div class="videobot"></div>
+			<!-- 分享 -->
+			<div class="videoshare">
+				<!-- <a href="#" class="videoshare-fb"></a> -->
+				<a href="#" class="videoshare-t"></a>
+				<!-- <a href="#" class="videoshare-y"></a> -->
+				<!-- <a href="#" class="videoshare-i"></a> -->
+			</div>
+		</div>
+
+			<?php if($phase == 4):?>
+			<!-- section blue -->
+			<div class="sec-blue">
+				<div class="sec-bluecon cs-clear">
+					<div class="sec-bluepho"></div>
+					<div class="sec-bluenum"></div>
+					<div class="sec-bluetime"></div>
+				</div>
+			</div>
+			<?php else:?>
+				<div class="sec-blue2">
+					<div class="sec-blue2txt"></div>
+					<div class="sec-blue2txt2"></div>
+				</div>
+				<div class="line line4"></div>
+			<?php endif;?>
+
+		<?php endif;?>
 	</div>
 	<!-- /Presentation Block -->
 	<!-- #Challenge Block -->
@@ -76,11 +131,11 @@
 		</div>
 	</div>
 	<?php endif;?>
-	<?php if($phase == 3):?>
+	<?php if($phase == 3 || $phase == 4):?>
 	<div class="videolistbg">
 		<div class="videolist-tit"></div>
 		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
-		<div class="videolist">
+		<div class="videolist" data-626="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
 			<div class="videolistshare">
 				<div class="video-con">
 					<div class="videolist-item">
@@ -104,11 +159,84 @@
 		</div>
 	</div>
 	<?php endif;?>
+	<?php if($phase == 5):?>
+		<div class="videolistbg">
+			<div class="videolist-tit2"></div>
+			<div class="challenge-man" data-500="transform:translate3d(0,0px,0);" data-600="transform:translate3d(0,-259px,0);"></div>
+			<div class="videolist" data-826="transform:translate3d(0,0px,0);" data-1400="transform:translate3d(0,100px,0);">
+				<div class="videolistshare">
+					<div class="video-con">
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit1"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit1"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif;?>
 	<!-- /Challenge Block -->
 
 	<div class="yellow-wrap">
+		<?php if($phase == 1):?>
+		<!-- line -->
+		<div class="line line-p1">
+			<div class="line-com-p1"></div>
+		</div>
+		<?php endif;?>
+		<?php if($phase == 3):?>
+		<!-- line -->
+		<div class="line line2">
+			<div class="line-com2"></div>
+		</div>
+		<!-- #barack -->
+		<div class="barack">
+			<div class="baracktit"></div>
+			<div class="baracktxt">Please tell us when we can meet</div>
+			<div class="barackbtn"></div>
+		</div>
+		<!-- /barack -->
+		<?php endif;?>
+
+		<?php if($phase == 1 || $phase == 2 || $phase == 3 || $phase == 4):?>
 		<!--  -->
-		<div class="img"></div>
+		<div class="img">
+			<div class="img1"></div>
+			<div class="img2"></div>
+			<div class="img3"></div>
+		</div>
 		<!--  -->
 		<div class="share">
 			<div class="share-fb">
@@ -127,8 +255,12 @@
 		<!--  -->
 		<div class="tshirttit"></div>
 		<!--  -->
-		<div class="tshirt"></div>
+		<div class="tshirt">
+			<div class="tshirt1"></div>
+			<div class="tshirt2"></div>
+		</div>
 		<!--  -->
+		<?php endif;?>
 		<div class="photit"></div>
 		<!--  -->
 		<div class="pholist cs-clear">
