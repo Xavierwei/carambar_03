@@ -182,13 +182,16 @@ LP.use(['jquery', 'api', 'easing', 'skrollr'] , function( $ , api ){
 			var s = skrollr.init({
 				smoothScrollingDuration:0,
 				smoothScrolling:true,
-				easing:'outCubic',
-				scale:5
+				easing:'outCubic'
 			});
 		},timeoffset);
 
 
 	}
+
+	$(window).scroll(function(){
+		console.log($(window).scrollTop());
+	});
 
 	init();
 

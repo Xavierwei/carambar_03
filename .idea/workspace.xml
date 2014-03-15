@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugin/skrollr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugin/state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/config.js" afterPath="$PROJECT_DIR$/js/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.index.js" afterPath="$PROJECT_DIR$/js/lp.index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
@@ -16,7 +13,7 @@
     <file path="/controllers.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391781932373" ignored="false" />
     <file path="/partial1.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387685938508" ignored="false" />
     <file path="/list.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393130375424" ignored="false" />
-    <file path="/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394820660474" ignored="false" />
+    <file path="/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394826029192" ignored="false" />
     <file path="/a.dummy" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394283116798" ignored="false" />
     <file path="/filters.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392818424824" ignored="false" />
     <file path="/edit.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388904056923" ignored="false" />
@@ -65,7 +62,7 @@
     <file path="$PROJECT_DIR$/../avene_redness/0110/css/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390621149917" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/video.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/testimonial.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
-    <file path="/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394817999438" ignored="false" />
+    <file path="/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394825949386" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/story.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
     <file path="$PROJECT_DIR$/../lighthouse/sites/default/settings.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390033191696" ignored="false" />
     <file path="/animate-custom.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390051249512" ignored="false" />
@@ -303,7 +300,7 @@
     <file path="/InstagramController.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394789291316" ignored="false" />
     <file path="/VideoAR.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394354127042" ignored="false" />
     <file path="/VideoController.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394348139796" ignored="false" />
-    <file path="/lp.index.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394820622109" ignored="false" />
+    <file path="/lp.index.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394825060479" ignored="false" />
     <file path="/VoteAR.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394344634633" ignored="false" />
     <file path="/IndexController.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394358865980" ignored="false" />
     <file path="/SettingAR.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394355685323" ignored="false" />
@@ -395,19 +392,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="23" selection-start="1790" selection-end="1790" vertical-scroll-proportion="33.214287">
+            <state line="60" column="50" selection-start="3160" selection-end="3160" vertical-scroll-proportion="0.5449331">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="state.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PHASE 4.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html2/PHASE 4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="144" column="21" selection-start="4501" selection-end="6135" vertical-scroll-proportion="-35.285713">
+              <folding>
+                <marker date="1394822164000" expanded="true" signature="6357:6458" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="144" column="157" selection-start="10124" selection-end="10124" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html2/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="0" selection-start="5546" selection-end="8595" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="state.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/plugin/state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="17" selection-start="15" selection-end="21" vertical-scroll-proportion="0.017690875">
+            <state line="1" column="17" selection-start="15" selection-end="21" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -416,7 +442,7 @@
       <file leaf-file-name="lp.base.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/lp.base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="472" column="31" selection-start="17657" selection-end="17657" vertical-scroll-proportion="0.0">
+            <state line="3090" column="29" selection-start="117279" selection-end="117279" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -425,7 +451,7 @@
       <file leaf-file-name="lp.index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/lp.index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="43" selection-start="63" selection-end="70" vertical-scroll-proportion="0.0">
+            <state line="156" column="23" selection-start="4496" selection-end="4496" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -435,15 +461,6 @@
         <entry file="file://$PROJECT_DIR$/js/config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="78" column="12" selection-start="1763" selection-end="1763" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="92" selection-start="5044" selection-end="5044" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -479,9 +496,9 @@
         <option value="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/protected/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/html/css/style.css" />
-        <option value="$PROJECT_DIR$/js/lp.index.js" />
         <option value="$PROJECT_DIR$/js/config.js" />
+        <option value="$PROJECT_DIR$/js/lp.index.js" />
+        <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/html/index.html" />
       </list>
     </option>
@@ -812,16 +829,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/models/SettingAR.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="0.14531548" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="508" selection-end="508" vertical-scroll-proportion="0.23613767" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="46" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.018164435" />
@@ -849,30 +856,9 @@
         <state line="26" column="38" selection-start="796" selection-end="796" vertical-scroll-proportion="0.018164435" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="92" selection-start="5044" selection-end="5044" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/plugin/skrollr.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="38" selection-start="175" selection-end="175" vertical-scroll-proportion="0.017907634">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="472" column="31" selection-start="17657" selection-end="17657" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="43" selection-start="63" selection-end="70" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -900,16 +886,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
+    <entry file="file://$PROJECT_DIR$/html2/PHASE 4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="23" selection-start="1790" selection-end="1790" vertical-scroll-proportion="33.214287">
+        <state line="144" column="21" selection-start="4501" selection-end="6135" vertical-scroll-proportion="-35.285713">
+          <folding>
+            <marker date="1394822164000" expanded="true" signature="6357:6458" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html2/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="5546" selection-end="8595" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/plugin/state.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="15" selection-end="21" vertical-scroll-proportion="0.017690875">
+        <state line="1" column="17" selection-start="15" selection-end="21" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3090" column="29" selection-start="117279" selection-end="117279" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lp.index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="23" selection-start="4496" selection-end="4496" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="157" selection-start="10124" selection-end="10124" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="50" selection-start="3160" selection-end="3160" vertical-scroll-proportion="0.5449331">
           <folding />
         </state>
       </provider>
