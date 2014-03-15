@@ -23,13 +23,32 @@ LP.use(['jquery', 'api', 'easing', 'skrollr'] , function( $ , api ){
             }
         })
 
+    /**
+     * Popup open Youtube Video
+     */
+    LP.action('open_video', function(data) {
+        LP.compile( 'youtube-player-template' , data , function( html ){
+            $('.overlay').fadeIn();
+            $('body').append(html);
+        });
+    });
+
+    /**
+     * Close popup
+     */
+    LP.action('close_popup', function() {
+        $('.overlay').fadeOut();
+        $('.popup').fadeOut();
+    });
 
 
-
+    /**
+     * Vote Challenge
+     */
 	LP.action('vote', function(data){
 		if($(this).hasClass('voting')) return;
 
-		api.ajax('vote', {vid:data.vid}, function( result ){
+		api.ajax('vote', {cid:data.cid}, function( result ){
 			$(this).addClass('voting');
 			if(result.success) {
 				$(this).removeClass('voting');
@@ -187,6 +206,48 @@ LP.use(['jquery', 'api', 'easing', 'skrollr'] , function( $ , api ){
 		},timeoffset);
 
 
+        var $fileupload = $('#fileupload');
+        LP.use('fileupload' , function(){
+            $fileupload.fileupload({
+                url: './api/index.php/uploads/upload',
+                datatype:"json",
+                autoUpload:false
+            })
+                .bind('fileuploadadd', function (e, data) {
+                    $('.step1-tips li').removeClass('error');
+                    if(!acceptFileTypes.test(data.files[0].name.toLowerCase())) {
+                        $('.step1-tips li').eq(0).addClass('error');
+                    }
+                    else if(data.files[0].size > maxFileSize) {
+                        $('.step1-tips li').eq(2).addClass('error');
+                    }
+                    else {
+                        data.submit();
+                    }
+                })
+                .bind('fileuploadstart', function (e, data) {
+                    $('.pop-inner').fadeOut(400);
+                    $('.pop-load').delay(400).fadeIn(400);
+                })
+                .bind('fileuploadprogress', function (e, data) {
+                    var rate = data._progress.loaded / data._progress.total * 100;
+                    var $bar = $('.popload-percent p');
+                    var currentRate = $bar.data('rate');
+                    if(!currentRate) {
+                        currentRate = 0;
+                    }
+                    if(rate > currentRate) {
+                        $bar.data('rate',rate).css({width:rate + '%'});
+                    }
+                })
+                .bind('fileuploadfail', function() {
+                    $('.pop-inner').fadeOut(400);
+                    $('.pop-file').delay(400).fadeIn(400);
+                })
+                .bind('fileuploaddone', function (e, data) {
+                    fileUploadDone(data);
+                });
+        });
 	}
 
 	$(window).scroll(function(){

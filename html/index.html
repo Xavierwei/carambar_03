@@ -35,7 +35,7 @@
 			            <div class="tips-content"></div>
 			            <div class="tips-video">
 				            <img src="pic/presentation-video.jpg" />
-				            <a class="video-play"></a>
+				            <a class="video-play" href="javascript:void(0);" data-a="open_video" data-d="mid="></a>
 			            </div>
 		            </div>
 		            <div class="indicator-count-wrap"
@@ -58,25 +58,26 @@
 				     data-0="transform:translate3d(0,0px,0);" data-1500="transform:translate3d(0,-400px,0);"></div>
 	        </div>
 		    <div class="challenge">
+                <div class="challenge-title"></div>
 			    <div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
 			    <div class="challenge-inner" data-646="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
 				    <div class="challenge-item">
 						<div class="challenge-img">
 							<img src="pic/challenge1.jpg" />
 						</div>
-					    <div class="vote-btn vote-btn1">DEFI No1</div>
+					    <div class="vote-btn vote-btn1" data-a="vote" data-d="cid=1">DEFI No1</div>
 				    </div>
 				    <div class="challenge-item">
 					    <div class="challenge-img">
 						    <img src="pic/challenge2.jpg" />
 					    </div>
-					    <div class="vote-btn vote-btn2">DEFI No2</div>
+					    <div class="vote-btn vote-btn2" data-a="vote" data-d="cid=2">DEFI No2</div>
 				    </div>
 				    <div class="challenge-item">
 					    <div class="challenge-img">
 						    <img src="pic/challenge3.jpg" />
 					    </div>
-					    <div class="vote-btn vote-btn3">DEFI No3</div>
+					    <div class="vote-btn vote-btn3" data-a="vote" data-d="cid=3">DEFI No3</div>
 				    </div>
 			    </div>
 		    </div>
@@ -132,6 +133,17 @@
 	        </div>
 
 
+            <div class="facebook-post">
+                <div class="facebook-post-title"></div>
+                <div class="facebook-post-img"></div>
+                <div class="facebook-post-textarea">
+                    <textarea rows="" cols=""></textarea>
+                </div>
+                <div class="facebook-post-icon"></div>
+                <div class="facebook-post-submit"></div>
+            </div>
+
+
 
         <!--  -->
     </div>
@@ -139,6 +151,21 @@
     <div class="footer">
         Mentions légales
     </div>
+
+    <div class="overlay" data-a="close_popup"></div>
+
+
+    <!-- Templates -->
+    <!-- #youtube-player-tpl -->
+    <script type="text/tpl" id="youtube-player-template">
+        <div class="popup video-popup" data-a="close_popup">
+            <div class="popup-close"></div>
+            <iframe width="825" height="640" src="//www.youtube.com/embed/7-h4gSeXb5s?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </script>
+    <!-- /youtube-player-tpl -->
+
+
     <script type="text/javascript" src="../js/plugin/modernizr-2.5.3.min.js"></script>
     <script type="text/javascript" src="../js/sea/sea-debug.js" data-config="../config.js"></script>
     <script type="text/javascript" src="../js/sea/plugin-shim.js"></script>

@@ -7,7 +7,7 @@ Current phase template: <?php echo $phase;?>
 	<div class="videopart videopart1 cs-clear">
 		<!-- 视频 -->
 		<div class="videomod">
-			<iframe width="598" height="356" src="//www.youtube.com/embed/7-h4gSeXb5s" frameborder="0" allowfullscreen></iframe>
+			<iframe width="825" height="640" src="//www.youtube.com/embed/7-h4gSeXb5s?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<!-- 视频评论 -->
 		<!-- <div class="videotxt">
