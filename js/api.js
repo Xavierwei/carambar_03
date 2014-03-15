@@ -67,6 +67,8 @@ define(function( require , exports , model ){
     var _needRefresh     = {};
     var _retry = {user:1};
 
+    var _ajaxs = [];
+
     function _isFormatUrl ( url ){
         return !!/#\[.*\]/.test( url );
     }
@@ -124,6 +126,8 @@ define(function( require , exports , model ){
                     }
                 }
             });
+
+            _ajaxs.push( req );
 			return req;
         }
 
@@ -204,4 +208,9 @@ define(function( require , exports , model ){
 
     // for model
     exports.ajax = _load;
+    exports.stop = function(){
+        $.each( _ajaxs , function( i , req ){
+            req && req.abort();
+        } );
+    }
 });
