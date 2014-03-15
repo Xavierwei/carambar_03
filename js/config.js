@@ -80,6 +80,9 @@ seajs.config({
 	  src: "../plugin/skrollr.min.js"
 	  ,deps: ['jquery']
 	}
+    ,exif:{
+      src: "../plugin/exif.js"
+    }
   }
   , alias: {
     api: '../api.js?_201402#'

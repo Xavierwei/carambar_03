@@ -59,7 +59,7 @@ define(function( require , exports , model ){
 		facebookLogin: {path: './index.php/facebook/login', method:'get'},
 		twitterLogin: {path: './index.php/twitter/login', method:'get'},
 		postTwitter: {path: './index.php/twitter/post', method:'post'},
-        postFacebook: {path: './index.php/facebook/post', method:'post'}
+        postFacebook: {path: '../index.php/facebook/post', method:'post'}
     };
 
     // 内部API

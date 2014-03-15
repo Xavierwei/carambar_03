@@ -91,10 +91,11 @@ class UserAR extends CActiveRecord{
 	}
 
 
-	public function createSNSLogin($screen_name, $uid) {
+	public function createSNSLogin($screen_name, $uid, $email) {
 		$newUser = new UserAR();
 		$newUser->datetime = time();
 		$newUser->name = $screen_name;
+		$newUser->personal_email = $email;
 		$newUser->sso_id = md5($uid);
 		$newUser->role = self::ROLE_AUTHEN;
 		$newUser->country_id = 0;

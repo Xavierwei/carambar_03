@@ -111,6 +111,7 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+		'siteurl'=>'http://lily.local:8888/carambar_03',
 		'tag'=>'9263',
 	),
 );

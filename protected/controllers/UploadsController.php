@@ -66,37 +66,18 @@ class UploadsController extends Controller {
 		$fileUpload = CUploadedFile::getInstanceByName("file");
 
 		$request = Yii::app()->getRequest();
-		$type = $request->getPost("type");
-		$device = $request->getPost("device");
-		if(!isset($type)) {
-			$mime = $fileUpload->getType();
-			if( in_array($mime, $this->_photo_mime ) ){
-				$type = "photo";
-
-			} else if ( in_array($mime, $this->_video_mime ) ){
-				$type = "video";
-			} else {
-				return $this->responseError(502); //photo media type is not allowed
-			}
-		}
+		$type = "photo";
 		$nodeAr = new NodeAR();
 		$validateUpload = $nodeAr->validateUpload($fileUpload, $type);
 		if($validateUpload !== true) {
-			if(!($validateUpload == 501 && $device == 'android')) {
+			if(!($validateUpload == 501)) {
 				return $this->responseError($validateUpload);
 			}
 		}
 
 		// save file to dir
-		$file = $nodeAr->saveUploadedFile($fileUpload, $device);
+		$file = $nodeAr->saveUploadedFile($fileUpload);
 		if($file) {
-			// make preview thumbnail
-			if($type == 'video') {
-				$paths = explode(".",$file);
-				$basename = array_shift($paths);
-				$nodeAr->makeVideoThumbnail(ROOT.$basename.'.jpg', ROOT.$basename.'.jpg', 175, 175, false);
-			}
-
 			// return result
 			$retdata = array( "type"=> $type , "file" => $file );
 			$this->responseJSON($retdata, "success");
