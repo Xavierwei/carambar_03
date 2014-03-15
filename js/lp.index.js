@@ -23,13 +23,32 @@ LP.use(['jquery', 'api', 'easing', 'skrollr'] , function( $ , api ){
             }
         })
 
+    /**
+     * Popup open Youtube Video
+     */
+    LP.action('open_video', function(data) {
+        LP.compile( 'youtube-player-template' , data , function( html ){
+            $('.overlay').fadeIn();
+            $('body').append(html);
+        });
+    });
+
+    /**
+     * Close popup
+     */
+    LP.action('close_popup', function() {
+        $('.overlay').fadeOut();
+        $('.popup').fadeOut();
+    });
 
 
-
+    /**
+     * Vote Challenge
+     */
 	LP.action('vote', function(data){
 		if($(this).hasClass('voting')) return;
 
-		api.ajax('vote', {vid:data.vid}, function( result ){
+		api.ajax('vote', {cid:data.cid}, function( result ){
 			$(this).addClass('voting');
 			if(result.success) {
 				$(this).removeClass('voting');
