@@ -17,6 +17,10 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
     var ITEM_WIDTH = MIN_WIDTH;
     var WIN_WIDTH = $(window).width();
     
+    var monthsShort = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var getMonth = function( index ){
+        return monthsShort[ index ];
+    }
 
     if(isPad) {
 		$(window).bind('orientationchange', function() {
@@ -153,21 +157,19 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             // filte for date
             $.each( nodes , function( index , node ){
                 // get date
-                if( bShowDate ){
-                    var datetime = new Date((parseInt(node.datetime)+1*3600)*1000);
-                    var month = (parseInt(datetime.getUTCMonth()) + 1) + '';
-                    month = month.length == 1 ? '0' + month : month;
-                    var day = datetime.getUTCDate() + '';
-                    day = day.length == 1 ? '0' + day : day;
-                    var date =  day + "/" + month + "/" + datetime.getUTCFullYear();
-                    if( lastDate != date){
-                        LP.compile( 'time-item-template' ,
-                            {date: date , day: parseInt(datetime.getUTCDate()) , month: parseInt(datetime.getUTCMonth()) + 1} ,
-                            function( html ){
-                                aHtml.push( html );
-                            });
-                        lastDate = date;
-                    }
+                var datetime = new Date((parseInt(node.datetime)+1*3600)*1000);
+                var month = (parseInt(datetime.getUTCMonth()) + 1) + '';
+                month = month.length == 1 ? '0' + month : month;
+                var day = datetime.getUTCDate() + '';
+                day = day.length == 1 ? '0' + day : day;
+                var date =  day + "/" + month + "/" + datetime.getUTCFullYear();
+                if( lastDate != date){
+                    LP.compile( 'time-item-template' ,
+                        {date: date , day: parseInt(datetime.getUTCDate()) , month: getMonth( parseInt(datetime.getUTCMonth()) )} ,
+                        function( html ){
+                            aHtml.push( html );
+                        });
+                    lastDate = date;
                 }
                 // fix video type
                 node.image = node.file.replace( node.type == 'video' ? '.mp4' : '.jpg' , THUMBNAIL_IMG_SIZE + '.jpg');
@@ -199,7 +201,7 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
         // when current dom is main , and the recent ajax param orderby is 'like' or
         // 'random' , the datetime would not be showed.
         // pageParm.orderby == 'like' || pageParm.orderby == 'random' 此时不显示日历
-        inserNode: function( $dom , nodes , bShowDate ){
+        inserNode: function( $dom , nodes  ){
             var aHtml = [];
             var lastDate = null;
             var pageParm = $main.data('param'); 
@@ -225,27 +227,23 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                 }
             }
 
-            if( bShowDate ){
-                lastDate = $dom.find('.time-item').last().data('date');
-            }
+            lastDate = $dom.find('.time-item').last().data('date');
             // filte for date
             $.each( nodes , function( index , node ){
                 // get date
-                if( bShowDate ){
-                    var datetime = new Date((parseInt(node.datetime)+1*3600)*1000);
-                    var month = (parseInt(datetime.getUTCMonth()) + 1) + '';
-                    month = month.length == 1 ? '0' + month : month;
-                    var day = datetime.getUTCDate() + '';
-                    day = day.length == 1 ? '0' + day : day;
-                    var date =  day + "/" + month + "/" + datetime.getUTCFullYear();
-                    if( lastDate != date){
-                        LP.compile( 'time-item-template' ,
-                            {date: date , day: parseInt(datetime.getUTCDate()) , month: parseInt(datetime.getUTCMonth()) + 1} ,
-                            function( html ){
-                                aHtml.push( html );
-                            } );
-                        lastDate = date;
-                    }
+                var datetime = new Date((parseInt(node.datetime)+1*3600)*1000);
+                var month = (parseInt(datetime.getUTCMonth()) + 1) + '';
+                month = month.length == 1 ? '0' + month : month;
+                var day = datetime.getUTCDate() + '';
+                day = day.length == 1 ? '0' + day : day;
+                var date =  day + "/" + month + "/" + datetime.getUTCFullYear();
+                if( lastDate != date){
+                    LP.compile( 'time-item-template' ,
+                        {date: date , day: parseInt(datetime.getUTCDate()) , month: getMonth( parseInt(datetime.getUTCMonth()) )} ,
+                        function( html ){
+                            aHtml.push( html );
+                        } );
+                    lastDate = date;
                 }
                 // fix video type
                 if(node.file) {
@@ -414,10 +412,14 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             var node = nodes[ _currentNodeIndex ];
         }
         var datetime = new Date((parseInt(node.datetime)+1*3600)*1000);
+        node.year = datetime.getUTCFullYear();
+        node.hour = datetime.getHours();
+        node.minutes = datetime.getUTCMinutes();
         node.date = datetime.getUTCDate();
         node.month = parseInt(datetime.getUTCMonth()) + 1;
         node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
         node.timestamp = (new Date()).getTime();
+        console.log( node );
         LP.compile( 'inner-template' , node , function( html ){
             var mainWidth = WIN_WIDTH - _silderWidth;
             var mainWrapWidth = $main.width();

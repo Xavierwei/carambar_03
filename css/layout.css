@@ -2,7 +2,7 @@
 
 /* Reset
 ================================================================================================= */
-body{color:#fcea2f;font-size:12px;line-height:1.8em;background: #303030;overflow-x: hidden;padding:1px 0 0;}
+body{color:#2f3688;font-size:12px;line-height:1.8em;background: #fcea2f;font-weight: bold; overflow-x: hidden;padding:1px 0 0;font-family: Arial;}
 html,body {height:100%;}
 h1,h2,h3{font-size:100%;font-weight:600;}
 body,h1,h2,h3,h4,ul,li,p,img,input,textarea{margin:0;padding:0;border:0;}
@@ -13,7 +13,7 @@ textarea,input {-webkit-user-select: text;-khtml-user-select: text;-moz-user-sel
 
 /* Commonly Used
 =============================================.image-wrap-inner video==================================================== */
-a{text-decoration:none;color:#666}
+a{text-decoration:none;color:#2f3688}
 /*a:hover{color:#ccc;}*/
 .clear{+zoom:1;}
 .clear:before,
@@ -31,7 +31,17 @@ a{text-decoration:none;color:#666}
 
 /* Header Used
 ================================================================================================= */				
-.header{height:172px;position: fixed;width: 100%;top:0;z-index:12;left:0;right: 0;background: #fcdd2f;font-size:10px;}
+.header{height: 170px;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 12;
+left: 0;
+right: 0;
+background: #fcdd2f;
+font-size: 10px;
+border-bottom: 1px solid #2f3688;
+box-shadow: 0 1px 2px 0px #545dd1;}
 	.logo {cursor:pointer;width:196px;height: 58px;margin:11px auto 0;}
     .logo-en {background:url('../img/logo_en.gif') no-repeat;width:212px;height:58px;}
 	.search{position: absolute;left:10px;top:52px;}
@@ -84,9 +94,11 @@ a{text-decoration:none;color:#666}
 .main{margin:86px 0 0 0px;z-index:8;}
 .index{margin:86px 0 0 0;}
 	.main-item{float:left;position: relative;width:180px;height: 180px;}
-	.time-item{background: #333 url('../img/time_item_bg.gif') no-repeat center;color:#fff;text-align: center;}
-		.time-date{background: url('../img/time_item.png') no-repeat;width:69px;height:69px;position: absolute;left:50%;top:50%;margin: -35px 0 0 -35px;text-align: center;color:#666;font-size: 10px}
-		.time-date span{display: block;font-size:27px;line-height:13px;padding:25px 0 5px;}
+	.time-item{/*background: #333 url('../img/time_item_bg.gif') no-repeat center;*/background: #fff; color:#12103b;text-align: center;font-size: 36px;}
+        .time-item img{margin-top: 14px;}
+		.time-date{ font-size: 72px;line-height: 64px;padding-top: 14px;}
+        .time-month{ line-height: 36px; }
+		/*.time-date span{display: block;font-size:27px;line-height:13px;padding:25px 0 5px;}*/
 	.pic-item{cursor: pointer;}
 	.pic-item:hover .item-icon{display: none;}
 	.item-info{position: absolute;top: 0;left: 0;right: 0;bottom: 0;background: #fff;opacity: 0.8;filter:alpha(opacity=80);text-align: center;display: none;}
@@ -109,7 +121,7 @@ a{text-decoration:none;color:#666}
 
 /* side Used
 ================================================================================================= */
-.side{background:#fcea2f;width: 125px;height: 100%;position:fixed;top: 173px;left: 0;z-index:11;}
+.side{background:#fcea2f;width: 125px;height: 100%;position:fixed;top: 172px;left: 0;z-index:11; border-right: 1px solid #2f3688;}
     .menu{margin-top: 6px;}
         .menu a{display: block;font-size: 18px;font-weight: bold;color:#2f3688; line-height: 24px;padding-left: 40px;font-family: Arial Narrow;}
         .menu a:hover,.menu a.actived{background: black;color: white;}
@@ -178,21 +190,22 @@ a{text-decoration:none;color:#666}
     .comuser-pho{margin:30px auto 10px;width:32px;height:32px}
 	.comuser-pho img{margin:0 auto;display: block;border-radius: 33px;
 			border-radius: 33px;-webkit-border-radius: 33px;-moz-border-radius: 33px;-o-border-radius: 33px;-ms-border-radius: 33px;}
-.com-info{width: 270px;border-top: #5f5f5f dotted 1px;margin: 0 auto;text-align: center;font-size: 11px;padding: 20px 0 0;}
-	.com-counts{}
+.com-info{height: 60px;width: 270px;margin: 0 auto;text-align: center;font-size: 11px;position: absolute;left: 30px;bottom: 0;line-height: 60px;}
+    .com-info a{margin:0 17px;}
+	/*.com-counts{}
 		.com-day{display: inline-block;background: url('../img/icon_inner_time.gif') no-repeat 0 3px;padding:0 0 0 20px;margin:0 30px 0 0;}
 		.com-like {display: inline-block;position: relative;background: url('../img/icon_inner_like.gif') no-repeat 0 5px;padding:0 0 0 18px;margin:0 30px 0 0;}
         .com-unlike {background-position:0 -12px;}
         .com-unlike-tip {display:none;background:#333;font-size:0.9em;color:#fff;position: absolute;left:-8px;top:20px;padding:0 5px;}
         .com-like .need-login {display: none;position: absolute;background:#333;font-size:0.9em;width:140px;margin-left:-70px;}
-        .com-com-count{display: inline-block;background: url('../img/icon_inner_comment.gif') no-repeat 0 3px;padding:0 0 0 23px;}
+        .com-com-count{display: inline-block;background: url('../img/icon_inner_comment.gif') no-repeat 0 3px;padding:0 0 0 23px;}*/
     .comment-form {position: relative;}
-	.com-btn{height: 44px;width:125px;margin:15px auto;background: url('../img/icon_inner_line.gif') no-repeat center;}
+	/*.com-btn{height: 44px;width:125px;margin:15px auto;background: url('../img/icon_inner_line.gif') no-repeat center;}
 		.com-loading {display:none;background:url('../img/loading_comment.gif') no-repeat;width:15px;height:15px;bottom:3px;right:-12px;position:absolute;}
-        .com-btn p{float:left;cursor: pointer;}
-		.com-back{background:url('../img/icon_inner_back.gif') no-repeat center;width:44px;height: 44px;}
+        .com-btn p{float:left;cursor: pointer;}*/
+		/*.com-back{background:url('../img/icon_inner_back.gif') no-repeat center;width:44px;height: 44px;}
 		.com-prev{background:url('../img/icon_inner_left.gif') no-repeat center;width:25px;height: 44px;margin-left:30px;}
-		.com-next{background:url('../img/icon_inner_right.gif') no-repeat center;width:25px;height: 44px}
+		.com-next{background:url('../img/icon_inner_right.gif') no-repeat center;width:25px;height: 44px}*/
 	/**/
 	.com-main{padding:30px 30px 15px 30px;width: 270px;margin: 0 auto;}
         .count-com {margin-right:-5px;}

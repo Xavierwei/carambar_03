@@ -197,6 +197,22 @@ body{
 
 .page{overflow: hidden;}
 
-.inner-side{width: 125px;height: 100%;position: absolute;left: -455px;background: #fcea2f;color:#2f3688;}
-.com-blocks{position: absolute;width: 100%;bottom:0;}
-    .com-block{padding: 10px; border-top: 1px solid black;  }
+.block-text{font-size: 16px;color:#2f3688;font-weight: bold;}
+.inner-side{width: 124px;height: 100%;position: absolute;left: -455px;background: #fcea2f;color:#2f3688; border-right:1px solid #2f3688;}
+.com-blocks{position: absolute;width: 100%;bottom:0; text-align: center;}
+    .com-block{padding: 10px; border-top: 1px solid #2f3688; }
+    .com-back{}
+    .com-prev-next{height: 40px;line-height: 40px;}
+    .com-prev-next .icon{margin: 0 13px;}
+
+    .com-loc{text-align: center; font-size: 16px;font-weight: bold;}
+    .com-loc .icon-loc{margin:14px 0 10px;}
+    .com-sep{background: #2f3688;height: 1px;width:26px;margin:5px auto;}
+
+
+.icon{background: url(../img/icon.png) no-repeat;width: 24px;height: 24px;display: inline-block;vertical-align: middle;}
+    .icon-left{background-position: 0 -28px; height: 36px;}
+    .icon-right{background-position: 0 -70px; height: 36px;}
+    .icon-like{background-position: -4px -112px;width: 18px;height: 18px;}
+    .icon-loc{background-position: 0 -140px; height: 44px;width: 33px;}
+

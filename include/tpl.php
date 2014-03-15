@@ -28,14 +28,22 @@
 <script type="text/tpl" id="inner-template">
 	<div class="inner">
 		<div class="inner-side">
+			<div class="com-loc">
+				<i class="icon icon-loc"></i>
+				<p>{{location}}</p>
+				<p class="com-sep"></p>
+				<p>{{date}} / {{month}} / {{year}}</p>
+				<p class="com-sep"></p>
+				<p>{{hour}} : {{minutes}}</p>
+			</div>
 			<div class="com-blocks">
-				<div class="com-block">
-					<p>RETOUR</p>
-					<p data-a="back" class="com-back btn2"></p>
+				<div class="com-block com-back">
+					<p class="block-text">RETOUR</p>
+					<p data-a="back" class="icon btn2"></p>
 				</div>
-				<div class="com-block">
-					<p data-a="prev" class="com-prev btn2"></p>
-					<p data-a="next" class="com-next btn2"></p>
+				<div class="com-block com-prev-next">
+					<p data-a="prev" class="icon icon-left btn2"></p>
+					<p data-a="next" class="icon icon-right btn2"></p>
 				</div>
 			</div>
 		</div>
@@ -69,23 +77,14 @@
 					<!--  -->
 					<div class="com-info">
 						<div class="com-counts clear">
-							<p class="com-day">{{date}} {{month}}</p>
 							{{#ifliked}}
-							<div data-a="unlike" data-d="nid={{nid}}" class="com-like com-unlike clickable">
-								<span>{{likecount}}</span>
-								<div class="com-unlike-tip">unlike</div>
-							</div>
+							<a data-a="unlike" data-d="nid={{nid}}">{{likecount}} <i class="icon icon-liked"></i></a>
 							{{else}}
-							<div data-a="like" data-d="nid={{nid}}" class="com-like clickable">
-								<span>{{likecount}}</span>
-								{{#if currentUser}}{{else}}
-								<div class="need-login">{{_e.LOGIN_BEFORE_LIKE}}</div>
-								{{/if}}
-							</div>
+							<a data-a="like" data-d="nid={{nid}}"> <i class="icon icon-like"></i></a>
 							{{/ifliked}}
-							<p class="com-com-count">{{commentcount}}</p>
-						</div>
-						<div class="com-btn">
+
+							<a>COMMENTAIRES</a>
+							<a>PARTAGER</a>
 							
 						</div>
 					</div>
@@ -109,7 +108,9 @@
 <!-- time-item-tpl -->
 <script type="text/tpl" id="time-item-template">
 	<div class="main-item time-item" data-date="{{date}}">
-		<div class="time-date"><span>{{day}}</span>{{month}}</div>
+		<img src="./img/stars.png" />
+		<div class="time-date"><span>{{day}}</span></div>
+		<div class="time-month"><span>{{month}}</span></div>
 	</div>
 </script>
 
