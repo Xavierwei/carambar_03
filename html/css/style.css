@@ -167,8 +167,10 @@ a:hover{color:#e82426}
 
 /* Post
 ================================================================================================= */
+.facebook-post {position: relative;z-index:20;}
 .facebook-post-img {width:185px;height:185px;border:5px dotted #2b2761;}
-
+#fileupload {cursor: pointer;}
+.poptxt-pic-inner {width:185px;height:185px;}
 /* Yellow Wrap
 ================================================================================================= */
 .yellow-wrap {position: relative;z-index:9;background:#ffeb00;-webkit-box-shadow: 0 -10px 20px 0 rgba(0,0,0,0.5);box-shadow: 0 -10px 20px 0 rgba(0,0,0,0.5);}

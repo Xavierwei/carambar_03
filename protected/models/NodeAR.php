@@ -214,10 +214,6 @@ class NodeAR extends CActiveRecord{
 			if (!in_array($mime, $allowMime)) {
 				return 502; //photo media type is not allowed
 			}
-			list($w, $h) = getimagesize($fileUpload->tempName);
-			if($w < 450 || $h < 450) {
-				return 503; //photo resolution is too small
-			}
 		}
 
 		if ($type == 'video') {
