@@ -32,4 +32,18 @@ class SettingAR extends CActiveRecord{
 
 		return $res->setting_value;
 	}
+
+    public function setValue($key,$val){
+        $query = new CDbCriteria();
+        $query->addCondition('setting_key=:setting_key');
+        $query->params[':setting_key'] = $key;
+        $res = $this->find($query);
+
+        $res->setting_value=$val;
+        if($res->save())
+            return $res->setting_value;
+        else
+            return false;
+    }
+
 }

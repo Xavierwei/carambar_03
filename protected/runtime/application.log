@@ -7099,3 +7099,46 @@ REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940815800
 in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
 in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
 in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 15:09:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(270): CController->missingAction('')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Setting')
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/index.php/Setting
+HTTP_REFERER=http://172.16.111.87/carambar_03/index.php/gii/controller/index
+---
+2014/03/16 15:14:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(270): CController->missingAction('')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('challenge')
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/index.php/challenge
+---
+2014/03/16 15:14:31 [error] [php] Non-static method Drtool::isCookieAuth() should not be called statically, assuming $this from incompatible context (E:\dev_code\php\yii\carambar_03\protected\controllers\ChallengeController.php:39)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): ChallengeController->runAction()
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): ChallengeController->runActionWithFilters()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): ChallengeController->run()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/challenge/update
+in E:\dev_code\php\yii\carambar_03\protected\controllers\ChallengeController.php (39)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 15:20:31 [error] [php] Non-static method SettingAR::getValue() should not be called statically, assuming $this from incompatible context (E:\dev_code\php\yii\carambar_03\protected\controllers\SettingController.php:11)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): SettingController->runAction()
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): SettingController->runActionWithFilters()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): SettingController->run()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/setting/Praise
+in E:\dev_code\php\yii\carambar_03\protected\controllers\SettingController.php (11)
+in E:\dev_code\php\yii\carambar_03\index.php (30)

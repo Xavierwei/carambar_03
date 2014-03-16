@@ -125,27 +125,4 @@ class ChallengeAR extends CActiveRecord
         return $list;
     }
 
-    /**
-     * 验证cookie时间
-     */
-    public function isCookieCreate()
-    {
-        //Drtool::cleanMyCookie('vote_auth');
-        $cookieTemp=Drtool::getMyCookie('vote_auth');			//获取本地保存的cookie
-
-        if(is_null($cookieTemp))												//判断本地是否存在cookie
-        {
-            Drtool::setMyCookie('vote_auth',time(),3);	//写入客户端cookie
-            return false;
-        }
-        else
-        {
-          $timeVal=time()-$cookieTemp; //获取时间差
-          $oneDay=60*60*24*3; //3天时间
-          if($timeVal < $oneDay)
-              return $oneDay-$timeVal;
-           else
-              return false;
-        }
-    }
 }

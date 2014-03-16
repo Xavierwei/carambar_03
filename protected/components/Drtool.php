@@ -59,6 +59,30 @@ class Drtool
       $cookie =Yii::app()->request->getCookies();
       unset($cookie[$name]);
     }
+    /**
+     * 验证cookie时间
+     * 投票验证
+     */
+    public static function isCookieAuth($name)
+    {
+        //Drtool::cleanMyCookie('vote_auth');
+        $cookieTemp=Drtool::getMyCookie($name);			//获取本地保存的cookie
+
+        if(is_null($cookieTemp))												//判断本地是否存在cookie
+        {
+            Drtool::setMyCookie($name,time(),3);	//写入客户端cookie
+            return false;
+        }
+        else
+        {
+            $timeVal=time()-$cookieTemp; //获取时间差
+            $oneDay=60*60*24*3; //3天时间
+            if($timeVal < $oneDay)
+                return $oneDay-$timeVal;
+            else
+                return false;
+        }
+    }
 
 }
 
