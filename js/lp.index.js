@@ -310,17 +310,12 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
 
 
 		api.ajax('facebookLogin', function( result ){
+            $('#facebook-login-link').fadeIn();
             if(result.data !== 'login') {
                 $('#facebook-login-link').fadeIn().attr('href', result.data);
             }
             else {
-                $('#facebook-content-wrap').fadeIn();
-                if($('.sec4-right-txt').hasClass('opened')) {
-                    $('#facebook-content-wrap').height(0);
-                }
-                else {
-                    $('#facebook-content-wrap').prev().addClass('opened')
-                }
+                $('#facebook-login-link').attr('data-a','open_facebook');
             }
 		});
 

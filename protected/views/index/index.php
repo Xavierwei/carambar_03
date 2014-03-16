@@ -240,7 +240,7 @@
 		<!--  -->
 		<div class="share">
 			<div class="share-fb">
-				<a href="#" class="share-fbbtn" data-a="open_facebook"></a>
+				<a href="#" id="facebook-login-link" class="share-fbbtn"></a>
 			</div>
 			<div class="share-t">
 				<textarea class="share-txt" id="twitter-content"></textarea>
