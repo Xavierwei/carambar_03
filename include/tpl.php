@@ -9,12 +9,12 @@
 		<div class="content">
 			<div class="side">
 				<div class="menu">
-					<a href="javascript:;">FILTRER</a>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=TOUS">TOUS</a>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=TWEETS">TWEETS</a>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=IMAGES">IMAGES</a>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=VIDEOS">VIDEOS</a>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=BEST OF">BEST OF</a>
+					<p class="filter">FILTRER</p>
+					<a href="javascript:;" data-a="show-nodes" data-d="type=TOUS&orderby=datetime">TOUS</a>
+					<a href="javascript:;" data-a="show-nodes" data-d="type=TWEETS&orderby=datetime">TWEETS</a>
+					<a href="javascript:;" data-a="show-nodes" data-d="type=IMAGES&orderby=datetime">IMAGES</a>
+					<a href="javascript:;" data-a="show-nodes" data-d="type=VIDEOS&orderby=datetime">VIDEOS</a>
+					<a href="javascript:;" data-a="show-nodes" data-d="type=BEST OF&orderby=datetime">BEST OF</a>
 				</div>
 			</div>
 			<div class="main"></div>
@@ -87,11 +87,11 @@
 					<!--  -->
 					<div class="com-info">
 						<div class="com-counts clear">
-							{{#ifliked}}
-							<a data-a="unlike" data-d="nid={{nid}}">{{likecount}} <i class="icon icon-liked"></i></a>
+							{{#if liked}}
+							<a data-a="unlike" href="javascript:;" data-d="nid={{nid}}">{{likecount}} <i class="icon icon-liked"></i></a>
 							{{else}}
-							<a data-a="like" data-d="nid={{nid}}"> <i class="icon icon-like"></i></a>
-							{{/ifliked}}
+							<a data-a="like" href="javascript:;" data-d="nid={{nid}}">{{likecount}} <i class="icon icon-like"></i></a>
+							{{/if}}
 
 							<a href="javascript:;" data-a="load-comment" data-d="nid={{nid}}">COMMENTAIRES</a>
 							<a>PARTAGER</a>
@@ -107,7 +107,7 @@
 				{{#ifvideo}}
 
 				{{else}}
-				<img src="./{{image}}" width="200px" />
+				<img src="./{{image}}" width="100%" />
 				{{/ifvideo}}
 			</div>
 			<div class="inner-loading"></div>

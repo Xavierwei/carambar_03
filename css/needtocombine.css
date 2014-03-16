@@ -224,6 +224,7 @@ body{
     .icon-left{background-position: 0 -28px; height: 36px;}
     .icon-right{background-position: 0 -70px; height: 36px;}
     .icon-like{background-position: -4px -112px;width: 18px;height: 18px;}
+    .icon-liked{background-position: -30px -112px;width: 18px;height: 18px;}
     .icon-loc{background-position: 0 -140px; height: 44px;width: 33px;}
 
 .reward-inner{}

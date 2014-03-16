@@ -147,6 +147,18 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             var pageParm = $main.data('param');
             nodes = nodes || [];
 
+
+            // fix nodes like status
+            var cookieLikeStatus = LP.getCookie('_led');
+            if( cookieLikeStatus && nodes.length ){
+                cookieLikeStatus = cookieLikeStatus.split(',');
+                $.each( nodes , function( i , node ){
+                    if( $.inArray( node.nid , cookieLikeStatus ) ){
+                        nodes.liked = true;
+                    }
+                } );
+            }
+
             // save nodes to cache
             var cache = $dom.data('nodes') || [];
             $dom.data('nodes' , nodes.concat( cache ) );
@@ -175,9 +187,14 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                 node.image = node.file.replace( node.type == 'video' ? '.mp4' : '.jpg' , THUMBNAIL_IMG_SIZE + '.jpg');
                 node.formatDate = date;
 
+                if( node.type != "text" ){
+                    node.image = node.image.replace('.jpg' , THUMBNAIL_IMG_SIZE + '.jpg' );
+                }   
                 // fix description
+                node.description = node.description || '';
                 node.sub_description = node.description.length > 70 ? node.description.substr(0 , 70) + '...' : node.description;
                 node.sub_description = node.sub_description.replace(/#\S+/g , '<span style="color:white;">$&</span>');
+                node.likecount = node.likecount || 111;
 
                 node.str_like = node.likecount > 1 ? 'Likes' : 'Like';
                 LP.compile( 'node-item-template' ,
@@ -210,6 +227,18 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             var lastDate = null;
             var pageParm = $main.data('param'); 
             nodes = nodes || [];
+
+            // fix nodes like status
+            var cookieLikeStatus = LP.getCookie('_led');
+            if( cookieLikeStatus && nodes.length ){
+                cookieLikeStatus = cookieLikeStatus.split(',');
+                $.each( nodes , function( i , node ){
+                    if( $.inArray( node.nid , cookieLikeStatus ) !== false ){
+                        node.liked = true;
+                    }
+                } );
+            }
+
 
             // save nodes to cache
             var cache = $dom.data('nodes') || [];
@@ -261,7 +290,8 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                 node.description = node.description || '';
                 node.sub_description = node.description.length > 70 ? node.description.substr(0 , 70) + '...' : node.description;
                 node.sub_description = node.sub_description.replace(/#\S+/g , '<span style="color:white;">$&</span>');
-                
+                node.likecount = node.likecount || 111;
+
                 node.str_like = node.likecount > 1 ? 'Likes' : 'Like';
                 LP.compile( 'node-item-template' ,
                     node ,
@@ -1089,8 +1119,18 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
   //   });
 
     //for like action
-    var updateLikeCount = function(nid, count){
+    var updateLikeCount = function(nid, count , isLiked){
         $('.main-item-' + nid).find('.item-like').html(count).toggleClass('item-liked');
+
+        if( isLiked ){
+            $('.inner').find('a[data-a="like"]')
+                .attr('data-a' , "unlike")
+                .html(count + ' <i class="icon icon-liked"></i>');
+        } else {
+            $('.inner').find('a[data-a="unlike"]')
+                .attr('data-a' , "like")
+                .html(count + ' <i class="icon icon-like"></i>');
+        }
         (function(){
             var nodes = $('.main').data('nodes');
 			if(nodes) {
@@ -1145,7 +1185,13 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                     _this.append('<div class="com-unlike-tip">' + _e.UNLIKE + '</div>');
                     $(this).animate({opacity:1});
                 });
-                updateLikeCount(data.nid, result.data);
+                updateLikeCount(data.nid, result.data , true);
+
+                // add like status to cookie
+                var liked = LP.getCookie('_led') || '';
+                liked = liked ? liked.split(',') : [];
+                liked.push( data.nid ) ;
+                LP.setCookie( '_led' , liked.join(',') , 86400 * 365 );
             }
         });
     });
@@ -1172,7 +1218,13 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                     _this.find('.com-unlike-tip').remove();
                     $(this).animate({opacity:1});
                 });
-                updateLikeCount(data.nid, result.data);
+                updateLikeCount(data.nid, result.data , false);
+
+                // remove like status
+                var liked = LP.getCookie('_led') || '';
+                liked = liked.split(',');
+                liked.splice( $.inArray( data.nid , liked ) , 1 );
+                LP.setCookie( '_led' , liked.join(',') , 86400 * 365 );
             }
         });
     });
