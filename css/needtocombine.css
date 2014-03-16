@@ -231,3 +231,6 @@ body{
     .reward-inner .icon-back{background-position: -26px 0px;}
     .reward-inner .icon-left{background-position: -26px -28px;}
     .reward-inner .icon-right{background-position: -26px -70px;}
+
+.text-warp{height: 100%; width: 100%; text-align: center; line-height: 2em; font-size: 16px; display: table; background: #fcea2f;}
+    .text-warp .text{display: table-cell;vertical-align: middle;}

@@ -59,7 +59,9 @@
 					<div class="com-main">
 						<div class="com-base">
 							<div class="com-uname">@{{screen_name}}</div>
+							{{#if-exp type "!=" "text"}}
 							<div class="com-desc">{{{description}}}</div>	
+							{{/if-exp}}
 						</div>
 						<div class="com-wrap" style="display:none;">
 							<div class="com-close" data-a="com-close">X</div>
@@ -109,11 +111,12 @@
 
 		<div class="image-wrap">
 			<div class="image-wrap-inner">
-				{{#ifvideo}}
-
-				{{else}}
-				<img src="./{{image}}" width="100%" />
-				{{/ifvideo}}
+				{{#if-exp type "==" "photo"}}
+					<img src="./{{image}}" width="100%" />
+				{{/if-exp}}
+				{{#if-exp type "==" "text"}}
+					<div class="text-warp"><p class="text">{{description}}</p></div>
+				{{/if-exp}}
 			</div>
 			<div class="inner-loading"></div>
 		</div>
@@ -133,13 +136,13 @@
 <script type="text/tpl" id="node-item-template">
 	<div data-a="node" data-d="nid={{nid}}" class="main-item pic-item main-item-{{nid}} {{type}}-item {{#if-exp reward "!=" "0"}}reward-item{{/if-exp}}">
 		<a>
-			{{#if-exp type "==" "text"}}
+			{{#if-exp type "==" "photo"}}
+			<img src="./{{image}}" width="180" />
+			{{else}}
 			<div class="node-inner">
 				<p class="node-desc">{{{sub_description}}}</p>
 				<p class="node-uname">@{{screen_name}}</p>
 			</div>
-			{{else}}
-			<img src="./{{image}}" width="180" />
 			{{/if-exp}}
 			<div class="item-info" >
 		        <div class="item-info-wrap">

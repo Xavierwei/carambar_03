@@ -187,7 +187,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                 node.image = node.file.replace( node.type == 'video' ? '.mp4' : '.jpg' , THUMBNAIL_IMG_SIZE + '.jpg');
                 node.formatDate = date;
 
-                if( node.type != "text" ){
+                if( node.type == "photo" ){
                     node.image = node.image.replace('.jpg' , THUMBNAIL_IMG_SIZE + '.jpg' );
                 }   
                 // fix description
@@ -283,7 +283,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                     node.image = node.file;
                 }
                 node.formatDate = date;
-                if( node.type != "text" ){
+                if( node.type == "photo" ){
                     node.image = node.image.replace('.jpg' , THUMBNAIL_IMG_SIZE + '.jpg' );
                 }   
                 // fix description
@@ -458,7 +458,10 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         node.minutes = datetime.getUTCMinutes();
         node.date = datetime.getUTCDate();
         node.month = parseInt(datetime.getUTCMonth()) + 1;
-        node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
+
+        if( node.type == "photo" )
+            node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
+
         node.timestamp = (new Date()).getTime();
         console.log( node );
         LP.compile( 'inner-template' , node , function( html ){
@@ -2298,7 +2301,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         var match;
         if( ( match = hash.match( /#\/nid\/(\d+)/ ) ) ){
             var nid = match[1];
-            var pageParam = {};
+            var pageParam = $main.data('param') || {};
             api.ajax('getPageByNid', {nid:nid, pagenum:20}, function(result){
                 pageParam.page = result.data;
                 pageParam.previouspage = result.data;
@@ -2425,7 +2428,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
     $(function(){
         LP.compile( 'base-template' , {} , function( html ){
             $(document.body).append(html);
-            $main = $('.main').data('param' , {page:0});
+            $main = $('.main').data('param' , {page:0 , orderby: 'datetime'});
             // hide loading 
             $('.page-loading').fadeOut();
             // load first page node list
