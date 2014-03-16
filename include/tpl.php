@@ -26,7 +26,7 @@
 
 <!-- inner-template -->
 <script type="text/tpl" id="inner-template">
-	<div class="inner">
+	<div class="inner {{#if-exp reward "!=" "0"}}reward-inner{{/if-exp}}">
 		<div class="inner-side">
 			<div class="com-loc">
 				<i class="icon icon-loc"></i>
@@ -39,7 +39,7 @@
 			<div class="com-blocks">
 				<div class="com-block com-back">
 					<p class="block-text">RETOUR</p>
-					<p data-a="back" class="icon btn2"></p>
+					<p data-a="back" class="icon icon-back btn2"></p>
 				</div>
 				<div class="com-block com-prev-next">
 					<p data-a="prev" class="icon icon-left btn2"></p>
@@ -50,29 +50,39 @@
 		<div class="comment-wrap">
 			<div class="comment-cube">
 				<div class="comment">
-					{{{description}}}
 					<!--  -->
 					<div class="com-main">
-						<div class="com-list">
-							<div class="com-list-inner">
-								<div class="com-list-loading">{{_e.LOADING_COMMENTS}}</div>
+						<div class="com-base">
+							<div class="com-uname">@{{screen_name}}</div>
+							<div class="com-desc">{{{description}}}</div>	
+						</div>
+						<div class="com-wrap" style="display:none;">
+							<div class="com-close" data-a="com-close">X</div>
+							<div class="com-tit" >
+								COMMENTAIRE
+							</div>
+							<div class="com-list" >
+								<div class="com-list-inner">
+									<div class="com-list-loading">loading comments...</div>
+								</div>
+							</div>
+							<div class="com-make">
+								<form class="comment-form" action="./api/index.php/comment/post" method="post">
+									<p class="form-tit">NOM</p>
+									<input type="text" name="name"/>
+									<p class="form-tit">MAIL</p>
+									<input type="text" name="mail"/>
+									<p class="form-tit">COMMENTAIRE</p>
+									<textarea name="content" class="com-ipt"></textarea>
+									<input type="hidden" name="nid" value="{{nid}}" />
+									<div class="com-loading"></div>
+									<input class="submit btn2" type="submit" value="submit" />
+									<div class="clear"></div>
+								</form>
+								<div class="comment-msg-success">thanks comment</div>
+								<div class="comment-msg-error"></div>
 							</div>
 						</div>
-						{{#if currentUser}}
-						<div class="com-make">
-							<form class="comment-form" action="./api/index.php/comment/post" method="post">
-								<textarea name="content" class="com-ipt" placeholder="{{_e.WRITE_YOUR_COMMENT}}"></textarea>
-								<input type="hidden" name="nid" value="{{nid}}" />
-								<div class="com-loading"></div>
-								<input class="submit btn2" type="submit" value="{{_e.SUBMIT}}" />
-								<div class="clear"></div>
-							</form>
-							<div class="comment-msg-success">{{_e.THANKS_COMMENT}}</div>
-							<div class="comment-msg-error"></div>
-						</div>
-						{{else}}
-						<div class="need-login">{{_e.LOGIN_BEFORE_COMMENT}}</div>
-						{{/if}}
 					</div>
 					<!--  -->
 					<div class="com-info">
@@ -83,7 +93,7 @@
 							<a data-a="like" data-d="nid={{nid}}"> <i class="icon icon-like"></i></a>
 							{{/ifliked}}
 
-							<a>COMMENTAIRES</a>
+							<a href="javascript:;" data-a="load-comment" data-d="nid={{nid}}">COMMENTAIRES</a>
 							<a>PARTAGER</a>
 							
 						</div>
@@ -97,7 +107,7 @@
 				{{#ifvideo}}
 
 				{{else}}
-				<img src="./api{{image}}" width="100%" />
+				<img src="./{{image}}" width="200px" />
 				{{/ifvideo}}
 			</div>
 			<div class="inner-loading"></div>
@@ -108,7 +118,7 @@
 <!-- time-item-tpl -->
 <script type="text/tpl" id="time-item-template">
 	<div class="main-item time-item" data-date="{{date}}">
-		<img src="./img/stars.png" />
+		<div><p><img src="./img/stars.png" /></p></div>
 		<div class="time-date"><span>{{day}}</span></div>
 		<div class="time-month"><span>{{month}}</span></div>
 	</div>
@@ -116,19 +126,26 @@
 
 <!-- node-item-tpl -->
 <script type="text/tpl" id="node-item-template">
-	<div data-a="node" data-d="nid={{nid}}" class="main-item pic-item main-item-{{nid}}">
+	<div data-a="node" data-d="nid={{nid}}" class="main-item pic-item main-item-{{nid}} {{type}}-item {{#if-exp reward "!=" "0"}}reward-item{{/if-exp}}">
 		<a>
+			{{#if-exp type "==" "text"}}
+			<div class="node-inner">
+				<p class="node-desc">{{{sub_description}}}</p>
+				<p class="node-uname">@{{screen_name}}</p>
+			</div>
+			{{else}}
 			<img src="./{{image}}" width="180" />
+			{{/if-exp}}
 			<div class="item-info" >
-        <div class="item-info-wrap">
-          <div class="item-time"><span class="item-timeicon">{{formatDate}}</span></div>
-          <div class="item-user"><span class="item-usericon">{{user.firstname}} {{user.lastname}}</span></div>
-          <div class="item-source">
-            <div class="{{type}}"></div>
-          </div>
-          <div class="item-like {{#if user_liked}}item-liked{{/if}}">{{likecount}}</div>
-          <div class="item-comment">{{commentcount}}</div>
-        </div>
+		        <div class="item-info-wrap">
+		          <div class="item-time"><span class="item-timeicon">{{formatDate}}</span></div>
+		          <div class="item-user"><span class="item-usericon">{{user.firstname}} {{user.lastname}}</span></div>
+		          <div class="item-source">
+		            <div class="{{type}}"></div>
+		          </div>
+		          <div class="item-like {{#if user_liked}}item-liked{{/if}}">{{likecount}}</div>
+		          <div class="item-comment">{{commentcount}}</div>
+		        </div>
 			</div>
 			<div class="item-icon" style="display: block;"><div class="{{type}}"></div></div>
 			{{#if topday}}
@@ -140,6 +157,9 @@
 			{{#if mynode}}
 			<div class="item-delete btn" data-a="delete" data-d="nid={{nid}}&type=node"></div>
 			{{/if}}
+			{{#if-exp reward "!=" "0"}}
+			<div class="item-reward"></div>
+			{{/if-exp}}
 		</a>
 	</div>
 </script>
@@ -148,34 +168,11 @@
 <!-- comment-item-tpl -->
 <script type="text/tpl" id="comment-item-template">
 	<div class="comlist-item comlist-item-{{cid}}">
-		<div class="comlist-tit"><span>{{user.firstname}} {{user.lastname}} </span> - {{date}} {{month}}</div>
 		<div class="comlist-con">{{{content}}}</div>
-		{{#if mycomment}}
-		<div class="comlist-delete btn2" data-a="delete" data-d="cid={{cid}}&type=comment"></div>
-		{{/if}}
-		<div class="comlist-flag btn2" data-a="flag" data-d="cid={{cid}}&nid={{nid}}&type=comment"></div>
+		<div class="comlist-tit"><span>{{user.firstname}} {{user.lastname}} </span> - {{date}} {{month}}</div>
 	</div>
 </script>
 
-<!-- side-tpl -->
-<script type="text/tpl" id="side-template">
-	<div class="side">
-		<!-- user -->
-		<div class="user btn" data-a="toggle_user_page">
-			<div class="user-pho"><img src="./api{{avatar}}" width="34" height="34" /><div class="avatar-ie-round"></div></div>
-			<div class="user-name">{{firstname}}</div>
-			<div class="close-user-page" data-a="toggle-user-page"></div>
-		</div>
-		<!-- menu -->
-		<div class="menu">
-			<div class="menu-item photo" data-a="pop_upload" data-d="type=photo"><div class="menu-item-arrow"></div><p></p><h6>{{_e.POST_A_PHOTO}}</h6></div>
-			<div class="menu-item video" data-a="pop_upload" data-d="type=video"><div class="menu-item-arrow"></div><p></p><h6>{{_e.POST_A_VIDEO}}</h6></div>
-			<div class="menu-item {{_e.DAY}}" data-a="content_of_day"><div class="menu-item-arrow"></div><p></p><h6>{{_e.CONTENT_OF_THE_DAY}}</h6></div>
-			<div class="menu-item month" data-a="content_of_month"><div class="menu-item-arrow"></div><p></p><h6>{{_e.CONTENT_OF_THE_MONTH}}</h6></div>
-			<a class="menu-item logout" href="./api/user/samllogout"><div class="menu-item-arrow"></div><p></p><h6>{{_e.LOGOUT}}</h6></a>
-		</div>
-	</div>
-</script>
 
 <!-- html5-player-tpl -->
 <script type="text/tpl" id="html5-player-template">

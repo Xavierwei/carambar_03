@@ -61,9 +61,19 @@ body{
 .pic-item.reversal{
     width: 180px;
 }
-
+.pic-item .item-reward{position: absolute;top:0;left:0;width: 54px;height: 55px;background: url(../img/node-tag.png) no-repeat;}
+.pic-item.reward-item{background: #ce232d;}
+.text-item{background: #2f3688;color: #fcea2f;font-size: 16px;}
+.text-item>a{display: table;width: 100%;height: 100%;}
+.text-item>a>div{display: table-cell;vertical-align: middle;padding: 10px;font-weight: normal;}
+.text-item>a>div>.node-desc{border-bottom: 1px solid #fcea2f;margin-bottom: 10px;}
+.text-item>a>div>.node-uname{text-align: right;}
+.time-item{display: table;}
+.time-item>*{display: table-row;}
+.time-item>*>*{display: table-cell;vertical-align: middle;}
 
 .comment{
+    background: #fcea2f;
     left: 0 !important;
     /*-webkit-transition: -webkit-transform 1s;
     -moz-transform-style: preserve-3d;
@@ -216,3 +226,7 @@ body{
     .icon-like{background-position: -4px -112px;width: 18px;height: 18px;}
     .icon-loc{background-position: 0 -140px; height: 44px;width: 33px;}
 
+.reward-inner{}
+    .reward-inner .icon-back{background-position: -26px 0px;}
+    .reward-inner .icon-left{background-position: -26px -28px;}
+    .reward-inner .icon-right{background-position: -26px -70px;}

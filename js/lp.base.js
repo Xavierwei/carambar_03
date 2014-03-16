@@ -9,11 +9,11 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
 	var isIE8 = $('html').hasClass('ie8');
 	var isIE10 = navigator.userAgent.toLowerCase().indexOf('msie 10') > 0;
 	var isOldIE = $('html').hasClass('ie6') || $('html').hasClass('ie7');
-    var API_FOLDER = "./api";
-    var THUMBNAIL_IMG_SIZE = "_250_250";
+    var API_FOLDER = "./";
+    var THUMBNAIL_IMG_SIZE = "_400_400";
     var BIG_IMG_SIZE = "_640_640";
 
-    var MIN_WIDTH = 150;
+    var MIN_WIDTH = 200;
     var ITEM_WIDTH = MIN_WIDTH;
     var WIN_WIDTH = $(window).width();
     
@@ -175,6 +175,10 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                 node.image = node.file.replace( node.type == 'video' ? '.mp4' : '.jpg' , THUMBNAIL_IMG_SIZE + '.jpg');
                 node.formatDate = date;
 
+                // fix description
+                node.sub_description = node.description.length > 70 ? node.description.substr(0 , 70) + '...' : node.description;
+                node.sub_description = node.sub_description.replace(/#\S+/g , '<span style="color:white;">$&</span>');
+
                 node.str_like = node.likecount > 1 ? 'Likes' : 'Like';
                 LP.compile( 'node-item-template' ,
                     node ,
@@ -250,7 +254,11 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                     node.image = node.file;
                 }
                 node.formatDate = date;
-				node.country.country_name = _e[node.country.i18n];
+                node.image = node.image.replace('.jpg' , THUMBNAIL_IMG_SIZE + '.jpg' );
+                // fix description
+                node.sub_description = node.description.length > 70 ? node.description.substr(0 , 70) + '...' : node.description;
+                node.sub_description = node.sub_description.replace(/#\S+/g , '<span style="color:white;">$&</span>');
+                
                 node.str_like = node.likecount > 1 ? 'Likes' : 'Like';
                 LP.compile( 'node-item-template' ,
                     node ,
@@ -429,7 +437,7 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             });
             var $inner = $(html).insertBefore( $main )
                 .css({
-                    left: - mainWidth
+                    left: - WIN_WIDTH
                     //position: 'relative'
                 })
                 .animate({
@@ -459,27 +467,27 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                     _innerLock = false;
                 });
             // loading comments
-            bindCommentSubmisson();
-            getCommentList(node.nid,1);
+            // bindCommentSubmisson();
+            // getCommentList(node.nid,1);
 
-            LP.use(['jscrollpane' , 'mousewheel'] , function(){
-                $('.com-list').jScrollPane({autoReinitialise:true}).bind(
-                    'jsp-scroll-y',
-                    function(event, scrollPositionY, isAtTop, isAtBottom)
-                    {
-                        if(isAtBottom) {
-                            var commentParam = $('.comment-wrap').data('param');
-                            var page = commentParam ?  commentParam.page : 0;
-                            getCommentList(node.nid,page + 1);
-                        }
-                    }
-                );
-            });
+            // LP.use(['jscrollpane' , 'mousewheel'] , function(){
+            //     $('.com-list').jScrollPane({autoReinitialise:true}).bind(
+            //         'jsp-scroll-y',
+            //         function(event, scrollPositionY, isAtTop, isAtBottom)
+            //         {
+            //             if(isAtBottom) {
+            //                 var commentParam = $('.comment-wrap').data('param');
+            //                 var page = commentParam ?  commentParam.page : 0;
+            //                 getCommentList(node.nid,page + 1);
+            //             }
+            //         }
+            //     );
+            // });
 
             // init vide node
             if( node.type == "video" ){
                 renderVideo($('.image-wrap-inner'),node);
-                $('#imgLoad').attr('src', './api' + node.image);
+                $('#imgLoad').attr('src', node.image);
                 $('#imgLoad').ensureLoad(function(){
                     setTimeout(function(){
                         $('.image-wrap-inner object, .image-wrap-inner video').fadeIn();
@@ -539,7 +547,7 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
         // back $inner and remove it
         $inner.delay(infoTime)
             .animate({
-                left: - ( $(window).width() - _silderWidth )
+                left: - $(window).width()
             } , _animateTime , _animateEasing , function(){
                 $inner.remove();
             });
@@ -591,6 +599,29 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
 
         changeUrl('/main' , {event:'back'});
 
+    });
+
+    LP.action('load-comment' , function( data ){
+        $('.com-base').hide();
+        $('.com-wrap').show();
+        getCommentList(data.nid , data.page || 1);
+        LP.use(['jscrollpane' , 'mousewheel'] , function(){
+            $('.com-list').jScrollPane({autoReinitialise:true}).bind(
+                'jsp-scroll-y',
+                function(event, scrollPositionY, isAtTop, isAtBottom)
+                {
+                    if(isAtBottom) {
+                        var commentParam = $('.comment-wrap').data('param');
+                        getCommentList(data.nid,commentParam.page + 1);
+                    }
+                }
+            );
+        });
+    });
+
+    LP.action('com-close' , function(){
+        $('.com-wrap').hide();
+        $('.com-base').show();
     });
     
   //   LP.action('back_home', function(){
@@ -840,7 +871,7 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             // init video
             if( node.type == "video" ){
                 renderVideo($newItem,node);
-                $('#imgLoad').attr('src', './api' + node.image);
+                $('#imgLoad').attr('src', node.image);
                 $('#imgLoad').ensureLoad(function(){
                     setTimeout(function(){
                         $('.image-wrap-inner object, .image-wrap-inner video').fadeIn();
@@ -863,21 +894,21 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             }
 
             // load comment
-            bindCommentSubmisson();
-            $('.comment-wrap').removeClass('loading');
-            getCommentList(node.nid,1);
-            LP.use(['jscrollpane' , 'mousewheel'] , function(){
-                $('.com-list').jScrollPane({autoReinitialise:true}).bind(
-                    'jsp-scroll-y',
-                    function(event, scrollPositionY, isAtTop, isAtBottom)
-                    {
-                        if(isAtBottom) {
-                            var commentParam = $('.comment-wrap').data('param');
-                            getCommentList(node.nid,commentParam.page + 1);
-                        }
-                    }
-                );
-            });
+            // bindCommentSubmisson();
+            // $('.comment-wrap').removeClass('loading');
+            // getCommentList(node.nid,1);
+            // LP.use(['jscrollpane' , 'mousewheel'] , function(){
+            //     $('.com-list').jScrollPane({autoReinitialise:true}).bind(
+            //         'jsp-scroll-y',
+            //         function(event, scrollPositionY, isAtTop, isAtBottom)
+            //         {
+            //             if(isAtBottom) {
+            //                 var commentParam = $('.comment-wrap').data('param');
+            //                 getCommentList(node.nid,commentParam.page + 1);
+            //             }
+            //         }
+            //     );
+            // });
 
             // change url
             changeUrl('/nid/' + node.nid , {event: direction});
@@ -2057,7 +2088,7 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                 $commentWrap.addClass('loading');
             }
             if(comments.length == 0 && page == 1) {
-                $('.com-list-inner').html('<div class="no-comment">' + _e.FIRST_COMMENT + '</div>');
+                $('.com-list-inner').html('<div class="no-comment">no comments</div>');
             }
             else {
                 $.each( comments , function( index , comment ){
@@ -2074,14 +2105,14 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                 });
             }
             // check the flagged comment if is login user
-            var user = $('.side').data('user');
-            if(user) {
-                api.ajax('flaggedComments', {nid: nid}, function( result ){
-                    $.each(result.data, function(index, item){
-                        $('.comlist-item-' + item.cid).find('.comlist-flag').addClass('flagged').removeClass('btn2').removeAttr('data-a');
-                    });
-                });
-            }
+            // var user = $('.side').data('user');
+            // if(user) {
+            //     api.ajax('flaggedComments', {nid: nid}, function( result ){
+            //         $.each(result.data, function(index, item){
+            //             $('.comlist-item-' + item.cid).find('.comlist-flag').addClass('flagged').removeClass('btn2').removeAttr('data-a');
+            //         });
+            //     });
+            // }
         });
     }
 
@@ -2099,7 +2130,7 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
 
         // Resize Comment Box
         var $comList = $('.com-list');
-        var comListHeight = $(window).height() - 350 - $('.com-user').height();
+        var comListHeight = $(window).height() - 350 - 110;
         $comList.height(comListHeight);
 
         // Resize Image
@@ -2172,7 +2203,11 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             // set image wrap width
             .end()
             .find('.image-wrap')
-            .width( minSize );
+            .width( minSize )
+            // fix side size
+            .end()
+            .find('.inner-side')
+            .css('left' , slideWidth - minLeft - 126);
 
     }
 
@@ -2349,6 +2384,39 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             // load first page node list
 
             $(window).trigger('scroll');
+        });
+    });
+
+
+     LP.use('handlebars' , function(){
+        //Handlebars helper
+        Handlebars.registerHelper('ifvideo', function(options) {
+            if(this.type == 'video')
+                return options.fn(this);
+            else
+                return options.inverse(this);
+        });
+
+        Handlebars.registerHelper('ifliked', function(options) {
+            if(this.user_liked == true)
+                return options.fn(this);
+            else
+                return options.inverse(this);
+        });
+
+        Handlebars.registerHelper('ifzero', function(value, options) {
+            if(value <= 1)
+                return options.fn(this);
+            else
+                return options.inverse(this);
+        });
+
+        Handlebars.registerHelper('if-exp', function(v1 , v2 , v3, options) {
+            if( eval( "'" + v1 + "'" + v2 + "'" + v3 + "'" ) ){
+                return options.fn(this);
+            } else {
+                return options.inverse(this);
+            }
         });
     });
 });
