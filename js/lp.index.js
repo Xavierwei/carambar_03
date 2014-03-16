@@ -194,8 +194,10 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
      */
     LP.action('indicate', function(data){
         if($(this).hasClass('indicating')) return;
-        if($.cookie('indicated')) return;
-        alert('indicated');
+        if($.cookie('praise_auth')) return;
+        api.ajax('indicate', {cid:data.cid}, function( result ){
+            $('.indicator-count').html(result.data);
+        });
     });
 
     /**

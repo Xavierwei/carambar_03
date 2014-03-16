@@ -1,6 +1,6 @@
-<div class="loading-overlay">
-	<div class="loading-logo"><img src="images/loading_logo.png" /></div>
-</div>
+<!--<div class="loading-overlay">-->
+<!--	<div class="loading-logo"><img src="images/loading_logo.png" /></div>-->
+<!--</div>-->
 <div class="header"
      data-style="margin-top:-200px" data-animate="margin-top:0" data-delay="0" data-time="500" data-easing="easeOutQuart"
      data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
