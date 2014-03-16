@@ -12,6 +12,8 @@ class SettingController extends Controller
         $item=$model->getValue('praise');      //获取value
         if(!$item)
             StatusSend::_sendResponse(200,StatusSend::error('end', 1006)); //获取不到点赞数据
+        $item2=NodeAR::model()->countByStatus();
+
 
         if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，只需要校验cookie
         {
@@ -23,7 +25,7 @@ class SettingController extends Controller
             $item=$model->setValue('praise',++$item);  //设置 value，点赞次数+1
 
             if($item)
-                StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item)); //修改数据库成功
+                StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item+$item2)); //修改数据库成功
             else
                 StatusSend::_sendResponse(200, StatusSend::error('end', 1008)); //修改数据库错误，
         }
@@ -31,7 +33,7 @@ class SettingController extends Controller
         {
             $item=$model->setValue('praise',++$item);  //设置 value，点赞次数+1
             if($item)
-                StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item)); //修改数据库成功
+                StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item+$item2)); //修改数据库成功
             else
                 StatusSend::_sendResponse(200, StatusSend::error('end', 1008)); //修改数据库错误，
         }
@@ -42,12 +44,13 @@ class SettingController extends Controller
      */
     public function actionPraiseResult()
     {
+        $item2=NodeAR::model()->countByStatus();
         $model=new SettingAR;
         $item=$model->getValue('praise');      //获取value
         if(!$item)
             StatusSend::_sendResponse(200,StatusSend::error('end', 1006)); //获取不到点赞数据
         else
-            StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item)); //修改数据库成功
+            StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item+$item2)); //修改数据库成功
     }
 
     /**
