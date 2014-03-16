@@ -65,43 +65,69 @@ class VideoController extends Controller {
         else //管理员
         {
             $item->attributes=$_POST; //赋值
+            $url=$_POST['url']; //获取youtube url
+            $mid=VideoAR::model()->getYoutubeId($url); //获取youtube id
+            if(!VideoAR::model()->uniqueMid($mid))
+                StatusSend::_sendResponse(200, StatusSend::error('end', 1016)); //youtube mid 已经存在
+
+		    $thumbnail = NodeAR::model()->getVideoThumbnail($url, 'youtube');
+            if(!$thumbnail)
+                StatusSend::_sendResponse(200, StatusSend::error('end', 1017)); //youtube 缩略图 获取失败
+
+            $imagePath = NodeAR::model()->saveRemoteImage($thumbnail);
+            $item->mid = $mid;
+            $item->url = $url;
+            $item->thumbnail = $imagePath;
+            $item->datetime = time();
+			//$item->status = 0;
+
             if($item->save() )
                 StatusSend::_sendResponse(200, StatusSend::success('success',2007,$item)); //修改数据库成功
             else
-                StatusSend::_sendResponse(200, StatusSend::error('end', 1016)); //修改数据库错误，
+                StatusSend::_sendResponse(200, StatusSend::error('end', 1018)); //修改数据库错误，
         }
 
     }
 
 
     /***
-	 * Save video
+	 * create video
 	 */
-	public function actionPostVideo() {
-		$url = 'https://www.youtube.com/watch?v=1GuF4yoCBr8';
-		$mid = VideoAR::model()->getYoutubeId($url);
-		if(!$mid) {
-			return $this->responseError(101);
-		}
+	public function actionCreate()
+    {
+        if(!isset($_POST['url']))
+            StatusSend::_sendResponse(200, StatusSend::error('end', 1019) ); //未传入url参数
 
-		if(!VideoAR::model()->uniqueMid($mid)) {
-			return $this->responseError(702);
-		}
+        if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
+        {
+            StatusSend::_sendResponse(200, StatusSend::error('end', 1015)); //没有权限进行此操作
+        }
+        else //管理员
+        {
+            $url=$_POST['url']; //获取youtube url
+            $item=new VideoAR;
+            $item->attributes=$_POST; //赋值
 
-		$thumbnail = NodeAR::model()->getVideoThumbnail($url, 'youtube');
-		if($thumbnail) {
-			$imagePath = NodeAR::model()->saveRemoteImage($thumbnail);
-			$video = new VideoAR();
-			$video->mid = $mid;
-			$video->url = $url;
-			$video->thumbnail = $imagePath;
-			$video->datetime = time();
-			$video->status = 0;
-			if($video->validate()) {
-				$video->save();
-				return $this->responseJSON($video, "success");
-			}
-		}
+            $mid=VideoAR::model()->getYoutubeId($url); //获取youtube id
+            if(!VideoAR::model()->uniqueMid($mid))
+                StatusSend::_sendResponse(200, StatusSend::error('end', 1016)); //youtube mid 已经存在
+
+            $thumbnail = NodeAR::model()->getVideoThumbnail($url, 'youtube');
+            if(!$thumbnail)
+                StatusSend::_sendResponse(200, StatusSend::error('end', 1017)); //youtube 缩略图 获取失败
+
+            $imagePath = NodeAR::model()->saveRemoteImage($thumbnail);
+            $item->mid = $mid;
+            $item->url = $url;
+            $item->thumbnail = $imagePath;
+            $item->datetime = time();
+            $item->status = 0;
+
+            if($item->save() )
+                StatusSend::_sendResponse(200, StatusSend::success('success',2007,$item)); //修改数据库成功
+            else
+                StatusSend::_sendResponse(200, StatusSend::error('end', 1018)); //修改数据库错误，
+        }
 	}
 
 
