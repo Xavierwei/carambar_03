@@ -7099,3 +7099,12 @@ REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940815800
 in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
 in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
 in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 15:54:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/loadidng_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/loadidng...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/images/loadidng_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/?phase=3
+---

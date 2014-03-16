@@ -30,6 +30,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
         LP.compile( 'youtube-player-template' , data , function( html ){
             $('.overlay').fadeIn();
             $('body').append(html);
+            $('.pop').css({opacity:0, top:'-50%'}).animate({opacity:1, top:'50%'}, 800, 'easeInOutQuart');
         });
     });
 
@@ -129,12 +130,13 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
         LP.compile( 'facebook-post-template' , data , function( html ){
             $('.overlay').fadeIn();
             $('body').append(html);
+            $('.pop').css({opacity:0, top:'-50%'}).animate({opacity:1, top:'50%'}, 800, 'easeInOutQuart');
             var $fileupload = $('#fileupload');
             var acceptFileTypes = /(\.|\/)(gif|jpe?g|png)$/i;
             var maxFileSize = 5 * 1024000;
             LP.use('fileupload' , function(){
                 $fileupload.fileupload({
-                    url: '../index.php/uploads/upload',
+                    url: './index.php/uploads/upload',
                     datatype:"json",
                     autoUpload:false,
                     dropZone: $fileupload
@@ -182,7 +184,9 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
      */
     LP.action('close_popup', function() {
         $('.overlay').fadeOut();
-        $('.pop').fadeOut();
+        $('.pop').fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     /**
@@ -232,6 +236,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
         LP.compile( 'send-invitation-template' , {} , function( html ){
             $('.overlay').fadeIn();
             $('body').append(html);
+            $('.pop').css({opacity:0, top:'-50%'}).animate({opacity:1, top:'50%'}, 800, 'easeInOutQuart');
         });
     });
 
@@ -334,6 +339,10 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
 //                }
 //			}
 //		});
+        $('.loading-logo').hide().css('top','40%');
+        $('.loading-logo img').ensureLoad(function(){
+            $('.loading-logo').fadeIn().dequeue().animate({top:'50%'},800,'easeOutQuart');
+        });
 
         //check vote status
         var votedId = $.cookie('cid');
@@ -435,7 +444,17 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
 
 
 
-
+    jQuery.fn.extend({
+        ensureLoad: function(handler) {
+            return this.each(function() {
+                if(this.complete) {
+                    handler.call(this);
+                } else {
+                    $(this).load(handler);
+                }
+            });
+        }
+    });
 
 
 	$(window).scroll(function(){

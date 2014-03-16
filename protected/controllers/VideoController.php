@@ -48,7 +48,7 @@ class VideoController extends Controller {
 	}
 
 
-	
+
 
 	/**
 	 * countdown

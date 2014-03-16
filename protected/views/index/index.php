@@ -1,3 +1,6 @@
+<div class="loading-overlay">
+	<div class="loading-logo"><img src="images/loading_logo.png" /></div>
+</div>
 <div class="header"
      data-style="margin-top:-200px" data-animate="margin-top:0" data-delay="0" data-time="500" data-easing="easeOutQuart"
      data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
@@ -107,21 +110,21 @@
 	</div>
 	<?php if($phase == 1 || $phase == 2):?>
 	<div class="challenge">
-		<div class="challenge-title"></div>
+		<div class="challenge-title" data-style="opacity:0;" data-animate="opacity:1;" data-delay="200" data-time="800"></div>
 		<div class="challenge-inner" data-646="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
-			<div class="challenge-item">
+			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="100" data-time="800">
 				<div class="challenge-img">
 					<img src="pic/challenge1.jpg" />
 				</div>
 				<div class="vote-btn vote-btn1" data-a="vote" data-d="cid=1">DEFI No1</div>
 			</div>
-			<div class="challenge-item">
+			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="200" data-time="800">
 				<div class="challenge-img">
 					<img src="pic/challenge2.jpg" />
 				</div>
 				<div class="vote-btn vote-btn2" data-a="vote" data-d="cid=2">DEFI No2</div>
 			</div>
-			<div class="challenge-item">
+			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="300" data-time="800">
 				<div class="challenge-img">
 					<img src="pic/challenge3.jpg" />
 				</div>
@@ -240,11 +243,11 @@
 		<!--  -->
 		<div class="share">
 			<div class="share-fb">
-				<a href="#" id="facebook-login-link" class="share-fbbtn"></a>
+				<a href="javascript:void(0)" id="facebook-login-link" class="share-fbbtn"></a>
 			</div>
 			<div class="share-t">
 				<textarea class="share-txt" id="twitter-content"></textarea>
-				<p class="share-t-num">14/140</p>
+				<p class="share-t-num" id="twitter-words-limit"><span>122</span>/140</p>
 				<a href="javascript:void(0)" class="share-tbtn" data-a="share_twitter"></a>
 
 			</div>
