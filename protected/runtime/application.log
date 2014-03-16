@@ -6986,3 +6986,116 @@ REQUEST_URI=/carambar/index.php/twitter/login?_=1394898021729
 in /Applications/MAMP/htdocs/carambar/sdk/twitter_sdk/twitteroauth.php (80)
 in /Applications/MAMP/htdocs/carambar/protected/controllers/TwitterController.php (12)
 in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/16 10:41:50 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394937680037
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:21:11 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940041536
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:25:47 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940317420
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:25:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.cookie.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.cookie.js
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/16 11:26:18 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940348314
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:27:08 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940397931
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:28:21 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940471074
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:33:35 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940784935
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:34:05 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940815800
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)

@@ -83,6 +83,10 @@ seajs.config({
     ,exif:{
       src: "../plugin/exif.js"
     }
+    ,cookie:{
+      src: "../plugin/jquery.cookie.js"
+      ,deps: ['jquery']
+    }
   }
   , alias: {
     api: '../api.js?_201402#'

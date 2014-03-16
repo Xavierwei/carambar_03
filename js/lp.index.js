@@ -1,7 +1,7 @@
 /*
  * page base action
  */
-LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
+LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , api ){
     'use strict'
 
 	var time_left;
@@ -185,21 +185,34 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
         $('.pop').fadeOut();
     });
 
+    /**
+     * Indicator
+     */
+    LP.action('indicate', function(data){
+        if($(this).hasClass('indicating')) return;
+        if($.cookie('indicated')) return;
+        alert('indicated');
+    });
 
     /**
      * Vote Challenge
      */
 	LP.action('vote', function(data){
 		if($(this).hasClass('voting')) return;
+        if($.cookie('voted')) return;
+
+        $('.vote-btn').not(this).addClass('disabled');
+        $(this).addClass('voted');
 
 		api.ajax('vote', {cid:data.cid}, function( result ){
 			$(this).addClass('voting');
 			if(result.success) {
-				$(this).removeClass('voting');
 
-				LP.compile( 'vote-result-template' , result , function( html ){
-					$('.votes').html(html);
-				});
+//				$(this).removeClass('voting');
+//
+//				LP.compile( 'vote-result-template' , result , function( html ){
+//					$('.votes').html(html);
+//				});
 			}
 			else {
 				if(result.message == 902) {
@@ -212,7 +225,34 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
 		});
 	});
 
-	LP.action('submit-twitter', function(){
+    /***
+     * Open Invitation Dialog
+     */
+    LP.action('open_invitation', function(){
+        LP.compile( 'send-invitation-template' , {} , function( html ){
+            $('.overlay').fadeIn();
+            $('body').append(html);
+        });
+    });
+
+    /***
+     * Send Invitation
+     */
+    LP.action('send_invitation', function(){
+        if($(this).hasClass('submiting')) return;
+        $(this).addClass('submiting');
+        var answer = $('#invitation_answer').val();
+        if(answer != 1) {
+            $('.pop-bar-tips').fadeIn();
+        }
+        //TODO AJAX
+        $(this).removeClass('submiting');
+    });
+
+    /***
+     * Submit Twitter
+     */
+	LP.action('submit_twitter', function(){
 		var content = '#GOODLUCKCARAMBAR ' + $('#twitter-content').val();
 		api.ajax('postTwitter', {content: content}, function( result ){
 			console.log(result);
@@ -222,7 +262,18 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
 		});
 	});
 
-    LP.action('submit-facebook', function(){
+    /***
+     * Share Twitter
+     */
+    $('.share-t .share-txt').on('keyup', function(){
+        var content = $('#twitter-content').val() + '#GOODLUCKCARAMBAR';
+        $('.share-t .share-tbtn').attr('href', 'https://twitter.com/intent/tweet?text='+content);
+    });
+
+    /***
+     * Submit Facebook
+     */
+    LP.action('submit_facebook', function(){
         var img = $('#facebook-img').val();
         var content = '#GOODLUCKCARAMBAR ' + $('#facebook-content').val();
         api.ajax('postFacebook', {content: content, img: img}, function( result ){
@@ -274,24 +325,25 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
 		});
 
 
-		api.ajax('twitterLogin', function( result ){
-			if(result.data !== 'login') {
-				$('#twitter-login-link').fadeIn().attr('href', result.data);
-			}
-			else {
-				$('#twitter-content-wrap').fadeIn();
-                if($('.sec4-right-txt').hasClass('opened')) {
-                    $('#twitter-content-wrap').height(0);
-                }
-                else {
-                    $('#twitter-content-wrap').prev().addClass('opened')
-                }
-			}
-		});
+//		api.ajax('twitterLogin', function( result ){
+//			if(result.data !== 'login') {
+//				$('#twitter-login-link').fadeIn().attr('href', result.data);
+//			}
+//			else {
+//				$('#twitter-content-wrap').fadeIn();
+//                if($('.sec4-right-txt').hasClass('opened')) {
+//                    $('#twitter-content-wrap').height(0);
+//                }
+//                else {
+//                    $('#twitter-content-wrap').prev().addClass('opened')
+//                }
+//			}
+//		});
 
-
-
-
+        //check vote status
+        var votedId = $.cookie('voted');
+        $('.vote-btn').not('.vote-btn'+votedId).addClass('disabled');
+        $('.vote-btn'+votedId).addClass('voted');
 
 
 		/* for animation */
