@@ -2,7 +2,7 @@
 
 class ChallengeController extends Controller
 {
-    /*
+    /**
      * 返回投票对象信息
      */
 	public function actionList()
@@ -23,6 +23,7 @@ class ChallengeController extends Controller
      */
     public function actionUpdate()
     {
+        //$_POST['cid']=2;
         if(!isset($_POST['cid']))
             StatusSend::_sendResponse(200, StatusSend::error('end', 1002) ); //未传入cid参数
 
@@ -35,9 +36,9 @@ class ChallengeController extends Controller
         if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，只需要校验cookie和投票cid是否存在
         {
             //判断是否有投票资格
-            $voteAuth= $model->isCookieCreate();
+            $voteAuth= Drtool::isCookieAuth('vote_auth');//vote_auth cookie保存值
             if($voteAuth)
-                StatusSend::_sendResponse(200,StatusSend::error('end', 1004,$voteAuth)); //已经投过票，时间不足一天
+                StatusSend::_sendResponse(200,StatusSend::error('end', 1004,$voteAuth)); //已经投过票，时间不足3天
 
             $item->vote_counts= $item->vote_counts+1; //投票次数+1
 
@@ -61,30 +62,4 @@ class ChallengeController extends Controller
         }
     }
 
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
 }
