@@ -5,7 +5,7 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-	<title></title>
+	<title>Carambar</title>
 	<link href="./css/style.css" rel="stylesheet" type="text/css" />
 	<style>
 		#stats {z-index: 99999;position: fixed;}

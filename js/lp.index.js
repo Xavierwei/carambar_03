@@ -193,27 +193,13 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
      * Indicator
      */
     LP.action('indicate', function(data){
-//
-//        var flip = function(){
-//            var i = 0;
-//            setTimeout(function(){
-//                console.log(i);
-//                $('.digit1').css({'background-position':'0 -'+i*55+'px'});
-//                if(i < 3) {
-//                    flip();
-//                    i++;
-//                }
-//            }(i),1000);
-//        }
-//
-//        flip();
-
-
-
         if($(this).hasClass('indicating')) return;
         if($.cookie('praise_auth')) return;
         api.ajax('indicate', {cid:data.cid}, function( result ){
-            $('.indicator-count').html(result.data);
+            var prevNum = $.trim($('.indicator-count-num').html());
+            var offset = result.data - prevNum;
+            digitHelper.plus(offset);
+            $('.indicator-count-num').html(result.data);
         });
     });
 
@@ -314,9 +300,14 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
     });
 
     function indicateResult(){
-//        api.ajax('indicateResult', function( result ){
-//            $('.indicator-count').html(result.data);
-//        });
+        api.ajax('indicateResult', function( result ){
+            var prevNum = $.trim($('.indicator-count-num').html());
+            var offset = result.data - prevNum;
+            if(offset) {
+                digitHelper.plus(offset);
+                $('.indicator-count-num').html(result.data);
+            }
+        });
     }
 
 	function init() {
@@ -348,7 +339,11 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
         setInterval(function(){
             indicateResult();
         }, 1000*60);
-        indicateResult();
+
+        api.ajax('indicateResult', function( result ){
+            digitHelper.init(result.data);
+            $('.indicator-count-num').html(result.data);
+        });
 
 
 		api.ajax('facebookLogin', function( result ){
@@ -482,21 +477,24 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
     // digit counter
     var digitHelper = (function(){
         var $count = $('.indicator-count');
-        var num = $.trim( $count.html() );
         var digitHeight = 54;
-        // init digit count
-        num = "000000".substr(num.length) + num;
-        var aHtml = [];
-        $.each( num.split('') , function( i , n ){
-            aHtml.push( '<span class="digit digit' + n + '" data-num="' + n + '" ></span>' );
-        } );
-        $count.html( aHtml.join('') );
+        var init = function( num ){
+            // init digit count
+            num = num + '';
+            num = "000000".substr(num.length) + num;
+            var aHtml = [];
+            $.each( num.split('') , function( i , n ){
+                aHtml.push( '<span class="digit digit' + n + '" data-num="' + n + '" ></span>' );
+            } );
+            $count.html( aHtml.join('') );
+        }
+
 
         var plusNum = function( $dom , total ){
             var index = 0;
             var times = 4;
             var countTimes = 0;
-            var time = 400;
+            var time = 300;
             var num = $dom.data('num') % 10;
             setTimeout(function timer(){
                 if( num == 9  && index == 0 ){
@@ -514,13 +512,18 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
 
         }
         return {
+            init: function( num ){
+                init( num );
+            },
             plus: function( num ){
                 plusNum( $count.children().last() , num );
             }
         }
     })();
 
+
     window.digitHelper = digitHelper;
+
 
     jQuery.fn.extend({
         ensureLoad: function(handler) {

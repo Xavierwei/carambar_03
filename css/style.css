@@ -80,7 +80,7 @@ a:hover{color:#e82426}
     .line-com-p1{background: url('../images/line_com_p1.png') no-repeat;width: 366px;height: 88px;position: absolute;left:50%;top:-10px;margin-left:-183px;}
     .line-com1{cursor:pointer;background: url('../images/line_com1.png') no-repeat;width: 465px;height: 45px;margin: 0 auto}
     .line-com2{background: url('../images/line_com2.png') no-repeat center;width: 465px;height: 45px;margin: 0 auto}
-    .line-com3{cursor:pointer;background:#ffeb00 url('../images/line_com3.png') no-repeat center;width: 240px;height: 55px;margin: 0 auto}
+    .line-com3{cursor:pointer;display:block;background:#ffeb00 url('../images/line_com3.png') no-repeat center;width: 240px;height: 55px;margin: 0 auto}
 
 .barack{background: url('../images/barack.jpg') repeat-x center;height: 167px;position: relative;z-index: 10;margin-bottom: 20px;}
     .baracktit{background: url('../images/baracktit.png') no-repeat;width: 347px;height: 69px;position: absolute;top:-20px;left:50%;margin-left:-173px;}
@@ -196,6 +196,9 @@ a:hover{color:#e82426}
     .tips-video .video-play {background: url(../images/btn_play.png) no-repeat 67px 13px;position: absolute;top:0;left:0;width:100%;height:100%;}
 .tips-video .video-play:hover {background-position:-342px 13px;}
 .indicator-count-wrap {width:600px;position: absolute;top:275px;left:325px;}
+    .phase4 .indicator-count-wrap {top:46px;left:288px;}
+    .indicator-count {height:62px;width:300px;margin-left:14px;}
+    .indicator-count-num {display:none;}
     .indicator-title {color:#fff;text-transform:uppercase;width:283px;text-align: center;}
     .indicator-hashtag {background: url(../images/indicator_hashtag.png) no-repeat;width:283px;height:20px;text-indent:-999em;}
     .indicator-btn {cursor:pointer;background: url(../images/indicator_btn.png) no-repeat;width:319px;height:227px;position: absolute;top:-58px;left:309px;}

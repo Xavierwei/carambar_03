@@ -46,8 +46,8 @@
 			     data-style="opacity:0;" data-animate="opacity:1;" data-delay="1000" data-time="500"
 			     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
 				<div class="indicator-title">Nombre de soutiens récoltés</div>
-				<div class="indicator-count">87230
-				</div>
+				<div class="indicator-count"></div>
+				<div class="indicator-count-num"></div>
 				<div class="indicator-hashtag">#GOODLUCKCARAMBAR</div>
 				<div class="indicator-btn" data-a="indicate"></div>
 			</div>
@@ -103,8 +103,13 @@
 							<span id="countdown-seconds"></span>
 						</div>
 					</div>
-					<div class="sec-bluenum"></div>
-					<div class="sec-bluetime"></div>
+					<div class="indicator-count-wrap">
+						<div class="indicator-title">Nombre de soutiens récoltés</div>
+						<div class="indicator-count"></div>
+						<div class="indicator-count-num"></div>
+						<div class="indicator-hashtag">#GOODLUCKCARAMBAR</div>
+						<div class="indicator-btn" data-a="indicate"></div>
+					</div>
 				</div>
 			</div>
 			<?php else:?>
@@ -301,7 +306,7 @@
 		</div>
 		<!-- line -->
 		<div class="line line3">
-			<div class="line-com3"></div>
+			<a href="photowall.php" class="line-com3"></a>
 		</div>
 		<!--  -->
 	</div>
