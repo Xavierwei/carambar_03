@@ -6986,160 +6986,116 @@ REQUEST_URI=/carambar/index.php/twitter/login?_=1394898021729
 in /Applications/MAMP/htdocs/carambar/sdk/twitter_sdk/twitteroauth.php (80)
 in /Applications/MAMP/htdocs/carambar/protected/controllers/TwitterController.php (12)
 in /Applications/MAMP/htdocs/carambar/index.php (30)
-2014/03/16 11:07:57 [error] [exception.CException] exception 'CException' with message 'CMemCache requires PHP memcache extension to be loaded.' in E:\dev_code\php\yii\carambar_03\yii\framework\caching\CMemCache.php:116
+2014/03/16 10:41:50 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
 Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\caching\CMemCache.php(89): CMemCache->getMemCache()
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModule.php(387): CMemCache->init()
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
-#4 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModule.php(387): CUrlManager->init()
-#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
-#6 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
-#7 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#8 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
-#9 {main}
-REQUEST_URI=/carambar_03/
----
-2014/03/16 11:28:13 [error] [php] MemcachePool::get():  (E:\dev_code\php\yii\carambar_03\yii\framework\caching\CMemCache.php:149)
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394937680037
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:21:11 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
 Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CUrlManager.php(219): CMemCache->get()
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModule.php(387): CUrlManager->init()
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(522): CWebApplication->getComponent()
-#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(140): CWebApplication->getUrlManager()
-#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
-REQUEST_URI=/carambar_03/
-in E:\dev_code\php\yii\carambar_03\index.php (30)
-2014/03/16 11:28:23 [error] [php] MemcachePool::get():  (E:\dev_code\php\yii\carambar_03\yii\framework\caching\CMemCache.php:149)
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940041536
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:25:47 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
 Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CUrlManager.php(219): CMemCache->get()
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModule.php(387): CUrlManager->init()
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(522): CWebApplication->getComponent()
-#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(140): CWebApplication->getUrlManager()
-#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
-REQUEST_URI=/carambar_03/
-in E:\dev_code\php\yii\carambar_03\index.php (30)
-2014/03/16 11:34:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php:286
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940317420
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:25:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.cookie.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
 Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
 #3 {main}
-REQUEST_URI=/carambar_03/gii
+REQUEST_URI=/carambar_03/js/plugin/jquery.cookie.js
+HTTP_REFERER=http://lily.local:8888/carambar_03/
 ---
-2014/03/16 11:34:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php:286
+2014/03/16 11:26:18 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
 Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
-#3 {main}
-REQUEST_URI=/carambar_03/index.php/gii
----
-2014/03/16 11:35:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in E:\dev_code\php\yii\carambar_03\yii\framework\gii\GiiModule.php:170
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940348314
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:27:08 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
 Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): CController->run('')
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#4 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
-#5 {main}
-REQUEST_URI=/carambar_03/index.php/gii
----
-2014/03/16 11:35:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in E:\dev_code\php\yii\carambar_03\yii\framework\gii\GiiModule.php:170
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940397931
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:28:21 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
 Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): CController->run('')
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#4 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
-#5 {main}
-REQUEST_URI=/carambar_03/index.php/gii
----
-2014/03/16 11:38:07 [error] [php] session_regenerate_id(): Session object destruction failed (E:\dev_code\php\yii\carambar_03\yii\framework\web\CHttpSession.php:181)
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940471074
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:33:35 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
 Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
-#1 E:\dev_code\php\yii\carambar_03\protected\components\Controller.php(186): CWebUser->login()
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(359): TwitterController->__construct()
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
-#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
-REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394941086479
-in E:\dev_code\php\yii\carambar_03\protected\components\Controller.php (186)
-in E:\dev_code\php\yii\carambar_03\index.php (30)
-2014/03/16 12:07:59 [error] [php] Non-static method ChallengeAR::getChallengeList() should not be called statically, assuming $this from incompatible context (E:\dev_code\php\yii\carambar_03\protected\controllers\ChallengeController.php:10)
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940784935
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/16 11:34:05 [error] [php] Undefined index: oauth_token (/Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php:80)
 Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): ChallengeController->runAction()
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): ChallengeController->runActionWithFilters()
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): ChallengeController->run()
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#4 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#5 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
-REQUEST_URI=/carambar_03/challenge/list
-in E:\dev_code\php\yii\carambar_03\protected\controllers\ChallengeController.php (10)
-in E:\dev_code\php\yii\carambar_03\index.php (30)
-2014/03/16 12:33:54 [error] [exception.CException] exception 'CException' with message 'Property "CUniqueValidator.not" is not defined.' in E:\dev_code\php\yii\carambar_03\yii\framework\base\CComponent.php:173
-Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\validators\CValidator.php(189): CComponent->__set('not', true)
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModel.php(287): CValidator::createValidator('unique', Object(ChallengeAR), 'cid', Array)
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModel.php(260): CModel->createValidators()
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModel.php(547): CModel->getValidators()
-#4 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModel.php(468): CModel->getSafeAttributeNames()
-#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CComponent.php(152): CModel->setAttributes(Array)
-#6 E:\dev_code\php\yii\carambar_03\yii\framework\db\ar\CActiveRecord.php(161): CComponent->__set('attributes', Array)
-#7 E:\dev_code\php\yii\carambar_03\protected\controllers\ChallengeController.php(31): CActiveRecord->__set('attributes', Array)
-#8 E:\dev_code\php\yii\carambar_03\yii\framework\web\actions\CInlineAction.php(49): ChallengeController->actionUpdate()
-#9 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#10 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#11 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): CController->run('update')
-#13 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('challenge/updat...')
-#14 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#15 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
-#16 {main}
-REQUEST_URI=/carambar_03/challenge/update
----
-2014/03/16 12:58:19 [error] [exception.CException] exception 'CException' with message 'CMemCache requires PHP memcache extension to be loaded.' in E:\dev_code\php\yii\carambar_03\yii\framework\caching\CMemCache.php:116
-Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\caching\CMemCache.php(89): CMemCache->getMemCache()
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModule.php(387): CMemCache->init()
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
-#4 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModule.php(387): CUrlManager->init()
-#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
-#6 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
-#7 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#8 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
-#9 {main}
-REQUEST_URI=/carambar_03/challenge/update
----
-2014/03/16 12:58:34 [error] [php] MemcachePool::get():  (E:\dev_code\php\yii\carambar_03\yii\framework\caching\CMemCache.php:149)
-Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CUrlManager.php(219): CMemCache->get()
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModule.php(387): CUrlManager->init()
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(522): CWebApplication->getComponent()
-#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(140): CWebApplication->getUrlManager()
-#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
-REQUEST_URI=/carambar_03/challenge/update
-in E:\dev_code\php\yii\carambar_03\index.php (30)
-2014/03/16 13:39:08 [error] [php] Missing argument 1 for ChallengeAR::isCookieCreate(), called in E:\dev_code\php\yii\carambar_03\protected\controllers\ChallengeController.php on line 34 and defined (E:\dev_code\php\yii\carambar_03\protected\models\ChallengeAR.php:131)
-Stack trace:
-#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
-#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): ChallengeController->runAction()
-#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): ChallengeController->runActionWithFilters()
-#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): ChallengeController->run()
-#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
-REQUEST_URI=/carambar_03/challenge/update
-in E:\dev_code\php\yii\carambar_03\protected\models\ChallengeAR.php (131)
-in E:\dev_code\php\yii\carambar_03\protected\controllers\ChallengeController.php (34)
-in E:\dev_code\php\yii\carambar_03\index.php (30)
-2014/03/16 14:01:51 [warning] [application] Failed to set unsafe attribute "cid" of "ChallengeAR".
-in E:\dev_code\php\yii\carambar_03\protected\controllers\ChallengeController.php (53)
-in E:\dev_code\php\yii\carambar_03\index.php (30)
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/twitter/login?_=1394940815800
+in /Applications/MAMP/htdocs/carambar_03/sdk/twitter_sdk/twitteroauth.php (80)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (12)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)

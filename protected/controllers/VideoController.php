@@ -52,13 +52,19 @@ class VideoController extends Controller {
 	 * Vote video
 	 */
 	public function actionVote() {
+
 		$request = Yii::app()->getRequest();
+		$cid = $request->getPost("cid");
+		$cookie = new CHttpCookie('voted', $cid);
+		$cookie->expire = time() + (60*60*24*3); // 3days
+		Yii::app()->request->cookies['voted'] = $cookie;
+
+		return $this->responseJSON(1, "success");
 
 		if (!$request->isPostRequest) {
 			$this->responseError(101);
 		}
 
-		$vid = $request->getPost("vid");
 		if(!$vid) {
 			$this->responseError(101);
 		}

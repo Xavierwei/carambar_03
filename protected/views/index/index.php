@@ -38,7 +38,7 @@
 				<div class="indicator-title">Nombre de soutiens récoltés</div>
 				<div class="indicator-count"></div>
 				<div class="indicator-hashtag">#GOODLUCKCARAMBAR</div>
-				<div class="indicator-btn"></div>
+				<div class="indicator-btn" data-a="indicate"></div>
 			</div>
 		</div>
 		<div class="goto-support-bg" data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,70px,0);">
@@ -108,7 +108,6 @@
 	<?php if($phase == 1 || $phase == 2):?>
 	<div class="challenge">
 		<div class="challenge-title"></div>
-		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
 		<div class="challenge-inner" data-646="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
 			<div class="challenge-item">
 				<div class="challenge-img">
@@ -129,24 +128,24 @@
 				<div class="vote-btn vote-btn3" data-a="vote" data-d="cid=3">DEFI No3</div>
 			</div>
 		</div>
+		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
 	</div>
 	<?php endif;?>
 	<?php if($phase == 3 || $phase == 4):?>
 	<div class="videolistbg">
 		<div class="videolist-tit"></div>
-		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
 		<div class="videolist" data-626="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
 			<div class="videolistshare">
 				<div class="video-con">
 					<div class="videolist-item">
 						<div class="videolist-item-tit videolist-item-tit1"></div>
-						<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+						<div class="videolist-box"><img src="images/demo.jpg" /><a data-d="mid=" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
 						<div class="videolist-txt">le soutien politique français</div>
 						<div class="video-icon"></div>
 					</div>
 					<div class="videolist-item">
 						<div class="videolist-item-tit videolist-item-tit2"></div>
-						<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+						<div class="videolist-box"><img src="images/demo.jpg" /><a data-d="mid=" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
 						<div class="videolist-txt">le soutien politique français</div>
 						<div class="video-icon"></div>
 					</div>
@@ -157,6 +156,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
 	</div>
 	<?php endif;?>
 	<?php if($phase == 5):?>
@@ -216,7 +216,7 @@
 			<div class="line-com-p1"></div>
 		</div>
 		<?php endif;?>
-		<?php if($phase == 3):?>
+		<?php if($phase == 3 || $phase == 4):?>
 		<!-- line -->
 		<div class="line line2">
 			<div class="line-com2"></div>
@@ -225,7 +225,7 @@
 		<div class="barack">
 			<div class="baracktit"></div>
 			<div class="baracktxt">Please tell us when we can meet</div>
-			<div class="barackbtn"></div>
+			<div class="barackbtn" data-a="open_invitation"></div>
 		</div>
 		<!-- /barack -->
 		<?php endif;?>
@@ -243,9 +243,10 @@
 				<a href="#" class="share-fbbtn" data-a="open_facebook"></a>
 			</div>
 			<div class="share-t">
-				<textarea class="share-txt"></textarea>
+				<textarea class="share-txt" id="twitter-content"></textarea>
 				<p class="share-t-num">14/140</p>
-				<a href="#" class="share-tbtn"></a>
+				<a href="javascript:void(0)" class="share-tbtn" data-a="share_twitter"></a>
+
 			</div>
 			<div class="share-i cs-clear">
 				<a href="#" class="share-iandroid"></a>
@@ -288,34 +289,6 @@
 	</div>
 
 
-	<!--<div class="facebook-post">-->
-	<!--<div class="facebook-post-title"></div>-->
-	<!--<div class="facebook-post-img" id="fileupload">-->
-	<!--<input type="file" accept="image/*" name="file">-->
-	<!--</div>-->
-	<!--<div class="poptxt-pic">-->
-	<!--<a class="pop-zoomout-btn" data-a="pop-zoomout-btn" href="javascript:void(0)">Zoom In</a>-->
-	<!--<a class="pop-zoomin-btn" data-a="pop-zoomin-btn" href="javascript:void(0)">Zoom Out</a>-->
-	<!--<div class="poptxt-pic-inner">-->
-	<!--<img style="pointer-events:none" />-->
-	<!--</div>-->
-	<!--</div></div>-->
-	<!--<div class="facebook-post-textarea">-->
-	<!--<textarea rows="" cols=""></textarea>-->
-	<!--</div>-->
-	<!--<div class="facebook-post-icon"></div>-->
-	<!--<div class="facebook-post-submit"></div>-->
-	<!--</div>-->
-
-
-
-	<!--  -->
-
-	<!--  -->
-
-
-
-	<!--  -->
 </div>
 <!-- footer -->
 <div class="footer">
@@ -374,3 +347,17 @@
 	</div>
 </script>
 <!-- #facebook-post-tpl -->
+
+<?php if($phase == 3 || $phase == 4):?>
+<!-- #send-invitation-tpl -->
+<script type="text/tpl" id="send-invitation-template">
+	<div class="pop pop-bar">
+		<div class="pop-close" data-a="close_popup"></div>
+		<div class="pop-bar-txt"></div>
+		<input id="invitation_answer" type="text" class="pop-bar-input">
+		<div class="pop-bar-btn" data-a="send_invitation"></div>
+		<div class="pop-bar-tips"></div>
+	</div>
+</script>
+<!-- #send-invitation-tpl -->
+<?php endif;?>
