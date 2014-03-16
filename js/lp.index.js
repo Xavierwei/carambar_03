@@ -199,7 +199,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
      */
 	LP.action('vote', function(data){
 		if($(this).hasClass('voting')) return;
-        if($.cookie('voted')) return;
+        if($.cookie('cid')) return;
 
         $('.vote-btn').not(this).addClass('disabled');
         $(this).addClass('voted');
@@ -336,9 +336,11 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
 //		});
 
         //check vote status
-        var votedId = $.cookie('voted');
-        $('.vote-btn').not('.vote-btn'+votedId).addClass('disabled');
-        $('.vote-btn'+votedId).addClass('voted');
+        var votedId = $.cookie('cid');
+        if(votedId) {
+            $('.vote-btn').not('.vote-btn'+votedId).addClass('disabled');
+            $('.vote-btn'+votedId).addClass('voted');
+        }
 
 
 		/* for animation */

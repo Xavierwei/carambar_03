@@ -48,58 +48,7 @@ class VideoController extends Controller {
 	}
 
 
-	/***
-	 * Vote video
-	 */
-	public function actionVote() {
-
-		$request = Yii::app()->getRequest();
-		$cid = $request->getPost("cid");
-		$cookie = new CHttpCookie('voted', $cid);
-		$cookie->expire = time() + (60*60*24*3); // 3days
-		Yii::app()->request->cookies['voted'] = $cookie;
-
-		return $this->responseJSON(1, "success");
-
-		if (!$request->isPostRequest) {
-			$this->responseError(101);
-		}
-
-		if(!$vid) {
-			$this->responseError(101);
-		}
-
-		$cookie_voted = (string)Yii::app()->request->cookies['voted'];
-		if(!$cookie_voted) {
-			$vote = new VoteAR();
-			$vote->vid = $vid;
-			$vote->datetime = time();
-			if($vote->validate()) {
-				$vote->save();
-
-				$cookie = new CHttpCookie('voted', md5(rand(0,999).time()));
-				$cookie->expire = time() + (60*60*24); // 24 hours
-				Yii::app()->request->cookies['voted'] = $cookie;
-
-				$list = VoteAR::model()->getVoteList();
-
-				return $this->responseJSON($list, "success");
-			}
-		}
-		else {
-			return $this->responseError(902);
-		}
-	}
-
-
-	/**
-	 * Get vote list
-	 */
-	public function actionVoteList() {
-		$list = VoteAR::model()->getVoteList();
-		return $this->responseJSON($list, "success");
-	}
-
+	
 
 	/**
 	 * countdown

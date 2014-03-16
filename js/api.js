@@ -53,8 +53,8 @@ define(function( require , exports , model ){
         i18n_fr: {path: './lang/fr.json', method:'get', async: false, cache:true},
 
 
-		vote: {path: './index.php/video/vote', method:'post'},
-		voteResult: {path: './index.php/video/votelist', method:'get'},
+		vote: {path: './index.php/challenge/update', method:'post'},
+		//voteResult: {path: './index.php/video/votelist', method:'get'},
 		countdown: {path: './index.php/video/countdown', method:'get'},
 		facebookLogin: {path: './index.php/facebook/login', method:'get'},
 		twitterLogin: {path: './index.php/twitter/login', method:'get'},
