@@ -87,6 +87,10 @@ seajs.config({
       src: "../plugin/jquery.cookie.js"
       ,deps: ['jquery']
     }
+	,queryloader:{
+	  src: "../plugin/jquery.queryloader22.js"
+	  ,deps: ['jquery']
+	}
   }
   , alias: {
     api: '../api.js?_201402#'

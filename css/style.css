@@ -101,8 +101,9 @@ a:hover{color:#e82426}
     .share-txt{width:190px;height:25px;border:0;background: none;resize:none;font-family:'arial';}
     #twitter-words-limit.out {color:#e63130;}
     .share-t-num{text-align: right;font-size: 14px;padding:8px 0}
-    .share-tbtn{display: block;margin:19px auto 0;background: url('../images/btn_t.png') no-repeat;width:122px;height: 39px;}
+    .share-tbtn {display: block;margin:19px auto 0;background: url('../images/btn_t.png') no-repeat;width:122px;height: 39px;}
     .share-tbtn:hover {background-position:-389px 0;}
+    .share-tbtn.disabled,.share-tbtn.disabled:hover {cursor:default;background-position:-713px 0;}
     .share-i{position: absolute;width:220px;left:50%;margin-left:134px;top:16px;background: url('../images/sharei.png') no-repeat;width:219px;height: 52px;padding:200px 16px;}
     .share-iandroid{display: block;background: url('../images/btn_iandroid.png') no-repeat;width:104px;height: 36px;float:left}
     .share-iios{display: block;background: url('../images/btn_iios.png') no-repeat;width:104px;height: 36px;float:right}
@@ -114,7 +115,7 @@ a:hover{color:#e82426}
 
 .photit{background: url('../images/photit.png') no-repeat top center;height: 93px;margin: 15px auto 0}
     .pholist{background: url('../images/pholist.png') repeat-x center;height: 153px;margin: 15px auto 0;width:812px;padding:0 0 0 24px;}
-    .phoitem{float:left;background:#000;padding: 3px;width: 126px;height: 121px;display: inline;margin:15px 13px;}
+    .phoitem{float:left;background:#000;padding: 3px;width: 126px;height: 126px;display: inline;margin:15px 13px;}
 
 
 

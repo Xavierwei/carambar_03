@@ -1,6 +1,6 @@
-<!--<div class="loading-overlay">-->
-<!--	<div class="loading-logo"><img src="images/loading_logo.png" /></div>-->
-<!--</div>-->
+<div class="loading-overlay">
+	<div class="loading-logo"><img src="images/loading_logo.png" /></div>
+</div>
 <div class="header"
      data-style="margin-top:-200px" data-animate="margin-top:0" data-delay="0" data-time="500" data-easing="easeOutQuart"
      data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 		<div class="goto-support-bg" data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,70px,0);">
-			<a href="#" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
+			<a href="javascript:;" data-a="goto_support" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
 		</div>
 		<?php endif;?>
 		<?php if($phase == 4 || $phase == 5):?>
@@ -255,7 +255,7 @@
 
 		<?php if($phase == 1 || $phase == 2 || $phase == 3 || $phase == 4):?>
 		<!--  -->
-		<div class="img">
+		<div id="support-carambar" class="img">
 			<div class="img1"></div>
 			<div class="img2"></div>
 			<div class="img3"></div>
@@ -268,7 +268,7 @@
 			<div class="share-t">
 				<textarea class="share-txt" id="twitter-content"></textarea>
 				<p class="share-t-num" id="twitter-words-limit"><span>122</span>/140</p>
-				<a href="javascript:void(0)" class="share-tbtn" data-a="share_twitter"></a>
+				<a target="_blank" href="javascript:void(0)" class="share-tbtn disabled" data-a="share_twitter"></a>
 
 			</div>
 			<div class="share-i cs-clear">
@@ -288,21 +288,7 @@
 		<div class="photit"></div>
 		<!--  -->
 		<div class="pholist cs-clear">
-			<div class="phoitem">
-				<img src="images/demo2.jpg" />
-			</div>
-			<div class="phoitem">
-				<img src="images/demo2.jpg" />
-			</div>
-			<div class="phoitem">
-				<img src="images/demo2.jpg" />
-			</div>
-			<div class="phoitem">
-				<img src="images/demo2.jpg" />
-			</div>
-			<div class="phoitem">
-				<img src="images/demo2.jpg" />
-			</div>
+
 		</div>
 		<!-- line -->
 		<div class="line line3">
@@ -384,3 +370,11 @@
 </script>
 <!-- #send-invitation-tpl -->
 <?php endif;?>
+
+<!-- #photowall-item-tpl -->
+<script type="text/tpl" id="photowall-item-template">
+	<a href="photowall.php#/nid/{{nid}}" class="phoitem">
+		<img src="./{{thumbnail}}">
+	</a>
+</script>
+<!-- /youtube-player-tpl -->
