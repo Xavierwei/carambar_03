@@ -22,7 +22,7 @@ if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|andro
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <title>L'ESPRIT D'EQUIPE SOCIETE GENERALE</title>
+    <title>Carambar</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <link href="css/jsPane.css?<?php echo time();?>" rel="stylesheet" type="text/css" />
@@ -47,7 +47,7 @@ if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|andro
 </div>
 <div class="page-loading">
 	<div class="page-loading-logo">
-		<img src="img/logo.gif" />
+		<img src="images/loading_logo.png" />
 		<div class="old-ie">You are using an outdated browser. Please upgrade your browser to improve your experience.</div>
 	</div>
 </div>

@@ -32,7 +32,7 @@ body{
 }
 
 .content {margin-top:0px;position: absolute;width:100%;height:100%;}
-.main{margin: 172px -10px 0 125px;position: relative;}
+.main{margin: 107px -10px 0 125px;position: relative;}
 .logged .main {margin:86px -10px 0 80px;}
 .inner {margin:0 0 0 330px;position: fixed;top:172px; z-index: 12;background: #fcea2f;}
 .logged .inner {margin:0 0 0 410px;}
@@ -107,7 +107,7 @@ body{
     perspective: 1000px;
     left: -330px;
     overflow: hidden;
-    background: #fcea2f;
+    background: #fcc41a;
 }
 
 .comment-cube{

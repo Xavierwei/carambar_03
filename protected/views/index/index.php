@@ -5,8 +5,8 @@
      data-style="margin-top:-200px" data-animate="margin-top:0" data-delay="0" data-time="500" data-easing="easeOutQuart"
      data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
 	<div class="hdcontent">
-		<a class="nav1 nav1on" href="#"></a>
-		<a class="nav2" href="#"></a>
+		<a class="nav1 nav1on" href="./"></a>
+		<a class="nav2" href="./photowall.php"></a>
 	</div>
 </div>
 <!--  -->
