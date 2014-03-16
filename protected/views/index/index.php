@@ -25,8 +25,8 @@
 			<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500">
 				<div class="tips-content"></div>
 				<div class="tips-video">
-					<img src="pic/presentation-video.jpg" />
-					<a class="video-play" href="javascript:void(0);" data-a="open_video" data-d="mid="></a>
+					<img src="./<?php echo str_replace('.jpg', '_224_115.jpg', $topVideo->thumbnail);?>" />
+					<a class="video-play" href="javascript:void(0);" data-a="open_video" data-d="mid=<?php echo $topVideo->mid;?>"></a>
 				</div>
 			</div>
 			<?php endif;?>
@@ -60,7 +60,7 @@
 		<div class="videopart cs-clear">
 			<div class="videopart-tit"></div>
 			<!-- Video -->
-			<div class="videomod"><iframe width="548" height="304" src="//www.youtube.com/embed/7-h4gSeXb5s?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe></div>
+			<div class="videomod"><iframe width="548" height="304" src="//www.youtube.com/embed/<?php echo $topVideo->mid;?>?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe></div>
 			<!-- Twitter -->
 			<div class="videotxt">
 				<!-- <h2>#goodluckcarambar</h2> -->
@@ -160,22 +160,22 @@
 		<div class="videolist" data-626="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
 			<div class="videolistshare">
 				<div class="video-con">
+					<?php
+					foreach($homeVideos as $index=>$video):?>
 					<div class="videolist-item">
-						<div class="videolist-item-tit videolist-item-tit1"></div>
-						<div class="videolist-box"><img src="images/demo.jpg" /><a data-d="mid=" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
-						<div class="videolist-txt">le soutien politique français</div>
+						<div class="videolist-item-tit videolist-item-tit<?php echo $index+1;?>"></div>
+						<div class="videolist-box"><img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" /><a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
+						<div class="videolist-txt"><?php echo $video->title;?></div>
 						<div class="video-icon"></div>
 					</div>
+					<?php endforeach;?>
+					<?php $leftCount = 3 - count($homeVideos) ?>
+					<?php for($i = 0; $i < $leftCount; $i++):?>
 					<div class="videolist-item">
-						<div class="videolist-item-tit videolist-item-tit2"></div>
-						<div class="videolist-box"><img src="images/demo.jpg" /><a data-d="mid=" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
-						<div class="videolist-txt">le soutien politique français</div>
-						<div class="video-icon"></div>
-					</div>
-					<div class="videolist-item">
-						<div class="videolist-item-tit videolist-item-tit3"></div>
+						<div class="videolist-item-tit videolist-item-tit<?php echo 3 - $leftCount + $i + 1 ;?>"></div>
 						<div class="videolist-boxnull">prochainement...</div>
 					</div>
+					<?php endfor;?>
 				</div>
 			</div>
 		</div>
@@ -189,42 +189,15 @@
 			<div class="videolist" data-826="transform:translate3d(0,0px,0);" data-1400="transform:translate3d(0,100px,0);">
 				<div class="videolistshare">
 					<div class="video-con">
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit1"></div>
-							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
-							<div class="videolist-txt">le soutien politique français</div>
-							<div class="video-icon"></div>
-						</div>
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit2"></div>
-							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
-							<div class="videolist-txt">le soutien politique français</div>
-							<div class="video-icon"></div>
-						</div>
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit2"></div>
-							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
-							<div class="videolist-txt">le soutien politique français</div>
-							<div class="video-icon"></div>
-						</div>
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit1"></div>
-							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
-							<div class="videolist-txt">le soutien politique français</div>
-							<div class="video-icon"></div>
-						</div>
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit2"></div>
-							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
-							<div class="videolist-txt">le soutien politique français</div>
-							<div class="video-icon"></div>
-						</div>
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit2"></div>
-							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
-							<div class="videolist-txt">le soutien politique français</div>
-							<div class="video-icon"></div>
-						</div>
+						<?php
+						foreach($homeVideos as $index=>$video):?>
+							<div class="videolist-item">
+								<div class="videolist-item-tit videolist-item-tit<?php echo $index+1;?>"></div>
+								<div class="videolist-box"><img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" /><a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
+								<div class="videolist-txt"><?php echo $video->title;?></div>
+								<div class="video-icon"></div>
+							</div>
+						<?php endforeach;?>
 					</div>
 				</div>
 			</div>
@@ -312,7 +285,7 @@
 <script type="text/tpl" id="youtube-player-template">
 	<div class="pop video-popup" data-a="close_popup">
 		<div class="popup-close"></div>
-		<iframe width="825" height="640" src="//www.youtube.com/embed/7-h4gSeXb5s?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
+		<iframe width="825" height="640" src="//www.youtube.com/embed/{{mid}}?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
 	</div>
 </script>
 <!-- /youtube-player-tpl -->
