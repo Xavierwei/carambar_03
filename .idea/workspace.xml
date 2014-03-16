@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="数据库添加 challenge 数据表，。增加 challenge控制器。challengeAR模型，增加drtool工具类。增加senstatus发送返回状态。&#10;cookie 记录 值有两个 name分别为 cid 和 vote_auth&#10;cid 直接记录为数字。vote_auth为时间戳 ，投票时间差返回秒数，challeneg 数据表在根目录下 challenge.sql">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="bank_wall.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -13,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ChallengeController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ChallengeController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ChallengeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="26" selection-start="778" selection-end="778" vertical-scroll-proportion="0.14569536" vertical-offset="355" max-vertical-offset="1425">
+            <state line="23" column="34" selection-start="522" selection-end="522" vertical-scroll-proportion="-1.4583334" vertical-offset="310" max-vertical-offset="1425">
               <folding />
             </state>
           </provider>
@@ -31,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChallengeAR.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ChallengeAR.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/models/ChallengeAR.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="33" selection-start="3897" selection-end="3897" vertical-scroll-proportion="-25.833334" vertical-offset="1525" max-vertical-offset="2355">
+            <state line="104" column="0" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.07261411" vertical-offset="1525" max-vertical-offset="2355">
               <folding />
             </state>
           </provider>
@@ -147,8 +159,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="155" />
-    <option name="y" value="120" />
+    <option name="x" value="150" />
+    <option name="y" value="42" />
     <option name="width" value="1513" />
     <option name="height" value="934" />
   </component>
@@ -339,6 +351,121 @@
   <component name="RestClientSettings">
     <option name="LAST_HOST" value="http://localhost/bank_wall/api/index-sg.php/node/list" />
   </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="片刻 之前" ActionInfo="更新 (_U)">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="从服务器更新" />
+          <option name="myStatusName" value="在服务器上已改变" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="已更新" />
+            <option name="myStatusName" value="已改变" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/css/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/images/btn_fb.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/js/lp.index.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/protected/views/index/index.php</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="已创建" />
+            <option name="myStatusName" value="已创建" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="已删除" />
+            <option name="myStatusName" value="已删除" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="已恢复" />
+            <option name="myStatusName" value="将被恢复" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已修改" />
+          <option name="myStatusName" value="已修改" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已跳过" />
+          <option name="myStatusName" value="已跳过" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="合并冲突" />
+          <option name="myStatusName" value="将被合并冲突" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已合并树冲突" />
+          <option name="myStatusName" value="已合并树冲突" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已合并属性冲突" />
+          <option name="myStatusName" value="将被合并属性冲突" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已合并" />
+          <option name="myStatusName" value="将被合并" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="在库里没有" />
+          <option name="myStatusName" value="在库里没有" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="本地已添加" />
+          <option name="myStatusName" value="本地已添加" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="本地已移除" />
+          <option name="myStatusName" value="本地已移除" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已切换" />
+          <option name="myStatusName" value="已切换" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
@@ -379,15 +506,24 @@
       <created>1387682780662</created>
       <updated>1387682780662</updated>
     </task>
+    <task id="LOCAL-00001" summary="数据库添加 challenge 数据表，。增加 challenge控制器。challengeAR模型，增加drtool工具类。增加senstatus发送返回状态。&#10;cookie 记录 值有两个 name分别为 cid 和 vote_auth&#10;cid 直接记录为数字。vote_auth为时间戳 ，投票时间差返回秒数，challeneg 数据表在根目录下 challenge.sql">
+      <created>1394950933265</created>
+      <updated>1394950933265</updated>
+    </task>
+    <task id="LOCAL-00002" summary="数据库添加 challenge 数据表，。增加 challenge控制器。challengeAR模型，增加drtool工具类。增加senstatus发送返回状态。&#10;cookie 记录 值有两个 name分别为 cid 和 vote_auth&#10;cid 直接记录为数字。vote_auth为时间戳 ，投票时间差返回秒数，challeneg 数据表在根目录下 challenge.sql">
+      <created>1394951050646</created>
+      <updated>1394951050646</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="155" y="120" width="1513" height="934" extended-state="0" />
-    <editor active="true" />
+    <frame x="150" y="42" width="1513" height="934" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32971016" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -775,16 +911,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/ChallengeAR.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ChallengeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="33" selection-start="3897" selection-end="3897" vertical-scroll-proportion="-25.833334" vertical-offset="1525" max-vertical-offset="2355">
+        <state line="23" column="34" selection-start="522" selection-end="522" vertical-scroll-proportion="-1.4583334" vertical-offset="310" max-vertical-offset="1425">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ChallengeController.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/ChallengeAR.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="26" selection-start="778" selection-end="778" vertical-scroll-proportion="0.14569536" vertical-offset="355" max-vertical-offset="1425">
+        <state line="104" column="0" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.07261411" vertical-offset="1525" max-vertical-offset="2355">
           <folding />
         </state>
       </provider>
