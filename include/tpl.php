@@ -3,13 +3,18 @@
 	<div class="page">
 		<!-- header -->
 		<div class="header">
-			
+			<div class="header-wrap">
+				<div class="hdcontent">
+					<a class="nav1" href="./"></a>
+					<a class="nav2 nav2on" href="./photowall.php"></a>
+				</div>
+			</div>
 		</div>
 		<!--  -->
 		<div class="content">
 			<div class="side">
 				<div class="menu">
-					<p class="filter">FILTRER</p>
+					<p class="filter"><strong>FILTRER</strong></p>
 					<a href="javascript:;" data-a="show-nodes" data-d="type=TOUS&orderby=datetime">TOUS</a>
 					<a href="javascript:;" data-a="show-nodes" data-d="type=TWEETS&orderby=datetime">TWEETS</a>
 					<a href="javascript:;" data-a="show-nodes" data-d="type=IMAGES&orderby=datetime">IMAGES</a>
