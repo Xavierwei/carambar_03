@@ -21,7 +21,13 @@ end:1015 video update 没有权限执行该操作
 end:1016 video update youtube mid已经存在
 end:1017 video update youtube 缩略图获取失败
 end:1018 video update 修改数据库失败
-end:1019 cideo create 未传入youtube url参数
+end:1019 video create 未传入youtube url参数
+
+end:1020 drtool 未传入邮件发送人的姓名
+end:1021 drtool 未传入邮件标题
+end:1022 drtool 未传入邮件内容
+end:1023 drtool 未传入邮件接受者的邮箱
+end:1024 srtool 邮件发送失败
 
 success:2001 获取challenge列表成功
 success:2002 修改challenge 投票次数成功
@@ -30,3 +36,4 @@ success:2004 setting answer校验正确
 success:2005 video 获取列表成功
 success:2006 video 获取该条数据成功
 success:2007 video update 修改数据库成功
+success:2008 drtool 邮件发送成功

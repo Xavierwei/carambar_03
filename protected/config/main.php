@@ -103,6 +103,12 @@ return array(
 				),
 			),
 		),
+        //邮件发送
+        'mailer' => array(
+            'class' => 'application.extensions.mailer.EMailer',
+            'pathViews' => 'application.views.email',
+            'pathLayouts' => 'application.views.email.layouts'
+        ),
 
 	),
 
