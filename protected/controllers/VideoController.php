@@ -50,12 +50,4 @@ class VideoController extends Controller {
 
 
 
-	/**
-	 * countdown
-	 */
-	public function actionCountdown(){
-		$timespan = strtotime('2014-3-25') - time();
-
-		return $this->responseJSON($timespan, "success");
-	}
 }

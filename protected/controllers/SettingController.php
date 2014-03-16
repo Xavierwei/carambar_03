@@ -72,4 +72,15 @@ class SettingController extends Controller
             StatusSend::_sendResponse(200, StatusSend::success('success',2004,$item)); //answer校验正确
 
     }
+
+
+
+	/**
+	 * countdown
+	 */
+	public function actionCountdown(){
+		$timespan = strtotime('2014-3-25') - time();
+
+		return $this->responseJSON($timespan, "success");
+	}
 }

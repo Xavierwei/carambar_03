@@ -193,6 +193,23 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
      * Indicator
      */
     LP.action('indicate', function(data){
+//
+//        var flip = function(){
+//            var i = 0;
+//            setTimeout(function(){
+//                console.log(i);
+//                $('.digit1').css({'background-position':'0 -'+i*55+'px'});
+//                if(i < 3) {
+//                    flip();
+//                    i++;
+//                }
+//            }(i),1000);
+//        }
+//
+//        flip();
+
+
+
         if($(this).hasClass('indicating')) return;
         if($.cookie('praise_auth')) return;
         api.ajax('indicate', {cid:data.cid}, function( result ){
@@ -296,10 +313,15 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
         });
     });
 
+    function indicateResult(){
+//        api.ajax('indicateResult', function( result ){
+//            $('.indicator-count').html(result.data);
+//        });
+    }
+
 	function init() {
 
 		api.ajax('countdown', function( result ){
-
 			time_left = result.data;
 			var timeInterval = setInterval(function(){
 				if(time_left < 0) {
@@ -311,7 +333,10 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
 				var hours = Math.floor(((time_left / 86400)-days) * 24);
 				var mins = Math.floor(((((time_left / 86400)-days) * 24)-hours)* 60);
 				var secs = Math.round(((((((time_left / 86400)-days) * 24)-hours)* 60)-mins) * 60);
-
+                days = ('' + days).length > 1 ? days : '0' + days;
+                hours = ('' + hours).length > 1 ? hours : '0' + hours;
+                mins = ('' + mins).length > 1 ? mins : '0' + mins;
+                secs = ('' + secs).length > 1 ? secs : '0' + secs;
 				$('#countdown-days').html(days);
 				$('#countdown-hours').html(hours);
 				$('#countdown-minutes').html(mins);
@@ -319,6 +344,11 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
 				time_left--;
 			},1000);
 		});
+
+        setInterval(function(){
+            indicateResult();
+        }, 1000*60);
+        indicateResult();
 
 
 		api.ajax('facebookLogin', function( result ){
