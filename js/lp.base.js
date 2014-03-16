@@ -1,7 +1,7 @@
 /*
  * page base action
  */
-LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 'swfupload-speed', 'swfupload-queue'] , function( $ , api ){
+LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 'swfupload-speed', 'swfupload-queue'*/] , function( $ , api ){
     'use strict'
 
     var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > 0;
@@ -2213,32 +2213,32 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
         // }
 
         // Resize Video
-        var $video = $('.video-js .vjs-tech');
-        if($video.hasClass('zoom')) {
-            var $videoWrap = $('.video-js');
-            var videoWrapWidth = $videoWrap.width();
-            var videoWrapHeight = $videoWrap.height();
-            var videoWrapRatio = videoWrapWidth/videoWrapHeight;
-            var videoWidth = $video.width();
-            var videoHeight = $video.height();
-            var videoRatio = videoWidth/videoHeight;
-            if(videoRatio < videoWrapRatio) {
-                $video.width('100%').height('auto');
-                var videoMarginTop = (videoHeight - videoWrapHeight)/2;
-                $video.css('margin-top',-videoMarginTop);
-                $video.css('margin-left',0);
-            } else {
-                $video.width('auto').height('100%');
-                var videoMarginLeft = (videoWidth - videoWrapWidth)/2;
-                $video.css('margin-left',-videoMarginLeft);
-                $video.css('margin-top',0);
-            }
-        }
+        // var $video = $('.video-js .vjs-tech');
+        // if($video.hasClass('zoom')) {
+        //     var $videoWrap = $('.video-js');
+        //     var videoWrapWidth = $videoWrap.width();
+        //     var videoWrapHeight = $videoWrap.height();
+        //     var videoWrapRatio = videoWrapWidth/videoWrapHeight;
+        //     var videoWidth = $video.width();
+        //     var videoHeight = $video.height();
+        //     var videoRatio = videoWidth/videoHeight;
+        //     if(videoRatio < videoWrapRatio) {
+        //         $video.width('100%').height('auto');
+        //         var videoMarginTop = (videoHeight - videoWrapHeight)/2;
+        //         $video.css('margin-top',-videoMarginTop);
+        //         $video.css('margin-left',0);
+        //     } else {
+        //         $video.width('auto').height('100%');
+        //         var videoMarginLeft = (videoWidth - videoWrapWidth)/2;
+        //         $video.css('margin-left',-videoMarginLeft);
+        //         $video.css('margin-top',0);
+        //     }
+        // }
 
         // Resize WMV iframe
-        var $wmvIframe = $('.image-wrap-inner iframe');
-        if($wmvIframe.length > 0) {
-            $wmvIframe.width('100%').height(imgBoxHeight-36);
+        var $iframe = $('.image-wrap-inner iframe');
+        if($iframe.length > 0) {
+            $iframe.width('100%').height(imgBoxHeight-36);
         }
 
         // resize inner width
@@ -2329,75 +2329,78 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
     // }
 
     var renderVideo = function($newItem,node){
-        LP.use('flash-detect', function(){
-            if($('html').hasClass('video') && !isFirefox) { // need to validate html5 video as well
-                LP.compile( 'html5-player-template' , node , function( html ){
-                    $newItem.html(html);
-                    LP.use('video-js' , function(){
-                        videojs( "inner-video-" + node.timestamp , {}, function(){
-                            $('.video-js').append('<div class="video-btn-zoom btn2" data-a="video_zoom"></div>');
-                            $('.vjs-big-play-button').click(function(){
-                                $('video').attr('poster', '');
-                            });
-                            $('.inner-infoicon .video').on('click', function(){
-                                if($('.video-js').hasClass('vjs-paused')) {
-                                    $('video')[0].play();
-                                }
-                                else {
-                                    $('video')[0].pause();
-                                }
-                            });
-                            $('video').on('ended pause', function(){
-                                $('.inner-infoicon .video').removeClass('pause');
-                            });
-                            $('video').on('play', function(){
-                                $('.inner-infoicon .video').addClass('pause');
-                            });
-                        });
-                    });
-
-                    if(isPad) {
-                        $('video').attr('controls', 'controls');
-                    }
-                });
-            }
-            else if(FlashDetect.installed)
-            {
-                LP.compile( 'flash-player-template' , node , function( html ){
-                    $newItem.html(html);
-                    if($('#flash-player').length) {
-                        var flashPlayer=document.getElementById("flash-player");
-                        if(!flashPlayer.play){
-                            flashPlayer = document.getElementById("flash-player-embed");
-                        }
-                        $('.inner-infoicon .video').on('click', function(){
-                            if($(this).hasClass('pause')) {
-                                flashPlayer.pause();
-                                $(this).removeClass('pause');
-                            }
-                            else {
-                                flashPlayer.play();
-                                $(this).addClass('pause');
-                            }
-
-                        });
-                    }
-                });
-            }
-            else
-            {
-                node.file = node.file.replace('mp4','wmv');
-                LP.compile( 'wmv-player-template' , node , function( html ){
-                    $newItem.html(html);
-                    $('.image-wrap-inner iframe');
-                    $('.inner-infoicon .video').on('click', function(){
-                        if($('#wmv-iframe').length) {
-                            $('#wmv-iframe')[0].contentWindow.iframePlay();
-                        }
-                    });
-                });
-            }
+        LP.compile( 'html5-player-template' , node , function( html ){
+            $newItem.html(html);
         });
+        // LP.use('flash-detect', function(){
+        //     if($('html').hasClass('video') && !isFirefox) { // need to validate html5 video as well
+        //         LP.compile( 'html5-player-template' , node , function( html ){
+        //             $newItem.html(html);
+        //             // LP.use('video-js' , function(){
+        //             //     videojs( "inner-video-" + node.timestamp , {}, function(){
+        //             //         $('.video-js').append('<div class="video-btn-zoom btn2" data-a="video_zoom"></div>');
+        //             //         $('.vjs-big-play-button').click(function(){
+        //             //             $('video').attr('poster', '');
+        //             //         });
+        //             //         $('.inner-infoicon .video').on('click', function(){
+        //             //             if($('.video-js').hasClass('vjs-paused')) {
+        //             //                 $('video')[0].play();
+        //             //             }
+        //             //             else {
+        //             //                 $('video')[0].pause();
+        //             //             }
+        //             //         });
+        //             //         $('video').on('ended pause', function(){
+        //             //             $('.inner-infoicon .video').removeClass('pause');
+        //             //         });
+        //             //         $('video').on('play', function(){
+        //             //             $('.inner-infoicon .video').addClass('pause');
+        //             //         });
+        //             //     });
+        //             // });
+
+        //             // if(isPad) {
+        //             //     $('video').attr('controls', 'controls');
+        //             // }
+        //         });
+        //     }
+        //     else if(FlashDetect.installed)
+        //     {
+        //         LP.compile( 'flash-player-template' , node , function( html ){
+        //             $newItem.html(html);
+        //             if($('#flash-player').length) {
+        //                 var flashPlayer=document.getElementById("flash-player");
+        //                 if(!flashPlayer.play){
+        //                     flashPlayer = document.getElementById("flash-player-embed");
+        //                 }
+        //                 $('.inner-infoicon .video').on('click', function(){
+        //                     if($(this).hasClass('pause')) {
+        //                         flashPlayer.pause();
+        //                         $(this).removeClass('pause');
+        //                     }
+        //                     else {
+        //                         flashPlayer.play();
+        //                         $(this).addClass('pause');
+        //                     }
+
+        //                 });
+        //             }
+        //         });
+        //     }
+        //     else
+        //     {
+        //         node.file = node.file.replace('mp4','wmv');
+        //         LP.compile( 'wmv-player-template' , node , function( html ){
+        //             $newItem.html(html);
+        //             $('.image-wrap-inner iframe');
+        //             $('.inner-infoicon .video').on('click', function(){
+        //                 if($('#wmv-iframe').length) {
+        //                     $('#wmv-iframe')[0].contentWindow.iframePlay();
+        //                 }
+        //             });
+        //         });
+        //     }
+        // });
     }
 
 
@@ -2429,7 +2432,6 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
 
             $(window).trigger('scroll');
         });
-
 
         openByHash();
     });

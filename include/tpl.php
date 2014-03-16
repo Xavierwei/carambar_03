@@ -181,9 +181,7 @@
 
 <!-- html5-player-tpl -->
 <script type="text/tpl" id="html5-player-template">
-  <video id="inner-video-{{timestamp}}" class="video-js vjs-big-play-centered vjs-default-skin" preload="none" width="100%" height="100%" poster="./api{{image}}" data-setup="{}">
-    <source src="./api{{file}}" type='video/mp4' />
-  </video>
+  <iframe height=498 width=510 src="http://player.youku.com/embed/XNjg0NDc0ODc2" frameborder=0 allowfullscreen></iframe>
 </script>
 
 <!-- wmv-player-tpl -->
