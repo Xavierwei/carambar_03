@@ -58,10 +58,10 @@ return array(
 		),
 		// uncomment the following to use a MySQL database
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=carambar',
+			'connectionString' => 'mysql:host=127.0.0.1;dbname=carambar',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'root',
+			'password' => 'hdg',
 			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(

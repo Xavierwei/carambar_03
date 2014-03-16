@@ -46,7 +46,8 @@
 			     data-style="opacity:0;" data-animate="opacity:1;" data-delay="1000" data-time="500"
 			     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
 				<div class="indicator-title">Nombre de soutiens récoltés</div>
-				<div class="indicator-count"><span class="digit digit1"></span></div>
+				<div class="indicator-count">87230
+				</div>
 				<div class="indicator-hashtag">#GOODLUCKCARAMBAR</div>
 				<div class="indicator-btn" data-a="indicate"></div>
 			</div>
