@@ -37,7 +37,20 @@ class SettingController extends Controller
         }
 	}
 
-	/**
+    /**
+     * 获取点赞数据
+     */
+    public function actionPraiseResult()
+    {
+        $model=new SettingAR;
+        $item=$model->getValue('praise');      //获取value
+        if(!$item)
+            StatusSend::_sendResponse(200,StatusSend::error('end', 1006)); //获取不到点赞数据
+        else
+            StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item)); //修改数据库成功
+    }
+
+    /**
      * 问答题
      */
     public function actionAnswer()
