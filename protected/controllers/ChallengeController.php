@@ -23,7 +23,7 @@ class ChallengeController extends Controller
      */
     public function actionUpdate()
     {
-        //$_POST['cid']=2;
+//        $_POST['cid']=2;
         if(!isset($_POST['cid']))
             StatusSend::_sendResponse(200, StatusSend::error('end', 1002) ); //未传入cid参数
 
@@ -55,6 +55,7 @@ class ChallengeController extends Controller
         else //管理员只做简单校验
         {
             $item->attributes=$_POST; //赋值
+
             if($item->save())
                 StatusSend::_sendResponse(200, StatusSend::success('success',2002,$item)); //修改数据库成功
             else
