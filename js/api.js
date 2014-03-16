@@ -54,6 +54,7 @@ define(function( require , exports , model ){
 
 
         indicate: {path: './index.php/setting/praise', method:'post'},
+        answer: {path: './index.php/setting/answer', method:'post'},
 		vote: {path: './index.php/challenge/update', method:'post'},
 		//voteResult: {path: './index.php/video/votelist', method:'get'},
 		countdown: {path: './index.php/video/countdown', method:'get'},

@@ -246,14 +246,19 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , 
      * Send Invitation
      */
     LP.action('send_invitation', function(){
-        if($(this).hasClass('submiting')) return;
+        if($(this).hasClass('submitting')) return;
         $(this).addClass('submiting');
         var answer = $('#invitation_answer').val();
-        if(answer != 1) {
-            $('.pop-bar-tips').fadeIn();
-        }
-        //TODO AJAX
-        $(this).removeClass('submiting');
+        api.ajax('answer', {answer: answer}, function( result ){
+            $(this).removeClass('submitting');
+            if(result.error && result.error.code == 1011) {
+                $('.pop-bar-tips').fadeIn();
+                return;
+            }
+            if(result.success) {
+                LP.triggerAction('close_popup');
+            }
+        });
     });
 
     /***
