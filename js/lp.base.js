@@ -707,7 +707,8 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         node.date = datetime.getUTCDate();
         node.month = parseInt(datetime.getUTCMonth()) + 1;
         //node.currentUser = $('.side').data('user');
-        node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
+        if( node.image )
+            node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
         node.timestamp = (new Date()).getTime();
         // if(!node.user.avatar) {
         //     node.user.avatar = "/uploads/default_avatar.gif";
@@ -960,6 +961,8 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         var aftfix = '_640_640.jpg';
         // preload before and after images
         for( var i = 0 ; i < 5 ; i++ ){
+            if( nodes[ _currentNodeIndex - i ] && !nodes[ _currentNodeIndex - i ].image ) continue;
+            if( nodes[ _currentNodeIndex + i ] && !nodes[ _currentNodeIndex + i ].image ) continue;
             if( nodes[ _currentNodeIndex - i ] ){
                 $('<img/>').attr('src' , API_FOLDER + nodes[ _currentNodeIndex - i ].image.replace(/_\d+_\d+\.jpg/ , aftfix ));
             }
