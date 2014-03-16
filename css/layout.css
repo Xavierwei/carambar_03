@@ -123,7 +123,7 @@ box-shadow: 0 1px 2px 0px #545dd1;}
 ================================================================================================= */
 .side{background:#fcea2f;width: 125px;height: 100%;position:fixed;top: 172px;left: 0;z-index:11; border-right: 1px solid #2f3688;}
     .menu{margin-top: 6px;}
-        .menu a{display: block;font-size: 18px;font-weight: bold;color:#2f3688; line-height: 24px;padding-left: 40px;font-family: Arial Narrow;}
+        .menu a,p{display: block;font-size: 18px;font-weight: bold;color:#2f3688; line-height: 24px;padding-left: 40px;font-family: Arial Narrow;}
         .menu a:hover,.menu a.actived{background: black;color: white;}
 	/*.user{cursor:pointer;background: #cb223a url('../img/side_user_bg.gif') no-repeat;width:80px;height:71px;padding:1px 0 0;color:#fff;text-align: center;position: relative;}
         .user-name {margin-top:3px;}

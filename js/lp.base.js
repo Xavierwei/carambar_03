@@ -254,8 +254,11 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                     node.image = node.file;
                 }
                 node.formatDate = date;
-                node.image = node.image.replace('.jpg' , THUMBNAIL_IMG_SIZE + '.jpg' );
+                if( node.type != "text" ){
+                    node.image = node.image.replace('.jpg' , THUMBNAIL_IMG_SIZE + '.jpg' );
+                }   
                 // fix description
+                node.description = node.description || '';
                 node.sub_description = node.description.length > 70 ? node.description.substr(0 , 70) + '...' : node.description;
                 node.sub_description = node.sub_description.replace(/#\S+/g , '<span style="color:white;">$&</span>');
                 
@@ -520,9 +523,9 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             // loading image
 
             // Resize Inner Box
-            setTimeout(function(){
+            //setTimeout(function(){
                 resizeInnerBox();
-            },100);
+            //},100);
 
             // save node from
             $inner.data('from' , $dom.parent() );
@@ -696,7 +699,6 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                 .css('height' , $comment.find('.com-list').height())
                 .end();
 
-
 			var $cube = $comment.parent();
 			var rotate = "translate3d(" + ( - dirData.dist ) + "px,0," + (-dist) + "px) rotateY(" + ( -dirData.rotate ) + "deg)";
 			if(!isIE10) {
@@ -801,7 +803,7 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             var $newItem = $newInner.find('.image-wrap-inner')[ direction == 'left' ? 'insertBefore' : 'insertAfter' ]( $oriItem )
                 .attr('style' , $oriItem.attr('style'))
                 .find('img')
-                .hide()
+                .show()
                 .end();
 
             // var $nextFlag = $newInner.find('.flag-node');
@@ -876,7 +878,7 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
                     setTimeout(function(){
                         $('.image-wrap-inner object, .image-wrap-inner video').fadeIn();
                         $('.image-wrap-inner .video-js').fadeIn();
-                        slideIntroBar($newInfo, _animateTime);
+                        //slideIntroBar($newInfo, _animateTime);
                     },400);
                 });
 				// resize WMV
@@ -889,7 +891,7 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             if( node.type == "photo" ){
                 $('.image-wrap-inner img').ensureLoad(function(){
                     $(this).fadeIn();
-                    slideIntroBar($newInfo, _animateTime);
+                    //slideIntroBar($newInfo, _animateTime);
                 });
             }
 
@@ -1177,7 +1179,10 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
 
 
     LP.action('show-nodes' , function( data ){
-        $main.data('param' , {page: 0});
+        $main.data('param' , $.extend( data , {page: 0} ));
+        $(this).addClass('actived')
+            .siblings('.actived')
+            .removeClass('actived');
         nodeActions.loadNodes();
     });
 
@@ -1698,9 +1703,8 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
     //     })
     // }
 
-    var changeUrl = (function(){
-        var currentHash = location.hash;
-        return function( str , data ){
+    var currentHash = location.hash;
+    var changeUrl = function( str , data ){
             location.hash = '#' + str; // removed the !, don't need search by google
             if( history.pushState ){
                 history.replaceState( data , '' , location.href ) ;
@@ -1709,7 +1713,6 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             }
             currentHash = location.hash;
         }
-    })()
 
 
     // bind history change
@@ -1719,6 +1722,7 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             $.each( transitions , function( i , trans ){
                 var lastUrl = currentHash.replace('#' , '');
                 var currUrl = location.hash.replace('#' , '');
+                console.log( lastUrl , currUrl );
                 if( trans.prev.test( lastUrl ) && 
                     trans.curr.test( currUrl ) ){
                     trans.fn( lastUrl , currUrl );
@@ -1738,26 +1742,27 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
             });
         }
 
-  //       // /nid/xx ==> /nid/xx
-  //       addTransition( /^\/nid\/\d+/ , /^\/nid\/\d+/ , function( lastUrl , currUrl ){
-  //           var lnid = lastUrl.match(/\d+/)[0];
-  //           var nid = currUrl.match(/\d+/)[0];
-  //           LP.triggerAction( lnid > nid ? 'next' : 'prev' );
-  //       } );
-  //       //  ==> /nid/xx
-  //       addTransition( /^\/main$/ , /^\/nid\/\d+/ , function( lastUrl , currUrl ){
-  //           var nid = currUrl.match(/\d+/)[0];
-  //           $main.children('[data-d="nid=' + nid + '"]').trigger('click');
-  //       } );
-  //       //  /nid/xx ==> 
-  //       addTransition( /^\/nid\/\d+/ , /^\/main$/ , function( lastUrl , currUrl ){
-  //           LP.triggerAction('back');
-  //       } );
+        // /nid/xx ==> /nid/xx
+        addTransition( /^\/nid\/\d+/ , /^\/nid\/\d+/ , function( lastUrl , currUrl ){
+            var lnid = lastUrl.match(/\d+/)[0];
+            var nid = currUrl.match(/\d+/)[0];
+            console.log( 'last nid : ' + lnid , 'currNide : ' + nid );
+            LP.triggerAction( lnid > nid ? 'next' : 'prev' );
+        } );
+        //  ==> /nid/xx
+        addTransition( /^\/main$/ , /^\/nid\/\d+/ , function( lastUrl , currUrl ){
+            var nid = currUrl.match(/\d+/)[0];
+            $main.children('[data-d="nid=' + nid + '"]').trigger('click');
+        } );
+        //  /nid/xx ==> 
+        addTransition( /^\/nid\/\d+/ , /^\/main$/ , function( lastUrl , currUrl ){
+            LP.triggerAction('back');
+        } );
 
-		// //  /nid/xx ==>
-		// addTransition( /^\/nid\/\d+/ , /^\/search/ , function( lastUrl , currUrl ){
-		// 	LP.triggerAction('back');
-		// } );
+		//  /nid/xx ==>
+		addTransition( /^\/nid\/\d+/ , /^\/search/ , function( lastUrl , currUrl ){
+			LP.triggerAction('back');
+		} );
 
   //       // * ==> /user 
   //       addTransition( /.*/ , /^\/user/ , function( lastUrl , currUrl ){
@@ -2235,44 +2240,31 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
      * Open the content via url hash id
      */
     var openByHash = function(){
-  //       changeUrl( location.hash.replace('#' , '') || '/main' , {event:'load'} );
-  //       //获取nid所在的页码，然后加载该list
-  //       var hash = location.hash;
-  //       var match;
-  //       if( ( match = hash.match( /#\/nid\/(\d+)/ ) ) ){
-  //           var nid = match[1];
-  //           var pageParam = refreshQuery();
-  //           api.ajax('getPageByNid', {nid:nid, pagenum:20}, function(result){
-  //               pageParam.page = result.data;
-  //               pageParam.previouspage = result.data;
-  //               $main.data('param' , pageParam);
-  //               api.ajax('recent', pageParam , function( result ){
-  //                   if(result.data.length > 0) {
-  //                       nodeActions.inserNode( $main , result.data , pageParam.orderby == 'datetime' );
-  //                       $listLoading.fadeOut();
-  //                       setTimeout(function(){
-  //                           $('.main-item-'+nid).click();
-  //                       },100);
+        changeUrl( location.hash.replace('#' , '') || '/main' , {event:'load'} );
+        //获取nid所在的页码，然后加载该list
+        var hash = location.hash;
+        var match;
+        if( ( match = hash.match( /#\/nid\/(\d+)/ ) ) ){
+            var nid = match[1];
+            var pageParam = {};
+            api.ajax('getPageByNid', {nid:nid, pagenum:20}, function(result){
+                pageParam.page = result.data;
+                pageParam.previouspage = result.data;
+                $main.data('param' , pageParam);
+                api.ajax('recent', pageParam , function( result ){
+                    if(result.data.length > 0) {
+                        nodeActions.inserNode( $main , result.data);
+                        $listLoading.fadeOut();
+                        setTimeout(function(){
+                            $('.main-item-'+nid).click();
+                        },100);
 
-  //                       // fix bug , some times the height would be 0
-  //                       $main.height('auto');
-  //                   }
-  //               });
-  //           });
-  //       } else if( ( match = hash.match( /#\/user/ ) ) ){
-  //           LP.triggerAction('toggle_user_page');
-  //           LP.triggerAction('recent');
-  //       } else if( ( match = hash.match( /#\/com/ ) ) ){
-  //           LP.triggerAction('content_of_month');
-  //       } else if( ( match = hash.match( /#\/cod/ ) ) ){
-  //           LP.triggerAction('content_of_day');
-		// } else if( ( match = hash.match( /#\/search\/(\w+)/ ) ) ){
-		// 	var hashtag = match[1];
-		// 	$('.search-ipt').val(hashtag);
-		// 	LP.triggerAction('search');
-		// } else {
-  //           LP.triggerAction('recent');
-  //       }
+                        // fix bug , some times the height would be 0
+                        $main.height('auto');
+                    }
+                });
+            });
+        }
     }
 
     /**
@@ -2385,6 +2377,9 @@ LP.use(['jquery', 'api', 'easing', 'fileupload', 'flash-detect', 'swfupload', 's
 
             $(window).trigger('scroll');
         });
+
+
+        openByHash();
     });
 
 
