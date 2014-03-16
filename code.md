@@ -18,7 +18,10 @@ end:1012 video 表中没有数据
 end:1013 video 未传入view vid参数
 end:1014 video view 表中没该条数据
 end:1015 video update 没有权限执行该操作
-end:1016 video update 修改数据库失败
+end:1016 video update youtube mid已经存在
+end:1017 video update youtube 缩略图获取失败
+end:1018 video update 修改数据库失败
+end:1019 cideo create 未传入youtube url参数
 
 success:2001 获取challenge列表成功
 success:2002 修改challenge 投票次数成功
