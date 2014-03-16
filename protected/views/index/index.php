@@ -330,6 +330,14 @@
 </script>
 <!-- #facebook-post-tpl -->
 
+<!-- #photowall-item-tpl -->
+<script type="text/tpl" id="photowall-item-template">
+	<a href="photowall.php#/nid/{{nid}}" class="phoitem">
+		<img src="./{{thumbnail}}">
+	</a>
+</script>
+<!-- /youtube-player-tpl -->
+
 <?php if($phase == 3 || $phase == 4):?>
 <!-- #send-invitation-tpl -->
 <script type="text/tpl" id="send-invitation-template">
@@ -342,12 +350,14 @@
 	</div>
 </script>
 <!-- #send-invitation-tpl -->
-<?php endif;?>
 
-<!-- #photowall-item-tpl -->
-<script type="text/tpl" id="photowall-item-template">
-	<a href="photowall.php#/nid/{{nid}}" class="phoitem">
-		<img src="./{{thumbnail}}">
-	</a>
+<!-- #send-invitation-tpl -->
+<script type="text/tpl" id="videotxt-item-template">
+	<div class="videotxt-item">
+		<p>{{description}}</p>
+		<h3>#GOODLUCKCARAMBAR</h3>
+		<span>@{{screen_name}}</span>
+	</div>
 </script>
-<!-- /youtube-player-tpl -->
+<!-- #send-invitation-tpl -->
+<?php endif;?>

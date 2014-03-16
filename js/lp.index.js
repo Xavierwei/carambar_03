@@ -376,14 +376,24 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 		// loading photowall
 		api.ajax('recent', {type:'photo', pagenum:5, orderby:'datetime'}, function( result ){
 			$.each(result.data,function(index,node){
-				console.log(node);
 				node.thumbnail = node.file.replace('.jpg','_126_126.jpg');
 				LP.compile( 'photowall-item-template' , node , function( html ){
 					$('.pholist').append(html);
 				});
 			});
-
 		});
+
+		// get twitter text list
+		if($('.videotxt')) {
+			api.ajax('recent', {type:'text', pagenum:5, orderby:'datetime'}, function( result ){
+				$.each(result.data,function(index,node){
+					node.description = node.description;
+					LP.compile( 'videotxt-item-template' , node , function( html ){
+						$('.pholist').append(html);
+					});
+				});
+			});
+		}
 
 
 //		api.ajax('twitterLogin', function( result ){
