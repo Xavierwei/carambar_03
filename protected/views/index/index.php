@@ -1,197 +1,366 @@
-Current phase template: <?php echo $phase;?>
-
-
-<!-- 区域1 黄色 -->
-<div class="section1">
-	<!-- 视频区域 -->
-	<div class="videopart videopart1 cs-clear">
-		<!-- 视频 -->
-		<div class="videomod">
-			<iframe width="825" height="640" src="//www.youtube.com/embed/7-h4gSeXb5s?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<!-- 视频评论 -->
-		<!-- <div class="videotxt">
-			<h2>#goodluckcarambar</h2>
-			<div class="videotxt-item">
-				<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
-				<h3>#GOODLUCKCARAMBAR</h3>
-				<span>@bonbon<span>
-			</div>
-			<div class="videotxt-item">
-				<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
-				<h3>#GOODLUCKCARAMBAR</h3>
-				<span>@bonbon<span>
-			</div>
-			<div class="videotxt-item">
-				<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
-				<h3>#GOODLUCKCARAMBAR</h3>
-				<span>@bonbon<span>
-			</div>
-		</div> -->
-		<!-- 分享 -->
-		<div class="videoshare">
-			<a href="#" class="share-fb"></a>
-			<a href="#" class="share-t"></a>
-			<a href="#" class="share-y"></a>
-			<a href="#" class="share-i"></a>
-		</div>
-	</div>
-	<!-- 普通文字 -->
-	<div class="sec1-txt">
-		Carambar se lance la folle mission de faire rire<br />
-		le pays le plus puissant du monde : les Etats-Unis.
-	</div>
-	<!-- 图片文字 -->
-	<div class="sec1-txt">
-		<img src="img/sec1_imgtxt1.png" />
-	</div>
-</div>
-
-
-<!--------------------------------- Phase 1 -------------------------------->
-<?php if($phase == '1'):?>
-<!-- 区域2 红色 -->
-<div class="section2 section2-1">
-	<!-- 列表 -->
-	<div class="sec2-ul  sec2-ul1 cs-clear">
-
-		<?php foreach($voteVideos as $video):?>
-			<div class="sec2-li">
-				<div class="sec2-liv"><img src="./<?php echo str_replace('.jpg', '_238_123.jpg', $video->thumbnail);?>" /></div>
-				<div class="sec2-lip"><?php echo $video->title;?></div>
-				<div class="sec2-votebox" data-a="vote" data-d="vid=<?php echo $video->vid;?>">Vote Video <?php echo $video->vid;?></div>
-			</div>
-		<?php endforeach;?>
-
-	</div>
-	<div class="sec2-dot sec2-dot2"></div>
-	<div class="sec2-tit"><img src="img/sec2-tit.png" /></div>
-	<div class="sec2-time cs-clear">
-		<div class="sec2-timeitem sec2-time-1">
-			<div class="sec2-timebox">0</div>
-			<div class="sec2-timebox">3</div>
-			<span class="sec2-timetxt">JOURS</span>
-		</div>
-		<div class="sec2-timeitem sec2-time-2">
-			<div class="sec2-timebox">2</div>
-			<div class="sec2-timebox">3</div>
-			<span class="sec2-timetxt">heures</span>
-		</div>
-		<div class="sec2-timeitem sec2-time-3">
-			<div class="sec2-timebox">4</div>
-			<div class="sec2-timebox">5</div>
-			<span class="sec2-timetxt">minutes</span>
-		</div>
-		<div class="sec2-timeitem sec2-time-3">
-			<div class="sec2-timebox">4</div>
-			<div class="sec2-timebox">5</div>
-			<span class="sec2-timetxt">secondes</span>
-		</div>
-
-
-		<div id="countdown">
-			<div id="countdown-days"></div>
-			<div id="countdown-hours"></div>
-			<div id="countdown-minutes"></div>
-			<div id="countdown-seconds"></div>
-		</div>
-
-	</div>
-</div>
-<?php endif;?>
-
-<!--------------------------------- Phase 1-2 -------------------------------->
-<?php if($phase == '1_2'):?>
-
-<?php endif;?>
-
-<!--------------------------------- Phase 2 -------------------------------->
-<?php if($phase == '2'):?>
-
-	<div class="vote-result">
-		<?php foreach($voteResults as $vote):?>
-			<?php echo round(($vote / $voteTotal) * 100);?>%
-		<?php endforeach;?>
-	</div>
-
-<?php endif;?>
-
-<!--------------------------------- Phase 3 -------------------------------->
-<?php if($phase == '3'):?>
-	<div class="section2">
-		<h2 class="sec2-tit">toutes nos vidéos</h2>
-		<!-- 列表 -->
-		<div class="sec2-ul cs-clear">
-			<?php foreach($homeVideos as $video):?>
-				<div class="sec2-li">
-					<div class="sec2-liv"><img src="./<?php echo str_replace('.jpg', '_297_177.jpg', $video->thumbnail);?>" /></div>
-					<div class="sec2-litit"><?php echo $video->title;?></div>
-				</div>
-			<?php endforeach;?>
-		</div>
-	</div>
-<?php endif;?>
-
-
-<?php if($phase != '4'):?>
-<!-- 区域3 白色 -->
-<div class="section3">
-	<!-- 普通文字 -->
-	<div class="sec3-txt">soutenez-nous dès maintenant avec le hashtag</div>
-	<!-- 图片文字 -->
-	<div class="sec3-txt"><img src="img/sce3_imgtxt.png" /></div>
-	<!-- 列表 -->
-	<div class="sec3-scroll">
-		<div class="sec3-ul cs-clear">
-			<div class="sec3-item"></div>
-			<div class="sec3-item"></div>
-			<div class="sec3-item"></div>
-		</div>
-		<div class="sec3-arrow sec3-prev"></div>
-		<div class="sec3-arrow sec3-next"></div>
-	</div>
-</div>
-<?php endif;?>
-
-
-<?php if($phase != '4'):?>
-<!-- 区域4 黄色 -->
-<div class="section4 cs-clear">
-	<div class="sec4-left">
-		<div class="sec4-left-tit"><img src="img/sce4-left-tit.gif" /></div>
-		<div class="sec4-left-pho cs-clear">
-			<img class="sec4-left-pho1" src="img/sec4_leftpho1.png" />
-			<img class="sec4-left-pho2" src="img/sec4_leftpho2.png" />
-		</div>
-		<div class="sec4-left-txt">CHAQUE JOUR, LES 20 MEILLEURS  SOUTIENS SERONT Récompensés par un kit collector carambar!</div>
-		<a href="#" class="sec4-left-btn"></a>
-	</div>
-	<div class="sec4-right">
-		<div class="sec4-right-tit">Je poste mon soutien à carambar</div>
-		<div class="sec4-right-txt">sur facebook <a href="#" id="facebook-login-link">Login Facebook</a></div>
-		<div class="sec4-right-mess" id="facebook-content-wrap">
-			<div class="sec4-right-con">
-				<span># GOODLUCKCARAMBAR</span>
-				<textarea id="facebook-content"></textarea>
-			</div>
-			<div class="sec4-right-info cs-clear">
-				<div class="sec4-right-add" id="facebook-words-limit"><span>132</span>/140</div>
-				<input type="submit" class="sec4-right-tweeter" data-a="submit-facebook" value="SUBMIT" />
-			</div>
-		</div>
-
-		<div class="sec4-right-txt">sur twIter <a href="#" id="twitter-login-link">Login Twitter</a></div>
-		<div class="sec4-right-mess" id="twitter-content-wrap">
-			<div class="sec4-right-con">
-				<span>#GOODLUCKCARAMBAR</span>
-				<textarea id="twitter-content"></textarea>
-			</div>
-			<div class="sec4-right-info cs-clear">
-				<div class="sec4-right-add" id="twitter-words-limit"><span>132</span>/140</div>
-				<input type="submit" class="sec4-right-tweeter" data-a="submit-twitter" value="TWEETER" />
-			</div>
-		</div>
+<!--<div class="loading-overlay">-->
+<!--	<div class="loading-logo"><img src="images/loading_logo.png" /></div>-->
+<!--</div>-->
+<div class="header"
+     data-style="margin-top:-200px" data-animate="margin-top:0" data-delay="0" data-time="500" data-easing="easeOutQuart"
+     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
+	<div class="hdcontent">
+		<a class="nav1 nav1on" href="#"></a>
+		<a class="nav2" href="#"></a>
 	</div>
 </div>
 <!--  -->
+<div class="page phase<?php echo $phase;?>">
+	<!-- #Presentation Block -->
+	<div class="presentation">
+		<div class="skyline"
+		     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,100px,0);"></div>
+		<?php if($phase == 1 || $phase == 2 || $phase == 3):?>
+		<div class="blue-road"
+		     data-style="opacity:0;" data-animate="opacity:1;" data-delay="0" data-time="800"
+		     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);"></div>
+		<div class="presentation-box">
+			<div class="carambar-man" data-style="left:-1000px" data-animate="left:85px" data-delay="0" data-time="800" data-easing="easeOutQuart"></div>
+			<?php if($phase == 1 || $phase == 2):?>
+			<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500">
+				<div class="tips-content"></div>
+				<div class="tips-video">
+					<img src="pic/presentation-video.jpg" />
+					<a class="video-play" href="javascript:void(0);" data-a="open_video" data-d="mid="></a>
+				</div>
+			</div>
+			<?php endif;?>
+			<?php if($phase == 3):?>
+				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500">
+					<div class="tips-content-p3"></div>
+				</div>
+			<?php endif;?>
+			<div class="indicator-count-wrap"
+			     data-style="opacity:0;" data-animate="opacity:1;" data-delay="1000" data-time="500"
+			     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
+				<div class="indicator-title">Nombre de soutiens récoltés</div>
+				<div class="indicator-count"></div>
+				<div class="indicator-hashtag">#GOODLUCKCARAMBAR</div>
+				<div class="indicator-btn" data-a="indicate"></div>
+			</div>
+		</div>
+		<div class="goto-support-bg" data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,70px,0);">
+			<a href="#" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
+		</div>
+		<?php endif;?>
+		<?php if($phase == 4 || $phase == 5):?>
+		<div class="videopart cs-clear">
+			<div class="videopart-tit"></div>
+			<!-- Video -->
+			<div class="videomod"><iframe width="548" height="304" src="//www.youtube.com/embed/7-h4gSeXb5s?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe></div>
+			<!-- Twitter -->
+			<div class="videotxt">
+				<!-- <h2>#goodluckcarambar</h2> -->
+				<div class="videotxt-item">
+					<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
+					<h3>#GOODLUCKCARAMBAR</h3>
+					<span>@bonbon</span>
+				</div>
+				<div class="videotxt-item">
+					<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
+					<h3>#GOODLUCKCARAMBAR</h3>
+					<span>@bonbon</span>
+				</div>
+				<div class="videotxt-item">
+					<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
+					<h3>#GOODLUCKCARAMBAR</h3>
+					<span>@bonbon</span>
+				</div>
+			</div>
+			<!--  -->
+			<div class="videobot"></div>
+			<!-- 分享 -->
+			<div class="videoshare">
+				<!-- <a href="#" class="videoshare-fb"></a> -->
+				<a href="#" class="videoshare-t"></a>
+				<!-- <a href="#" class="videoshare-y"></a> -->
+				<!-- <a href="#" class="videoshare-i"></a> -->
+			</div>
+		</div>
+
+			<?php if($phase == 4):?>
+			<!-- section blue -->
+			<div class="sec-blue">
+				<div class="sec-bluecon cs-clear">
+					<div class="sec-bluepho"></div>
+					<div class="sec-bluenum"></div>
+					<div class="sec-bluetime"></div>
+				</div>
+			</div>
+			<?php else:?>
+				<div class="sec-blue2">
+					<div class="sec-blue2txt"></div>
+					<div class="sec-blue2txt2"></div>
+				</div>
+				<div class="line line4"></div>
+			<?php endif;?>
+
+		<?php endif;?>
+	</div>
+	<!-- /Presentation Block -->
+	<!-- #Challenge Block -->
+	<div class="challenge_bg">
+		<div class="map_bg"
+		     data-0="transform:translate3d(0,0px,0);" data-1500="transform:translate3d(0,-400px,0);"></div>
+	</div>
+	<?php if($phase == 1 || $phase == 2):?>
+	<div class="challenge">
+		<div class="challenge-title" data-style="opacity:0;" data-animate="opacity:1;" data-delay="200" data-time="800"></div>
+		<div class="challenge-inner" data-646="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
+			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="100" data-time="800">
+				<div class="challenge-img">
+					<img src="pic/challenge1.jpg" />
+				</div>
+				<div class="vote-btn vote-btn1" data-a="vote" data-d="cid=1">DEFI No1</div>
+			</div>
+			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="200" data-time="800">
+				<div class="challenge-img">
+					<img src="pic/challenge2.jpg" />
+				</div>
+				<div class="vote-btn vote-btn2" data-a="vote" data-d="cid=2">DEFI No2</div>
+			</div>
+			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="300" data-time="800">
+				<div class="challenge-img">
+					<img src="pic/challenge3.jpg" />
+				</div>
+				<div class="vote-btn vote-btn3" data-a="vote" data-d="cid=3">DEFI No3</div>
+			</div>
+		</div>
+		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
+	</div>
+	<?php endif;?>
+	<?php if($phase == 3 || $phase == 4):?>
+	<div class="videolistbg">
+		<div class="videolist-tit"></div>
+		<div class="videolist" data-626="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
+			<div class="videolistshare">
+				<div class="video-con">
+					<div class="videolist-item">
+						<div class="videolist-item-tit videolist-item-tit1"></div>
+						<div class="videolist-box"><img src="images/demo.jpg" /><a data-d="mid=" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
+						<div class="videolist-txt">le soutien politique français</div>
+						<div class="video-icon"></div>
+					</div>
+					<div class="videolist-item">
+						<div class="videolist-item-tit videolist-item-tit2"></div>
+						<div class="videolist-box"><img src="images/demo.jpg" /><a data-d="mid=" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
+						<div class="videolist-txt">le soutien politique français</div>
+						<div class="video-icon"></div>
+					</div>
+					<div class="videolist-item">
+						<div class="videolist-item-tit videolist-item-tit3"></div>
+						<div class="videolist-boxnull">prochainement...</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
+	</div>
+	<?php endif;?>
+	<?php if($phase == 5):?>
+		<div class="videolistbg">
+			<div class="videolist-tit2"></div>
+			<div class="challenge-man" data-500="transform:translate3d(0,0px,0);" data-600="transform:translate3d(0,-259px,0);"></div>
+			<div class="videolist" data-826="transform:translate3d(0,0px,0);" data-1400="transform:translate3d(0,100px,0);">
+				<div class="videolistshare">
+					<div class="video-con">
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit1"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit1"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box"><a href="#"><img src="images/demo.jpg" /></a></div>
+							<div class="videolist-txt">le soutien politique français</div>
+							<div class="video-icon"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif;?>
+	<!-- /Challenge Block -->
+
+	<div class="yellow-wrap">
+		<?php if($phase == 1):?>
+		<!-- line -->
+		<div class="line line-p1">
+			<div class="line-com-p1"></div>
+		</div>
+		<?php endif;?>
+		<?php if($phase == 3 || $phase == 4):?>
+		<!-- line -->
+		<div class="line line2">
+			<div class="line-com2"></div>
+		</div>
+		<!-- #barack -->
+		<div class="barack">
+			<div class="baracktit"></div>
+			<div class="baracktxt">Please tell us when we can meet</div>
+			<div class="barackbtn" data-a="open_invitation"></div>
+		</div>
+		<!-- /barack -->
+		<?php endif;?>
+
+		<?php if($phase == 1 || $phase == 2 || $phase == 3 || $phase == 4):?>
+		<!--  -->
+		<div class="img">
+			<div class="img1"></div>
+			<div class="img2"></div>
+			<div class="img3"></div>
+		</div>
+		<!--  -->
+		<div class="share">
+			<div class="share-fb">
+				<a href="javascript:void(0)" id="facebook-login-link" class="share-fbbtn"></a>
+			</div>
+			<div class="share-t">
+				<textarea class="share-txt" id="twitter-content"></textarea>
+				<p class="share-t-num" id="twitter-words-limit"><span>122</span>/140</p>
+				<a href="javascript:void(0)" class="share-tbtn" data-a="share_twitter"></a>
+
+			</div>
+			<div class="share-i cs-clear">
+				<a href="#" class="share-iandroid"></a>
+				<a href="#" class="share-iios"></a>
+			</div>
+		</div>
+		<!--  -->
+		<div class="tshirttit"></div>
+		<!--  -->
+		<div class="tshirt">
+			<div class="tshirt1"></div>
+			<div class="tshirt2"></div>
+		</div>
+		<!--  -->
+		<?php endif;?>
+		<div class="photit"></div>
+		<!--  -->
+		<div class="pholist cs-clear">
+			<div class="phoitem">
+				<img src="images/demo2.jpg" />
+			</div>
+			<div class="phoitem">
+				<img src="images/demo2.jpg" />
+			</div>
+			<div class="phoitem">
+				<img src="images/demo2.jpg" />
+			</div>
+			<div class="phoitem">
+				<img src="images/demo2.jpg" />
+			</div>
+			<div class="phoitem">
+				<img src="images/demo2.jpg" />
+			</div>
+		</div>
+		<!-- line -->
+		<div class="line line3">
+			<div class="line-com3"></div>
+		</div>
+		<!--  -->
+	</div>
+
+
+</div>
+<!-- footer -->
+<div class="footer">
+	Mentions légales
+</div>
+
+<div class="overlay" data-a="close_popup"></div>
+
+
+<!-- Templates -->
+<!-- #youtube-player-tpl -->
+<script type="text/tpl" id="youtube-player-template">
+	<div class="pop video-popup" data-a="close_popup">
+		<div class="popup-close"></div>
+		<iframe width="825" height="640" src="//www.youtube.com/embed/7-h4gSeXb5s?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+</script>
+<!-- /youtube-player-tpl -->
+
+<!-- #facebook-post-tpl -->
+<script type="text/tpl" id="facebook-post-template">
+	<div class="pop pop-fb">
+		<div class="pop-close" data-a="close_popup"></div>
+		<div class="pop-fttit">PUBLIER VOTRE SOUTIEN avec le #goodluckcarambar</div>
+		<div class="pop-ft-form cs-clear">
+			<div class="facebook-post-img-wrap">
+				<div class="facebook-post-img" id="fileupload">
+					<input type="file" accept="image/*" name="file">
+				</div>
+
+				<div class="facebook-post-load">
+					<div class="popload-percent"><p></p></div>
+					<div class="popload-text">Téléchargement en cours…</div>
+				</div>
+
+				<div class="poptxt-pic">
+					<a class="pop-zoomout-btn" data-a="pop-zoomout-btn" href="javascript:void(0)">Zoom In</a>
+					<a class="pop-zoomin-btn" data-a="pop-zoomin-btn" href="javascript:void(0)">Zoom Out</a>
+					<div class="poptxt-pic-inner">
+						<img style="pointer-events:none" />
+					</div>
+				</div>
+			</div>
+			<div class="pop-ft-text">
+				<div class="pop-ft-ftit">votre commentaire</div>
+				<input id="facebook-img" type="hidden" />
+				<textarea id="facebook-content"></textarea>
+			</div>
+		</div>
+		<div class="pop-ft-check">
+			<input type="checkbox" />
+			<span>j'ai lu et j'accepte le règlement du jeu</span>
+		</div>
+		<div class="pop-ft-icon"></div>
+		<div class="pop-ft-btn" data-a="submit-facebook"></div>
+	</div>
+</script>
+<!-- #facebook-post-tpl -->
+
+<?php if($phase == 3 || $phase == 4):?>
+<!-- #send-invitation-tpl -->
+<script type="text/tpl" id="send-invitation-template">
+	<div class="pop pop-bar">
+		<div class="pop-close" data-a="close_popup"></div>
+		<div class="pop-bar-txt"></div>
+		<input id="invitation_answer" type="text" class="pop-bar-input">
+		<div class="pop-bar-btn" data-a="send_invitation"></div>
+		<div class="pop-bar-tips"></div>
+	</div>
+</script>
+<!-- #send-invitation-tpl -->
 <?php endif;?>

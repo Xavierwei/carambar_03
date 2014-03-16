@@ -15,12 +15,52 @@ class VideoAR extends CActiveRecord{
 		return parent::model($class);
 	}
 
-	// Validation rules
-	public function rules() {
-		return array(
-			array("url, title, thumbnail, datetime, status", 'required'),
-		);
-	}
+    public function rules()
+    {
+        // NOTE: you should only define rules for those attributes that
+        // will receive user inputs.
+        return array(
+            array('url, title, thumbnail, datetime, status, position, mid', 'required','on'=>'create'),
+            array('status, position', 'numerical', 'integerOnly'=>true),
+            array('url, title, thumbnail', 'length', 'max'=>255),
+            array('datetime', 'length', 'max'=>11),
+            array('mid', 'length', 'max'=>50),
+            array('rank', 'length', 'max'=>6),
+            // The following rule is used by search().
+            // @todo Please remove those attributes that should not be searched.
+            array('vid, url, title, thumbnail, datetime, status, position, mid, rank', 'safe', 'on'=>'search'),
+        );
+    }
+
+    /**
+     * @return array relational rules.
+     */
+    public function relations()
+    {
+        // NOTE: you may need to adjust the relation name and the related
+        // class name for the relations automatically generated below.
+        return array(
+        );
+    }
+
+    /**
+     * @return array customized attribute labels (name=>label)
+     */
+    public function attributeLabels()
+    {
+        return array(
+            'vid' => 'Vid',
+            'url' => 'Url',
+            'title' => 'Title',
+            'thumbnail' => 'Thumbnail',
+            'datetime' => 'Datetime',
+            'status' => 'Status',
+            'position' => 'Position',
+            'mid' => 'Mid',
+            'rank' => 'Rank',
+        );
+    }
+
 
 	/**
 	 * Check mid is already post
@@ -74,22 +114,27 @@ class VideoAR extends CActiveRecord{
 	}
 
 
-	public function getVideoList($position, $pagenum = 8) {
+	public function getVideoList($position=NULL,$status=1,$limit=8,$offset=1) {
 		$query = new CDbCriteria();
 		$query->addCondition('status=:status');
-		$query->params[':status'] = 1;
-		if($position == 2) {
-			$query->addInCondition('position', array(2, 3));
-		}
-		else {
-			$query->addCondition('position=:position');
-			$query->params[':position'] = $position;
-		}
-		$query->limit = $pagenum;
+		$query->params[':status'] = $status;
+
+        if(NULL!=$position) //为空显示全部
+        {
+            $query->addCondition('position=:position');
+            $query->params[':position'] =$position;
+        }
+
+        $query->order='rank ASC'; //按照排序
+
+        $query->limit=  $limit; //每页显示条数
+	    $query->offset= $limit * ($offset-1); //偏移计算
 		$res = $this->findAll($query);
 
 		return $res;
 	}
+
+
 
 
 }

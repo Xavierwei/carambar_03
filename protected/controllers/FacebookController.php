@@ -42,7 +42,7 @@ class FacebookController extends Controller {
 				}
 				else {
 					Yii::app()->user->login($userIdentify);
-					$this->redirect('../../../index');
+					$this->redirect('../../index');
 				}
 			}
 			else {

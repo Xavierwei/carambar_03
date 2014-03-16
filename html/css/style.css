@@ -200,12 +200,15 @@ a:hover{color:#e82426}
     .vote-btn {cursor:pointer;background: url(../images/btn_defi.png) no-repeat;width:168px;height:57px;margin:20px auto 0 auto;text-indent:-999em;}
         .vote-btn1:hover {background-position:-388px 0;}
         .vote-btn1:active {background-position:-801px 0;}
+        .vote-btn1.disabled {background-position:-1208px 0;}
         .vote-btn2 {background-position:0 -108px;}
         .vote-btn2:hover {background-position:-387px -108px;}
         .vote-btn2:active {background-position:-800px -108px;}
+        .vote-btn2.disabled {background-position:-1208px -108px;}
         .vote-btn3 {background-position:0 -214px;}
         .vote-btn3:hover {background-position:-386px -214px;}
         .vote-btn3:active {background-position:-799px -214px;}
+        .vote-btn3.disabled {background-position:-1208px -214px;}
 
 /* Post
 ================================================================================================= */

@@ -83,7 +83,7 @@ a:hover{color:#e82426}
 .line1{margin: 15px 0 0}
 .line2{padding: 30px 0 ;position: relative;z-index: 10}
 .line3{margin: 8px 0 12px;}
-.line4{height: 24px;}   
+.line4{height: 24px;}
     .line-com1{cursor:pointer;background: url('../images/line_com1.png') no-repeat;width: 465px;height: 45px;margin: 0 auto}
     .line-com2{background: url('../images/line_com2.png') no-repeat center;width: 465px;height: 45px;margin: 0 auto}
     .line-com3{cursor:pointer;background:#ffeb00 url('../images/line_com3.png') no-repeat center;width: 240px;height: 55px;margin: 0 auto}

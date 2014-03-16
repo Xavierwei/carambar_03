@@ -1,7 +1,7 @@
 /*
  * page base action
  */
-LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
+LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif'] , function( $ , api ){
     'use strict'
 
 	var time_left;
@@ -30,6 +30,7 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
         LP.compile( 'youtube-player-template' , data , function( html ){
             $('.overlay').fadeIn();
             $('body').append(html);
+            $('.pop').css({opacity:0, top:'-50%'}).animate({opacity:1, top:'50%'}, 800, 'easeInOutQuart');
         });
     });
 
@@ -129,12 +130,13 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
         LP.compile( 'facebook-post-template' , data , function( html ){
             $('.overlay').fadeIn();
             $('body').append(html);
+            $('.pop').css({opacity:0, top:'-50%'}).animate({opacity:1, top:'50%'}, 800, 'easeInOutQuart');
             var $fileupload = $('#fileupload');
             var acceptFileTypes = /(\.|\/)(gif|jpe?g|png)$/i;
             var maxFileSize = 5 * 1024000;
             LP.use('fileupload' , function(){
                 $fileupload.fileupload({
-                    url: '../index.php/uploads/upload',
+                    url: './index.php/uploads/upload',
                     datatype:"json",
                     autoUpload:false,
                     dropZone: $fileupload
@@ -182,24 +184,41 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
      */
     LP.action('close_popup', function() {
         $('.overlay').fadeOut();
-        $('.pop').fadeOut();
+        $('.pop').fadeOut(function(){
+            $(this).remove();
+        });
     });
 
+    /**
+     * Indicator
+     */
+    LP.action('indicate', function(data){
+        if($(this).hasClass('indicating')) return;
+        if($.cookie('praise_auth')) return;
+        api.ajax('indicate', {cid:data.cid}, function( result ){
+            $('.indicator-count').html(result.data);
+        });
+    });
 
     /**
      * Vote Challenge
      */
 	LP.action('vote', function(data){
 		if($(this).hasClass('voting')) return;
+        if($.cookie('cid')) return;
+
+        $('.vote-btn').not(this).addClass('disabled');
+        $(this).addClass('voted');
 
 		api.ajax('vote', {cid:data.cid}, function( result ){
 			$(this).addClass('voting');
 			if(result.success) {
-				$(this).removeClass('voting');
 
-				LP.compile( 'vote-result-template' , result , function( html ){
-					$('.votes').html(html);
-				});
+//				$(this).removeClass('voting');
+//
+//				LP.compile( 'vote-result-template' , result , function( html ){
+//					$('.votes').html(html);
+//				});
 			}
 			else {
 				if(result.message == 902) {
@@ -212,7 +231,40 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
 		});
 	});
 
-	LP.action('submit-twitter', function(){
+    /***
+     * Open Invitation Dialog
+     */
+    LP.action('open_invitation', function(){
+        LP.compile( 'send-invitation-template' , {} , function( html ){
+            $('.overlay').fadeIn();
+            $('body').append(html);
+            $('.pop').css({opacity:0, top:'-50%'}).animate({opacity:1, top:'50%'}, 800, 'easeInOutQuart');
+        });
+    });
+
+    /***
+     * Send Invitation
+     */
+    LP.action('send_invitation', function(){
+        if($(this).hasClass('submitting')) return;
+        $(this).addClass('submiting');
+        var answer = $('#invitation_answer').val();
+        api.ajax('answer', {answer: answer}, function( result ){
+            $(this).removeClass('submitting');
+            if(result.error && result.error.code == 1011) {
+                $('.pop-bar-tips').fadeIn();
+                return;
+            }
+            if(result.success) {
+                LP.triggerAction('close_popup');
+            }
+        });
+    });
+
+    /***
+     * Submit Twitter
+     */
+	LP.action('submit_twitter', function(){
 		var content = '#GOODLUCKCARAMBAR ' + $('#twitter-content').val();
 		api.ajax('postTwitter', {content: content}, function( result ){
 			console.log(result);
@@ -222,7 +274,18 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
 		});
 	});
 
-    LP.action('submit-facebook', function(){
+    /***
+     * Share Twitter
+     */
+    $('.share-t .share-txt').on('keyup', function(){
+        var content = $('#twitter-content').val() + '#GOODLUCKCARAMBAR';
+        $('.share-t .share-tbtn').attr('href', 'https://twitter.com/intent/tweet?text='+content);
+    });
+
+    /***
+     * Submit Facebook
+     */
+    LP.action('submit_facebook', function(){
         var img = $('#facebook-img').val();
         var content = '#GOODLUCKCARAMBAR ' + $('#facebook-content').val();
         api.ajax('postFacebook', {content: content, img: img}, function( result ){
@@ -259,39 +322,41 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
 
 
 		api.ajax('facebookLogin', function( result ){
+            $('#facebook-login-link').fadeIn();
             if(result.data !== 'login') {
                 $('#facebook-login-link').fadeIn().attr('href', result.data);
             }
             else {
-                $('#facebook-content-wrap').fadeIn();
-                if($('.sec4-right-txt').hasClass('opened')) {
-                    $('#facebook-content-wrap').height(0);
-                }
-                else {
-                    $('#facebook-content-wrap').prev().addClass('opened')
-                }
+                $('#facebook-login-link').attr('data-a','open_facebook');
             }
 		});
 
 
-		api.ajax('twitterLogin', function( result ){
-			if(result.data !== 'login') {
-				$('#twitter-login-link').fadeIn().attr('href', result.data);
-			}
-			else {
-				$('#twitter-content-wrap').fadeIn();
-                if($('.sec4-right-txt').hasClass('opened')) {
-                    $('#twitter-content-wrap').height(0);
-                }
-                else {
-                    $('#twitter-content-wrap').prev().addClass('opened')
-                }
-			}
-		});
+//		api.ajax('twitterLogin', function( result ){
+//			if(result.data !== 'login') {
+//				$('#twitter-login-link').fadeIn().attr('href', result.data);
+//			}
+//			else {
+//				$('#twitter-content-wrap').fadeIn();
+//                if($('.sec4-right-txt').hasClass('opened')) {
+//                    $('#twitter-content-wrap').height(0);
+//                }
+//                else {
+//                    $('#twitter-content-wrap').prev().addClass('opened')
+//                }
+//			}
+//		});
+        $('.loading-logo').hide().css('top','40%');
+        $('.loading-logo img').ensureLoad(function(){
+            $('.loading-logo').fadeIn().dequeue().animate({top:'50%'},800,'easeOutQuart');
+        });
 
-
-
-
+        //check vote status
+        var votedId = $.cookie('cid');
+        if(votedId) {
+            $('.vote-btn').not('.vote-btn'+votedId).addClass('disabled');
+            $('.vote-btn'+votedId).addClass('voted');
+        }
 
 
 		/* for animation */
@@ -346,7 +411,8 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
 			var s = skrollr.init({
 				smoothScrollingDuration:0,
 				smoothScrolling:true,
-				easing:'outCubic'
+				easing:'outCubic',
+				forceHeight: false
 			});
 		},timeoffset);
 
@@ -385,7 +451,17 @@ LP.use(['jquery', 'api', 'easing', 'skrollr', 'exif'] , function( $ , api ){
 
 
 
-
+    jQuery.fn.extend({
+        ensureLoad: function(handler) {
+            return this.each(function() {
+                if(this.complete) {
+                    handler.call(this);
+                } else {
+                    $(this).load(handler);
+                }
+            });
+        }
+    });
 
 
 	$(window).scroll(function(){

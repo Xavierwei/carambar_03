@@ -535,6 +535,18 @@ class NodeAR extends CActiveRecord{
 		return $res;
 	}
 
+    public function countByStatus($status=1)
+    {
+        $query = new CDbCriteria();
+        $query->addCondition("status=:status");
+        $query->params = array(
+            ":status" => $status
+        );
+        $res = $this->count($query);
+
+        return $res;
+    }
+
 
   
 	public function getAttributes($name=NULL) {
