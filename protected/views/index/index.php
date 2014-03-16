@@ -62,24 +62,7 @@
 			<!-- Video -->
 			<div class="videomod"><iframe width="548" height="304" src="//www.youtube.com/embed/<?php echo $topVideo->mid;?>?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe></div>
 			<!-- Twitter -->
-			<div class="videotxt">
-				<!-- <h2>#goodluckcarambar</h2> -->
-				<div class="videotxt-item">
-					<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
-					<h3>#GOODLUCKCARAMBAR</h3>
-					<span>@bonbon</span>
-				</div>
-				<div class="videotxt-item">
-					<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
-					<h3>#GOODLUCKCARAMBAR</h3>
-					<span>@bonbon</span>
-				</div>
-				<div class="videotxt-item">
-					<p> Trop drole Baptiste! Tu me fais trop rire ! I 3 Carambar!</p>
-					<h3>#GOODLUCKCARAMBAR</h3>
-					<span>@bonbon</span>
-				</div>
-			</div>
+			<div class="videotxt"></div>
 			<!--  -->
 			<div class="videobot"></div>
 			<!-- 分享 -->
