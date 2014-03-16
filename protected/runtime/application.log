@@ -7108,3 +7108,313 @@ Stack trace:
 REQUEST_URI=/carambar_03/images/loadidng_logo.png
 HTTP_REFERER=http://lily.local:8888/carambar_03/?phase=3
 ---
+2014/03/16 16:26:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/loading_logo.png".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/loading_...')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/images/loading_logo.png
+HTTP_REFERER=http://172.16.111.87/carambar_03/
+---
+2014/03/16 16:26:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "PraiseResult".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('PraiseResult')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03//PraiseResult
+---
+2014/03/16 17:18:25 [error] [php] Missing argument 1 for VideoAR::getVideoList(), called in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php on line 14 and defined (E:\dev_code\php\yii\carambar_03\protected\models\VideoAR.php:77)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): VideoController->runAction()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): VideoController->runActionWithFilters()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): VideoController->run()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/video/list
+in E:\dev_code\php\yii\carambar_03\protected\models\VideoAR.php (77)
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (14)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 17:22:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cid' in 'field list'. The SQL statement executed was: SELECT cid,title,image,vote_counts FROM `video` `t`.
+in E:\dev_code\php\yii\carambar_03\protected\models\VideoAR.php (98)
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (14)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 17:22:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cid' in 'field list'. The SQL statement executed was: SELECT cid,title,image,vote_counts FROM `video` `t`' in E:\dev_code\php\yii\carambar_03\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 E:\dev_code\php\yii\carambar_03\protected\models\VideoAR.php(98): CActiveRecord->findAll(Object(CDbCriteria))
+#4 E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php(14): VideoAR->getVideoList()
+#5 E:\dev_code\php\yii\carambar_03\yii\framework\web\actions\CInlineAction.php(49): VideoController->actionList()
+#6 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): CController->run('list')
+#10 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('video/list')
+#11 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#13 {main}
+REQUEST_URI=/carambar_03/video/list
+---
+2014/03/16 17:58:50 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (69)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 17:58:50 [error] [exception.CException] exception 'CException' with message 'Property "VideoAR.title" is not defined.' in E:\dev_code\php\yii\carambar_03\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('title')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\validators\CRequiredValidator.php(58): CActiveRecord->__get('title')
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\validators\CValidator.php(213): CRequiredValidator->validateAttribute(Object(VideoAR), 'title')
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\base\CModel.php(159): CValidator->validate(Object(VideoAR), NULL)
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#5 E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php(70): CActiveRecord->save()
+#6 E:\dev_code\php\yii\carambar_03\yii\framework\web\actions\CInlineAction.php(49): VideoController->actionUpdate()
+#7 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#11 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('video/update')
+#12 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#14 {main}
+REQUEST_URI=/carambar_03/video/update
+---
+2014/03/16 18:00:08 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (69)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:01:14 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (69)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:01:27 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (69)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:02:07 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (70)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:02:42 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (70)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:06:47 [error] [php] Creating default object from empty value (E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php:55)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): VideoController->runAction()
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): VideoController->runActionWithFilters()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): VideoController->run()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/video/update
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (55)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:07:31 [error] [php] Creating default object from empty value (E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php:55)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): VideoController->runAction()
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): VideoController->runActionWithFilters()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): VideoController->run()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/video/update
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (55)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:10:39 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (71)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:10:39 [warning] [application] Failed to set unsafe attribute "title" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (71)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:11:07 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (71)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:11:07 [warning] [application] Failed to set unsafe attribute "rank" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (71)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:11:11 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (71)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:11:11 [warning] [application] Failed to set unsafe attribute "rank" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (71)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:12:26 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (71)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:12:26 [warning] [application] Failed to set unsafe attribute "rank" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (71)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:12:38 [warning] [application] Failed to set unsafe attribute "cid" of "ChallengeAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\ChallengeController.php (57)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:13:13 [warning] [application] Failed to set unsafe attribute "cid" of "ChallengeAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\ChallengeController.php (58)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:13:55 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (72)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:13:55 [warning] [application] Failed to set unsafe attribute "rank" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (72)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:14:24 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (72)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:14:24 [warning] [application] Failed to set unsafe attribute "rank" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (72)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:20:12 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (72)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:20:25 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (72)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:20:42 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (72)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:21:27 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (72)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:21:55 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (72)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:22:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AESC LIMIT 8' at line 1. The SQL statement executed was: SELECT * FROM `video` `t` WHERE status=:status ORDER BY rank AESC LIMIT 8.
+in E:\dev_code\php\yii\carambar_03\protected\models\VideoAR.php (132)
+in E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php (19)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 18:22:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AESC LIMIT 8' at line 1. The SQL statement executed was: SELECT * FROM `video` `t` WHERE status=:status ORDER BY rank AESC LIMIT 8' in E:\dev_code\php\yii\carambar_03\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 E:\dev_code\php\yii\carambar_03\protected\models\VideoAR.php(132): CActiveRecord->findAll(Object(CDbCriteria))
+#4 E:\dev_code\php\yii\carambar_03\protected\controllers\VideoController.php(19): VideoAR->getVideoList(NULL, 1, 8, 1)
+#5 E:\dev_code\php\yii\carambar_03\yii\framework\web\actions\CInlineAction.php(49): VideoController->actionList()
+#6 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 E:\dev_code\php\yii\carambar_03\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(282): CController->run('list')
+#10 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('video/list')
+#11 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#13 {main}
+REQUEST_URI=/carambar_03/video/list
+---
+2014/03/16 23:38:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phpwall".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('phpwall')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/phpwall
+---
+2014/03/16 23:38:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phpwall.php".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('phpwall.php')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/phpwall.php
+---
+2014/03/16 23:39:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "photowall、.php".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('photowall???.ph...')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/photowall%E3%80%81.php
+---
+2014/03/16 23:39:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phpwall".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('phpwall')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/phpwall
+---
+2014/03/16 23:39:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "photowall.php、".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('photowall.php??...')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/photowall.php%E3%80%81
+---
+2014/03/16 23:39:23 [error] [php] session_regenerate_id(): Session object destruction failed (E:\dev_code\php\yii\carambar_03\yii\framework\web\CHttpSession.php:181)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 E:\dev_code\php\yii\carambar_03\protected\components\Controller.php(186): CWebUser->login()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(359): UploadsController->__construct()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/8/15_400_400.jpg
+in E:\dev_code\php\yii\carambar_03\protected\components\Controller.php (186)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 23:39:33 [error] [php] session_regenerate_id(): Session object destruction failed (E:\dev_code\php\yii\carambar_03\yii\framework\web\CHttpSession.php:181)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 E:\dev_code\php\yii\carambar_03\protected\components\Controller.php(186): CWebUser->login()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(359): UploadsController->__construct()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/8/6_400_400.jpg
+in E:\dev_code\php\yii\carambar_03\protected\components\Controller.php (186)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 23:39:38 [error] [php] session_regenerate_id(): Session object destruction failed (E:\dev_code\php\yii\carambar_03\yii\framework\web\CHttpSession.php:181)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 E:\dev_code\php\yii\carambar_03\protected\components\Controller.php(186): CWebUser->login()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(359): UploadsController->__construct()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/8/7_400_400.jpg
+in E:\dev_code\php\yii\carambar_03\protected\components\Controller.php (186)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 23:39:40 [error] [php] session_regenerate_id(): Session object destruction failed (E:\dev_code\php\yii\carambar_03\yii\framework\web\CHttpSession.php:181)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 E:\dev_code\php\yii\carambar_03\protected\components\Controller.php(186): CWebUser->login()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(359): UploadsController->__construct()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/8/7_400_400.jpg
+in E:\dev_code\php\yii\carambar_03\protected\components\Controller.php (186)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 23:39:40 [error] [php] session_regenerate_id(): Session object destruction failed (E:\dev_code\php\yii\carambar_03\yii\framework\web\CHttpSession.php:181)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 E:\dev_code\php\yii\carambar_03\protected\components\Controller.php(186): CWebUser->login()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(359): UploadsController->__construct()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/8/9_400_400.jpg
+in E:\dev_code\php\yii\carambar_03\protected\components\Controller.php (186)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 23:39:40 [error] [php] session_regenerate_id(): Session object destruction failed (E:\dev_code\php\yii\carambar_03\yii\framework\web\CHttpSession.php:181)
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 E:\dev_code\php\yii\carambar_03\protected\components\Controller.php(186): CWebUser->login()
+#2 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(359): UploadsController->__construct()
+#3 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\dev_code\php\yii\carambar_03\index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/8/8_400_400.jpg
+in E:\dev_code\php\yii\carambar_03\protected\components\Controller.php (186)
+in E:\dev_code\php\yii\carambar_03\index.php (30)
+2014/03/16 23:39:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "photowall.php、".' in E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\dev_code\php\yii\carambar_03\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('photowall.php??...')
+#1 E:\dev_code\php\yii\carambar_03\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\dev_code\php\yii\carambar_03\index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/photowall.php%E3%80%81
+---

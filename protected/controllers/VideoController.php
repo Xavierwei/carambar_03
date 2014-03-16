@@ -105,31 +105,4 @@ class VideoController extends Controller {
 //	}
 
 
-	/**
-	 * Get video list
-	 */
-//	public function actionVideoList() {
-//		$request = Yii::app()->getRequest();
-//		$position = (int)$request->getParam('position');
-//		if(!$position) {
-//			return $this->responseError(101);
-//		}
-//
-//		$result = VideoAR::model()->getVideoList($position);
-//
-//		return $this->responseJSON($result, "success");
-//	}
-
-
-<<<<<<< HEAD
-=======
-	/**
-	 * countdown
-	 */
-//	public function actionCountdown(){
-//		$timespan = strtotime('2014-3-25') - time();
-//
-//		return $this->responseJSON($timespan, "success");
-//	}
->>>>>>> FETCH_HEAD
 }
