@@ -93,7 +93,12 @@ return array(
                'cacheTime' => 2592000,
                //'retinaSupport' => false,
        ),
-		"cache" => array(
+        'FileCache'=>array(
+            'class'=>'CFileCache',
+           // 'cachePath'=> '/protected/runtime/cache/test',
+        ),
+
+        "cache" => array(
 			"class" => "CMemCache",
 			"servers" => array(
 				array(

@@ -638,6 +638,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
     });
 
     LP.action('load-comment' , function( data ){
+
         if($('.com-wrap').is(':visible')) return;
         LP.triggerAction('com-share-close');
         $('.com-wrap').css({top:'100%'}).fadeIn().dequeue().animate({top:'0%'}, 500, 'easeOutQuart');
@@ -645,6 +646,12 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         if($('.com-wrap .comlist-item').length == 0) {
             getCommentList(data.nid , data.page || 1);
         }
+
+//        $('.com-base').hide();
+//        $('.com-wrap').show();
+//        getCommentList(data.nid , data.page || 1);
+//        bindCommentSubmisson();
+
         LP.use(['jscrollpane' , 'mousewheel'] , function(){
             $('.com-list').jScrollPane({autoReinitialise:true}).bind(
                 'jsp-scroll-y',
@@ -1196,14 +1203,14 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
 				_this.removeClass('disabled');
             },1000);
             if(result.success) {
-                _likeWrap.animate({opacity:0},function(){
-                    _likeWrap.html(result.data);
-                    _this.data('liked',true);
-                    _this.attr('data-a','unlike');
-                    _this.addClass('com-unlike');
-                    _this.append('<div class="com-unlike-tip">' + _e.UNLIKE + '</div>');
-                    $(this).animate({opacity:1});
-                });
+                // _likeWrap.animate({opacity:0},function(){
+                //     _likeWrap.html(result.data);
+                //     _this.data('liked',true);
+                //     _this.attr('data-a','unlike');
+                //     _this.addClass('com-unlike');
+                //     _this.append('<div class="com-unlike-tip">' + _e.UNLIKE + '</div>');
+                //     $(this).animate({opacity:1});
+                // });
                 updateLikeCount(data.nid, result.data , true);
 
                 // add like status to cookie
@@ -1216,6 +1223,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
     });
 
     LP.action('unlike' , function( data ){
+
 //        var _this = $(this);
 //		if(_this.hasClass('disabled')){
 //			return;
@@ -1246,6 +1254,38 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
 //                LP.setCookie( '_led' , liked.join(',') , 86400 * 365 );
 //            }
 //        });
+
+//        var _this = $(this);
+//		if(_this.hasClass('disabled')){
+//			return;
+//		}
+//        var _likeWrap = _this.parent().find('span').eq(0);
+//		_this.addClass('disabled');
+//		_this.addClass('flashing');
+//        api.ajax('unlike', {nid:data.nid}, function( result ){
+//			_this.removeClass('flashing');
+//            setTimeout(function(){
+//				_this.removeClass('disabled');
+//            },1000);
+//            if(result.success) {
+//                // _likeWrap.animate({opacity:0},function(){
+//                //     _likeWrap.html(result.data);
+//                //     _this.parent().data('liked',false);
+//                //     _this.removeClass('com-unlike');
+//                //     _this.attr('data-a','like');
+//                //     _this.find('.com-unlike-tip').remove();
+//                //     $(this).animate({opacity:1});
+//                // });
+//                updateLikeCount(data.nid, result.data , false);
+//
+//                // remove like status
+//                var liked = LP.getCookie('_led') || '';
+//                liked = liked.split(',');
+//                liked.splice( $.inArray( data.nid , liked ) , 1 );
+//                LP.setCookie( '_led' , liked.join(',') , 86400 * 365 );
+//            }
+//        });
+
     });
 
 
@@ -2059,17 +2099,27 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                     }
                     $submitBtn.addClass('disabled');
                     $('.comment-msg-error').hide();
-                    $('.com-ipt').val().length;
-                    if($('.com-ipt').val().length == 0) {
-                        $('.comment-msg-error').fadeIn().html(_e.WRTIE_COMMENT);
+                    var data = LP.query2json( $('.comment-form').serialize() );
+                    var error = "";
+                    if(data.content.length == 0) {
+                        error = "comment can not be empty";
+                    }
+                    if(data.content.length > 140) {
+                        error = "comment'length must be less then 140";
+                    }
+                    if( !data.mail.match(/^[a-zA-Z.\-0-9]+@[a-zA-Z0-9]+(.[a-zA-Z\-0-9]+)+$/) ){
+                        error = "mail is not right";
+                    }
+                    if( !data.name ){
+                        error = "NUM can't be empty";
+                    }
+                    if( error ){
+                        $('.comment-msg-error').fadeIn()
+                            .html( error );
                         $submitBtn.removeClass('disabled');
                         return false;
                     }
-                    if($('.com-ipt').val().length > 140) {
-                        $submitBtn.removeClass('disabled');
-                        $('.comment-msg-error').fadeIn().html(_e.ERROR_COMMENT_LIMITED);
-                        return false;
-                    }
+
 					$('.com-loading').fadeIn();
                 },
                 complete: function(xhr) {
@@ -2136,9 +2186,9 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                             } );
                     }
                     else {
-                        if(res.message === 601) {
-                            $('.comment-msg-error').html(_e.LOGIN_BEFORE_COMMENT);
-                        }
+                        // if(res.message === 601) {
+                        //     $('.comment-msg-error').html(_e.LOGIN_BEFORE_COMMENT);
+                        // }
                     }
                 }
             });
@@ -2490,9 +2540,3 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
 });
 
 
-var flashPlay = function(){
-    $('.inner-infoicon .video').addClass('pause');
-}
-var flashplayComplete = function(){
-    $('.inner-infoicon .video').removeClass('pause');
-}

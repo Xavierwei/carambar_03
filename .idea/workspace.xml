@@ -2,28 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/psd/countdown.psd" afterPath="$PROJECT_DIR$/psd/countdown.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icon.png" afterPath="$PROJECT_DIR$/img/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/CommentAR.php" afterPath="$PROJECT_DIR$/protected/models/CommentAR.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/CommentController.php" afterPath="$PROJECT_DIR$/protected/controllers/CommentController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/FlagAR.php" afterPath="$PROJECT_DIR$/protected/models/FlagAR.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/LikeAR.php" afterPath="$PROJECT_DIR$/protected/models/LikeAR.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/LikeController.php" afterPath="$PROJECT_DIR$/protected/controllers/LikeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/animation.css" afterPath="$PROJECT_DIR$/css/animation.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/fonts.css" afterPath="$PROJECT_DIR$/css/fonts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/index.php" afterPath="$PROJECT_DIR$/protected/views/layouts/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jsPane.css" afterPath="$PROJECT_DIR$/css/jsPane.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/barack.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/barackbtn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/baracktit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/blue_road.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/btn_defi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/btn_fb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/btn_iandroid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/btn_iios.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/btn_t.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/carambar-man.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/challenge1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/challenge2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/challenge3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/challenge_title.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/goto_btn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/goto_star.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/hdbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/img1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/img2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/indicator_btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/line_com2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/line_com3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/linebg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/map_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/phase1_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/phase1_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/photit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/sharefb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/sharei.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/sharet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/tooltip_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/tooltip_content.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/tshirt1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/tshirt2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/tshirttit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/images/video_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/setting.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/IndexController.php" afterPath="$PROJECT_DIR$/protected/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SettingController.php" afterPath="$PROJECT_DIR$/protected/controllers/SettingController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code.md" afterPath="$PROJECT_DIR$/code.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/layout.css" afterPath="$PROJECT_DIR$/css/layout.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.base.js" afterPath="$PROJECT_DIR$/js/lp.base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.index.js" afterPath="$PROJECT_DIR$/js/lp.index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/needtocombine.css" afterPath="$PROJECT_DIR$/css/needtocombine.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/tpl.php" afterPath="$PROJECT_DIR$/include/tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
     </list>
     <ignored path="bank_wall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394853755546" ignored="false" />
+    <file path="/Dummy.txt" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395070601256" ignored="false" />
     <file path="/controllers.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391781932373" ignored="false" />
     <file path="/partial1.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387685938508" ignored="false" />
     <file path="/list.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393130375424" ignored="false" />
@@ -422,13 +447,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lp.base.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="lp.base.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/lp.base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="638" column="0" selection-start="23889" selection-end="23889" vertical-scroll-proportion="0.0">
+            <state line="2542" column="0" selection-start="99811" selection-end="99811" vertical-scroll-proportion="0.8925542">
               <folding>
-                <marker date="1395040384000" expanded="true" signature="7214:7226" placeholder="..." />
-                <marker date="1395040384000" expanded="true" signature="11558:11570" placeholder="..." />
+                <marker date="1395070734000" expanded="false" signature="7214:7226" placeholder="..." />
+                <marker date="1395070734000" expanded="false" signature="11558:11570" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -437,7 +462,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="904" selection-end="904" vertical-scroll-proportion="-12.892858">
+            <state line="19" column="7" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -446,7 +471,7 @@
       <file leaf-file-name="CommentAR.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/CommentAR.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="21" selection-start="605" selection-end="605" vertical-scroll-proportion="-21.714285">
+            <state line="32" column="21" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -455,46 +480,16 @@
       <file leaf-file-name="LikeAR.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/LikeAR.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="-11.571428">
+            <state line="61" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lp.index.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/lp.index.js">
+      <file leaf-file-name="layout.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/layout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="308" column="44" selection-start="11773" selection-end="11773" vertical-scroll-proportion="0.65267175">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tpl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="58" selection-start="5792" selection-end="5792" vertical-scroll-proportion="-10.428572">
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#script#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#a#0;n#script#3;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/CommentController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="57" selection-start="508" selection-end="508" vertical-scroll-proportion="-14.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="animation.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/animation.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="65" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
+            <state line="237" column="0" selection-start="18383" selection-end="18383" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -509,10 +504,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/layout.css">
+      <file leaf-file-name="animation.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/animation.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="60" selection-start="17164" selection-end="17164" vertical-scroll-proportion="0.0">
+            <state line="6" column="65" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/CommentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="57" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tpl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="58" selection-start="5792" selection-end="5792" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lp.index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/lp.index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="308" column="44" selection-start="11773" selection-end="11773" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -548,10 +570,10 @@
         <option value="$PROJECT_DIR$/protected/models/CommentAR.php" />
         <option value="$PROJECT_DIR$/protected/controllers/CommentController.php" />
         <option value="$PROJECT_DIR$/include/tpl.php" />
-        <option value="$PROJECT_DIR$/css/layout.css" />
-        <option value="$PROJECT_DIR$/js/lp.base.js" />
         <option value="$PROJECT_DIR$/protected/views/layouts/index.php" />
         <option value="$PROJECT_DIR$/js/lp.index.js" />
+        <option value="$PROJECT_DIR$/css/layout.css" />
+        <option value="$PROJECT_DIR$/js/lp.base.js" />
       </list>
     </option>
   </component>
@@ -588,7 +610,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -763,6 +784,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -771,8 +793,8 @@
     <property name="options.lastSelected" value="preferences.sourceCode.JavaScript" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -844,7 +866,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979952" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18684843" sideWeight="0.75343573" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18845229" sideWeight="0.75343573" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -923,49 +946,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/jsPane.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="38" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="17" column="38" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="8" selection-start="474" selection-end="474" vertical-scroll-proportion="-13.571428">
-          <folding />
-        </state>
+        <state line="20" column="8" selection-start="474" selection-end="474" vertical-scroll-proportion="-13.571428" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lang/fr.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lang/fr.po">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="267" column="12" selection-start="5665" selection-end="5669" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="267" column="12" selection-start="5665" selection-end="5669" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ie8.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="25" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="25" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/FlagAR.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="-11.535714">
-          <folding />
-        </state>
+        <state line="47" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="-11.535714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/LikeAR.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="-11.571428">
+        <state line="61" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -979,14 +990,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/CommentAR.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="21" selection-start="605" selection-end="605" vertical-scroll-proportion="-21.714285">
+        <state line="32" column="21" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/CommentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="57" selection-start="508" selection-end="508" vertical-scroll-proportion="-14.25">
+        <state line="21" column="57" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -998,44 +1009,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="60" selection-start="17164" selection-end="17164" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="638" column="0" selection-start="23889" selection-end="23889" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1395040384000" expanded="true" signature="7214:7226" placeholder="..." />
-            <marker date="1395040384000" expanded="true" signature="11558:11570" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="904" selection-end="904" vertical-scroll-proportion="-12.892858">
+        <state line="19" column="7" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="58" selection-start="5792" selection-end="5792" vertical-scroll-proportion="-10.428572">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#script#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#a#0;n#script#3;n#!!top" expanded="true" />
-          </folding>
+        <state line="163" column="58" selection-start="5792" selection-end="5792" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lp.index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="308" column="44" selection-start="11773" selection-end="11773" vertical-scroll-proportion="0.65267175">
+        <state line="308" column="44" selection-start="11773" selection-end="11773" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="237" column="0" selection-start="18383" selection-end="18383" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2542" column="0" selection-start="99811" selection-end="99811" vertical-scroll-proportion="0.8925542">
+          <folding>
+            <marker date="1395070734000" expanded="false" signature="7214:7226" placeholder="..." />
+            <marker date="1395070734000" expanded="false" signature="11558:11570" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

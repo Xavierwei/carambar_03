@@ -74,13 +74,15 @@ class SettingController extends Controller
     }
 
 
-
 	/**
-	 * countdown
+	 * countdown 倒计时
 	 */
 	public function actionCountdown(){
-		$timespan = strtotime('2014-3-25') - time();
-
-		return $this->responseJSON($timespan, "success");
+        $model=new SettingAR;
+        $item=$model->getValue('countdown');      //获取countdown 倒计时时间
+        if(!$item)
+            StatusSend::_sendResponse(200,StatusSend::error('end', 1025)); //获取不到answer数据
+        else
+            StatusSend::_sendResponse(200, StatusSend::success('success',2009,strtotime($item))); //answer校验正确
 	}
 }

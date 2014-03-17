@@ -226,11 +226,16 @@ a{text-decoration:none;color:inherit;}
 				.comlist-flag{display:none;position: absolute;background:url('../img/icon_comm_flag.gif') no-repeat;width:10px;height:10px;top: 10px;right: 10px}
                 .comlist-flag.flagged {background-position: 0 -15px;}
                 .logged .comlist-flag {display:block;}
+
 		.com-ipt{background:white;padding:7px 10px;font-size:12px;resize:none;width:80%;}
         .com-ipt:focus {background:#fffbce;}
         .com-make {margin:0 30px;padding:15px 0 0;}
         .com-make .submit {font-size:14px;color:white;text-transform:uppercase;background:#2f3688;border: none;padding:5px 5px 5px 5px;margin-top:2px;margin-right:10px;}
         .com-make .submit:hover {background:#ce232d;}
+
+		/*.com-ipt{background:white;padding:7px 10px;font-size:12px;resize:none;width:242px;}*/
+        /*.com-make .submit {color:white;text-transform:uppercase;background:#333;border: none;padding:5px 5px 2px 5px;margin-top:2px;margin-right:10px;float:right;}*/
+
         .comment-msg-success {display: none;padding:20px 0 0;}
         .com-main .need-login {text-align: center;margin-top:10px;}
         .comlist-con {font-weight:normal;word-break: break-all;word-wrap: break-word;}
