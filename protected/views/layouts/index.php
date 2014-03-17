@@ -7,9 +7,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 	<title>Carambar</title>
 	<link href="./css/style.css" rel="stylesheet" type="text/css" />
-	<style>
-		#stats {z-index: 99999;position: fixed;}
-	</style>
 </head>
 <body>
 <?php echo $content;?>
@@ -19,27 +16,5 @@
 <script type="text/javascript" src="./js/sea/plugin-shim.js"></script>
 <script type="text/javascript" src="./js/lp.core.js"></script>
 <script type="text/javascript" src="./js/lp.index.js"></script>
-<script type="text/javascript" src="./js/plugin/state.js"></script>
-<script type="text/javascript">
-	var stats = new Stats();
-	stats.setMode(0); // 0: fps, 1: ms
-
-	// Align top-left
-	stats.domElement.style.position = 'fixed';
-	stats.domElement.style.left = '0px';
-	stats.domElement.style.top = '0px';
-
-	document.body.appendChild( stats.domElement );
-
-	setInterval( function () {
-
-		stats.begin();
-
-		// your code goes here
-
-		stats.end();
-
-	}, 1000 / 60 );
-</script>
 </body>
 </html>

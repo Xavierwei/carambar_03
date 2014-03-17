@@ -4,6 +4,7 @@
 LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] , function( $ , api ){
     'use strict'
 
+    var API_FOLDER = "./api";
 	var time_left;
     $(document.body)
         .delegate('#twitter-content', 'keyup', function(){
@@ -284,7 +285,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
      * Submit Twitter
      */
 	LP.action('submit_twitter', function(){
-		var content = '#GOODLUCKCARAMBAR ' + $('#twitter-content').val();
+		var content = '#HASHTAGTEST ' + $('#twitter-content').val();
 		api.ajax('postTwitter', {content: content}, function( result ){
 			console.log(result);
 			if(result.success) {
@@ -307,7 +308,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
      */
     LP.action('submit_facebook', function(){
         var img = $('#facebook-img').val();
-        var content = '#GOODLUCKCARAMBAR ' + $('#facebook-content').val();
+        var content = '#HASHTAGTEST ' + $('#facebook-content').val();
         api.ajax('postFacebook', {content: content, img: img}, function( result ){
             console.log(result);
             if(result.success) {

@@ -7418,3 +7418,275 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/carambar_03/photowall.php%E3%80%81
 ---
+2014/03/17 10:32:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080954
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:33:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080955
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:34:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080956
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080957
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:36:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080958
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:37:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080959
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:38:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080960
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:39:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080961
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:40:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080962
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:41:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080963
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:42:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080964
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:43:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080965
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:44:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080966
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:45:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080967
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:46:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080968
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:47:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080969
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:48:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080970
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:49:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080971
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:50:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080972
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:51:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080973
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080974
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:53:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080975
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 10:54:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "html/index.php/setting/praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('html/index.php/...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/html/index.php/setting/praiseResult?_=1395021080976
+HTTP_REFERER=http://localhost:8888/carambar_03/html/
+---
+2014/03/17 11:17:33 [error] [php] Only variables should be passed by reference (/Applications/MAMP/htdocs/carambar_03/protected/controllers/LikeController.php:50)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): LikeController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): LikeController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): LikeController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/like/post
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/LikeController.php (50)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/17 13:11:56 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:22)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (22)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/17 13:12:10 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:22)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (22)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/17 13:23:21 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(391): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(468): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video13_224_115.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/17 13:23:21 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(391): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(468): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video13_224_115.jpg?1395033801762
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)

@@ -10,10 +10,6 @@ input,textarea {text-transform:none;}
 .inner-infocom {font-family: 'Arial Narrow', arial;font-size:15px;}
 .com-main,.com-main textarea {font-family: 'Arial Narrow', arial;text-transform: none;}
 .com-info {font-family: 'Arial Narrow', arial;}
-.comlist-tit {font-size:9px;}
-.comlist-tit span {font-size:14px;}
-.poptxt-textarea {font-size:11px;text-transform:none;font-style:italic;}
-.poptxt-textarea:focus {font-style: normal;}
 .logfi input {font-size:15px;}
 .logbtn div {font-size:14px;}
 .search-hd {font-size:25px;font-family:'Arial Narrow', arial;}

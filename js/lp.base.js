@@ -17,7 +17,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
     var ITEM_WIDTH = MIN_WIDTH;
     var WIN_WIDTH = $(window).width();
     
-    var monthsShort = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var monthsShort = ["Jan", "Feb", "Mars", "Apr", "Mai", "Juin", "Départ", "Août", "Sept", "Oct", "Nov", "Déc"];
     var getMonth = function( index ){
         return monthsShort[ index ];
     }
@@ -233,7 +233,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
             if( cookieLikeStatus && nodes.length ){
                 cookieLikeStatus = cookieLikeStatus.split(',');
                 $.each( nodes , function( i , node ){
-                    if( $.inArray( node.nid , cookieLikeStatus ) !== false ){
+                    if( $.inArray( node.nid , cookieLikeStatus ) !== -1 ){
                         node.liked = true;
                     }
                 } );
@@ -638,9 +638,13 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
     });
 
     LP.action('load-comment' , function( data ){
-        $('.com-base').hide();
-        $('.com-wrap').show();
-        getCommentList(data.nid , data.page || 1);
+        if($('.com-wrap').is(':visible')) return;
+        LP.triggerAction('com-share-close');
+        $('.com-wrap').css({top:'100%'}).fadeIn().dequeue().animate({top:'0%'}, 500, 'easeOutQuart');
+        bindCommentSubmisson();
+        if($('.com-wrap .comlist-item').length == 0) {
+            getCommentList(data.nid , data.page || 1);
+        }
         LP.use(['jscrollpane' , 'mousewheel'] , function(){
             $('.com-list').jScrollPane({autoReinitialise:true}).bind(
                 'jsp-scroll-y',
@@ -656,8 +660,17 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
     });
 
     LP.action('com-close' , function(){
-        $('.com-wrap').hide();
-        $('.com-base').show();
+        $('.com-wrap').fadeOut().dequeue().animate({top:'100%'}, 500, 'easeInQuart');
+    });
+
+    LP.action('com-share-close', function(){
+        $('.com-share').fadeOut().dequeue().animate({top:'100%'}, 500, 'easeInQuart');
+    });
+
+    LP.action('com-open-share', function(){
+        if($('.com-share').is(':visible')) return;
+        LP.triggerAction('com-close');
+        $('.com-share').css({top:'100%'}).fadeIn().dequeue().animate({top:'0%'}, 500, 'easeOutQuart');
     });
     
   //   LP.action('back_home', function(){
@@ -916,10 +929,10 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                     },400);
                 });
 				// resize WMV
-				var $wmvIframe = $('.image-wrap-inner iframe');
-				if($wmvIframe.length > 0) {
-					$wmvIframe.width('100%').height(imgBoxHeight-36);
-				}
+//				var $wmvIframe = $('.image-wrap-inner iframe');
+//				if($wmvIframe.length > 0) {
+//					$wmvIframe.width('100%').height(imgBoxHeight-36);
+//				}
             }
             // init photo node
             if( node.type == "photo" ){
@@ -1203,36 +1216,36 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
     });
 
     LP.action('unlike' , function( data ){
-        var _this = $(this);
-		if(_this.hasClass('disabled')){
-			return;
-		}
-        var _likeWrap = _this.parent().find('span').eq(0);
-		_this.addClass('disabled');
-		_this.addClass('flashing');
-        api.ajax('unlike', {nid:data.nid}, function( result ){
-			_this.removeClass('flashing');
-            setTimeout(function(){
-				_this.removeClass('disabled');
-            },1000);
-            if(result.success) {
-                _likeWrap.animate({opacity:0},function(){
-                    _likeWrap.html(result.data);
-                    _this.parent().data('liked',false);
-                    _this.removeClass('com-unlike');
-                    _this.attr('data-a','like');
-                    _this.find('.com-unlike-tip').remove();
-                    $(this).animate({opacity:1});
-                });
-                updateLikeCount(data.nid, result.data , false);
-
-                // remove like status
-                var liked = LP.getCookie('_led') || '';
-                liked = liked.split(',');
-                liked.splice( $.inArray( data.nid , liked ) , 1 );
-                LP.setCookie( '_led' , liked.join(',') , 86400 * 365 );
-            }
-        });
+//        var _this = $(this);
+//		if(_this.hasClass('disabled')){
+//			return;
+//		}
+//        var _likeWrap = _this.parent().find('span').eq(0);
+//		_this.addClass('disabled');
+//		_this.addClass('flashing');
+//        api.ajax('unlike', {nid:data.nid}, function( result ){
+//			_this.removeClass('flashing');
+//            setTimeout(function(){
+//				_this.removeClass('disabled');
+//            },1000);
+//            if(result.success) {
+//                _likeWrap.animate({opacity:0},function(){
+//                    _likeWrap.html(result.data);
+//                    _this.parent().data('liked',false);
+//                    _this.removeClass('com-unlike');
+//                    _this.attr('data-a','like');
+//                    _this.find('.com-unlike-tip').remove();
+//                    $(this).animate({opacity:1});
+//                });
+//                updateLikeCount(data.nid, result.data , false);
+//
+//                // remove like status
+//                var liked = LP.getCookie('_led') || '';
+//                liked = liked.split(',');
+//                liked.splice( $.inArray( data.nid , liked ) , 1 );
+//                LP.setCookie( '_led' , liked.join(',') , 86400 * 365 );
+//            }
+//        });
     });
 
 
@@ -2193,7 +2206,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
 
         // Resize Comment Box
         var $comList = $('.com-list');
-        var comListHeight = $(window).height() - 350 - 110;
+        var comListHeight = $(window).height() - 400 - 110;
         $comList.height(comListHeight);
 
         // Resize Image
@@ -2244,7 +2257,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         // Resize WMV iframe
         var $iframe = $('.image-wrap-inner iframe');
         if($iframe.length > 0) {
-            $iframe.width('100%').height(imgBoxHeight-36);
+            $iframe.width('100%').height(imgBoxHeight);
         }
 
         // resize inner width

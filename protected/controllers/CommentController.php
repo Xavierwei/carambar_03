@@ -18,12 +18,14 @@ class CommentController extends Controller {
 
 		$nid        = $request->getPost("nid");
 		$content    = htmlspecialchars($request->getPost("content"));
+		$name    = htmlspecialchars($request->getPost("name"));
+		$email    = htmlspecialchars($request->getPost("email"));
+//
+//		if(Yii::app()->user->isGuest) {
+//			return $this->responseError(601);
+//		}
 
-		if(Yii::app()->user->isGuest) {
-			return $this->responseError(601);
-		}
-
-		$uid = Yii::app()->user->getId();
+//		$uid = Yii::app()->user->getId();
 //		if (Yii::app()->user->checkAccess("postComment")) {
 //			return $this->responseError(602);
 //		}
@@ -39,7 +41,8 @@ class CommentController extends Controller {
 
 		$commentAr = new CommentAR();
 		$commentAr->attributes = array(
-		    "uid" => $uid,
+		    "name" => $name,
+			"email" => $email,
 		    "nid" => $nid,
 		    "content" => $content,
 		    "status" => 1
@@ -52,7 +55,8 @@ class CommentController extends Controller {
 			return $this->responseJSON($commentAr->attributes, "success");
 		}
 		else {
-			$this->responseError(current(array_shift($commentAr->getErrors())));
+			print_r($commentAr->getErrors());
+			//$this->responseError(current(array_shift($commentAr->getErrors())));
 		}
 	}
 

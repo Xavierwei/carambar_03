@@ -24,9 +24,8 @@ class CommentAR extends CActiveRecord {
   
 	public function rules() {
 		return array(
-		    array("uid", "UidExist"),
 		    array("nid", "NidExist"),
-		    array("content, datetime, cid, status", "safe"),
+		    array("content,uid, datetime, cid, status, name, email", "safe"),
 		);
 	}
   
@@ -82,29 +81,6 @@ class CommentAR extends CActiveRecord {
 		return $res->commentcountinnode;
 	}
 
-	/**
-	 * Get the flagged count by comment id
-	 * @param $cid
-	 */
-	public function flagCountInComment($cid) {
-		$query = new CDbCriteria();
-		$query->select = "count(*) as flagcount";
-		$query->addCondition("cid=:cid");
-		$query->params[":cid"] = $cid;
-		$res = FlagAR::model()->find($query);
 
-		return $res->flagcount;
-	}
-
-	/**
-	 * Get the flagged comment list
-	 * @param $nid
-	 */
-	public function flaggedCommentsList($nid) {
-		if ($uid = Yii::app()->user->getId()) {
-			$flags = FlagAR::model()->findAllByAttributes(array("comment_nid" => $nid, "uid" => $uid));
-			return $flags;
-		}
-	}
 }
 

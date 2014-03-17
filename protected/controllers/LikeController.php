@@ -11,43 +11,44 @@ class LikeController extends Controller {
 			$this->responseError(101);
 		}
 
-		if(Yii::app()->user->isGuest) {
-			return $this->responseError(601);
-		}
-
-		if (!Yii::app()->user->checkAccess("flagNode")) {
-			return $this->responseError(601);
-		}
-
-		$uid = Yii::app()->user->getId();
+//		if(Yii::app()->user->isGuest) {
+//			return $this->responseError(601);
+//		}
+//
+//		if (!Yii::app()->user->checkAccess("flagNode")) {
+//			return $this->responseError(601);
+//		}
+//
+//		$uid = Yii::app()->user->getId();
 		$nid = $request->getPost("nid");
 
 		$likeAr = new LikeAR();
 		$likeAr->attributes = array(
-		    "uid" => $uid,
+		    "uid" => 1,
 		    "nid" => $nid
 		);
 
-		$currentUserLikeCount = $likeAr->getUserNodeCount((int)$nid,$uid);
+		//$currentUserLikeCount = $likeAr->getUserNodeCount((int)$nid,$uid);
 
 		if ($likeAr->validate()) {
 			// Check if already liked
-			if($currentUserLikeCount == 0) {
-				$likeAr->save();
-    
+			//if($currentUserLikeCount == 0) {
+			$likeAr->save();
+			$this->responseJSON($likeAr->getNodeCount((int)$nid), "success");
 			// Clean cache
-			$this->cleanCache("node_")
-				->cleanCache("comment_");
-        
-				$this->responseJSON($likeAr->getNodeCount((int)$nid), "success");
-			}
-			else
-			{
-				$this->responseError('Already Liked');
-			}
+//			$this->cleanCache("node_")
+//				->cleanCache("comment_");
+//
+//				$this->responseJSON($likeAr->getNodeCount((int)$nid), "success");
+//			}
+//			else
+//			{
+//				$this->responseError('Already Liked');
+//			}
 		}
 		else {
-			$this->responseError(current(array_shift($likeAr->getErrors())));
+			print_r($likeAr->getErrors());
+			//$this->responseError(current(array_shift($likeAr->getErrors())));
 		}
 	}
 

@@ -6,8 +6,8 @@
 .jspHorizontalBar *{margin: 0;padding: 0;}
 .jspCap{display: none;}
 .jspHorizontalBar .jspCap{float: left;}
-.jspTrack{background:#3e3e3e; position: relative;}
-.jspDrag{background: #6c6c6c;position: relative;top: 0;left: 0;cursor: pointer;}
+.jspTrack{background:#fcea2f; position: relative;}
+.jspDrag{background: #2f3688;position: relative;top: 0;left: 0;cursor: pointer;}
 .jspHorizontalBar .jspTrack,.jspHorizontalBar .jspDrag{float: left;height: 100%;}
 .jspArrow{background: #50506d;text-indent: -20000px;display: block;cursor: pointer;}
 .jspArrow.jspDisabled{cursor: default;background: #80808d;}

@@ -15,11 +15,11 @@
 			<div class="side">
 				<div class="menu">
 					<p class="filter"><strong>FILTRER</strong></p>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=TOUS&orderby=datetime">TOUS</a>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=TWEETS&orderby=datetime">TWEETS</a>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=IMAGES&orderby=datetime">IMAGES</a>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=VIDEOS&orderby=datetime">VIDEOS</a>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=BEST OF&orderby=datetime">BEST OF</a>
+					<a href="javascript:;" data-a="show-nodes" data-d="type=&orderby=datetime">TOUS</a>
+					<a href="javascript:;" data-a="show-nodes" data-d="type=text&orderby=datetime">TWEETS</a>
+					<a href="javascript:;" data-a="show-nodes" data-d="type=photo&orderby=datetime">IMAGES</a>
+					<a href="javascript:;" data-a="show-nodes" data-d="type=video&orderby=datetime">VIDEOS</a>
+					<a href="javascript:;" data-a="show-nodes" data-d="type=reward&orderby=datetime">BEST OF</a>
 				</div>
 			</div>
 			<div class="main"></div>
@@ -42,9 +42,9 @@
 				<p>{{hour}} : {{minutes}}</p>
 			</div>
 			<div class="com-blocks">
-				<div class="com-block com-back">
+				<div class="com-block com-back btn2" data-a="back">
 					<p class="block-text">RETOUR</p>
-					<p data-a="back" class="icon icon-back btn2"></p>
+					<p class="icon icon-back"></p>
 				</div>
 				<div class="com-block com-prev-next">
 					<p data-a="prev" class="icon icon-left btn2"></p>
@@ -74,11 +74,11 @@
 								</div>
 							</div>
 							<div class="com-make">
-								<form class="comment-form" action="./api/index.php/comment/post" method="post">
+								<form class="comment-form" action="./index.php/comment/post" method="post">
 									<p class="form-tit">NOM</p>
-									<input type="text" name="name"/>
+									<input type="text" class="com-ipt" name="name"/>
 									<p class="form-tit">MAIL</p>
-									<input type="text" name="mail"/>
+									<input type="text" class="com-ipt" name="email"/>
 									<p class="form-tit">COMMENTAIRE</p>
 									<textarea name="content" class="com-ipt"></textarea>
 									<input type="hidden" name="nid" value="{{nid}}" />
@@ -88,6 +88,15 @@
 								</form>
 								<div class="comment-msg-success">thanks comment</div>
 								<div class="comment-msg-error"></div>
+							</div>
+						</div>
+						<div class="com-share">
+							<div class="com-share-close" data-a="com-share-close">X</div>
+							<div class="com-share-list">
+								<a href="#" class="share-facbook"></a>
+								<a href="#" class="share-twitter"></a>
+								<a href="#" class="share-gplus"></a>
+								<a href="#" class="share-pin"></a>
 							</div>
 						</div>
 					</div>
@@ -101,7 +110,7 @@
 							{{/if}}
 
 							<a href="javascript:;" data-a="load-comment" data-d="nid={{nid}}">COMMENTAIRES</a>
-							<a>PARTAGER</a>
+							<a href="javascript:;" data-a="com-open-share">PARTAGER</a>
 							
 						</div>
 					</div>
@@ -136,13 +145,13 @@
 <script type="text/tpl" id="node-item-template">
 	<div data-a="node" data-d="nid={{nid}}" class="main-item pic-item main-item-{{nid}} {{type}}-item {{#if-exp reward "!=" "0"}}reward-item{{/if-exp}}">
 		<a>
-			{{#if-exp type "==" "photo"}}
-			<img src="./{{image}}" width="180" />
-			{{else}}
+			{{#if-exp type "==" "text"}}
 			<div class="node-inner">
 				<p class="node-desc">{{{sub_description}}}</p>
 				<p class="node-uname">@{{screen_name}}</p>
 			</div>
+			{{else}}
+			<img src="./{{image}}" width="180" />
 			{{/if-exp}}
 			<div class="item-info" >
 		        <div class="item-info-wrap">
@@ -156,15 +165,7 @@
 		        </div>
 			</div>
 			<div class="item-icon" style="display: block;"><div class="{{type}}"></div></div>
-			{{#if topday}}
-			<div class="item-topday"></div>
-			{{/if}}
-			{{#if topmonth}}
-			<div class="item-topmonth"></div>
-			{{/if}}
-			{{#if mynode}}
-			<div class="item-delete btn" data-a="delete" data-d="nid={{nid}}&type=node"></div>
-			{{/if}}
+
 			{{#if-exp reward "!=" "0"}}
 			<div class="item-reward"></div>
 			{{/if-exp}}
@@ -177,7 +178,7 @@
 <script type="text/tpl" id="comment-item-template">
 	<div class="comlist-item comlist-item-{{cid}}">
 		<div class="comlist-con">{{{content}}}</div>
-		<div class="comlist-tit"><span>{{user.firstname}} {{user.lastname}} </span> - {{date}} {{month}}</div>
+		<div class="comlist-tit"><span>par {{name}} à {{date}}/{{month}}</div>
 	</div>
 </script>
 
