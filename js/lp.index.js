@@ -385,11 +385,11 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 
 		// get twitter text list
 		if($('.videotxt')) {
-			api.ajax('recent', {type:'text', pagenum:5, orderby:'datetime'}, function( result ){
+			api.ajax('recent', {type:'text', pagenum:3, orderby:'datetime'}, function( result ){
 				$.each(result.data,function(index,node){
 					node.description = node.description;
 					LP.compile( 'videotxt-item-template' , node , function( html ){
-						$('.pholist').append(html);
+						$('.videotxt').append(html);
 					});
 				});
 			});

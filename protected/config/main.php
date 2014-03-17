@@ -93,7 +93,12 @@ return array(
                'cacheTime' => 2592000,
                //'retinaSupport' => false,
        ),
-		"cache" => array(
+        'FileCache'=>array(
+            'class'=>'CFileCache',
+           // 'cachePath'=> '/protected/runtime/cache/test',
+        ),
+
+        "cache" => array(
 			"class" => "CMemCache",
 			"servers" => array(
 				array(
@@ -103,6 +108,12 @@ return array(
 				),
 			),
 		),
+        //邮件发送
+        'mailer' => array(
+            'class' => 'application.extensions.mailer.EMailer',
+            'pathViews' => 'application.views.email',
+            'pathLayouts' => 'application.views.email.layouts'
+        ),
 
 	),
 
