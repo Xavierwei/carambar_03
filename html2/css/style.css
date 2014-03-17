@@ -171,3 +171,47 @@ a:hover{color:#e82426}
 
 
 
+
+
+
+
+
+/* Mobile Used
+================================================================================================= */
+@media screen and (max-width:640px){
+/**/
+    .header{background: url('../mobileimg/hdbg.png') no-repeat;height: 88px}
+    .page{width:640px;overflow: hidden;}
+    .footer{width:640px;overflow: hidden;border:0;margin: 30px 0}
+    .nav1{margin:0;left:50px;top:18px;background-image: url('../mobileimg/nav.png');}
+    .nav2{margin:0;left:450px;top:18px;background-image: url('../mobileimg/nav.png');}
+    .videopart{background-image: url('../mobileimg/videopart.png') ;width:620px;height: 546px;padding: 16px 0 0}
+    .videomod{float:none;margin: 0 auto;}
+    .videotxt{width:536px;background: #fff;margin:0 auto;float: none;overflow: hidden;display: block;height: 185px;font-size:20px;}
+    .videotxt-item{font-size: 22px;line-height: 28px;}
+    .videobot{display: none}
+    .videoshare{left:8px;top:325px;}
+    .videoshare .videoshare-t{background-image:url('../mobileimg/share_t.png');height: 58px;width: 58px;}
+    .videotxt-item{margin: 0 25px 0 40px;}
+    .videotxt-item span{line-height: 999em;overflow: hidden;height: 10px;}
+    .line4{height: 0;overflow: hidden}
+    .videolist-tit2{background-image: url('../mobileimg/videolist_tit2.png');width: 600px;height: 60px;margin-left:-310px}
+    .videolist2{background-image: url('../mobileimg/videolist2.jpg') ;height: 704px;padding: 30px 0 0;position: relative;}   
+    .videolistshare2{background-image: none}
+    .video-con{background:#eb212e;height:590px;width:590px;overflow: hidden}
+    .videolist-pro{display: none}
+    .videolist-item{width:402px;height: 270px;font-size: 30px;margin:0 0 30px 90px}
+        .videolist-item img{width:398px;height: 212px;}
+        .videolist-box{width:398px;height: 212px;}
+        .videolist-txt{padding:5px 0}
+        .video-icon{background: url('../mobileimg/video_icon.png') no-repeat;width: 103px;height: 160px;position: absolute;left:-50px;top:-50px}
+    .videolist-boxnull{width:392px;height: 206px;line-height: 200px;}
+
+    .photit{background: url('../mobileimg/photit.png') no-repeat top center;height: 81px;margin: 15px auto 0;width: 640px;}
+.pholist{background: url('../mobileimg/pholist.png') repeat-x center;height: 203px;margin: 15px auto 0;width:572px;padding:10px 0 0 8px;overflow: hidden}
+    .phoitem{width:156px;height: 156px;}
+    .phoitem img{width:156px;height: 156px;}
+    .line-com3{background:#ffeb00 url('../mobileimg/line_com3.png') no-repeat center;width: 380px;height: 65px;margin: 0 auto}
+
+
+}
