@@ -228,7 +228,6 @@ a{text-decoration:none;color:inherit;}
                 .comlist-flag.flagged {background-position: 0 -15px;}
                 .logged .comlist-flag {display:block;}
 		.com-ipt{background:white;padding:7px 10px;font-size:12px;resize:none;width:242px;}
-        .com-ipt:focus {background:#4f4f4f;}
         .com-make .submit {color:white;text-transform:uppercase;background:#333;border: none;padding:5px 5px 2px 5px;margin-top:2px;margin-right:10px;float:right;}
         .comment-msg-success {display: none;padding:20px 0 0;}
         .com-main .need-login {text-align: center;margin-top:10px;}
