@@ -19,8 +19,8 @@ class IndexController extends Controller {
 
     public function actionIndex() {
 		// get phase
-		//$phase = SettingAR::model()->getValue('phase');
-		$phase = isset($_GET['phase']) ? $_GET['phase'] : 1;
+		$phase = SettingAR::model()->getValue('phase');
+		$phase = isset($phase) ? $phase : 1;
 
 		// get top video
 		$topVideo = VideoAR::model()->getVideoList(1,1,1,1);

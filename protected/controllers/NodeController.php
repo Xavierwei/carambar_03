@@ -128,17 +128,56 @@ class NodeController extends Controller {
 
 			if (isset($status)) {
 				$node->status = $status;
-				if($status == 1) {
-					FlagAR::model()->deleteNodeFlag($node->nid);
-				}
+//				if($status == 1) {
+//					FlagAR::model()->deleteNodeFlag($node->nid);
+//				}
 			}
 
 			if ($node->validate()) {
 				$node->beforeSave();
 
+				$ret = $node->updateByPk($node->nid, array("status" => $node->status));
 				$this->cleanCache("node_")
 					->cleanCache("comment_");
-				$ret = $node->updateByPk($node->nid, array("status" => $node->status));
+				$this->responseJSON($node->attributes, "success");
+			}
+			else {
+				$this->responseError(current(array_shift($node->getErrors())));
+			}
+		}
+		else {
+			$this->responseError(101);
+		}
+	}
+
+	public function actionReward() {
+		$request = Yii::app()->getRequest();
+		if (!$request->isPostRequest) {
+			$this->responseError(101);
+		}
+
+		$nid = $request->getPost("nid");
+		if (!$nid) {
+			$this->responseError(101);
+		}
+
+		if (!Yii::app()->user->checkAccess("updateNode")) {
+			return $this->responseError(602);
+		}
+
+		$node = NodeAR::model()->findByPk($nid);
+
+		if ($node) {
+			$reward = $request->getPost("reward");
+			if (isset($reward)) {
+				$node->reward = $reward;
+			}
+
+			if ($node->validate()) {
+				$node->beforeSave();
+				$ret = $node->updateByPk($node->nid, array("reward" => $node->reward));
+				$this->cleanCache("node_")
+					->cleanCache("comment_");
 				$this->responseJSON($node->attributes, "success");
 			}
 			else {

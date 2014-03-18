@@ -2,7 +2,7 @@
 <body>
 
 	<div class="header">
-		<div class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>/../index"><img src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/img/logo.gif" /></a></div>
+		<div class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>/../index"><img src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/img/logo.png" /></a></div>
 	</div>
 
 	<div class="page-left">
@@ -10,10 +10,10 @@
 			<li><a rel="#/node" href="#/node"><em class="glyphicon glyphicon-th"></em> Contents</a></li>
 			<li><a rel="#/comment" href="#/comment"><em class="glyphicon glyphicon-edit"></em> Comments</a></li>
 
-			<li><a href="#/node/flagged"><em class="glyphicon glyphicon-flag"></em> Reported</a>
+			<li><a href="#/video"><em class="glyphicon glyphicon-play"></em> Video</a>
 				<ul>
-					<li><a rel="#/node/:flagged" href="#/node/flagged"> Contents</a></li>
-					<li><a rel="#/comment/:flagged" href="#/comment/flagged"> Comments</a></li>
+					<li><a rel="#/video/create" href="#/video/create"> Create</a></li>
+					<li><a rel="#/video" href="#/video"> List</a></li>
 				</ul>
 			</li>
 			<li><a rel="#/settings" href="#/settings"><em class="glyphicon glyphicon-wrench"></em> Settings</a></li>
@@ -41,11 +41,13 @@
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/like.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/comment.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/flag.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/video.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/lib.controllers.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/node.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/comment.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/settings.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/video.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/filters.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/directives.js"></script>
 </body>

@@ -313,15 +313,7 @@
 </script>
 <!-- #facebook-post-tpl -->
 
-<!-- #photowall-item-tpl -->
-<script type="text/tpl" id="photowall-item-template">
-	<a href="photowall.php#/nid/{{nid}}" class="phoitem">
-		<img src="./{{thumbnail}}">
-	</a>
-</script>
-<!-- /youtube-player-tpl -->
 
-<?php if($phase == 3 || $phase == 4):?>
 <!-- #send-invitation-tpl -->
 <script type="text/tpl" id="send-invitation-template">
 	<div class="pop pop-bar">
@@ -334,6 +326,7 @@
 </script>
 <!-- #send-invitation-tpl -->
 
+
 <!-- #send-invitation-tpl -->
 <script type="text/tpl" id="videotxt-item-template">
 	<div class="videotxt-item">
@@ -343,4 +336,12 @@
 	</div>
 </script>
 <!-- #send-invitation-tpl -->
-<?php endif;?>
+
+
+<!-- #photowall-item-tpl -->
+<script type="text/tpl" id="photowall-item-template">
+	<a href="photowall.php#/nid/{{nid}}" class="phoitem">
+		<img src="./{{thumbnail}}">
+	</a>
+</script>
+<!-- /youtube-player-tpl -->

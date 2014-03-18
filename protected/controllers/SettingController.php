@@ -85,4 +85,35 @@ class SettingController extends Controller
         else
             StatusSend::_sendResponse(200, StatusSend::success('success',2009,strtotime($item))); //answer校验正确
 	}
+
+
+
+	/**
+	 * 管理员获取setting
+	 */
+	public function actionGetSetting()
+	{
+		if (Yii::app()->user->checkAccess("isAdmin"))
+		{
+			$key = $_GET['key'];
+			$model=new SettingAR;
+			$item=$model->getValue($key);      //获取value
+			StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item)); //修改数据库成功
+		}
+	}
+
+	/**
+	 * 管理员设置setting
+	 */
+	public function actionSetSetting()
+	{
+		if (Yii::app()->user->checkAccess("isAdmin"))
+		{
+			$key = $_POST['key'];
+			$value = $_POST['value'];
+			$model=new SettingAR;
+			$item=$model->setValue($key, $value);
+			StatusSend::_sendResponse(200, StatusSend::success('success',2003)); //修改数据库成功
+		}
+	}
 }

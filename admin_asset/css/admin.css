@@ -56,19 +56,24 @@ a{text-decoration:none;color:#666}
     .nodes-list .type.icon-photo {width:21px;height:15px;margin-top:5px;}
     .nodes-list .type.icon-video {width:21px;height:18px;background-position: 0 -42px;}
     .nodes-list .switch {position: absolute;right:10px;top:10px;}
+    .nodes-list .reward {position: absolute;right:50px;top:10px;}
     .nodes-list .date {color:#999;}
-    .nodes-list .user {margin:6px 0 6px 0;}
+    .nodes-list .user {margin:6px 0 6px 10px;}
     .nodes-list .avatar {float: left;margin:0 10px 0 6px;}
     .nodes-list .avatar img {border-radius: 33px;-webkit-border-radius: 33px;-moz-border-radius: 33px;-o-border-radius: 33px;-ms-border-radius: 33px;}
     .nodes-list .comment {background: url(../img/icons.png) no-repeat 0 4px;padding:0 0 0 20px;margin:0 0 0 10px;float:left;}
     .nodes-list .comment a {border-bottom:1px dotted #cb223a;}
     .nodes-list .like {background: url(../img/icons.png) no-repeat 0 -34px;padding:0 0 0 20px;margin:0 0 0 10px;float:left;}
     .nodes-list .btns {margin:7px 0 9px 8px;}
+    .nodes-list li {width:200px;}
     .nodes-list li .image {position: relative;}
+    .nodes-list li .text-box {padding:30px 10px 0 10px;height:200px;}
     .nodes-list li .black-overlay {display:block;opacity:1;filter: alpha(opacity=60);position: absolute;top:0;left:0;width:100%;height:100%;background:#000;background-color:rgba(0,0,0,0.6);}
     .nodes-list li.status-1 .black-overlay {opacity:0;filter: alpha(opacity=0);}
     .nodes-list li .switch {background: url(../img/switch.gif) no-repeat right 0;width:57px;height:22px;display:block;position: absolute;top:0;right:0;}
     .nodes-list li .switch-1 {background-position:left 0;}
+    .nodes-list li .reward {background: url(../img/ribbon.gif) no-repeat left 0;width:60px;height:22px;display:block;position: absolute;top:0;right:70px;}
+    .nodes-list li .reward-1 {background-position:right 0;}
     .nodes-list li .flag {position: absolute;top:0;left:0;color:#fff;padding:3px 8px;}
     .nodes-list li .flag1 {background:#666;background:rgba(60,60,60,0.7);}
     .nodes-list li .flag2 {background:#666;background:rgba(60,60,60,0.7);}

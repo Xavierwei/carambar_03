@@ -27,6 +27,7 @@ angular.module('SGWallAdmin.filters', [])
     })
     .filter('thumbnail', function(ROOT_FOLDER) {
         return function(input) {
+			if(!input) return;
             var output = input;
             if(input.indexOf('mp4') > 0) {
                 output = input.replace('.mp4','_400_400.jpg');

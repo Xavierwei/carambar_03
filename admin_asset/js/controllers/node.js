@@ -126,6 +126,21 @@ SGWallAdminController
             }
         }
 
+		$scope.updateReward = function(node, status) {
+			var newNode = angular.copy(node);
+			if(node.reward == 0) {
+				newNode.reward = 1;
+			}
+			else {
+				newNode.reward = 0;
+			}
+			node.itemLoading = true;
+			NodeService.reward(newNode,function(data){
+				node.itemLoading = false;
+				node.reward = newNode.reward;
+			});
+		}
+
 
         $scope.search = function() {
             if($scope.filter.status != 'all') {

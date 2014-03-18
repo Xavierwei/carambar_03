@@ -1,11 +1,21 @@
 <div class="settings-wrap">
+	<div class="form-group">
+		<label>Site Phase</label>
+		<select ng-model="phaseValue" ng-options="c.phase for c in phaseList">
+		</select>
+		<button class="btn btn-danger" ng-click="save('phase',phaseValue)">Save</button> <span ng-show="phaseSaved">Saved</span>
+	</div>
+
     <div class="form-group">
-        <label>Report Counts</label>
-        <input class="form-control" type="text" value="" ng-model="flagValue" />
-        <button class="btn btn-danger" ng-click="save()">Save</button>
-        <small>Define the value above which we consider the content as a spam or an inappropriate content.</small>
+        <label>Answer of "when we can meet"</label>
+        <input class="form-control" type="text" value="" ng-model="answerValue" />
+        <button class="btn btn-danger" ng-click="save('answer',answerValue)">Save</button> <span ng-show="answerSaved">Saved</span>
     </div>
-    <div class="form-group">
-    </div>
-    <div class="saved" ng-show="saved">Already Saved</div>
+
+	<div class="form-group">
+		<label>Countdown</label>
+		<input class="form-control" type="text" value="" ng-model="countdownValue" />
+		<button class="btn btn-danger" ng-click="save('countdown',countdownValue)">Save</button> <span ng-show="countdownSaved">Saved</span>
+	</div>
+
 </div>

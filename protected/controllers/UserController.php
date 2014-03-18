@@ -10,6 +10,22 @@ class UserController extends Controller {
 	 * SAML SSO Login
 	 * TODO: Need change to live SAML IdP
 	 */
+	public function actionLogin() {
+		// Identity local site user data
+		$request = Yii::app()->getRequest();
+		$username = $request->getPost('username');
+		$password = $request->getPost('password');
+		$userIdentify = new UserIdentity($username, md5($password));
+		// Save user status in session
+		if (!$userIdentify->authenticate()) {
+			echo md5($password);
+		}
+		else {
+			Yii::app()->user->login($userIdentify);
+			$this->redirect('../admin/index');
+		}
+	}
+
 	public function actionSAMLLogin() {
 		if(isset($_SERVER['HTTP_REFERER'])) {
 			$referer = $_SERVER['HTTP_REFERER'];

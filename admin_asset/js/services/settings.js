@@ -1,19 +1,21 @@
 SGWallAdminServices.factory( 'SettingsService', function($http, ROOT) {
     return {
-        getFlagValue: function(success) {
-            $http.get(ROOT+'/flag/getSetting',{
+		getSetting: function(param, success) {
+            $http.get(ROOT+'/setting/getSetting',{
+				params: param,
 				cache: false
 			})
             .success(function(data) {
-                success(data);
+                success(data.data);
             })
             .error(function() {
             });
         },
 
-        setFlagValue: function(param) {
-            $http.post(ROOT+'/flag/setSetting', param)
-            .success(function() {
+		setSetting: function(param, success) {
+            $http.post(ROOT+'/setting/setSetting', param)
+            .success(function(data) {
+				success(data);
             })
             .error(function() {
 

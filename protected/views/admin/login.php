@@ -5,9 +5,11 @@
 		  <a href="<?php echo Yii::app()->request->baseUrl; ?>/../index" class="logo"></a>
 	  </div>
 	  <!--  -->
-	  <a class="login-btn" href="<?php echo Yii::app()->request->baseUrl; ?>/user/samllogin">
-		  Login
-	  </a>
+	  <form action="user/login" method="post">
+		  <input name="username" class="form-control" type="text" value="" />
+		  <input name="password" class="form-control" type="password" value="" />
+		  <input type="submit" value="login" />
+	  </form>
 
   </div>
 </body>

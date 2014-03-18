@@ -44,6 +44,18 @@ SGWallAdminServices.factory( 'NodeService', function($http, ROOT) {
             .error(function() {
 
             });
-        }
+        },
+
+		reward: function(node, success) {
+			$http.post(ROOT+'/node/reward',node)
+				.success(function(data) {
+					if(data.success == true) {
+						success();
+					}
+				})
+				.error(function() {
+
+				});
+		}
     };
 });
