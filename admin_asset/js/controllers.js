@@ -9,8 +9,8 @@ SGWallAdminController
 		$scope.filter = {};
 		$scope.filter.type = 'all';
 
-        UserService.countryList(function(data){
-            $scope.countries = data;
-        });
+        // UserService.countryList(function(data){
+        //     $scope.countries = data;
+        // });
 
 	})

@@ -39,7 +39,6 @@ SGWallAdminController
 			if($scope.filter.type == 'all') {
 				delete params.type;
 			}
-
             if($scope.filter.status != 'all') {
                 params.status = $scope.filter.status;
             }
@@ -170,6 +169,36 @@ SGWallAdminController
 		}
 
 
+        $scope.editPhoto = function(node){
+            var modalInstance = $modal.open({
+                templateUrl: ASSET_FOLDER + '/tmp/node/photo-edit.html',
+                controller: function ($scope, $modalInstance) {
+                    $scope.node = node;
+
+                    $scope.submit = function () {
+                        var param = transformMgr.result();
+                        param.path = node.file;
+                        NodeService.cropPhoto( param , function( data ){
+                            node.file = data.file;
+
+                            $modalInstance.dismiss('cancel');
+                        } );
+                    }
+                    $scope.cancel = function () {
+                        $modalInstance.dismiss('cancel');
+                    }
+                }
+            });
+
+            modalInstance.result.then(function () {
+                $scope.users.splice($scope.users.indexOf(user), 1);
+                UserService.delete(user);
+                $log.info('Modal confirmed at: ' + new Date());
+            }, function () {
+                $log.info('Modal dismissed at: ' + new Date());
+            });
+            //transformMgr.
+        }
 
 		function loadNodes(params) {
 			$scope.hideList = 'hide-list';

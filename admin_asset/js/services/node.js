@@ -45,6 +45,17 @@ SGWallAdminServices.factory( 'NodeService', function($http, ROOT) {
 
             });
         },
+        cropPhoto: function( param , success ){
+            $http.post(ROOT+'/node/put',param)
+                .success(function(data) {
+                    if(data.success == true) {
+                        success(data);
+                    }
+                })
+                .error(function() {
+
+                });
+        },
 
 		reward: function(node, success) {
 			$http.post(ROOT+'/node/reward',node)

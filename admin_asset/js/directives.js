@@ -46,7 +46,15 @@ angular.module('myApp.directives', []).
 		}
 
 	})
-
+    .directive('photoload' , function(){
+        return {
+            link: function(scope, element, attrs) {
+                element.bind('load', function() {
+                    transformMgr.initialize( $(this.parentNode) );
+                });
+            }
+        };
+    })
     .directive('searchInput',  function ($rootScope) {
         return {
             link: function (scope, elem) {

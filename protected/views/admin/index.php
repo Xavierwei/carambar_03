@@ -50,4 +50,5 @@
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/video.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/filters.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/directives.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/imgHelper.js"></script>
 </body>

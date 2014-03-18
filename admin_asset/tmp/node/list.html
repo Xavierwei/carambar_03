@@ -58,6 +58,7 @@
 		        <div class="text-box" ng-hide="node.file">{{node.description}}</div>
 		        <div class="black-overlay"></div>
                 <div class="item-loading" ng-show="node.itemLoading"></div>
+                <a href="javascript:void(0)" class="edit-btn edit-{{node.type}}" ng-click="editPhoto(node)">edit</a>
 		        <a href="javascript:void(0)" class="switch switch-{{node.status}}" ng-click="updateStatus(node)"></a>
 		        <a href="javascript:void(0)" class="reward reward-{{node.reward}}" ng-click="updateReward(node)"></a>
 	        </div>

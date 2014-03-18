@@ -38,6 +38,11 @@ angular.module('SGWallAdmin.filters', [])
             return ROOT_FOLDER + output;
         }
     })
+    .filter('originPhoto' , function(ROOT_FOLDER){
+        return function(input) {
+            return ROOT_FOLDER + input;
+        }
+    })
 
 	.filter('avatar', function(ROOT_FOLDER) {
 		return function(input) {

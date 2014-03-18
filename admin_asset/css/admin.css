@@ -74,6 +74,8 @@ a{text-decoration:none;color:#666}
     .nodes-list li .switch-1 {background-position:left 0;}
     .nodes-list li .reward {background: url(../img/ribbon.gif) no-repeat left 0;width:60px;height:22px;display:block;position: absolute;top:0;right:70px;}
     .nodes-list li .reward-1 {background-position:right 0;}
+    .nodes-list li .edit-btn{display: none;position: absolute;top: 0;background: #cb223a;color: white;padding: 1px 6px 0;font-size: 12px;}
+    .nodes-list li .edit-btn.edit-photo{display: block;}
     .nodes-list li .flag {position: absolute;top:0;left:0;color:#fff;padding:3px 8px;}
     .nodes-list li .flag1 {background:#666;background:rgba(60,60,60,0.7);}
     .nodes-list li .flag2 {background:#666;background:rgba(60,60,60,0.7);}
@@ -137,6 +139,11 @@ a{text-decoration:none;color:#666}
     .btn-group .btn {font-size:11px;padding:3px 12px;}
     .form-control {font-size:11px;padding:3px 5px;height:24px;}
 
+.photo-edit{width: 200px;height: 200px;margin: 20px auto;position: relative;}
+    .photo-wrap{width: 100%;height: 100%;overflow: hidden;position: relative;}
+    .photo-edit .opt-btn{background: #cb223a;color: white;height: 24px;font-size: 24px;position: absolute;width: 28px;text-align: center;line-height: 24px;bottom: 0px;right: 0px;}
+    .photo-edit .opt-btn.zoomout-btn{right: 30px;}
+    .photo-edit .opt-btn:hover{text-decoration: none;}
 
 .nodes-list,.login-page .login,
 a,.menu li,table td,.refresh, .btn,.list li .black-overlay
