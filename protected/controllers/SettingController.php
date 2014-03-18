@@ -98,7 +98,10 @@ class SettingController extends Controller
 			$key = $_GET['key'];
 			$model=new SettingAR;
 			$item=$model->getValue($key);      //获取value
-			StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item)); //修改数据库成功
+            if(!$item)
+                StatusSend::_sendResponse(200,StatusSend::error('end', 1026)); //获取不到val数据
+            else
+                StatusSend::_sendResponse(200, StatusSend::success('success',2010,strtotime($item))); //获取val数据成功
 		}
 	}
 
@@ -113,7 +116,10 @@ class SettingController extends Controller
 			$value = $_POST['value'];
 			$model=new SettingAR;
 			$item=$model->setValue($key, $value);
-			StatusSend::_sendResponse(200, StatusSend::success('success',2003)); //修改数据库成功
+            if(!$item)
+                StatusSend::_sendResponse(200,StatusSend::error('end', 1027)); //设置val数据失败
+            else
+                StatusSend::_sendResponse(200, StatusSend::success('success',2011,strtotime($item))); //设置val数据成功
 		}
 	}
 }
