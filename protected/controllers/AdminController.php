@@ -41,4 +41,20 @@ class AdminController extends Controller {
             Drtool::sendEmail($_POST['senderName'],$_POST['title'],$_POST['content'],$_POST['sendMaliAddress']);
         }
     }
+
+
+    /**
+     * 清理FileCache
+     */
+    public function actionCleanFileCache()
+    {
+        if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
+        {
+            StatusSend::_sendResponse(200, StatusSend::error('end', 1015)); //没有权限进行此操作
+        }
+        else //管理员
+        {
+            Yii::app()->cache->flush(); //清理缓存
+        }
+    }
 }
