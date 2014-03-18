@@ -69,7 +69,11 @@ class SettingController extends Controller
         if($item!=$_POST['answer'])
             StatusSend::_sendResponse(200,StatusSend::error('end', 1011)); //answer错误
         else
-            StatusSend::_sendResponse(200, StatusSend::success('success',2004,$item)); //answer校验正确
+        {
+            $count=$model->getValue('answer_count');      //获取answer_count 答对人数
+            $model->setValue('answer_count',++$count);  //设置 value，答对次数+1
+            StatusSend::_sendResponse(200, StatusSend::success('success',2004,$count)); //answer校验正确
+        }
 
     }
 
