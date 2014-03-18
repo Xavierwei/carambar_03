@@ -2,7 +2,7 @@
 <body>
 
 	<div class="header">
-		<div class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>/../index"><img src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/img/logo.png" /></a></div>
+		<div class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>/index"><img src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/img/logo.png" /></a></div>
 	</div>
 
 	<div class="page-left">

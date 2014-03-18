@@ -2107,7 +2107,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                     if(data.content.length > 140) {
                         error = "comment'length must be less then 140";
                     }
-                    if( !data.mail.match(/^[a-zA-Z.\-0-9]+@[a-zA-Z0-9]+(.[a-zA-Z\-0-9]+)+$/) ){
+                    if( !data.email.match(/^[a-zA-Z.\-0-9]+@[a-zA-Z0-9]+(.[a-zA-Z\-0-9]+)+$/) ){
                         error = "mail is not right";
                     }
                     if( !data.name ){

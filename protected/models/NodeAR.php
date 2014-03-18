@@ -28,6 +28,8 @@ class NodeAR extends CActiveRecord{
 
 	public $flag = array();
 
+	public $embed;
+
 
 	const ALLOW_UPLOADED_PHOTO_TYPES = "jpg,png,gif";
 
@@ -706,6 +708,55 @@ class NodeAR extends CActiveRecord{
 					catch(Exception $e) {
 						continue;
 					}
+				}
+				break;
+		}
+
+	}
+
+
+	/**
+	 * Get the video thumbnail
+	 */
+	public function getEmbedUrl($url, $media) {
+		switch($media) {
+			case 'youtube':
+				$params = $this->getUrlParams($url);
+				if (isset($params) && isset($params['v'])) {
+					$url = 'http://www.youtube.com/embed/'.$params['v'];
+				}
+				else {
+					$shoturl =  explode("/",$url);
+					if(isset($shoturl[3])) {
+						$id = explode('?', $shoturl[3]);
+					}
+					$url = 'http://www.youtube.com/embed/'.$id[0];
+				}
+				return $url;
+				break;
+
+			case 'vimeo':
+				preg_match("/http:\/\/vimeo\.com\/([\d]+)/i", $url, $matches);
+				if(isset($matches[1])) {
+					$id = $matches[1];
+					if ($id) {
+						return $url = 'http://player.vimeo.com/video/'.$id;
+					}
+				}
+				break;
+
+			case 'dailymotion':
+				$id = strtok(basename($url), '_');
+				if(isset($id)) {
+					return $url = 'http://www.dailymotion.com/embed/video/'.$id;
+				}
+				break;
+
+			case 'vine':
+				preg_match("/vine.co\/v\/([\w]+)/", $url, $matches);
+				$id = isset($matches['1']) ? $matches[1] : NULL;
+				if($id) {
+					return $url = 'https://vine.co/v/'.$id.'/embed/simple';
 				}
 				break;
 		}

@@ -5,6 +5,7 @@
 		<div class="header">
 			<div class="header-wrap">
 				<div class="hdcontent">
+					<a class="nav_home" href="./"></a>
 					<a class="nav1" href="./"></a>
 					<a class="nav2 nav2on" href="./photowall.php"></a>
 				</div>
@@ -19,7 +20,7 @@
 					<a href="javascript:;" data-a="show-nodes" data-d="type=text&orderby=datetime">TWEETS</a>
 					<a href="javascript:;" data-a="show-nodes" data-d="type=photo&orderby=datetime">IMAGES</a>
 					<a href="javascript:;" data-a="show-nodes" data-d="type=video&orderby=datetime">VIDEOS</a>
-					<a href="javascript:;" data-a="show-nodes" data-d="type=reward&orderby=datetime">BEST OF</a>
+					<a href="javascript:;" data-a="show-nodes" data-d="reward=true&orderby=datetime">BEST OF</a>
 				</div>
 			</div>
 			<div class="main"></div>
@@ -86,17 +87,17 @@
 									<input class="submit btn2" type="submit" value="submit" />
 									<div class="clear"></div>
 								</form>
-								<div class="comment-msg-success">thanks comment</div>
+								<div class="comment-msg-success">The comment will publish after approve.</div>
 								<div class="comment-msg-error"></div>
 							</div>
 						</div>
 						<div class="com-share">
 							<div class="com-share-close" data-a="com-share-close">X</div>
 							<div class="com-share-list">
-								<a href="#" class="share-facbook"></a>
-								<a href="#" class="share-twitter"></a>
-								<a href="#" class="share-gplus"></a>
-								<a href="#" class="share-pin"></a>
+								<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[title]={{description}}&amp;p[summary]={{description}}&amp;p[url]=&amp;p[images][0]=" class="share-facbook"></a>
+								<a target="_blank" href="http://twitter.com/share?text={{description}}&amp;url=" class="share-twitter"></a>
+								<a target="_blank" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=http://64.207.184.106/carambar/photowall.php/#/{{nid}}" class="share-gplus"></a>
+								<a target="_blank" href="http://pinterest.com/pin/create/button/?url=http://64.207.184.106/carambar/photowall.php/#/{{nid}}" class="share-pin"></a>
 							</div>
 						</div>
 					</div>
@@ -185,7 +186,7 @@
 
 <!-- html5-player-tpl -->
 <script type="text/tpl" id="html5-player-template">
-  <iframe height=498 width=510 src="http://player.youku.com/embed/XNjg0NDc0ODc2" frameborder=0 allowfullscreen></iframe>
+  <iframe height='100%' width='100%' src="{{embed}}" frameborder=0 allowfullscreen></iframe>
 </script>
 
 <!-- wmv-player-tpl -->

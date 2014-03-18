@@ -11,7 +11,7 @@ var SGWallAdmin = angular.module('SGWallAdmin', [
   'SGWallAdmin.controllers'
 ]).
 config(function($routeProvider,$httpProvider) {
-	var ROOT = '/carambar/admin_asset/';
+	var ROOT = '/carambar_03/admin_asset/';
     $routeProvider.when('/node', {templateUrl: ROOT +'tmp/node/list.html', controller: 'NodeCtrList'});
     $routeProvider.when('/node/:flagged', {templateUrl: ROOT +'tmp/node/list.html', controller: 'NodeCtrList'});
     $routeProvider.when('/comment', {templateUrl: ROOT +'tmp/comment/list.html', controller: 'CommentCtrList'});

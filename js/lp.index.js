@@ -21,7 +21,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 			if($(this).val().length == 0) {
 				$('.share-tbtn').addClass('disabled');
 			}
-			var content = $('#twitter-content').val() + '%23GOODLUCKCARAMBAR';
+			var content = $('#twitter-content').val() + '%23TESTHASHTAG';
 			$('.share-t .share-tbtn').attr('href', 'https://twitter.com/intent/tweet?text='+content);
         })
         .delegate('.sec4-right-txt', 'click', function(){
@@ -307,15 +307,46 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
      * Submit Facebook
      */
     LP.action('submit_facebook', function(){
+        if($(this).hasClass('submitting')) return;
+        $(this).addClass('submitting');
+        var checkbox = $('.pop-ft-check').hasClass('checked');
+        var wordCount = $('#facebook-content').val().length;
+        if(!checkbox) {
+            return;
+        }
+        if(wordCount == 0) {
+            return;
+        }
+        if(wordCount > 140) {
+            return;
+        }
         var img = $('#facebook-img').val();
         var content = '#HASHTAGTEST ' + $('#facebook-content').val();
+        $('.pop-ft-submitting').fadeIn();
         api.ajax('postFacebook', {content: content, img: img}, function( result ){
-            console.log(result);
+            $('.pop-ft-submitting').fadeOut();
+            $(this).removeClass('submitting');
             if(result.success) {
-                alert('Success Posted!');
+                $('.facebook-post-form').fadeOut();
+                $('.facebook-post-success').delay(500).fadeIn(function(){
+                    LP.triggerAction('close_popup');
+                });
+
             }
         });
     });
+
+    LP.action('facebook_check', function(){
+        if($('.pop-ft-check').hasClass('checked')) {
+            $('.pop-ft-check').removeClass('checked');
+            $('.pop-ft-btn').addClass('disabled');
+        }
+        else {
+            $('.pop-ft-check').addClass('checked');
+            $('.pop-ft-btn').removeClass('disabled');
+        }
+
+    })
 
     function indicateResult(){
         api.ajax('indicateResult', function( result ){

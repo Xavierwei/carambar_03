@@ -74,111 +74,9 @@ class FacebookController extends Controller {
 			}
 			else {
 				Yii::app()->user->login($userIdentify);
-				$this->redirect('../../index');
+				$this->redirect('/carambar/index#support-carambar');
 			}
 		}
-
-		exit();
-
-
-		$app_id = "248138168701760";
-		$app_secret = "5c444919a239bd68741044848442d3b0";
-		$my_url = "http://lily.local:8888/carambar_03/index.php/facebook/login";
-
-		//session_start();
-		$code = @$_GET["code"];
-
-		if(empty($code)) {
-			$dialog_url = "http://www.facebook.com/dialog/oauth?client_id="
-				. $app_id . "&redirect_uri=" . urlencode($my_url);
-
-			echo("<script> top.location.href='" . $dialog_url . "'</script>");
-		}
-
-
-
-		$request = Yii::app()->getRequest();
-		$_ = $request->getParam("code");
-		if($_) {
-		$token_url = "https://graph.facebook.com/oauth/access_token?"
-			. "client_id=" . $app_id . "&redirect_uri=" . urlencode($my_url)
-			. "&client_secret=" . $app_secret . "&code=" . $code;
-
-			$response = @file_get_contents($token_url);
-			$params = null;
-			parse_str($response, $params);
-			//$access_token = $this->facebook->getAccessToken();
-	//			echo $access_token;
-	//			exit();
-
-			$graph_url = "https://graph.facebook.com/me?access_token="
-				. $params['access_token'];
-
-			$access_token = Yii::app()->session['fb_access_token'] = $params['access_token'];
-			$this->facebook->setAccessToken($access_token);
-
-
-
-
-			$user_profile = $this->facebook->api('/me','GET');
-			// Create the new user if user doesn't exist in database
-			if( !$user = UserAR::model()->findByAttributes(array('name'=>'f_'.$user_profile['username'])) ) {
-				$user = UserAR::model()->createSNSLogin('f_'.$user_profile['username'], $user_profile['id'], $user_profile['email']);
-			}
-
-			// Identity local site user data
-			$userIdentify = new UserIdentity($user->name, md5($user_profile['id']));
-
-			// Save user status in session
-			if (!$userIdentify->authenticate()) {
-			}
-			else {
-				Yii::app()->user->login($userIdentify);
-				echo 'success';
-				//$this->redirect('../../../index');
-			}
-		}
-		else {
-			return $this->responseJSON('login', "success");
-		}
-
-
-//
-//		$token_url = "https://graph.facebook.com/oauth/access_token?"
-//			. "client_id=" . $app_id . "&redirect_uri=" . urlencode($my_url)
-//			. "&client_secret=" . $app_secret . "&code=" . $code;
-//
-//		$response = @file_get_contents($token_url);
-//		$params = null;
-//		parse_str($response, $params);
-//
-//		$graph_url = "https://graph.facebook.com/me?access_token="
-//			. $params['access_token'];
-//
-//		$userRes = json_decode(file_get_contents($graph_url));
-//
-//
-//		print_r($userRes);
-//		echo $userRes->email;
-//		if( !$user = UserAR::model()->findByAttributes(array('name'=>$userRes->username)) ) {
-//			$user = UserAR::model()->createSNSLogin($userRes->username, $userRes->id, $userRes->email);
-//		}
-//
-//		// Identity local site user data
-//		$userIdentify = new UserIdentity($userRes->username, md5($userRes->id));
-//		print_r($userIdentify);
-//
-//		// Save user status in session
-//		if (!$userIdentify->authenticate()) {
-//		}
-//		else {
-//			Yii::app()->user->login($userIdentify);
-//			echo 'logined';
-//			//$this->redirect('../../../index');
-//		}
-
-		//echo("Hello " . $user->name);
-
 	}
 
 
@@ -191,7 +89,7 @@ class FacebookController extends Controller {
 		$this->facebook->setAccessToken($oauth_token);
 		$results = $this->facebook->api('/search', 'GET',
 			array(
-				'q' => 'snow'
+				'q' => '9263'
 			));
 
 
@@ -243,12 +141,16 @@ class FacebookController extends Controller {
 		if(strlen($content) > 140) {
 			return $this->responseError(703);
 		}
+
+		$access_token = Yii::app()->session['fb_access_token'];
+		$this->facebook->setAccessToken($access_token);
+
 		if(!empty($img)) {
 			$results = $this->facebook->api('/me/photos', 'POST',
 				array(
 					'source'=>'multipart/form-data',
-					//'url'=> Yii::app()->params['siteurl'].$img,
-					'url' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
+					'url'=> Yii::app()->params['siteurl'].$img,
+					//'url' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
 					'message' => $content
 				));
 		}

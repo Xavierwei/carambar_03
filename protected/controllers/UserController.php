@@ -18,7 +18,6 @@ class UserController extends Controller {
 		$userIdentify = new UserIdentity($username, md5($password));
 		// Save user status in session
 		if (!$userIdentify->authenticate()) {
-			echo md5($password);
 		}
 		else {
 			Yii::app()->user->login($userIdentify);

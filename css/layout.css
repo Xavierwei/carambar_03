@@ -36,6 +36,7 @@ a{text-decoration:none;color:inherit;}
 .header{position:fixed;border-bottom: 1px solid #2f3688;background:url('../img/header_bg.jpg') no-repeat top center;width:100%;top:0px;z-index:11;}
     .header-wrap {background:url('../images/hdbg.png') no-repeat bottom center;height: 171px;}
     .hdcontent{margin: 0 auto;position: relative;}
+    .nav_home {width:320px;height:110px;display:block;position:absolute;top:0;left:50%;margin:0 0 0 -160px;}
     .nav1{background: url('../images/nav.png') no-repeat -12px -119px;width: 120px;height: 25px;position: absolute;top:33px;left:50%;margin: 0 0 0 -300px}
     .nav2{background: url('../images/nav.png') no-repeat 0 0;width: 150px;height: 25px;position: absolute;top:33px;left:50%;margin: 0 0 0 190px}
     .nav1:hover {background-position:-416px -119px;}

@@ -265,6 +265,7 @@ class NodeController extends Controller {
 		$keyword 	= $request->getParam("keyword");
 		$email 		= $request->getParam("email");
 		$flagged	= $request->getParam("flagged");
+		$reward		= $request->getParam("reward");
 
 		if (!$page) {
 			$page = 1;
@@ -360,6 +361,11 @@ class NodeController extends Controller {
 			$status = NodeAR::PUBLICHSED;
 			$query->addCondition($nodeAr->getTableAlias().".status = :status", "AND");
 			$params[":status"] = $status;
+		}
+
+		if($reward) {
+			$query->addCondition($nodeAr->getTableAlias().".reward = :reward", "AND");
+			$params[":reward"] = 1;
 		}
 
 		// Get like count
@@ -475,6 +481,7 @@ class NodeController extends Controller {
 			$data["country"]        = $node->country ? $node->country->attributes: array();
 			$data["user_liked"]     = $node->user_liked;
 			$data["user_flagged"]   = $node->user_flagged;
+			$data["embed"]			= $node->getEmbedUrl($node->url, $node->from);
 			if($uid && isset($node->user['uid']) && Yii::app()->user->getId() == $node->user['uid']) {
 				$data["mynode"] = TRUE;
 			}

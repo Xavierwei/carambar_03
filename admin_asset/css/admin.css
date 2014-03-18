@@ -1,6 +1,6 @@
 /* Reset
 ================================================================================================= */
-body{color:#000;font-size:12px;line-height:1.8em;background: #444;}
+body{color:#000;font-size:12px;line-height:1.8em;background: #fbea38;}
 body,input,textarea{font-family:"Microsoft YaHei",arial,sans-serif;}
 h1,h2,h3{font-size:100%;font-weight:600}
 body,h1,h2,h3,h4,ul,li,p,img,input,textarea{margin:0;padding:0;border:0;}
@@ -20,16 +20,16 @@ a{text-decoration:none;color:#666}
 
 .header {background:#fff;text-align: center;padding:15px 0;position: fixed;top:0;left:0;width:100%;z-index: 10;}
 
-.page-left {position:fixed;top:89px;bottom:0;background:#303030;border-right:1px solid #4F4F4F;}
+.page-left {position:fixed;top:89px;bottom:0;background:#2f3688;border-right:1px solid #2f3688;}
     .page-left .menu {margin:0;}
     .page-left .menu ul {margin:0;}
-    .page-left .menu li {background:#303030;border-left:4px solid #94938F;border-bottom:1px solid #4F4F4F;}
+    .page-left .menu li {background:#373e98;border-left:4px solid #4c56c3;border-bottom:1px solid #4c56c3;}
     .page-left .menu li.active {background:#cb223a;border-left:4px solid #fff;}
     .page-left .menu li.active a {color:#fff;}
     .page-left .menu li:hover {background:#cb223a;border-left:4px solid #fff}
     .page-left .menu li:hover a {color:#fff;}
-    .page-left .menu li ul li {background:#252525;}
-    .page-left .menu li ul li {border:none;border-bottom:1px solid #333;}
+    .page-left .menu li ul li {background:#2f3688;}
+    .page-left .menu li ul li {border:none;border-bottom:1px solid #252b71;}
     .page-left .menu li ul li.active,.page-left .menu li ul li:hover {border: none;}
     .page-left .menu li a {color:#ccc;display:block;padding:10px 15px;text-decoration:none;}
     .page-left .menu li ul li a {padding:5px 25px 5px 22px;color:#888;}
@@ -49,7 +49,7 @@ a{text-decoration:none;color:#666}
     .filter .btn-group {margin-right:15px;}
     .filter .btn-group-search {margin-right:0;margin-top:3px;}
     .filter .advance-row button {margin-top:20px;}
-    .filter label {color:#ccc;font-weight: normal;margin:0;}
+    .filter label {color:#333;font-weight: normal;margin:0;}
     .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {background:#cb223a;color:#fff;border:1px solid #8a0c1e;}
     .btn-danger {background:#cb223a;}
     .nodes-list .type {position: absolute;right:10px;top:170px;background: url(../img/icons-white.png) no-repeat;text-indent: -999em;}
@@ -124,12 +124,12 @@ a{text-decoration:none;color:#666}
 /* loginpage Used
 ================================================================================================= */
 .login-body {background:#fff;}
-.login-page {top:50%;margin-top:-100px;height: 200px;position:absolute;width:100%;}
-.login-page .logo {display:block;background: url('../img/logo.gif') no-repeat right;width:236px;height:58px;margin:28px auto 45px auto;}
+.login-page {top:50%;margin-top:-200px;height: 400px;position:absolute;width:100%;}
+.login-page .logo {display:block;background: url('../img/logo.png') no-repeat right;width:236px;height:58px;margin:28px auto 45px auto;}
 .login-page .btn {padding:10px 0;font-size:18px;margin:60px auto 0 auto;display: block;width:300px;text-transform: uppercase;}
-
 .login-page .login-btn {display:block;background:#df2847 url('../img/icon_login.gif') no-repeat 10px 6px;color:#fff;width:100px;margin:0 auto;padding:0 20px 0 45px;height:23px;line-height:24px;color:#fff;}
 .login-page .login-btn:hover {opacity:0.8;text-decoration:none;}
+.login-page form {width:400px;margin:0 auto;}
 
 .modal {top:30%;}
     .modal-header {border: none;}

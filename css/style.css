@@ -150,9 +150,12 @@ a:hover{color:#e82426}
     .pop-ft-text{float:right;margin:13px 13px 0;background: #fff;width:494px;height: 180px; }
     .pop-ft-ftit{font-size: 14px;background: #2f3688;color:#fff;text-transform:uppercase;height: 33px;line-height: 33px;padding: 0 10px}
     .pop-ft-text textarea{width:472px;height: 132px;border:#fff solid 1px;padding:10px;font-family: arial;resize:none;}
-    .pop-ft-check{color:#2f3688;font-size: 14px;text-transform:uppercase;position: absolute;right:30px;top:340px;}
+    .pop-ft-check{cursor:pointer;color:#2f3688;font-size: 14px;text-transform:uppercase;position: absolute;right:30px;top:340px;background: url(../images/facebook_checkbox.gif) no-repeat 0 4px;padding:0 0 0 18px;}
+    .pop-ft-check.checked {background-position:0 -68px;}
     .pop-ft-icon{background: url('../images/pop_fticon.png') no-repeat;width:70px;height: 70px;position: absolute;left:28px;bottom:27px;}
-    .pop-ft-btn{background: url('../images/pop_barbtn.gif') no-repeat center;width:96px;height:39px;right:27px;bottom:28px;position: absolute;cursor: pointer}
+    .pop-ft-btn{background: url('../images/pop_barbtn.gif') no-repeat center top;width:96px;height:39px;right:27px;bottom:35px;position: absolute;cursor: pointer}
+    .pop-ft-btn.disabled {cursor:default;background-position:bottom;}
+    .pop-ft-submitting {display:none;position:absolute;right:40px;bottom:14px;color:#fbea38;}
 
 #fileupload {cursor: pointer;}
     .facebook-post-img-wrap {position: relative;float:left;margin:10px 0 0 18px;}
@@ -171,8 +174,8 @@ a:hover{color:#e82426}
     .poptxt-pic .pop-rleft-btn{position: absolute;bottom: 1px;right: 0;z-index: 1;color: #FFF;background:url(../images/resize_icon.png) no-repeat;width:23px;height:23px;font-size:0;}
     .poptxt-pic .pop-zoomout-btn {background-position: -16px -14px;right: 29px;cursor: pointer;}
     .poptxt-pic .pop-zoomin-btn {background-position: -39px -13px;right: 1px;cursor: pointer;}
-    .facebook-post-img-wrap input[type="file"] {position: absolute;top: 0;right: 0;margin: 0;opacity: 0;-ms-filter: 'alpha(opacity=0)';font-size: 200px;direction: ltr;cursor: pointer;}
-
+    .facebook-post-img-wrap input[type="file"] {position: absolute;top: 0;right: 0;margin: 0;opacity: 0;-ms-filter: 'alpha(opacity=0)';font-size: 200px;height:200px;direction: ltr;cursor: pointer;}
+    .facebook-post-success {display:none;margin-top:200px;color:#fbea38;text-align: center;font-size:30px;text-transform: uppercase;}
 
 
 
