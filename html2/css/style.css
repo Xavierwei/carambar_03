@@ -102,8 +102,8 @@ a:hover{color:#e82426}
     .share-fb{position: absolute;left:50%;margin-left:-385px;top:16px;background: url('../images/sharefb.png') no-repeat;width:243px;height: 252px}
         .share-fbbtn{display: block;background: url('../images/btn_fb.png') no-repeat;width:221px;height: 35px;margin: 200px auto 0}
     .share-t{position: absolute;width:190px;left:50%;margin-left:-142px;top:16px;background: url('../images/sharet.png') no-repeat;width:192px;height: 132px;padding:120px 42px 0;}
-        .share-txt{width:190px;height:25px;border:0;background: none}
-        .share-t-num{text-align: right;font-size: 14px;padding:8px 0}
+        .share-txt{width:190px;height:25px;border:0;background: none;position: absolute;}
+        .share-t-num{text-align: right;font-size: 14px;padding:45px 0 10px}
         .share-tbtn{display: block;margin:12px auto 0;background: url('../images/btn_t.png') no-repeat;width:105px;height: 34px;}
     .share-i{position: absolute;width:220px;left:50%;margin-left:134px;top:16px;background: url('../images/sharei.png') no-repeat;width:219px;height: 52px;padding:200px 16px;}
         .share-iandroid{display: block;background: url('../images/btn_iandroid.png') no-repeat;width:104px;height: 36px;float:left}
@@ -132,7 +132,7 @@ a:hover{color:#e82426}
 
 /* POP Used
 ================================================================================================= */
-.popshare{position: fixed;z-index: 20;background: #000;opacity: 0.5;top:0;bottom:0;left:0;right:0}
+.popshare{position: fixed;z-index: 20;background: #000;opacity: 0.5;filter:alpha(opacity=50);top:0;bottom:0;left:0;right:0}
 .pop{position: fixed;z-index: 21;top:50%;left:50%}
 .pop-yt{background:url('../images/pop_ytbg.png') no-repeat;width: 824px;height: 481px;margin: -255px 0 0 -427px;padding:30px 0 0 30px}
     .pop-yt-com{width:777px;height: 432px;padding: 10px;background: #b3b3b3}
