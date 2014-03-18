@@ -1,4 +1,4 @@
 <?php
-	header("Location: api/admin/index",true,303);
+	header("Location: admin/index",true,303);
 	die();
 ?>
