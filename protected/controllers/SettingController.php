@@ -101,7 +101,7 @@ class SettingController extends Controller
             if(!$item)
                 StatusSend::_sendResponse(200,StatusSend::error('end', 1026)); //获取不到val数据
             else
-                StatusSend::_sendResponse(200, StatusSend::success('success',2010,strtotime($item))); //获取val数据成功
+                StatusSend::_sendResponse(200, StatusSend::success('success',2010,$item)); //获取val数据成功
 		}
 	}
 
@@ -119,7 +119,7 @@ class SettingController extends Controller
             if(!$item)
                 StatusSend::_sendResponse(200,StatusSend::error('end', 1027)); //设置val数据失败
             else
-                StatusSend::_sendResponse(200, StatusSend::success('success',2011,strtotime($item))); //设置val数据成功
+                StatusSend::_sendResponse(200, StatusSend::success('success',2011,$item)); //设置val数据成功
 		}
 	}
 }
