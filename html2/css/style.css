@@ -179,6 +179,7 @@ a:hover{color:#e82426}
 /* Mobile Used
 ================================================================================================= */
 @media screen and (max-width:640px){
+    body{overflow-x:hidden;}
 /**/
     .header{background: url('../mobileimg/hdbg.png') no-repeat;height: 88px}
     .page{width:640px;overflow: hidden;}
@@ -196,8 +197,12 @@ a:hover{color:#e82426}
     .videotxt-item span{line-height: 999em;overflow: hidden;height: 10px;}
     .line4{height: 0;overflow: hidden}
     .videolist-tit2{background-image: url('../mobileimg/videolist_tit2.png');width: 600px;height: 60px;margin-left:-310px}
+    .videolist-tit{}
+    .videolist,
     .videolist2{background-image: url('../mobileimg/videolist2.jpg') ;height: 704px;padding: 30px 0 0;position: relative;}   
-    .videolistshare2{background-image: none}
+    .videolist{margin-top:50px;}
+    .videolistshare,
+    .videolistshare2{background-image: none;height: 704px}
     .video-con{background:#eb212e;height:590px;width:590px;overflow: hidden}
     .videolist-pro{display: none}
     .videolist-item{width:402px;height: 270px;font-size: 30px;margin:0 0 30px 90px}
@@ -212,6 +217,34 @@ a:hover{color:#e82426}
     .phoitem{width:156px;height: 156px;}
     .phoitem img{width:156px;height: 156px;}
     .line-com3{background:#ffeb00 url('../mobileimg/line_com3.png') no-repeat center;width: 380px;height: 65px;margin: 0 auto}
+
+.sec-blue{background: url('../mobileimg/sec1_blue.png') repeat-x top ;height: 840px}
+    .sec-bluepho{background: url('../mobileimg/sec1_bluepho1.png') no-repeat;width: 469px;height:274px;top:16px;left:86px;}
+    .sec-bluenum{background: url('../mobileimg/sec1_bluepho2.png') no-repeat;width: 507px;height:201px;top:320px;left:72px;}
+    .sec-bluetime{background: url('../mobileimg/sec1_bluepho3.png') no-repeat;width: 416px;height:287px;top:553px;left:145px;}
+
+
+    .img1{}
+    .img2{}
+    .img3{display: none}
+
+.share{background:none;width:560px;height: 280px;margin: 0 auto}
+    .share-fb{top:0;left:0;background: url('../mobileimg/sharefb.png') no-repeat;width:562px;height:73px;margin: 0}
+        .share-fbbtn{display: block;background: url('../mobileimg/btn_fb.png') no-repeat;width:180px;height: 28px;position: absolute;margin: 0;right:20px;top:22px;}
+    .share-t{width:560px;left:0;margin-left:0px;top:73px;background: url('../mobileimg/sharet.png') no-repeat;height: 117px;padding:0;}
+        .share-txt{width:300px;height:45px;border:0;background: none;position: absolute;top:52px;left:78px;}
+        .share-t-num{display: none}
+        .share-tbtn{display: block;margin:0;background: url('../mobileimg/btn_t.png') no-repeat;width:147px;height: 47px;position: absolute;right: 15px;top: 35px}
+    .share-i{width:560px;left:0;margin-left:0;top:190px;background: url('../mobileimg/sharei.png') no-repeat;height:72px;padding:0;}
+        .share-iandroid{display: block;background: url('../mobileimg/btn_iandroid.png') no-repeat;width:104px;height: 36px;position: absolute;right:140px;top:20px;}
+        .share-iios{display: block;background: url('../mobileimg/btn_iios.png') no-repeat;width:104px;height: 36px;position: absolute;top:20px;right:20px;}
+
+.tshirttit{background: url('../mobileimg/tshirttit.png') no-repeat top left;height: 85px;margin: 18px auto 0}
+
+
+.tshirt{height: 245px;width:627px;margin: 8px auto 0;position: relative;}
+    .tshirt1{background: url('../mobileimg/tshirt1.png') no-repeat top center;height: 119px;width:627px;position: absolute;top:21px;left:4px}
+    .tshirt2{background: url('../mobileimg/tshirt2.png') no-repeat top center;height: 197px;width:314px;position: absolute;top:2px;left:171px;}
 
 
 }
