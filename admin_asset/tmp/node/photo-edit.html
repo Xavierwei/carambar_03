@@ -1,0 +1,11 @@
+<div class="photo-edit">
+	<div class="photo-wrap">
+		<img ng-src="{{node.file | originPhoto}}" photoload />
+	</div>
+	<a href="javascript:;" class="zoomout-btn opt-btn" >+</a>
+	<a href="javascript:;" class="zoomin-btn opt-btn" >-</a>
+</div>
+<div class="modal-footer">
+	<button class="btn" ng-click="submit()">Submit</button>
+    <button class="btn" ng-click="cancel()">Cancel</button>
+</div>
