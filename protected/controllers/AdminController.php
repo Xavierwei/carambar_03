@@ -54,7 +54,10 @@ class AdminController extends Controller {
         }
         else //管理员
         {
-            Yii::app()->cache->flush(); //清理缓存
+           if(Yii::app()->FileCache->flush()) //清理缓存
+               StatusSend::_sendResponse(200, StatusSend::success('success',2022)); //修改数据库成功
+           else
+               StatusSend::_sendResponse(200, StatusSend::error('end', 1028)); //缓存清除失败
         }
     }
 }

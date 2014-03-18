@@ -31,6 +31,7 @@ end:1024 srtool 邮件发送失败
 end:1025 setting countdown 获取不到时间
 end:1026 setting 获取不到val数据
 end:1027 setting 设置val数据失败
+end:1028 admin 缓存清除失败
 
 success:2001 获取challenge列表成功
 success:2002 修改challenge 投票次数成功
@@ -43,3 +44,4 @@ success:2008 drtool 邮件发送成功
 success:2009 setting 倒计时获取成功
 success:2010 setting 获取val数据成功
 success:2011 setting 设置val数据成功
+success:2022 admin 清理文件缓存成功
