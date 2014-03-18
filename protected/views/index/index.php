@@ -308,12 +308,20 @@
 			<span>j'ai lu et j'accepte le règlement du jeu</span>
 		</div>
 		<div class="pop-ft-icon"></div>
-		<div class="pop-ft-btn" data-a="submit-facebook"></div>
+		<div class="pop-ft-btn" data-a="submit_facebook"></div>
 	</div>
 </script>
 <!-- #facebook-post-tpl -->
 
+<!-- #photowall-item-tpl -->
+<script type="text/tpl" id="photowall-item-template">
+	<a href="photowall.php#/nid/{{nid}}" class="phoitem">
+		<img src="./{{thumbnail}}">
+	</a>
+</script>
+<!-- /youtube-player-tpl -->
 
+<?php if($phase == 3 || $phase == 4):?>
 <!-- #send-invitation-tpl -->
 <script type="text/tpl" id="send-invitation-template">
 	<div class="pop pop-bar">
@@ -326,7 +334,6 @@
 </script>
 <!-- #send-invitation-tpl -->
 
-
 <!-- #send-invitation-tpl -->
 <script type="text/tpl" id="videotxt-item-template">
 	<div class="videotxt-item">
@@ -336,12 +343,4 @@
 	</div>
 </script>
 <!-- #send-invitation-tpl -->
-
-
-<!-- #photowall-item-tpl -->
-<script type="text/tpl" id="photowall-item-template">
-	<a href="photowall.php#/nid/{{nid}}" class="phoitem">
-		<img src="./{{thumbnail}}">
-	</a>
-</script>
-<!-- /youtube-player-tpl -->
+<?php endif;?>

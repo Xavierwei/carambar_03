@@ -43,7 +43,7 @@ return array(
 			// Provide a custom name for the session id to differentiate it
 			// from the default PHPSESSID
 			// Cannot use dots in the session id :(
-			'autoStart' => true,
+			//'autoStart' => true,
 			'timeout' => 1440,
 			'cookieMode' => 'only',
 		),
