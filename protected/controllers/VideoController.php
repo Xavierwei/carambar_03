@@ -138,7 +138,7 @@ class VideoController extends Controller {
 //        if(!isset($_POST['url']))
 //            StatusSend::_sendResponse(200, StatusSend::error('end', 1019) ); //未传入url参数
 
-        if (Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
+        if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
         {
             StatusSend::_sendResponse(200, StatusSend::error('end', 1015)); //没有权限进行此操作
         }
