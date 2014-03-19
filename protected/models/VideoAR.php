@@ -21,7 +21,7 @@ class VideoAR extends CActiveRecord{
         // will receive user inputs.
         return array(
             array('url, title, thumbnail, datetime, status, position, mid', 'required','on'=>'create'),
-            array('status, position', 'numerical', 'integerOnly'=>true),
+            array('status, position', 'numerical','ribbon', 'integerOnly'=>true),
             array('url, title, thumbnail', 'length', 'max'=>255),
             array('datetime', 'length', 'max'=>11),
             array('mid', 'length', 'max'=>50),
@@ -29,7 +29,7 @@ class VideoAR extends CActiveRecord{
             array('phase', 'length', 'max'=>30),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('vid, url, title, thumbnail, datetime, status, position, mid, rank,phase', 'safe', 'on'=>'search'),
+            array('vid, url, title, thumbnail, datetime, status, position, mid, rank,phase,ribbon', 'safe', 'on'=>'search'),
         );
     }
 
@@ -59,7 +59,8 @@ class VideoAR extends CActiveRecord{
             'position' => 'Position',
             'mid' => 'Mid',
             'rank' => 'Rank',
-            'phase' => '阶段',
+            'phase' => 'Phase',
+            'ribbon' => 'Ribbon',
         );
     }
 
