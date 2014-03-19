@@ -1,0 +1,11 @@
+<div class="videos-list-wrap">
+	<ul node class="videos-list">
+		<li nodeli ng-repeat="video in videos">
+			<span>{{video.title}}</span>
+			<span>{{video.mid}}</span>
+			<span>{{video.position}}</span>
+			<span><a ng-href="#video/edit/{{video.vid}}">edit</a></span>
+            <span ng-click="delete(video)">delete</span>
+		</li>
+	</ul>
+</div>

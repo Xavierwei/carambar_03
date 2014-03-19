@@ -11,12 +11,13 @@ var SGWallAdmin = angular.module('SGWallAdmin', [
   'SGWallAdmin.controllers'
 ]).
 config(function($routeProvider,$httpProvider) {
-	var ROOT = '/carambar_03/admin_asset/';
+	var ROOT = '/carambar/admin_asset/';
     $routeProvider.when('/node', {templateUrl: ROOT +'tmp/node/list.html', controller: 'NodeCtrList'});
     $routeProvider.when('/node/:flagged', {templateUrl: ROOT +'tmp/node/list.html', controller: 'NodeCtrList'});
     $routeProvider.when('/comment', {templateUrl: ROOT +'tmp/comment/list.html', controller: 'CommentCtrList'});
     $routeProvider.when('/video/create', {templateUrl: ROOT +'tmp/video/create.html', controller: 'VideoCtrCreate'});
 	$routeProvider.when('/video', {templateUrl: ROOT +'tmp/video/list.html', controller: 'VideoCtrList'});
+	$routeProvider.when('/video/phase', {templateUrl: ROOT +'tmp/video/phase.html', controller: 'VideoCtrPhase'});
     $routeProvider.when('/video/edit/:vid', {templateUrl: ROOT +'tmp/video/edit.html', controller: 'VideoCtrEdit'});
     $routeProvider.when('/settings', {templateUrl: ROOT +'tmp/settings/list.html', controller: 'SettingsCtrList'});
     $routeProvider.when('/comment/:flagged', {templateUrl: ROOT +'tmp/comment/list.html', controller: 'CommentCtrList'});

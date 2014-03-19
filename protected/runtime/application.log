@@ -581,3 +581,31 @@ Stack trace:
 REQUEST_URI=/carambar_03/index.php/setting/praiseResult?_=1395233396849
 HTTP_REFERER=http://lily.local:8888/carambar_03/
 ---
+2014/03/19 17:43:10 [error] [php] Memcache::get(): Server 127.0.0.1 (tcp 11211) failed with: Connection refused (61) (/Applications/MAMP/htdocs/carambar/yii/framework/caching/CMemCache.php:149)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CUrlManager.php(219): CMemCache->get()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/base/CModule.php(387): CUrlManager->init()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(522): CWebApplication->getComponent()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/19 17:43:21 [error] [exception.CException] exception 'CException' with message 'Property "UserAR.screen_name" is not defined.' in /Applications/MAMP/htdocs/carambar/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('screen_name')
+#1 /Applications/MAMP/htdocs/carambar/protected/components/UserIdentity.php(25): CActiveRecord->__get('screen_name')
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/UserController.php(20): UserIdentity->authenticate()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): UserController->actionLogin()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#11 {main}
+REQUEST_URI=/carambar/user/login
+HTTP_REFERER=http://localhost/carambar/admin/
+---

@@ -30,16 +30,29 @@ SGWallAdminController
     })
 
     .controller('VideoCtrEdit', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, LikeService, FlagService, ASSET_FOLDER) {
-        VideoService.getById($routeParams.vid, function(data){
-            $scope.video = data.data;
-        });
+		VideoService.getById($routeParams.vid, function(data){
+			$scope.video = data.data;
+		});
 
-        $scope.save = function(video) {
-            VideoService.update(video, function(data){
-                console.log(data);
-            });
-        }
-    })
+		$scope.save = function(video) {
+			VideoService.update(video, function(data){
+				console.log(data);
+			});
+		}
+	})
+
+
+	.controller('VideoCtrPhase', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, LikeService, FlagService, ASSET_FOLDER) {
+		VideoService.list(function(data){
+			$scope.videos = data.data;
+		});
+
+		$scope.save = function(video) {
+			VideoService.update(video, function(data){
+				console.log(data);
+			});
+		}
+	})
 
 
 
