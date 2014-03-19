@@ -21,7 +21,7 @@ class VideoAR extends CActiveRecord{
         // will receive user inputs.
         return array(
             array('url, title, thumbnail, datetime, status, position, mid', 'required','on'=>'create'),
-            array('status, position', 'numerical','ribbon', 'integerOnly'=>true),
+            array('status, position,ribbon', 'numerical', 'integerOnly'=>true),
             array('url, title, thumbnail', 'length', 'max'=>255),
             array('datetime', 'length', 'max'=>11),
             array('mid', 'length', 'max'=>50),
