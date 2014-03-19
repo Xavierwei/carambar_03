@@ -248,5 +248,18 @@ a:hover{color:#e82426}
     .tshirt1{background: url('../mobileimg/tshirt1.png') no-repeat top center;height: 119px;width:627px;position: absolute;top:21px;left:4px}
     .tshirt2{background: url('../mobileimg/tshirt2.png') no-repeat top center;height: 197px;width:314px;position: absolute;top:2px;left:171px;}
 
+.home-section1{margin:0;left:0}
+.home-map{display: none}
+.home-nav{background: url('../mobileimg/home_nav.png') no-repeat;width:640px;height: 138px;position:static;top:0;left:0;margin-left:0}
+    .home-tips{position: absolute;width: 480px;height: 180px;background: url('../mobileimg/home_tips.png') no-repeat;top:90px;left:130px}
+    .home-man{left:-65px;top:20px}
+    .home-tit{background: url('../mobileimg/home_tit2.jpg') no-repeat;top:320px;left: 0;height: 182px;}
+.home-bottom{top:680px;background: url('../mobileimg/home_bottom.jpg') no-repeat;width: 600px;height: 325px;margin-left: -300px}
+.home-star{margin-top:470px;}
+.home-btn2{left:230px;top:245px;}
+.home-man2{top:95px}
+.home-tit2{left:240px}
+
+
 
 }
