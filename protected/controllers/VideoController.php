@@ -68,6 +68,30 @@ class VideoController extends Controller {
          }
         else //管理员
         {
+            $phase= $item->phase;
+            $elements = explode(",", $phase); //字符串转数组
+            //是否删除phase
+            if($_POST['del']!='1')
+            {
+                //不存在，插入新增元素
+                if(!in_array( $_POST['phase'],$elements))
+                    $elements[]=$_POST['phase'];
+            }
+            else //删除 phase
+            {
+                foreach($elements as $k=>$v)
+                {
+                    if($v==$_POST['phase'])
+                    {
+                        //删除元素
+                        array_splice($elements, $k, 1);
+                        break;
+                    }
+                }
+            }
+
+            $_POST['phase']=implode(",",$elements);
+
             $item->attributes=$_POST; //赋值
 //            $url=$_POST['url']; //获取youtube url
 //            $mid=VideoAR::model()->getYoutubeId($url); //获取youtube id

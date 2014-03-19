@@ -26,6 +26,7 @@ class VideoAR extends CActiveRecord{
             array('datetime', 'length', 'max'=>11),
             array('mid', 'length', 'max'=>50),
             array('rank', 'length', 'max'=>6),
+            array('phase', 'length', 'max'=>30),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('vid, url, title, thumbnail, datetime, status, position, mid, rank,phase', 'safe', 'on'=>'search'),
