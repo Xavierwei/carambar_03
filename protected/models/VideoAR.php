@@ -102,6 +102,7 @@ class VideoAR extends CActiveRecord{
 	 */
 	public function getYoutubeId($url) {
 		$params = NodeAR::model()->getUrlParams($url);
+		print_r($params);
 		if (isset($params) && isset($params['v'])) {
 			return $params['v'];
 		}
