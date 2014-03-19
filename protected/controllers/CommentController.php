@@ -203,20 +203,7 @@ class CommentController extends Controller {
 
 		// search by user email
 		if (Yii::app()->user->checkAccess("isAdmin") && $email) {
-			$queryUser = new CDbCriteria();
-			$queryUser->addSearchCondition("company_email", $email, true);
-			$queryUser->addSearchCondition("personal_email", $email, true, 'OR');
-			$users = UserAR::model()->findAll($queryUser);
-			if(count($users) > 0) {
-				foreach($users as $user) {
-					$usersList[] = $user->uid;
-				}
-				$strUsersList = implode(',', $usersList);
-				$query->addCondition(CommentAR::model()->getTableAlias().".uid in (".$strUsersList.")", "AND");
-			}
-			else {
-				$this->responseJSON(array(), "success");
-			}
+			$query->addSearchCondition("email", $email);
 		}
 
 		if($flagged) {
@@ -236,10 +223,9 @@ class CommentController extends Controller {
 		foreach ($comments as $comment) {
 			$commentdata            = $comment->attributes;
 			$commentdata['content'] = htmlentities($commentdata['content']);
-			$country                = $comment->user? $comment->user->country: NULL;
-			$user                   = $comment->user? $comment->user->attributes: NULL;
-			$user["country"]        = $country ? $country->attributes: NULL;
-			$commentdata["user"]    = $comment->user? $comment->user->getOutputRecordInArray($user): NULL;
+			if (!Yii::app()->user->checkAccess("isAdmin")) {
+				unset($commentdata['email']);
+			}
 			if ($shownode) {
 				$commentdata['node'] = NodeAR::model()->findByPk($comment->attributes['nid']);
 			}

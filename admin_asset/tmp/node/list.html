@@ -7,6 +7,7 @@
 		            <button type="button" class="btn btn-default" ng-model="filter.type" btn-radio="'all'">All</button>
 		            <button type="button" class="btn btn-default" ng-model="filter.type" btn-radio="'photo'">Photo</button>
 		            <button type="button" class="btn btn-default" ng-model="filter.type" btn-radio="'video'">Video</button>
+                    <button type="button" class="btn btn-default" ng-model="filter.type" btn-radio="'text'">Text</button>
 	            </div>
             </div>
 
@@ -19,25 +20,9 @@
 	            </div>
             </div>
 
-            <div class="btn-group">
-	            <label>Country</label>
-	            <div>
-	                <button type="button" class="btn btn-default dropdown-toggle dropdown-country" data-toggle="dropdown">
-	                    {{filter.country.country_name}} <span class="caret"></span>
-	                </button>
-	                <ul class="dropdown-menu" role="menu">
-	                    <li ng-click="filterCountry({country_name:'All Country', country_id:''})"><a>All country</a></li>
-	                    <li ng-repeat="country in countries" ng-click="filterCountry(country)"><a>{{country.country_name}}</a></li>
-	                </ul>
-	            </div>
-            </div>
+
         </div>
         <div class="new-row advance-row">
-            <div class="btn-group">
-                <label>Hashtag</label>
-                <input search-input type="text" class="form-control" ng-model="filter.hashtag" />
-            </div>
-
             <div class="btn-group">
                 <label>Email address</label>
                 <input search-input type="text" class="form-control" ng-model="filter.email" />
@@ -68,7 +53,7 @@
 	            <div class="name"><strong>{{node.screen_name}}</strong></div>
 	        </div>
 	        <div class="clear"></div>
-	        <a href="../../#/nid/{{node.nid}}" class="open" target="_blank">Open</a>
+	        <a href="../photowall.php#/nid/102/{{node.nid}}" class="open" target="_blank">Open</a>
 	        <div class="clear"></div>
 	    </li>
 	</ul>

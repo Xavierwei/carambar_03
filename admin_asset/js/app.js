@@ -17,6 +17,7 @@ config(function($routeProvider,$httpProvider) {
     $routeProvider.when('/comment', {templateUrl: ROOT +'tmp/comment/list.html', controller: 'CommentCtrList'});
     $routeProvider.when('/video/create', {templateUrl: ROOT +'tmp/video/create.html', controller: 'VideoCtrCreate'});
 	$routeProvider.when('/video', {templateUrl: ROOT +'tmp/video/list.html', controller: 'VideoCtrList'});
+    $routeProvider.when('/video/edit/:vid', {templateUrl: ROOT +'tmp/video/edit.html', controller: 'VideoCtrEdit'});
     $routeProvider.when('/settings', {templateUrl: ROOT +'tmp/settings/list.html', controller: 'SettingsCtrList'});
     $routeProvider.when('/comment/:flagged', {templateUrl: ROOT +'tmp/comment/list.html', controller: 'CommentCtrList'});
     $routeProvider.otherwise({redirectTo: '/node'});

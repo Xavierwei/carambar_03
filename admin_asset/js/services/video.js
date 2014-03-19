@@ -10,6 +10,16 @@ SGWallAdminServices.factory( 'VideoService', function($http, ROOT) {
             });
         },
 
+        update: function(video, success) {
+            $http.post(ROOT+'/video/update',video)
+                .success(function(data) {
+                    success(data);
+                })
+                .error(function() {
+
+                });
+        },
+
         'delete': function(type, id, success) {
             if(type == 'node') {
                 $http.post(ROOT+'/flag/deleteAll',{nid:id})
@@ -40,7 +50,20 @@ SGWallAdminServices.factory( 'VideoService', function($http, ROOT) {
 				})
 				.error(function() {
 				});
-		}
+		},
+
+        getById: function(vid, success) {
+            console.log(vid);
+            $http.get(ROOT+'/video/view',{
+                cache: false,
+                params: {vid: vid}
+            })
+            .success(function(data) {
+                success(data);
+            })
+            .error(function() {
+            });
+        }
 
 
     };

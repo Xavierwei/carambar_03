@@ -25,6 +25,7 @@ a:hover{color:#e82426}
 
 /* Header Used
 ================================================================================================= */
+.homepage{background:#ffeb00}
 .header{height: 164px;background: url('../images/hdbg.png') no-repeat bottom center;width:100%}
     .hdcontent{width:1000px;margin: 0 auto;position: relative;}
         .nav1{background: url('../images/nav.png') no-repeat 0 0;width: 120px;height: 25px;position: absolute;top:27px;left:50%;margin: 0 0 0 -300px}
@@ -159,12 +160,13 @@ a:hover{color:#e82426}
 .home-map{background: url('../images/home_map.jpg') no-repeat;width: 831px;height: 314px;top:64px;left:50%;margin-left:-415px;position: absolute;}
 .home-nav{background: url('../images/home_nav.png') no-repeat;width:919px;height: 165px;position: absolute;top:22px;left:50%;margin-left:-459px}
 .home-section1{position: absolute;top:64px;left:50%;margin-left:-415px;}
-    .home-man{position: absolute;width: 235px;height: 288px;background: url('../images/home_man.png') no-repeat;top:10px;left:18px}
-    .home-tips{position: absolute;width: 430px;height: 115px;background: url('../images/home_tips.png') no-repeat;top:92px;left:212px}
-    .home-tit{position: absolute;width: 600px;height: 73px;background: url('../images/home_tit.jpg') no-repeat;top:220px;left:132px}
-    .home-star{background: #fff url('../images/home_starbg.png') repeat-x left;height: 43px;width:831px;left:0;top:305px;position: absolute;}
-        .home-btn{display:block;background:#fff url('../images/home_btn1.png') no-repeat center;width:190px;height: 40px;margin: 2px auto 0}
-.home-bottom{background: url('../images/home_bottom.jpg') no-repeat;width: 830px;height: 198px;position: absolute;left:50%;top:444px;margin-left:-415px}
+    .home-man{position: absolute;width: 232px;height: 290px;background: url('../images/home_man.png') no-repeat;top:10px;left:10px}
+    .home-tips{position: absolute;width: 550px;height: 115px;background: url('../images/home_tips.png') no-repeat;top:92px;left:200px}
+    .home-tit{position: absolute;width: 829px;height: 85px;background: url('../images/home_tit2.jpg') no-repeat;top:250px;left:0}
+/*    .home-star{background: #fff url('../images/home_starbg.png') repeat-x left;height: 43px;width:831px;left:0;top:305px;position: absolute;}
+        .home-btn{display:block;background:#fff url('../images/home_btn1.png') no-repeat center;width:190px;height: 40px;margin: 2px auto 0}*/
+    .home-star{background:url('../images/home_star2.png') repeat-x center;height:19px;margin-top:420px}
+.home-bottom{background: url('../images/home_bottom.jpg') no-repeat;width: 830px;height: 218px;position: absolute;left:50%;top:484px;margin-left:-415px}
     .home-tit2{background: url('../images/home_tit2.png') no-repeat;width: 125px;height: 95px;position: absolute;left: 352px;top:-27px}
     .home-btn2{background: url('../images/home_btn2.png') no-repeat;width: 249px;height: 38px;position: absolute;left: 350px;top:150px}
     .home-man2{background: url('../images/home_man2.png') no-repeat;width: 110px;height: 190px;position: absolute;right: -10px;top:0;}
@@ -245,6 +247,19 @@ a:hover{color:#e82426}
 .tshirt{height: 245px;width:627px;margin: 8px auto 0;position: relative;}
     .tshirt1{background: url('../mobileimg/tshirt1.png') no-repeat top center;height: 119px;width:627px;position: absolute;top:21px;left:4px}
     .tshirt2{background: url('../mobileimg/tshirt2.png') no-repeat top center;height: 197px;width:314px;position: absolute;top:2px;left:171px;}
+
+.home-section1{margin:0;left:0}
+.home-map{display: none}
+.home-nav{background: url('../mobileimg/home_nav.png') no-repeat;width:640px;height: 138px;position:static;top:0;left:0;margin-left:0}
+    .home-tips{position: absolute;width: 480px;height: 180px;background: url('../mobileimg/home_tips.png') no-repeat;top:90px;left:130px}
+    .home-man{left:-65px;top:20px}
+    .home-tit{background: url('../mobileimg/home_tit2.jpg') no-repeat;top:320px;left: 0;height: 182px;}
+.home-bottom{top:680px;background: url('../mobileimg/home_bottom.jpg') no-repeat;width: 600px;height: 325px;margin-left: -300px}
+.home-star{margin-top:470px;}
+.home-btn2{left:230px;top:245px;}
+.home-man2{top:95px}
+.home-tit2{left:240px}
+
 
 
 }

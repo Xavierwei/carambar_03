@@ -89,12 +89,14 @@ a{text-decoration:none;color:#666}
     .pagination {margin-left:10px;}
     .pagination li {cursor: pointer;}
 
-.comments-list li {background:#eee;float: left;margin:10px;position: relative;font-size:0.9em;width:45%;padding:10px;-webkit-box-shadow: 0 0 15px 0 #000000;box-shadow: 0 0 15px 0 #000000;}
+.comments-list li {background:#eee;float: left;margin:10px;position: relative;font-size:0.9em;width:45%;height:120px;padding:10px;-webkit-box-shadow: 0 0 15px 0 #000000;box-shadow: 0 0 15px 0 #000000;}
     .comments-filter {margin:30px 10px 20px 10px;}
     .comments-list .image {float:left;}
     .comments-list .content {margin-left:120px;}
+    .comments-list .thumbnail-false .content {margin-left:0px;}
     .comments-list .date {color:#999;}
-    .comments-list .user {margin:6px 0 6px 0;line-height: 160%;height:37px;}
+    .comments-list .user {margin:6px 0 0 0;line-height: 160%;height:37px;}
+    .comments-list .email {float: left;margin-right:15px;}
     .comments-list .avatar {float: left;margin:0;}
     .comments-list .avatar img {border-radius: 33px;-webkit-border-radius: 33px;-moz-border-radius: 33px;-o-border-radius: 33px;-ms-border-radius: 33px;}
     .comments-list .content img {float: left;margin-right:15px;padding:5px;border:1px solid #ccc;background: #fff;}
