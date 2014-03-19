@@ -13,12 +13,24 @@ class VideoController extends Controller {
             $_POST['pageSize']=8;
         if(!isset($_POST['pages']))			//未传入页数,使用默认页数为1
             $_POST['pages']=1;
-        if(!isset($_POST['status']))			//未传入状态,使用默认状态为1
-            $_POST['status']=1;
-        // get phase
-        $phase = SettingAR::model()->getValue('phase');
-        if(!isset($phase))
-            StatusSend::_sendResponse(200, StatusSend::error('end', 1032)); //没有phase，存在。不显示
+
+        if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
+        {
+            if(!isset($_POST['status']))			//未传入状态,使用默认状态为1
+                $_POST['status']=1;
+            // get phase
+            $phase = SettingAR::model()->getValue('phase');
+            if(!isset($phase))
+                StatusSend::_sendResponse(200, StatusSend::error('end', 1032)); //没有phase，存在。不显示
+        }
+        else
+        {
+            $_POST['status']=NULL;
+            $phase=NULL;
+        }
+
+
+
 
         $videoList=VideoAR::model()->getVideoList($_POST['position'],$_POST['status'], $_POST['pageSize'],$_POST['pages'],$phase);
 

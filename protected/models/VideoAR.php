@@ -119,8 +119,12 @@ class VideoAR extends CActiveRecord{
 
 	public function getVideoList($position=NULL,$status=1,$limit=8,$offset=1,$phase) {
 		$query = new CDbCriteria();
-		$query->addCondition('status=:status');
-		$query->params[':status'] = $status;
+
+        if(NULL!=$status)
+        {
+            $query->addCondition('status=:status');
+            $query->params[':status'] = $status;
+        }
 
         if(NULL!=$position) //为空显示全部
         {
@@ -128,8 +132,11 @@ class VideoAR extends CActiveRecord{
             $query->params[':position'] =$position;
         }
 
-        $query->addCondition('phase LIKE :phase');
-        $query->params[':phase']='%'.$phase.'%';
+        if(NULL!=$phase)
+        {
+            $query->addCondition('phase LIKE :phase');
+            $query->params[':phase']='%'.$phase.'%';
+        }
 
         $query->order='rank ASC'; //按照排序
         $query->limit=  $limit; //每页显示条数
