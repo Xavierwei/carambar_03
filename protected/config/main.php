@@ -75,11 +75,11 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+
 			),
 		),
         "authManager" => array(
@@ -100,12 +100,9 @@ return array(
 
         "cache" => array(
 			"class" => "CMemCache",
+            'useMemcached'=>false, //使用memcache，不使用memcached
 			"servers" => array(
-				array(
-					"host" => "127.0.0.1",
-					"port" => "11211",
-					"weight" => 1
-				),
+				array("host" => "127.0.0.1","port" => "11211","weight" => 1),
 			),
 		),
         //邮件发送
