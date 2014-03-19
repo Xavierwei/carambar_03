@@ -43,6 +43,16 @@ angular.module('SGWallAdmin.filters', [])
             return ROOT_FOLDER + input;
         }
     })
+    .filter('isset' , function(){
+        return function(input) {
+            if(input) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    })
 
 	.filter('avatar', function(ROOT_FOLDER) {
 		return function(input) {

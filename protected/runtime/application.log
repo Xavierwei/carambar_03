@@ -1,0 +1,583 @@
+2014/03/19 20:14:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "video".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): CController->missingAction('video')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('video')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/video/edi...')
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/admin/video/edit/13
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/19 20:18:39 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:19:01 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (68)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:20:37 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (68)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:23:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tmp".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): CController->missingAction('tmp')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('tmp')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tmp/dialo...')
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/admin/tmp/dialog/delete.html
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/19 20:25:06 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (68)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:25:06 [error] [php] Undefined index: url (/Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php:69)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): VideoController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): VideoController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): VideoController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/video/update
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (69)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:25:25 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (68)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:25:25 [error] [php] Undefined index: url (/Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php:69)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): VideoController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): VideoController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): VideoController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/video/update
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (69)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:25:52 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (68)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:25:52 [error] [php] Undefined variable: url (/Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): VideoController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): VideoController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): VideoController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/video/update
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (80)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:25:56 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (68)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:25:56 [error] [php] Undefined variable: url (/Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php:80)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): VideoController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): VideoController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): VideoController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/video/update
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (80)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:26:08 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (68)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:27:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/19 20:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/19 20:28:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/19 20:35:18 [error] [php] Memcache::get(): Server 127.0.0.1 (tcp 11211) failed with: Connection refused (61) (/Applications/MAMP/htdocs/carambar_03/yii/framework/caching/CMemCache.php:149)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CUrlManager.php(219): CMemCache->get()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CModule.php(387): CUrlManager->init()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(522): CWebApplication->getComponent()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/node/list?page=48&orderby=datetime&previouspage=0
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/19 20:47:45 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video15_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:47:45 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video17_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:47:45 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video14_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:47:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): CController->missingAction('praiseResult')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('praiseResult')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('setting/praiseR...')
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/index.php/setting/praiseResult?_=1395233265666
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/19 20:47:49 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video14_248_132.jpg?1395233265720
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:47:49 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video15_248_132.jpg?1395233265720
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:47:49 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video17_248_132.jpg?1395233265721
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:48:41 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video14_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:48:42 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video17_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:48:42 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video15_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:48:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): CController->missingAction('praiseResult')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('praiseResult')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('setting/praiseR...')
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/index.php/setting/praiseResult?_=1395233322469
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/19 20:48:45 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video14_248_132.jpg?1395233322527
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:48:45 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video15_248_132.jpg?1395233322528
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:48:45 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video17_248_132.jpg?1395233322528
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:36 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video14_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:36 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video17_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:36 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video15_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): CController->missingAction('praiseResult')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('praiseResult')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('setting/praiseR...')
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/index.php/setting/praiseResult?_=1395233377209
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/19 20:49:40 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video14_248_132.jpg?1395233377281
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:40 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video15_248_132.jpg?1395233377282
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:40 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video17_248_132.jpg?1395233377282
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:56 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video15_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:56 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video14_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:56 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video17_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:56 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video15_248_132.jpg
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:49:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): CController->missingAction('praiseResult')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('praiseResult')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('setting/praiseR...')
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/index.php/setting/praiseResult?_=1395233396847
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/19 20:50:01 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video14_248_132.jpg?1395233396934
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:50:01 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video15_248_132.jpg?1395233396935
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:50:01 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(393): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php(470): NodeAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php(40): NodeAR->makeVideoThumbnail()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): UploadsController->missingAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): UploadsController->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03//uploads/2014/3/16/video17_248_132.jpg?1395233396935
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (96)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image_GD.php (82)
+in /Applications/MAMP/htdocs/carambar_03/protected/extensions/easyimage/drivers/Image.php (53)
+2014/03/19 20:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "praiseResult".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): CController->missingAction('praiseResult')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('praiseResult')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('setting/praiseR...')
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/index.php/setting/praiseResult?_=1395233396849
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---

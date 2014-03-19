@@ -1,0 +1,11 @@
+<form name="form" class="css-form" novalidate xmlns="http://www.w3.org/1999/html">
+    <div><img width="200" src="{{video.thumbnail | originPhoto}}"></div>
+    <div>Video Title: <input class="form-control" type="text" ng-model="video.title" name="title" required /></div>
+    <div>Video URL: {{video.url}}</div>
+    <div>Postion: <input class="form-control" type="text" ng-model="video.position" name="position" required />
+        <small>Which setion want to display</small></div>
+
+
+    <button ng-click="save(video)"
+            ng-disabled="form.$invalid || isUnchanged(video)">SAVE</button>
+</form>

@@ -2,21 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_asset/tmp/video/create.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_asset/tmp/video/edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/CommentController.php" afterPath="$PROJECT_DIR$/protected/controllers/CommentController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/VideoController.php" afterPath="$PROJECT_DIR$/protected/controllers/VideoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/css/admin.css" afterPath="$PROJECT_DIR$/admin_asset/css/admin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/app.js" afterPath="$PROJECT_DIR$/admin_asset/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/filters.js" afterPath="$PROJECT_DIR$/admin_asset/js/filters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/index/index.php" afterPath="$PROJECT_DIR$/protected/views/index/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/comment/list.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/comment/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/node/list.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/node/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/video/list.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/video/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/controllers/video.js" afterPath="$PROJECT_DIR$/admin_asset/js/controllers/video.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/services/video.js" afterPath="$PROJECT_DIR$/admin_asset/js/services/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bank_wall.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395197507793" ignored="false" />
     <file path="/controllers.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391781932373" ignored="false" />
     <file path="/partial1.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387685938508" ignored="false" />
-    <file path="/list.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393130375424" ignored="false" />
+    <file path="/list.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395233064826" ignored="false" />
     <file path="/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395113616920" ignored="false" />
     <file path="/a.dummy" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394283116798" ignored="false" />
-    <file path="/filters.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392818424824" ignored="false" />
-    <file path="/edit.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388904056923" ignored="false" />
+    <file path="/filters.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395232749708" ignored="false" />
+    <file path="/edit.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395232086986" ignored="false" />
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/hh25th/win/terms/en/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387806418329" ignored="false" />
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/hh25th/win/terms/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387806561214" ignored="false" />
     <file path="$PROJECT_DIR$/../gar_nier/psshangfengmian/m/photowall.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387809087734" ignored="false" />
@@ -26,7 +36,7 @@
     <file path="/layout.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395224079615" ignored="false" />
     <file path="$PROJECT_DIR$/../gar_nier/psshangfengmian/css/layoutIE.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387812982125" ignored="false" />
     <file path="/layoutIE.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387812979076" ignored="false" />
-    <file path="/admin.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395143421843" ignored="false" />
+    <file path="/admin.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395232874771" ignored="false" />
     <file path="/lib.controllers.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388409704965" ignored="false" />
     <file path="/popup.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388414407045" ignored="false" />
     <file path="/recent.jsons" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388668209640" ignored="false" />
@@ -47,7 +57,7 @@
     <file path="/services.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1389513023723" ignored="false" />
     <file path="/current.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388899995354" ignored="false" />
     <file path="/create.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395229959273" ignored="false" />
-    <file path="/CommentController.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395039668580" ignored="false" />
+    <file path="/CommentController.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395232578560" ignored="false" />
     <file path="/login.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391515697266" ignored="false" />
     <file path="/delete.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388908827026" ignored="false" />
     <file path="/directives.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393083668720" ignored="false" />
@@ -400,7 +410,7 @@
     <file path="$PROJECT_DIR$/../gerlain0228/css/style940.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395212258561" ignored="false" />
     <file path="/style940.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395212130681" ignored="false" />
     <file path="/SettingController.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395218295641" ignored="false" />
-    <file path="/video.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395230215574" ignored="false" />
+    <file path="/video.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395231903126" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -420,82 +430,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="photo-edit.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_asset/tmp/node/photo-edit.html">
+      <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/tmp/video/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="6" selection-start="390" selection-end="390" vertical-scroll-proportion="-6.785714">
+            <state line="1" column="24" selection-start="107" selection-end="107" vertical-scroll-proportion="-0.6785714">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_asset/tmp/video/create.html">
+      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/tmp/node/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="75" selection-start="591" selection-end="591" vertical-scroll-proportion="-5.428571">
+            <state line="13" column="35" selection-start="730" selection-end="730" vertical-scroll-proportion="-8.821428">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers.js">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="19" column="7" selection-start="904" selection-end="904" vertical-scroll-proportion="-12.892858">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_asset/js/app.js">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="113" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0">
+            <state line="255" column="0" selection-start="10151" selection-end="10151" vertical-scroll-proportion="-25.357143">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/video.js">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="30" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
+            <state line="125" column="162" selection-start="9321" selection-end="9321" vertical-scroll-proportion="0.3496701">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="node.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/node.js">
+      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/tmp/comment/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="68" selection-start="6707" selection-end="6707" vertical-scroll-proportion="0.0">
+            <state line="2" column="29" selection-start="100" selection-end="100" vertical-scroll-proportion="-1.3571428">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <file leaf-file-name="CommentController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/CommentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="10" selection-start="1923" selection-end="2190" vertical-scroll-proportion="-27.142857">
+            <state line="207" column="0" selection-start="4988" selection-end="4988" vertical-scroll-proportion="-25.107143">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="filters.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/js/filters.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.5449331">
+            <state line="19" column="26" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_asset/js/services/video.js">
+      <file leaf-file-name="admin.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/css/admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="28" selection-start="105" selection-end="110" vertical-scroll-proportion="0.0">
+            <state line="97" column="40" selection-start="6745" selection-end="6745" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -504,7 +514,7 @@
       <file leaf-file-name="VideoController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/VideoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="21" selection-start="4046" selection-end="4046" vertical-scroll-proportion="-81.42857">
+            <state line="79" column="2" selection-start="2637" selection-end="2637" vertical-scroll-proportion="-29.214285">
               <folding />
             </state>
           </provider>
@@ -528,22 +538,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/models/UserAR.php" />
-        <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
-        <option value="$PROJECT_DIR$/protected/views/index/index.php" />
-        <option value="$PROJECT_DIR$/js/lp.index.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/lp.base.js" />
-        <option value="$PROJECT_DIR$/css/layout.css" />
-        <option value="$PROJECT_DIR$/include/tpl.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/SettingController.php" />
         <option value="$PROJECT_DIR$/admin_asset/tmp/video/create.html" />
-        <option value="$PROJECT_DIR$/admin_asset/js/app.js" />
-        <option value="$PROJECT_DIR$/admin_asset/js/services/video.js" />
-        <option value="$PROJECT_DIR$/admin_asset/js/controllers/video.js" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/admin_asset/js/app.js" />
+        <option value="$PROJECT_DIR$/admin_asset/js/services/video.js" />
+        <option value="$PROJECT_DIR$/admin_asset/tmp/video/list.html" />
+        <option value="$PROJECT_DIR$/admin_asset/js/controllers/video.js" />
+        <option value="$PROJECT_DIR$/protected/controllers/VideoController.php" />
+        <option value="$PROJECT_DIR$/admin_asset/tmp/video/edit.html" />
+        <option value="$PROJECT_DIR$/admin_asset/js/filters.js" />
+        <option value="$PROJECT_DIR$/admin_asset/css/admin.css" />
+        <option value="$PROJECT_DIR$/protected/controllers/CommentController.php" />
+        <option value="$PROJECT_DIR$/admin_asset/tmp/comment/list.html" />
+        <option value="$PROJECT_DIR$/admin_asset/tmp/node/list.html" />
+        <option value="$PROJECT_DIR$/protected/views/index/index.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -681,6 +691,68 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -713,47 +785,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bank_wall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bank_wall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -918,118 +950,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="55" selection-start="9576" selection-end="9576" vertical-scroll-proportion="-12.892858">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#script#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="26" selection-start="3293" selection-end="3293" vertical-scroll-proportion="-13.821428">
+        <state line="17" column="23" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SettingController.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/services/comment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="705" selection-end="705" vertical-scroll-proportion="-15.607142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/user/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="0" selection-end="1176" vertical-scroll-proportion="-8.142858">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="113" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/node/photo-edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="390" selection-end="390" vertical-scroll-proportion="-6.785714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/video/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="75" selection-start="591" selection-end="591" vertical-scroll-proportion="-5.428571">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VideoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="21" selection-start="4046" selection-end="4046" vertical-scroll-proportion="-81.42857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/js/services/video.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="105" selection-end="110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/video.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
+        <state line="4" column="22" selection-start="187" selection-end="193" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/node.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="68" selection-start="6707" selection-end="6707" vertical-scroll-proportion="0.0">
+        <state line="136" column="27" selection-start="4470" selection-end="4470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="10" selection-start="1923" selection-end="2190" vertical-scroll-proportion="-27.142857">
+        <state line="9" column="42" selection-start="264" selection-end="264" vertical-scroll-proportion="0.15921788">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/services/node.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.5449331">
+        <state line="30" column="30" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/video/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="38" selection-start="165" selection-end="165" vertical-scroll-proportion="-2.7142856">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/video/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="24" selection-start="107" selection-end="107" vertical-scroll-proportion="-0.6785714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/filters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="26" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_asset/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="40" selection-start="6745" selection-end="6745" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/VideoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="2" selection-start="2637" selection-end="2637" vertical-scroll-proportion="-29.214285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="207" column="0" selection-start="4988" selection-end="4988" vertical-scroll-proportion="-25.107143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/comment/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="100" selection-end="100" vertical-scroll-proportion="-1.3571428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/node/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="730" selection-end="730" vertical-scroll-proportion="-8.821428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="7" selection-start="904" selection-end="904" vertical-scroll-proportion="-12.892858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="255" column="0" selection-start="10151" selection-end="10151" vertical-scroll-proportion="-25.357143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="162" selection-start="9321" selection-end="9321" vertical-scroll-proportion="0.3496701">
           <folding />
         </state>
       </provider>

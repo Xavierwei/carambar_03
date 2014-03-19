@@ -66,19 +66,19 @@ class VideoController extends Controller {
         else //管理员
         {
             $item->attributes=$_POST; //赋值
-            $url=$_POST['url']; //获取youtube url
-            $mid=VideoAR::model()->getYoutubeId($url); //获取youtube id
-            if(!VideoAR::model()->uniqueMid($mid))
-                StatusSend::_sendResponse(200, StatusSend::error('end', 1016)); //youtube mid 已经存在
-
-		    $thumbnail = NodeAR::model()->getVideoThumbnail($url, 'youtube');
-            if(!$thumbnail)
-                StatusSend::_sendResponse(200, StatusSend::error('end', 1017)); //youtube 缩略图 获取失败
-
-            $imagePath = NodeAR::model()->saveRemoteImage($thumbnail);
-            $item->mid = $mid;
-            $item->url = $url;
-            $item->thumbnail = $imagePath;
+//            $url=$_POST['url']; //获取youtube url
+//            $mid=VideoAR::model()->getYoutubeId($url); //获取youtube id
+//            if(!VideoAR::model()->uniqueMid($mid))
+//                StatusSend::_sendResponse(200, StatusSend::error('end', 1016)); //youtube mid 已经存在
+//
+//		    $thumbnail = NodeAR::model()->getVideoThumbnail($url, 'youtube');
+//            if(!$thumbnail)
+//                StatusSend::_sendResponse(200, StatusSend::error('end', 1017)); //youtube 缩略图 获取失败
+//
+//            $imagePath = NodeAR::model()->saveRemoteImage($thumbnail);
+//            $item->mid = $mid;
+//            $item->url = $url;
+//            $item->thumbnail = $imagePath;
             $item->datetime = time();
 			//$item->status = 0;
 
