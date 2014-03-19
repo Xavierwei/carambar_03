@@ -1,25 +1,13 @@
 SGWallAdminServices.factory( 'VideoService', function($http, ROOT) {
     return {
-        post: function(type, id, success) {
-            if(type == 'node') {
-                $http.post(ROOT+'/flag/post',{nid:id})
-                .success(function(data) {
-                    success(data);
-                })
-                .error(function() {
+        post: function(video, success) {
+            $http.post(ROOT+'/video/create',video)
+            .success(function(data) {
+                success(data);
+            })
+            .error(function() {
 
-                });
-            }
-            else {
-                $http.post(ROOT+'/flag/post',{cid:id})
-                .success(function(data) {
-                    success(data);
-                })
-                .error(function() {
-
-                });
-            }
-
+            });
         },
 
         'delete': function(type, id, success) {

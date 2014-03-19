@@ -6,5 +6,13 @@ SGWallAdminController
 
     })
 
+    .controller('VideoCtrCreate', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, LikeService, FlagService, ASSET_FOLDER) {
+        VideoService.post($scope.video, function(data){
+            console.log(data);
+        });
+
+    })
+
+
 
 
