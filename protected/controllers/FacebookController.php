@@ -35,7 +35,7 @@ class FacebookController extends Controller {
 			$this->facebook->setAccessToken($access_token);
 			$user_id = $this->facebook->getUser();
 			if(!$user_id) {
-				$loginUrl = $this->facebook->getLoginUrl(array('scope' => 'email', 'redirect_uri'=>FB_CALLBACK_URL));
+				$loginUrl = $this->facebook->getLoginUrl(array('scope' => 'email,publish_actions', 'redirect_uri'=>FB_CALLBACK_URL));
 				//echo "<a href='{$loginUrl}'>login</a>";
 				return $this->responseJSON($loginUrl, "success");
 			}
@@ -63,7 +63,7 @@ class FacebookController extends Controller {
 			$user_profile = $this->facebook->api('/me','GET');
 			// Create the new user if user doesn't exist in database
 			if( !$user = UserAR::model()->findByAttributes(array('name'=>'f_'.$user_profile['username'])) ) {
-				$user = UserAR::model()->createSNSLogin('f_'.$user_profile['username'], $user_profile['id'], $user_profile['email']);
+				$user = UserAR::model()->createSNSLogin('f_'.$user_profile['username'], $user_profile['id'], $user_profile['email'], $user_profile['name']);
 			}
 
 			// Identity local site user data
@@ -146,16 +146,18 @@ class FacebookController extends Controller {
 		$this->facebook->setAccessToken($access_token);
 
 		if(!empty($img)) {
-			$results = $this->facebook->api('/me/photos', 'POST',
+			$type = 'photo';
+			$mid = $results = $this->facebook->api('/me/photos', 'POST',
 				array(
 					'source'=>'multipart/form-data',
-					'url'=> Yii::app()->params['siteurl'].$img,
-					//'url' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
+					//'url'=> Yii::app()->params['siteurl'].$img,
+					'url' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
 					'message' => $content
 				));
 		}
 		else {
-			$results = $this->facebook->api('/me/feed', 'POST',
+			$type = 'text';
+			$mid = $results = $this->facebook->api('/me/feed', 'POST',
 				array(
 					//'source'=>'multipart/form-data',
 					//'picture' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
@@ -164,6 +166,31 @@ class FacebookController extends Controller {
 		}
 
 
-		return $this->responseJSON($results, "success");
+		if($mid) {
+			$node = new NodeAR();
+
+			$node->type = $type;
+			$node->media = 'facebook';
+			if($img) {
+				$node->file = $img;
+			}
+			$node->mid = $mid->post_id;
+			$node->description = $content;
+			$node->screen_name = Yii::app()->user->screen_name;
+			$node->email = Yii::app()->user->personal_email;
+			$node->datetime = time();
+			$node->status = 0;
+			if ($node->validate()) {
+				$node->save();
+				return true;
+			}
+			return $this->responseJSON($results, "success");
+		}
+		else {
+			return $this->responseError(709);
+		}
+
+
+
 	}
 }

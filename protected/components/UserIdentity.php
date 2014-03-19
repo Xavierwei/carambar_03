@@ -19,11 +19,13 @@ class UserIdentity extends CUserIdentity
       $this->errorCode = self::ERROR_PASSWORD_INVALID;
     }
     else {
-      $this->_id = $user->uid;
-      $this->setState("name", $user->name);
-      $this->setState("role", $user->role);
-      
-      $this->errorCode = self::ERROR_NONE;
+		$this->_id = $user->uid;
+		$this->setState("name", $user->name);
+		$this->setState("role", $user->role);
+		$this->setState("screen_name", $user->screen_name);
+		$this->setState("personal_email", $user->personal_email);
+
+		$this->errorCode = self::ERROR_NONE;
     }
     return !$this->errorCode;
   }

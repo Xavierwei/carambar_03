@@ -21,7 +21,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 			if($(this).val().length == 0) {
 				$('.share-tbtn').addClass('disabled');
 			}
-			var content = $('#twitter-content').val() + '%23TESTHASHTAG';
+			var content = $('#twitter-content').val() + ' %23TESTHASHTAG';
 			$('.share-t .share-tbtn').attr('href', 'https://twitter.com/intent/tweet?text='+content);
         })
         .delegate('.sec4-right-txt', 'click', function(){
@@ -202,7 +202,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 	 * goto_support
 	 */
 	LP.action('goto_support', function(){
-		var top = $('.yellow-wrap').position().top;
+		var top = $('.yellow-wrap').position().top + $('#support-carambar').position().top;
 		$('body,html').animate({'scrollTop':top});
 	});
 
@@ -284,15 +284,15 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
     /***
      * Submit Twitter
      */
-	LP.action('submit_twitter', function(){
-		var content = '#HASHTAGTEST ' + $('#twitter-content').val();
-		api.ajax('postTwitter', {content: content}, function( result ){
-			console.log(result);
-			if(result.success) {
-				alert('Success Posted!');
-			}
-		});
-	});
+//	LP.action('submit_twitter', function(){
+//		var content = ' #HASHTAGTEST ' + $('#twitter-content').val();
+//		api.ajax('postTwitter', {content: content}, function( result ){
+//			console.log(result);
+//			if(result.success) {
+//				alert('Success Posted!');
+//			}
+//		});
+//	});
 
 	$('.share-tbtn').click(function(e){
 		if($(this).hasClass('disabled')) {
@@ -395,6 +395,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
         });
 
 
+
 		api.ajax('facebookLogin', function( result ){
             $('#facebook-login-link').fadeIn();
             if(result.data !== 'login') {
@@ -402,6 +403,12 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
             }
             else {
                 $('#facebook-login-link').attr('data-a','open_facebook');
+                // open facebook dialog
+                var hash = window.location.hash;
+                if(hash == '#support-carambar') {
+                    LP.triggerAction('open_facebook');
+                    window.location.hash = '#main';
+                }
             }
 		});
 

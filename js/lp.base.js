@@ -147,7 +147,6 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
             var pageParm = $main.data('param');
             nodes = nodes || [];
 
-
             // fix nodes like status
             var cookieLikeStatus = LP.getCookie('_led');
             if( cookieLikeStatus && nodes.length ){
@@ -2102,16 +2101,16 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                     var data = LP.query2json( $('.comment-form').serialize() );
                     var error = "";
                     if(data.content.length == 0) {
-                        error = "comment can not be empty";
+                        error = "Commentaire ne peut pas être vide";
                     }
                     if(data.content.length > 140) {
-                        error = "comment'length must be less then 140";
+                        error = "Comment'length doit être inférieure à 140";
                     }
                     if( !data.email.match(/^[a-zA-Z.\-0-9]+@[a-zA-Z0-9]+(.[a-zA-Z\-0-9]+)+$/) ){
-                        error = "mail is not right";
+                        error = "Mail n'est pas correcte";
                     }
                     if( !data.name ){
-                        error = "NUM can't be empty";
+                        error = "Nom ne peut pas être vide.";
                     }
                     if( error ){
                         $('.comment-msg-error').fadeIn()

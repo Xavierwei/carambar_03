@@ -50,7 +50,7 @@ class UserAR extends CActiveRecord{
 	// Validation rules
 	public function rules() {
 		return array(
-			array("avatar, personal_email, company_email, name, sso_id, country_id, datetime, firstname, lastname, role", 'safe'),
+			array("avatar, personal_email, company_email, name, sso_id, country_id, datetime, firstname, lastname, screen_name, role", 'safe'),
 		);
 	}
 
@@ -91,10 +91,11 @@ class UserAR extends CActiveRecord{
 	}
 
 
-	public function createSNSLogin($screen_name, $uid, $email) {
+	public function createSNSLogin($name, $uid, $email, $screen_name) {
 		$newUser = new UserAR();
 		$newUser->datetime = time();
-		$newUser->name = $screen_name;
+		$newUser->name = $name;
+		$newUser->screen_name = $screen_name;
 		$newUser->personal_email = $email;
 		$newUser->sso_id = md5($uid);
 		$newUser->role = self::ROLE_AUTHEN;

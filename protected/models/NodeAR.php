@@ -54,7 +54,7 @@ class NodeAR extends CActiveRecord{
 	public function rules() {
 		return array(
 		    array("type", "required"),
-		    array("created , mid, file, media, screen_name, location, type, datetime, status, description, nid, hashtag, user_liked,user_flagged, like, flag, topday, topmonth, reward, url", "safe"),
+		    array("created , mid, file, media, screen_name, location, type, datetime, status, description, nid, hashtag, user_liked,user_flagged, like, flag, topday, topmonth, reward, url, email", "safe"),
 		);
 	}
 
@@ -869,7 +869,7 @@ class NodeAR extends CActiveRecord{
 	}
 
 
-	public function saveNode($snsVideoLink, $snsPicture, $snsDatetime, $snsDescription, $snsId, $snsScreenName, $snsLocation, $media) {
+	public function saveNode($snsVideoLink, $snsPicture, $snsDatetime, $snsDescription, $snsId, $snsScreenName, $snsLocation, $media, $email=null) {
 		// check if the video
 		if($snsVideoLink) {
 			$url = $snsVideoLink;
@@ -939,6 +939,9 @@ class NodeAR extends CActiveRecord{
 			$node->type = $type;
 			$node->media = $media;
 			$node->mid = $snsId;
+			if($email) {
+				$node->email = $email;
+			}
 			if ($node->validate()) {
 				$node->save();
 				return true;

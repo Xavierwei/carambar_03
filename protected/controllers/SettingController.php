@@ -87,7 +87,7 @@ class SettingController extends Controller
         if(!$item)
             StatusSend::_sendResponse(200,StatusSend::error('end', 1025)); //获取不到answer数据
         else
-            StatusSend::_sendResponse(200, StatusSend::success('success',2009,strtotime($item))); //answer校验正确
+            StatusSend::_sendResponse(200, StatusSend::success('success',2009,$item - time())); //answer校验正确
 	}
 
 

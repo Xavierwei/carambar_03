@@ -71,7 +71,7 @@
 							</div>
 							<div class="com-list" >
 								<div class="com-list-inner">
-									<div class="com-list-loading">loading comments...</div>
+									<div class="com-list-loading">Chargement commentaires...</div>
 								</div>
 							</div>
 							<div class="com-make">
@@ -87,7 +87,7 @@
 									<input class="submit btn2" type="submit" value="submit" />
 									<div class="clear"></div>
 								</form>
-								<div class="comment-msg-success">The comment will publish after approve.</div>
+								<div class="comment-msg-success">Le commentaire sera publier après approbation.</div>
 								<div class="comment-msg-error"></div>
 							</div>
 						</div>

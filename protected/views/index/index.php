@@ -52,7 +52,7 @@
 				<div class="indicator-btn" data-a="indicate"></div>
 			</div>
 		</div>
-		<div class="goto-support-bg" data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,70px,0);">
+		<div class="goto-support-bg">
 			<a href="javascript:;" data-a="goto_support" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
 		</div>
 		<?php endif;?>
@@ -228,8 +228,8 @@
 
 			</div>
 			<div class="share-i cs-clear">
-				<a href="#" class="share-iandroid"></a>
-				<a href="#" class="share-iios"></a>
+				<a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=fr" class="share-iandroid"></a>
+				<a href="https://itunes.apple.com/fr/app/instagram/id389801252?mt=8" class="share-iios"></a>
 			</div>
 		</div>
 		<!--  -->

@@ -230,9 +230,10 @@ a{text-decoration:none;color:inherit;}
 
 		.com-ipt{background:white;padding:7px 10px;font-size:12px;resize:none;width:80%;}
         .com-ipt:focus {background:#fffbce;}
-        .com-make {margin:0 30px;padding:15px 0 0;}
+        .com-make {margin:0 30px;padding:15px 0 0;position:relative;}
         .com-make .submit {font-size:14px;color:white;text-transform:uppercase;background:#2f3688;border: none;padding:5px 5px 5px 5px;margin-top:2px;margin-right:10px;}
         .com-make .submit:hover {background:#ce232d;}
+        .com-make .comment-msg-error {position:absolute;bottom:3px;left:70px;color:#ce232d;}
 
 		/*.com-ipt{background:white;padding:7px 10px;font-size:12px;resize:none;width:242px;}*/
         /*.com-make .submit {color:white;text-transform:uppercase;background:#333;border: none;padding:5px 5px 2px 5px;margin-top:2px;margin-right:10px;float:right;}*/
