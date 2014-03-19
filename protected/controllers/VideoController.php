@@ -110,6 +110,9 @@ class VideoController extends Controller {
             $item->attributes=$_POST; //赋值
 
             $mid=VideoAR::model()->getYoutubeId($url); //获取youtube id
+            if(!$mid)
+                StatusSend::_sendResponse(200, StatusSend::error('end', 1031)); //youtube mid 获取失败
+
             if(!VideoAR::model()->uniqueMid($mid))
                 StatusSend::_sendResponse(200, StatusSend::error('end', 1016)); //youtube mid 已经存在
 

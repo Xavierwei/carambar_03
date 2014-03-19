@@ -36,6 +36,7 @@ end:1028 admin 缓存清除失败
 
 end:1029 answer 创建新题目失败
 end:1030 answer 未传入answer aid
+end:1031 video youtube url获取mid失败
 
 success:2001 获取challenge列表成功
 success:2002 修改challenge 投票次数成功
