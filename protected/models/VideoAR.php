@@ -28,7 +28,7 @@ class VideoAR extends CActiveRecord{
             array('rank', 'length', 'max'=>6),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('vid, url, title, thumbnail, datetime, status, position, mid, rank', 'safe', 'on'=>'search'),
+            array('vid, url, title, thumbnail, datetime, status, position, mid, rank,phase', 'safe', 'on'=>'search'),
         );
     }
 
@@ -58,6 +58,7 @@ class VideoAR extends CActiveRecord{
             'position' => 'Position',
             'mid' => 'Mid',
             'rank' => 'Rank',
+            'phase' => '阶段',
         );
     }
 
@@ -114,7 +115,7 @@ class VideoAR extends CActiveRecord{
 	}
 
 
-	public function getVideoList($position=NULL,$status=1,$limit=8,$offset=1) {
+	public function getVideoList($position=NULL,$status=1,$limit=8,$offset=1,$phase) {
 		$query = new CDbCriteria();
 		$query->addCondition('status=:status');
 		$query->params[':status'] = $status;
@@ -125,8 +126,10 @@ class VideoAR extends CActiveRecord{
             $query->params[':position'] =$position;
         }
 
-        $query->order='rank ASC'; //按照排序
+        $query->addCondition('phase LIKE :phase');
+        $query->params[':phase']='%'.$phase.'%';
 
+        $query->order='rank ASC'; //按照排序
         $query->limit=  $limit; //每页显示条数
 	    $query->offset= $limit * ($offset-1); //偏移计算
 		$res = $this->findAll($query);

@@ -15,9 +15,12 @@ class VideoController extends Controller {
             $_POST['pages']=1;
         if(!isset($_POST['status']))			//未传入状态,使用默认状态为1
             $_POST['status']=1;
+        // get phase
+        $phase = SettingAR::model()->getValue('phase');
+        if(!isset($phase))
+            StatusSend::_sendResponse(200, StatusSend::error('end', 1032)); //没有phase，存在。不显示
 
-
-        $videoList=VideoAR::model()->getVideoList($_POST['position'],$_POST['status'], $_POST['pageSize'],$_POST['pages']);
+        $videoList=VideoAR::model()->getVideoList($_POST['position'],$_POST['status'], $_POST['pageSize'],$_POST['pages'],$phase);
 
         if(empty($videoList))
         {

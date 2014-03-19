@@ -76,10 +76,10 @@ return array(
 				),
 				// uncomment the following to show log messages on web pages
                 //取消注释开启logo
-                /*
-				array(
-					'class'=>'CWebLogRoute',
-				),*/
+
+				// array(
+				// 	'class'=>'CWebLogRoute',
+				// ),
 
 			),
 		),
