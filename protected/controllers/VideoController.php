@@ -16,6 +16,7 @@ class VideoController extends Controller {
         if(!isset($_POST['status']))			//未传入状态,使用默认状态为1
             $_POST['status']=1;
 
+
         $videoList=VideoAR::model()->getVideoList($_POST['position'],$_POST['status'], $_POST['pageSize'],$_POST['pages']);
 
         if(empty($videoList))

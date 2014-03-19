@@ -42,7 +42,7 @@ class SettingController extends Controller
     /**
      * 获取点赞数据
      */
-    public function actionPraiseResult()
+    public function actionCount()
     {
         $item2=NodeAR::model()->countByStatus();
         $model=new SettingAR;

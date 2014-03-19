@@ -10,6 +10,7 @@ end:1005 修改challenge 投票次数失败
 end:1006 setting 获取不到点赞数据
 end:1007 setting 已经点过赞，时间不足3天
 end:1008 setting 修改点赞数据失败
+
 end:1009 setting 未传入answer答案
 end:1010 setting 获取不到answer数据
 end:1011 setting answer错误
@@ -33,6 +34,9 @@ end:1026 setting 获取不到val数据
 end:1027 setting 设置val数据失败
 end:1028 admin 缓存清除失败
 
+end:1029 answer 创建新题目失败
+end:1030 answer 未传入answer aid
+
 success:2001 获取challenge列表成功
 success:2002 修改challenge 投票次数成功
 success:2003 setting 修改点赞数据成功
@@ -45,3 +49,7 @@ success:2009 setting 倒计时获取成功
 success:2010 setting 获取val数据成功
 success:2011 setting 设置val数据成功
 success:2022 admin 清理文件缓存成功
+
+success:2023 answer view获取单条记录成功
+success:2024 answer create 创建新题目成功
+success:2025 answer 返回随机问题
