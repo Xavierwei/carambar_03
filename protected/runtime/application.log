@@ -1733,3 +1733,1305 @@ Stack trace:
 REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395292439293
 HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
 ---
+2014/03/20 14:10:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:10:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/js/sea/jquery.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/js/sea...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/js/sea/jquery.js
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:10:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/js/sea/api.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/js/sea...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/js/sea/api.js
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/js/sea/skrollr.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/js/sea...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/js/sea/skrollr.js
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/js/sea/easing.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/js/sea...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/js/sea/easing.js
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/js/sea/queryloader.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/js/sea...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/js/sea/queryloader.js
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/js/sea/cookie.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/js/sea...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/js/sea/cookie.js
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/js/sea/exif.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/js/sea...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/js/sea/exif.js
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395295815575
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:10:45 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/carambar_03/protected/extensions/mailer/phpmailer/class.phpmailer.php:522) (/Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php:165)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/controllers/NodeController.php(185): NodeController->responseJSON()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/actions/CInlineAction.php(49): NodeController->actionReward()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): NodeController->runAction()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): NodeController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): NodeController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/node/reward
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (165)
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (147)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/NodeController.php (185)
+2014/03/20 14:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:12:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395295925187
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:14:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:14:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296046376
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:14:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:14:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296047575
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:15:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:15:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296103869
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:15:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:15:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296105450
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296115849
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:16:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:16:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296167141
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:16:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:16:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296191947
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:18:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:18:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296281004
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:19:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:19:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296394986
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:20:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:20:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296411285
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:22:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:22:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296560151
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:23:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:23:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296585214
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:23:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:23:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296616593
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296650816
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:24:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:24:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296690194
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296696728
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:25:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:25:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296726458
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:25:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:25:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296728072
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:27:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296821247
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:27:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:27:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296871132
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296879240
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:28:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:28:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296910054
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:28:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:28:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296934747
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:29:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:29:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296943928
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296952631
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:29:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:29:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296973797
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:29:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:29:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395296977553
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:30:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:30:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297004557
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:30:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:30:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297014843
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297027889
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:31:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:31:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297075352
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:31:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297078391
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:33:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:33:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297181741
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:37:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:37:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297450154
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:38:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:38:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297516502
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:38:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:38:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297535647
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:39:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:39:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297550486
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:39:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:39:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297559379
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:39:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:39:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297576340
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:39:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:39:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297589749
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:40:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:40:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297607206
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297655821
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:40:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:40:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297656977
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:43:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:43:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297782941
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:43:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:43:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297792007
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:43:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:43:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297801775
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:43:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:43:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297805443
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:43:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:43:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297827743
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:44:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:44:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297857613
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:44:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:44:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297899277
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:45:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395297904258
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:47:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:47:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/mobileimg/home_tit2.jpg".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/mobile...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/mobileimg/home_tit2.jpg
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/css/style.css
+---
+2014/03/20 14:47:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298079110
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:47:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/mobileimg/home_tit2.jpg".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/mobile...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/mobileimg/home_tit2.jpg?1395298079113
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:48:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:48:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298098762
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298224683
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:50:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298257019
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:51:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:51:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298286691
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:51:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:51:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298302839
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:53:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298382134
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:53:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:53:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298390559
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:53:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:53:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298435637
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:53:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:53:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298439015
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:54:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:54:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298444744
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298465872
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:54:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 14:54:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/images/loading_logo.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/images...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/images/loading_logo.png?1395298468617
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---
+2014/03/20 15:10:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "homepage/index.php/setting/count".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('homepage/index....')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/homepage/index.php/setting/count?_=1395299404546
+HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
+---

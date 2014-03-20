@@ -128,9 +128,9 @@ return array(
 			'sendName' => 'Carambar',
 			'titleNew' => '#CARAMBARGOODLUCK New facebook post coming',
 			'titleAward' => '#CARAMBARGOODLUCK You win!',
-			'contentNew' => 'New facebook post coming',
-			'contentAward' => 'You win!',
-			'emailList' => 'tony@fuel-it-up.com'
+			'contentNew' => 'Dear<br/>New facebook post coming',
+			'contentAward' => 'Dear<br/>You win!',
+			'emailList' => 'tony@fuel-it-up.com, dev@fuel-it-up.com'
 		)
 	),
 );

@@ -6,7 +6,9 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 
     function init() {
 
-
+        api.ajax('indicateResult', function( result ){
+            digitHelper.init(result.data);
+        });
 
         $(document.body).queryLoader2({
             onLoading : function( percentage ){
@@ -64,12 +66,65 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
                             } , delay);
                         }
                     });
+
+
             }
         });
 
     }
 
 	init();
+
+
+    // digit counter
+    var digitHelper = (function(){
+        var $count = $('.indicator-count');
+        var digitHeight = 33.45;
+        var init = function( num ){
+            // init digit count
+            num = num + '';
+            num = "000000".substr(num.length) + num;
+            var aHtml = [];
+            $.each( num.split('') , function( i , n ){
+                aHtml.push( '<span class="digit digit' + n + '" data-num="' + n + '" ></span>' );
+            } );
+            $count.html( aHtml.join('') );
+        }
+
+
+        var plusNum = function( $dom , total ){
+            var index = 0;
+            var times = 4;
+            var countTimes = 0;
+            var time = 300;
+            var num = $dom.data('num') % 10;
+            setTimeout(function timer(){
+                if( num == 9  && index == 0 ){
+                    plusNum( $dom.prev() , 1 );
+                }
+                if( ++index > times ) {
+                    $dom.data('num' , num + 1 );
+                    if( ++countTimes < total )
+                        plusNum( $dom , total-1 );
+                    return;
+                }
+                $dom.css( 'background-position' , '0 -' + ( ( num * 4 ) + index ) * digitHeight + 'px'  );
+                setTimeout( timer , time / 4);
+            } , time / 4);
+
+        }
+        return {
+            init: function( num ){
+                init( num );
+            },
+            plus: function( num ){
+                plusNum( $count.children().last() , num );
+            }
+        }
+    })();
+
+
+    window.digitHelper = digitHelper;
 
 });
 
