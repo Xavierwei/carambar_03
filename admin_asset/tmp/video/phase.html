@@ -4,13 +4,14 @@
 			<span>{{video.title}}</span>
 			<span>{{video.mid}}</span>
 			<span>{{video.position}}</span>
-			<span><a ng-href="#video/edit/{{video.vid}}">edit</a></span>
-            <span ng-click="delete(video)">delete</span>
+            <span ng-click="remove(video)">remove</span>
 		</li>
 	</ul>
 </div>
 
-<select ng-model="video.selected"
+<select ng-model="selectedVideo"
         data-ng-options="v.title for v in videos">
 </select>
+
+<div ng-click="save(selectedVideo)">Save</div>
 

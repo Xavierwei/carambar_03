@@ -1,6 +1,6 @@
 SGWallAdminController
     .controller('VideoCtrList', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, LikeService, FlagService, ASSET_FOLDER) {
-		VideoService.list(function(data){
+		VideoService.list({},function(data){
 			$scope.videos = data.data;
 		});
 
@@ -43,15 +43,25 @@ SGWallAdminController
 
 
 	.controller('VideoCtrPhase', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, LikeService, FlagService, ASSET_FOLDER) {
-		VideoService.list(function(data){
+		VideoService.list({phase:$routeParams.phaseid},function(data){
 			$scope.videos = data.data;
 		});
 
 		$scope.save = function(video) {
+            video.phase = $routeParams.phaseid;
+            video.del = 0;
 			VideoService.update(video, function(data){
 				console.log(data);
 			});
 		}
+
+        $scope.remove = function(video) {
+            video.phase = $routeParams.phaseid;
+            video.del = 1;
+            VideoService.update(video, function(data){
+                console.log(data);
+            });
+        }
 	})
 
 
