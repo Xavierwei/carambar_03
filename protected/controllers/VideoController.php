@@ -59,6 +59,7 @@ class VideoController extends Controller {
      */
     public function actionUpdate()
     {
+
         if(!isset($_POST['vid']))
             StatusSend::_sendResponse(200, StatusSend::error('end', 1013) ); //未传入vid参数
 
@@ -74,7 +75,10 @@ class VideoController extends Controller {
         }
         else //管理员
         {
-            $phase= $item->phase;
+
+        $phase= $item->phase;
+        if(!empty($phase))
+        {
             $elements = explode(",", $phase); //字符串转数组
             //是否删除phase
             if($_POST['del']!='1')
@@ -95,8 +99,10 @@ class VideoController extends Controller {
                     }
                 }
             }
-
+            //重新排序
+            $elements=array_values($elements);
             $_POST['phase']=implode(",",$elements);
+        }
 
             $item->attributes=$_POST; //赋值
 //            $url=$_POST['url']; //获取youtube url
@@ -115,13 +121,13 @@ class VideoController extends Controller {
             $item->datetime = time();
 			//$item->status = 0;
 
-            if($item->save() )
+            if($item->save())
                 StatusSend::_sendResponse(200, StatusSend::success('success',2007,$item)); //修改数据库成功
             else
                 StatusSend::_sendResponse(200, StatusSend::error('end', 1018)); //修改数据库错误，
         }
 
-    }
+   }
 
 
     /***
