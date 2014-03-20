@@ -321,7 +321,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
             return;
         }
         var img = $('#facebook-img').val();
-        var content = '#HASHTAGTEST ' + $('#facebook-content').val();
+        var content = $('#facebook-content').val() + ' #TESTHASHTAG';
         $('.pop-ft-submitting').fadeIn();
         api.ajax('postFacebook', {content: content, img: img}, function( result ){
             $('.pop-ft-submitting').fadeOut();

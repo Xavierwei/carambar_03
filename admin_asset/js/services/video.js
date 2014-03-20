@@ -1,4 +1,4 @@
-SGWallAdminServices.factory( 'VideoService', function($http, ROOT) {
+WallAdminServices.factory( 'VideoService', function($http, ROOT) {
     return {
         post: function(video, success) {
             $http.post(ROOT+'/video/create',video)

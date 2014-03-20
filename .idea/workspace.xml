@@ -2,27 +2,299 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instagram.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/runtime/cache/89b4322870bb334bfd394c8017366563.bin" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/btn_defi.png" afterPath="$PROJECT_DIR$/images/btn_defi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage/images/home_btn1.png" afterPath="$PROJECT_DIR$/homepage/images/home_btn1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage/images/home_btn2.png" afterPath="$PROJECT_DIR$/homepage/images/home_btn2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/map_bg.jpg" afterPath="$PROJECT_DIR$/images/map_bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/FacebookController.php" afterPath="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_asset/js/controllers/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_asset/js/services/flag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_asset/js/services/like.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flash_player.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/homepage/testcount.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/demo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/error_404.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_checkbox.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_close_user.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_comm_del.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_comm_flag.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_comment_flag.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_flag_b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_hover_comment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_hover_like.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_hover_name.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_hover_time.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_inner_back.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_inner_comment.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_inner_left.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_inner_like.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_inner_line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_inner_location.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_inner_right.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_inner_time.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_inner_user.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_like_s.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_list_li.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_login.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_menu_byday.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_menu_bymonth.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_menu_photo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_menu_settings.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_menu_video.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_node_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_node_flag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_photo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_photo_b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_photo_b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_photo_s.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_photo_w.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_photo_w.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_photo_ws.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_photo_ws.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_pop_close.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_pop_upload.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_s_instagram.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_s_youtube.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_search.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_search_tip.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_search_tip_b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_side.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_time_s.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_topday_b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_topday_s.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_topmonth_b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_topmonth_s.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_upload_loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_upload_loading.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_user_change_avatar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_user_edit.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_user_location.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_user_name.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_user_s.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_user_save.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_video_b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_video_b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_video_play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_video_w.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_video_w.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_video_ws.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_video_ws.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon_video_zoom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ie8_avatar_round_32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ie8_avatar_round_34.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ie8_avatar_round_62.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/language.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/languageon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/loading_comment.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/loading_list.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/loading_trans_white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/loading_white.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/loading_white_s.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/loading_wmp.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/login-name.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/login-pas.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/login_avatar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/login_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/login_panel_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo_s.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/no-results.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/side_user_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/time_item.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/country.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/user.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lang/en.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lang/en.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lang/en.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lang/fr.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lang/fr.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lang/fr.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lang/po2json.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/css/animation.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/css/fonts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/css/layout.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/css/needtocombine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/device_turn.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/home_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_checkbox.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_checkbox_checed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_close_user.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_comm_del.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_comm_flag.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_inner_back.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_inner_comment.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_inner_left.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_inner_like.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_inner_location.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_inner_right.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_inner_signaler.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_inner_time.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_inner_user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_list_li.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_login.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_photo_w.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_pop_close.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_pop_upload.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_search.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_search_tip.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_search_tip_b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_side.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_topday_b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_topmonth_b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_upload_loading.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_user_change_avatar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_user_edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_user_save.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_video_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/icon_video_w.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/img_com_close.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/inner_com_makebg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/iphone_turn.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/language-item-on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/language.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/loading_comment.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/loading_inner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/loading_list.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/loading_trans_white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/loading_white.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/loading_white_s.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/login-name.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/login-pas.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/login_avatar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/login_panel_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/no-results.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/process_bar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/resize_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/selectbox_arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/side_filtrer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/side_fold_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/img/time_item.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/m/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/Archive/test.3gp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/Archive/test.avi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/Archive/test.mov" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/Archive/test.mpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/Archive/test.mpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/Archive/test.wmv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/MANIFEST.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/poster.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/poster.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/poster.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/poster.egg-info/requires.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/poster.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/poster.egg-info/zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/poster/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/poster/encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/poster/streaminghttp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/setup.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/tests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/tests/test_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/tests/test_server.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/poster/tests/test_streaming.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/core/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/core/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/core/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/core/corestats.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/core/engine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/core/graph.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/core/optionparse.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/core/reportwriter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/core/results.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/core/xmlparse.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/run.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/testcases.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/blocking/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/blocking/pylot_blocking.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/console/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/console/pylot_console.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/console/win/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/console/win/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/console/win/_consolepos25.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/console/win/_consolepos25.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/console/win/_consolepos26.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/console/win/_consolepos26.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/console/win/cpos.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/gui/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/gui/icon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/ui/gui/wx_gui.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/pylot/util/pylot_win_recorder.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/run.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/performance/testcase.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_data/dump.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_helpers/ApiHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_helpers/CodeHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_helpers/TestHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_helpers/WebHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/acceptance.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/acceptance/WebGuy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/acceptance/WelcomeCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/acceptance/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/ApiGuy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/CommentDeleteCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/CommentListCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/CommentPutCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/CountryDeleteCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/CountryPostCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/FlagDeleteAllCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/FlagPostCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/NodeDeleteCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/NodeListCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/NodePostCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/UserDeleteCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/UserListCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/UserLoginCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/UserPostCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/UserPutCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/UserRegisterCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/functional.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/functional/TestGuy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/functional/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/unit.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/unit/CodeGuy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/unit/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/text.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/classic/views/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/upload.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wmv_player.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/IndexController.php" afterPath="$PROJECT_DIR$/protected/controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/NodeAR.php" afterPath="$PROJECT_DIR$/protected/models/NodeAR.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/TwitterController.php" afterPath="$PROJECT_DIR$/protected/controllers/TwitterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/NodeController.php" afterPath="$PROJECT_DIR$/protected/controllers/NodeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/css/admin.css" afterPath="$PROJECT_DIR$/admin_asset/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/admin.php" afterPath="$PROJECT_DIR$/protected/views/layouts/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/app.js" afterPath="$PROJECT_DIR$/admin_asset/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage/count.php" afterPath="$PROJECT_DIR$/homepage/count.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/video/edit.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/video/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage/index.html" afterPath="$PROJECT_DIR$/homepage/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/controllers/comment.js" afterPath="$PROJECT_DIR$/admin_asset/js/controllers/comment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/services/comment.js" afterPath="$PROJECT_DIR$/admin_asset/js/services/comment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/controllers.js" afterPath="$PROJECT_DIR$/admin_asset/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/video/create.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/video/create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/filters.js" afterPath="$PROJECT_DIR$/admin_asset/js/filters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/admin/index.php" afterPath="$PROJECT_DIR$/protected/views/admin/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/index/index.php" afterPath="$PROJECT_DIR$/protected/views/index/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.base.js" afterPath="$PROJECT_DIR$/js/lp.base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage/js/lp.index.js" afterPath="$PROJECT_DIR$/homepage/js/lp.index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/node/list.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/node/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/statistics/list.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/statistics/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/video/list.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/video/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.index.js" afterPath="$PROJECT_DIR$/js/lp.index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage/css/style.css" afterPath="$PROJECT_DIR$/homepage/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/tpl.php" afterPath="$PROJECT_DIR$/include/tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/controllers/node.js" afterPath="$PROJECT_DIR$/admin_asset/js/controllers/node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/services/node.js" afterPath="$PROJECT_DIR$/admin_asset/js/services/node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/services.js" afterPath="$PROJECT_DIR$/admin_asset/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/controllers/settings.js" afterPath="$PROJECT_DIR$/admin_asset/js/controllers/settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/services/settings.js" afterPath="$PROJECT_DIR$/admin_asset/js/services/settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/controllers/statistics.js" afterPath="$PROJECT_DIR$/admin_asset/js/controllers/statistics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/services/statistics.js" afterPath="$PROJECT_DIR$/admin_asset/js/services/statistics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/services/user.js" afterPath="$PROJECT_DIR$/admin_asset/js/services/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/controllers/video.js" afterPath="$PROJECT_DIR$/admin_asset/js/controllers/video.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/services/video.js" afterPath="$PROJECT_DIR$/admin_asset/js/services/video.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,9 +303,9 @@
     <file path="/Dummy.txt" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395197507793" ignored="false" />
     <file path="/controllers.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391781932373" ignored="false" />
     <file path="/partial1.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387685938508" ignored="false" />
-    <file path="/list.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395288100340" ignored="false" />
+    <file path="/list.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395331047069" ignored="false" />
     <file path="/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395304677434" ignored="false" />
-    <file path="/a.dummy" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394283116798" ignored="false" />
+    <file path="/a.dummy" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395329098571" ignored="false" />
     <file path="/filters.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395232749708" ignored="false" />
     <file path="/edit.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395305615519" ignored="false" />
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/hh25th/win/terms/en/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387806418329" ignored="false" />
@@ -45,7 +317,7 @@
     <file path="/layout.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395224079615" ignored="false" />
     <file path="$PROJECT_DIR$/../gar_nier/psshangfengmian/css/layoutIE.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387812982125" ignored="false" />
     <file path="/layoutIE.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387812979076" ignored="false" />
-    <file path="/admin.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395232874771" ignored="false" />
+    <file path="/admin.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395331031443" ignored="false" />
     <file path="/lib.controllers.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388409704965" ignored="false" />
     <file path="/popup.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388414407045" ignored="false" />
     <file path="/recent.jsons" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388668209640" ignored="false" />
@@ -65,7 +337,7 @@
     <file path="/app.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392817940399" ignored="false" />
     <file path="/services.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1389513023723" ignored="false" />
     <file path="/current.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388899995354" ignored="false" />
-    <file path="/create.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395286164257" ignored="false" />
+    <file path="/create.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395330633995" ignored="false" />
     <file path="/CommentController.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395232578560" ignored="false" />
     <file path="/login.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391515697266" ignored="false" />
     <file path="/delete.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388908827026" ignored="false" />
@@ -249,7 +521,7 @@
     <file path="/swfupload.queue.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392438357651" ignored="false" />
     <file path="/swfupload.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392438799543" ignored="false" />
     <file path="/a.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392476642276" ignored="false" />
-    <file path="/a.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392476665743" ignored="false" />
+    <file path="/a.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395321820013" ignored="false" />
     <file path="/player.htm" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393774313736" ignored="false" />
     <file path="/tpl_mobile.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392741366147" ignored="false" />
     <file path="/home logged.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392551957469" ignored="false" />
@@ -424,6 +696,7 @@
     <file path="/statistics.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395288129251" ignored="false" />
     <file path="/count.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395299248417" ignored="false" />
     <file path="/instagram.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395310081126" ignored="false" />
+    <file path="/a.coffee" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395321840939" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -443,97 +716,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lp.base.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/lp.base.js">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="284" column="63" selection-start="11147" selection-end="11147" vertical-scroll-proportion="-24.961538">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1395311622000" expanded="false" signature="7213:7225" placeholder="..." />
-                <marker date="1395311622000" expanded="false" signature="11580:11592" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lp.index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/lp.index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="18" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="16" selection-start="3705" selection-end="3705" vertical-scroll-proportion="-29.892857">
+            <state line="15" column="6" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NodeAR.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/NodeAR.php">
+      <file leaf-file-name="admin.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/css/admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="860" column="17" selection-start="21596" selection-end="21596" vertical-scroll-proportion="-27.142857">
+            <state line="160" column="126" selection-start="11080" selection-end="11080" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/brdg/instagram/video.php">
+      <file leaf-file-name="NodeController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/NodeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="202" selection-start="1036" selection-end="1214" vertical-scroll-proportion="-21.035715">
+            <state line="579" column="32" selection-start="16159" selection-end="16159" vertical-scroll-proportion="-3.642857">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/VideoController.php">
+      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/tmp/statistics/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="818" selection-end="818" vertical-scroll-proportion="-17.642857">
+            <state line="0" column="29" selection-start="29" selection-end="56" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FacebookController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
+      <file leaf-file-name="list.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin_asset/tmp/video/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="6" selection-start="12" selection-end="20" vertical-scroll-proportion="-0.6785714">
+            <state line="14" column="29" selection-start="423" selection-end="423" vertical-scroll-proportion="0.2543021">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstagramController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/InstagramController.php">
+      <file leaf-file-name="create.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/tmp/video/create.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="15" selection-start="12" selection-end="21" vertical-scroll-proportion="-0.6785714">
+            <state line="8" column="17" selection-start="676" selection-end="676" vertical-scroll-proportion="-5.428571">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwitterController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/TwitterController.php">
+      <file leaf-file-name="statistics.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/statistics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="45" selection-start="1060" selection-end="1060" vertical-scroll-proportion="-1.1978967">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_asset/js/services/video.js">
+      <file leaf-file-name="settings.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/node.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="28" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/comment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="14" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -557,22 +824,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/homepage/css/style.css" />
-        <option value="$PROJECT_DIR$/admin_asset/tmp/video/edit.html" />
-        <option value="$PROJECT_DIR$/protected/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/include/tpl.php" />
-        <option value="$PROJECT_DIR$/homepage/js/lp.index.js" />
-        <option value="$PROJECT_DIR$/homepage/count.php" />
-        <option value="$PROJECT_DIR$/protected/views/index/index.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/lp.index.js" />
-        <option value="$PROJECT_DIR$/protected/controllers/TwitterController.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/js/lp.index.js" />
+        <option value="$PROJECT_DIR$/protected/views/index/index.php" />
         <option value="$PROJECT_DIR$/protected/models/NodeAR.php" />
-        <option value="$PROJECT_DIR$/instagram.php" />
-        <option value="$PROJECT_DIR$/js/lp.base.js" />
-        <option value="$PROJECT_DIR$/admin_asset/js/services/video.js" />
+        <option value="$PROJECT_DIR$/admin_asset/tmp/node/list.html" />
+        <option value="$PROJECT_DIR$/protected/controllers/NodeController.php" />
+        <option value="$PROJECT_DIR$/admin_asset/js/app.js" />
+        <option value="$PROJECT_DIR$/protected/views/admin/index.php" />
+        <option value="$PROJECT_DIR$/admin_asset/js/controllers/node.js" />
+        <option value="$PROJECT_DIR$/admin_asset/js/controllers/video.js" />
+        <option value="$PROJECT_DIR$/admin_asset/js/controllers/comment.js" />
+        <option value="$PROJECT_DIR$/admin_asset/js/controllers.js" />
+        <option value="$PROJECT_DIR$/admin_asset/tmp/video/create.html" />
+        <option value="$PROJECT_DIR$/admin_asset/tmp/statistics/list.html" />
+        <option value="$PROJECT_DIR$/admin_asset/css/admin.css" />
+        <option value="$PROJECT_DIR$/admin_asset/tmp/video/list.html" />
       </list>
     </option>
   </component>
@@ -656,7 +923,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -712,7 +1059,149 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank_wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin_asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -723,7 +1212,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.JavaScript" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -797,10 +1286,11 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24591652" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979952" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19005613" sideWeight="0.75343573" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19005613" sideWeight="0.7540835" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -809,7 +1299,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24656427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294412" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -879,129 +1368,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/services/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="63" selection-start="3468" selection-end="3488" vertical-scroll-proportion="-29.178572">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#script#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flash_player.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="0" selection-end="1374" vertical-scroll-proportion="-8.142858">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instagram.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/services/statistics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="526" selection-end="526" vertical-scroll-proportion="-12.892858">
-          <folding>
-            <marker date="1395310082000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395310082000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395310082000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395310082000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395310082000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395310082000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="17" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/tpl.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/services/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="49" selection-start="7037" selection-end="7042" vertical-scroll-proportion="-19.25">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.index.js">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/services/node.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="63" selection-start="11147" selection-end="11147" vertical-scroll-proportion="-24.961538">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1395311622000" expanded="false" signature="7213:7225" placeholder="..." />
-            <marker date="1395311622000" expanded="false" signature="11580:11592" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="16" selection-start="3705" selection-end="3705" vertical-scroll-proportion="-29.892857">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/NodeAR.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/services/comment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="860" column="17" selection-start="21596" selection-end="21596" vertical-scroll-proportion="-27.142857">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="311" selection-end="311" vertical-scroll-proportion="0.24767226">
+        <state line="15" column="6" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/brdg/instagram/video.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/LikeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="202" selection-start="1036" selection-end="1214" vertical-scroll-proportion="-21.035715">
+        <state line="27" column="25" selection-start="563" selection-end="563" vertical-scroll-proportion="0.49043977">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/js/services/video.js">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/comment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
+        <state line="7" column="14" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VideoController.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/node.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="818" selection-end="818" vertical-scroll-proportion="-17.642857">
+        <state line="20" column="28" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="12" selection-end="20" vertical-scroll-proportion="-0.6785714">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/InstagramController.php">
+    <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/statistics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="15" selection-start="12" selection-end="21" vertical-scroll-proportion="-0.6785714">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/TwitterController.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/NodeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="45" selection-start="1060" selection-end="1060" vertical-scroll-proportion="-1.1978967">
+        <state line="579" column="32" selection-start="16159" selection-end="16159" vertical-scroll-proportion="-3.642857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/statistics/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="29" selection-start="29" selection-end="56" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_asset/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="126" selection-start="11080" selection-end="11080" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/video/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="676" selection-end="676" vertical-scroll-proportion="-5.428571">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/video/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="29" selection-start="423" selection-end="423" vertical-scroll-proportion="0.2543021">
           <folding />
         </state>
       </provider>

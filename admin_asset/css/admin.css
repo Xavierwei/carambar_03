@@ -147,6 +147,20 @@ a{text-decoration:none;color:#666}
     .photo-edit .opt-btn.zoomout-btn{right: 30px;}
     .photo-edit .opt-btn:hover{text-decoration: none;}
 
+.statistics-wrap {font-size:12px;}
+    .statistics-wrap h4 {text-transform: uppercase;background:#ffd800;padding:20px 20px;font-weight: bold;}
+    .statistics-wrap .statistics-item {margin:10px 0 10px 20px;}
+    .statistics-wrap .statistics-item span {font-size:24px;color:#c61225;margin:0 0 0 10px;}
+
+.video-form {width:500px;}
+    .video-form  h4 {text-transform: uppercase;background:#ffd800;padding:10px 10px;font-weight: bold;}
+    .video-form .form-group {margin:10px 0 0;}
+    .video-form .btn-submit {margin-top:20px;}
+
+.videos-list-wrap {margin-right:80px;}
+    .videos-list-wrap h4 {text-transform: uppercase;background:#ffd800;padding:10px 10px;font-weight: bold;margin-bottom:20px;}
+    .videos-list-wrap table {width:100%;}
+
 .nodes-list,.login-page .login,
 a,.menu li,table td,.refresh, .btn,.list li .black-overlay
 {-webkit-transition:   all 0.3s ease;-moz-transition:  all 0.3s ease;-o-transition:  all 0.3s ease;-ms-transition:  all 0.3s ease;transition:  all 0.3s ease;}

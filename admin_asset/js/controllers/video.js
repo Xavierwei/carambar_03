@@ -1,5 +1,5 @@
-SGWallAdminController
-    .controller('VideoCtrList', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, LikeService, FlagService, ASSET_FOLDER) {
+WallAdminController
+    .controller('VideoCtrList', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService,  ASSET_FOLDER) {
 		VideoService.list({},function(data){
 			$scope.videos = data.data;
 		});
@@ -21,7 +21,7 @@ SGWallAdminController
 
     })
 
-    .controller('VideoCtrCreate', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, LikeService, FlagService, ASSET_FOLDER) {
+    .controller('VideoCtrCreate', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService,  ASSET_FOLDER) {
         $scope.save = function(video) {
             VideoService.post(video, function(data){
             console.log(data);
@@ -29,7 +29,7 @@ SGWallAdminController
         }
     })
 
-    .controller('VideoCtrEdit', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, LikeService, FlagService, ASSET_FOLDER) {
+    .controller('VideoCtrEdit', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService,  ASSET_FOLDER) {
 		VideoService.getById($routeParams.vid, function(data){
 			$scope.video = data.data;
 		});
@@ -43,7 +43,7 @@ SGWallAdminController
 	})
 
 
-	.controller('VideoCtrPhase', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, LikeService, FlagService, ASSET_FOLDER) {
+	.controller('VideoCtrPhase', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, ASSET_FOLDER) {
 		VideoService.list({phase:$routeParams.phaseid},function(data){
 			$scope.videos = data.data;
 		});

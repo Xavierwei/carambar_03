@@ -31,7 +31,7 @@ class NodeAR extends CActiveRecord{
 	public $embed;
 
 
-	const ALLOW_UPLOADED_PHOTO_TYPES = "jpg,png,gif";
+	const ALLOW_UPLOADED_PHOTO_TYPES = "jpg,jpeg,png,gif";
 
 	const ALLOW_UPLOADED_VIDEO_TYPES = "mp4,avi,mov,mpg,mpeg,3pg,wmv";
 
@@ -275,20 +275,22 @@ class NodeAR extends CActiveRecord{
 				default:
 					$srcImg = imagecreatefromjpeg($upload->tempName);
 			}
-			$exif = exif_read_data($upload->tempName);
-			if (!empty($exif['Orientation'])) {
-				switch ($exif['Orientation']) {
-					case 3:
-						$srcImg = imagerotate($srcImg, 180, 0);
-						break;
+			if($extname == 'jpg') {
+				$exif = exif_read_data($upload->tempName);
+				if (!empty($exif['Orientation'])) {
+					switch ($exif['Orientation']) {
+						case 3:
+							$srcImg = imagerotate($srcImg, 180, 0);
+							break;
 
-					case 6:
-						$srcImg = imagerotate($srcImg, -90, 0);
-						break;
+						case 6:
+							$srcImg = imagerotate($srcImg, -90, 0);
+							break;
 
-					case 8:
-						$srcImg = imagerotate($srcImg, 90, 0);
-						break;
+						case 8:
+							$srcImg = imagerotate($srcImg, 90, 0);
+							break;
+					}
 				}
 			}
 			imagejpeg($srcImg, $to, 90);

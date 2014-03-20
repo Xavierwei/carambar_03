@@ -1,11 +1,19 @@
 <div class="videos-list-wrap">
-	<ul node class="videos-list">
-		<li nodeli ng-repeat="video in videos">
-			<span>{{video.title}}</span>
-			<span>{{video.mid}}</span>
-			<span>{{video.position}}</span>
-			<span><a ng-href="#video/edit/{{video.vid}}">edit</a></span>
-            <span ng-click="delete(video)">delete</span>
-		</li>
-	</ul>
+    <h4>Video Library</h4>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Youtube ID</th>
+            <th>Position</th>
+            <th>Phase</th>
+            <th>Action</th>
+        </tr>
+        <tr ng-repeat="video in videos">
+            <td>{{video.title}}</td>
+            <td>{{video.mid}}</td>
+            <td>{{video.position}}</td>
+            <td>{{video.phase}}</td>
+            <td><a class="btn btn-primary" ng-href="#video/edit/{{video.vid}}">Edit</a> <a class="btn btn-danger" ng-href="delete(video)">Delete</a></td>
+        </tr>
+    </table>
 </div>

@@ -1,4 +1,4 @@
-SGWallAdminController
+WallAdminController
     .controller('SettingsCtrList', function($scope, $http, $modal, $log, $routeParams, SettingsService, $filter,ASSET_FOLDER) {
         $scope.saved = false;
 		$scope.phaseList = [

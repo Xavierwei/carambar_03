@@ -43,10 +43,7 @@
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/node.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/settings.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/statistics.js"></script>
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/user.js"></script>
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/like.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/comment.js"></script>
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/flag.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/video.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/lib.controllers.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers.js"></script>

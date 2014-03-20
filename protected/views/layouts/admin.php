@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="SGWallAdmin">
+<html lang="en" ng-app="WallAdmin">
 <head>
 	<meta charset="utf-8">
 	<title>Carambar</title>

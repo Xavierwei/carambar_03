@@ -2,13 +2,13 @@
 
 
 // Declare app level module which depends on filters, and services
-var SGWallAdmin = angular.module('SGWallAdmin', [
+var WallAdmin = angular.module('WallAdmin', [
   'ui.bootstrap',
   'ngRoute',
-  'SGWallAdmin.filters',
-  'SGWallAdmin.services',
+  'WallAdmin.filters',
+  'WallAdmin.services',
   'myApp.directives',
-  'SGWallAdmin.controllers'
+  'WallAdmin.controllers'
 ]).
 config(function($routeProvider,$httpProvider) {
 	var ROOT = '/carambar_03/admin_asset/';

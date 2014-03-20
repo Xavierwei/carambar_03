@@ -1,17 +1,17 @@
-<form name="form" class="css-form" novalidate xmlns="http://www.w3.org/1999/html">
-    <div>Video Title: <input class="form-control" type="text" ng-model="video.title" name="title" required /></div>
-    <div>Video URL: <input class="form-control" type="text" ng-model="video.url" name="url" required /></div>
-    <div>Postion:
+<form name="form" class="video-form css-form" novalidate xmlns="http://www.w3.org/1999/html">
+    <h4>Create New Video</h4>
+    <div class="form-group"><label>Video Title:</label> <input class="form-control" type="text" ng-model="video.title" name="title" required /></div>
+    <div class="form-group"><label>Video URL:</label> <input class="form-control" type="text" ng-model="video.url" name="url" required /></div>
+    <div class="form-group"><label>Postion:</label>
         <select class="form-control" ng-model="video.position" ng-init="video.position='2'">
-            <option value="2">Home</option>
+            <option value="2">Video Section</option>
             <option value="1">Top</option>
-            <option value="0">Hidden</option>
         </select>
 
 
         <small>Which setion want to display</small></div>
 
 
-    <button ng-click="save(video)"
+    <button class="btn btn-primary btn-submit" ng-click="save(video)"
             ng-disabled="form.$invalid || isUnchanged(video)">SAVE</button>
 </form>

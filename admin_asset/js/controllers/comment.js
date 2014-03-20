@@ -1,5 +1,5 @@
-SGWallAdminController
-    .controller('CommentCtrList', function($scope, CommentService, $routeParams, $modal ,ASSET_FOLDER, $log, FlagService) {
+WallAdminController
+    .controller('CommentCtrList', function($scope, CommentService, $routeParams, $modal ,ASSET_FOLDER, $log) {
         var params = {};
         var flagged = $routeParams.flagged;
         if(flagged) {

@@ -1,4 +1,4 @@
-SGWallAdminServices.factory( 'SettingsService', function($http, ROOT) {
+WallAdminServices.factory( 'SettingsService', function($http, ROOT) {
     return {
 		getSetting: function(param, success) {
             $http.get(ROOT+'/setting/getSetting',{

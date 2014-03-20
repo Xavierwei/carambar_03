@@ -1,4 +1,4 @@
-SGWallAdminServices.factory( 'StatisticsService', function($http, ROOT) {
+WallAdminServices.factory( 'StatisticsService', function($http, ROOT) {
     return {
 		getChallengeList: function(success) {
             $http.get(ROOT+'/challenge/list',{

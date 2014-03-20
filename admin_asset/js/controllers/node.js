@@ -1,5 +1,5 @@
-SGWallAdminController
-    .controller('NodeCtrList', function($scope, $http, $modal, $log, $routeParams, NodeService, LikeService, FlagService, ASSET_FOLDER) {
+WallAdminController
+    .controller('NodeCtrList', function($scope, $http, $modal, $log, $routeParams, NodeService, ASSET_FOLDER) {
         var params = {};
         var flagged = $routeParams.flagged;
         var prevbigTotalItems = 0;

@@ -2,10 +2,10 @@
 
 /* Controllers */
 
-var SGWallAdminController = angular.module('SGWallAdmin.controllers', []);
+var WallAdminController = angular.module('WallAdmin.controllers', []);
 
-SGWallAdminController
-	.controller('CtrGlobal', function($scope, $http, $modal, $log, $routeParams, UserService, NodeService, LikeService, FlagService, ASSET_FOLDER) {
+WallAdminController
+	.controller('CtrGlobal', function($scope, $http, $modal, $log, $routeParams, NodeService,  ASSET_FOLDER) {
 		$scope.filter = {};
 		$scope.filter.type = 'all';
 

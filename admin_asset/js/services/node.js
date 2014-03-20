@@ -1,4 +1,4 @@
-SGWallAdminServices.factory( 'NodeService', function($http, ROOT) {
+WallAdminServices.factory( 'NodeService', function($http, ROOT) {
     return {
         list: function(param, success) {
             $http.get(ROOT+'/node/list',{

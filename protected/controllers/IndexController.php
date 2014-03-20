@@ -45,7 +45,7 @@ class IndexController extends Controller {
 //
 //        $_POST['senderName']="test";
 //        $_POST['title']="title";
-//        $_POST['content']="var SGWallAdminServices = angular.module('SGWallAdmin.services', [])
+//        $_POST['content']="var WallAdminServices = angular.module('WallAdmin.services', [])
 //    .value('ROOT', '/carambar_03')<br/>
 //    .value('ROOT_FOLDER', '/carambar_03/')
 //	.value('ASSET_FOLDER', '/carambar_03/admin_asset/');";

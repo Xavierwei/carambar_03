@@ -1,9 +1,9 @@
 <div class="statistics-wrap">
 	<h4>Challenge Result</h4>
-    <ul>
-        <li ng-repeat="challenge in challenges"><label>{{challenge.title}}</label> {{challenge.vote_counts}}</li>
+    <ul class="statistics-item">
+        <li ng-repeat="challenge in challenges"><label>{{challenge.title}}: </label> <span>{{challenge.vote_counts}}</span></li>
     </ul>
 
     <h4>GOOD LUCK</h4>
-    <div>{{goodluck}}</div>
+    <div class="statistics-item"><label>Counts: </label><span>{{goodluck}}</span></div>
 </div>

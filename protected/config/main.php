@@ -130,7 +130,7 @@ return array(
 			'titleAward' => '#CARAMBARGOODLUCK You win!',
 			'contentNew' => 'Dear<br/>New facebook post coming',
 			'contentAward' => 'Dear<br/>You win!',
-			'emailList' => 'tony@fuel-it-up.com, dev@fuel-it-up.com'
+			'emailList' => array('dev@fuel-it-up.com','tony@fuel-it-up.com')
 		)
 	),
 );

@@ -245,6 +245,18 @@ class NodeController extends Controller {
 		$this->responseJSON($page, "success");
 	}
 
+	/**
+	 * Get Node by nid
+	 */
+	public function actionGetByNid() {
+		if(Yii::app()->user->checkAccess("isAdmin")) {
+			$request = Yii::app()->getRequest();
+			$nid = $request->getParam("nid");
+			$node = NodeAR::model()->findByPk($nid);
+			$data = $node->attributes;
+			$this->responseJSON($data, "success");
+		}
+	}
 
 	/**
 	 * Get node list
@@ -507,6 +519,8 @@ class NodeController extends Controller {
 		}
 
 	}
+
+
 
 	/**
 	 * Post the content via Mail

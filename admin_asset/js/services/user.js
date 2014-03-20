@@ -1,4 +1,4 @@
-SGWallAdminServices.factory( 'UserService', function($http, ROOT) {
+WallAdminServices.factory( 'UserService', function($http, ROOT) {
     var currentUser, isLoggedin;
     return {
         login: function(user, success) {

@@ -1,4 +1,4 @@
-SGWallAdminServices.factory( 'CommentService', function($http, ROOT) {
+WallAdminServices.factory( 'CommentService', function($http, ROOT) {
     return {
         list: function(param, success) {
             $http.get(ROOT+'/comment/list', {
