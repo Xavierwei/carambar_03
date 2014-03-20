@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_asset/tmp/statistics/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_asset/js/controllers/statistics.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_asset/js/services/statistics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/AdminController.php" afterPath="$PROJECT_DIR$/protected/controllers/AdminController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Drtool.php" afterPath="$PROJECT_DIR$/protected/components/Drtool.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/FacebookController.php" afterPath="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/NodeController.php" afterPath="$PROJECT_DIR$/protected/controllers/NodeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/VideoController.php" afterPath="$PROJECT_DIR$/protected/controllers/VideoController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/api.js" afterPath="$PROJECT_DIR$/js/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/app.js" afterPath="$PROJECT_DIR$/admin_asset/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/video/create.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/video/create.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/admin/index.php" afterPath="$PROJECT_DIR$/protected/views/admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/video/phase.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/video/phase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/controllers/video.js" afterPath="$PROJECT_DIR$/admin_asset/js/controllers/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/IndexController.php" afterPath="$PROJECT_DIR$/protected/controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bank_wall.iws" />
@@ -443,10 +431,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Drtool.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Drtool.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/components/Drtool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="53" selection-start="3197" selection-end="3197" vertical-scroll-proportion="-23.107143">
+            <state line="112" column="0" selection-start="3465" selection-end="3465" vertical-scroll-proportion="0.5277247">
               <folding />
             </state>
           </provider>
@@ -461,10 +449,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FacebookController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FacebookController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="186" column="61" selection-start="5280" selection-end="5280" vertical-scroll-proportion="0.6548757">
+            <state line="186" column="61" selection-start="5280" selection-end="5280" vertical-scroll-proportion="-24.464285">
               <folding />
             </state>
           </provider>
@@ -555,11 +543,11 @@
         <option value="$PROJECT_DIR$/admin_asset/js/services/statistics.js" />
         <option value="$PROJECT_DIR$/admin_asset/js/controllers/statistics.js" />
         <option value="$PROJECT_DIR$/protected/controllers/NodeController.php" />
-        <option value="$PROJECT_DIR$/protected/components/Drtool.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
         <option value="$PROJECT_DIR$/homepage/js/lp.index.js" />
         <option value="$PROJECT_DIR$/homepage/index.html" />
+        <option value="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
+        <option value="$PROJECT_DIR$/protected/components/Drtool.php" />
       </list>
     </option>
   </component>
@@ -959,13 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/Drtool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="53" selection-start="3197" selection-end="3197" vertical-scroll-proportion="-23.107143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/NodeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="200" column="0" selection-start="4654" selection-end="4654" vertical-scroll-proportion="236.57143">
@@ -975,7 +956,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="61" selection-start="5280" selection-end="5280" vertical-scroll-proportion="0.6548757">
+        <state line="186" column="61" selection-start="5280" selection-end="5280" vertical-scroll-proportion="-24.464285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Drtool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="0" selection-start="3465" selection-end="3465" vertical-scroll-proportion="0.5277247">
           <folding />
         </state>
       </provider>
