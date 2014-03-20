@@ -10,19 +10,16 @@
 			<li><a rel="#/node" href="#/node"><em class="glyphicon glyphicon-th"></em> Contents</a></li>
 			<li><a rel="#/comment" href="#/comment"><em class="glyphicon glyphicon-edit"></em> Comments</a></li>
 
-			<li><a href="#/video"><em class="glyphicon glyphicon-play"></em> Video</a>
+			<li><a href="#/video/phase/1"><em class="glyphicon glyphicon-play"></em> Video</a>
 				<ul>
 					<li><a rel="#/video/create" href="#/video/create"> Create</a></li>
+					<li><a rel="#/video/phase/1" href="#/video/phase/1"> Manage</a></li>
 					<li><a rel="#/video" href="#/video"> Library</a></li>
-					<li><a rel="#/video/phase/1" href="#/video/phase/1"> Phase1-2</a></li>
-					<li><a rel="#/video/phase/3" href="#/video/phase/3"> Phase3</a></li>
-					<li><a rel="#/video/phase/4" href="#/video/phase/4"> Phase4</a></li>
-					<li><a rel="#/video/phase/5" href="#/video/phase/5"> Phase5</a></li>
 				</ul>
 			</li>
 			<li><a rel="#/statistics" href="#/statistics"><em class="glyphicon glyphicon-stats"></em> Statistics</a></li>
 			<li><a rel="#/settings" href="#/settings"><em class="glyphicon glyphicon-wrench"></em> Settings</a></li>
-			<li><a href="../user/samllogout"><em class="glyphicon glyphicon-log-out"></em> Logout</a></li>
+			<li><a href="../user/logout"><em class="glyphicon glyphicon-log-out"></em> Logout</a></li>
 		</ul>
 	</div>
 

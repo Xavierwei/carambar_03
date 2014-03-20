@@ -16,7 +16,7 @@ a{text-decoration:none;color:#666}
 .clear:before,
 .clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
 
-
+.btn {font-size:11px;}
 
 .header {background:#fff;text-align: center;padding:15px 0;position: fixed;top:0;left:0;width:100%;z-index: 10;}
 
@@ -119,11 +119,11 @@ a{text-decoration:none;color:#666}
     .users-list .btns {margin:0 0 0 55px;}
 
 
-.settings-wrap {color:#ccc;}
+.settings-wrap {color:#444;}
     .settings-wrap label {display: block;}
     .settings-wrap .form-control {width:200px;float:left;}
-.settings-wrap .btn {padding:4px 10px;font-size:11px;margin:0 0 0 10px;}
-.settings-wrap small {display:block;clear: both;}
+    .settings-wrap .btn {padding:4px 10px;font-size:11px;margin:0 0 0 10px;}
+    .settings-wrap small {display:block;clear: both;}
 
 /* loginpage Used
 ================================================================================================= */
@@ -156,10 +156,18 @@ a{text-decoration:none;color:#666}
     .video-form  h4 {text-transform: uppercase;background:#ffd800;padding:10px 10px;font-weight: bold;}
     .video-form .form-group {margin:10px 0 0;}
     .video-form .btn-submit {margin-top:20px;}
+    .phase1 .phase1,
+    .phase3 .phase3,
+    .phase4 .phase4,
+    .phase5 .phase5{background:#f97c01;border:1px solid #f97c01;font-weight:bold;}
 
+.video-manage-btn-group {display: block;margin-right:80px;height:20px;}
 .videos-list-wrap {margin-right:80px;}
     .videos-list-wrap h4 {text-transform: uppercase;background:#ffd800;padding:10px 10px;font-weight: bold;margin-bottom:20px;}
     .videos-list-wrap table {width:100%;}
+    .video-phase-list h4 {margin:20px 0 10px 0;}
+    .video-phase-add select {padding:5px 0;}
+    .video-phase-add {background:#ffd402;border:2px dashed #ffa800;margin-right:80px;margin-top:20px;padding:10px 10px;}
 
 .nodes-list,.login-page .login,
 a,.menu li,table td,.refresh, .btn,.list li .black-overlay

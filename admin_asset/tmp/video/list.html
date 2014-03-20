@@ -4,6 +4,7 @@
         <tr>
             <th>Title</th>
             <th>Youtube ID</th>
+            <th>Ribbon</th>
             <th>Position</th>
             <th>Phase</th>
             <th>Action</th>
@@ -11,6 +12,7 @@
         <tr ng-repeat="video in videos">
             <td>{{video.title}}</td>
             <td>{{video.mid}}</td>
+            <td>{{video.ribbon | ribbon}}</td>
             <td>{{video.position}}</td>
             <td>{{video.phase}}</td>
             <td><a class="btn btn-primary" ng-href="#video/edit/{{video.vid}}">Edit</a> <a class="btn btn-danger" ng-href="delete(video)">Delete</a></td>

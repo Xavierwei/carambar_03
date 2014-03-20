@@ -2,16 +2,20 @@
     <h4>Create New Video</h4>
     <div class="form-group"><label>Video Title:</label> <input class="form-control" type="text" ng-model="video.title" name="title" required /></div>
     <div class="form-group"><label>Video URL:</label> <input class="form-control" type="text" ng-model="video.url" name="url" required /></div>
+    <div class="form-group"><label>Ribbon:</label>
+        <select class="form-control" ng-model="video.ribbon" ng-init="video.ribbon='1'">
+            <option value="1">PRESQUE</option>
+            <option value="2">ON L'A FAIT!</option>
+            <option value="0">None</option>
+        </select>
+    </div>
     <div class="form-group"><label>Postion:</label>
         <select class="form-control" ng-model="video.position" ng-init="video.position='2'">
             <option value="2">Video Section</option>
             <option value="1">Top</option>
         </select>
-
-
-        <small>Which setion want to display</small></div>
-
-
+        <small>Which setion want to display</small>
+    </div>
     <button class="btn btn-primary btn-submit" ng-click="save(video)"
             ng-disabled="form.$invalid || isUnchanged(video)">SAVE</button>
 </form>

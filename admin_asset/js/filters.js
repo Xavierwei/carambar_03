@@ -63,4 +63,20 @@ angular.module('WallAdmin.filters', [])
 				return ROOT_FOLDER + '/admin_asset/img/login_avatar.gif';
 			}
 		}
-	});
+	})
+    .filter('ribbon', function() {
+        return function(input) {
+            switch(input) {
+                case '1':
+                    return 'PRESQUE';
+                    break;
+                case '2':
+                    return 'ON L\'A FAIT!';
+                    break;
+                default:
+                    return 'None';
+            }
+
+        }
+    });
+

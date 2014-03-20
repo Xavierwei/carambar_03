@@ -21,7 +21,7 @@ WallAdminController
 
     })
 
-    .controller('VideoCtrCreate', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService,  ASSET_FOLDER) {
+    .controller('VideoCtrCreate', function($scope, $http, $modal, $log, $routeParams,VideoService,  ASSET_FOLDER) {
         $scope.save = function(video) {
             VideoService.post(video, function(data){
             console.log(data);
@@ -29,7 +29,7 @@ WallAdminController
         }
     })
 
-    .controller('VideoCtrEdit', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService,  ASSET_FOLDER) {
+    .controller('VideoCtrEdit', function($scope, $http, $modal, $log, $routeParams,VideoService, $location,  ASSET_FOLDER) {
 		VideoService.getById($routeParams.vid, function(data){
 			$scope.video = data.data;
 		});
@@ -37,13 +37,15 @@ WallAdminController
 		$scope.save = function(video) {
             video.del = 0;
 			VideoService.update(video, function(data){
-				console.log(data);
+                $location.path("video");
 			});
 		}
 	})
 
 
-	.controller('VideoCtrPhase', function($scope, $http, $modal, $log, $routeParams,VideoService, NodeService, ASSET_FOLDER) {
+	.controller('VideoCtrPhase', function($scope, $http, $modal, $log, $routeParams,VideoService, ASSET_FOLDER) {
+        $scope.phase = $routeParams.phaseid;
+
 		VideoService.list({phase:$routeParams.phaseid},function(data){
 			$scope.videos = data.data;
 		});
@@ -53,11 +55,16 @@ WallAdminController
         });
 
 		$scope.save = function(video) {
+            if(!video) {
+                return;
+            }
             video.phase = $routeParams.phaseid;
             video.del = 0;
 			VideoService.update(video, function(data){
+                console.log($scope.videos.indexOf(video));
+                console.log($scope.videos);
+                console.log(video);
                 $scope.videos.push(video);
-				console.log(data);
 			});
 		}
 
@@ -65,9 +72,7 @@ WallAdminController
             video.phase = $routeParams.phaseid;
             video.del = 1;
             VideoService.update(video, function(data){
-
                 $scope.videos.splice($scope.videos.indexOf(video), 1);
-                console.log(data);
             });
         }
 	})

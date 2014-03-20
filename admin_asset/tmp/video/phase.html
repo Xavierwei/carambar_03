@@ -1,26 +1,40 @@
-<div class="btn-group">
-    <a class="btn btn-danger" ng-href="#/video/phase/1">Phase 1-2</a>
-    <a class="btn btn-danger" ng-href="#/video/phase/3">Phase 3</a>
-    <a class="btn btn-danger" ng-href="#/video/phase/4">Phase 4</a>
-    <a class="btn btn-danger" ng-href="#/video/phase/5">Phase 5</a>
+<div class="btn-group video-manage-btn-group phase{{phase}}">
+    <a class="btn btn-danger phase1" ng-href="#/video/phase/1">Phase 1-2</a>
+    <a class="btn btn-danger phase3" ng-href="#/video/phase/3">Phase 3</a>
+    <a class="btn btn-danger phase4" ng-href="#/video/phase/4">Phase 4</a>
+    <a class="btn btn-danger phase5" ng-href="#/video/phase/5">Phase 5</a>
     <a style="margin-left:15px;" class="btn btn-primary" ng-href="#/video">Library</a>
+    <a style="float:right;" class="btn btn-danger" ng-href="#/video/create">+ Add to library</a>
 </div>
 
-<div class="videos-list-wrap">
-	<ul node class="videos-list">
-		<li nodeli ng-repeat="video in videos">
-			<span>{{video.title}}</span>
-			<span>{{video.mid}}</span>
-			<span>{{video.position}}</span>
-            <span ng-click="remove(video)">remove</span>
-		</li>
-	</ul>
+<div class="videos-list-wrap video-phase-list">
+    <h4>Video List on Phase {{phase}}</h4>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Youtube ID</th>
+            <th>Ribbon</th>
+            <th>Position</th>
+            <th>Phase</th>
+            <th>Action</th>
+        </tr>
+        <tr ng-repeat="video in videos">
+            <td>{{video.title}}</td>
+            <td>{{video.mid}}</td>
+            <td>{{video.ribbon | ribbon}}</td>
+            <td>{{video.position}}</td>
+            <td>{{video.phase}}</td>
+            <td><a class="btn btn-primary" ng-href="#video/edit/{{video.vid}}">Edit</a> <a class="btn btn-danger" ng-click="remove(video)">Remove from this phase</a></td>
+        </tr>
+    </table>
 </div>
 
-<select ng-model="selectedVideo"
-        data-ng-options="v.title for v in allvideos">
-    <option style="display:none" value="">select a type</option>
-</select>
 
-<div ng-click="save(selectedVideo)">Save</div>
+<div class="video-phase-add">
+    <select ng-model="selectedVideo"
+            data-ng-options="v.title for v in allvideos">
+        <option style="display:none" value="">Select a video to add into phase {{phase}}</option>
+    </select>
 
+    <div class="btn btn-danger" ng-click="save(selectedVideo)">Add</div>
+</div>
