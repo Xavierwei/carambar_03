@@ -89,7 +89,7 @@ class FacebookController extends Controller {
 		$this->facebook->setAccessToken($oauth_token);
 		$results = $this->facebook->api('/search', 'GET',
 			array(
-				'q' => '9263'
+				'q' => Yii::app()->params['tag']
 			));
 
 

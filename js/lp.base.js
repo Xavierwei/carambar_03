@@ -282,7 +282,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                     node.image = node.file;
                 }
                 node.formatDate = date;
-                if( node.type == "photo" ){
+                if( node.type == "photo" || node.type == "video"){
                     node.image = node.image.replace('.jpg' , THUMBNAIL_IMG_SIZE + '.jpg' );
                 }   
                 // fix description
@@ -2397,6 +2397,10 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
     // }
 
     var renderVideo = function($newItem,node){
+        if(node.from == 'instagram') {
+            node.embed = 'instagram.php?url=' + node.url;
+        }
+        console.log(node);
         LP.compile( 'html5-player-template' , node , function( html ){
             $newItem.html(html);
         });

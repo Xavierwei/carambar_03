@@ -426,7 +426,11 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 		if($('.videotxt')) {
 			api.ajax('recent', {type:'text', pagenum:3, orderby:'datetime'}, function( result ){
 				$.each(result.data,function(index,node){
-					node.description = node.description;
+                    var desc = node.description.replace('#GOODLUCKCARAMBAR','');
+                    if(desc.length > 60) {
+                        desc = desc.substr(0,60)+'...';
+                    }
+					node.description = desc;
 					LP.compile( 'videotxt-item-template' , node , function( html ){
 						$('.videotxt').append(html);
 					});

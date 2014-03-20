@@ -3035,3 +3035,312 @@ Stack trace:
 REQUEST_URI=/carambar_03/homepage/index.php/setting/count?_=1395299404546
 HTTP_REFERER=http://lily.local:8888/carambar_03/homepage/
 ---
+2014/03/20 15:55:58 [warning] [application] Failed to set unsafe attribute "cid" of "ChallengeAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/ChallengeController.php (57)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:13:28 [warning] [application] Failed to set unsafe attribute "cid" of "ChallengeAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/ChallengeController.php (57)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:13:39 [warning] [application] Failed to set unsafe attribute "cid" of "ChallengeAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/ChallengeController.php (57)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:15:15 [warning] [application] Failed to set unsafe attribute "cid" of "ChallengeAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/ChallengeController.php (57)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:30:48 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:31:04 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:31:04 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/20 16:41:47 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:41:53 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:41:53 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:41:55 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:41:55 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:50:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/20 16:54:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/20 16:54:12 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:54:12 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:54:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/20 16:54:37 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:54:37 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:58:32 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 16:58:32 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:02:06 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:02:06 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:03:20 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:03:20 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:03:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/20 17:03:25 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:03:25 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:03:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/20 17:03:32 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:03:32 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:05:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/20 17:05:15 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:05:15 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:05:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://lily.local:8888/carambar_03/admin/index
+---
+2014/03/20 17:05:26 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:05:45 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:05:45 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 17:57:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "insagram/fetch".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('insagram/fetch')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/insagram/fetch
+---
+2014/03/20 17:58:33 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php:858)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): InstagramController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): InstagramController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): InstagramController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/instagram/fetch
+in /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php (858)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/InstagramController.php (82)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 19:56:09 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 21:07:15 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 21:07:18 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 21:07:33 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 21:07:33 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (101)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 21:09:02 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 21:09:02 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 21:09:08 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)

@@ -42,6 +42,7 @@ SGWallAdminServices.factory( 'VideoService', function($http, ROOT) {
         },
 
 		list: function(params, success) {
+            params._t = new Date().getTime();
 			$http.get(ROOT+'/video/list',{
 				cache: false,
                 params: params

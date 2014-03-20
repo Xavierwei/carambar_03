@@ -2,6 +2,13 @@
     <div><img width="200" src="{{video.thumbnail | originPhoto}}"></div>
     <div>Video Title: <input class="form-control" type="text" ng-model="video.title" name="title" required /></div>
     <div>Video URL: {{video.url}}</div>
+    <div>Ribbon:
+        <select class="form-control" ng-model="video.ribbon" ng-init="video.ribbon='1'">
+            <option value="1">PRESQUE</option>
+            <option value="2">ON L'A FAIT!</option>
+            <option value="0">None</option>
+        </select>
+    </div>
     <div>Postion: <input class="form-control" type="text" ng-model="video.position" name="position" required />
         <small>Which setion want to display</small></div>
 

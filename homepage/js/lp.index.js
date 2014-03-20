@@ -7,7 +7,19 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
     function init() {
 
         api.ajax('indicateResult', function( result ){
-            digitHelper.init(result.data);
+            if(result.data) {
+                digitHelper.init(result.data);
+            }
+            else {
+                digitHelper.init(0);
+            }
+        }, function(){
+            digitHelper.init(0);
+        });
+
+        $('.loading-logo').hide().css('top','40%');
+        $('.loading-logo img').ensureLoad(function(){
+            $('.loading-logo').fadeIn().dequeue().animate({top:'50%'},800,'easeOutQuart');
         });
 
         $(document.body).queryLoader2({
@@ -123,6 +135,17 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
         }
     })();
 
+    jQuery.fn.extend({
+        ensureLoad: function(handler) {
+            return this.each(function() {
+                if(this.complete) {
+                    handler.call(this);
+                } else {
+                    $(this).load(handler);
+                }
+            });
+        }
+    });
 
     window.digitHelper = digitHelper;
 

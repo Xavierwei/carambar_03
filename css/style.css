@@ -44,7 +44,7 @@ a:hover{color:#e82426}
 .videopart-tit {background: url(../images/videopart_tit.png) no-repeat;width:957px;height:99px;position:absolute;top:-36px;left:-46px;}
 .videopart1{width:598px;}
     .videomod{float: left;width: 556px;height: 309px}
-    .videotxt{float: left;display:inline;margin:8px 0 0 8px;width: 214px;height: 250px;background:#dadada ;color:#12103b;padding:0 10px;}
+    .videotxt{float: left;display:inline;margin:8px 0 0 8px;width: 214px;background:#dadada ;color:#12103b;padding:5px 10px;}
         h2{text-transform:uppercase;font-size: 18px;font-weight: normal;padding: 18px 0 5px}
         .videotxt-item{font-size:12px;padding:4px 0 0;overflow: hidden;}
             .videotxt-item h3{color:#e00025;text-transform:uppercase;font-weight: normal;}
@@ -55,6 +55,7 @@ a:hover{color:#e82426}
             .videoshare .videoshare-t{background: url('../images/share_t.png') no-repeat;width: 43px;height: 43px;}
             .videoshare .videoshare-y{background-position: 0 -80px}
             .videoshare .videoshare-i{background-position: 0 -120px}
+            .btn-other-challenges {background: url('../images/btn_other_challenges.png') no-repeat;width:150px;height:61px;display:block;position: absolute;right:71px;bottom:0;}
 
 .sec-blue{background: #39376d url('../images/sec1_blue.png') repeat-x;height: 174px;width:100%;margin: 20px 0 0;position: relative;}
     .sec-bluecon{width:800px;margin: 0 auto;position: relative;}
@@ -235,6 +236,7 @@ a:hover{color:#e82426}
     .challenge-item {float:left;width:231px;margin:0 13px;padding:23px 0;text-align:center;background:#e3142a;-webkit-box-shadow: 0 0px 20px 0 #363636;box-shadow: 0 0px 20px 0 #363636;}
     .vote-btn {cursor:pointer;background: url(../images/btn_defi.png) no-repeat;width:168px;height:57px;margin:20px auto 0 auto;text-indent:-999em;}
         .vote-btn.disabled,.vote-btn.voted {cursor:default;}
+        .vote-btn.voted {background-position:-1568px 0;}
         .vote-btn1:hover {background-position:-388px 0;}
         .vote-btn1,.vote-btn1.voted:hover {background-position:0 0;}
         .vote-btn1:active {background-position:-801px 0;}
@@ -263,7 +265,9 @@ a:hover{color:#e82426}
     .videolist-item-tit1 {background: url(../images/video_defi1.gif) no-repeat center;}
     .videolist-item-tit2 {background: url(../images/video_defi2.gif) no-repeat center;}
     .videolist-item-tit3 {background: url(../images/video_defi3.gif) no-repeat center;}
-    .video-icon{background: url('../images/video_icon.png') no-repeat;width: 64px;height: 98px;position: absolute;left:-15px;top:-6px}
+    .video-icon {position: absolute;left:-15px;top:-6px}
+.video-icon-1 {background: url('../images/video_icon_1.png') no-repeat;width: 64px;height: 98px;}
+.video-icon-2 {background: url('../images/video_icon_2.png') no-repeat;width: 84px;height: 98px;left:-25px;}
     .videolist-boxnull{border: #2b2761 dotted 5px;height:126px;width: 242px; line-height: 120px;text-transform: uppercase;font-size:16px;}
     .videolist-pro{position: absolute;background: url('../images/videolist_pro.png') no-repeat;width: 208px;height: 239px;bottom:0;right:30px;}
     .videolist-tit{background: url('../images/videolist_tit.png') no-repeat;width: 532px;height: 44px;position: absolute;top:-58px;left:50%;margin-left:-266px;z-index:13;}

@@ -1,5 +1,5 @@
 <?php
-	$url = "http://64.207.184.106/carambar/homepage/testcount.php";
+	$url = "http://www.goodluckcarambar.com/setting/count";
 	$ret = @file_get_contents($url);
 	echo $ret;
 ?>

@@ -72,6 +72,7 @@
 				<!-- <a href="#" class="videoshare-y"></a> -->
 				<!-- <a href="#" class="videoshare-i"></a> -->
 			</div>
+			<a href="photowall.php" class="btn-other-challenges"></a>
 		</div>
 
 			<?php if($phase == 4):?>
@@ -149,7 +150,7 @@
 						<div class="videolist-item-tit videolist-item-tit<?php echo $index+1;?>"></div>
 						<div class="videolist-box"><img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" /><a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
 						<div class="videolist-txt"><?php echo $video->title;?></div>
-						<div class="video-icon"></div>
+						<div class="video-icon video-icon-<?php echo $video->ribbon;?>"></div>
 					</div>
 					<?php endforeach;?>
 					<?php $leftCount = 3 - count($homeVideos) ?>

@@ -855,11 +855,11 @@ class NodeAR extends CActiveRecord{
 			$location = '';
 			$places = $data['results'][0]['address_components'];
 			foreach($places as $place) {
-				if($place['types'][0] == 'locality')
+				if(isset($place['types'][0]) && $place['types'][0] == 'locality')
 				{
 					$location .= $place['long_name'];
 				}
-				if($place['types'][0] == 'country')
+				if(isset($place['types'][0]) && $place['types'][0] == 'country')
 				{
 					$location .= ', '.$place['long_name'];
 				}
