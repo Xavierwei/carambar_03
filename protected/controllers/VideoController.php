@@ -7,40 +7,47 @@ class VideoController extends Controller {
      */
     public function actionList()
     {
-        if(!isset($_POST['position']))		//未传入类型，默认显示全部
-            $_POST['position']=NULL;
-        if(!isset($_POST['pageSize']))		//未传入每页条数，默认条数为8
-            $_POST['pageSize']=8;
-        if(!isset($_POST['pages']))			//未传入页数,使用默认页数为1
-            $_POST['pages']=1;
-
         if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
         {
-            if(!isset($_POST['status']))			//未传入状态,使用默认状态为1
-                $_POST['status']=1;
-            // get phase
-            $phase = SettingAR::model()->getValue('phase');
-            if(!isset($phase))
-                StatusSend::_sendResponse(200, StatusSend::error('end', 1032)); //没有phase，存在。不显示
+            StatusSend::_sendResponse(200, StatusSend::error('end', 1015)); //没有权限进行此操作
         }
-        else
+        else //管理员
         {
-            $_POST['status']=NULL;
-            $phase=NULL;
-        }
+            if(!isset($_GET['position']))		//未传入类型，默认显示全部
+                $_GET['position']=NULL;
+            if(!isset($_GET['pageSize']))		//未传入每页条数，默认条数为8
+                $_GET['pageSize']=8;
+            if(!isset($_GET['pages']))			//未传入页数,使用默认页数为1
+                $_GET['pages']=1;
+
+            if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
+            {
+                if(!isset($_GET['status']))			//未传入状态,使用默认状态为1
+                    $_GET['status']=1;
+                // get phase
+                $phase = SettingAR::model()->getValue('phase');
+                if(!isset($phase))
+                    StatusSend::_sendResponse(200, StatusSend::error('end', 1032)); //没有phase，存在。不显示
+            }
+            else
+            {
+                $_GET['status']=NULL;
+                $phase=NULL;
+            }
 
 
 
 
-        $videoList=VideoAR::model()->getVideoList($_POST['position'],$_POST['status'], $_POST['pageSize'],$_POST['pages'],$phase);
+            $videoList=VideoAR::model()->getVideoList($_GET['position'],$_GET['status'], $_GET['pageSize'],$_GET['pages'],$phase);
 
-        if(empty($videoList))
-        {
-            StatusSend::_sendResponse(200, StatusSend::error('end', 1012)); //表中没有数据
-        }
-        else
-        {
-            StatusSend::_sendResponse(200, StatusSend::success('success',2005,$videoList)); //获取列表成功
+            if(empty($videoList))
+            {
+                StatusSend::_sendResponse(200, StatusSend::error('end', 1012)); //表中没有数据
+            }
+            else
+            {
+                StatusSend::_sendResponse(200, StatusSend::success('success',2005,$videoList)); //获取列表成功
+            }
         }
     }
 
@@ -77,7 +84,7 @@ class VideoController extends Controller {
         if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
         {
             StatusSend::_sendResponse(200, StatusSend::error('end', 1015)); //没有权限进行此操作
-         }
+        }
         else //管理员
         {
             $phase= $item->phase;
