@@ -178,6 +178,10 @@ class NodeController extends Controller {
 				$ret = $node->updateByPk($node->nid, array("reward" => $node->reward));
 				$this->cleanCache("node_")
 					->cleanCache("comment_");
+				if($node->reward == 1 && $node->email) {
+					//TODO send email
+					@Drtool::sendEmail('GOO', 'test title', 'haha\n\n\haha', $node->email);
+				}
 				$this->responseJSON($node->attributes, "success");
 			}
 			else {

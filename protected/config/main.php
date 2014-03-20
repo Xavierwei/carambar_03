@@ -122,5 +122,15 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 		'siteurl'=>'http://lily.local:8888/carambar_03',
 		'tag'=>'9263',
+		'email' => array(
+			'username' => 'fuelitupdev@gmail.com',
+			'password' => 'shanghaitest',
+			'sendName' => 'Carambar',
+			'titleNew' => '#CARAMBARGOODLUCK New facebook post coming',
+			'titleAward' => '#CARAMBARGOODLUCK You win!',
+			'contentNew' => 'New facebook post coming',
+			'contentAward' => 'You win!',
+			'emailList' => 'tony@fuel-it-up.com'
+		)
 	),
 );

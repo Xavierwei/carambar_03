@@ -1,3 +1,11 @@
+<div class="btn-group">
+    <a class="btn btn-danger" ng-href="#/video/phase/1">Phase 1-2</a>
+    <a class="btn btn-danger" ng-href="#/video/phase/3">Phase 3</a>
+    <a class="btn btn-danger" ng-href="#/video/phase/4">Phase 4</a>
+    <a class="btn btn-danger" ng-href="#/video/phase/5">Phase 5</a>
+    <a style="margin-left:15px;" class="btn btn-primary" ng-href="#/video">Library</a>
+</div>
+
 <div class="videos-list-wrap">
 	<ul node class="videos-list">
 		<li nodeli ng-repeat="video in videos">
@@ -10,7 +18,8 @@
 </div>
 
 <select ng-model="selectedVideo"
-        data-ng-options="v.title for v in videos">
+        data-ng-options="v.title for v in allvideos">
+    <option style="display:none" value="">select a type</option>
 </select>
 
 <div ng-click="save(selectedVideo)">Save</div>

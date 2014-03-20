@@ -13,9 +13,14 @@
 			<li><a href="#/video"><em class="glyphicon glyphicon-play"></em> Video</a>
 				<ul>
 					<li><a rel="#/video/create" href="#/video/create"> Create</a></li>
-					<li><a rel="#/video" href="#/video"> List</a></li>
+					<li><a rel="#/video" href="#/video"> Library</a></li>
+					<li><a rel="#/video/phase/1" href="#/video/phase/1"> Phase1-2</a></li>
+					<li><a rel="#/video/phase/3" href="#/video/phase/3"> Phase3</a></li>
+					<li><a rel="#/video/phase/4" href="#/video/phase/4"> Phase4</a></li>
+					<li><a rel="#/video/phase/5" href="#/video/phase/5"> Phase5</a></li>
 				</ul>
 			</li>
+			<li><a rel="#/statistics" href="#/statistics"><em class="glyphicon glyphicon-stats"></em> Statistics</a></li>
 			<li><a rel="#/settings" href="#/settings"><em class="glyphicon glyphicon-wrench"></em> Settings</a></li>
 			<li><a href="../user/samllogout"><em class="glyphicon glyphicon-log-out"></em> Logout</a></li>
 		</ul>
@@ -37,6 +42,7 @@
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/node.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/settings.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/statistics.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/user.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/like.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/services/comment.js"></script>
@@ -47,6 +53,7 @@
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/node.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/comment.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/settings.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/statistics.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/controllers/video.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/filters.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/admin_asset/js/directives.js"></script>
