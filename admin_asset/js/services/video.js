@@ -41,15 +41,16 @@ SGWallAdminServices.factory( 'VideoService', function($http, ROOT) {
             }
         },
 
-		list: function(success) {
+		list: function(params, success) {
 			$http.get(ROOT+'/video/list',{
-				cache: false
+				cache: false,
+                params: params
 			})
-				.success(function(data) {
-					success(data);
-				})
-				.error(function() {
-				});
+            .success(function(data) {
+                success(data);
+            })
+            .error(function() {
+            });
 		},
 
         getById: function(vid, success) {
