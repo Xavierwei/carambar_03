@@ -101,15 +101,29 @@ class Drtool
                 $mail->SMTPSecure       = "ssl";                                // sets the prefix to the servier
                 $mail->Host                   = "smtp.gmail.com";               // sets GMAIL as the SMTP server
                 $mail->Port                    = 465;                                     // set the SMTP port
-                $mail->Username           = "username@gmail.com";  // GMAIL username
+                $mail->Username           = "usewrname@gmail.com";  // GMAIL username
                 $mail->Password           = "password";                         // GMAIL password
 
                 $mail->From              = $mail->Username;                  //you email
                 $mail->FromName     = $senderName;         //邮件发送人 your name
+                $mail->IsHTML(true);                                  // set email format to HTML
+
+                if(is_array($sendMaliAddress))
+                {
+                    foreach($sendMaliAddress as $k => $val)
+                    {
+                        $mail->AddAddress($val);           //收件人email recipient email
+                    }
+                }
+                else
+                {
+                    $mail->AddAddress($sendMaliAddress);
+                }
+
+
                 $mail->Subject          =$title;                      //标题 title
                 $mail->Body             = $content;                     //内容 content
                 $mail->WordWrap     = 50;                                            // set word wrap
-                $mail->AddAddress($sendMaliAddress);           //收件人email recipient email
 
                 if(!$mail->Send())
                     StatusSend::_sendResponse(200, StatusSend::error('end', 1024,$mail->ErrorInfo)); //邮件发送失败

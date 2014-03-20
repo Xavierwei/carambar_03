@@ -38,4 +38,21 @@ class IndexController extends Controller {
 			'phase'			=> $phase,
 		));
 	}
+
+
+//    public  function actionTestac()
+//    {
+//
+//        $_POST['senderName']="test";
+//        $_POST['title']="title";
+//        $_POST['content']="var SGWallAdminServices = angular.module('SGWallAdmin.services', [])
+//    .value('ROOT', '/carambar_03')<br/>
+//    .value('ROOT_FOLDER', '/carambar_03/')
+//	.value('ASSET_FOLDER', '/carambar_03/admin_asset/');";
+//        $_POST['sendMaliAddress']='244700553@qq.com';
+//        $_POST['sendMaliAddress']=explode(',',$_POST['sendMaliAddress']);
+//        print_r($_POST['sendMaliAddress']);
+//
+//           var_dump( Drtool::sendEmail($_POST['senderName'],$_POST['title'],$_POST['content'],$_POST['sendMaliAddress']));
+//    }
 }

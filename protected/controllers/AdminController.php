@@ -38,6 +38,9 @@ class AdminController extends Controller {
             if(!isset($_POST['sendMaliAddress']))
                 StatusSend::_sendResponse(200, StatusSend::error('end', 1023)); //未传入邮件收件人的邮箱
 
+            //转换数组
+            $_POST['sendMaliAddress']=explode(',',$_POST['sendMaliAddress']);
+
             Drtool::sendEmail($_POST['senderName'],$_POST['title'],$_POST['content'],$_POST['sendMaliAddress']);
         }
     }
