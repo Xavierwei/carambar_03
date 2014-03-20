@@ -19,26 +19,13 @@ class VideoController extends Controller {
                 $_GET['pageSize']=8;
             if(!isset($_GET['pages']))			//未传入页数,使用默认页数为1
                 $_GET['pages']=1;
-
-            if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
-            {
-                if(!isset($_GET['status']))			//未传入状态,使用默认状态为1
-                    $_GET['status']=1;
-                // get phase
-                $phase = SettingAR::model()->getValue('phase');
-                if(!isset($phase))
-                    StatusSend::_sendResponse(200, StatusSend::error('end', 1032)); //没有phase，存在。不显示
-            }
-            else
-            {
+            if(!isset($_GET['status']))			//未传入状态,使用默认状态为1
                 $_GET['status']=NULL;
-                $phase=NULL;
-            }
+            if(!isset($_GET['phase']))
+                $_GET['phase']=NULL;
+                   
 
-
-
-
-            $videoList=VideoAR::model()->getVideoList($_GET['position'],$_GET['status'], $_GET['pageSize'],$_GET['pages'],$phase);
+            $videoList=VideoAR::model()->getVideoList($_GET['position'],$_GET['status'], $_GET['pageSize'],$_GET['pages'],$_GET['phase']);
 
             if(empty($videoList))
             {
