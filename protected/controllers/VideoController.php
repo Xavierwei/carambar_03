@@ -158,7 +158,7 @@ class VideoController extends Controller {
             $item->url = $url;
             $item->thumbnail = $imagePath;
             $item->datetime = time();
-            $item->status = 0;
+            $item->status = 1;
 
             if($item->save())
                 StatusSend::_sendResponse(200, StatusSend::success('success',2007,$item)); //修改数据库成功

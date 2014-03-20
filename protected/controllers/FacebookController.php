@@ -174,7 +174,7 @@ class FacebookController extends Controller {
 			if($img) {
 				$node->file = $img;
 			}
-			$node->mid = $mid->post_id;
+			$node->mid = isset($mid['post_id']) ? $mid['post_id'] : $mid['id'];
 			$node->description = $content;
 			$node->screen_name = Yii::app()->user->screen_name;
 			$node->email = Yii::app()->user->personal_email;
@@ -182,9 +182,13 @@ class FacebookController extends Controller {
 			$node->status = 0;
 			if ($node->validate()) {
 				$node->save();
-				return true;
+				if($node->email) {
+					//TODO send
+					$emailInfo = Yii::app()->params['email'];
+					@Drtool::sendEmail($emailInfo['sendName'], $emailInfo['titleNew'], $emailInfo['contentNew'], $emailInfo['emailList']);
+				}
+				return $this->responseJSON($node, "success");
 			}
-			return $this->responseJSON($results, "success");
 		}
 		else {
 			return $this->responseError(709);

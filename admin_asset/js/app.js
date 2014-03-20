@@ -20,6 +20,7 @@ config(function($routeProvider,$httpProvider) {
 	$routeProvider.when('/video/phase/:phaseid', {templateUrl: ROOT +'tmp/video/phase.html', controller: 'VideoCtrPhase'});
     $routeProvider.when('/video/edit/:vid', {templateUrl: ROOT +'tmp/video/edit.html', controller: 'VideoCtrEdit'});
     $routeProvider.when('/settings', {templateUrl: ROOT +'tmp/settings/list.html', controller: 'SettingsCtrList'});
+    $routeProvider.when('/statistics', {templateUrl: ROOT +'tmp/statistics/list.html', controller: 'StatisticsCtrList'});
     $routeProvider.when('/comment/:flagged', {templateUrl: ROOT +'tmp/comment/list.html', controller: 'CommentCtrList'});
     $routeProvider.otherwise({redirectTo: '/node'});
 

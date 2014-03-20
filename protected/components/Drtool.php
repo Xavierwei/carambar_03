@@ -89,25 +89,23 @@ class Drtool
      */
     public static function sendEmail($senderName,$title,$content,$sendMaliAddress)
     {
-         if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
-        {
-            StatusSend::_sendResponse(200, StatusSend::error('end', 1015)); //没有权限进行此操作
-        }
-        else //管理员
-        {
+//         if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
+//        {
+//            StatusSend::_sendResponse(200, StatusSend::error('end', 1015)); //没有权限进行此操作
+//        }
+//        else //管理员
+//        {
                 $mail = Yii::createComponent('application.extensions.mailer.EMailer');
                 $mail->IsSMTP();
-                $mail->SMTPAuth           = true;                               // enable SMTP authentication
+                $mail->SMTPAuth         = true;                               // enable SMTP authentication
                 $mail->SMTPSecure       = "ssl";                                // sets the prefix to the servier
-                $mail->Host                   = "smtp.gmail.com";               // sets GMAIL as the SMTP server
+				$mail->Host                   = "smtp.gmail.com";               // sets GMAIL as the SMTP server
                 $mail->Port                    = 465;                                     // set the SMTP port
-                $mail->Username           = "usewrname@gmail.com";  // GMAIL username
-                $mail->Password           = "password";                         // GMAIL password
-
+                $mail->Username           = Yii::app()->params['email']['username'];  // GMAIL username
+                $mail->Password           = Yii::app()->params['email']['password'];                         // GMAIL password
                 $mail->From              = $mail->Username;                  //you email
                 $mail->FromName     = $senderName;         //邮件发送人 your name
                 $mail->IsHTML(true);                                  // set email format to HTML
-
                 if(is_array($sendMaliAddress))
                 {
                     foreach($sendMaliAddress as $k => $val)
@@ -119,17 +117,15 @@ class Drtool
                 {
                     $mail->AddAddress($sendMaliAddress);
                 }
-
-
                 $mail->Subject          =$title;                      //标题 title
                 $mail->Body             = $content;                     //内容 content
                 $mail->WordWrap     = 50;                                            // set word wrap
 
                 if(!$mail->Send())
-                    StatusSend::_sendResponse(200, StatusSend::error('end', 1024,$mail->ErrorInfo)); //邮件发送失败
+                    return false;//StatusSend::_sendResponse(200, StatusSend::error('end', 1024,$mail->ErrorInfo)); //邮件发送失败
                 else
-                    StatusSend::_sendResponse(200, StatusSend::success('success',2008)); //邮件发送成功
-        }
+					return true;//StatusSend::_sendResponse(200, StatusSend::success('success',2008)); //邮件发送成功
+//        }
     }
 
 }

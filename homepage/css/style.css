@@ -1,0 +1,90 @@
+@charset "utf-8";
+/*
+ * carambar
+ * zx 2014 03 12
+ */
+
+/* Reset
+================================================================================================= */
+body{color:#000;font-size:12px;line-height:1.666em;background: #feee00}
+body{font-family:Arial,sans-serif;}
+h1,h2,h3{font-size:100%;}
+body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
+img{margin:0;line-height:normal;}
+em,i{font-style:normal;text-decoration:none}
+ul{list-style:none;}
+
+/* Commonly Used
+================================================================================================= */
+a{text-decoration:none;color:#000;outline: none;}
+a:hover{color:#e82426}
+.cs-clear{+zoom:1;}
+.cs-clear:before,
+.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+
+/* Loading Used
+================================================================================================= */
+.loading-overlay {background:#fff029;width:100%;height:100%;position:fixed;z-index:24;top:0;left:0;}
+.loading-logo {position:absolute;top:50%;left:50%;margin:-53px 0 0 -174px;}
+
+/* Header Used
+================================================================================================= */
+.homepage{background:#ffeb00}
+
+
+/* Home Page Used
+================================================================================================= */
+.home-map{background: url('../images/home_map.jpg') no-repeat;width: 831px;height: 314px;top:64px;left:50%;margin-left:-415px;position: absolute;}
+.home-nav{background: url('../images/home_nav.png') no-repeat;width:919px;height: 165px;position: absolute;top:22px;left:50%;margin-left:-459px}
+.home-section1{position: absolute;top:64px;left:50%;margin-left:-415px;}
+    .home-man{position: absolute;width: 232px;height: 290px;background: url('../images/home_man.png') no-repeat;top:10px;left:10px}
+    .home-tips{position: absolute;width: 550px;height: 115px;background: url('../images/home_tips.png') no-repeat;top:92px;left:200px}
+    .home-tit{position: absolute;width: 829px;height: 85px;background: url('../images/home_tit1.png') no-repeat;top:250px;left:0}
+    .home-link1 {background: url(../images/home_btn1.png) no-repeat;width:142px;height:31px;position: absolute;display: block;right:140px;bottom:8px;}
+/*    .home-star{background: #fff url('../images/home_starbg.png') repeat-x left;height: 43px;width:831px;left:0;top:305px;position: absolute;}
+        .home-btn{display:block;background:#fff url('../images/home_btn1.png') no-repeat center;width:190px;height: 40px;margin: 2px auto 0}*/
+    .home-star{background:url('../images/home_star2.png') repeat-x center;height:19px;top:420px;position: absolute;width:100%;}
+    .home-bottom{background: url('../images/home_bottom.png') no-repeat;width: 830px;height: 218px;position: absolute;left:50%;top:484px;margin-left:-415px}
+    .home-tit2{background: url('../images/home_tit2.png') no-repeat;width: 125px;height: 95px;position: absolute;left: 352px;top:-27px}
+    .home-btn2{background: url('../images/home_btn2.png') no-repeat;width: 249px;height: 38px;position: absolute;left: 350px;top:150px}
+    .home-man2{background: url('../images/home_man2.png') no-repeat;width: 110px;height: 190px;position: absolute;right: -10px;top:0;}
+    .home-sns-icon {z-index:23;position:fixed;top:10px;right:10px;}
+    .home-sns-icon a {display:block;float:left;background: url('../images/sns_icon.gif') no-repeat;width:22px;height:22px;}
+    .home-sns-icon a.twitter {background-position:top right;margin:0 0 0 20px;}
+    .indicator-count {position: absolute;left:299px;top:9px;}
+    .digit {background: url(../images/countdown_digit.png) no-repeat no-repeat;float:left;width:26px;height:33px;}
+    .digit0 {background-position:0 0;}
+    .digit1 {background-position:0 -134px;}
+    .digit2 {background-position:0 -268px;}
+    .digit3 {background-position:0 -401px;}
+    .digit4 {background-position:0 -536px;}
+    .digit5 {background-position:0 -669px;}
+    .digit6 {background-position:0 -803px;}
+    .digit7 {background-position:0 -937px;}
+    .digit8 {background-position:0 -1071px;}
+    .digit9 {background-position:0 -1204px;}
+
+
+
+/* Mobile Used
+================================================================================================= */
+@media screen and (max-width:640px){
+    body{overflow-x:hidden;}
+/**/
+
+.home-sns-icon {display:none;}
+.home-section1{margin:0;left:0}
+.home-map{display: none}
+.home-nav{background: url('../mobileimg/home_nav.png') no-repeat;width:640px;height: 138px;position:static;top:0;left:0;margin-left:0}
+    .home-tips{position: absolute;width: 480px;height: 180px;background: url('../mobileimg/home_tips.png') no-repeat;top:90px;left:130px!important;}
+    .home-man{left:-65px!important;top:20px}
+    .home-tit{background: url('../mobileimg/home_tit2.png') no-repeat;top:280px;left: 0;height: 184px;width:640px;}
+    .home-bottom{top:613px;background: url('../mobileimg/home_bottom.jpg') no-repeat;width: 600px;height: 325px;margin-left: -300px}
+    .home-star{top:547px}
+    .home-btn2{left:230px;top:245px;}
+    .home-man2{top:95px}
+    .home-tit2{left:240px}
+
+    .indicator-count {left:159px;top:38px;}
+    .home-link1 {background: url('../mobileimg/home_btn1.png') no-repeat;width:179px;height: 39px;left:236px;bottom:15px;right:auto;}
+}

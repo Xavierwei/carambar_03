@@ -35,6 +35,7 @@ SGWallAdminController
 		});
 
 		$scope.save = function(video) {
+            video.del = 0;
 			VideoService.update(video, function(data){
 				console.log(data);
 			});
@@ -47,10 +48,15 @@ SGWallAdminController
 			$scope.videos = data.data;
 		});
 
+        VideoService.list({},function(data){
+            $scope.allvideos = data.data;
+        });
+
 		$scope.save = function(video) {
             video.phase = $routeParams.phaseid;
             video.del = 0;
 			VideoService.update(video, function(data){
+                $scope.videos.push(video);
 				console.log(data);
 			});
 		}
@@ -59,6 +65,8 @@ SGWallAdminController
             video.phase = $routeParams.phaseid;
             video.del = 1;
             VideoService.update(video, function(data){
+
+                $scope.videos.splice($scope.videos.indexOf(video), 1);
                 console.log(data);
             });
         }

@@ -1,7 +1,14 @@
 <form name="form" class="css-form" novalidate xmlns="http://www.w3.org/1999/html">
     <div>Video Title: <input class="form-control" type="text" ng-model="video.title" name="title" required /></div>
     <div>Video URL: <input class="form-control" type="text" ng-model="video.url" name="url" required /></div>
-    <div>Postion: <input class="form-control" type="text" ng-model="video.position" name="position" required />
+    <div>Postion:
+        <select class="form-control" ng-model="video.position" ng-init="video.position='2'">
+            <option value="2">Home</option>
+            <option value="1">Top</option>
+            <option value="0">Hidden</option>
+        </select>
+
+
         <small>Which setion want to display</small></div>
 
 
