@@ -126,10 +126,16 @@ class VideoAR extends CActiveRecord{
             $query->params[':status'] = $status;
         }
 
-        if(NULL!=$position) //为空显示全部
+//        if(NULL!=$position) //为空显示全部
+//        {
+//            $query->addCondition('position=:position');
+//            $query->params[':position'] =$position;
+//        }
+
+        if(NULL!=$position)
         {
-            $query->addCondition('position=:position');
-            $query->params[':position'] =$position;
+            $query->addCondition('position LIKE :position');
+            $query->params[':position']='%'.$position.'%';
         }
 
         if(NULL!=$phase)

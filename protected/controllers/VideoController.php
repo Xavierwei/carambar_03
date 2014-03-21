@@ -76,33 +76,63 @@ class VideoController extends Controller {
         else //管理员
         {
 
-        $phase= $item->phase;
-        if(!empty($phase))
-        {
-            $elements = explode(",", $phase); //字符串转数组
-            //是否删除phase
-            if($_POST['del']!='1')
+            //判断phase
+            $phase= $item->phase;
+            if(!empty($phase))
             {
-                //不存在，插入新增元素
-                if(!in_array( $_POST['phase'],$elements))
-                    $elements[]=$_POST['phase'];
-            }
-            else //删除 phase
-            {
-                foreach($elements as $k=>$v)
+                $elements = explode(",", $phase); //字符串转数组
+                //是否删除phase
+                if($_POST['del']!='1')
                 {
-                    if($v==$_POST['phase'])
+                    //不存在，插入新增元素
+                    if(!in_array( $_POST['phase'],$elements))
+                        $elements[]=$_POST['phase'];
+                }
+                else //删除 phase
+                {
+                    foreach($elements as $k=>$v)
                     {
-                        //删除元素
-                        array_splice($elements, $k, 1);
-                        break;
+                        if($v==$_POST['phase'])
+                        {
+                            //删除元素
+                            array_splice($elements, $k, 1);
+                            break;
+                        }
                     }
                 }
+                //重新排序
+                $elements=array_values($elements);
+                $_POST['phase']=implode(",",$elements);
             }
-            //重新排序
-            $elements=array_values($elements);
-            $_POST['phase']=implode(",",$elements);
-        }
+
+            //判断position
+            $position= $item->position;
+            if(!empty($position))
+            {
+                $elements2 = explode(",", $position); //字符串转数组
+                //是否删除phase
+                if($_POST['del']!='1')
+                {
+                    //不存在，插入新增元素
+                    if(!in_array( $_POST['position'],$elements2))
+                        $elements2[]=$_POST['position'];
+                }
+                else //删除 position
+                {
+                    foreach($elements2 as $k=>$v)
+                    {
+                        if($v==$_POST['position'])
+                        {
+                            //删除元素
+                            array_splice($elements2, $k, 1);
+                            break;
+                        }
+                    }
+                }
+                //重新排序
+                $elements2=array_values($elements2);
+                $_POST['position']=implode(",",$elements2);
+            }
 
             $item->attributes=$_POST; //赋值
 //            $url=$_POST['url']; //获取youtube url
