@@ -267,33 +267,37 @@ class NodeAR extends CActiveRecord{
 			$to = $dir."/". $filename;
 			switch($extname) {
 				case 'gif':
-					$srcImg = imagecreatefromgif($upload->tempName);
+					$srcImg = @imagecreatefromgif($upload->tempName);
 					break;
 				case 'png':
-					$srcImg = imagecreatefrompng($upload->tempName);
+					$srcImg = @imagecreatefrompng($upload->tempName);
 					break;
 				default:
-					$srcImg = imagecreatefromjpeg($upload->tempName);
+					$srcImg = @imagecreatefromjpeg($upload->tempName);
 			}
-			if($extname == 'jpg') {
-				$exif = exif_read_data($upload->tempName);
-				if (!empty($exif['Orientation'])) {
-					switch ($exif['Orientation']) {
-						case 3:
-							$srcImg = imagerotate($srcImg, 180, 0);
-							break;
+			$exif = @exif_read_data($upload->tempName);
+			if (!empty($exif['Orientation'])) {
+				switch ($exif['Orientation']) {
+					case 3:
+						$srcImg = imagerotate($srcImg, 180, 0);
+						break;
 
-						case 6:
-							$srcImg = imagerotate($srcImg, -90, 0);
-							break;
+					case 6:
+						$srcImg = imagerotate($srcImg, -90, 0);
+						break;
 
-						case 8:
-							$srcImg = imagerotate($srcImg, 90, 0);
-							break;
-					}
+					case 8:
+						$srcImg = imagerotate($srcImg, 90, 0);
+						break;
 				}
 			}
-			imagejpeg($srcImg, $to, 90);
+			if($srcImg) {
+				imagejpeg($srcImg, $to, 90);
+				imagedestroy($srcImg);
+			}
+			else {
+				return false;
+			}
 		}
 
 		// 检查是不是视频， 如果是, 就就做视频转换工作

@@ -13,16 +13,17 @@
 <div class="page phase<?php echo $phase;?>">
 	<!-- #Presentation Block -->
 	<div class="presentation">
-		<div class="skyline"
-		     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,100px,0);"></div>
+		<div class="skyline"></div>
 		<?php if($phase == 1 || $phase == 2 || $phase == 3):?>
 		<div class="blue-road"
 		     data-style="opacity:0;" data-animate="opacity:1;" data-delay="0" data-time="800"
-		     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);"></div>
+		     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,60px,0);"></div>
 		<div class="presentation-box">
-			<div class="carambar-man" data-style="left:-1000px" data-animate="left:85px" data-delay="0" data-time="800" data-easing="easeOutQuart"></div>
+			<div class="carambar-man" data-style="left:-1000px" data-animate="left:85px" data-delay="0" data-time="800" data-easing="easeOutQuart"
+				 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,60px,0);"></div>
 			<?php if($phase == 1 || $phase == 2):?>
-			<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500">
+			<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500"
+				 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,30px,0);">
 				<div class="tips-content"></div>
 				<div class="tips-video">
 					<img src="./<?php echo str_replace('.jpg', '_224_115.jpg', $topVideo->thumbnail);?>" />
@@ -31,7 +32,8 @@
 			</div>
 			<?php endif;?>
 			<?php if($phase == 3):?>
-				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500">
+				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500"
+					 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,30px,0);">
 					<div class="tips-content-p3">
 						<div class="countdown">
 							<span id="countdown-days"></span>
@@ -60,7 +62,11 @@
 		<div class="videopart cs-clear">
 			<div class="videopart-tit"></div>
 			<!-- Video -->
-			<div class="videomod"><iframe width="548" height="304" src="//www.youtube.com/embed/<?php echo $topVideo->mid;?>?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe></div>
+			<div class="videomod">
+			<?php if($topVideo): ?>
+				<iframe width="548" height="304" src="//www.youtube.com/embed/<?php echo $topVideo->mid;?>?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
+			<?php endif;?>
+			</div>
 			<!-- Twitter -->
 			<div class="videotxt"></div>
 			<!--  -->
@@ -138,62 +144,49 @@
 		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
 	</div>
 	<?php endif;?>
-	<?php if($phase == 3 || $phase == 4):?>
+	<?php if($phase == 3 || $phase == 4 || $phase == 5):?>
 	<div class="videolistbg">
-		<div class="videolist-tit"></div>
-		<div class="videolist" data-626="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
+		<?php if($phase == 5):?>
+			<div class="videolist-tit2"></div>
+		<?php else:?>
+			<div class="videolist-tit"></div>
+		<?php endif;?>
+		<div class="videolist" data-826="transform:translate3d(0,0px,0);" data-1400="transform:translate3d(0,100px,0);">
 			<div class="videolistshare">
 				<div class="video-con">
 					<?php
 					foreach($homeVideos as $index=>$video):?>
-					<div class="videolist-item">
-						<div class="videolist-item-tit videolist-item-tit<?php echo $index+1;?>"></div>
-						<div class="videolist-box"><img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" /><a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
-						<div class="videolist-txt"><?php echo $video->title;?></div>
-						<div class="video-icon video-icon-<?php echo $video->ribbon;?>"></div>
-					</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit<?php echo $index+1;?>"></div>
+							<div class="videolist-box"><img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" /><a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
+							<div class="videolist-txt"><?php echo $video->title;?></div>
+							<div class="video-icon video-icon-<?php echo $video->ribbon;?>"></div>
+						</div>
 					<?php endforeach;?>
-					<?php $leftCount = 3 - count($homeVideos) ?>
+					<?php
+						$totleCount = count($homeVideos);
+						if($totleCount <= 3) {
+							$boxCount = 3;
+						}
+						else {
+							$boxCount = 6;
+						}
+						$leftCount = $boxCount - count($homeVideos)
+					?>
 					<?php for($i = 0; $i < $leftCount; $i++):?>
-					<div class="videolist-item">
-						<div class="videolist-item-tit videolist-item-tit<?php echo 3 - $leftCount + $i + 1 ;?>"></div>
-						<div class="videolist-boxnull">prochainement...</div>
-					</div>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit<?php echo $boxCount - $leftCount + $i + 1 ;?>"></div>
+							<div class="videolist-boxnull">prochainement...</div>
+						</div>
 					<?php endfor;?>
+					<div class="cs-clear"></div>
 				</div>
 			</div>
 		</div>
 		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
 	</div>
 	<?php endif;?>
-	<?php if($phase == 5):?>
-		<div class="videolistbg">
-			<div class="videolist-tit2"></div>
-			<div class="challenge-man" data-500="transform:translate3d(0,0px,0);" data-600="transform:translate3d(0,-259px,0);"></div>
-			<div class="videolist" data-826="transform:translate3d(0,0px,0);" data-1400="transform:translate3d(0,100px,0);">
-				<div class="videolistshare">
-					<div class="video-con">
-						<?php
-						foreach($homeVideos as $index=>$video):?>
-							<div class="videolist-item">
-								<div class="videolist-item-tit videolist-item-tit<?php echo $index+1;?>"></div>
-								<div class="videolist-box"><img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" /><a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
-								<div class="videolist-txt"><?php echo $video->title;?></div>
-								<div class="video-icon video-icon-<?php echo $video->ribbon;?>"></div>
-							</div>
-						<?php endforeach;?>
-						<?php $leftCount = 6 - count($homeVideos) ?>
-						<?php for($i = 0; $i < $leftCount; $i++):?>
-							<div class="videolist-item">
-								<div class="videolist-item-tit videolist-item-tit<?php echo 6 - $leftCount + $i + 1 ;?>"></div>
-								<div class="videolist-boxnull">prochainement...</div>
-							</div>
-						<?php endfor;?>
-					</div>
-				</div>
-			</div>
-		</div>
-	<?php endif;?>
+
 	<!-- /Challenge Block -->
 
 	<div class="yellow-wrap">
@@ -236,8 +229,8 @@
 
 			</div>
 			<div class="share-i cs-clear">
-				<a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=fr" class="share-iandroid"></a>
-				<a href="https://itunes.apple.com/fr/app/instagram/id389801252?mt=8" class="share-iios"></a>
+				<a target="_blank" href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=fr" class="share-iandroid"></a>
+				<a target="_blank" href="https://itunes.apple.com/fr/app/instagram/id389801252?mt=8" class="share-iios"></a>
 			</div>
 		</div>
 		<!--  -->
@@ -264,7 +257,7 @@
 
 	<!-- footer -->
 	<div class="footer">
-		jeu gratuit sans obligation d’achat du 25/03/2014 au 11/04/2014. à gagner 360 kits supporters collectors d’une valeur commerciale approximative de 12,50€. retrouvez l’ensemble des modalités en consultant le reglement complet du jeu.
+		jeu gratuit sans obligation d’achat du 25/03/2014 au 11/04/2014. à gagner 360 kits supporters collectors d’une valeur commerciale approximative de 12,50€. retrouvez l’ensemble des modalités en consultant le <a target="_blank" href="#">reglement complet du jeu</a>.
 	</div>
 </div>
 
@@ -312,6 +305,11 @@
 					<textarea id="facebook-content"></textarea>
 				</div>
 			</div>
+			<ul class="step1-tips">
+				<li>Votre photo doit être au format JPG, PNG ou GIF</li>
+				<li>La taille de votre fichier ne doit pas dépasser 5MB</li>
+				<li class="damaged">La photo que vous avez téléchargé est corrompu</li>
+			</ul>
 			<div class="pop-ft-check" data-a="facebook_check">
 				<span>j'ai lu et j'accepte le règlement du jeu</span>
 			</div>

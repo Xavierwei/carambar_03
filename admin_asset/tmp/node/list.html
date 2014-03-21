@@ -51,9 +51,10 @@
 	        <div class="user">
 	            <div class="date">{{node.datetime*1000 | date:'MMM d, y HH:mm a'}}</div>
 	            <div class="name"><strong>{{node.screen_name}}</strong></div>
+                <div class="name"><strong>{{node.email}}</strong></div>
 	        </div>
 	        <div class="clear"></div>
-	        <a href="./photowall.php#/nid/102/{{node.nid}}" class="open" target="_blank">Open</a>
+	        <a href="../photowall.php?admin=1#/nid/{{node.nid}}" class="open" target="_blank">Open</a>
 	        <div class="clear"></div>
 	    </li>
 	</ul>

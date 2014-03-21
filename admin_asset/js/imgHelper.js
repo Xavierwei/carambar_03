@@ -216,10 +216,10 @@
         , result    : function(){
             var scale = $img[0].width / $img.width();
             return {
-                width       : scale * _wrapWidth,
-                height      : scale * _wrapHeight,
+                width       : _imgWidth,
+                height      : _imgHeight,
                 x           : scale * _imgLeft,
-                y           : scale * _imgTop,
+                y           : scale * _imgTop
             }
         }
     }

@@ -29,7 +29,7 @@ a:hover{color:#e82426}
 
 /* Header Used
 ================================================================================================= */
-.header{height: 164px;background: url('../images/hdbg.png') no-repeat bottom center;width:100%;position: absolute;top:10px;z-index:11;}
+.header{min-width: 900px;height: 164px;background: url('../images/hdbg.png') no-repeat bottom center;width:100%;position: absolute;top:10px;z-index:11;}
     .hdcontent{margin: 0 auto;position: relative;}
         .nav1{background: url('../images/nav.png') no-repeat -12px -119px;width: 120px;height: 25px;position: absolute;top:27px;left:50%;margin: 0 0 0 -300px}
         .nav2{background: url('../images/nav.png') no-repeat 0 0;width: 150px;height: 25px;position: absolute;top:27px;left:50%;margin: 0 0 0 190px}
@@ -38,13 +38,14 @@ a:hover{color:#e82426}
         .nav1on, .nav1:active{background-position:-835px -119px;}
         .nav2on, .nav2:active{background-position:-819px 0;}
 
+.page {min-width: 900px;}
 /* Section  Used
 ================================================================================================= */
 .videopart{width:808px;height:339px;padding:16px 25px 0;margin: 165px auto 0;position: relative;background: url('../images/videopart.png') no-repeat;}
 .videopart-tit {background: url(../images/videopart_tit.png) no-repeat;width:957px;height:99px;position:absolute;top:-36px;left:-46px;}
 .videopart1{width:598px;}
     .videomod{float: left;width: 556px;height: 309px}
-    .videotxt{float: left;display:inline;margin:8px 0 0 8px;width: 214px;background:#dadada ;color:#12103b;padding:5px 10px;}
+    .videotxt{float: left;display:inline;margin:8px 0 0 8px;width: 214px;height:286px;overflow:hidden;background:#dadada ;color:#12103b;padding:5px 10px;}
         h2{text-transform:uppercase;font-size: 18px;font-weight: normal;padding: 18px 0 5px}
         .videotxt-item{font-size:12px;padding:4px 0 0;overflow: hidden;}
             .videotxt-item h3{color:#e00025;text-transform:uppercase;font-weight: normal;}
@@ -177,7 +178,9 @@ a:hover{color:#e82426}
     .poptxt-pic .pop-zoomin-btn {background-position: -39px -13px;right: 1px;cursor: pointer;}
     .facebook-post-img-wrap input[type="file"] {position: absolute;top: 0;right: 0;margin: 0;opacity: 0;-ms-filter: 'alpha(opacity=0)';font-size: 200px;height:200px;direction: ltr;cursor: pointer;}
     .facebook-post-success {display:none;margin-top:200px;color:#fbea38;text-align: center;font-size:30px;text-transform: uppercase;}
-
+    .step1-tips {position: absolute;bottom:79px;z-index:5;}
+    .step1-tips li {background:#fbea38;color:#ce232d;padding:10px;display:none;}
+    .step1-tips li.error {display:block;}
 
 
 /* presentation
@@ -231,40 +234,44 @@ a:hover{color:#e82426}
     .phase5 .map_bg {height:1300px;}
     .challenge {position: relative;}
     .challenge-title {background:#e3142a url(../images/challenge_title.gif) no-repeat center;width:745px;height:88px;position: absolute;z-index:13;top:-70px;left:50%;margin-left:-372px;}
-    .challenge-man {background:url(../images/carambar-man-right.png) no-repeat;width:218px;height:255px;position: absolute;right:0px;z-index:8;bottom:-300px;}
+    .challenge-man {background:url(../images/carambar-man-right.png) no-repeat;width:218px;height:255px;position: absolute;right:0px;z-index:7;bottom:-300px;}
     .challenge-inner {position: relative;z-index:8;width:771px;height:308px;margin:0 auto;}
     .challenge-item {float:left;width:231px;margin:0 13px;padding:23px 0;text-align:center;background:#e3142a;-webkit-box-shadow: 0 0px 20px 0 #363636;box-shadow: 0 0px 20px 0 #363636;}
     .vote-btn {cursor:pointer;background: url(../images/btn_defi.png) no-repeat;width:168px;height:57px;margin:20px auto 0 auto;text-indent:-999em;}
         .vote-btn.disabled,.vote-btn.voted {cursor:default;}
         .vote-btn.voted {background-position:-1568px 0;}
         .vote-btn1:hover {background-position:-388px 0;}
-        .vote-btn1,.vote-btn1.voted:hover {background-position:0 0;}
+        .vote-btn1 {background-position:0 0;}
         .vote-btn1:active {background-position:-801px 0;}
         .vote-btn1.disabled {background-position:-1204px 0;}
-        .vote-btn2,.vote-btn2.voted:hover {background-position:0 -108px;}
+        .vote-btn2 {background-position:0 -108px;}
         .vote-btn2:hover {background-position:-387px -108px;}
         .vote-btn2:active {background-position:-800px -108px;}
         .vote-btn2.disabled {background-position:-1209px -108px;}
-        .vote-btn3,.vote-btn3.voted:hover {background-position:0 -214px;}
+        .vote-btn3 {background-position:0 -214px;}
         .vote-btn3:hover {background-position:-386px -214px;}
         .vote-btn3:active {background-position:-799px -214px;}
         .vote-btn3.disabled {background-position:-1214px -214px;}
+        .vote-btn1.voted:hover,.vote-btn2.voted:hover,.vote-btn3.voted:hover {background-position:-1568px 0;}
 
 .videolistbg{position: relative;}
-    .videolist{height: 262px;margin: 40px 0 0;position: relative;z-index:8;}
-    .phase5 .videolist {height:460px;}
-    .videolistshare{height: 288px;width: 100%}
-    .video-con{width:798px;height:427px;margin: 0 auto;padding: 18px 10px 0;background:#eb212e;-webkit-box-shadow: 10px 10px 20px 0 #363636;box-shadow: 10px 10px 20px 0 #363636;}
-    .phase4 .video-con {height:218px;}
+    .videolist {margin: 40px 0 0;position: relative;z-index:8;}
+    .phase5 .videolist {}
+    .videolistshare{width: 100%}
+    .video-con{width:798px;margin: 0 auto 20px auto;padding: 18px 10px 0;background:#eb212e;-webkit-box-shadow: 10px 10px 20px 0 #363636;box-shadow: 10px 10px 20px 0 #363636;}
+    .phase4 .video-con {}
     .videolist-item{float:left;position: relative;width: 250px;height: 215px;text-align: center;font-size:13px;color:#fff;display: inline;margin-left:12px;}
     .videolist-box{background: #fff;width:248px;height: 132px;padding:2px;position: relative;}
     .videolist-item .video-play {background: url(../images/btn_play2.png) no-repeat 105px 33px;position: absolute;top:0;left:0;width:100%;height:100%;}
     .videolist-item .video-play:hover {background-position: -166px 33px;}
-    .videolist-txt{line-height: 30px;text-transform:uppercase;}
+    .videolist-txt {line-height: 16px;margin-top:8px;text-transform:uppercase;}
     .videolist-item-tit {width:242px;height:27px;margin-bottom:10px;}
     .videolist-item-tit1 {background: url(../images/video_defi1.gif) no-repeat center;}
     .videolist-item-tit2 {background: url(../images/video_defi2.gif) no-repeat center;}
     .videolist-item-tit3 {background: url(../images/video_defi3.gif) no-repeat center;}
+    .videolist-item-tit4 {background: url(../images/video_defi4.gif) no-repeat center;}
+    .videolist-item-tit5 {background: url(../images/video_defi5.gif) no-repeat center;}
+    .videolist-item-tit6 {background: url(../images/video_defi6.gif) no-repeat center;}
     .video-icon {position: absolute;left:-15px;top:-6px}
 .video-icon-1 {background: url('../images/video_icon_1.png') no-repeat;width: 64px;height: 98px;}
 .video-icon-2 {background: url('../images/video_icon_2.png') no-repeat;width: 84px;height: 98px;left:-25px;}

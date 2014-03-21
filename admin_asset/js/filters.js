@@ -91,5 +91,10 @@ angular.module('WallAdmin.filters', [])
 			}
 
 		}
-	});
+	})
+    .filter('challengeimg', function(ROOT_FOLDER) {
+        return function(input) {
+            return ROOT_FOLDER + 'pic/challenge' + input + '.jpg';
+        }
+    });
 

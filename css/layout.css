@@ -227,6 +227,8 @@ a{text-decoration:none;color:inherit;}
 				.comlist-flag{display:none;position: absolute;background:url('../img/icon_comm_flag.gif') no-repeat;width:10px;height:10px;top: 10px;right: 10px}
                 .comlist-flag.flagged {background-position: 0 -15px;}
                 .logged .comlist-flag {display:block;}
+                .com-info .liked-tip {background:#ce232d;color:#fff;font-size:11px;padding:4px;position:absolute;height:11px;line-height: 11px;left:-10px;display:none;}
+                .com-liked {cursor: default;}
 
 		.com-ipt{background:white;padding:7px 10px;font-size:12px;resize:none;width:80%;}
         .com-ipt:focus {background:#fffbce;}

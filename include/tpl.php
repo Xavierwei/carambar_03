@@ -87,7 +87,7 @@
 									<input class="submit btn2" type="submit" value="submit" />
 									<div class="clear"></div>
 								</form>
-								<div class="comment-msg-success">Le commentaire sera publier après approbation.</div>
+								<div class="comment-msg-success">Merci pour votre commentaire, il sera publié après validation de notre équipe.</div>
 								<div class="comment-msg-error"></div>
 							</div>
 						</div>
@@ -105,9 +105,9 @@
 					<div class="com-info">
 						<div class="com-counts clear">
 							{{#if liked}}
-							<a data-a="unlike" href="javascript:;" data-d="nid={{nid}}">{{likecount}} <i class="icon icon-liked"></i></a>
+							<a class="com-like com-liked" data-a="unlike" href="javascript:;" data-d="nid={{nid}}">{{likecount}} <i class="icon icon-liked"></i><span class="liked-tip">Vous avez aimé</span></a>
 							{{else}}
-							<a data-a="like" href="javascript:;" data-d="nid={{nid}}">{{likecount}} <i class="icon icon-like"></i></a>
+							<a class="com-like" data-a="like" href="javascript:;" data-d="nid={{nid}}">{{likecount}} <i class="icon icon-like"></i></a>
 							{{/if}}
 
 							<a href="javascript:;" data-a="load-comment" data-d="nid={{nid}}">COMMENTAIRES</a>
@@ -144,7 +144,7 @@
 
 <!-- node-item-tpl -->
 <script type="text/tpl" id="node-item-template">
-	<div data-a="node" data-d="nid={{nid}}" class="main-item pic-item main-item-{{nid}} {{type}}-item {{#if-exp reward "!=" "0"}}reward-item{{/if-exp}}">
+	<div data-a="node" data-d="nid={{nid}}" class="main-item pic-item main-item-{{nid}} style-{{style}} {{type}}-item {{#if-exp reward "!=" "0"}}reward-item{{/if-exp}}">
 		<a>
 			{{#if-exp type "==" "text"}}
 			<div class="node-inner">

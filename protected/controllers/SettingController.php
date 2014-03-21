@@ -15,28 +15,40 @@ class SettingController extends Controller
         $item2=NodeAR::model()->countByStatus();
 
 
-        if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，只需要校验cookie
-        {
-            //判断是否有点赞资格
-            $voteAuth= Drtool::isCookieAuth('praise_auth');//praise_auth cookie保存值
-            if($voteAuth)
-                StatusSend::_sendResponse(200,StatusSend::error('end', 1007,$voteAuth)); //已经点过赞，时间不足3天
+		//判断是否有点赞资格
+		$voteAuth= Drtool::isCookieAuth('praise_auth');//praise_auth cookie保存值
+		if($voteAuth)
+			StatusSend::_sendResponse(200,StatusSend::error('end', 1007,$voteAuth)); //已经点过赞，时间不足3天
 
-            $item=$model->setValue('praise',++$item);  //设置 value，点赞次数+1
+		$item=$model->setValue('praise',++$item);  //设置 value，点赞次数+1
 
-            if($item)
-                StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item+$item2)); //修改数据库成功
-            else
-                StatusSend::_sendResponse(200, StatusSend::error('end', 1008)); //修改数据库错误，
-        }
-        else //管理员不检验cookie
-        {
-            $item=$model->setValue('praise',++$item);  //设置 value，点赞次数+1
-            if($item)
-                StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item+$item2)); //修改数据库成功
-            else
-                StatusSend::_sendResponse(200, StatusSend::error('end', 1008)); //修改数据库错误，
-        }
+		if($item)
+			StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item+$item2)); //修改数据库成功
+		else
+			StatusSend::_sendResponse(200, StatusSend::error('end', 1008)); //修改数据库错误，
+
+//        if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，只需要校验cookie
+//        {
+//            //判断是否有点赞资格
+//            $voteAuth= Drtool::isCookieAuth('praise_auth');//praise_auth cookie保存值
+//            if($voteAuth)
+//                StatusSend::_sendResponse(200,StatusSend::error('end', 1007,$voteAuth)); //已经点过赞，时间不足3天
+//
+//            $item=$model->setValue('praise',++$item);  //设置 value，点赞次数+1
+//
+//            if($item)
+//                StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item+$item2)); //修改数据库成功
+//            else
+//                StatusSend::_sendResponse(200, StatusSend::error('end', 1008)); //修改数据库错误，
+//        }
+//        else //管理员不检验cookie
+//        {
+//            $item=$model->setValue('praise',++$item);  //设置 value，点赞次数+1
+//            if($item)
+//                StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item+$item2)); //修改数据库成功
+//            else
+//                StatusSend::_sendResponse(200, StatusSend::error('end', 1008)); //修改数据库错误，
+//        }
 	}
 
     /**

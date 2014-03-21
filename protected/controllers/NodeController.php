@@ -96,6 +96,34 @@ class NodeController extends Controller {
 		}
 	}
 
+	/**
+	 * Crop photo
+	 */
+	public function actionCrop() {
+		$request = Yii::app()->getRequest();
+		if (!$request->isPostRequest) {
+			$this->responseError(1001);
+		}
+		$nid = $request->getPost("nid");
+		$_x = $request->getPost("x");
+		$_y = $request->getPost("y");
+		$_width = $request->getPost("width");
+		$_scale_size = $request->getPost("size");
+		$file = $request->getPost("path");
+
+		$node = NodeAR::model()->findByPk($nid);
+		if($node) {
+			$node->file = $node->cropPhoto($file, $_x, $_y, $_width, $_scale_size);
+			$node->save();
+			//delete thumbnail
+			@unlink(ROOT.str_replace('.jpg','_640_640.jpg',$file));
+			@unlink(ROOT.str_replace('.jpg','_400_400.jpg',$file));
+			@unlink(ROOT.str_replace('.jpg','_126_126.jpg',$file));
+			$node->makeImageThumbnail(ROOT.$file, ROOT.str_replace('.jpg', '_400_400.jpg', $file), 400, 400, false);
+			$node->makeImageThumbnail(ROOT.$file, ROOT.str_replace('.jpg', '_640_640.jpg', $file), 640, 640, false);
+			$this->responseJSON($node->attributes, "success");
+		}
+	}
 
 	/**
 	 * Update node
@@ -179,8 +207,8 @@ class NodeController extends Controller {
 				$this->cleanCache("node_")
 					->cleanCache("comment_");
 				if($node->reward == 1 && $node->email) {
-					//TODO send email
-					@Drtool::sendEmail('GOO', 'test title', 'haha\n\n\haha', $node->email);
+					$emailInfo = Yii::app()->params['email'];
+					@Drtool::sendEmail($emailInfo['sendName'], $emailInfo['titleAward'], $emailInfo['contentAward'], $emailInfo['emailList']);
 				}
 				$this->responseJSON($node->attributes, "success");
 			}
@@ -344,20 +372,7 @@ class NodeController extends Controller {
 
 		// search by user email
 		if (Yii::app()->user->checkAccess("isAdmin") && $email) {
-			$queryUser = new CDbCriteria();
-			$queryUser->addSearchCondition("company_email", $email, true);
-			$queryUser->addSearchCondition("personal_email", $email, true, 'OR');
-			$users = UserAR::model()->findAll($queryUser);
-			if(count($users) > 0) {
-				foreach($users as $user) {
-					$usersList[] = $user->uid;
-				}
-				$strUsersList = implode(',', $usersList);
-				$query->addCondition($nodeAr->getTableAlias().".uid in (".$strUsersList.")", "AND");
-			}
-			else {
-				$this->responseJSON(array(), "success");
-			}
+			$query->addSearchCondition("email", $email);
 		}
 
 		if (Yii::app()->user->checkAccess("isAdmin") && $status == 'all') {

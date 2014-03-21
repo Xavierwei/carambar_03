@@ -62,8 +62,11 @@ body{
     width: 180px;
 }
 .pic-item .item-reward{position: absolute;top:0;left:0;width: 54px;height: 55px;background: url(../img/node-tag.png) no-repeat;}
-.pic-item.reward-item{background: #ce232d;}
+/*.pic-item.reward-item{background: #ce232d;}*/
 .text-item{background: #2f3688;color: #fcea2f;font-size: 16px;}
+.text-item.style-1 {background: #ce232d;color: #fcea2f;}
+.text-item.style-2 {background: #ffeb00;color: #ce232d;}
+.text-item .node-inner {border:2px solid #fff;}
 .text-item>a{display: table;width: 100%;height: 100%;}
 .text-item>a>div{display: table-cell;vertical-align: middle;padding: 10px;font-weight: normal;}
 .text-item>a>div>.node-desc{border-bottom: 1px solid #fcea2f;margin-bottom: 10px;}

@@ -45,7 +45,7 @@ class CommentController extends Controller {
 			"email" => $email,
 		    "nid" => $nid,
 		    "content" => $content,
-		    "status" => 0
+		    "status" => 1
 		);
 
 		if ($commentAr->validate()) {

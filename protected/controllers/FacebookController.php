@@ -172,7 +172,11 @@ class FacebookController extends Controller {
 			$node->type = $type;
 			$node->media = 'facebook';
 			if($img) {
-				$node->file = $img;
+				$_x = $request->getPost("x");
+				$_y = $request->getPost("y");
+				$_width = $request->getPost("width");
+				$_scale_size = $request->getPost("size");
+				$node->file =  $node->cropPhoto($img, $_x, $_y, $_width, $_scale_size);
 			}
 			$node->mid = isset($mid['post_id']) ? $mid['post_id'] : $mid['id'];
 			$node->description = $content;

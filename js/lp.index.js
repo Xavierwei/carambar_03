@@ -62,17 +62,14 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
                     var errorIndex = 0;
                     break;
                 case 501:
-                    var errorIndex = 2;
-                    break;
-                case 503:
                     var errorIndex = 1;
                     break;
                 case 509:
-                    var errorIndex = 3;
+                    var errorIndex = 2;
                     break;
             }
-            $('.pop-inner').fadeOut(400);
-            $('.pop-file').delay(800).fadeIn(400);
+            $('.facebook-post-load').fadeOut(400);
+            $('#fileupload').delay(800).fadeIn(400);
             $('.step1-tips li').removeClass('error');
             $('.step1-tips li').eq(errorIndex).addClass('error');
         } else {
@@ -156,7 +153,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
                             $('.step1-tips li').eq(0).addClass('error');
                         }
                         else if(data.files[0].size > maxFileSize) {
-                            $('.step1-tips li').eq(2).addClass('error');
+                            $('.step1-tips li').eq(1).addClass('error');
                         }
                         else {
                             data.submit();
@@ -308,6 +305,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
      */
     LP.action('submit_facebook', function(){
         if($(this).hasClass('submitting')) return;
+        if($('.facebook-post-load').is(':visible')) return;
         $(this).addClass('submitting');
         var checkbox = $('.pop-ft-check').hasClass('checked');
         var wordCount = $('#facebook-content').val().length;
@@ -322,14 +320,18 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
         }
         var img = $('#facebook-img').val();
         var content = $('#facebook-content').val() + ' #TESTHASHTAG';
+        var trsdata = transformMgr.result();
+        delete trsdata.src;
         $('.pop-ft-submitting').fadeIn();
-        api.ajax('postFacebook', {content: content, img: img}, function( result ){
+        api.ajax('postFacebook', {content: content, img: img, x:trsdata.x, y:trsdata.y, width:trsdata.width, size: 185}, function( result ){
             $('.pop-ft-submitting').fadeOut();
             $(this).removeClass('submitting');
             if(result.success) {
                 $('.facebook-post-form').fadeOut();
                 $('.facebook-post-success').delay(500).fadeIn(function(){
-                    LP.triggerAction('close_popup');
+                    setTimeout(function(){
+                        LP.triggerAction('close_popup');
+                    }, 1000);
                 });
 
             }

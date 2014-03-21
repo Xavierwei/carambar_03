@@ -46,10 +46,10 @@ WallAdminServices.factory( 'NodeService', function($http, ROOT) {
             });
         },
         cropPhoto: function( param , success ){
-            $http.post(ROOT+'/node/put',param)
+            $http.post(ROOT+'/node/crop',param)
                 .success(function(data) {
                     if(data.success == true) {
-                        success(data);
+                        success(data.data);
                     }
                 })
                 .error(function() {

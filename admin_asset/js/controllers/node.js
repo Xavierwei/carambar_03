@@ -14,8 +14,6 @@ WallAdminController
         $scope.end = true;
         // Get node list by recent
         $scope.filter.status = 'all';
-        $scope.filter.country = {};
-        $scope.filter.country.country_name = 'All Country';
 		$scope.page = 1;
 		params.orderby = "datetime";
 		params.pagenum = 20;
@@ -34,7 +32,7 @@ WallAdminController
             $('.pagination li').eq(2).addClass('active');
         });
 
-		$scope.$watch('filter.type + filter.country_id + filter.status + filter.country.country_id + currentPage', function() {
+		$scope.$watch('filter.type + filter.status + currentPage', function() {
             params.type = $scope.filter.type;
 			if($scope.filter.type == 'all') {
 				delete params.type;
@@ -46,7 +44,6 @@ WallAdminController
                 delete params.status;
             }
 
-            params.country_id = $scope.filter.country.country_id;
 
 			if($scope.filter.status != undefined) {
 				params.status = $scope.filter.status;
@@ -142,13 +139,7 @@ WallAdminController
 
 
         $scope.search = function() {
-            if($scope.filter.status != 'all') {
-                params.status = $scope.filter.status;
-            }
-            else {
-                delete params.status;
-            }
-            params.hashtag = $scope.filter.hashtag.replace('#','');
+            params.status = $scope.filter.status;
 			params.email = $scope.filter.email;
 			$scope.page = 1;
 			params.page = $scope.page;
@@ -163,9 +154,7 @@ WallAdminController
 		$scope.reset = function() {
 			$scope.filter.type = 'all';
 			$scope.filter.status = 'all';
-			$scope.filter.hashtag = '';
 			$scope.filter.email = '';
-			$scope.filter.country = {country_name:'All Country', country_id:''};
 		}
 
 
@@ -178,9 +167,10 @@ WallAdminController
                     $scope.submit = function () {
                         var param = transformMgr.result();
                         param.path = node.file;
+                        param.nid = node.nid;
+                        param.size = 200;
                         NodeService.cropPhoto( param , function( data ){
-                            node.file = data.file;
-
+                            node.file = data.file + '?_t=' + new Date().getTime();
                             $modalInstance.dismiss('cancel');
                         } );
                     }

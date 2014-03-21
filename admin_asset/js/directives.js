@@ -37,13 +37,14 @@ angular.module('myApp.directives', []).
 		return {
 			link: function (scope, elem) {
 				$rootScope.$on('$routeChangeStart', function (event,url) {
-					elem.find('li').removeClass('active');
-					var path = '#'+url.originalPath;
-					$('li a[rel="'+path+'"]').parent().addClass('active');
-					console.log(url.originalPath.indexOf('phase'));
-					if(url.originalPath.indexOf('phase') > 0) {
-						$('li a[rel="#/video/phase/1"]').parent().addClass('active');
-					}
+                    if(url.originalPath) {
+                        elem.find('li').removeClass('active');
+                        var path = '#'+url.originalPath;
+                        $('li a[rel="'+path+'"]').parent().addClass('active');
+                        if(url.originalPath.indexOf('phase') > 0) {
+                            $('li a[rel="#/video/phase/1"]').parent().addClass('active');
+                        }
+                    }
 				});
 
 			}

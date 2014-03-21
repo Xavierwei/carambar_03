@@ -26,7 +26,7 @@ define(function( require , exports , model ){
         commentList: {path: './index.php/comment/list', method:'get'},
         recent: {path: './index.php/node/list', method: 'get', cache: true},
         getPageByNid: {path: './index.php/node/getPageByNid', method: 'get'},
-        getNode: {path: './admin/app/json/node/photo.json'},
+        getNode: {path: './index.php/node/getByNid', method: 'get'},
         nodeList: {path: './index.php/node/list?$orderby=datetime&pagenum=100'},
         tagTopThree: {path: './index.php/tag/topthree', method:'get'},
         deleteNode: {path: './index.php/node/delete', method:'post'},
