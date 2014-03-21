@@ -40,6 +40,10 @@ angular.module('myApp.directives', []).
 					elem.find('li').removeClass('active');
 					var path = '#'+url.originalPath;
 					$('li a[rel="'+path+'"]').parent().addClass('active');
+					console.log(url.originalPath.indexOf('phase'));
+					if(url.originalPath.indexOf('phase') > 0) {
+						$('li a[rel="#/video/phase/1"]').parent().addClass('active');
+					}
 				});
 
 			}

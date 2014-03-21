@@ -21,10 +21,10 @@ WallAdminController
 
     })
 
-    .controller('VideoCtrCreate', function($scope, $http, $modal, $log, $routeParams,VideoService,  ASSET_FOLDER) {
+    .controller('VideoCtrCreate', function($scope, $http, $modal, $log, $routeParams,VideoService, $location, ASSET_FOLDER) {
         $scope.save = function(video) {
             VideoService.post(video, function(data){
-            console.log(data);
+				$location.path("video");
             });
         }
     })
@@ -47,7 +47,13 @@ WallAdminController
         $scope.phase = $routeParams.phaseid;
 
 		VideoService.list({phase:$routeParams.phaseid},function(data){
-			$scope.videos = data.data;
+			if(data.data) {
+				$scope.videos = data.data;
+			}
+			else {
+				$scope.videos = [];
+			}
+
 		});
 
         VideoService.list({},function(data){
@@ -55,15 +61,35 @@ WallAdminController
         });
 
 		$scope.save = function(video) {
+			$scope.errorDuplicate = false;
             if(!video) {
                 return;
             }
+			// check duplicate
+			angular.forEach($scope.videos, function(item, key){
+				if(item.vid == video.vid) {
+					$scope.errorDuplicate = true;
+					return;
+				}
+			});
+			if($scope.errorDuplicate) {
+				return;
+			}
+
+			// check max video section
+			var videoSectionCount = 0;
+			angular.forEach($scope.videos, function(item, key){
+				if(item.position == 2) {
+					videoSectionCount ++;
+				}
+			});
+			if(videoSectionCount >= 6) {
+				$scope.errorMaxVideoSection = true;
+				return;
+			}
             video.phase = $routeParams.phaseid;
             video.del = 0;
 			VideoService.update(video, function(data){
-                console.log($scope.videos.indexOf(video));
-                console.log($scope.videos);
-                console.log(video);
                 $scope.videos.push(video);
 			});
 		}

@@ -78,5 +78,18 @@ angular.module('WallAdmin.filters', [])
             }
 
         }
-    });
+    })
+	.filter('videoposition', function() {
+		return function(input) {
+			switch(input) {
+				case '1':
+					return 'Top';
+					break;
+				case '2':
+					return 'Video Section';
+					break;
+			}
+
+		}
+	});
 

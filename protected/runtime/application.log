@@ -3440,3 +3440,521 @@ REQUEST_URI=/carambar_03/index.php/uploads/upload
 in /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php (278)
 in /Applications/MAMP/htdocs/carambar_03/protected/controllers/UploadsController.php (79)
 in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/20 20:18:23 [error] [php] Memcache::get(): Server 127.0.0.1 (tcp 11211) failed with: Connection refused (61) (/Applications/MAMP/htdocs/carambar/yii/framework/caching/CMemCache.php:149)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CUrlManager.php(219): CMemCache->get()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/base/CModule.php(387): CUrlManager->init()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(522): CWebApplication->getComponent()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/admin/
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:29:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pic".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('pic')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('pic')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/pic/chall...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/admin/pic/challenge1.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index/
+---
+2014/03/20 20:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pic".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('pic')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('pic')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/pic/chall...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/admin/pic/challenge1.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index/
+---
+2014/03/20 20:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:30:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:31:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:31:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:31:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:32:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:32:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:32:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:33:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:33:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pic/challenge{{challenge.cid}}.jpg".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pic/challenge{{...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/pic/challenge%7B%7Bchallenge.cid%7D%7D.jpg
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 20:34:09 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:34:19 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:34:19 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:35:09 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:35:09 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:35:09 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:35:28 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:35:28 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:36:22 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:36:22 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:36:22 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:37:03 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:37:03 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:37:37 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:37:37 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:37:37 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:37:40 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:37:40 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:40:51 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:40:51 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:01 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:01 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:10 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:10 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:10 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:10 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:10 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:10 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:11 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:11 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:11 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:14 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:14 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:36 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:41:36 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:08 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:08 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:28 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:28 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:28 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:28 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:28 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:28 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:28 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:28 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:28 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:32 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:32 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:46 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:46 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:46 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:50 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:50 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:57 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:57 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:59 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:59 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:42:59 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:43:00 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:43:00 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:43:00 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:21 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:21 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:25 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:25 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:25 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:29 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:29 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:30 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:30 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:33 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:33 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:33 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:34 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:34 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:34 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:37 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:44:37 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:46:26 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:46:26 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:46:43 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:46:43 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:48:57 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:48:57 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:50:08 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:50:08 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:50:10 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:50:10 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:50:13 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:50:13 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:51:54 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:51:54 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:59:38 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:59:38 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:59:40 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:59:40 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:59:42 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:59:42 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:59:56 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 20:59:56 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:00:10 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:00:10 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:00:10 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:00:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar/undefined
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/20 21:01:11 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:01:11 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:04:18 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/index
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:04:23 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/index
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:04:45 [error] [php] Undefined offset: 0 (/Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php:36)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/index
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (36)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:07:00 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:07:00 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/20 21:07:00 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (107)
+in /Applications/MAMP/htdocs/carambar/index.php (30)

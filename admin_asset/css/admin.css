@@ -129,11 +129,11 @@ a{text-decoration:none;color:#666}
 ================================================================================================= */
 .login-body {background:#fff;}
 .login-page {top:50%;margin-top:-200px;height: 400px;position:absolute;width:100%;}
-.login-page .logo {display:block;background: url('../img/logo.png') no-repeat right;width:236px;height:58px;margin:28px auto 45px auto;}
-.login-page .btn {padding:10px 0;font-size:18px;margin:60px auto 0 auto;display: block;width:300px;text-transform: uppercase;}
+.login-page .logo {display:block;background: url('../img/logo.png') no-repeat center;width:236px;height:58px;margin:28px auto 45px auto;}
 .login-page .login-btn {display:block;background:#df2847 url('../img/icon_login.gif') no-repeat 10px 6px;color:#fff;width:100px;margin:0 auto;padding:0 20px 0 45px;height:23px;line-height:24px;color:#fff;}
 .login-page .login-btn:hover {opacity:0.8;text-decoration:none;}
-.login-page form {width:400px;margin:0 auto;}
+.login-page form {width:200px;margin:0 auto;}
+.login-page .btn {text-transform: uppercase;margin:20px auto;display: block;}
 
 .modal {top:30%;}
     .modal-header {border: none;}
@@ -151,6 +151,8 @@ a{text-decoration:none;color:#666}
     .statistics-wrap h4 {text-transform: uppercase;background:#ffd800;padding:20px 20px;font-weight: bold;}
     .statistics-wrap .statistics-item {margin:10px 0 10px 20px;}
     .statistics-wrap .statistics-item span {font-size:24px;color:#c61225;margin:0 0 0 10px;}
+    .statistics-item .challenge {float:left;background:#de202a;padding:20px;margin:0 10px 0 0;text-align: center;font-size:30px;color:#fff;}
+.statistics-item .challenge .counts {margin:20px 0 0;}
 
 .video-form {width:500px;}
     .video-form  h4 {text-transform: uppercase;background:#ffd800;padding:10px 10px;font-weight: bold;}
@@ -168,6 +170,7 @@ a{text-decoration:none;color:#666}
     .video-phase-list h4 {margin:20px 0 10px 0;}
     .video-phase-add select {padding:5px 0;}
     .video-phase-add {background:#ffd402;border:2px dashed #ffa800;margin-right:80px;margin-top:20px;padding:10px 10px;}
+    .video-phase-add .error {color: #de202a;margin:0 0 0 10px;}
 
 .nodes-list,.login-page .login,
 a,.menu li,table td,.refresh, .btn,.list li .black-overlay

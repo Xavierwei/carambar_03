@@ -1,8 +1,12 @@
 <div class="statistics-wrap">
 	<h4>Challenge Result</h4>
     <ul class="statistics-item">
-        <li ng-repeat="challenge in challenges"><label>{{challenge.title}}: </label> <span>{{challenge.vote_counts}}</span></li>
+        <li class="challenge" ng-repeat="challenge in challenges">
+	        <div><img src="../pic/challenge{{challenge.cid}}.jpg" /></div>
+	        <div class="counts">{{challenge.vote_counts}}</div>
+		</li>
     </ul>
+	<div class="clear" style="margin:0 0 20px 0;"></div>
 
     <h4>GOOD LUCK</h4>
     <div class="statistics-item"><label>Counts: </label><span>{{goodluck}}</span></div>
