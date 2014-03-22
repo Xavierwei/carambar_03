@@ -525,6 +525,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 						}
 					});
 
+				if($('html').hasClass('touch')) return;
 				var timeoffset = isUglyIe?0:1600;
 				setTimeout(function(){
 					var s = skrollr.init({
@@ -644,10 +645,12 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 			var ratio = 1.3;
 			var winHeight = $(window).height();
 			var videoBoxHeight = winHeight - 100;
-			if(videoBoxHeight > 640) {
-				videoBoxHeight = 640;
+			var winWidth = $(window).width();
+			var videoBoxWidth = winWidth - 100;
+			if(videoBoxWidth > 840) {
+				videoBoxWidth = 840;
 			}
-			var videoBoxWidth = videoBoxHeight * ratio;
+			var videoBoxHeight = videoBoxHeight / ratio;
 			$('.video-popup').height(videoBoxHeight).width(videoBoxWidth).css({marginTop:-videoBoxHeight/2, marginLeft:-videoBoxWidth/2});
 			$('.video-popup iframe').height(videoBoxHeight - 20).width(videoBoxWidth - 20);
 		}

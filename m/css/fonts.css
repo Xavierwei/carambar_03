@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'HelveticaNeueLTStd-MdCn';
+	src: url('../../fonts/HelveticaNeueLTStd-MdCn.eot');
+	src: local('☺'), url('../../fonts/HelveticaNeueLTStd-MdCn.woff') format('woff'), url('../../fonts/HelveticaNeueLTStd-MdCn.ttf') format('truetype'), url('../../fonts/HelveticaNeueLTStd-MdCn.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTPro-BdCn';
+    src: url('../../fonts/HelveticaNeueLTPro-BdCn.eot');
+    src: local('☺'), url('../../fonts/HelveticaNeueLTPro-BdCn.woff') format('woff'), url('../../fonts/HelveticaNeueLTPro-BdCn.ttf') format('truetype'), url('../../fonts/HelveticaNeueLTPro-BdCn.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd-Lt';
+    src: url('../../fonts/HelveticaNeueLTStd-Lt.eot');
+    src: local('☺'), url('../../fonts/HelveticaNeueLTStd-Lt.woff') format('woff'), url('../../fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'), url('../../fonts/HelveticaNeueLTStd-Lt.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.preload1 {font-family:'HelveticaNeueLTStd-MdCn';font-size:0;position:fixed;bottom:0;left:0;}
+.preload2 {font-family:'HelveticaNeueLTPro-BdCn';font-size:0;position:fixed;bottom:0;left:0;}
+.preload3 {font-family:'HelveticaNeueLTStd-Lt';font-size:0;position:fixed;bottom:0;left:0;}
+
+body,input,textarea{font-family:'HelveticaNeueLTStd-MdCn', arial, sans-serif;text-transform: uppercase;}
+input,textarea {text-transform:none;}
+.count {letter-spacing:1px;}
+.item-info {font-family: 'Myriad Pro', arial;font-size:10px;}
+.menu-item h6 {font-size:12px;}
+.count-userinfo {text-transform:capitalize;font-size:25px;}
+.count-userinfo .name {font-family: 'HelveticaNeueLTPro-BdCn', arial;}
+.inner-infocom {font-family: 'Myriad Pro', arial;font-size:26px;}
+.com-main,.com-main textarea {font-family: 'Myriad Pro', arial;text-transform: none;font-size:23px;}
+.com-info {font-family: 'Myriad Pro', arial;text-transform: capitalize;}
+.comlist-tit {font-size:17px;}
+.comlist-tit span {font-size:26px;}
+.poptxt-textarea {font-size:20px;text-transform:none;font-style:italic;}
+.poptxt-textarea:focus {font-style: normal;}
+.logfi input {font-size:15px;}
+.logbtn div {font-size:14px;}
+.search-hd {font-size:32px;font-family:'HelveticaNeueLTStd-Lt', arial;}
+.blank-search {letter-spacing:1px;}
+.popular-hashtags {font-size:14px;}
+.popular-hashtags ul {font-size:18px;}
+.avatar-file {font-size:14px;}
+.editfi-tit {letter-spacing:1px;}
+.editfi-email,.edit-email {text-transform:none;font-size:18px;}
+.editfi-email {font-size:23px;}
+.edit-tips {text-transform:none;font-size:18px;}
+.edit-fi {font-size:23px;}
+.editfi-condition {font-size:18px;text-transform: none;line-height:120%;}
+.editfi-information {font-size:18px;text-transform: none;line-height:120%;}
+.editfi-country-box {font-size:18px;}
+.editfi-com em {font-size:18px;text-transform:none;}
+.editfi-country-option p {font-size:11px;}
+.editfi-country-option p:hover {border:1px solid #e6e6e6;}
+.edit-email-error,.editfi-condition-error {font-size:18px;text-transform:none;}
+.user-edit-save,.user-edit-cancel {font-family:'HelveticaNeueLTStd-Lt';font-size:24px;text-transform:none;text-transform: capitalize}
+.poploading,.pop-success {font-size:22px;}
+.poptxt-preview .error {font-size:18px;text-transform: none;}

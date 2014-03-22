@@ -226,7 +226,7 @@
 		<!--  -->
 		<div class="share">
 			<div class="share-fb">
-				<a href="javascript:void(0)" id="facebook-login-link" class="share-fbbtn"></a>
+				<a href="javascript:void(0)" data-a="open_facebook"  class="share-fbbtn"></a>
 			</div>
 			<div class="share-t">
 				<textarea class="share-txt" id="twitter-content"></textarea>
@@ -263,7 +263,9 @@
 
 	<!-- footer -->
 	<div class="footer">
+		<div class="footer-inner">
 		jeu gratuit sans obligation d’achat du 25/03/2014 au 11/04/2014. à gagner 360 kits supporters collectors d’une valeur commerciale approximative de 12,50€. retrouvez l’ensemble des modalités en consultant le <a target="_blank" href="#">reglement complet du jeu</a>.
+		</div>
 	</div>
 </div>
 
@@ -285,7 +287,7 @@
 	<div class="pop pop-fb">
 		<div class="pop-close" data-a="close_popup"></div>
 		<div class="facebook-post-form">
-			<div class="pop-fttit">PUBLIER VOTRE SOUTIEN avec le #goodluckcarambar</div>
+			<div class="pop-fttit">PUBLIER VOTRE SOUTIEN avec le <span>#goodluckcarambar</span></div>
 			<div class="pop-ft-form cs-clear">
 				<div class="facebook-post-img-wrap">
 					<div class="facebook-post-img" id="fileupload">

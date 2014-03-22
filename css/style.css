@@ -116,7 +116,7 @@ a:hover{color:#e82426}
 
 .tshirttit{background: url('../images/tshirttit.png') no-repeat top center;height: 97px;margin: 18px auto 0}
     .tshirt{height: 245px;width:783px;margin: 8px auto 0;position: relative;}
-    .tshirt1{background: url('../images/tshirt1.png') no-repeat top center;height: 147px;width:774px;position: absolute;top:21px;left:4px}
+    .tshirt1{background: url('../images/tshirt1.png') no-repeat top center;height: 147px;width:774px;position: absolute;top:81px;left:4px}
     .tshirt2{background: url('../images/tshirt2.png') no-repeat top center;height: 244px;width:388px;position: absolute;top:2px;left:171px;}
 
 .photit{background: url('../images/photit.png') no-repeat top center;height: 93px;margin: 15px auto 0}
@@ -130,6 +130,7 @@ a:hover{color:#e82426}
 /* footer Used
 ================================================================================================= */
 .footer{font-size: 10px;padding:10px 10px 20px 10px;color: #040d3e;text-transform:uppercase;text-align: center;line-height:140%;position: relative;z-index:10;background: #FFEB00;}
+.footer a {text-decoration:underline;}
 
 /* popup
 ================================================================================================= */
@@ -309,6 +310,7 @@ a:hover{color:#e82426}
 @media screen and (max-width:825px){
     .page {min-width:640px;}
     body{overflow-x:hidden;}
+    .overlay {cursor: pointer;}
     /**/
     .header{background: url('../mobileimg/hdbg.png') no-repeat center;height: 88px;min-width:640px;}
     .page{overflow: hidden;}
@@ -354,16 +356,17 @@ a:hover{color:#e82426}
     .sec-bluenum{background: url('../mobileimg/sec1_bluepho2.png') no-repeat;width: 507px;height:201px;top:320px;left:72px;}
     .sec-bluetime{background: url('../mobileimg/sec1_bluepho3.png') no-repeat;width: 416px;height:287px;top:553px;left:145px;}
 
+    .challenge-title {width:100%;background:#e3142a url('../mobileimg/challenge_title.png') no-repeat center;height:72px;margin:0;left:0;}
 
-    .img1{}
-    .img2{}
-    .img3{display: none}
+    .line-com-p1 {background: url('../mobileimg/line_com_p1.png') no-repeat;width:449px;height:106px;margin-left:-225px}
+
+    .img{height:348px;margin-top:30px;}
 
     .share{background:none;width:560px;height: 280px;margin: 0 auto}
     .share-fb{top:0;left:0;background: url('../mobileimg/sharefb.png') no-repeat;width:562px;height:73px;margin: 0}
-    .share-fbbtn{display: block;background: url('../mobileimg/btn_fb.png') no-repeat;width:180px;height: 28px;position: absolute;margin: 0;right:20px;top:22px;}
+    .share-fbbtn{display: block;background: url('../mobileimg/btn_fb.png') no-repeat;position: absolute;margin: 0;right:18px;top:20px;}
     .share-t{width:560px;left:0;margin-left:0px;top:73px;background: url('../mobileimg/sharet.png') no-repeat;height: 117px;padding:0;}
-    .share-txt{width:300px;height:45px;border:0;background: none;position: absolute;top:52px;left:78px;}
+    .share-txt{width:300px;height:61px;border:0;background: none;position: absolute;top:38px;left:83px;}
     .share-t-num{display: none}
     .share-tbtn{display: block;margin:0;background: url('../mobileimg/btn_t.png') no-repeat;width:147px;height: 47px;position: absolute;right: 15px;top: 35px}
     .share-tbtn.disabled, .share-tbtn.disabled:hover {background-position:0 0;}
@@ -371,12 +374,12 @@ a:hover{color:#e82426}
     .share-iandroid{display: block;background: url('../mobileimg/btn_iandroid.png') no-repeat;width:104px;height: 36px;position: absolute;right:140px;top:20px;}
     .share-iios{display: block;background: url('../mobileimg/btn_iios.png') no-repeat;width:104px;height: 36px;position: absolute;top:20px;right:20px;}
 
-    .tshirttit{background: url('../mobileimg/tshirttit.png') no-repeat top center;height: 85px;margin: 18px auto 0}
+    .tshirttit{background: url('../mobileimg/tshirttit.png') no-repeat top center;height: 97px;margin: 18px auto 0}
 
 
-    .tshirt{height: 245px;width:627px;margin: 8px auto 0;position: relative;}
-    .tshirt1{background: url('../mobileimg/tshirt1.png') no-repeat top center;height: 119px;width:627px;position: absolute;top:21px;left:4px}
-    .tshirt2{background: url('../mobileimg/tshirt2.png') no-repeat top center;height: 197px;width:314px;position: absolute;top:2px;left:171px;}
+    .tshirt{height: 245px;width:100%;margin: 8px 0 0;position: relative;}
+    .tshirt1{background: url('../mobileimg/tshirt1.png') no-repeat top center;height: 119px;width:100%;position: absolute;top:71px;left:0px}
+    .tshirt2{background: url('../mobileimg/tshirt2.png') no-repeat top center;height: 245px;width:385px;position: absolute;top:2px;left:171px;}
 
     .home-section1{margin:0;left:0}
     .home-map{display: none}
@@ -390,6 +393,8 @@ a:hover{color:#e82426}
     .home-man2{top:95px}
     .home-tit2{left:240px}
 
+    .presentation {box-shadow:0px 0px 0px;-webkit-box-shadow:0px 0px 0px;height:984px;}
+    .presentation-box {width:100%;height:756px;}
     .presentation-box .carambar-man {left:-25px!important;top:-30px!important;z-index: 2;}
     .tooltip {background:url('../mobileimg/tooltip_bg.png') no-repeat;width:487px;height:221px;top:30px!important;left:140px!important;}
     .tips-content {background: url('../mobileimg/tooltip_content.png') no-repeat;width:405px;height:159px;}
@@ -399,5 +404,27 @@ a:hover{color:#e82426}
     .tips-video .video-play:hover {background-position:55px 15px;}
 
     .blue-road {background: url('../mobileimg/blue_road.png') no-repeat center;height: 193px;}
-    .indicator-count-wrap {position:relative;left:0;right:0;}
+
+
+    .indicator-count-wrap {position:relative;left:0;right:0;background:url('../mobileimg/indicator_count_wrap_bg.jpg') no-repeat center bottom;height:487px;width:100%;}
+    .indicator-btn {background:url('../mobileimg/indicator_btn.png') no-repeat;width:379px;height:274px;top:170px;left:50%;margin-left:-190px;}
+    .indicator-btn:hover {background-position:-1111px 0;}
+    .indicator-title {font-size:23px;margin:0 auto;width:600px;}
+    .indicator-count {margin:20px auto 10px auto;width:254px;}
+    .indicator-hashtag {background: url('../mobileimg/indicator_hashtag.png') no-repeat;width:321px;height:23px;margin:0 auto;}
+    .goto-support {background: url('../mobileimg/goto_btn.gif') no-repeat center;width:502px;}
+    .challenge-inner {width:640px;}
+    .challenge-item {float:left;width:207px;margin:0 3px;padding:23px 0;text-align:center;background:#e3142a;-webkit-box-shadow: 0 0px 0px 0;box-shadow: 0 0px 0px 0;}
+    .map_bg,.challenge-man {display: none;}
+
+    .pop-fb {width:600px;margin-left:-300px;}
+    .pop-ft-form {width:600px;}
+    .pop-ft-text {width:365px;}
+    .pop-ft-text textarea {width:344px;}
+    .pop-fttit {background:none;line-height:19px;font-size:19px;text-align:center;color:#fff;text-transform: uppercase;width:100%;}
+    .pop-fttit span {color:#ffeb00;}
+    .step1-tips {bottom:118px;}
+
+    .footer {margin:0;width:100%;}
+    .footer .footer-inner {margin:0 80px;border-top:1px solid #000;padding:20px 0 0;}
 }

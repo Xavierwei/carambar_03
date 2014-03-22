@@ -463,6 +463,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         node.date = datetime.getUTCDate();
         node.month = parseInt(datetime.getUTCMonth()) + 1;
         node.share = encodeURIComponent(node.description);
+		node.encode_username = encodeURIComponent(node.screen_name);
 
         if( node.type == "photo" )
             node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
@@ -678,6 +679,8 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         var datetime = new Date((parseInt(node.datetime)+1*3600)*1000);
         node.date = datetime.getUTCDate();
         node.month = parseInt(datetime.getUTCMonth()) + 1;
+		node.hour = datetime.getHours();
+		node.minutes = datetime.getUTCMinutes();
         //node.currentUser = $('.side').data('user');
         if( node.image )
             node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
@@ -1251,50 +1254,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                         $('.comment-form').delay(1800).fadeIn(function(){
 							$submitBtn.removeClass('disabled');
 						});
-                        LP.compile( 'comment-item-template' ,
-                            comment,
-                            function( html ){
-                                // render html
-                                if($('.com-list-inner .comlist-item').length == 0) {
-                                    $('.com-list-inner').html('');
-                                }
-                                $('.com-list-inner').first().append(html);
-                                var $comCount = $('.com-com-count');
-                                var newComCount = parseInt($comCount.html())+1;
-                                $comCount.html(newComCount);
-                                var nid = $('.comment-wrap').data('param').nid;
-                                $('.main-item-' + nid).find('.item-comment').html(newComCount);
 
-                                (function(){
-                                    var nodes = $('.main').data('nodes');
-                                    if(nodes) {
-                                        var node = jQuery.grep(nodes, function (node) {
-                                            if(node.nid == nid) {
-                                                return node;
-                                            }
-                                        });
-                                        if(node.length > 0) {
-                                            node[0].commentcount = newComCount;
-                                        }
-                                    }
-                                })();
-
-                                (function(){
-                                    var nodes = $('.count-com').data('nodes');
-                                    if(nodes) {
-                                        var node = jQuery.grep(nodes, function (node) {
-                                            if(node.nid == nid) {
-                                                return node;
-                                            }
-                                        });
-                                        if(node.length > 0) {
-                                            node[0].commentcount = newComCount;
-                                        }
-                                    }
-                                })();
-
-                                LP.triggerAction('update_user_status');
-                            } );
                     }
                     else {
                         // if(res.message === 601) {
@@ -1325,7 +1285,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                 $commentWrap.addClass('loading');
             }
             if(comments.length == 0 && page == 1) {
-                $('.com-list-inner').html('<div class="no-comment">no comments</div>');
+                $('.com-list-inner').html('<div class="no-comment">Aucun commentaire</div>');
             }
             else {
                 $.each( comments , function( index , comment ){
@@ -1479,7 +1439,6 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         if(node.from == 'instagram') {
             node.embed = 'instagram.php?url=' + node.url;
         }
-        console.log(node);
         LP.compile( 'html5-player-template' , node , function( html ){
             $newItem.html(html);
         });
@@ -1515,6 +1474,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
             $main = $('.main').data('param' , {page:0 , orderby: 'datetime'});
             // hide loading 
             $('.page-loading').fadeOut();
+			$listLoading = $('.loading-list');
             // load first page node list
 
             $(window).trigger('scroll');

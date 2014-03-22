@@ -125,7 +125,7 @@ a{text-decoration:none;color:inherit;}
 .side{background:#fcea2f;width: 125px;height: 100%;position:fixed;top: 172px;left: 0;z-index:11; border-right: 1px solid #2f3688;}
     .menu{margin-top: 6px;}
         .menu a,.menu .filter{display: block;font-size: 16px;color:#2f3688; line-height: 35px;padding-left: 20px;font-family: 'Arial Narrow', Arial;}
-        .menu a:hover,.menu a.actived{background: black;color: white;}
+        .menu a:hover,.menu a.actived{background: #303788;color: white;}
 	/*.user{cursor:pointer;background: #cb223a url('../img/side_user_bg.gif') no-repeat;width:80px;height:71px;padding:1px 0 0;color:#fff;text-align: center;position: relative;}
         .user-name {margin-top:3px;}
         .close-user-page {background: #bf1a32 url(../img/icon_close_user.gif) no-repeat right center;width:10px;height:71px;position:absolute;z-index:10;top:0px;right:0;display: none;}
@@ -174,7 +174,7 @@ a{text-decoration:none;color:inherit;}
     .logged .flag-node {display:block;}
     .inner-topday {position: absolute;top:-33px;left:10px;background:url('../img/icon_topday_b.gif') no-repeat;width:50px;height:31px;border:1px solid #d2d2d2;}
     .inner-topmonth {position: absolute;top:-33px;left:10px;background:url('../img/icon_topmonth_b.gif') no-repeat;width:50px;height:31px;}
-    .image-wrap-inner {background: url('../img/loading_inner.gif') no-repeat center center;overflow:hidden;}
+    .image-wrap-inner {background: url('../images/loading.gif') no-repeat center center;overflow:hidden;}
     .image-wrap-inner img {display:none;}
     .image-wrap-inner iframe {height: 100%;}
     .image-wrap-inner video {display: none;}
@@ -259,7 +259,7 @@ a{text-decoration:none;color:inherit;}
         .com-share-list a:hover.share-gplus {background-position:-148px -348px;}
         .com-share-list a:hover.share-pin {background-position:-158px 32px;}
 
-    .loading-list {z-index:9;display:none;background: url('../img/loading_trans_white.png') no-repeat;width:20px;height:20px;position:fixed;bottom:10px;right:10px;}
+    .loading-list {z-index:9;display:none;background: url('../images/loading.gif') no-repeat;width:16px;height:16px;position:fixed;bottom:10px;right:10px;}
 
 /* loginpage Used
 ================================================================================================= */

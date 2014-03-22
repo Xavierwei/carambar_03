@@ -1,6 +1,6 @@
 <?php
 if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|android|bb)/i', strtolower($_SERVER['HTTP_USER_AGENT']))) {
-	header("Location: m",true,303);
+	header("Location: photowall-m.php",true,303);
 	die();
 }
 ?>
@@ -25,12 +25,12 @@ if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|andro
 	<meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
-    <link href="css/jsPane.css?<?php echo time();?>" rel="stylesheet" type="text/css" />
-    <link href="css/layout.css?<?php echo time();?>" rel="stylesheet" type="text/css" />
-    <link href="css/fonts.css?<?php echo time();?>" rel="stylesheet" type="text/css" />
-    <link href="css/animation.css?<?php echo time();?>" rel="stylesheet" type="text/css" />
-    <link href="css/needtocombine.css?<?php echo time();?>" rel="stylesheet" type="text/css" />
-    <link href="css/video-js.css?<?php echo time();?>" rel="stylesheet" type="text/css" />
+    <link href="css/jsPane.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="css/animation.css" rel="stylesheet" type="text/css" />
+    <link href="css/photoitem.css" rel="stylesheet" type="text/css" />
+    <link href="css/video-js.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 8]>
 	<link href="css/ie8.css" rel="stylesheet" type="text/css" />
 	<!--<![endif]-->

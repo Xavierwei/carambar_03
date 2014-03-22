@@ -19,12 +19,6 @@ a
     animation: loadRotate 5s linear infinite;
 }
 
-.loading-list {
-    -moz-animation: loadRotate 5s linear infinite;
-    -webkit-animation: loadRotate 5s linear infinite;
-    animation: loadRotate 5s linear infinite;
-}
-
 .flashing {
     -moz-animation: flashing 2s linear infinite;
     -webkit-animation: flashing 2s linear infinite;
