@@ -43,7 +43,7 @@ a{text-decoration:none;}
 ================================================================================================= */
 .side{background:#fcea2f;width: 100px;position:fixed;top: 124px;bottom:0;left: 0;z-index:11; border-right: 1px solid #2f3688;}
 .menu{margin-top: 6px;}
-.menu a,.menu .filter{display: block;font-size: 19px;color:#2f3688; line-height: 35px;padding-left: 5px;font-family: 'Arial Narrow', Arial;}
+.menu a,.menu .filter{display: block;font-size: 19px;color:#2f3688; line-height: 55px;padding-left: 5px;font-family: 'Arial Narrow', Arial;}
 .menu a:hover,.menu a.actived{background: #303788;color: white;}
 
 /* main Used

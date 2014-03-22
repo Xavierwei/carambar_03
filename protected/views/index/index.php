@@ -58,9 +58,6 @@
 				<div class="indicator-btn" data-a="indicate"></div>
 			</div>
 		</div>
-		<div class="goto-support-bg">
-			<a href="javascript:;" data-a="goto_support" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
-		</div>
 		<?php endif;?>
 		<?php if($phase == 4 || $phase == 5):?>
 		<div class="videopart cs-clear">
@@ -108,12 +105,23 @@
 			</div>
 			<?php else:?>
 				<div class="sec-blue2">
-					<div class="sec-blue2txt"></div>
-					<div class="sec-blue2txt2"></div>
+					<div class="sec-blue2txt">
+						<div class="indicator-count-wrap">
+							<div class="indicator-count"></div>
+							<div class="indicator-count-num"></div>
+						</div>
+					</div>
+
 				</div>
 				<div class="line line4"></div>
 			<?php endif;?>
 
+		<?php endif;?>
+
+		<?php if($phase != 5):?>
+		<div class="goto-support-bg">
+			<a href="javascript:;" data-a="goto_support" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
+		</div>
 		<?php endif;?>
 	</div>
 	<!-- /Presentation Block -->
@@ -180,7 +188,7 @@
 					<?php for($i = 0; $i < $leftCount; $i++):?>
 						<div class="videolist-item">
 							<div class="videolist-item-tit videolist-item-tit<?php echo $boxCount - $leftCount + $i + 1 ;?>"></div>
-							<div class="videolist-boxnull">prochainement...</div>
+							<div class="videolist-boxnull">des défis de plus en plus fous...</div>
 						</div>
 					<?php endfor;?>
 					<div class="cs-clear"></div>
@@ -201,14 +209,9 @@
 		</div>
 		<?php endif;?>
 		<?php if($phase == 3 || $phase == 4):?>
-		<!-- line -->
-		<div class="line line2">
-			<div class="line-com2"></div>
-		</div>
 		<!-- #barack -->
 		<div class="barack">
 			<div class="baracktit"></div>
-			<div class="baracktxt">Please tell us when we can meet</div>
 			<div class="barackbtn" data-a="open_invitation"></div>
 		</div>
 		<!-- /barack -->
@@ -264,7 +267,7 @@
 	<!-- footer -->
 	<div class="footer">
 		<div class="footer-inner">
-		jeu gratuit sans obligation d’achat du 25/03/2014 au 11/04/2014. à gagner 360 kits supporters collectors d’une valeur commerciale approximative de 12,50€. retrouvez l’ensemble des modalités en consultant le <a target="_blank" href="#">reglement complet du jeu</a>.
+		jeu gratuit sans obligation d’achat du 25/03/2014 au 11/04/2014. à gagner 360 kits supporters collectors d’une valeur commerciale approximative de 12,50€. retrouvez l’ensemble des modalités en consultant le <a target="_blank" href="./pdf/reglement_glc.pdf">reglement complet du jeu</a>.
 		</div>
 	</div>
 </div>

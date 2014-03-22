@@ -870,7 +870,7 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
 				.css({y:1000, opacity:0})
 				.transit({y:0, opacity:1}, _animateTime, _animateEasing);
 
-			$comMain.find('.com-list').height($comMain.height() - 398);
+			$comMain.find('.com-list').height($comMain.height() - 410);
 
 			if($comMain.find('.comlist-item').length == 0) {
 				bindCommentSubmisson();
@@ -1052,21 +1052,6 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
 
 	function cubeInnerNode( node , direction, drag ){
 
-
-//        var cubeDir = 'cube-' + direction;
-//        var rotateDir = 'rotate-' + direction;
-//
-//        // base on comment wrap width
-//        var dist = $('.comment-wrap').width() / 2;
-//        var dirData = {
-//            dist: dist,
-//            rotate: 90
-//        }
-//        if( direction == 'left' ){
-//            dirData.dist = - dist;
-//            dirData.rotate = -90;
-//        }
-
 		var datetime = new Date((parseInt(node.datetime)+1*3600)*1000);
 		node.date = datetime.getUTCDate();
 		node.year = datetime.getUTCFullYear();
@@ -1142,6 +1127,7 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
 				$newItem.find('.video-poster').delay(200).fadeIn(200);
 			});
 
+
 			if(drag != true) {
 				$imgWrap.children('.image-wrap-inner')
 					.eq(0)
@@ -1165,234 +1151,7 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
 		});
 	}
 
-    /**
-     * @desc: 立方体旋转inner node
-     * @date:
-     * @param node {node object}
-     * @param direction { 'right' or 'left' }
-     */
-//    function cubeInnerNode( node , direction ){
-//
-//        var cubeDir = 'cube-' + direction;
-//        var rotateDir = 'rotate-' + direction;
-//
-//        // base on comment wrap width
-//        var dist = $('.comment-wrap').width() / 2;
-//        var dirData = {
-//            dist: dist,
-//            rotate: 90
-//        }
-//        if( direction == 'left' ){
-//            dirData.dist = - dist;
-//            dirData.rotate = -90;
-//        }
-//
-//        var datetime = new Date((parseInt(node.datetime)+1*3600)*1000);
-//        node.date = datetime.getUTCDate();
-//        node.month = parseInt(datetime.getUTCMonth()) + 1;
-//        //node.currentUser = $('.side').data('user');
-//        if( node.image )
-//            node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
-//        node.timestamp = (new Date()).getTime();
-//        node.share = encodeURIComponent(node.description);
-//        // if(!node.user.avatar) {
-//        //     node.user.avatar = "/uploads/default_avatar.gif";
-//        // }
-//        // node._e = _e;
-//        var $inner = $('.inner');
-//        LP.compile( 'inner-template' , node , function( html ){
-//            var $comment = $inner.find('.comment');
-//            // comment animation
-//            var $newInner = $(html);
-//            var transform = "translatex(" + dirData.dist + "px) translatez(" + (-dist) + "px) rotateY(" + dirData.rotate + "deg)";;
-//            var $nextComment = $newInner.find('.comment')
-//                .addClass(cubeDir)
-//                .css({
-//                    "-webkit-transform": transform,
-//                    "-moz-transform": transform,
-//					"-ms-transform": transform,
-//                    "transform": transform
-//                })
-//                .insertBefore( $comment )
-//                .find( '.com-list' )
-//                .css('height' , $comment.find('.com-list').height())
-//                .end();
-//
-//			var $cube = $comment.parent();
-//			var rotate = "translate3d(" + ( - dirData.dist ) + "px,0," + (-dist) + "px) rotateY(" + ( -dirData.rotate ) + "deg)";
-//			if(!isIE10) {
-//				$cube.addClass(rotateDir)
-//					.css({
-//						"-webkit-transform": rotate,
-//						"-moz-transform": rotate,
-//						"-ms-transform": rotate,
-//						"-o-transform": rotate,
-//						"transform": rotate
-//					});
-//			}
-//
-//
-//            // fix ie8 and ie9 not support animate feature
-//            if( !$('html').hasClass('csstransforms3d') || isIE10 ){
-//                var cubeWidth = $cube.width();
-//                $cube.css({
-//                    width: 2 * cubeWidth
-//                })
-//                .children().css({
-//                    float   : 'left',
-//                    position: 'static',
-//                    width   : cubeWidth,
-//                    height  : '100%'
-//                });
-//                if( direction == 'left' ){
-//                    $cube.css({
-//                            left: -cubeWidth
-//                        })
-//                        .animate( {
-//                            left: 0
-//                        } , 1000 , '' , function(){
-//                            $comment.remove();
-//                            $cube.css('width' , '100%')
-//                                .children()
-//                                .css('width' , '100%');
-//                        });
-//                } else {
-//                    $cube.children().eq(0)
-//                        .appendTo( $cube );
-//
-//                    $cube.css({
-//                            left: 0
-//                        })
-//                        .animate( {
-//                            left: -cubeWidth
-//                        } , 1000 , '' , function(){
-//                            $comment.remove();
-//                            $cube.css({
-//                                width: '100%',
-//                                left : 0
-//                            })
-//                            .children()
-//                                .css('width' , '100%');
-//                        });
-//                }
-//            }
-//
-//
-//            setTimeout(function(){
-//                // reset css
-//                $cube.addClass( 'no-animate' )
-//                    .removeClass( rotateDir )
-//                    .css({
-//                        "-webkit-transform": '',
-//                        "-moz-transform": '',
-//                        "-ms-transform": '',
-//                        "-o-transform": '',
-//                        "transform": ''
-//                    });
-//                $comment.remove();
-//                $nextComment
-//                    .removeClass(cubeDir)
-//                    .css({
-//                        "-webkit-transform": "",
-//                        "-moz-transform": "",
-//						"-ms-transform": "",
-//                        "transform": ""
-//                    });
-//                setTimeout(function(){
-//                    $cube.removeClass( 'no-animate' );
-//                    _innerLock = false;
-//                },20);
-//
-//                $inner.removeClass('disabled');
-//
-//            } , 1000);
-//
-//            // picture animation,
-//            // append or prepend image
-//            // set image width
-//            // set .image-wrap's margin-right
-//            // animate the first image's margin-left style
-//            var $imgWrap = $inner.find('.image-wrap');
-//            var wrapWidth = $imgWrap.width();
-//            $imgWrap.css('width' , 2 * wrapWidth );
-//
-//            // append dom
-//            var $oriItem = $imgWrap.children('.image-wrap-inner');
-//            // count the style
-//            var $newItem = $newInner.find('.image-wrap-inner')[ direction == 'left' ? 'insertBefore' : 'insertAfter' ]( $oriItem )
-//                .attr('style' , $oriItem.attr('style'))
-//                .find('img')
-//                .show()
-//                .end();
-//
-//
-//            // Resize Image
-//            var slideWidth = $('.side').width();
-//            var imgBoxWidth = $(window).width() - 330 - slideWidth;
-//            var imgBoxHeight =$(window).height() - $('.header').height();
-//            var minSize = Math.min( imgBoxHeight , imgBoxWidth );
-//            var $img = $newItem.find('img').css('margin',0);
-//            $newItem.width(minSize).height(minSize);
-//
-//            if( imgBoxHeight > imgBoxWidth ){
-//                var marginLeft = (imgBoxHeight - imgBoxWidth) / 2;
-//                $newItem.height(imgBoxHeight);
-//                $img.width('auto').height('100%').css('margin-left', -marginLeft);
-//            }
-//
-//            $oriItem.find('iframe').remove();
-//
-//
-//
-//            // set style and animation
-//            $imgWrap.children('.image-wrap-inner').css({
-//                    width: wrapWidth
-//                })
-//                .eq(0)
-//                .css('marginLeft' , direction == 'left' ? - wrapWidth : 0 )
-//                .animate({
-//                    marginLeft: direction == 'left' ? 0 : - wrapWidth
-//                } , _animateTime, _animateEasing)
-//                // after animation
-//                .promise()
-//                .done(function(){
-//                    $imgWrap.width( wrapWidth );
-//                    // Resize Inner Box
-//                    // resizeInnerBox();
-//                    $newItem.css('width' , '100%');
-//                    $newItem.siblings('.image-wrap-inner').remove();
-//                });
-//
-//
-//            // init video
-//            if( node.type == "video" ){
-//                renderVideo($newItem,node);
-//                $('#imgLoad').attr('src', node.image);
-//                $('#imgLoad').ensureLoad(function(){
-//                    setTimeout(function(){
-//                        $('.image-wrap-inner object, .image-wrap-inner video').fadeIn();
-//                        $('.image-wrap-inner .video-js').fadeIn();
-//                        //slideIntroBar($newInfo, _animateTime);
-//                    },400);
-//                });
-//				// resize WMV
-////				var $wmvIframe = $('.image-wrap-inner iframe');
-////				if($wmvIframe.length > 0) {
-////					$wmvIframe.width('100%').height(imgBoxHeight-36);
-////				}
-//            }
-//            // init photo node
-//            if( node.type == "photo" ){
-//                $('.image-wrap-inner img').ensureLoad(function(){
-//                    $(this).fadeIn();
-//                    //slideIntroBar($newInfo, _animateTime);
-//                });
-//            }
-//
-//            // change url
-//            changeUrl('/nid/' + node.nid , {event: direction});
-//        });
-//    }
+
 
     /**
      * @desc: preload sibling images
@@ -1481,6 +1240,7 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
 		if(_innerDragging) return;
 		if( _innerLock ) return;
 		_innerLock = true;
+		console.log('it in');
 		if(drag != true) {
 			_draggingReleasing = true;
 		}
@@ -1651,7 +1411,7 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
                 LP.triggerAction('prev');
                 break;
             case 39: // right
-                LP.triggerAction('next');
+                LP.triggerAction(_innerLock);
                 break;
             case 27: // esc
 				ev.preventDefault();
