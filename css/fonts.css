@@ -3,7 +3,7 @@
 body,input,textarea{font-family:'Arial Narrow', arial, sans-serif;text-transform: uppercase;}
 input,textarea {text-transform:none;}
 .count {letter-spacing:1px;}
-.item-info {font-family: 'Arial Narrow', arial;font-size:10px;}
+.item-info {font-family: 'Arial Narrow', arial;font-size:12px;}
 .menu-item h6 {font-size:12px;}
 .count-userinfo {text-transform:capitalize;}
 .count-userinfo .name {font-family: 'Arial Narrow', arial;}

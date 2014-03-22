@@ -20,25 +20,14 @@ WallAdminServices.factory( 'VideoService', function($http, ROOT) {
                 });
         },
 
-        'delete': function(type, id, success) {
-            if(type == 'node') {
-                $http.post(ROOT+'/flag/deleteAll',{nid:id})
-                .success(function(data) {
-                    success(data);
-                })
-                .error(function() {
+        'delete': function( id, success) {
+            $http.post(ROOT+'/video/delete',{vid:id})
+            .success(function(data) {
+                success(data);
+            })
+            .error(function() {
 
-                });
-            }
-            else {
-                $http.post(ROOT+'/flag/deleteAll',{cid:id})
-                .success(function(data) {
-                    success(data);
-                })
-                .error(function() {
-
-                });
-            }
+            });
         },
 
 		list: function(params, success) {

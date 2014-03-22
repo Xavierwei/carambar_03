@@ -13,6 +13,9 @@ body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
 img{margin:0;line-height:normal;}
 em,i{font-style:normal;text-decoration:none}
 ul{list-style:none;}
+* {outline: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+textarea,input {-webkit-user-select: text;-khtml-user-select: text;-moz-user-select: text;-ms-user-select: text;user-select: text;}
+
 
 /* Commonly Used
 ================================================================================================= */
@@ -58,7 +61,7 @@ a:hover{color:#e82426}
             .videoshare .videoshare-i{background-position: 0 -120px}
             .btn-other-challenges {background: url('../images/btn_other_challenges.png') no-repeat;width:150px;height:61px;display:block;position: absolute;right:71px;bottom:0;}
 
-.sec-blue{background: #39376d url('../images/sec1_blue.png') repeat-x;height: 174px;width:100%;margin: 20px 0 0;position: relative;}
+.sec-blue{background: url('../images/sec1_blue.png') repeat-x;height: 174px;width:100%;margin: 20px 0 0;position: relative;}
     .sec-bluecon{width:800px;margin: 0 auto;position: relative;}
     .sec-bluepho{width:270px;height: 187px;background: url('../images/sec1-bluepho.png') no-repeat;position: absolute;top:0px;left:0}
     .sec-bluepho .countdown {position:absolute;right:35px;bottom:48px;font-family:'Arial Narrow';color:#2f3688;font-size:21px;}
@@ -90,12 +93,13 @@ a:hover{color:#e82426}
     .barackbtn{cursor:pointer;background: url('../images/barackbtn.png') no-repeat;width: 324px;height: 54px;position: absolute;top:96px;left:50%;margin-left:-162px;}
     .barackbtn:hover {background-position:-384px 0;}
 
+.support-carambar-wrap{background:url('../images/linebg.png') repeat-x center 204px;}
 .img{height: 308px;margin:0 auto 0;position: relative;width:634px;}
     .img1{background: url('../images/img1.png') no-repeat;position: absolute;width: 466px;height: 249px;left:84px;top:-3px; }
-    .img2{background: url('../images/img2.png') no-repeat;position: absolute;width: 634px;height: 88px;left:0px;top:190px;}
-    .img3{background: url('../images/img3.png') no-repeat;position: absolute;width: 410px;height: 45px;left:112px;top:265px;}
+    .img2{background: url('../images/img2.png') no-repeat;position: absolute;width: 695px;height: 88px;left:-27px;top:190px;}
+    .img3{background: url('../images/img3.png') no-repeat;position: absolute;width: 518px;height: 45px;left:75px;top:265px;}
 
-.share{background: url('../images/sharebg.png') no-repeat center;height: 283px;position: relative;}
+.share{height: 283px;position: relative;}
     .share-fb{position: absolute;left:50%;margin-left:-385px;top:16px;background: url('../images/sharefb.png') no-repeat;width:243px;height: 252px}
     .share-fbbtn{display: block;background: url('../images/btn_fb.png') no-repeat;width:221px;height: 35px;margin: 200px auto 0}
     .share-fbbtn:hover {background-position:-391px 0;}
@@ -110,7 +114,7 @@ a:hover{color:#e82426}
     .share-iandroid{display: block;background: url('../images/btn_iandroid.png') no-repeat;width:104px;height: 36px;float:left}
     .share-iios{display: block;background: url('../images/btn_iios.png') no-repeat;width:104px;height: 36px;float:right}
 
-.tshirttit{background: url('../images/tshirttit.png') no-repeat top center;height: 85px;margin: 18px auto 0}
+.tshirttit{background: url('../images/tshirttit.png') no-repeat top center;height: 97px;margin: 18px auto 0}
     .tshirt{height: 245px;width:783px;margin: 8px auto 0;position: relative;}
     .tshirt1{background: url('../images/tshirt1.png') no-repeat top center;height: 147px;width:774px;position: absolute;top:21px;left:4px}
     .tshirt2{background: url('../images/tshirt2.png') no-repeat top center;height: 244px;width:388px;position: absolute;top:2px;left:171px;}
@@ -185,10 +189,10 @@ a:hover{color:#e82426}
 
 /* presentation
 ================================================================================================= */
-.presentation {position: relative;z-index:9;background: url(../images/presentation_bg.gif) repeat-x top;height:645px;overflow:hidden;padding-top:1px;-webkit-box-shadow: 0 10px 8px 0 rgba(0,0,0,0.4);box-shadow: 0 10px 8px 0 rgba(0,0,0,0.4);}
+.presentation {position: relative;z-index:9;background:#fbea38 url(../images/presentation_bg.gif) repeat-x top;height:645px;overflow:hidden;padding-top:1px;-webkit-box-shadow: 0 10px 8px 0 rgba(0,0,0,0.4);box-shadow: 0 10px 8px 0 rgba(0,0,0,0.4);}
     .phase4 .presentation {height:746px;}
     .phase5 .presentation {height:955px;}
-.skyline {background: url(../images/presentation_skyline.png) no-repeat center top;height:560px;bottom:0;position: absolute;width:100%;}
+.skyline {background: url(../images/presentation_skyline.png) no-repeat center 90px fixed;height:560px;bottom:0;position: absolute;width:100%;}
     .phase5 .skyline {height:780px;}
 .blue-road {background: url(../images/blue_road.png) no-repeat center;height:162px;position:absolute;top:331px;width:100%;}
 .presentation-box {width:1000px;height:430px;margin:80px auto 0 auto;position: relative;}
@@ -229,7 +233,7 @@ a:hover{color:#e82426}
 
 /* challenge
 ================================================================================================= */
-.challenge_bg {position:fixed;z-index:7;top:0;bottom:0;width:100%;}
+.challenge_bg {position:fixed;z-index:1;top:0;bottom:0;width:100%;}
     .map_bg {position: absolute;background:url(../images/map_bg.jpg) no-repeat top;background-size:cover;width:100%;height:1000px;}
     .phase5 .map_bg {height:1300px;}
     .challenge {position: relative;}
@@ -293,3 +297,107 @@ a:hover{color:#e82426}
 ================================================================================================= */
 .yellow-wrap {position: relative;z-index:9;padding:1px 0;background:#ffeb00;-webkit-box-shadow: 0 -10px 20px 0 rgba(0,0,0,0.5);box-shadow: 0 -10px 20px 0 rgba(0,0,0,0.5);}
 
+
+
+
+
+
+
+
+/* Mobile Used
+================================================================================================= */
+@media screen and (max-width:825px){
+    .page {min-width:640px;}
+    body{overflow-x:hidden;}
+    /**/
+    .header{background: url('../mobileimg/hdbg.png') no-repeat center;height: 88px;min-width:640px;}
+    .page{overflow: hidden;}
+    .footer{width:640px;overflow: hidden;border:0;margin: 30px 0}
+    .nav1{margin:0 0 0 -261px;width:114px;top:19px;background-image: url('../mobileimg/nav.png');background-position: -701px -100px;}
+    .nav1:hover {background-position:-701px -100px;}
+    .nav2{margin:0 0 0 144px;width:120px;top:19px;background-image: url('../mobileimg/nav.png');}
+    .nav2:hover {background-position:-338px 0;}
+    .videopart{background-image: url('../mobileimg/videopart.png') ;width:620px;height: 546px;padding: 16px 0 0}
+    .videomod{float:none;margin: 0 auto;}
+    .videotxt{width:536px;background: #fff;margin:0 auto;float: none;overflow: hidden;display: block;height: 185px;font-size:20px;}
+    .videotxt-item{font-size: 22px;line-height: 28px;}
+    .videobot{display: none}
+    .videoshare{left:8px;top:325px;}
+    .videoshare .videoshare-t{background-image:url('../mobileimg/share_t.png');height: 58px;width: 58px;}
+    .videotxt-item{margin: 0 25px 0 40px;}
+    .videotxt-item span{line-height: 999em;overflow: hidden;height: 10px;}
+    .line4{height: 0;overflow: hidden}
+    .videolist-tit2{background-image: url('../mobileimg/videolist_tit2.png');width: 600px;height: 60px;margin-left:-310px}
+    .videolist-tit{}
+    .videolist,
+    .videolist2{background-image: url('../mobileimg/videolist2.jpg') ;height: 704px;padding: 30px 0 0;position: relative;}
+    .videolist{margin-top:50px;}
+    .videolistshare,
+    .videolistshare2{background-image: none;height: 704px}
+    .video-con{background:#eb212e;height:590px;width:590px;overflow: hidden}
+    .videolist-pro{display: none}
+    .videolist-item{width:402px;height: 270px;font-size: 30px;margin:0 0 30px 90px}
+    .videolist-item img{width:398px;height: 212px;}
+    .videolist-box{width:398px;height: 212px;}
+    .videolist-txt{padding:5px 0}
+    .video-icon{background: url('../mobileimg/video_icon.png') no-repeat;width: 103px;height: 160px;position: absolute;left:-50px;top:-50px}
+    .videolist-boxnull{width:392px;height: 206px;line-height: 200px;}
+
+    .photit{background: url('../mobileimg/photit.png') no-repeat top center;height: 81px;margin: 15px auto 0;width: 640px;}
+    .pholist{background: url('../mobileimg/pholist.png') repeat-x center;height: 203px;margin: 15px auto 0;width:572px;padding:10px 0 0 8px;overflow: hidden}
+    .phoitem{width:156px;height: 156px;}
+    .phoitem img{width:156px;height: 156px;}
+    .line-com3{background:#ffeb00 url('../mobileimg/line_com3.png') no-repeat center;width: 380px;height: 65px;margin: 0 auto}
+
+    .sec-blue{background: url('../mobileimg/sec1_blue.png') repeat-x top ;height: 840px}
+    .sec-bluepho{background: url('../mobileimg/sec1_bluepho1.png') no-repeat;width: 469px;height:274px;top:16px;left:86px;}
+    .sec-bluenum{background: url('../mobileimg/sec1_bluepho2.png') no-repeat;width: 507px;height:201px;top:320px;left:72px;}
+    .sec-bluetime{background: url('../mobileimg/sec1_bluepho3.png') no-repeat;width: 416px;height:287px;top:553px;left:145px;}
+
+
+    .img1{}
+    .img2{}
+    .img3{display: none}
+
+    .share{background:none;width:560px;height: 280px;margin: 0 auto}
+    .share-fb{top:0;left:0;background: url('../mobileimg/sharefb.png') no-repeat;width:562px;height:73px;margin: 0}
+    .share-fbbtn{display: block;background: url('../mobileimg/btn_fb.png') no-repeat;width:180px;height: 28px;position: absolute;margin: 0;right:20px;top:22px;}
+    .share-t{width:560px;left:0;margin-left:0px;top:73px;background: url('../mobileimg/sharet.png') no-repeat;height: 117px;padding:0;}
+    .share-txt{width:300px;height:45px;border:0;background: none;position: absolute;top:52px;left:78px;}
+    .share-t-num{display: none}
+    .share-tbtn{display: block;margin:0;background: url('../mobileimg/btn_t.png') no-repeat;width:147px;height: 47px;position: absolute;right: 15px;top: 35px}
+    .share-tbtn.disabled, .share-tbtn.disabled:hover {background-position:0 0;}
+    .share-i{width:560px;left:0;margin-left:0;top:190px;background: url('../mobileimg/sharei.png') no-repeat;height:72px;padding:0;}
+    .share-iandroid{display: block;background: url('../mobileimg/btn_iandroid.png') no-repeat;width:104px;height: 36px;position: absolute;right:140px;top:20px;}
+    .share-iios{display: block;background: url('../mobileimg/btn_iios.png') no-repeat;width:104px;height: 36px;position: absolute;top:20px;right:20px;}
+
+    .tshirttit{background: url('../mobileimg/tshirttit.png') no-repeat top center;height: 85px;margin: 18px auto 0}
+
+
+    .tshirt{height: 245px;width:627px;margin: 8px auto 0;position: relative;}
+    .tshirt1{background: url('../mobileimg/tshirt1.png') no-repeat top center;height: 119px;width:627px;position: absolute;top:21px;left:4px}
+    .tshirt2{background: url('../mobileimg/tshirt2.png') no-repeat top center;height: 197px;width:314px;position: absolute;top:2px;left:171px;}
+
+    .home-section1{margin:0;left:0}
+    .home-map{display: none}
+    .home-nav{background: url('../mobileimg/home_nav.png') no-repeat;width:640px;height: 138px;position:static;top:0;left:0;margin-left:0}
+    .home-tips{position: absolute;width: 480px;height: 180px;background: url('../mobileimg/home_tips.png') no-repeat;top:90px;left:130px}
+    .home-man{left:-65px;top:20px}
+    .home-tit{background: url('../mobileimg/home_tit2.jpg') no-repeat;top:320px;left: 0;height: 182px;}
+    .home-bottom{top:680px;background: url('../mobileimg/home_bottom.jpg') no-repeat;width: 600px;height: 325px;margin-left: -300px}
+    .home-star{margin-top:470px;}
+    .home-btn2{left:230px;top:245px;}
+    .home-man2{top:95px}
+    .home-tit2{left:240px}
+
+    .presentation-box .carambar-man {left:-25px!important;top:-30px!important;z-index: 2;}
+    .tooltip {background:url('../mobileimg/tooltip_bg.png') no-repeat;width:487px;height:221px;top:30px!important;left:140px!important;}
+    .tips-content {background: url('../mobileimg/tooltip_content.png') no-repeat;width:405px;height:159px;}
+    .tips-video {margin:0;left:72px;top:108px;position:absolute;}
+    .tips-video img {width:165px;}
+    .tips-video .video-play {background-size:300px auto;background-position:55px 15px;}
+    .tips-video .video-play:hover {background-position:55px 15px;}
+
+    .blue-road {background: url('../mobileimg/blue_road.png') no-repeat center;height: 193px;}
+    .indicator-count-wrap {position:relative;left:0;right:0;}
+}

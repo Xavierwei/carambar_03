@@ -20,11 +20,11 @@ if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|andro
 <!--<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <title>Carambar</title>
+	<title>Good Luck Carambar - La galerie</title>
+	<meta name="description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission ! " />
 	<meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
     <link href="css/jsPane.css?<?php echo time();?>" rel="stylesheet" type="text/css" />
     <link href="css/layout.css?<?php echo time();?>" rel="stylesheet" type="text/css" />
     <link href="css/fonts.css?<?php echo time();?>" rel="stylesheet" type="text/css" />
@@ -37,6 +37,16 @@ if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|andro
 	<!--[if lt IE 8]>
 	<link href="css/oldie.css" rel="stylesheet" type="text/css" />
 	<!--<![endif]-->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-49226115-1', 'goodluckcarambar.com');
+		ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
 

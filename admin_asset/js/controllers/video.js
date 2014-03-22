@@ -13,7 +13,7 @@ WallAdminController
 
             modalInstance.result.then(function () {
                 $scope.videos.splice($scope.videos.indexOf(video), 1);
-                VideoService.update({vid:video.vid, status:0});
+                VideoService.delete({vid:video.vid});
             }, function () {
             });
 

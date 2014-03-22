@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	
+	<msg maxChars="140"/>
+	
+	<flash2js action='upload("${Photo}","${Msg}");'/>
+	<js2flash callback="js2flashUploadComplete"/>
+	<js2flash callback="reset"/>
+	
+	<onLoaded action='onLoaded();'/>
+	<onGetImg action='onGetImg();'/>
+	<onReset action='onReset();'/>
+	
+</config>

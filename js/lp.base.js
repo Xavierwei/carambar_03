@@ -462,6 +462,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         node.minutes = datetime.getUTCMinutes();
         node.date = datetime.getUTCDate();
         node.month = parseInt(datetime.getUTCMonth()) + 1;
+        node.share = encodeURIComponent(node.description);
 
         if( node.type == "photo" )
             node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
@@ -681,6 +682,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
         if( node.image )
             node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
         node.timestamp = (new Date()).getTime();
+        node.share = encodeURIComponent(node.description);
         // if(!node.user.avatar) {
         //     node.user.avatar = "/uploads/default_avatar.gif";
         // }

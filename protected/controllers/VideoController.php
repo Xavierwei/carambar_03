@@ -124,13 +124,48 @@ class VideoController extends Controller {
             $item->datetime = time();
 			//$item->status = 0;
 
-            if($item->save())
-                StatusSend::_sendResponse(200, StatusSend::success('success',2007,$item)); //修改数据库成功
+            if($item->save()) {
+				Yii::app()->FileCache->flush();
+				StatusSend::_sendResponse(200, StatusSend::success('success',2007,$item)); //修改数据库成功
+			}
             else
                 StatusSend::_sendResponse(200, StatusSend::error('end', 1018)); //修改数据库错误，
         }
 
    }
+
+
+	/**
+	 * 删除video数据
+	 */
+	public function actionDelete()
+	{
+
+		if(!isset($_POST['vid']))
+			StatusSend::_sendResponse(200, StatusSend::error('end', 1013) ); //未传入vid参数
+
+		$model=new VideoAR; //新建对象
+
+		$item=$model->findByPk($_POST['vid']);      //获取该数据
+		if(is_null($item))
+			StatusSend::_sendResponse(200,StatusSend::error('end', 1014)); //该vid不存在
+
+		if (!Yii::app()->user->checkAccess("isAdmin")) //非管理员，未授权
+		{
+			StatusSend::_sendResponse(200, StatusSend::error('end', 1015)); //没有权限进行此操作
+		}
+		else //管理员
+		{
+			if($item->delete())
+			{
+				Yii::app()->FileCache->flush();
+				StatusSend::_sendResponse(200, StatusSend::success('success',2007,$item)); //修改数据库成功
+			}
+			else
+				StatusSend::_sendResponse(200, StatusSend::error('end', 1018)); //修改数据库错误，
+		}
+
+	}
 
 
     /***

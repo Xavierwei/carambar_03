@@ -13,7 +13,11 @@
 <div class="page phase<?php echo $phase;?>">
 	<!-- #Presentation Block -->
 	<div class="presentation">
-		<div class="skyline"></div>
+		<?php if($phase == 1 || $phase == 2 || $phase == 3):?>
+			<div class="skyline" style="background-position:center 90px" data-0="background-position:center 90px;" data-800="background-position:center -50px;"></div>
+		<?php else:?>
+			<div class="skyline" style="background-position:center 190px" data-0="background-position:center 190px;" data-800="background-position:center -100px;"></div>
+		<?php endif;?>
 		<?php if($phase == 1 || $phase == 2 || $phase == 3):?>
 		<div class="blue-road"
 		     data-style="opacity:0;" data-animate="opacity:1;" data-delay="0" data-time="800"
@@ -212,10 +216,12 @@
 
 		<?php if($phase == 1 || $phase == 2 || $phase == 3 || $phase == 4):?>
 		<!--  -->
-		<div id="support-carambar" class="img">
-			<div class="img1"></div>
-			<div class="img2"></div>
-			<div class="img3"></div>
+		<div class="support-carambar-wrap">
+			<div id="support-carambar" class="img">
+				<div class="img1"></div>
+				<div class="img2"></div>
+				<div class="img3"></div>
+			</div>
 		</div>
 		<!--  -->
 		<div class="share">
@@ -315,7 +321,7 @@
 			</div>
 			<div class="pop-ft-icon"></div>
 			<div class="pop-ft-btn disabled" data-a="submit_facebook"></div>
-			<div class="pop-ft-submitting">Soumission</div>
+			<div class="pop-ft-submitting">Submitting</div>
 		</div>
 
 		<div class="facebook-post-success">

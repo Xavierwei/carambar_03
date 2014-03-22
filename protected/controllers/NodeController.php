@@ -156,9 +156,12 @@ class NodeController extends Controller {
 
 			if (isset($status)) {
 				$node->status = $status;
-//				if($status == 1) {
-//					FlagAR::model()->deleteNodeFlag($node->nid);
-//				}
+				if($status == 1) {
+					if($node->email) {
+						$emailInfo = Yii::app()->params['email'];
+						@Drtool::sendEmail($emailInfo['sendName'], $emailInfo['titleApprove'], $emailInfo['contentApprove'], $node->email);
+					}
+				}
 			}
 
 			if ($node->validate()) {
@@ -208,7 +211,7 @@ class NodeController extends Controller {
 					->cleanCache("comment_");
 				if($node->reward == 1 && $node->email) {
 					$emailInfo = Yii::app()->params['email'];
-					@Drtool::sendEmail($emailInfo['sendName'], $emailInfo['titleAward'], $emailInfo['contentAward'], $emailInfo['emailList']);
+					@Drtool::sendEmail($emailInfo['sendName'], $emailInfo['titleAward'], $emailInfo['contentAward'], $node->email);
 				}
 				$this->responseJSON($node->attributes, "success");
 			}

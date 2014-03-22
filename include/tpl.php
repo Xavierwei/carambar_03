@@ -94,10 +94,11 @@
 						<div class="com-share">
 							<div class="com-share-close" data-a="com-share-close">X</div>
 							<div class="com-share-list">
-								<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[title]={{description}}&amp;p[summary]={{description}}&amp;p[url]=http://64.207.184.106/carambar/photowall.php/#/{{nid}}" class="share-facbook"></a>
-								<a target="_blank" href="http://twitter.com/share?text={{description}}&amp;url=http://64.207.184.106/carambar/photowall.php/#/{{nid}}" class="share-twitter"></a>
-								<a target="_blank" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=http://64.207.184.106/carambar/photowall.php/#/{{nid}}" class="share-gplus"></a>
-								<a target="_blank" href="http://pinterest.com/pin/create/button/?url=http://64.207.184.106/carambar/photowall.php/#/{{nid}}" class="share-pin"></a>
+								<?php $shareUrl = "http://www.goodluckcarambar.com/test";?>
+								<a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $shareUrl;?>/photowall.php&t={{share}}" class="share-facbook"></a>
+								<a target="_blank" href="http://twitter.com/share?text={{share}}&amp;url=<?php echo $shareUrl;?>/photowall.php/#/{{nid}}" class="share-twitter"></a>
+								<a target="_blank" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=<?php echo $shareUrl;?>/photowall.php/#/{{nid}}" class="share-gplus"></a>
+								<a target="_blank" href="http://pinterest.com/pin/create/button/?url=<?php echo $shareUrl;?>/photowall.php/#/{{nid}}" class="share-pin"></a>
 							</div>
 						</div>
 					</div>
@@ -157,7 +158,6 @@
 			<div class="item-info" >
 		        <div class="item-info-wrap">
 		          <div class="item-time"><span class="item-timeicon">{{formatDate}}</span></div>
-		          <div class="item-user"><span class="item-usericon">{{user.firstname}} {{user.lastname}}</span></div>
 		          <div class="item-source">
 		            <div class="{{type}}"></div>
 		          </div>

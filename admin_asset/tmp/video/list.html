@@ -15,7 +15,7 @@
             <td>{{video.ribbon | ribbon}}</td>
             <td>{{video.position}}</td>
             <td>{{video.phase}}</td>
-            <td><a class="btn btn-primary" ng-href="#video/edit/{{video.vid}}">Edit</a> <a class="btn btn-danger" ng-href="delete(video)">Delete</a></td>
+            <td><a class="btn btn-primary" ng-href="#video/edit/{{video.vid}}">Edit</a> <a class="btn btn-danger" ng-click="delete(video)">Delete</a></td>
         </tr>
     </table>
 </div>

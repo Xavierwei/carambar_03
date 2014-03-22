@@ -2,12 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-	<title>Carambar</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
+	<title>Good Luck Carambar - Les défis</title>
+	<meta name="description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission ! " />
 	<link href="./css/style.css" rel="stylesheet" type="text/css" />
+	<!--[if IE 8]>
+	<link href="css/ie8.css" rel="stylesheet" type="text/css" />
+	<!--<![endif]-->
 	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-49226115-1', 'goodluckcarambar.com');
+		ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
 <?php echo $content;?>
