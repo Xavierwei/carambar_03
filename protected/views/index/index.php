@@ -173,44 +173,35 @@
 			<div class="videolistshare">
 				<div class="video-con">
 					<?php
-						for($i = 0; $i < 5; $i++):
-							if(isset($homeVideos[$i]) && $homeVideos[$i]->rank != 6):
+						foreach($homeVideos as $index=>$video):
 					?>
-								
-					<?php
-							endif;
-						endfor;
-					?>
-
-<!--					--><?php
-//					foreach($homeVideos as $index=>$video):?>
-<!--						<div class="videolist-item">-->
-<!--							<div class="videolist-item-tit videolist-item-tit--><?php //echo $index+1;?><!--"></div>-->
-<!--							<div class="videolist-box">-->
-<!--								<img src="./--><?php //echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?><!--" />-->
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit<?php echo $index+1;?>"></div>
+							<div class="videolist-box">
+								<img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" />
 								<a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
 								<a href="https://www.youtube.com/watch?v=<?php echo $video->mid;?>" target="_blank" class="video-play show-mobile"></a>
-<!--							</div>-->
-<!--							<div class="videolist-txt">--><?php //echo $video->title;?><!--</div>-->
+							</div>
+							<div class="videolist-txt"><?php echo $video->title;?></div>
 							<div class="video-icon video-icon-<?php echo $video->ribbon;?>"></div>
-<!--						</div>-->
-<!--					--><?php //endforeach;?>
+						</div>
+					<?php endforeach;?>
 					<?php
-//						$totleCount = count($homeVideos);
-//						if($totleCount <= 3) {
-//							$boxCount = 3;
-//						}
-//						else {
-//							$boxCount = 6;
-//						}
-//						$leftCount = $boxCount - count($homeVideos)
-//					?>
+						$totleCount = count($homeVideos);
+						if($totleCount <= 3) {
+							$boxCount = 3;
+						}
+						else {
+							$boxCount = 6;
+						}
+						$leftCount = $boxCount - count($homeVideos)
+					?>
 					<?php for($i = 0; $i < $leftCount; $i++):?>
-<!--						<div class="videolist-item">-->
-<!--							<div class="videolist-item-tit videolist-item-tit--><?php //echo $boxCount - $leftCount + $i + 1 ;?><!--"></div>-->
-<!--							<div class="videolist-boxnull">des défis de plus en plus fous...</div>-->
-<!--						</div>-->
-<!--					--><?php //endfor;?>
+						<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit<?php echo $boxCount - $leftCount + $i + 1 ;?>"></div>
+							<div class="videolist-boxnull">des défis de plus en plus fous...</div>
+						</div>
+					<?php endfor;?>
 					<div class="cs-clear"></div>
 				</div>
 			</div>
