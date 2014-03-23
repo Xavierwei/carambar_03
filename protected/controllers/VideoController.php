@@ -59,7 +59,6 @@ class VideoController extends Controller {
      */
     public function actionUpdate()
     {
-
         if(!isset($_POST['vid']))
             StatusSend::_sendResponse(200, StatusSend::error('end', 1013) ); //未传入vid参数
 
@@ -78,7 +77,7 @@ class VideoController extends Controller {
 
             //判断phase
             $phase= $item->phase;
-            if(!empty($phase))
+            if(!empty($phase) && isset($_POST['phase']) )
             {
                 $elements = explode(",", $phase); //字符串转数组
                 //是否删除phase
