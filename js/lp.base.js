@@ -676,11 +676,20 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
             dirData.rotate = -90;
         }
 
+  //       var datetime = new Date((parseInt(node.datetime)+1*3600)*1000);
+  //       node.date = datetime.getUTCDate();
+  //       node.month = parseInt(datetime.getUTCMonth()) + 1;
+		// node.hour = datetime.getHours();
+		// node.minutes = datetime.getUTCMinutes();
+
         var datetime = new Date((parseInt(node.datetime)+1*3600)*1000);
+        node.year = datetime.getUTCFullYear();
+        node.hour = datetime.getHours();
+        node.minutes = datetime.getUTCMinutes();
         node.date = datetime.getUTCDate();
         node.month = parseInt(datetime.getUTCMonth()) + 1;
-		node.hour = datetime.getHours();
-		node.minutes = datetime.getUTCMinutes();
+        node.share = encodeURIComponent(node.description);
+        node.encode_username = encodeURIComponent(node.screen_name);
         //node.currentUser = $('.side').data('user');
         if( node.image )
             node.image = node.file.replace( node.type == "video" ? '.mp4' : '.jpg', BIG_IMG_SIZE + '.jpg');
@@ -879,6 +888,10 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
                     //slideIntroBar($newInfo, _animateTime);
                 });
             }
+
+            //  reset the location
+            $inner.find('.com-loc')
+                .html($newInner.find('.com-loc').html());
 
             // change url
             changeUrl('/nid/' + node.nid , {event: direction});
