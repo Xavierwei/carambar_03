@@ -28,6 +28,7 @@ class IndexController extends Controller {
 		// get home video
 		$homeVideos = VideoAR::model()->getVideoList(2,1,6,1,$phase);
 
+
 		$this->render('index', array(
 			'topVideo'		=> isset($topVideo[0]) ? $topVideo[0] : array(),
 			'homeVideos'	=> $homeVideos,
@@ -36,19 +37,4 @@ class IndexController extends Controller {
 	}
 
 
-//    public  function actionTestac()
-//    {
-//
-//        $_POST['senderName']="test";
-//        $_POST['title']="title";
-//        $_POST['content']="var WallAdminServices = angular.module('WallAdmin.services', [])
-//    .value('ROOT', '/carambar_03')<br/>
-//    .value('ROOT_FOLDER', '/carambar_03/')
-//	.value('ASSET_FOLDER', '/carambar_03/admin_asset/');";
-//        $_POST['sendMaliAddress']='244700553@qq.com';
-//        $_POST['sendMaliAddress']=explode(',',$_POST['sendMaliAddress']);
-//        print_r($_POST['sendMaliAddress']);
-//
-//           var_dump( Drtool::sendEmail($_POST['senderName'],$_POST['title'],$_POST['content'],$_POST['sendMaliAddress']));
-//    }
 }

@@ -5293,3 +5293,1291 @@ Stack trace:
 REQUEST_URI=/carambar_03/node/list?cache=1395575730361&name=mozdwj&orderby=datetime&page=1&pagenum=20&status=all
 HTTP_REFERER=http://lily.local:8888/carambar_03/admin/
 ---
+2014/03/23 16:41:18 [error] [php] Memcache::get(): Server 127.0.0.1 (tcp 11211) failed with: Connection refused (61) (/Applications/MAMP/htdocs/carambar/yii/framework/caching/CMemCache.php:149)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CUrlManager.php(219): CMemCache->get()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/base/CModule.php(387): CUrlManager->init()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(522): CWebApplication->getComponent()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:32:20 [error] [php] Undefined index: del (/Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php:85)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(286): VideoController->runAction()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): VideoController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): VideoController->run()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/video/update
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (85)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:32:40 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:32:40 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:32:40 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:33:17 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:33:17 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:33:17 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:33:27 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:33:27 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:33:27 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:34:30 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:34:30 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:34:30 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:34:30 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php:127) (/Applications/MAMP/htdocs/carambar/protected/components/StatusSend.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): VideoController->actionUpdate()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(286): VideoController->runAction()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): VideoController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): VideoController->run()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/video/update
+in /Applications/MAMP/htdocs/carambar/protected/components/StatusSend.php (9)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (133)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:35:57 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:35:57 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:35:57 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:36:14 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:36:14 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:36:14 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:41:47 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:41:47 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:41:49 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:41:49 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:41:51 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:41:51 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:41:52 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:41:52 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:41:54 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:41:54 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:42:37 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:42:37 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:42:37 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:42:39 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:42:39 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:42:58 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:42:58 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:42:58 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:00 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:00 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:00 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:01 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:01 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:01 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:01 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:01 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:01 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:02 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:02 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:02 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:26 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:26 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:26 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:59 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:59 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:43:59 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:09 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:09 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:09 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:12 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:12 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:12 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:15 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:15 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:15 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:19 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:19 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:19 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:59 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:59 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:44:59 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:45:02 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:45:02 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:45:02 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:45:23 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:45:23 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:45:23 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:46:31 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:46:31 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:46:31 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:46:37 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:46:37 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:46:37 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:22 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:22 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:29 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:29 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:34 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:34 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:38 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:38 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:40 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:40 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:41 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:41 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:43 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:43 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:45 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:45 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:47 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:47 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:51 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:51 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:55 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:55 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:59 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:59 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:48:59 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:18 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:18 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:19 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:19 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:19 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:19 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:20 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:20 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:20 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:20 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:20 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:20 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:22 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:22 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:23 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:23 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:23 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:23 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:27 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:27 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:31 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:31 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:47 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:47 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:50 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:50 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:50 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:56 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:56 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:56 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:58 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:58 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:49:58 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:51:03 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:51:03 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:51:06 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:51:06 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:51:09 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:51:09 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:24 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:24 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:24 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:37 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:37 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:37 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:49 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:49 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:56 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:56 [warning] [application] Failed to set unsafe attribute "$$hashKey" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:52:56 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:54:33 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar/protected/views/index/index.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php(35): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (182)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (35)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{challenge.cid | challengeimg}}".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('{{challenge.cid...')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('{{challenge.cid...')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/{{challen...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/admin/%7B%7Bchallenge.cid%20|%20challengeimg%7D%7D
+HTTP_REFERER=http://localhost/carambar/admin/index
+---
+2014/03/23 18:56:54 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar/protected/views/index/index.php:183)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php(35): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (183)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (35)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:57:34 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar/protected/views/index/index.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php(37): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (182)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (37)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:57:53 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:57:53 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:57:55 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:57:55 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:57:58 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:57:58 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:58:01 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:58:01 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:58:04 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar/protected/views/index/index.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php(37): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (182)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (37)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 18:58:05 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar/protected/views/index/index.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php(37): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (182)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (37)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 19:00:44 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar/protected/views/index/index.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php(38): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (182)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (38)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 19:01:02 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar/protected/views/index/index.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php(37): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/index/index
+in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (182)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (37)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 19:01:03 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar/protected/views/index/index.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php(37): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/index/index
+in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (182)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (37)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 19:02:15 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar/protected/views/index/index.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php(37): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/index/index
+in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (182)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (37)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 19:02:16 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar/protected/views/index/index.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php(37): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/index/index
+in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (182)
+in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (37)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/23 19:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/css/style...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/css/style.css
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('favicon.ico')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('favicon.ico')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/favicon.i...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/favicon.ico
+---
+2014/03/23 19:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.ind...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.index.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.cor...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.core.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/se...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/sea-debug.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/plugin...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/plugin/modernizr-2.5.3.min.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/pl...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/plugin-shim.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('images')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/images/lo...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/images/loading_logo.png
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/css/style...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/css/style.css
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.cor...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.core.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('images')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/images/lo...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/images/loading_logo.png
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.ind...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.index.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/se...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/sea-debug.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/plugin...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/plugin/modernizr-2.5.3.min.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/pl...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/plugin-shim.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/se...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/sea-debug.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/pl...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/plugin-shim.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.cor...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.core.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.ind...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.index.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/css/style...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/css/style.css
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('images')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/images/lo...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/images/loading_logo.png
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.ind...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.index.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/pl...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/plugin-shim.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/plugin...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/plugin/modernizr-2.5.3.min.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.cor...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.core.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/se...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/sea-debug.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/pl...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/plugin-shim.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.cor...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.core.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.ind...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.index.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/css/style...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/css/style.css
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/se...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/sea-debug.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.ind...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.index.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('images')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/images/lo...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/images/loading_logo.png
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.cor...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.core.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/plugin...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/plugin/modernizr-2.5.3.min.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/pl...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/plugin-shim.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/se...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/sea-debug.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/pl...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/plugin-shim.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.cor...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.core.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.ind...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.index.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/css/style...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/css/style.css
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.cor...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.core.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/pl...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/plugin-shim.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/plugin...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/plugin/modernizr-2.5.3.min.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/se...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/sea-debug.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.ind...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.index.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('images')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/images/lo...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/images/loading_logo.png
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/sea/pl...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/sea/plugin-shim.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.cor...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.core.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---
+2014/03/23 19:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index/js/lp.ind...')
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar/index/js/lp.index.js
+HTTP_REFERER=http://localhost/carambar/index/index
+---

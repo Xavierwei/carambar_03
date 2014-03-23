@@ -46,9 +46,21 @@ WallAdminController
 	.controller('VideoCtrPhase', function($scope, $http, $modal, $log, $routeParams,VideoService, ASSET_FOLDER) {
         $scope.phase = $routeParams.phaseid;
 
+		$scope.videoranks = [
+			{'title':1},
+			{'title':2},
+			{'title':3},
+			{'title':4},
+			{'title':5},
+			{'title':6}
+		];
+
 		VideoService.list({phase:$routeParams.phaseid},function(data){
 			if(data.data) {
 				$scope.videos = data.data;
+				angular.forEach($scope.videos, function(item, key){
+					item.rank = $scope.videoranks[item.rank-1];
+				});
 			}
 			else {
 				$scope.videos = [];
@@ -59,6 +71,14 @@ WallAdminController
         VideoService.list({},function(data){
             $scope.allvideos = data.data;
         });
+
+		$scope.saveRank = function(video) {
+			video.del = 0;
+			video.rank = video.rank.title;
+			VideoService.update(video, function(data){
+				video.rank = $scope.videoranks[video.rank-1];
+			});
+		}
 
 		$scope.save = function(video) {
 			$scope.errorDuplicate = false;
@@ -90,14 +110,17 @@ WallAdminController
             video.phase = $routeParams.phaseid;
             video.del = 0;
 			VideoService.update(video, function(data){
+				video.rank = $scope.videoranks[video.rank-1];
                 $scope.videos.push(video);
 			});
 		}
 
         $scope.remove = function(video) {
-            video.phase = $routeParams.phaseid;
-            video.del = 1;
-            VideoService.update(video, function(data){
+			var data = {};
+			data.phase = $routeParams.phaseid;
+			data.del = 1;
+			data.vid = video.vid;
+			VideoService.update(data, function(data){
                 $scope.videos.splice($scope.videos.indexOf(video), 1);
             });
         }

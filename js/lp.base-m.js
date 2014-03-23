@@ -497,7 +497,11 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
                 node.likecount = node.likecount || 111;
 
                 node.str_like = node.likecount > 1 ? 'Likes' : 'Like';
-                node.style = parseInt(Math.random()*3);
+				node.style = styleIndex;
+				styleIndex ++;
+				if(styleIndex == 3) {
+					styleIndex = 0;
+				}
                 LP.compile( 'node-item-template' ,
                     node ,
                     function( html ){
@@ -595,8 +599,11 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
                 node.likecount = node.likecount || 111;
 
                 node.str_like = node.likecount > 1 ? 'Likes' : 'Like';
-
-                node.style = parseInt(Math.random()*3);
+				node.style = styleIndex;
+				styleIndex ++;
+				if(styleIndex == 3) {
+					styleIndex = 0;
+				}
                 LP.compile( 'node-item-template' ,
                     node ,
                     function( html ){
