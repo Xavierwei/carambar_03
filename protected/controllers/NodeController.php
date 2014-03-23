@@ -311,6 +311,7 @@ class NodeController extends Controller {
 		$status 	= $request->getParam("status");
 		$keyword 	= $request->getParam("keyword");
 		$email 		= $request->getParam("email");
+		$name 		= $request->getParam("name");
 		$flagged	= $request->getParam("flagged");
 		$reward		= $request->getParam("reward");
 
@@ -376,6 +377,11 @@ class NodeController extends Controller {
 		// search by user email
 		if (Yii::app()->user->checkAccess("isAdmin") && $email) {
 			$query->addSearchCondition("email", $email);
+		}
+
+		// search by name
+		if (Yii::app()->user->checkAccess("isAdmin") && $name) {
+			$query->addSearchCondition($nodeAr->getTableAlias().".screen_name", $name);
 		}
 
 		if (Yii::app()->user->checkAccess("isAdmin") && $status == 'all') {

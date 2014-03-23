@@ -97,14 +97,14 @@ class Drtool
 //        {
                 $mail = Yii::createComponent('application.extensions.mailer.EMailer');
                 $mail->IsSMTP();
-                $mail->SMTPAuth         = true;                               // enable SMTP authentication
-                $mail->SMTPSecure       = "ssl";                                // sets the prefix to the servier
-				$mail->Host                   = "smtp.gmail.com";               // sets GMAIL as the SMTP server
-                $mail->Port                    = 465;                                     // set the SMTP port
-                $mail->Username           = Yii::app()->params['email']['username'];  // GMAIL username
-                $mail->Password           = Yii::app()->params['email']['password'];                         // GMAIL password
-                $mail->From              = $mail->Username;                  //you email
-                $mail->FromName     = $senderName;         //邮件发送人 your name
+                $mail->SMTPAuth         = false;                               // enable SMTP authentication
+                //$mail->SMTPSecure       = "ssl";                                // sets the prefix to the servier
+				$mail->Host                   = "10.200.98.1";               // sets GMAIL as the SMTP server
+                $mail->Port                    = 25;                                     // set the SMTP port
+                //$mail->Username           = Yii::app()->params['email']['username'];  // GMAIL username
+                //$mail->Password           = Yii::app()->params['email']['password'];                         // GMAIL password
+                $mail->From              = 'noreply@goodluckcarambar.com';                  //you email
+                $mail->FromName     = 'Carambar';         //邮件发送人 your name
                 $mail->IsHTML(true);                                  // set email format to HTML
                 if(is_array($sendMaliAddress))
                 {

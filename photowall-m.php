@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<title>Good Luck Carambar - La galerie</title>
 	<meta name="description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission ! " />
-	<meta name="viewport" content="minimal-ui, width=640, minimum-scale=0.5, maximum-scale=0.5, target-densityDpi=290,user-scalable=no" />
+	<meta name="viewport" content="width=640, minimum-scale=0.5, maximum-scale=0.5, target-densityDpi=290,user-scalable=no" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
 	<link href="css/jsPane.css" rel="stylesheet" type="text/css" />
 	<link href="m/css/layout.css" rel="stylesheet" type="text/css" />

@@ -63,7 +63,7 @@ class FacebookController extends Controller {
 			$user_profile = $this->facebook->api('/me','GET');
 			// Create the new user if user doesn't exist in database
 			if( !$user = UserAR::model()->findByAttributes(array('name'=>'f_'.$user_profile['username'])) ) {
-				$user = UserAR::model()->createSNSLogin('f_'.$user_profile['username'], $user_profile['id'], $user_profile['email'], $user_profile['name']);
+				$user = UserAR::model()->createSNSLogin('f_'.$user_profile['username'], $user_profile['id'], $user_profile['email'], $user_profile['username']);
 			}
 
 			// Identity local site user data
@@ -74,8 +74,44 @@ class FacebookController extends Controller {
 			}
 			else {
 				Yii::app()->user->login($userIdentify);
-				$this->redirect('/carambar/index#support-carambar');
+				$this->redirect('/test/index#support-carambar');
 			}
+		}
+	}
+
+	/**
+	 * Get Instagram login URL
+	 */
+	public function actionAdLogin() {
+
+		$request = Yii::app()->getRequest();
+		$_ = $request->getParam("code");
+
+		if(!$_) {
+			$access_token = Yii::app()->session['fb_access_token'];
+			$this->facebook->setAccessToken($access_token);
+			echo $access_token;
+			$user_id = $this->facebook->getUser();
+			if(!$user_id) {
+				$loginUrl = $this->facebook->getLoginUrl(array('scope' => 'email,publish_actions', 'redirect_uri'=>FB_CALLBACK_URL2));
+				echo "<a href='{$loginUrl}'>login</a>";
+				//return $this->responseJSON($loginUrl, "success");
+			}
+			else {
+				return $this->responseJSON('login', "success");
+			}
+		}
+		else {
+			$token_url = "https://graph.facebook.com/oauth/access_token?"
+				. "client_id=" . FB_APPID . "&redirect_uri=" . urlencode(FB_CALLBACK_URL2).  "&client_secret=" . FB_SKEY . "&code=" . $_;
+
+
+			$response = @file_get_contents($token_url);
+			$params = null;
+			parse_str($response, $params);
+			$access_token = $this->facebook->getAccessToken();
+			$access_token = Yii::app()->session['fb_access_token'] = $params['access_token'];
+			echo $access_token;
 		}
 	}
 
@@ -91,8 +127,6 @@ class FacebookController extends Controller {
 			array(
 				'q' => Yii::app()->params['tag']
 			));
-		print_r($results);
-
 
 		foreach($results['data'] as $item) {
 			$snsVideoLink = $snsPicture = $snsDatetime = $snsDescription = $snsId = $snsLocation = $snsScreenName = NULL;

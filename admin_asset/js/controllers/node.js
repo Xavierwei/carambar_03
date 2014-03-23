@@ -141,6 +141,7 @@ WallAdminController
         $scope.search = function() {
             params.status = $scope.filter.status;
 			params.email = $scope.filter.email;
+            params.name = $scope.filter.name;
 			$scope.page = 1;
 			params.page = $scope.page;
 			loadNodes(params);
@@ -155,6 +156,7 @@ WallAdminController
 			$scope.filter.type = 'all';
 			$scope.filter.status = 'all';
 			$scope.filter.email = '';
+            $scope.filter.name = '';
 		}
 
         $scope.delete = function() {
