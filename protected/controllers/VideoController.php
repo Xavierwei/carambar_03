@@ -103,7 +103,7 @@ class VideoController extends Controller {
 
                 //删除重复数组
                 $elements=array_flip(array_flip($elements));//删除重复
-                
+
                 //重新排序
                 sort($elements);
                 $_POST['phase']=implode(",",$elements);
