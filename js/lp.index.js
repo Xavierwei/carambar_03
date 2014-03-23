@@ -1,7 +1,7 @@
 /*
  * page base action
  */
-LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] , function( $ , api ){
+LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'queryloader'] , function( $ , api ){
     'use strict'
 
     var API_FOLDER = "./api";
@@ -35,6 +35,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
      * Popup open Youtube Video
      */
     LP.action('open_video', function(data) {
+
         LP.compile( 'youtube-player-template' , data , function( html ){
             $('.overlay').fadeIn();
             $('body').append(html);
@@ -133,6 +134,9 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
     }
 
     LP.action('open_facebook', function(data) {
+        if($('body').hasClass('ie8') || $('body').hasClass('ie9')) {
+            data.oldie = true;
+        }
         LP.compile( 'facebook-post-template' , data , function( html ){
             $('.overlay').fadeIn();
             $('body').append(html);
@@ -140,48 +144,48 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
             var $fileupload = $('#fileupload');
             var acceptFileTypes = /(\.|\/)(gif|jpe?g|png)$/i;
             var maxFileSize = 5 * 1024000;
-            LP.use('fileupload' , function(){
-                $fileupload.fileupload({
-                    url: './index.php/uploads/upload',
-                    datatype:"json",
-                    autoUpload:false,
-                    dropZone: $fileupload
-                })
-                    .bind('fileuploadadd', function (e, data) {
-                        $('.step1-tips li').removeClass('error');
-                        if(!acceptFileTypes.test(data.files[0].name.toLowerCase())) {
-                            $('.step1-tips li').eq(0).addClass('error');
-                        }
-                        else if(data.files[0].size > maxFileSize) {
-                            $('.step1-tips li').eq(1).addClass('error');
-                        }
-                        else {
-                            data.submit();
-                        }
-                    })
-                    .bind('fileuploadstart', function (e, data) {
-                        $('.facebook-post-img').fadeOut(400);
-                        $('.facebook-post-load').delay(400).fadeIn(400);
-                    })
-                    .bind('fileuploadprogress', function (e, data) {
-                        var rate = data._progress.loaded / data._progress.total * 100;
-                        var $bar = $('.popload-percent p');
-                        var currentRate = $bar.data('rate');
-                        if(!currentRate) {
-                            currentRate = 0;
-                        }
-                        if(rate > currentRate) {
-                            $bar.data('rate',rate).css({width:rate + '%'});
-                        }
-                    })
-                    .bind('fileuploadfail', function() {
-                        $('.pop-inner').fadeOut(400);
-                        $('.pop-file').delay(400).fadeIn(400);
-                    })
-                    .bind('fileuploaddone', function (e, data) {
-                        fileUploadDone(data);
-                    });
+
+            $fileupload.fileupload({
+                url: './index.php/uploads/upload',
+                datatype:"json",
+                autoUpload:false,
+                dropZone: $fileupload
+            })
+            .bind('fileuploadadd', function (e, data) {
+                $('.step1-tips li').removeClass('error');
+                if(!acceptFileTypes.test(data.files[0].name.toLowerCase())) {
+                    $('.step1-tips li').eq(0).addClass('error');
+                }
+                else if(data.files[0].size > maxFileSize) {
+                    $('.step1-tips li').eq(1).addClass('error');
+                }
+                else {
+                    data.submit();
+                }
+            })
+            .bind('fileuploadstart', function (e, data) {
+                $('.facebook-post-img').fadeOut(400);
+                $('.facebook-post-load').delay(400).fadeIn(400);
+            })
+            .bind('fileuploadprogress', function (e, data) {
+                var rate = data._progress.loaded / data._progress.total * 100;
+                var $bar = $('.popload-percent p');
+                var currentRate = $bar.data('rate');
+                if(!currentRate) {
+                    currentRate = 0;
+                }
+                if(rate > currentRate) {
+                    $bar.data('rate',rate).css({width:rate + '%'});
+                }
+            })
+            .bind('fileuploadfail', function() {
+                $('.pop-inner').fadeOut(400);
+                $('.pop-file').delay(400).fadeIn(400);
+            })
+            .bind('fileuploaddone', function (e, data) {
+                fileUploadDone(data);
             });
+
         });
     });
 
@@ -209,11 +213,13 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
     LP.action('indicate', function(data){
         if($(this).hasClass('indicating')) return;
         if($.cookie('praise_auth')) return;
+        $(this).addClass('click');
         api.ajax('indicate', {cid:data.cid}, function( result ){
             var prevNum = $.trim($('.indicator-count-num').html());
             var offset = result.data - prevNum;
             digitHelper.plus(offset);
             $('.indicator-count-num').html(result.data);
+            $('.indicator-btn').removeClass('click');
         });
     });
 
@@ -259,9 +265,13 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
         });
     });
 
+
     /***
      * Send Invitation
      */
+    var invitationKeyList = [0,1,2,3,4,5,6,7,8,9,10,11];
+    //var randomInvitationKeyList = shuffleArray(invitationKeyList);
+    var invitationIndex = 0;
     LP.action('send_invitation', function(){
         if($(this).hasClass('submitting')) return;
         $(this).addClass('submiting');
@@ -270,6 +280,14 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
             $(this).removeClass('submitting');
             if(result.error && result.error.code == 1011) {
                 $('.pop-bar-tips').fadeIn();
+                $('.pop-bar-tips p').fadeOut(400, function(){
+                    $(this).html(invititionTips[invitationKeyList[invitationIndex]]);
+                    $(this).fadeIn(400);
+                });
+                invitationIndex ++ ;
+                if(invitationIndex == 12) {
+                    invitationIndex = 0;
+                }
                 return;
             }
             if(result.success) {
@@ -320,10 +338,16 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
         }
         var img = $('#facebook-img').val();
         var content = $('#facebook-content').val() + ' #TESTHASHTAG';
-        var trsdata = transformMgr.result();
-        delete trsdata.src;
+        if(img) {
+            var trsdata = transformMgr.result();
+            delete trsdata.src;
+            var data = {content: content, img: img, x:trsdata.x, y:trsdata.y, width:trsdata.width, size: 185};
+        }
+        else {
+            var data = {content: content}
+        }
         $('.pop-ft-submitting').fadeIn();
-        api.ajax('postFacebook', {content: content, img: img, x:trsdata.x, y:trsdata.y, width:trsdata.width, size: 185}, function( result ){
+        api.ajax('postFacebook', data, function( result ){
             $('.pop-ft-submitting').fadeOut();
             $(this).removeClass('submitting');
             if(result.success) {
@@ -676,6 +700,34 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 
 	init();
 
+    /**
+     * Randomize array element order in-place.
+     * Using Fisher-Yates shuffle algorithm.
+     */
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
+
+    var invititionTips = [
+        'Ok... May you let Barack type the answer, please?',
+        'Is your name Barack?',
+        'We asked for Barack!',
+        'This is a hyper-ultra-securized system. It has detected you weren\'t Barack.',
+        'Hahahahah! Nope...',
+        'LOL !',
+        'Please Barack.. Be focused when you answer.',
+        'We are asking about dreadlocks, not the cookies you have already eaten.',
+        'Dreadlocks, Barack... Not the number of basketball games you played in.',
+        'Are you serious?',
+        'Hahaha come on...',
+        'How can\'t you remember, Barack?'
+    ]
 });
 
 
@@ -705,9 +757,7 @@ function uploadComplete(){
     }
     if(flash){
         flash.js2flashUploadComplete();
-    }//else{
-    //	alert("找不到flash");
-    //}
+    }
 }
 function reset_flash(){
     var flash=document.getElementById("flash");
@@ -732,17 +782,12 @@ function reset_flash(){
     }
     if(flash){
         flash.reset();
-    }//else{
-    //	alert("找不到flash");
-    //}
+    }
 }
 
 function onLoaded(){
-    alert("onLoaded");
 }
 function onGetImg(){
-    alert("onGetImg");
 }
 function onReset(){
-    alert("onReset");
 }

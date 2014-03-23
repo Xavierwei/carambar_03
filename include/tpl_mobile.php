@@ -76,7 +76,7 @@
 								<textarea name="content" class="com-ipt"></textarea>
 								<input type="hidden" name="nid" value="{{nid}}" />
 								<div class="com-loading"></div>
-								<input class="submit btn2" type="submit" value="submit" />
+								<a class="submit btn2" data-a="submit_comment">Submit</a>
 								<div class="clear"></div>
 							</form>
 							<div class="comment-msg-success">Merci pour votre commentaire, il sera publié après validation de notre équipe.</div>

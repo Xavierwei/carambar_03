@@ -4948,3 +4948,304 @@ Stack trace:
 REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
 HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
 ---
+2014/03/23 14:58:34 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar_03/protected/views/index/index.php:33)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(869): IndexController->renderFile()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php(35): IndexController->render()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(133): IndexController->runAction()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/widgets/COutputCache.php(165): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/filters/CFilterChain.php(130): COutputCache->filter()
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): IndexController->run()
+#11 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/protected/views/index/index.php (33)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/IndexController.php (35)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/23 15:04:19 [error] [exception.FacebookApiException] CurlException: 28: connect() timed out!
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/23 15:07:46 [error] [exception.FacebookApiException] CurlException: 28: connect() timed out!
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/23 15:09:19 [error] [exception.FacebookApiException] CurlException: 28: connect() timed out!
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/23 15:10:52 [error] [exception.FacebookApiException] CurlException: 28: connect() timed out!
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/23 16:55:12 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/23 16:55:12 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/23 16:55:14 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/23 16:55:14 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/23 16:55:16 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/23 16:55:16 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (110)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/23 17:19:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 17:19:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 18:04:59 [error] [exception.FacebookApiException] OAuthException: An unknown error has occurred.
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/23 18:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 18:07:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 18:07:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/inner_com_makebg.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/inner_com...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/inner_com_makebg.png
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 18:34:17 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar_03/protected/models/SettingAR.php:33)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): SettingController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): SettingController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): SettingController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/setting/answer
+in /Applications/MAMP/htdocs/carambar_03/protected/models/SettingAR.php (33)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/SettingController.php (85)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/23 18:45:16 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar_03/protected/models/SettingAR.php:33)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): SettingController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): SettingController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): SettingController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/setting/answer
+in /Applications/MAMP/htdocs/carambar_03/protected/models/SettingAR.php (33)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/SettingController.php (85)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/23 19:10:21 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.personal_email" is not defined.' in /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/auth/CWebUser.php(146): CComponent->__get('personal_email')
+#1 /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php(186): CWebUser->__get('personal_email')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/actions/CInlineAction.php(49): FacebookController->actionPost()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('post')
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('facebook/post')
+#8 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#10 {main}
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/23 19:13:31 [error] [exception.FacebookApiException] OAuthException: An active access token must be used to query information about the current user.
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/
+---
+2014/03/23 19:14:01 [error] [exception.FacebookApiException] OAuthException: An active access token must be used to query information about the current user.
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/
+---
+2014/03/23 19:15:39 [error] [exception.FacebookApiException] OAuthException: An active access token must be used to query information about the current user.
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/
+---
+2014/03/23 19:16:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/inner_com_makebg.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/inner_com...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/inner_com_makebg.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/m/css/layout.css
+---
+2014/03/23 19:19:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/inner_com_makebg.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/inner_com...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/inner_com_makebg.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/m/css/layout.css
+---
+2014/03/23 19:20:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/inner_com_makebg.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/inner_com...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/inner_com_makebg.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/m/css/layout.css
+---
+2014/03/23 19:21:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/inner_com_makebg.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/inner_com...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/inner_com_makebg.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/m/css/layout.css
+---
+2014/03/23 19:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 19:21:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 19:21:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/inner_com_makebg.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/inner_com...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/inner_com_makebg.png
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 19:23:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 19:23:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 19:23:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/inner_com_makebg.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/inner_com...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/inner_com_makebg.png
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 19:23:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/inner_com_makebg.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/inner_com...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/inner_com_makebg.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/m/css/layout.css
+---
+2014/03/23 19:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 19:24:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 19:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/inner_com_makebg.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/inner_com...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/inner_com_makebg.png
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 19:26:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---
+2014/03/23 19:26:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://10.0.1.2:8888/carambar_03/photowall-m.php
+---

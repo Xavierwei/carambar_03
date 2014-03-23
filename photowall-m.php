@@ -26,11 +26,7 @@
 
 <div class="turn_device"></div>
 <div class="iphone_fixed"></div>
-<div class="preload">
-	<div class="preload1">a</div>
-	<div class="preload2">a</div>
-	<div class="preload3">a</div>
-</div>
+
 <div class="page-loading">
 	<div class="page-loading-logo">
 		<img src="images/loading_logo.png" />

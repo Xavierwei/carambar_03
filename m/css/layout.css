@@ -129,17 +129,17 @@ a{text-decoration:none;}
         .com-list {height:300px;overflow: scroll;-webkit-overflow-scrolling: touch;margin-top:56px;}
         .com-list-inner{width:100%;}
             .com-list-loading {text-align: center;}
-            .no-comment {text-align: center;}
+            .no-comment {text-align: center;font-size:22px;}
             .comlist-item{padding:16px 18px 16px;margin: 0 auto 15px;position: relative;color:#2f3688;font-size: 22px;width:506px;}
             .comlist-item:last-child {margin-bottom: 0;}
                 .comlist-tit{font-size: 16px;padding:6px 0 15px;text-align: right;}
                 .comlist-tit span{font-size:26px;}
                 .comlist-delete {position: absolute;background:url('../img/icon_comm_del.gif') no-repeat center;width:16px;height:16px;top: 10px;right: 35px}
                 .comlist-flag{display:block;position: absolute;background:url('../img/icon_comm_flag.gif') no-repeat;width:16px;height:16px;top: 10px;right: 10px}
-        .com-make{background: url('../img/inner_com_makebg.png') no-repeat top center;margin:24px 0 0;padding:28px 0 0; }
+        .com-make{border-top:1px solid #2f3688;margin:24px 0 0;padding:28px 0 0; }
             .com-make p {margin: 10px auto 4px auto;width: 573px;}
             .com-make .com-ipt {background: #fff;width: 542px;height: 44px;font-size:22px;color:#2f3688;line-height: 54px;padding:0 16px;margin: 0 auto;display: block;resize:none;}
-            .com-make .submit {background:#2f3688;color:#fff;font-size:24px;border: none;padding:5px 10px 2px 10px;margin-top:5px;margin-right:32px;float:right;}
+            .com-make .submit {cursor:pointer;background:#2f3688;color:#fff;font-size:24px;border: none;padding:10px 10px 10px 10px;margin-top:8px;margin-bottom:10px;margin-right:32px;float:right;}
             .comment-msg-success{display: none;text-align: center;}
             .com-main .need-login {text-align: center;margin:25px 30px 0 30px;}
             .comment-msg-error {position: absolute;left:33px;bottom:11px;}

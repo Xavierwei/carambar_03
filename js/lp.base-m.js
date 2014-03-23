@@ -1243,7 +1243,6 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
 		if(_innerDragging) return;
 		if( _innerLock ) return;
 		_innerLock = true;
-		console.log('it in');
 		if(drag != true) {
 			_draggingReleasing = true;
 		}
@@ -1491,7 +1490,9 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
 
 
 
-
+    LP.action('submit_comment', function(){
+        $('.comment-form').submit();
+    });
 
 
     var bindCommentSubmisson = function() {
@@ -1576,7 +1577,7 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
                 $commentWrap.addClass('loading');
             }
             if(comments.length == 0 && page == 1) {
-                $('.com-list-inner').html('<div class="no-comment">Aucun commentaire</div>');
+                $('.com-list-inner').html('<div class="no-comment">Aucun Commentaire</div>');
             }
             else {
                 $.each( comments , function( index , comment ){

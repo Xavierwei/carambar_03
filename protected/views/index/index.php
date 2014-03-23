@@ -26,14 +26,17 @@
 			<div class="carambar-man" data-style="left:-1000px" data-animate="left:85px" data-delay="0" data-time="800" data-easing="easeOutQuart"
 				 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,60px,0);"></div>
 			<?php if($phase == 1 || $phase == 2):?>
-			<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500"
-				 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,30px,0);">
-				<div class="tips-content"></div>
-				<div class="tips-video">
-					<img src="./<?php echo str_replace('.jpg', '_224_115.jpg', $topVideo->thumbnail);?>" />
-					<a class="video-play" href="javascript:void(0);" data-a="open_video" data-d="mid=<?php echo $topVideo->mid;?>"></a>
+				<?php if($topVideo):?>
+				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500"
+					 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,30px,0);">
+					<div class="tips-content"></div>
+					<div class="tips-video">
+						<img src="./<?php echo str_replace('.jpg', '_224_115.jpg', $topVideo->thumbnail);?>" />
+						<a class="video-play show-desktop" href="javascript:void(0);" data-a="open_video" data-d="mid=<?php echo $topVideo->mid;?>"></a>
+						<a class="video-play show-mobile" href="https://www.youtube.com/watch?v=<?php echo $topVideo->mid;?>" target="_blank"></a>
+					</div>
 				</div>
-			</div>
+				<?php endif;?>
 			<?php endif;?>
 			<?php if($phase == 3):?>
 				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500"
@@ -170,7 +173,11 @@
 					foreach($homeVideos as $index=>$video):?>
 						<div class="videolist-item">
 							<div class="videolist-item-tit videolist-item-tit<?php echo $index+1;?>"></div>
-							<div class="videolist-box"><img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" /><a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play"></a></div>
+							<div class="videolist-box">
+								<img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" />
+								<a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=<?php echo $topVideo->mid;?>" target="_blank" class="video-play show-mobile"></a>
+							</div>
 							<div class="videolist-txt"><?php echo $video->title;?></div>
 							<div class="video-icon video-icon-<?php echo $video->ribbon;?>"></div>
 						</div>
@@ -229,7 +236,7 @@
 		<!--  -->
 		<div class="share">
 			<div class="share-fb">
-				<a href="javascript:void(0)" data-a="open_facebook"  class="share-fbbtn"></a>
+				<a href="javascript:void(0)" id="facebook-login-link" class="share-fbbtn"></a>
 			</div>
 			<div class="share-t">
 				<textarea class="share-txt" id="twitter-content"></textarea>
@@ -297,9 +304,9 @@
 	<div class="pop pop-fb">
 		<div class="pop-close" data-a="close_popup"></div>
 		<div class="facebook-post-form">
-			<div class="pop-fttit">PUBLIER VOTRE SOUTIEN avec le <span>#goodluckcarambar</span></div>
-			<!--#-->
+			{{#if oldie}}
 			<div class="flash_facebook_uploader">
+				<div class="pop-fttit">PUBLIER VOTRE SOUTIEN avec le <span>#goodluckcarambar</span></div>
 				<object id="flash_fb" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="820" height="366">
 					<param name="allowScriptAccess" value="always"/>
 					<param name="movie" value="flash/main.swf"/>
@@ -308,45 +315,47 @@
 					<param name="flashVars" value="xml=flash/xml/config.xml"/>
 					<embed name="flash" src="flash/main.swf" quality="high" wmode="transparent" flashVars="xml=flash/xml/config.xml" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="820" height="366" allowScriptAccess="always"></embed>
 				</object>
+				<div class="pop-ft-submitting">Submitting</div>
 			</div>
-			<!---->
+			{{else}}
+			<div class="pop-fttit">PUBLIER VOTRE SOUTIEN avec le <span>#goodluckcarambar</span></div>
+			<div class="pop-ft-form cs-clear">
+				<div class="facebook-post-img-wrap">
+					<div class="facebook-post-img" id="fileupload">
+						<input type="file" accept="image/*" name="file">
+					</div>
 
-<!--			<div class="pop-ft-form cs-clear">-->
-<!--				<div class="facebook-post-img-wrap">-->
-<!--					<div class="facebook-post-img" id="fileupload">-->
-<!--						<input type="file" accept="image/*" name="file">-->
-<!--					</div>-->
-<!---->
-<!--					<div class="facebook-post-load">-->
-<!--						<div class="popload-percent"><p></p></div>-->
-<!--						<div class="popload-text">Téléchargement en cours…</div>-->
-<!--					</div>-->
-<!---->
-<!--					<div class="poptxt-pic">-->
-<!--						<a class="pop-zoomout-btn" data-a="pop-zoomout-btn" href="javascript:void(0)">Zoom In</a>-->
-<!--						<a class="pop-zoomin-btn" data-a="pop-zoomin-btn" href="javascript:void(0)">Zoom Out</a>-->
-<!--						<div class="poptxt-pic-inner">-->
-<!--							<img style="pointer-events:none" />-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="pop-ft-text">-->
-<!--					<div class="pop-ft-ftit">votre commentaire</div>-->
-<!--					<input id="facebook-img" type="hidden" />-->
-<!--					<textarea id="facebook-content"></textarea>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--			<ul class="step1-tips">-->
-<!--				<li>Votre photo doit être au format JPG, PNG ou GIF</li>-->
-<!--				<li>La taille de votre fichier ne doit pas dépasser 5MB</li>-->
-<!--				<li class="damaged">La photo que vous avez téléchargé est corrompu</li>-->
-<!--			</ul>-->
-<!--			<div class="pop-ft-check" data-a="facebook_check">-->
-<!--				<span>j'ai lu et j'accepte le règlement du jeu</span>-->
-<!--			</div>-->
-<!--			<div class="pop-ft-icon"></div>-->
-<!--			<div class="pop-ft-btn disabled" data-a="submit_facebook"></div>-->
-<!--			<div class="pop-ft-submitting">Submitting</div>-->
+					<div class="facebook-post-load">
+						<div class="popload-percent"><p></p></div>
+						<div class="popload-text">Téléchargement en cours…</div>
+					</div>
+
+					<div class="poptxt-pic">
+						<a class="pop-zoomout-btn" data-a="pop-zoomout-btn" href="javascript:void(0)">Zoom In</a>
+						<a class="pop-zoomin-btn" data-a="pop-zoomin-btn" href="javascript:void(0)">Zoom Out</a>
+						<div class="poptxt-pic-inner">
+							<img style="pointer-events:none" />
+						</div>
+					</div>
+				</div>
+				<div class="pop-ft-text">
+					<div class="pop-ft-ftit">votre commentaire</div>
+					<input id="facebook-img" type="hidden" />
+					<textarea id="facebook-content"></textarea>
+				</div>
+			</div>
+			<ul class="step1-tips">
+				<li>Votre photo doit être au format JPG, PNG ou GIF</li>
+				<li>La taille de votre fichier ne doit pas dépasser 5MB</li>
+				<li class="damaged">La photo que vous avez téléchargé est corrompu</li>
+			</ul>
+			<div class="pop-ft-check" data-a="facebook_check">
+				<span>j'ai lu et j'accepte le règlement du jeu</span>
+			</div>
+			<div class="pop-ft-icon"></div>
+			<div class="pop-ft-btn disabled" data-a="submit_facebook"></div>
+			<div class="pop-ft-submitting">Submitting</div>
+			{{/if}}
 		</div>
 
 		<div class="facebook-post-success">
@@ -371,7 +380,9 @@
 		<div class="pop-bar-txt"></div>
 		<input id="invitation_answer" type="text" class="pop-bar-input">
 		<div class="pop-bar-btn" data-a="send_invitation"></div>
-		<div class="pop-bar-tips"></div>
+		<div class="pop-bar-tips">
+			<p></p>
+		</div>
 	</div>
 </script>
 <!-- #send-invitation-tpl -->

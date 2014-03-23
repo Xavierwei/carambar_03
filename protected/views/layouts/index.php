@@ -23,7 +23,19 @@
 
 	</script>
 </head>
+<!--[if IE 6]>
+<body class="ie6"><![endif]-->
+<!--[if IE 7]>
+<body class="ie7"><![endif]-->
+<!--[if IE 8]>
+<body class="ie8"><![endif]-->
+<!--[if IE 9]>
+<body class="ie9"><![endif]-->
+<!--[if IE 10]>
+<body class="ie10"><![endif]-->
+<!--[if (gte IE 11)|(gt IEMobile 7)]><!-->
 <body>
+<!--<![endif]-->
 <?php echo $content;?>
 
 <script type="text/javascript" src="./js/plugin/modernizr-2.5.3.min.js"></script>

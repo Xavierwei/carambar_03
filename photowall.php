@@ -50,11 +50,6 @@ if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|andro
 </head>
 <body>
 
-<div class="preload">
-    <div class="preload1">.</div>
-    <div class="preload2">.</div>
-    <div class="preload3">.</div>
-</div>
 <div class="page-loading">
 	<div class="page-loading-logo">
 		<img src="images/loading_logo.png" />

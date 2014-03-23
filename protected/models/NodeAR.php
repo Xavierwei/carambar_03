@@ -209,13 +209,13 @@ class NodeAR extends CActiveRecord{
 			if($size > 5 * 1024000) {
 				return 501; //photo size out of limition
 			}
-			$mime = $fileUpload->getType();
-			$allowMime = array(
-				"image/gif", "image/png", "image/jpeg", "image/jpg", "image/pjpeg", "image/x-png"
-			);
-			if (!in_array($mime, $allowMime)) {
-				return 502; //photo media type is not allowed
-			}
+//			$mime = $fileUpload->getType();
+//			$allowMime = array(
+//				"image/gif", "image/png", "image/jpeg", "image/jpg", "image/pjpeg", "image/x-png"
+//			);
+//			if (!in_array($mime, $allowMime)) {
+//				return 502; //photo media type is not allowed
+//			}
 		}
 
 		if ($type == 'video') {
