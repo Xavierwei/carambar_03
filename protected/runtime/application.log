@@ -4281,3 +4281,670 @@ Stack trace:
 REQUEST_URI=/carambar/m/img/loading_trans_white.png
 HTTP_REFERER=http://localhost/carambar/photowall-m.php
 ---
+2014/03/23 12:09:33 [error] [exception.FacebookApiException] GraphMethodException: Invalid appsecret_proof provided in the API argument
+REQUEST_URI=/carambar_03/facebook/fetch
+---
+2014/03/23 12:20:31 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php:584)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): NodeController->runAction()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): NodeController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): NodeController->run()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/node/getPageByNid?nid=217&pagenum=20&_=1395548430361
+in /Applications/MAMP/htdocs/carambar_03/protected/models/NodeAR.php (584)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/NodeController.php (275)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/23 13:27:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "xml/config.xml".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('xml/config.xml')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/xml/config.xml
+HTTP_REFERER=http://lily.local:8888/carambar_03/flash/main.swf
+---
+2014/03/23 13:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "xml/config.xml".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('xml/config.xml')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/xml/config.xml
+HTTP_REFERER=http://lily.local:8888/carambar_03/flash/main.swf
+---
+2014/03/23 13:55:05 [error] [exception.FacebookApiException] CurlException: 28: connect() timed out!
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/23 13:55:53 [error] [exception.FacebookApiException] CurlException: 28: connect() timed out!
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/23 14:03:04 [error] [exception.FacebookApiException] CurlException: 28: connect() timed out!
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/23 14:17:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:18:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:18:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:20:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:20:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:20:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:20:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:20:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:21:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:21:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:21:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:21:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:23:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:23:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:23:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:24:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:24:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:24:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:25:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:25:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:26:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:26:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:26:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:26:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:26:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:35:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:35:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:35:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:36:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:37:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:37:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:37:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:37:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:37:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:42:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:42:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:44:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:45:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:45:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:46:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:46:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:46:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:47:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:47:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:47:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:48:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:48:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:49:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/device_turn.gif".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/device_tu...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/device_turn.gif
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/plugin/jquery.hammer-full.min.map".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/plugin/jquer...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/plugin/jquery.hammer-full.min.map
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---
+2014/03/23 14:49:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "m/img/loading_trans_white.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('m/img/loading_t...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/m/img/loading_trans_white.png
+HTTP_REFERER=http://lily.local:8888/carambar_03/photowall-m.php
+---

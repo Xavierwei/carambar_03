@@ -34,6 +34,11 @@
                 <button class="btn btn-default" ng-click="reset()"><span class="glyphicon glyphicon-repeat"></span></button>
             </div>
         </div>
+        <div class="right-btn">
+            <div class="btn-group btn-group-delete">
+                <button class="btn btn-danger" ng-click="delete()">DELETE SELECTED CONTENTS</button>
+            </div>
+        </div>
 		<div class="clear"></div>
 	</div>
 	<ul node class="nodes-list {{hideList}}">
@@ -47,7 +52,9 @@
 		        <a href="javascript:void(0)" class="switch switch-{{node.status}}" ng-click="updateStatus(node)"></a>
 		        <a href="javascript:void(0)" class="reward reward-{{node.reward}}" ng-click="updateReward(node)"></a>
 	        </div>
+            <a href="{{node | medialink}}" target="_blank" class="media icon-{{node.media}}">{{node.media}}</a>
 	        <div class="type icon-{{node.type}}">{{node.type}}</div>
+            <div class="del"><input type="checkbox" ng-model="node.del" /></div>
 	        <div class="user">
 	            <div class="date">{{node.datetime*1000 | date:'MMM d, y HH:mm a'}}</div>
 	            <div class="name"><strong>{{node.screen_name}}</strong></div>

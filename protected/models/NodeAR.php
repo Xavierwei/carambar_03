@@ -54,7 +54,7 @@ class NodeAR extends CActiveRecord{
 	public function rules() {
 		return array(
 		    array("type", "required"),
-		    array("created , mid, file, media, screen_name, location, type, datetime, status, description, nid, hashtag, user_liked,user_flagged, like, flag, topday, topmonth, reward, url, email", "safe"),
+		    array("created , mid, file, media, screen_name, location, type, datetime, status, description, nid, hashtag, user_liked,user_flagged, like, flag, topday, topmonth, reward, url, email, link", "safe"),
 		);
 	}
 
@@ -373,6 +373,29 @@ class NodeAR extends CActiveRecord{
 
     	return $to;
   	}
+
+	public function saveBase64Image($imgData) {
+		$dir = ROOT."/uploads";
+		if (!is_dir($dir)) {
+			mkdir($dir, 0777, TRUE);
+		}
+
+		$dir .= '/'.date("Y/n/j");
+		if (!is_dir($dir)) {
+			mkdir($dir, 0777, TRUE);
+		}
+
+		$filename = md5( uniqid()) . '.jpg';
+		$to = $dir."/". $filename;
+
+		$imgTemp = base64_decode($imgData); //base64解码
+
+		if(file_put_contents($to, $imgTemp)) {
+			$to = str_replace(ROOT, "", $to);
+			return $to;
+		}
+	}
+
 
 	function get_video_orientation($video_path) {
 		$cmd = "/usr/local/bin/ffprobe " . $video_path . " -show_streams 2>/dev/null 2>&1";
@@ -875,7 +898,7 @@ class NodeAR extends CActiveRecord{
 	}
 
 
-	public function saveNode($snsVideoLink, $snsPicture, $snsDatetime, $snsDescription, $snsId, $snsScreenName, $snsLocation, $media, $email=null) {
+	public function saveNode($snsVideoLink, $snsPicture, $snsDatetime, $snsDescription, $snsId, $snsScreenName, $snsLocation, $media, $email=null, $link=null) {
 		// check if the video
 		if($snsVideoLink) {
 			$url = $snsVideoLink;
@@ -947,6 +970,9 @@ class NodeAR extends CActiveRecord{
 			$node->mid = $snsId;
 			if($email) {
 				$node->email = $email;
+			}
+			if($link) {
+				$node->link = $link;
 			}
 			if ($node->validate()) {
 				$node->save();

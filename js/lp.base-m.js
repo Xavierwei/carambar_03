@@ -966,7 +966,7 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
 //            _draggingReleasing = false; // force unlock, due to some time the transit call back will not fire.
 //        },600);
 		var $imageWrapInner = $('.image-wrap-inner');
-		if($imageWrapInner.length == 2) {
+		if($imageWrapInner.length >= 2) {
 			var wrapWidth = $imageWrapInner.eq(0).width();
 
 			var dom = $('.inner').data('from') || $('.main');
@@ -984,12 +984,16 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
 			updateInnerNode(node, direction);
 
 			setTimeout(function(){
-				$('.image-wrap-inner').eq(direction == 'right' ? 0 : 1).remove();
+                $('.image-wrap-inner:not(:' + (direction == 'right' ? 'last)' : 'first)')).remove();
+                $('.image-wrap-inner')
+                    .eq(0)
+                    .css({x: 0});
 				_draggingReleasing = false;
 			}, 500);
 		}
 		else {
 			_draggingReleasing = false;
+            _innerLock = false;
 		}
 	}
 
@@ -1146,7 +1150,6 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
 						$('.image-wrap-inner').eq(direction == 'right' ? 0 : 1).remove();
 					});
 			}
-
 
 		});
 	}

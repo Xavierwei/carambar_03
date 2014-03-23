@@ -157,6 +157,20 @@ WallAdminController
 			$scope.filter.email = '';
 		}
 
+        $scope.delete = function() {
+            angular.forEach($scope.nodes, function(node, key){
+                if(node.del) {
+                    var newNode = angular.copy(node);
+                    newNode.status = 2;
+                    node.itemLoading = true;
+                    NodeService.update(newNode,function(){
+                        node.itemLoading = false;
+                        $scope.nodes.splice($scope.nodes.indexOf(node), 1);
+                    });
+                }
+            });
+
+        }
 
         $scope.editPhoto = function(node){
             var modalInstance = $modal.open({

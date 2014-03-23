@@ -57,7 +57,7 @@ class InstagramController extends Controller {
 		$tag = Yii::app()->params['tag'];
 		$media = $this->instagram->getTagMedia($tag, 50);
 		foreach ($media->data as $item) {
-			$snsVideoLink = $snsPicture = $snsDatetime = $snsDescription = $snsId = $snsLocation = $snsScreenName = NULL;
+			$snsVideoLink = $snsPicture = $snsDatetime = $snsDescription = $snsId = $snsLocation = $snsScreenName = $snsLink = NULL;
 			if(isset($item->videos->standard_resolution->url)) {
 				$snsVideoLink = $item->videos->standard_resolution->url;
 			}
@@ -86,8 +86,12 @@ class InstagramController extends Controller {
 				$snsScreenName = $item->user->username;
 			}
 
+			if(isset($item->link)) {
+				$snsLink = $item->link;
+			}
+
 			if(NodeAR::model()->uniqueMid($snsId)) {
-				NodeAR::model()->saveNode($snsVideoLink, $snsPicture, $snsDatetime, $snsDescription, $snsId, $snsScreenName, $snsLocation, $this::MEDIA);
+				NodeAR::model()->saveNode($snsVideoLink, $snsPicture, $snsDatetime, $snsDescription, $snsId, $snsScreenName, $snsLocation, $this::MEDIA, null, $snsLink);
 			}
 		}
 		$this->cleanAllCache();

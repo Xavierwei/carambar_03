@@ -95,9 +95,13 @@
 							<div class="com-share-close" data-a="com-share-close">X</div>
 							<div class="com-share-list">
 								<?php $shareUrl = "http://www.goodluckcarambar.com/test";?>
-
-								<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?s=100&p[title]=Soutenez+Good+Luck+Carambar[summary]=%26quot%3b{{encode_username}}%26quot%3bsoutient+Carambar+dans+son+%26%23233%3bnorme+d%26%23233%3bfi+de+faire+rire+les+USA%e2%80%9d+Partagez+votre+soutien+sur+Twitter+et+Instagram+%23Goodluckcarambar.&p[url]=<?php echo $shareUrl;?>%23/nid/{{nid}}" class="share-facbook"></a>
-								<a target="_blank" href="http://twitter.com/share?text={{share}}&amp;url=<?php echo $shareUrl;?>/photowall.php/#/{{nid}}" class="share-twitter"></a>
+								<a target="_blank" href="https://www.facebook.com/dialog/feed?app_id=649297458440878
+								&display=page&caption=Soutenez+Good+Luck+Carambar
+								&description=%26quot%3b{{encode_username}}%26quot%3b+soutient+Carambar+dans+son+%26%23233%3bnorme+d%26%23233%3bfi+de+faire+rire+les+USA%e2%80%9d+Partagez+votre+soutien+sur+Twitter+et+Instagram+%23Goodluckcarambar.
+								&link=<?php echo $shareUrl;?>/photowall.php%23/nid/{{nid}}
+								&redirect_uri=<?php echo $shareUrl;?>/photowall.php
+								&picture=<?php echo $shareUrl;?>{{image}}" class="share-facbook"></a>
+								<a target="_blank" href="http://twitter.com/share?text='{{encode_username}}'+bsoutient+Carambar+dans+son+énorme+défi+de+faire+rire+les+USA%e2%80%9d+Partagez+votre+soutien+sur+Twitter+et+Instagram+%23Goodluckcarambar.&url=<?php echo $shareUrl;?>/photowall.php%23/nid/{{nid}}" class="share-twitter"></a>
 							</div>
 						</div>
 					</div>

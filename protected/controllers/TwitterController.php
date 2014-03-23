@@ -67,7 +67,6 @@ class TwitterController extends Controller {
 		$oauth_token_secret = $oauth->token_secret;
 		$twitter = new TwitterOAuth(TWITTER_AKEY, TWITTER_SKEY, $oauth_token, $oauth_token_secret);
 		$results = $twitter->get('search/tweets', array('q'=>Yii::app()->params['tag'], 'count'=>50, 'result_type'=>'recent'));
-
 		foreach($results->statuses as $item) {
 			$snsVideoLink = $snsPicture = $snsDatetime = $snsDescription = $snsId = $snsLocation = $snsScreenName = NULL;
 			if(isset($item->entities->urls[0]->expanded_url)) {

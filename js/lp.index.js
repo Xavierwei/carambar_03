@@ -338,6 +338,24 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
         });
     });
 
+    /***
+     * Flash Facebook
+     */
+    LP.action('flash_submit_facebook', function(data){
+        $('.pop-ft-submitting').fadeIn();
+        api.ajax('postFacebook', {content: data.content, img: data.img}, function( result ){
+            $('.pop-ft-submitting').fadeOut();
+            if(result.success) {
+                $('.facebook-post-form').fadeOut();
+                $('.facebook-post-success').delay(500).fadeIn(function(){
+                    setTimeout(function(){
+                        LP.triggerAction('close_popup');
+                    }, 1000);
+                });
+            }
+        });
+    });
+
     LP.action('facebook_check', function(){
         if($('.pop-ft-check').hasClass('checked')) {
             $('.pop-ft-check').removeClass('checked');
@@ -661,3 +679,70 @@ LP.use(['jquery', 'api', 'easing', 'cookie', 'skrollr', 'exif', 'queryloader'] ,
 });
 
 
+function upload(Photo,Msg){
+    LP.triggerAction('flash_submit_facebook',{content:Msg, img: Photo});
+}
+function uploadComplete(){
+    var flash=document.getElementById("flash");
+    if(flash){
+        if(flash.js2flashUploadComplete){
+        }else{
+            flash=null;
+        }
+    }
+    if(flash){
+    }else{
+        flash=document.getElementsByName("flash");
+        if(flash){
+            flash=flash[0];
+            if(flash){
+                if(flash.js2flashUploadComplete){
+                }else{
+                    flash=null;
+                }
+            }
+        }
+    }
+    if(flash){
+        flash.js2flashUploadComplete();
+    }//else{
+    //	alert("找不到flash");
+    //}
+}
+function reset_flash(){
+    var flash=document.getElementById("flash");
+    if(flash){
+        if(flash.js2flashUploadComplete){
+        }else{
+            flash=null;
+        }
+    }
+    if(flash){
+    }else{
+        flash=document.getElementsByName("flash");
+        if(flash){
+            flash=flash[0];
+            if(flash){
+                if(flash.js2flashUploadComplete){
+                }else{
+                    flash=null;
+                }
+            }
+        }
+    }
+    if(flash){
+        flash.reset();
+    }//else{
+    //	alert("找不到flash");
+    //}
+}
+
+function onLoaded(){
+    alert("onLoaded");
+}
+function onGetImg(){
+    alert("onGetImg");
+}
+function onReset(){
+    alert("onReset");
+}

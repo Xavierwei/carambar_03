@@ -50,11 +50,17 @@ a{text-decoration:none;color:#666}
     .filter .btn-group-search {margin-right:0;margin-top:3px;}
     .filter .advance-row button {margin-top:20px;}
     .filter label {color:#333;font-weight: normal;margin:0;}
+    .filter .right-btn {float:right;margin-top:20px;margin-right:20px;}
     .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {background:#cb223a;color:#fff;border:1px solid #8a0c1e;}
     .btn-danger {background:#cb223a;}
     .nodes-list .type {position: absolute;right:10px;top:170px;background: url(../img/icons-white.png) no-repeat;text-indent: -999em;}
     .nodes-list .type.icon-photo {width:21px;height:15px;margin-top:5px;}
     .nodes-list .type.icon-video {width:21px;height:18px;background-position: 0 -42px;}
+    .nodes-list .type.icon-text {width:21px;height:18px;background-position: 0 -73px;}
+    .nodes-list .media {margin:0;position: absolute;right:45px;top:171px;background: url(../img/sns-icon.png) no-repeat;text-indent: -999em;width:20px;height:20px;}
+    .nodes-list .media.icon-facebook {background-position:5px 0;}
+    .nodes-list .media.icon-instagram {background-position:-45px 3px;}
+    .nodes-list .media.icon-twitter {background-position:-91px 0;}
     .nodes-list .switch {position: absolute;right:10px;top:10px;}
     .nodes-list .reward {position: absolute;right:50px;top:10px;}
     .nodes-list .date {color:#999;}
@@ -66,6 +72,7 @@ a{text-decoration:none;color:#666}
     .nodes-list .comment a {border-bottom:1px dotted #cb223a;}
     .nodes-list .like {background: url(../img/icons.png) no-repeat 0 -34px;padding:0 0 0 20px;margin:0 0 0 10px;float:left;}
     .nodes-list .btns {margin:7px 0 9px 8px;}
+    .nodes-list .del {position: absolute;right:10px;bottom:48px;}
     .nodes-list li {width:200px;}
     .nodes-list li .image {position: relative;}
     .nodes-list li .text-box {padding:30px 10px 0 10px;height:200px;}

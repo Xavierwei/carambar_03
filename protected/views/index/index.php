@@ -267,7 +267,14 @@
 	<!-- footer -->
 	<div class="footer">
 		<div class="footer-inner">
-		jeu gratuit sans obligation d’achat du 25/03/2014 au 11/04/2014. à gagner 360 kits supporters collectors d’une valeur commerciale approximative de 12,50€. retrouvez l’ensemble des modalités en consultant le <a target="_blank" href="./pdf/reglement_glc.pdf">reglement complet du jeu</a>.
+			jeu gratuit sans obligation d’achat du 25/03/2014 au 11/04/2014. à gagner 360 kits supporters collectors d’une valeur commerciale approximative de 12,50€. retrouvez l’ensemble des modalités en consultant le <a target="_blank" href="./pdf/reglement_glc.pdf">reglement complet du jeu</a>.
+			<div class="footer-links">
+				<a href="#">Vie privée</a> /
+				<a href="#">Cookies</a> /
+				<a href="#">Mentions légales</a> /
+				<a href="#">Règlement du jeu : SENT</a> /
+				<a href="#">Mentions sanitaires</a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -291,42 +298,55 @@
 		<div class="pop-close" data-a="close_popup"></div>
 		<div class="facebook-post-form">
 			<div class="pop-fttit">PUBLIER VOTRE SOUTIEN avec le <span>#goodluckcarambar</span></div>
-			<div class="pop-ft-form cs-clear">
-				<div class="facebook-post-img-wrap">
-					<div class="facebook-post-img" id="fileupload">
-						<input type="file" accept="image/*" name="file">
-					</div>
-
-					<div class="facebook-post-load">
-						<div class="popload-percent"><p></p></div>
-						<div class="popload-text">Téléchargement en cours…</div>
-					</div>
-
-					<div class="poptxt-pic">
-						<a class="pop-zoomout-btn" data-a="pop-zoomout-btn" href="javascript:void(0)">Zoom In</a>
-						<a class="pop-zoomin-btn" data-a="pop-zoomin-btn" href="javascript:void(0)">Zoom Out</a>
-						<div class="poptxt-pic-inner">
-							<img style="pointer-events:none" />
-						</div>
-					</div>
-				</div>
-				<div class="pop-ft-text">
-					<div class="pop-ft-ftit">votre commentaire</div>
-					<input id="facebook-img" type="hidden" />
-					<textarea id="facebook-content"></textarea>
-				</div>
+			<!--#-->
+			<div class="flash_facebook_uploader">
+				<object id="flash_fb" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="820" height="366">
+					<param name="allowScriptAccess" value="always"/>
+					<param name="movie" value="flash/main.swf"/>
+					<param name="quality" value="high"/>
+					<param name="wmode" value="transparent"/>
+					<param name="flashVars" value="xml=flash/xml/config.xml"/>
+					<embed name="flash" src="flash/main.swf" quality="high" wmode="transparent" flashVars="xml=flash/xml/config.xml" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="820" height="366" allowScriptAccess="always"></embed>
+				</object>
 			</div>
-			<ul class="step1-tips">
-				<li>Votre photo doit être au format JPG, PNG ou GIF</li>
-				<li>La taille de votre fichier ne doit pas dépasser 5MB</li>
-				<li class="damaged">La photo que vous avez téléchargé est corrompu</li>
-			</ul>
-			<div class="pop-ft-check" data-a="facebook_check">
-				<span>j'ai lu et j'accepte le règlement du jeu</span>
-			</div>
-			<div class="pop-ft-icon"></div>
-			<div class="pop-ft-btn disabled" data-a="submit_facebook"></div>
-			<div class="pop-ft-submitting">Submitting</div>
+			<!---->
+
+<!--			<div class="pop-ft-form cs-clear">-->
+<!--				<div class="facebook-post-img-wrap">-->
+<!--					<div class="facebook-post-img" id="fileupload">-->
+<!--						<input type="file" accept="image/*" name="file">-->
+<!--					</div>-->
+<!---->
+<!--					<div class="facebook-post-load">-->
+<!--						<div class="popload-percent"><p></p></div>-->
+<!--						<div class="popload-text">Téléchargement en cours…</div>-->
+<!--					</div>-->
+<!---->
+<!--					<div class="poptxt-pic">-->
+<!--						<a class="pop-zoomout-btn" data-a="pop-zoomout-btn" href="javascript:void(0)">Zoom In</a>-->
+<!--						<a class="pop-zoomin-btn" data-a="pop-zoomin-btn" href="javascript:void(0)">Zoom Out</a>-->
+<!--						<div class="poptxt-pic-inner">-->
+<!--							<img style="pointer-events:none" />-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="pop-ft-text">-->
+<!--					<div class="pop-ft-ftit">votre commentaire</div>-->
+<!--					<input id="facebook-img" type="hidden" />-->
+<!--					<textarea id="facebook-content"></textarea>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<ul class="step1-tips">-->
+<!--				<li>Votre photo doit être au format JPG, PNG ou GIF</li>-->
+<!--				<li>La taille de votre fichier ne doit pas dépasser 5MB</li>-->
+<!--				<li class="damaged">La photo que vous avez téléchargé est corrompu</li>-->
+<!--			</ul>-->
+<!--			<div class="pop-ft-check" data-a="facebook_check">-->
+<!--				<span>j'ai lu et j'accepte le règlement du jeu</span>-->
+<!--			</div>-->
+<!--			<div class="pop-ft-icon"></div>-->
+<!--			<div class="pop-ft-btn disabled" data-a="submit_facebook"></div>-->
+<!--			<div class="pop-ft-submitting">Submitting</div>-->
 		</div>
 
 		<div class="facebook-post-success">

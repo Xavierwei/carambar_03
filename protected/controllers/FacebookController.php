@@ -91,6 +91,7 @@ class FacebookController extends Controller {
 			array(
 				'q' => Yii::app()->params['tag']
 			));
+		print_r($results);
 
 
 		foreach($results['data'] as $item) {
@@ -150,8 +151,8 @@ class FacebookController extends Controller {
 			$mid = $results = $this->facebook->api('/me/photos', 'POST',
 				array(
 					'source'=>'multipart/form-data',
-					//'url'=> Yii::app()->params['siteurl'].$img,
-					'url' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
+					'url'=> Yii::app()->params['siteurl'].$img,
+					//'url' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
 					'message' => $content
 				));
 		}
@@ -159,8 +160,6 @@ class FacebookController extends Controller {
 			$type = 'text';
 			$mid = $results = $this->facebook->api('/me/feed', 'POST',
 				array(
-					//'source'=>'multipart/form-data',
-					//'picture' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
 					'message' => $content
 				));
 		}
@@ -171,12 +170,15 @@ class FacebookController extends Controller {
 
 			$node->type = $type;
 			$node->media = 'facebook';
-			if($img) {
-				$_x = $request->getPost("x");
+			$_x = $request->getPost("x");
+			if($img && $_x) {
 				$_y = $request->getPost("y");
 				$_width = $request->getPost("width");
 				$_scale_size = $request->getPost("size");
 				$node->file =  $node->cropPhoto($img, $_x, $_y, $_width, $_scale_size);
+			}
+			else if($img) {
+				$node->file = NodeAR::model()->saveBase64Image($img);
 			}
 			$node->mid = isset($mid['post_id']) ? $mid['post_id'] : $mid['id'];
 			$node->description = $content;

@@ -96,5 +96,22 @@ angular.module('WallAdmin.filters', [])
         return function(input) {
             return ROOT_FOLDER + 'pic/challenge' + input + '.jpg';
         }
+    })
+    .filter('medialink', function() {
+        return function(input) {
+            switch(input.media) {
+                case 'instagram':
+                    return input.link;
+                    break;
+                case 'twitter':
+                    return 'https://twitter.com/'+input.screen_name+'/statuses/'+input.mid;
+                    break;
+                case 'facebook':
+                    return 'https://www.facebook.com/'+input.screen_name;
+                    break;
+            }
+
+
+        }
     });
 
