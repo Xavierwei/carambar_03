@@ -101,7 +101,7 @@ class VideoController extends Controller {
                     }
                 }
                 //重新排序
-                $elements=array_values($elements);
+                sort($elements);
                 $_POST['phase']=implode(",",$elements);
             }
 
