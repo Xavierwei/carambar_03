@@ -73,9 +73,11 @@ WallAdminController
         });
 
 		$scope.saveRank = function(video) {
-			video.del = 0;
-			video.rank = video.rank.title;
-			VideoService.update(video, function(data){
+			var data = {};
+			data.rank = video.rank.title;
+			data.del = 0;
+			data.vid = video.vid;
+			VideoService.update(data, function(data){
 				video.rank = $scope.videoranks[video.rank-1];
 			});
 		}

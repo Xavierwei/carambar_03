@@ -1,3 +1,41 @@
+a:2:{i:0;a:2:{i:0;s:14258:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+	<meta name="viewport" content="width=640, minimum-scale=0.5, maximum-scale=0.5, target-densityDpi=290,user-scalable=no" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
+	<title>Good Luck Carambar - Les défis</title>
+	<meta name="description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission ! " />
+	<link href="./css/style.css" rel="stylesheet" type="text/css" />
+	<!--[if IE 8]>
+	<link href="css/ie8.css" rel="stylesheet" type="text/css" />
+	<!--<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-49226115-1', 'goodluckcarambar.com');
+		ga('send', 'pageview');
+
+	</script>
+</head>
+<!--[if IE 6]>
+<body class="ie6"><![endif]-->
+<!--[if IE 7]>
+<body class="ie7"><![endif]-->
+<!--[if IE 8]>
+<body class="ie8"><![endif]-->
+<!--[if IE 9]>
+<body class="ie9"><![endif]-->
+<!--[if IE 10]>
+<body class="ie10"><![endif]-->
+<!--[if (gte IE 11)|(gt IEMobile 7)]><!-->
+<body>
+<!--<![endif]-->
 <div class="loading-overlay">
 	<div class="loading-logo"><img src="images/loading_logo.png" /></div>
 </div>
@@ -10,70 +48,19 @@
 	</div>
 </div>
 <!--  -->
-<div class="page phase<?php echo $phase;?>">
+<div class="page phase4">
 	<!-- #Presentation Block -->
 	<div class="presentation">
-		<?php if($phase == 1 || $phase == 2 || $phase == 3):?>
-			<div class="skyline" style="background-position:center 90px" data-0="background-position:center 90px;" data-800="background-position:center -50px;"></div>
-		<?php else:?>
-			<div class="skyline" style="background-position:center 190px" data-0="background-position:center 190px;" data-800="background-position:center -100px;"></div>
-		<?php endif;?>
-		<?php if($phase == 1 || $phase == 2 || $phase == 3):?>
-		<div class="blue-road"
-		     data-style="opacity:0;" data-animate="opacity:1;" data-delay="0" data-time="800"
-		     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,60px,0);"></div>
-		<div class="presentation-box">
-			<div class="carambar-man" data-style="left:-1000px" data-animate="left:85px" data-delay="0" data-time="800" data-easing="easeOutQuart"
-				 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,60px,0);"></div>
-			<?php if($phase == 1 || $phase == 2):?>
-				<?php if($topVideo):?>
-				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500"
-					 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,30px,0);">
-					<div class="tips-content"></div>
-					<div class="tips-video">
-						<img src="./<?php echo str_replace('.jpg', '_224_115.jpg', $topVideo->thumbnail);?>" />
-						<a class="video-play show-desktop" href="javascript:void(0);" data-a="open_video" data-d="mid=<?php echo $topVideo->mid;?>"></a>
-						<a class="video-play show-mobile" href="https://www.youtube.com/watch?v=<?php echo $topVideo->mid;?>" target="_blank"></a>
-					</div>
-				</div>
-				<?php endif;?>
-			<?php endif;?>
-			<?php if($phase == 3):?>
-				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500"
-					 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,30px,0);">
-					<div class="tips-content-p3">
-						<div class="countdown">
-							<span id="countdown-days"></span>
-							<span id="countdown-hours"></span>
-							<span id="countdown-minutes"></span>
-							<span id="countdown-seconds"></span>
-						</div>
-					</div>
-				</div>
-			<?php endif;?>
-			<div class="indicator-count-wrap"
-			     data-style="opacity:0;" data-animate="opacity:1;" data-delay="1000" data-time="500"
-			     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
-				<div class="indicator-title">Nombre de soutiens récoltés</div>
-				<div class="indicator-count"></div>
-				<div class="indicator-count-num"></div>
-				<div class="indicator-hashtag">#GOODLUCKCARAMBAR</div>
-				<div class="indicator-btn" data-a="indicate"></div>
-			</div>
-		</div>
-		<?php endif;?>
-		<?php if($phase == 4 || $phase == 5):?>
-		<div class="videopart cs-clear">
+					<div class="skyline" style="background-position:center 190px" data-0="background-position:center 190px;" data-800="background-position:center -100px;"></div>
+								<div class="videopart cs-clear">
 			<div class="videopart-tit">
 				<div class="robbion-icon"></div>
 				<div class="videopart-tit-defi videopart-tit-defi1"></div>
 			</div>
 			<!-- Video -->
 			<div class="videomod">
-			<?php if($topVideo): ?>
-				<iframe width="548" height="304" src="//www.youtube.com/embed/<?php echo $topVideo->mid;?>?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
-			<?php endif;?>
-			</div>
+							<iframe width="548" height="304" src="//www.youtube.com/embed/N1FNL_iIp5c?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
 			<!-- Twitter -->
 			<div class="videotxt"></div>
 			<!--  -->
@@ -88,8 +75,7 @@
 			<a href="photowall.php" class="btn-other-challenges"></a>
 		</div>
 
-			<?php if($phase == 4):?>
-			<!-- section blue -->
+						<!-- section blue -->
 			<div class="sec-blue">
 				<div class="sec-bluecon cs-clear">
 					<div class="sec-bluepho">
@@ -109,148 +95,89 @@
 					</div>
 				</div>
 			</div>
-			<?php else:?>
-				<div class="sec-blue2">
-					<div class="sec-blue2txt">
-						<div class="indicator-count-wrap">
-							<div class="indicator-count"></div>
-							<div class="indicator-count-num"></div>
-						</div>
-					</div>
-
-				</div>
-				<div class="line line4"></div>
-			<?php endif;?>
-
-		<?php endif;?>
-
-		<?php if($phase != 5):?>
-		<div class="goto-support-bg">
+			
+		
+				<div class="goto-support-bg">
 			<a href="javascript:;" data-a="goto_support" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
 		</div>
-		<?php endif;?>
-	</div>
+			</div>
 	<!-- /Presentation Block -->
 	<!-- #Challenge Block -->
 	<div class="challenge_bg">
 		<div class="map_bg"
 		     data-0="transform:translate3d(0,0px,0);" data-1500="transform:translate3d(0,-400px,0);"></div>
 	</div>
-	<?php if($phase == 1 || $phase == 2):?>
-	<div class="challenge">
-		<div class="challenge-title" data-style="opacity:0;" data-animate="opacity:1;" data-delay="200" data-time="800"></div>
-		<div class="challenge-inner" data-646="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
-			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="100" data-time="800">
-				<div class="challenge-img">
-					<img src="pic/challenge1.jpg" />
-				</div>
-				<div class="vote-btn vote-btn1" data-a="vote" data-d="cid=1">DEFI No1</div>
-			</div>
-			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="200" data-time="800">
-				<div class="challenge-img">
-					<img src="pic/challenge2.jpg" />
-				</div>
-				<div class="vote-btn vote-btn2" data-a="vote" data-d="cid=2">DEFI No2</div>
-			</div>
-			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="300" data-time="800">
-				<div class="challenge-img">
-					<img src="pic/challenge3.jpg" />
-				</div>
-				<div class="vote-btn vote-btn3" data-a="vote" data-d="cid=3">DEFI No3</div>
-			</div>
-		</div>
-		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
-	</div>
-	<?php endif;?>
-	<?php if($phase == 3 || $phase == 4 || $phase == 5):?>
-	<div class="videolistbg">
-		<?php if($phase == 5):?>
-			<div class="videolist-tit2"></div>
-		<?php else:?>
-			<div class="videolist-tit"></div>
-		<?php endif;?>
-		<div class="videolist" data-826="transform:translate3d(0,0px,0);" data-1400="transform:translate3d(0,100px,0);">
+			<div class="videolistbg">
+					<div class="videolist-tit"></div>
+				<div class="videolist" data-826="transform:translate3d(0,0px,0);" data-1400="transform:translate3d(0,100px,0);">
 			<div class="videolistshare">
 				<div class="video-con">
-					<?php
-						$videoCount = 0;
-						foreach($homeVideos as $index=>$video):
-							if($video->rank == 6) {continue;}
-							$videoCount++;
-
-					?>
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit<?php echo $index+1;?>"></div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit1"></div>
 							<div class="videolist-box">
-								<img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" />
-								<a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
-								<a href="https://www.youtube.com/watch?v=<?php echo $video->mid;?>" target="_blank" class="video-play show-mobile"></a>
+								<img src=".//uploads/2014/3/20/video16_248_132.jpg" />
+								<a data-d="mid=a70cSWn3E9k" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=a70cSWn3E9k" target="_blank" class="video-play show-mobile"></a>
 							</div>
-							<div class="videolist-txt"><?php echo $video->title;?></div>
-							<div class="video-icon video-icon-<?php echo $video->ribbon;?>"></div>
+							<div class="videolist-txt">Maleficent Official Trailer #4 (2014) Angelina Jolie HD</div>
+							<div class="video-icon video-icon-1"></div>
 						</div>
-					<?php endforeach;?>
-					<?php
-						$boxCount = 5;
-						$leftCount = $boxCount - $videoCount;
-					?>
-					<?php for($i = 0; $i < $leftCount; $i++):?>
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit<?php echo $boxCount - $leftCount + $i + 1 ;?>"></div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video20_248_132.jpg" />
+								<a data-d="mid=pgHrmvkrEZo" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=pgHrmvkrEZo" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">Teen Wolf | Dylan O'Brien Interviews | Best Moments</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit3"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video21_248_132.jpg" />
+								<a data-d="mid=1mutNFIu8iU" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=1mutNFIu8iU" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">'Teen Wolf': T</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+																					<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit4"></div>
 							<div class="videolist-boxnull">des défis de plus en plus fous...</div>
 						</div>
-					<?php endfor;?>
-					<?php
-					$video6 = 0;
-					foreach($homeVideos as $index=>$video):
-						if($video->rank != 6) {continue;}
-						$video6++;
-						?>
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit6"></div>
-							<div class="videolist-box">
-								<img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" />
-								<a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
-								<a href="https://www.youtube.com/watch?v=<?php echo $video->mid;?>" target="_blank" class="video-play show-mobile"></a>
-							</div>
-							<div class="videolist-txt"><?php echo $video->title;?></div>
-							<div class="video-icon video-icon-<?php echo $video->ribbon;?>"></div>
-						</div>
-					<?php endforeach;?>
-					<?php if($video6 == 0):?>
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit6"></div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit5"></div>
 							<div class="videolist-boxnull">des défis de plus en plus fous...</div>
 						</div>
-					<?php endif;?>
-					<div class="cs-clear"></div>
+																<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit6"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video15_248_132.jpg" />
+								<a data-d="mid=oYZxZups06w" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=oYZxZups06w" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">The Giver Official Trailer (2014) Meryl Streep, Sci Fi HD</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+															<div class="cs-clear"></div>
 				</div>
 			</div>
 		</div>
 		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
 	</div>
-	<?php endif;?>
-
+	
 	<!-- /Challenge Block -->
 
 	<div class="yellow-wrap">
-		<?php if($phase == 1):?>
-		<!-- line -->
-		<div class="line line-p1">
-			<div class="line-com-p1"></div>
-		</div>
-		<?php endif;?>
-		<?php if($phase == 3 || $phase == 4):?>
-		<!-- #barack -->
+						<!-- #barack -->
 		<div class="barack">
 			<div class="baracktit"></div>
 			<div class="barackbtn" data-a="open_invitation"></div>
 		</div>
 		<!-- /barack -->
-		<?php endif;?>
-
-		<?php if($phase == 1 || $phase == 2 || $phase == 3 || $phase == 4):?>
-		<!--  -->
+		
+				<!--  -->
 		<div class="support-carambar-wrap">
 			<div id="support-carambar" class="img">
 				<div class="img1"></div>
@@ -282,8 +209,7 @@
 			<div class="tshirt2"></div>
 		</div>
 		<!--  -->
-		<?php endif;?>
-		<div class="photit"></div>
+				<div class="photit"></div>
 		<!--  -->
 		<div class="pholist cs-clear">
 
@@ -420,3 +346,11 @@
 	</div>
 </script>
 <!-- #send-invitation-tpl -->
+
+<script type="text/javascript" src="./js/plugin/modernizr-2.5.3.min.js"></script>
+<script type="text/javascript" src="./js/sea/sea-debug.js" data-config="../config.js"></script>
+<script type="text/javascript" src="./js/sea/plugin-shim.js"></script>
+<script type="text/javascript" src="./js/lp.core.js"></script>
+<script type="text/javascript" src="./js/lp.index.js"></script>
+</body>
+</html>";i:1;N;}i:1;O:18:"CDbCacheDependency":9:{s:12:"connectionID";s:2:"db";s:3:"sql";s:77:"SELECT setting.setting_value FROM setting WHERE setting.setting_key = "phase"";s:6:"params";N;s:23:" CDbCacheDependency _db";N;s:18:"reuseDependentData";b:0;s:23:" CCacheDependency _hash";N;s:23:" CCacheDependency _data";a:1:{s:13:"setting_value";s:1:"4";}s:14:" CComponent _e";N;s:14:" CComponent _m";N;}}
