@@ -546,11 +546,12 @@ class NodeController extends Controller {
 
 	// count the unapproved node
 	public function actionCountNode() {
-		$counts = NodeAR::model()->countByAttributes(array('status'=>0));
-		if($counts > 0) {
+		$postCounts = NodeAR::model()->countByAttributes(array('status'=>0));
+		$commentCounts = CommentAR::model()->countByAttributes(array('status'=>0));
+		if($postCounts > 0 || $commentCounts > 0) {
 			$emailInfo = Yii::app()->params['email'];
 			@Drtool::sendEmail($emailInfo['sendName'], 'Good Luck Carambar : Posts en attente de publication',
-				'Bonjour, <br/><br/>Et ouais mec, '.$counts.' posts sont en attente de validation dans le back-office. Connecte-toi sur l\'interface administrateur pour gerer ces contenus : http://www.goodluckcarambar.com/admin La bise',
+				'Bonjour, <br/><br/>Et ouais mec, '.$postCounts.' posts et '.$commentCounts.' commentaires sont en attente de validation dans le back-office. <br/><br/>Connecte-toi sur l\'interface administrateur pour g&#233;rer ces contenus : http://www.goodluckcarambar.com/admin <br/><br/>La bise.',
 				$emailInfo['emailList']);
 		}
 	}

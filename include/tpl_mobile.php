@@ -93,7 +93,7 @@
 								&link=<?php echo $shareUrl;?>/photowall.php%23/nid/{{nid}}
 								&redirect_uri=<?php echo $shareUrl;?>/photowall.php
 								&picture=<?php echo $shareUrl;?>{{image}}" class="share-facbook"></a>
-							<a target="_blank" href="http://twitter.com/share?text='{{encode_username}}'+bsoutient+Carambar+dans+son+énorme+défi+de+faire+rire+les+USA%e2%80%9d+Partagez+votre+soutien+sur+Twitter+et+Instagram+%23Goodluckcarambar.&url=<?php echo $shareUrl;?>/photowall.php%23/nid/{{nid}}" class="share-twitter"></a>
+							<a target="_blank" href="http://twitter.com/share?text='{{encode_username}}'+soutient+Carambar+dans+son+énorme+défi+de+faire+rire+les+USA+%23goodluckcarambar&url=<?php echo $shareUrl;?>/photowall.php%23/nid/{{nid}}" class="share-twitter"></a>
 						</div>
 					</div>
 					<!--  -->

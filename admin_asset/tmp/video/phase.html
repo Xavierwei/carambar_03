@@ -16,6 +16,7 @@
             <th>Ribbon</th>
             <th>Position</th>
             <th>Phase</th>
+	        <td>No.</td>
             <th>Action</th>
         </tr>
         <tr ng-repeat="video in videos">
@@ -24,7 +25,10 @@
             <td>{{video.ribbon | ribbon}}</td>
             <td>{{video.position | videoposition}}</td>
             <td>{{video.phase}}</td>
-            <td><a class="btn btn-primary" ng-href="#video/edit/{{video.vid}}">Edit</a> <a class="btn btn-danger" ng-click="remove(video)">Remove from this phase</a></td>
+	        <td><select ng-model="video.rank"
+	                    data-ng-options="v.title for v in videoranks">
+	        </select></td>
+            <td><a class="btn btn-success" ng-click="saveRank(video)">Save</a> <a class="btn btn-primary" ng-href="#video/edit/{{video.vid}}">Edit</a> <a class="btn btn-danger" ng-click="remove(video)">Remove from this phase</a></td>
         </tr>
     </table>
 </div>
