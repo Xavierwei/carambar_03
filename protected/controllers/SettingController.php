@@ -10,9 +10,9 @@ class SettingController extends Controller
 	{
         $model=new SettingAR;
         $item=$model->getValue('praise');      //获取value
-        if(!$item)
-            StatusSend::_sendResponse(200,StatusSend::error('end', 1006)); //获取不到点赞数据
-        $item2=NodeAR::model()->countByStatus();
+//        if(isset($item))
+//            StatusSend::_sendResponse(200,StatusSend::error('end', 1006)); //获取不到点赞数据
+        $item2=NodeAR::model()->countByStatus('-1');
 
 
 		//判断是否有点赞资格
@@ -56,11 +56,11 @@ class SettingController extends Controller
      */
     public function actionCount()
     {
-        $item2=NodeAR::model()->countByStatus();
+		$item2=NodeAR::model()->countByStatus('-1');
         $model=new SettingAR;
         $item=$model->getValue('praise');      //获取value
         if(!$item)
-            StatusSend::_sendResponse(200,StatusSend::error('end', 1006)); //获取不到点赞数据
+            StatusSend::_sendResponse(200,StatusSend::success('success',2003,$item2)); //获取不到点赞数据
         else
             StatusSend::_sendResponse(200, StatusSend::success('success',2003,$item+$item2)); //修改数据库成功
     }

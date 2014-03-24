@@ -123,10 +123,16 @@ class FacebookController extends Controller {
 		$oauth = OauthAR::model()->findByAttributes(array('media'=>$this::MEDIA));
 		$oauth_token = $oauth->token;
 		$this->facebook->setAccessToken($oauth_token);
-		$results = $this->facebook->api('/search', 'GET',
-			array(
-				'q' => Yii::app()->params['tag']
-			));
+
+		try {
+			$results = $this->facebook->api('/search', 'GET',
+				array(
+					'q' => Yii::app()->params['tag']
+				));
+		}
+		catch(Exception $e) {
+		}
+
 
 		foreach($results['data'] as $item) {
 			$snsVideoLink = $snsPicture = $snsDatetime = $snsDescription = $snsId = $snsLocation = $snsScreenName = NULL;

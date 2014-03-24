@@ -569,10 +569,12 @@ class NodeAR extends CActiveRecord{
     public function countByStatus($status=1)
     {
         $query = new CDbCriteria();
-        $query->addCondition("status=:status");
-        $query->params = array(
-            ":status" => $status
-        );
+		if($status != '-1') {
+			$query->addCondition("status=:status");
+			$query->params = array(
+				":status" => $status
+			);
+		}
         $res = $this->count($query);
 
         return $res;
