@@ -1,0 +1,165 @@
+<languageVersion: 1.0;>
+
+/***
+Earth
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月07日 17:29:01
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Earth
+<
+	namespace:"zero.shaders.shadertoy";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"Earth（卡；不兼容flash）";
+>
+{
+	
+	parameter float alpha;
+	parameter float2 center;
+	parameter float time;
+	parameter float2 srcSize
+	<
+		description:"输入图像的宽高";
+		parameterType:"inputSize";
+		inputSizeName:"src";
+	>;
+	
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			
+			float t=0.0;
+			float3 nor=float3(0,0,0);
+			float2 uv=float2(0,0);
+			
+			float2 pix=(outCoord()+float2(0.0,0.0))/srcSize;
+			float2 p =(2.0*pix)-1.0;
+			p.x *= srcSize.x/srcSize.y;
+			
+			float3 ro = float3( 0.0, 0.0, 2.5);
+			float3 rd = normalize( float3( p.x,p.y, -2.0) );
+			
+			pixel4 col0 = pixel4(0.0,0.0,0.0,1.0);
+			float b = dot(ro,rd);
+			float c = dot(ro,ro) - 1.0;
+			float h = b*b - c;
+			if( h>0.0 )
+			{
+				t = -b - sqrt(h);
+				nor =ro+(t*rd);
+				uv=float2(
+					atan(nor.x,nor.z)/6.2831 - 0.05*time - center.x/srcSize.x,
+					acos(nor.y)/3.1416
+				);
+				if(uv.y>0.5){
+					uv.y = 0.5 + pow( uv.y-0.5, 1.2 );
+				}else{
+					uv.y = 0.5 - pow( 0.5-uv.y, 1.2 );
+				}
+				uv.y=1.0-uv.y;
+				col0 = sampleNearest(src,mod(uv,1.0)*((srcSize-1.0)));
+				col0 =col0*(0.3 + 0.7*max(nor.x*2.0+nor.z,0.0));
+			}
+			
+			pix=(outCoord()+float2(0.5,0.0))/srcSize;
+			p =(2.0*pix)-1.0;
+			p.x *= srcSize.x/srcSize.y;
+			
+			ro = float3( 0.0, 0.0, 2.5);
+			rd = normalize( float3( p.x,p.y, -2.0) );
+			
+			pixel4 col1 = pixel4(0.0,0.0,0.0,1.0);
+			b = dot(ro,rd);
+			c = dot(ro,ro) - 1.0;
+			h = b*b - c;
+			if( h>0.0 )
+			{
+				t = -b - sqrt(h);
+				nor =ro+(t*rd);
+				uv=float2(
+					atan(nor.x,nor.z)/6.2831 - 0.05*time - center.x/srcSize.x,
+					acos(nor.y)/3.1416
+				);
+				if(uv.y>0.5){
+					uv.y = 0.5 + pow( uv.y-0.5, 1.2 );
+				}else{
+					uv.y = 0.5 - pow( 0.5-uv.y, 1.2 );
+				}
+				uv.y=1.0-uv.y;
+				col1 = sampleNearest(src,mod(uv,1.0)*((srcSize-1.0)));
+				col1 =col1*(0.3 + 0.7*max(nor.x*2.0+nor.z,0.0));
+			}
+			
+			pix=(outCoord()+float2(0.0,0.5))/srcSize;
+			p =(2.0*pix)-1.0;
+			p.x *= srcSize.x/srcSize.y;
+			
+			ro = float3( 0.0, 0.0, 2.5);
+			rd = normalize( float3( p.x,p.y, -2.0) );
+			
+			pixel4 col2 = pixel4(0.0,0.0,0.0,1.0);
+			b = dot(ro,rd);
+			c = dot(ro,ro) - 1.0;
+			h = b*b - c;
+			if( h>0.0 )
+			{
+				t = -b - sqrt(h);
+				nor =ro+(t*rd);
+				uv=float2(
+					atan(nor.x,nor.z)/6.2831 - 0.05*time - center.x/srcSize.x,
+					acos(nor.y)/3.1416
+				);
+				if(uv.y>0.5){
+					uv.y = 0.5 + pow( uv.y-0.5, 1.2 );
+				}else{
+					uv.y = 0.5 - pow( 0.5-uv.y, 1.2 );
+				}
+				uv.y=1.0-uv.y;
+				col2 = sampleNearest(src,mod(uv,1.0)*((srcSize-1.0)));
+				col2 =col2*(0.3 + 0.7*max(nor.x*2.0+nor.z,0.0));
+			}
+			
+			pix=(outCoord()+float2(0.5,0.5))/srcSize;
+			p =(2.0*pix)-1.0;
+			p.x *= srcSize.x/srcSize.y;
+			
+			ro = float3( 0.0, 0.0, 2.5);
+			rd = normalize( float3( p.x,p.y, -2.0) );
+			
+			pixel4 col3 = pixel4(0.0,0.0,0.0,1.0);
+			b = dot(ro,rd);
+			c = dot(ro,ro) - 1.0;
+			h = b*b - c;
+			if( h>0.0 )
+			{
+				t = -b - sqrt(h);
+				nor =ro+(t*rd);
+				uv=float2(
+					atan(nor.x,nor.z)/6.2831 - 0.05*time - center.x/srcSize.x,
+					acos(nor.y)/3.1416
+				);
+				if(uv.y>0.5){
+					uv.y = 0.5 + pow( uv.y-0.5, 1.2 );
+				}else{
+					uv.y = 0.5 - pow( 0.5-uv.y, 1.2 );
+				}
+				uv.y=1.0-uv.y;
+				col3 = sampleNearest(src,mod(uv,1.0)*((srcSize-1.0)));
+				col3 =col3*(0.3 + 0.7*max(nor.x*2.0+nor.z,0.0));
+			}
+			
+			dst=(((col0+col1)+col2)+col3)*0.25;
+			dst.a=alpha;
+			
+		}else{
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

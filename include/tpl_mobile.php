@@ -86,7 +86,7 @@
 					<div class="com-share-pop">
 						<div class="com-share-close" data-a="toggle_share">X</div>
 						<div class="com-share-list">
-							<?php $shareUrl = "http://www.goodluckcarambar.com/test";?>
+							<?php $shareUrl = "http://www.goodluckcarambar.com";?>
 							<a target="_blank" href="https://www.facebook.com/dialog/feed?app_id=649297458440878
 								&display=page&caption=Soutenez+Good+Luck+Carambar
 								&description=%26quot%3b{{encode_username}}%26quot%3b+soutient+Carambar+dans+son+%26%23233%3bnorme+d%26%23233%3bfi+de+faire+rire+les+USA%e2%80%9d+Partagez+votre+soutien+sur+Twitter+et+Instagram+%23Goodluckcarambar.

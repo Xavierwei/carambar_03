@@ -24,8 +24,6 @@ class UserController extends Controller {
 		}
 	}
 
-
-
 	/**
 	 * Logout
 	 */

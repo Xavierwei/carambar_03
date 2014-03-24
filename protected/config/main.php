@@ -126,7 +126,7 @@ return array(
 			'username' => 'fuelitupdev@gmail.com',
 			'password' => 'shanghaitest',
 			'sendName' => 'Carambar',
-			'titleNew' => 'Un nouveau participant chaud bouillant a upload&#233; un soutien sur la plateforme depuis son compte Facebook.',
+			'titleNew' => 'Good Luck Carambar : Nouvel upload de soutien',
 			'titleAward' => '#CARAMBARGOODLUCK You win!',
 			'titleApprove' => '#CARAMBARGOODLUCK your post has approved',
 			'contentNew' => 'Bonjour,<br/><br/>Un nouveau participant chaud bouillant a upload&#233; un soutien sur la plateforme depuis son compte Facebook. <br/><br/>Viens vite le v&#233;rifier pour publication sur l\'interface back-office de ouf qu\'on a cr&#233;&#233; expr&#232;s : http://www.goodluckcarambar.com/admin<br/><br/>La bise,',

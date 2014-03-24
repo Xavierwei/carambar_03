@@ -1,0 +1,57 @@
+<languageVersion: 1.0;>
+
+/***
+Heart
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月06日 23:42:00
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Heart
+<
+	namespace:"zero.shaders.shadertoy";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"Heart（不兼容flash）";
+>
+{
+	
+	parameter float alpha;
+	parameter float time;
+	parameter float2 srcSize
+	<
+		description:"输入图像的宽高";
+		parameterType:"inputSize";
+		inputSizeName:"src";
+	>;
+	
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			
+			float2 p =((2.0*outCoord())-srcSize)/srcSize.y;
+			float tt = mod(time,2.0)/2.0;
+			float ss = pow(tt,.2)*0.5 + 0.5;
+			ss -= ss*0.2*sin(tt*6.2831*5.0)*exp(-tt*6.0);
+			p =p*(float2(0.5,1.5)+(ss*(float2(0.5,-0.5))));
+			
+			
+			float a = atan(p.x,p.y)/3.141593;
+			float r = length(p);
+			float h = abs(a);
+			float d = (13.0*h - 22.0*h*h + 10.0*h*h*h)/(6.0-5.0*h);
+			float f = step(r,d) * pow(1.0-r/d,0.25);
+			
+			dst=pixel4(f,0.0,0.0,alpha);
+			
+		}else{
+			dst=sampleNearest(src,float2(0,0));//- -
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

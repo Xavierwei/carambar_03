@@ -66,7 +66,7 @@
 		<div class="videopart cs-clear">
 			<div class="videopart-tit">
 				<div class="robbion-icon"></div>
-				<div class="videopart-tit-defi videopart-tit-defi1"></div>
+				<div class="videopart-tit-defi videopart-tit-defi<?php echo $topVideo->rank;?>"><?php echo $topVideo->title;?></div>
 			</div>
 			<!-- Video -->
 			<div class="videomod">
@@ -175,7 +175,7 @@
 					<?php
 						$videoCount = 0;
 						foreach($homeVideos as $index=>$video):
-							if($video->rank == 6) {continue;}
+							if($video->rank == 6 || $videoCount == 5) {continue;}
 							$videoCount++;
 
 					?>
@@ -191,15 +191,13 @@
 						</div>
 					<?php endforeach;?>
 					<?php
-						$boxCount = 5;
-						$leftCount = $boxCount - $videoCount;
+						if($videoCount < 5):
 					?>
-					<?php for($i = 0; $i < $leftCount; $i++):?>
 						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit<?php echo $boxCount - $leftCount + $i + 1 ;?>"></div>
+							<div class="videolist-item-tit videolist-item-tit0"></div>
 							<div class="videolist-boxnull">des défis de plus en plus fous...</div>
 						</div>
-					<?php endfor;?>
+					<?php endif;?>
 					<?php
 					$video6 = 0;
 					foreach($homeVideos as $index=>$video):
@@ -220,7 +218,10 @@
 					<?php if($video6 == 0):?>
 						<div class="videolist-item">
 							<div class="videolist-item-tit videolist-item-tit6"></div>
-							<div class="videolist-boxnull">des défis de plus en plus fous...</div>
+							<div class="videolist-boxnull">
+								<img src="./pic/whitehouse.jpg" />
+							</div>
+							<div class="videolist-txt">faire rire barack à UNE BLAGUE CARAMBAR</div>
 						</div>
 					<?php endif;?>
 					<div class="cs-clear"></div>
@@ -261,6 +262,7 @@
 		<!--  -->
 		<div class="share">
 			<div class="share-fb">
+<!--				<a href="javascript:void(0)" data-a="open_facebook" class="share-fbbtn"></a>-->
 				<a href="javascript:void(0)" id="facebook-login-link" class="share-fbbtn"></a>
 			</div>
 			<div class="share-t">
@@ -286,7 +288,7 @@
 		<div class="photit"></div>
 		<!--  -->
 		<div class="pholist cs-clear">
-
+			<div class="pholist-loading"></div>
 		</div>
 		<!-- line -->
 		<div class="line line3">
@@ -301,10 +303,10 @@
 		<div class="footer-inner">
 			jeu gratuit sans obligation d’achat du 25/03/2014 au 11/04/2014. à gagner 360 kits supporters collectors d’une valeur commerciale approximative de 12,50€. retrouvez l’ensemble des modalités en consultant le <a target="_blank" href="./pdf/reglement_glc.pdf">reglement complet du jeu</a>.
 			<div class="footer-links">
-				<a href="#">Vie privée</a> /
-				<a href="#">Cookies</a> /
+				<a href="./pdf/vie_privee_glc.pdf">Vie privée</a> /
+				<a href="./pdf/cookies_glc.pdf">Cookies</a> /
 				<a href="#">Mentions légales</a> /
-				<a href="#">Mentions sanitaires</a>
+				<a href="./pdf/mentions_sanitaires_glc.pdf">Mentions sanitaires</a>
 			</div>
 		</div>
 	</div>
@@ -374,7 +376,9 @@
 				<li class="damaged">La photo que vous avez téléchargé est corrompu</li>
 			</ul>
 			<div class="pop-ft-check" data-a="facebook_check">
-				<span>j'ai lu et j'accepte le règlement du jeu</span>
+				<div class="pop-ft-check-inner">
+					<span>j'ai lu et j'accepte le règlement du jeu</span>
+				</div>
 			</div>
 			<div class="pop-ft-icon"></div>
 			<div class="pop-ft-btn disabled" data-a="submit_facebook"></div>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+/***
+SolCheckBox
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2011年7月29日 07:12:59
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+-->
+
+<s:CheckBox
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:ui="zero.ui.*"
+	change="change()"
+>
+	<fx:Script>
+		<![CDATA[
+			import mx.core.IVisualElement;
+			
+			import zero.ui.Sol;
+			
+			public var sol:Sol;
+			public var sol_key:String;
+			private var defaultValues:Object;
+			
+			public var enabledElement:IVisualElement;
+			
+			public var onChange:Function;
+			
+			public function clear():void{
+				defaultValues=null;
+				sol=null;
+				onChange=null;
+			}
+			public function resetBySol(_sol:Sol,solParentDocument:*=null):void{
+				if(sol){
+				}else{
+					sol=_sol;
+					if(sol_key){
+					}else{
+						sol_key=this.id;
+						if(sol_key){
+						}else{
+							throw new Error("sol_key="+sol_key);
+						}
+						if(solParentDocument){
+						}else{
+							solParentDocument=this.parentDocument;
+						}
+						var parentDocument:*=this.parentDocument;
+						var parentDocumentDict:Dictionary=new Dictionary();
+						//页面上使用时貌似会循环指向同一个 parentDocument...
+						while(parentDocument&&parentDocument.id&&parentDocument!=solParentDocument){
+							if(parentDocumentDict[parentDocument]){
+								break;
+							}
+							parentDocumentDict[parentDocument]=true;
+							sol_key=parentDocument.id+"."+sol_key;
+							parentDocument=parentDocument.parentDocument;
+						}
+					}
+					
+					if(defaultValues){
+					}else{
+						defaultValues={selected:this.selected};
+					}
+				}
+				
+				var oldSelected:Boolean=this.selected;
+				
+				if(sol.xml.@currSettingName.toString()=="默认"){
+					this.selected=defaultValues.selected;
+				}else{
+					if(sol.getValue(sol_key) is Boolean){
+						this.selected=sol.getValue(sol_key);
+					}else{
+						this.selected=defaultValues.selected;
+					}
+				}
+				
+				sol.setValue(sol_key,this.selected);
+				
+				if(oldSelected==this.selected){
+				}else{
+					if(onChange==null){
+					}else{
+						onChange();
+					}
+				}
+			}
+			private function change():void{
+				sol.setValue(sol_key,this.selected);
+				if(onChange==null){
+				}else{
+					onChange();
+				}
+			}
+			
+			override public function set selected(value:Boolean):void{
+				super.selected=value;
+				if(sol){
+					sol.setValue(sol_key,this.selected);
+				}
+				if(enabledElement){
+					enabledElement["enabled"]=value;
+				}
+			}
+		]]>
+	</fx:Script>
+</s:CheckBox>

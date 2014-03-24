@@ -9,12 +9,8 @@
             <option value="0">None</option>
         </select>
     </div>
-    <div class="form-group"><label>Postion:</label>
-        <select class="form-control" ng-model="video.position" ng-init="video.position='2'">
-            <option value="2">Video Section</option>
-            <option value="1">Top</option>
-        </select>
-        <small>Which setion want to display</small>
+    <div class="form-group"><label>Show on the top:</label>
+        <div><input type="checkbox" ng-model="video.showtop" /> This video will show on the top.</div>
     </div>
     <button class="btn btn-primary btn-submit" ng-click="save(video)"
             ng-disabled="form.$invalid || isUnchanged(video)">SAVE</button>

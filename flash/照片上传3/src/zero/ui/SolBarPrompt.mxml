@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+/***
+SolBarPrompt
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2011年7月28日 14:03:15
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+-->
+
+<mx:TitleWindow 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	width="300" height="100"
+	close="close()"
+	showCloseButton="true"
+	title="保存配置"
+	xmlns:ui="zero.ui.*"
+>
+	<s:Group width="100%" height="100%">
+		<s:Label x="45" y="10" text="名称："/>
+		<mx:ComboBox x="85" y="5" rowCount="20" minWidth="0" width="170" id="cb" change="change()" editable="true"/>
+		<s:Button x="65" y="35" label="确定" click="ok()" id="btnOK"/>
+		<s:Button x="155" y="35" label="取消" click="close()"/>
+	</s:Group>
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.events.CloseEvent;
+			import mx.managers.PopUpManager;
+			
+			import zero.net.*;
+			import zero.ui.*;
+			
+			public static function show(_sol:Sol,container:Sprite,settingName:String,_onPrompt:Function):void{
+				(PopUpManager.createPopUp(
+					container,
+					SolBarPrompt,
+					true
+				) as SolBarPrompt).init(_sol,settingName,_onPrompt);
+			}
+			
+			public var sol:Sol;
+			private var onPrompt:Function;
+			
+			private function init(_sol:Sol,settingName:String,_onPrompt:Function):void{
+				sol=_sol;
+				switch(settingName){
+					case "默认":
+					case "当前":
+						settingName="";
+					break;
+				}
+				
+				var settingNameArr:Array=new Array();
+				for each(var settingXML:XML in sol.xml.setting){
+					switch(settingXML.@name.toString()){
+						case "默认":
+						case "当前":
+						break;
+						default:
+							settingNameArr.push(settingXML.@name.toString());
+						break;
+					}
+				}
+				
+				cb.dataProvider=settingNameArr;
+				if(settingNameArr.indexOf(settingName)>-1){
+					cb.selectedItem=settingName;
+					//trace("cb.selectedItem="+cb.selectedItem);
+				}else{
+					cb.selectedItem=null;
+					cb.text=settingName;
+					//trace("cb.text="+cb.text);
+				}
+				
+				onPrompt=_onPrompt;
+				
+				change();
+				
+				this.x=(stage.stageWidth-this.width)/2;
+				this.y=(stage.stageHeight-this.height)/2;
+				
+				//stage.focus=cb;
+				//trace("stage.focus="+stage.focus);
+			}
+			
+			private function change():void{
+				if(cb.text.replace(/^\s*|\s*$/g,"")){
+					btnOK.enabled=true;
+				}else{
+					btnOK.enabled=false;
+				}
+			}
+			
+			private function ok():void{
+				cb.text=cb.text.replace(/^\s*|\s*$/g,"");
+				switch(cb.text){
+					case "默认":
+					case "当前":
+						Alert.show("“默认”和“当前”已经被征用，请使用其它名字。");
+						return;
+					break;
+				}
+				
+				for each(var settingXML:XML in sol.xml.setting){
+					if(cb.text==settingXML.@name.toString()){
+						Alert.show("“"+cb.text+"”已存在，是否覆盖？","",Alert.YES|Alert.NO,null,confirmOK);
+						return;
+					}
+				}
+				okk();
+			}
+			private function confirmOK(event:CloseEvent):void{
+				if(event.detail==Alert.YES){
+					okk();
+				}
+			}
+			private function okk():void{
+				if(onPrompt==null){
+				}else{
+					onPrompt(cb.text);
+				}
+				close();
+			}
+			private function close():void{
+				
+				//stage.focus=null;
+				
+				sol=null;
+				onPrompt=null;
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</fx:Script>
+</mx:TitleWindow>

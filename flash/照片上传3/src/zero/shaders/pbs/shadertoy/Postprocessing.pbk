@@ -1,0 +1,69 @@
+<languageVersion: 1.0;>
+
+/***
+Postprocessing
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月07日 00:05:55
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Postprocessing
+<
+	namespace:"zero.shaders.shadertoy";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"Postprocessing";
+>
+{
+	
+	parameter float alpha;
+	parameter float time;
+	parameter float2 srcSize
+	<
+		description:"输入图像的宽高";
+		parameterType:"inputSize";
+		inputSizeName:"src";
+	>;
+	
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			
+			float2 q =outCoord()/srcSize;
+			float2 uv =0.5+((q-0.5)*((0.9 + 0.1*sin(0.2*time))));
+			
+			pixel4 oricol = sampleNearest(src,float2(mod(q.x,1.0)*(srcSize.x-1.0),mod(q.y,1.0)*(srcSize.y-1.0)));
+			uv.y=1.0-uv.y;
+			dst=pixel4(
+				sampleNearest(src,float2(mod(uv.x+0.003,1.0)*(srcSize.x-1.0),mod(-uv.y,1.0)*(srcSize.y-1.0))).r,
+				sampleNearest(src,float2(mod(uv.x+0.000,1.0)*(srcSize.x-1.0),mod(-uv.y,1.0)*(srcSize.y-1.0))).g,
+				sampleNearest(src,float2(mod(uv.x-0.003,1.0)*(srcSize.x-1.0),mod(-uv.y,1.0)*(srcSize.y-1.0))).b,
+				1
+			);
+			uv.y=1.0-uv.y;
+			
+			dst = clamp((dst*0.5)+(((0.5*dst)*dst)*1.2),0.0,1.0);
+			
+			dst =dst*(0.5 + 0.5*16.0*uv.x*uv.y*(1.0-uv.x)*(1.0-uv.y));
+			
+			dst =dst*pixel4(0.8,1.0,0.7,1.0);
+			
+			dst =dst*(0.9+0.1*sin(10.0*time+uv.y*1000.0));
+			
+			dst =dst*(0.97+0.03*sin(110.0*time));
+			
+			float comp = smoothStep( 0.2, 0.7, sin(time) );
+			dst = mix( dst, oricol, clamp(-2.0+2.0*q.x+3.0*comp,0.0,1.0) );
+			
+			dst.a=alpha;
+			
+		}else{
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

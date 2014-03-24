@@ -23,6 +23,12 @@ WallAdminController
 
     .controller('VideoCtrCreate', function($scope, $http, $modal, $log, $routeParams,VideoService, $location, ASSET_FOLDER) {
         $scope.save = function(video) {
+            if(video.showtop) {
+                video.position = 1;
+            }
+            else {
+                video.position = 2;
+            }
             VideoService.post(video, function(data){
 				$location.path("video");
             });
@@ -32,11 +38,24 @@ WallAdminController
     .controller('VideoCtrEdit', function($scope, $http, $modal, $log, $routeParams,VideoService, $location,  ASSET_FOLDER) {
 		VideoService.getById($routeParams.vid, function(data){
 			$scope.video = data.data;
+            if($scope.video.position == 1) {
+                $scope.video.showtop = true;
+            }
 		});
 
 		$scope.save = function(video) {
-            video.del = 0;
-			VideoService.update(video, function(data){
+            var newVideo = {};
+            newVideo.vid = video.vid;
+            newVideo.title = video.title;
+            newVideo.ribbon = video.ribbon;
+            newVideo.del = 0;
+            if(video.showtop) {
+                newVideo.position = 1;
+            }
+            else {
+                newVideo.position = 2;
+            }
+			VideoService.update(newVideo, function(data){
                 $location.path("video");
 			});
 		}
@@ -77,8 +96,8 @@ WallAdminController
 			data.rank = video.rank.title;
 			data.del = 0;
 			data.vid = video.vid;
-			VideoService.update(data, function(data){
-				video.rank = $scope.videoranks[video.rank-1];
+			VideoService.update(data, function(){
+				video.rank = $scope.videoranks[data.rank-1];
 			});
 		}
 

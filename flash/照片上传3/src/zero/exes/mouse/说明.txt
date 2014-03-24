@@ -1,0 +1,30 @@
+vbs来调用鼠标(2011-11-18 14:19:49)转载标签： 杂谈  
+网上找了很久没有找到VBS调用鼠标的方法，最后找到了某位大大写得EXE，通过这个EXE，vbs就能调用VBS了
+
+ EXE我上传到爱问了，下载地址：
+
+http://ishare.iask.sina.com.cn/f/21088424.html
+
+调用方法很简单，只要调用CMD就可以了，里面有付说明，用这个方法，我曾写了个脚本，帮朋友攒FLASH游戏的分数，挺好用了。
+
+下面是说明里调用的方法：
+
+移动鼠标到桌面坐标200,50的vbs命令如下：
+
+CreateObject("WScript.Shell").Run "mouse.exe m,200,50"
+
+点击鼠标左键的vbs命令如下：
+
+CreateObject("WScript.Shell").Run "mouse.exe l"
+
+点击鼠标右键的vbs命令如下：
+
+CreateObject("WScript.Shell").Run "mouse.exe r"
+
+双击鼠标左键的vbs命令如下：
+
+CreateObject("WScript.Shell").Run "mouse.exe d"
+
+ 
+
+如果mouse.exe和VBS不在同一目录下，最好打全路径。

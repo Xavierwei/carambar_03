@@ -1,0 +1,50 @@
+<languageVersion: 1.0;>
+
+/***
+Metablob
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月07日 01:23:11
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Metablob
+<
+	namespace:"zero.shaders.shadertoy";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"Metablob";
+>
+{
+	
+	parameter float alpha;
+	parameter float time;
+	parameter float2 srcSize
+	<
+		description:"输入图像的宽高";
+		parameterType:"inputSize";
+		inputSizeName:"src";
+	>;
+	
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			float2 move1=float2(cos(time)*0.4,sin(time*1.5)*0.4);
+			float2 move2=float2(cos(time*2.0)*0.4,sin(time*3.0)*0.4);
+			float2 p =(2.0*(outCoord()/srcSize))-1.0;
+			float r1 =(dot(p-move1,p-move1))*8.0;
+			float r2 =(dot(p+move2,p+move2))*16.0;
+			float metaball =(1.0/r1+1.0/r2);
+			float col = pow(metaball,8.0);
+			dst=pixel4(col,col,col,alpha);
+			
+		}else{
+			dst=sampleNearest(src,float2(0,0));//- -
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

@@ -21,8 +21,14 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
 			if($(this).val().length == 0) {
 				$('.share-tbtn').addClass('disabled');
 			}
-			var content = $('#twitter-content').val() + ' %23TESTHASHTAG';
+			var content = $('#twitter-content').val() + ' %23GOODLUCKCARAMBAR';
 			$('.share-t .share-tbtn').attr('href', 'https://twitter.com/intent/tweet?text='+content);
+        })
+        .delegate('.share-tbtn', 'click', function(){
+            transfoWebo(86);
+        })
+        .delegate('.share-fbbtn', 'click', function(){
+            transfoWebo(87);
         })
         .delegate('.sec4-right-txt', 'click', function(){
             if(!$(this).hasClass('opened')) {
@@ -135,6 +141,12 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
 
     LP.action('open_facebook', function(data) {
         if($('body').hasClass('ie8') || $('body').hasClass('ie9')) {
+            if(!data) {
+                data = {};
+            }
+            data.oldie = true;
+        }
+        if(getQueryString('ie')) {
             data.oldie = true;
         }
         LP.compile( 'facebook-post-template' , data , function( html ){
@@ -214,6 +226,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
         if($(this).hasClass('indicating')) return;
         if($.cookie('praise_auth')) return;
         $(this).addClass('click');
+        transfoWebo(82);
         api.ajax('indicate', {cid:data.cid}, function( result ){
             var prevNum = $.trim($('.indicator-count-num').html());
             var offset = result.data - prevNum;
@@ -232,6 +245,17 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
 
         $('.vote-btn').not(this).addClass('disabled');
         $(this).addClass('voted');
+        switch(data.cid) {
+            case 1:
+                transfoWebo(83);
+                break;
+            case 2:
+                transfoWebo(84);
+                break;
+            case 3:
+                transfoWebo(85);
+                break;
+        }
 
 		api.ajax('vote', {cid:data.cid}, function( result ){
 			$(this).addClass('voting');
@@ -325,6 +349,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
         if($(this).hasClass('submitting')) return;
         if($('.facebook-post-load').is(':visible')) return;
         $(this).addClass('submitting');
+        transfoWebo(88);
         var checkbox = $('.pop-ft-check').hasClass('checked');
         var wordCount = $('#facebook-content').val().length;
         if(!checkbox) {
@@ -337,7 +362,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
             return;
         }
         var img = $('#facebook-img').val();
-        var content = $('#facebook-content').val() + ' #TESTHASHTAG';
+        var content = $('#facebook-content').val() + ' #GOODLUCKCARAMBAR';
         if(img) {
             var trsdata = transformMgr.result();
             delete trsdata.src;
@@ -366,7 +391,9 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
      * Flash Facebook
      */
     LP.action('flash_submit_facebook', function(data){
+        if($('.pop-ft-submitting').is(':visible')) return;
         $('.pop-ft-submitting').fadeIn();
+        transfoWebo(88);
         api.ajax('postFacebook', {content: data.content, img: data.img}, function( result ){
             $('.pop-ft-submitting').fadeOut();
             if(result.success) {
@@ -461,6 +488,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
 			$.each(result.data,function(index,node){
 				node.thumbnail = node.file.replace('.jpg','_126_126.jpg');
 				LP.compile( 'photowall-item-template' , node , function( html ){
+                    $('.pholist-loading').fadeOut();
 					$('.pholist').append(html);
 				});
 			});
@@ -517,6 +545,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
 				$('.loading-line').css({'width':per+'%'});
 			},
 			onComplete : function(){
+                transfoWebo(81);
 				$('.loading-overlay').fadeOut(function(){
 					$(this).remove();
 				});
@@ -712,6 +741,12 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
             array[j] = temp;
         }
         return array;
+    }
+
+    var getQueryString = function(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
     }
 
     var invititionTips = [

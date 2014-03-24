@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/***
+AdvanceTree
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；已婚（单身美女们没机会了~~）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2013年07月29日 17:35:19
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+-->
+
+<mx:Tree
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:local="*"
+	change="changeDelay()" itemOpen="changeDelay()" itemClose="changeDelay()" scroll="changeDelay()"
+>
+	
+	<fx:Script>
+		<![CDATA[
+			
+			private var timeoutId:int;
+			private var dataField:String;
+			private var onChangeStatus:Function;
+			private var onChangeData:Function;
+			
+			private var currData:String;
+			
+			public function init(
+				_xml:XML,
+				_labelField:String="@name",
+				_dataField:String="@src",
+				_openDatas:Object=null,
+				_verticalScrollPosition:int=0,
+				_currData:String="",
+				_onChangeStatus:Function=null,
+				_onChangeData:Function=null
+			):void{
+				this.dataProvider=_xml;
+				this.labelField=_labelField;
+				dataField=_dataField;
+				currData=_currData;
+				onChangeStatus=_onChangeStatus;
+				onChangeData=_onChangeData;
+				this.validateNow();
+				
+				if(_openDatas){
+					var seed:Array=[this.dataProvider.source[0]];
+					while(seed.length){
+						var newSeed:Array=new Array();
+						for each(var item:XML in seed){
+							if(_openDatas[item[dataField].toString()]){
+								item.@open=true;
+								this.expandItem(item,true);
+							}
+							if(currData){
+								if(item[dataField].toString()==currData){
+									var _selectedItem:XML=item;
+								}
+							}
+							for each(var subItem:XML in item.children()){
+								newSeed.push(subItem);
+							}
+						}
+						seed=newSeed;
+					}
+				}
+				
+				if(_selectedItem){
+					this.selectedItem=_selectedItem;
+				}
+				
+				if(_verticalScrollPosition>-1){
+					this.verticalScrollPosition=_verticalScrollPosition;
+				}
+				
+			}
+			
+			private function changeDelay():void{
+				clearTimeout(timeoutId);
+				timeoutId=setTimeout(change,50);
+			}
+			private function change():void{
+				clearTimeout(timeoutId);
+				
+				//遍历标记所有节点为关闭
+				var seed:Array=[this.dataProvider.source[0]];
+				while(seed.length){
+					var newSeed:Array=new Array();
+					for each(var item:XML in seed){
+						item.@open=false;
+						for each(var subItem:XML in item.children()){
+							newSeed.push(subItem);
+						}
+					}
+					seed=newSeed;
+				}
+				//
+				
+				//遍历打开的节点，标记为打开
+				var openDatas:Object=new Object();
+				for each(item in this.openItems){
+					item.@open=true;
+					openDatas[item[dataField].toString()]=true;
+				}
+				//
+				
+				if(onChangeStatus==null){
+				}else{
+					onChangeStatus(openDatas,this.verticalScrollPosition);
+				}
+				
+				if(this.selectedItem){
+					if(currData==this.selectedItem[dataField].toString()){
+					}else{
+						currData=this.selectedItem[dataField].toString();
+						if(onChangeData==null){
+						}else{
+							onChangeData(currData);
+						}
+					}
+				}
+				
+			}
+			
+		]]>
+	</fx:Script>
+	
+</mx:Tree>

@@ -1,0 +1,50 @@
+<languageVersion: 1.0;>
+
+/***
+Baiyechuang
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月06日 00:31:54
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Baiyechuang
+<
+	namespace:"zero.shaders.classic";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"百页窗";
+>
+{
+	
+	parameter float alpha;
+	parameter float focalLength;
+	parameter float2 center;
+	parameter float dimension;
+	parameter float angle_c;
+	parameter float angle_s;
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(angle_c==0.0){
+			dst=float4(0.0,0.0,0.0,0.0);
+		}else{
+			float2 oc=outCoord();
+			float centerX=center.x+(floor((oc.x-center.x)/dimension)+0.5)*dimension;
+			float x=oc.x-centerX;
+			float y=oc.y-center.y;
+			x=x*focalLength/(focalLength+x*angle_s/angle_c);
+			y=y*(focalLength+(x*angle_s/angle_c))/focalLength;
+			x/=angle_c;
+			if(x<-dimension*0.5||x>dimension*0.5){
+				dst=float4(0.0,0.0,0.0,0.0);
+			}else{
+				dst=sampleNearest(src,float2(centerX+x,center.y+y));
+				dst.a*=alpha;
+			}
+		}
+	}
+}

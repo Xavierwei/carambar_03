@@ -36,6 +36,32 @@
 <!--[if (gte IE 11)|(gt IEMobile 7)]><!-->
 <body>
 <!--<![endif]-->
+
+<!-- CONVERSION TAG -->
+<script type="text/javascript" src="http://cstatic.weborama.fr/js/advertiserv2/adperf_conversion.js"></script>
+<script type="text/javascript">
+	function transfoWebo(page_id){
+		var adperftrackobj = {
+			client : ""      // <== set your client id here
+			,amount : "0.0"   // <== set the total price here
+			,invoice_id : ""  // <== set your invoice id here
+			,quantity : 0     // <== set the number of items purchased
+			,is_client : 0    // <== set to 1 if the client is known
+			,optional_parameters : {
+				"N1" : "0" // <== to set
+				,"N2" : "0" // <== to set
+// to set free parameter follow this pattern :
+//        ,"customer_name" : "John"
+			}
+			/* don't edit below this point */
+			,fullhost : 'kraftmondelez.solution.weborama.fr'
+			,site : 460
+			,conversion_page : page_id
+		}
+		try{adperfTracker.track( adperftrackobj );}catch(err){}
+	}
+</script>
+
 <?php echo $content;?>
 
 <script type="text/javascript" src="./js/plugin/modernizr-2.5.3.min.js"></script>

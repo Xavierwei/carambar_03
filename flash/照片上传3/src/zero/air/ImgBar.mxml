@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/***
+ImgBar
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；已婚（单身美女们没机会了~~）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2013年07月26日 12:02:15
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+-->
+
+<air:FileBar
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:local="*"
+	xmlns:air="zero.air.*"
+>
+	
+	<fx:Script>
+		<![CDATA[
+			
+			import zero.FileTypes;
+			import zero.codec.BMPEncoder;
+			import zero.codec.PNGEncoder;
+			
+			/**
+			 * @param _url 路径
+			 * @param _onChange 当变化时
+			 * @param _description 描述，比如："图片文件"，默认："图片文件"
+			 * @param _extension 扩展名，比如："*.jpg;*.png;*.gif;*.bmp"，默认："*.jpg;*.png;*.gif;*.bmp"
+			 * @param _dragDropClient 拖放对象，默认为this
+			 * @return 
+			 * 
+			 */
+			override public function init(
+				_url:String=null,
+				_onChange:Function=null,
+				_description:String=null,
+				_extension:String=null,
+				_dragDropClient:InteractiveObject=null
+			):void{
+				super.init(
+					_url,
+					_onChange,
+					_description||"图片文件",
+					_extension||"*.jpg;*.png;*.gif;*.bmp",
+					_dragDropClient
+				);
+			}
+			
+			public function getImgData():ByteArray{
+				var data:ByteArray=getData();
+				if(data){
+					switch(FileTypes.getType(data,file.name)){
+						case FileTypes.JPG:
+						case FileTypes.PNG:
+						case FileTypes.GIF:
+							return data;
+						break;
+						case FileTypes.BMP:
+							return PNGEncoder.encode(BMPEncoder.decode(data));
+						break;
+						default:
+							//
+						break;
+					}
+				}
+				return null;
+			}
+			
+		]]>
+	</fx:Script>
+	
+</air:FileBar>

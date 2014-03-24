@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+/***
+SolBar
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2011年7月28日 14:28:01
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+-->
+
+<s:Group
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:ui="zero.ui.*"
+>
+	<s:Label x="5" y="5" id="txt"/>
+	<mx:ComboBox id="cb" x="45" rowCount="20" minWidth="0" width="170" change="change()"/>
+	<mx:Button id="btn" x="220" click="save()"/>
+	<fx:Script>
+		<![CDATA[
+			import mx.core.IVisualElementContainer;
+			
+			import zero.ui.*;
+			
+			public var sol:Sol;
+			public var title:String="配置";
+			public var btnLabel:String="保存配置";
+			
+			public var onChangeSetting:Function;
+			
+			public function init(nameOrSoXMLFile:*=null,_version:String="",_onChangeSetting:Function=null,onChangeValue:Function=null):void{
+				
+				onChangeSetting=_onChangeSetting;
+				
+				//trace("this.parentDocument="+this.parentDocument);
+				
+				txt.text=title+"：";
+				btn.label=btnLabel;
+				
+				if(nameOrSoXMLFile){
+					sol=new Sol(nameOrSoXMLFile,_version,sol_changeSetting,onChangeValue);
+				}else{
+					
+					var FileClass:Class;
+					try{
+						FileClass=getDefinitionByName("flash.filesystem.File") as Class;
+					}catch(e:Error){
+						FileClass=null;
+					}
+				
+					if(FileClass){
+						sol=new Sol(new FileClass(FileClass.applicationDirectory.nativePath+"/sols/sol.xml"),_version,sol_changeSetting,onChangeValue);
+					}else{
+						var pojName:String;
+						var parent:*=this.parent;
+						while(parent){
+							var execResult:Array=/_(\w+)_mx_managers_SystemManager/.exec(parent.toString());
+							if(execResult){
+								pojName=execResult[1];
+								break;
+							}
+							parent=parent.parent;
+						}
+						if(pojName){
+							//trace("pojName="+pojName);
+						}else{
+							throw new Error("pojName="+pojName);
+						}
+						
+						sol=new Sol(pojName,_version,sol_changeSetting,onChangeValue);
+					}
+				}
+				
+				updateCb();
+				
+				sol.enabledCopyToCurr=false;//- -
+				resetSolUIs(this.parentDocument);
+				sol.enabledCopyToCurr=true;//- -
+			}
+			
+			public function clear():void{
+				
+				sol.clear();
+				sol=null;
+				
+				onChangeSetting=null;
+			}
+			
+			private function sol_changeSetting(settingName:String):void{
+				updateCb();
+				if(onChangeSetting==null){
+				}else{
+					onChangeSetting(settingName);
+				}
+			}
+			
+			private function change():void{
+				sol.changeSetting(cb.selectedItem.toString());
+				sol.enabledCopyToCurr=false;//- -
+				resetSolUIs(this.parentDocument);
+				sol.enabledCopyToCurr=true;//- -
+			}
+			
+			private function save():void{
+				SolBarPrompt.show(sol,this,sol.xml.@currSettingName.toString(),confirmSave);
+			}
+			
+			private function confirmSave(settingName:String):void{
+				sol.addSetting(settingName);
+				updateCb();
+			}
+			private function updateCb():void{
+				var settingNameArr:Array=["默认"];
+				for each(var settingXML:XML in sol.xml.setting){
+					settingNameArr.push(settingXML.@name.toString());
+				}
+				cb.dataProvider=settingNameArr;
+				cb.selectedItem=sol.xml.@currSettingName.toString();
+			}
+			
+			public function resetSolUIs(ui:*):void{
+				if(ui.hasOwnProperty("resetBySol")){
+					ui.resetBySol(sol,this.parentDocument);
+				}
+				if(ui is IVisualElementContainer){
+					var L:int=ui.numElements;
+					var i:int;
+					for(i=0;i<L;i++){
+						//如果此层次已经有 SolBar 管理，则跳过
+						if(ui.getElementAt(i) is SolBar){
+							if(ui.getElementAt(i)==this){
+							}else{
+								return;
+							}
+						}
+					}
+					for(i=0;i<L;i++){
+						resetSolUIs(ui.getElementAt(i));
+					}
+				}
+			}
+		]]>
+	</fx:Script>
+</s:Group>

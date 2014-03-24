@@ -156,12 +156,12 @@ class NodeController extends Controller {
 
 			if (isset($status)) {
 				$node->status = $status;
-				if($status == 1) {
-					if($node->email) {
-						$emailInfo = Yii::app()->params['email'];
-						@Drtool::sendEmail($emailInfo['sendName'], $emailInfo['titleApprove'], $emailInfo['contentApprove'], $node->email);
-					}
-				}
+//				if($status == 1) {
+//					if($node->email) {
+//						$emailInfo = Yii::app()->params['email'];
+//						@Drtool::sendEmail($emailInfo['sendName'], $emailInfo['titleApprove'], $emailInfo['contentApprove'], $node->email);
+//					}
+//				}
 			}
 
 			if ($node->validate()) {
@@ -209,10 +209,10 @@ class NodeController extends Controller {
 				$ret = $node->updateByPk($node->nid, array("reward" => $node->reward));
 				$this->cleanCache("node_")
 					->cleanCache("comment_");
-				if($node->reward == 1 && $node->email) {
-					$emailInfo = Yii::app()->params['email'];
-					@Drtool::sendEmail($emailInfo['sendName'], $emailInfo['titleAward'], $emailInfo['contentAward'], $node->email);
-				}
+//				if($node->reward == 1 && $node->email) {
+//					$emailInfo = Yii::app()->params['email'];
+//					@Drtool::sendEmail($emailInfo['sendName'], $emailInfo['titleAward'], $emailInfo['contentAward'], $node->email);
+//				}
 				$this->responseJSON($node->attributes, "success");
 			}
 			else {
@@ -320,7 +320,7 @@ class NodeController extends Controller {
 		}
 
 		if (!$pagenum) {
-			$pagenum = 10;
+			$pagenum = 20;
 		}
 
 

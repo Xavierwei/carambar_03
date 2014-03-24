@@ -1,0 +1,329 @@
+a:2:{i:0;a:2:{i:0;s:13434:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+	<meta name="viewport" content="width=640, minimum-scale=0.5, maximum-scale=0.5, target-densityDpi=290,user-scalable=no" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
+	<title>Good Luck Carambar - Les défis</title>
+	<meta name="description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission ! " />
+	<link href="./css/style.css" rel="stylesheet" type="text/css" />
+	<!--[if IE 8]>
+	<link href="css/ie8.css" rel="stylesheet" type="text/css" />
+	<!--<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-49226115-1', 'goodluckcarambar.com');
+		ga('send', 'pageview');
+
+	</script>
+</head>
+<!--[if IE 6]>
+<body class="ie6"><![endif]-->
+<!--[if IE 7]>
+<body class="ie7"><![endif]-->
+<!--[if IE 8]>
+<body class="ie8"><![endif]-->
+<!--[if IE 9]>
+<body class="ie9"><![endif]-->
+<!--[if IE 10]>
+<body class="ie10"><![endif]-->
+<!--[if (gte IE 11)|(gt IEMobile 7)]><!-->
+<body>
+<!--<![endif]-->
+
+<!-- CONVERSION TAG -->
+<script type="text/javascript" src="http://cstatic.weborama.fr/js/advertiserv2/adperf_conversion.js"></script>
+<script type="text/javascript">
+	function transfoWebo(page_id){
+		var adperftrackobj = {
+			client : ""      // <== set your client id here
+			,amount : "0.0"   // <== set the total price here
+			,invoice_id : ""  // <== set your invoice id here
+			,quantity : 0     // <== set the number of items purchased
+			,is_client : 0    // <== set to 1 if the client is known
+			,optional_parameters : {
+				"N1" : "0" // <== to set
+				,"N2" : "0" // <== to set
+// to set free parameter follow this pattern :
+//        ,"customer_name" : "John"
+			}
+			/* don't edit below this point */
+			,fullhost : 'kraftmondelez.solution.weborama.fr'
+			,site : 460
+			,conversion_page : page_id
+		}
+		try{adperfTracker.track( adperftrackobj );}catch(err){}
+	}
+</script>
+
+<div class="loading-overlay">
+	<div class="loading-logo"><img src="images/loading_logo.png" /></div>
+</div>
+<div class="header"
+     data-style="margin-top:-200px" data-animate="margin-top:0" data-delay="0" data-time="500" data-easing="easeOutQuart"
+     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
+	<div class="hdcontent">
+		<a class="nav1 nav1on" href="./"></a>
+		<a class="nav2" href="./photowall.php"></a>
+	</div>
+</div>
+<!--  -->
+<div class="page phase1">
+	<!-- #Presentation Block -->
+	<div class="presentation">
+					<div class="skyline" style="background-position:center 90px" data-0="background-position:center 90px;" data-800="background-position:center -50px;"></div>
+						<div class="blue-road"
+		     data-style="opacity:0;" data-animate="opacity:1;" data-delay="0" data-time="800"
+		     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,60px,0);"></div>
+		<div class="presentation-box">
+			<div class="carambar-man" data-style="left:-1000px" data-animate="left:85px" data-delay="0" data-time="800" data-easing="easeOutQuart"
+				 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,60px,0);"></div>
+											<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500"
+					 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,30px,0);">
+					<div class="tips-content"></div>
+					<div class="tips-video">
+						<img src=".//uploads/2014/3/20/video14_224_115.jpg" />
+						<a class="video-play show-desktop" href="javascript:void(0);" data-a="open_video" data-d="mid=A9OuCxM56bk"></a>
+						<a class="video-play show-mobile" href="https://www.youtube.com/watch?v=A9OuCxM56bk" target="_blank"></a>
+					</div>
+				</div>
+													<div class="indicator-count-wrap"
+			     data-style="opacity:0;" data-animate="opacity:1;" data-delay="1000" data-time="500"
+			     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
+				<div class="indicator-title">Nombre de soutiens récoltés</div>
+				<div class="indicator-count"></div>
+				<div class="indicator-count-num"></div>
+				<div class="indicator-hashtag">#GOODLUCKCARAMBAR</div>
+				<div class="indicator-btn" data-a="indicate"></div>
+			</div>
+		</div>
+				
+				<div class="goto-support-bg">
+			<a href="javascript:;" data-a="goto_support" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
+		</div>
+			</div>
+	<!-- /Presentation Block -->
+	<!-- #Challenge Block -->
+	<div class="challenge_bg">
+		<div class="map_bg"
+		     data-0="transform:translate3d(0,0px,0);" data-1500="transform:translate3d(0,-400px,0);"></div>
+	</div>
+		<div class="challenge">
+		<div class="challenge-title" data-style="opacity:0;" data-animate="opacity:1;" data-delay="200" data-time="800"></div>
+		<div class="challenge-inner" data-646="transform:translate3d(0,0px,0);" data-1200="transform:translate3d(0,100px,0);">
+			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="100" data-time="800">
+				<div class="challenge-img">
+					<img src="pic/challenge1.jpg" />
+				</div>
+				<div class="vote-btn vote-btn1" data-a="vote" data-d="cid=1">DEFI No1</div>
+			</div>
+			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="200" data-time="800">
+				<div class="challenge-img">
+					<img src="pic/challenge2.jpg" />
+				</div>
+				<div class="vote-btn vote-btn2" data-a="vote" data-d="cid=2">DEFI No2</div>
+			</div>
+			<div class="challenge-item" data-style="opacity:0;" data-animate="opacity:1;" data-delay="300" data-time="800">
+				<div class="challenge-img">
+					<img src="pic/challenge3.jpg" />
+				</div>
+				<div class="vote-btn vote-btn3" data-a="vote" data-d="cid=3">DEFI No3</div>
+			</div>
+		</div>
+		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
+	</div>
+		
+	<!-- /Challenge Block -->
+
+	<div class="yellow-wrap">
+				<!-- line -->
+		<div class="line line-p1">
+			<div class="line-com-p1"></div>
+		</div>
+				
+				<!--  -->
+		<div class="support-carambar-wrap">
+			<div id="support-carambar" class="img">
+				<div class="img1"></div>
+				<div class="img2"></div>
+				<div class="img3"></div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="share">
+			<div class="share-fb">
+<!--				<a href="javascript:void(0)" data-a="open_facebook" class="share-fbbtn"></a>-->
+				<a href="javascript:void(0)" id="facebook-login-link" class="share-fbbtn"></a>
+			</div>
+			<div class="share-t">
+				<textarea class="share-txt" id="twitter-content"></textarea>
+				<p class="share-t-num" id="twitter-words-limit"><span>122</span>/140</p>
+				<a target="_blank" href="javascript:void(0)" class="share-tbtn disabled" data-a="share_twitter"></a>
+
+			</div>
+			<div class="share-i cs-clear">
+				<a target="_blank" href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=fr" class="share-iandroid"></a>
+				<a target="_blank" href="https://itunes.apple.com/fr/app/instagram/id389801252?mt=8" class="share-iios"></a>
+			</div>
+		</div>
+		<!--  -->
+		<div class="tshirttit"></div>
+		<!--  -->
+		<div class="tshirt">
+			<div class="tshirt1"></div>
+			<div class="tshirt2"></div>
+		</div>
+		<!--  -->
+				<div class="photit"></div>
+		<!--  -->
+		<div class="pholist cs-clear">
+			<div class="pholist-loading"></div>
+		</div>
+		<!-- line -->
+		<div class="line line3">
+			<a href="photowall.php" class="line-com3"></a>
+		</div>
+		<!--  -->
+	</div>
+
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer-inner">
+			jeu gratuit sans obligation d’achat du 25/03/2014 au 11/04/2014. à gagner 360 kits supporters collectors d’une valeur commerciale approximative de 12,50€. retrouvez l’ensemble des modalités en consultant le <a target="_blank" href="./pdf/reglement_glc.pdf">reglement complet du jeu</a>.
+			<div class="footer-links">
+				<a href="./pdf/vie_privee_glc.pdf">Vie privée</a> /
+				<a href="./pdf/cookies_glc.pdf">Cookies</a> /
+				<a href="#">Mentions légales</a> /
+				<a href="./pdf/mentions_sanitaires_glc.pdf">Mentions sanitaires</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="overlay" data-a="close_popup"></div>
+
+
+<!-- Templates -->
+<!-- #youtube-player-tpl -->
+<script type="text/tpl" id="youtube-player-template">
+	<div class="pop video-popup" data-a="close_popup">
+		<div class="popup-close"></div>
+		<iframe width="825" height="640" src="//www.youtube.com/embed/{{mid}}?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+</script>
+<!-- /youtube-player-tpl -->
+
+<!-- #facebook-post-tpl -->
+<script type="text/tpl" id="facebook-post-template">
+	<div class="pop pop-fb">
+		<div class="pop-close" data-a="close_popup"></div>
+		<div class="facebook-post-form">
+			{{#if oldie}}
+			<div class="flash_facebook_uploader">
+				<div class="pop-fttit">PUBLIER VOTRE SOUTIEN avec le <span>#goodluckcarambar</span></div>
+				<object id="flash_fb" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="820" height="366">
+					<param name="allowScriptAccess" value="always"/>
+					<param name="movie" value="flash/main.swf"/>
+					<param name="quality" value="high"/>
+					<param name="wmode" value="transparent"/>
+					<param name="flashVars" value="xml=flash/xml/config.xml"/>
+					<embed name="flash" src="flash/main.swf" quality="high" wmode="transparent" flashVars="xml=flash/xml/config.xml" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="820" height="366" allowScriptAccess="always"></embed>
+				</object>
+				<div class="pop-ft-submitting">Submitting</div>
+			</div>
+			{{else}}
+			<div class="pop-fttit">PUBLIER VOTRE SOUTIEN avec le <span>#goodluckcarambar</span></div>
+			<div class="pop-ft-form cs-clear">
+				<div class="facebook-post-img-wrap">
+					<div class="facebook-post-img" id="fileupload">
+						<input type="file" accept="image/*" name="file">
+					</div>
+
+					<div class="facebook-post-load">
+						<div class="popload-percent"><p></p></div>
+						<div class="popload-text">Téléchargement en cours…</div>
+					</div>
+
+					<div class="poptxt-pic">
+						<a class="pop-zoomout-btn" data-a="pop-zoomout-btn" href="javascript:void(0)">Zoom In</a>
+						<a class="pop-zoomin-btn" data-a="pop-zoomin-btn" href="javascript:void(0)">Zoom Out</a>
+						<div class="poptxt-pic-inner">
+							<img style="pointer-events:none" />
+						</div>
+					</div>
+				</div>
+				<div class="pop-ft-text">
+					<div class="pop-ft-ftit">votre commentaire</div>
+					<input id="facebook-img" type="hidden" />
+					<textarea id="facebook-content"></textarea>
+				</div>
+			</div>
+			<ul class="step1-tips">
+				<li>Votre photo doit être au format JPG, PNG ou GIF</li>
+				<li>La taille de votre fichier ne doit pas dépasser 5MB</li>
+				<li class="damaged">La photo que vous avez téléchargé est corrompu</li>
+			</ul>
+			<div class="pop-ft-check" data-a="facebook_check">
+				<div class="pop-ft-check-inner">
+					<span>j'ai lu et j'accepte le règlement du jeu</span>
+				</div>
+			</div>
+			<div class="pop-ft-icon"></div>
+			<div class="pop-ft-btn disabled" data-a="submit_facebook"></div>
+			<div class="pop-ft-submitting">Submitting</div>
+			{{/if}}
+		</div>
+
+		<div class="facebook-post-success">
+			Soumis avec succès, merci！
+		</div>
+	</div>
+</script>
+<!-- #facebook-post-tpl -->
+
+<!-- #photowall-item-tpl -->
+<script type="text/tpl" id="photowall-item-template">
+	<a href="photowall.php#/nid/{{nid}}" class="phoitem">
+		<img src="./{{thumbnail}}">
+	</a>
+</script>
+<!-- /youtube-player-tpl -->
+
+<!-- #send-invitation-tpl -->
+<script type="text/tpl" id="send-invitation-template">
+	<div class="pop pop-bar">
+		<div class="pop-close" data-a="close_popup"></div>
+		<div class="pop-bar-txt"></div>
+		<input id="invitation_answer" type="text" class="pop-bar-input">
+		<div class="pop-bar-btn" data-a="send_invitation"></div>
+		<div class="pop-bar-tips">
+			<p></p>
+		</div>
+	</div>
+</script>
+<!-- #send-invitation-tpl -->
+
+<!-- #send-invitation-tpl -->
+<script type="text/tpl" id="videotxt-item-template">
+	<div class="videotxt-item">
+		<p>{{description}}</p>
+		<h3>#GOODLUCKCARAMBAR</h3>
+		<span>@{{screen_name}}</span>
+	</div>
+</script>
+<!-- #send-invitation-tpl -->
+
+<script type="text/javascript" src="./js/plugin/modernizr-2.5.3.min.js"></script>
+<script type="text/javascript" src="./js/sea/sea-debug.js" data-config="../config.js"></script>
+<script type="text/javascript" src="./js/sea/plugin-shim.js"></script>
+<script type="text/javascript" src="./js/lp.core.js"></script>
+<script type="text/javascript" src="./js/lp.index.js"></script>
+</body>
+</html>";i:1;N;}i:1;O:18:"CDbCacheDependency":9:{s:12:"connectionID";s:2:"db";s:3:"sql";s:77:"SELECT setting.setting_value FROM setting WHERE setting.setting_key = "phase"";s:6:"params";N;s:23:" CDbCacheDependency _db";N;s:18:"reuseDependentData";b:0;s:23:" CCacheDependency _hash";N;s:23:" CCacheDependency _data";a:1:{s:13:"setting_value";s:1:"1";}s:14:" CComponent _e";N;s:14:" CComponent _m";N;}}

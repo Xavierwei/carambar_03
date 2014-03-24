@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+/***
+OutputPane 版本:v1.0
+简要说明:这家伙很懒什么都没写
+创建人:ZЁЯ¤  身高:168cm+;体重:57kg+;未婚(已有女友);最爱的运动:睡觉;格言:路见不平,拔腿就跑;QQ:358315553
+创建时间:2009年11月18日 15:36:24
+历次修改:未有修改
+用法举例:这家伙很懒什么都没写
+*/
+
+-->
+<s:Group
+ xmlns:fx="http://ns.adobe.com/mxml/2009"
+ xmlns:s="library://ns.adobe.com/flex/spark"
+ xmlns:mx="library://ns.adobe.com/flex/mx"
+>
+	<mx:TextArea id="txt" wordWrap="false" left="0" top="0" right="0" bottom="0" link="link(event)"/>
+	<mx:Button label="清空" bottom="2" right="22" id="btn" click="reset()"/>
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.events.CloseEvent;
+			import mx.managers.PopUpManager;
+			
+			import zero.output;
+			import zero.outputError;
+			
+			private var strArr:Array;
+			private var timeoutId:int=-1;
+			private var linkFunArr:Array;
+			private var linkId:int;
+			
+			private var alert:Alert;
+			
+			public function init():void{
+				//^_^
+				
+				linkFunArr=new Array();
+				linkId=0;
+				reset();
+				txt.styleSheet=new StyleSheet();
+				txt.styleSheet.parseCSS(
+					"a:link 	{color: #3399ff;text-decoration: underline;}\n" +
+					"a:hover 	{color: #ff9933;text-decoration: underline;}\n" +
+					".red 		{color: #cc0000;}\n" +
+					".green 	{color: #006600;}\n" +
+					".blue 	{color: #0000cc;}\n" +
+					".brown	{color: #ff6600;}\n" +
+					".grey		{color: #bbbbbb;}\n" +
+					".pink		{color: #ff00ff;}\n"
+				);
+				
+				output=_output;
+				outputError=_outputError;
+			}
+			public function clear():void{
+				//^_^
+				
+				linkFunArr=null;
+				strArr=null;
+				clearTimeout(timeoutId);
+				
+				output=trace;
+				outputError=trace;
+				
+				if(alert){
+					PopUpManager.removePopUp(alert);
+					alert=null;
+				}
+			}
+			private function _output(msg:String,styleOrXML:*=undefined,tail:*=null,linkFun:Function=null,immediately:Boolean=false):void{
+				if(linkFun==null){
+				}else{
+					var tailXML:XML=<a href={"event:"+linkId}/>
+					tailXML.appendChild(tail);
+					linkFunArr[linkId]=linkFun;
+					linkId++;
+					tail=tailXML;
+				}
+				msg2strArr(msg,styleOrXML,tail);
+				clearTimeout(timeoutId);
+				if(immediately){
+					//trace("immediately");
+					updateDelay();
+				}else{
+					timeoutId=setTimeout(updateDelay,200);
+				}
+			}
+			private function link(event:TextEvent):void{
+				if(linkFunArr[event.text]){
+					linkFunArr[event.text]();
+					return;
+				}
+				
+				var FileClass:*;
+				try{
+					FileClass=flash.utils.getDefinitionByName("flash.filesystem.File");
+				}catch(e:Error){
+					FileClass=null;
+				}
+				
+				var id:int=event.text.indexOf(":");
+				if(id>0){
+					switch(event.text.substr(0,id)){
+						case "file":
+							if(FileClass){
+								var file:*=new FileClass(event.text.substr(id+1));
+								if(file.exists){
+									try{
+										file.openWithDefaultApplication();
+									}catch(e:Error){
+										_outputError("打开："+decodeURI(file.url)+"失败");
+									}
+								}else{
+									_outputError("目录不存在");
+								}
+							}else{
+								_outputError("不支持 File 的使用");
+							}
+						break;
+						default:
+							throw new Error("未处理的 link: "+event.text);
+						break;
+					}
+				}
+			}
+			private function encodeMsg(msg:String):String{
+				return msg.replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\x00/g,"\\x00");
+			}
+			private function msg2strArr(msg:String,styleOrXML:*,tail:*):void{
+				var execResult:Array;
+				if(styleOrXML){
+					var html:XML;
+					switch(styleOrXML){
+						case "folder and file":
+						case "folder":
+							msg=encodeMsg(msg);
+							if(msg.search(/file\:\/+/)>-1){
+								execResult=/^(.*?)(file\:\/+)(.*\/)(.*?)$/.exec(msg);
+								
+								if(execResult[0]==msg){
+									msg='<span class="blue">'+execResult[1]+execResult[2]+'</span>';
+									var path:String=execResult[2];
+									for each(var subPath:String in execResult[3].match(/.*?\/+/g)){
+										path+=subPath;
+										msg+='<a href="event:file:'+path+'">'+subPath+'</a>';
+									}
+									if(execResult[4]){
+										path+=execResult[4];
+										msg+='<a href="event:file:'+path+'">'+execResult[4]+'</a>';
+									}
+								}else{
+									throw new Error("msg 格式不正确");
+								}
+							}else if(msg.indexOf("http://")>-1){
+								execResult=/^(.*?)(http:\/\/.*?)(\s*)$/.exec(msg);
+								if(execResult[0]==msg){
+									msg='<span class="blue">'+execResult[1]+'</span>'+
+										'<a href="'+execResult[2]+'" target="_blank">'+execResult[2]+'</a>';
+								}else{
+									throw new Error("msg 格式不正确");
+								}
+							}else{
+								throw new Error("msg 格式不正确");
+							}
+						break;
+						case "file":
+							throw new Error("未处理");
+						break;
+						default:
+							if(styleOrXML is XML){
+								html=styleOrXML.copy();
+							}else{
+								html=<span class={styleOrXML}/>
+							}
+							html.appendChild(msg);
+							msg=html.toXMLString();
+						break;
+					}
+				}else{
+					msg=encodeMsg(msg);
+				}
+				if(tail){
+					if(tail is XML){
+						msg+="　"+tail.toXMLString();
+					}else{
+						msg+="　"+tail;
+					}
+				}
+				
+				strArr[strArr.length]=msg+"<br>";
+			}
+			private function updateDelay():void{
+				clearTimeout(timeoutId);
+				//trace("updateDelay");
+				
+				/*
+				if(strArr.length>1000){
+					
+					if(alert){
+						PopUpManager.removePopUp(alert);
+						alert=null;
+					}
+					
+					alert=Alert.show(
+						"输出过多（"+strArr.length+"条），是否以文本方式保存？\n"+strArr[0]+"\n...\n"+strArr[999],
+						"",
+						Alert.YES|Alert.NO,
+						null,
+						confirmSave
+					);
+				}else{
+					_updateDelay();
+				}
+				*/
+				
+				while(strArr.length>500){
+					strArr.shift();
+				}
+				
+				_updateDelay();
+			}
+			private function confirmSave(event:CloseEvent):void{
+				if(event.detail==Alert.YES){
+					new FileReference().save(strArr.join(""),"log"+new Date().time+".txt");
+					reset();
+				}else{
+					_updateDelay();
+				}
+			}
+			private function _updateDelay():void{
+				txt.htmlText=strArr.join("");
+				txt.validateNow();
+				txt.verticalScrollPosition=txt.mx_internal::getTextField().numLines;
+				txt.validateNow();
+			}
+			private function _outputError(msg:String):void{
+				_output(msg,"red");
+			}
+			public function reset():void{
+				clearTimeout(timeoutId);
+				txt.htmlText="";
+				strArr=new Array();
+			}
+		]]>
+	</fx:Script>
+</s:Group>

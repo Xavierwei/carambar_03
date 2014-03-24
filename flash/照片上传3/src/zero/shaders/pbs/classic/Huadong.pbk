@@ -1,0 +1,82 @@
+<languageVersion: 1.0;>
+
+/***
+Huadong
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月06日 00:06:48
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Huadong
+<
+	namespace:"zero.shaders.classic";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"滑动";
+>
+{
+	
+	parameter float alpha;
+	parameter float focalLength;
+	parameter float dimension;
+	parameter float progress;
+	parameter float2 o;
+	parameter float ma;
+	parameter float mb;
+	parameter float mc;
+	parameter float md;
+	parameter float me;
+	parameter float mf;
+	parameter float mtx;
+	parameter float mty;
+	parameter float mtz;
+	parameter float tranParam1;
+	parameter float tranParam2;
+	parameter float tranParam3;
+	parameter float tranParam4;
+	parameter float tranParam5;
+	parameter float tranParam6;
+	parameter float tranParam7;
+	parameter float tranParam8;
+	parameter float tranParam9;
+	parameter float2 srcSize
+	<
+		description:"输入图像的宽高";
+		parameterType:"inputSize";
+		inputSizeName:"src";
+	>;
+	
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			float2 oc=outCoord();
+			
+			float tranParamKK=tranParam1+tranParam2*oc.x+tranParam3*oc.y;
+			float x0=(tranParam4+tranParam5*oc.x+tranParam6*oc.y)/tranParamKK;
+			float y0=(tranParam7+tranParam8*oc.x+tranParam9*oc.y)/-tranParamKK;
+			
+			if(mod(floor(y0/dimension),2.0)<1.0){
+				x0+=(1.0-progress)*srcSize.x;
+			}else{
+				x0-=(1.0-progress)*srcSize.x;
+			}
+			
+			float x=x0*ma+y0*md+mtx;
+			float y=x0*mb+y0*me+mty;
+			float z=x0*mc+y0*mf+mtz;
+			x=x*focalLength/(focalLength+z)+o.x;
+			y=y*focalLength/(focalLength+z)+o.y;
+			
+			dst=sampleNearest(src,float2(x,y));
+			dst.a*=alpha;
+			
+		}else{
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

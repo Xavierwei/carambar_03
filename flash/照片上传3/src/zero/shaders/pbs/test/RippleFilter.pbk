@@ -1,0 +1,55 @@
+<languageVersion: 1.0;>
+
+/***
+RippleFilter
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月06日 15:42:54
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel RippleFilter
+<
+	namespace:"zero.shaders.test";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"水波纹";
+>
+{
+	
+	parameter float alpha;
+	parameter float2 center;
+	parameter float displacement;
+	parameter float size;
+	parameter float ripplewidth;
+	parameter float phase;
+	parameter float2 lightdir;
+	parameter float lightbright;
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			float2 pos = outCoord();
+			float2 ofs =pos-center;
+			float r = length(ofs);
+			
+			if (r < size) {
+				float disp = (1.0 - r/size) * displacement
+					* sin(-phase + r/(ripplewidth/6.28));
+				float ang = atan(ofs.x,ofs.y);
+				float bright = 1.0 + (lightbright*disp/displacement
+					* (ofs.x*lightdir.x/r + ofs.y*lightdir.y/r) );
+				dst =(sampleNearest(src,
+					float2(pos.x+disp*sin(ang), pos.y+disp*cos(ang))))*bright;
+			} else {
+				dst = sampleNearest(src,pos);
+			}
+			dst.a*=alpha;
+		}else{
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

@@ -1,0 +1,54 @@
+<languageVersion: 1.0;>
+
+/***
+Wave
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月05日 00:29:24
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Wave
+<
+	namespace:"zero.shaders.test";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"波浪";
+>
+{
+	
+	parameter float alpha;
+	parameter float2 center1;
+	parameter float A1;
+	parameter float w1;
+	parameter float q1;
+	parameter float2 center2;
+	parameter float A2;
+	parameter float w2;
+	parameter float q2;
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			float2 oc=outCoord();
+			float value;
+			if(A1==0.0){
+				value=0.0;
+			}else{
+				value=A1*sin(w1*distance(center1,oc)-q1);
+			}
+			if(A2==0.0){
+				value;
+			}else{
+				value+=A2*sin(w2*distance(center2,oc)-q2);
+			}
+			dst=sampleNearest(src,oc+value);
+			dst.a*=alpha;
+		}else{
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

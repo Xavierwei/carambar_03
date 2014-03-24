@@ -92,6 +92,16 @@ angular.module('WallAdmin.filters', [])
 
 		}
 	})
+    .filter('showtop', function() {
+        return function(input) {
+            switch(input) {
+                case '1':
+                    return 'Yes';
+                    break;
+            }
+
+        }
+    })
     .filter('challengeimg', function(ROOT_FOLDER) {
         return function(input) {
             return ROOT_FOLDER + 'pic/challenge' + input + '.jpg';

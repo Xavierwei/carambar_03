@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+/***
+BottomBarContainerMXML 版本:v1.0
+简要说明:这家伙很懒什么都没写
+创建人:ZЁЯ¤  身高:168cm+;体重:57kg+;未婚(已有女友);最爱的运动:睡觉;格言:路见不平,拔腿就跑;QQ:358315553
+创建时间:2010年12月17日 20:05:40
+历次修改:未有修改
+用法举例:这家伙很懒什么都没写
+*/
+
+-->
+<mx:SWFLoader
+	creationComplete="creationComplete()"
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+>
+	<fx:Script>
+		<![CDATA[
+			import flash.display.*;
+			import flash.events.*;
+			import flash.utils.*;
+			
+			public var gameMainClassName:String;
+			public var onShowBottomBar:Function;
+			
+			public function creationComplete():void{
+				this.source=new BottomBarContainer(
+					gameMainClassName,
+					this.width,
+					this.height,
+					onShowBottomBar
+				);
+			}
+		]]>
+	</fx:Script>
+</mx:SWFLoader>

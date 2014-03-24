@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+/***
+SolFileBrowser
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2011年7月29日 14:27:25
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+-->
+
+<s:Group
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:ui="zero.ui.*"
+>
+	<s:Label x="5" y="5" id="txt"/>
+	<mx:ComboBox id="cb" rowCount="20" minWidth="0" left="70" right="55" change="change()"/>
+	<mx:Button id="btn" right="0" click="browse()" width="50"/>
+	<fx:Script>
+		<![CDATA[
+			//import spark.components.WindowedApplication;
+			
+			import flash.desktop.ClipboardFormats;
+			import flash.desktop.NativeDragManager;
+			import flash.events.NativeDragEvent;
+			
+			import mx.controls.Alert;
+			import mx.events.CloseEvent;
+			import mx.events.ListEvent;
+			
+			import zero.ui.*;
+			
+			public var sol:Sol;
+			public var sol_key:String;
+			
+			public var description:String="文件";
+			public var btnLabel:String="浏览";
+			public var extension:String="*.*";//*.jpg;*.gif;*.png
+			
+			private var __file:File;
+			private var fileURLArr:Array;
+			public var dragDropClient:InteractiveObject;
+			public var onDragDrop:Function;
+			
+			public var onChange:Function;
+			
+			public function clear():void{
+				if(sol){
+					sol.clear();
+					sol=null;
+				}
+				if(__file){
+					__file.removeEventListener(Event.SELECT,select);
+					__file=null;
+				}
+				fileURLArr=null;
+				if(dragDropClient){
+					dragDropClient.removeEventListener(NativeDragEvent.NATIVE_DRAG_ENTER,nativeDragEnter);
+					dragDropClient.removeEventListener(NativeDragEvent.NATIVE_DRAG_DROP,nativeDragDrop);
+					dragDropClient=null;
+				}
+				dragDropClient=null;
+				onDragDrop=null;
+				onChange=null;
+			}
+			
+			public function init(solOrSolFile:*=null):void{
+				if(solOrSolFile is Sol){
+					sol=solOrSolFile;
+				}else{
+					sol=new Sol(
+						solOrSolFile
+						||
+						new File(
+							File.applicationDirectory.nativePath+"/sols/"+extension.replace(/[\*\.]/g,"")+".xml"
+						),
+						""
+					);
+				}
+				
+				if(sol_key){
+				}else{
+					sol_key=this.id;
+					if(sol_key){
+					}else{
+						throw new Error("sol_key="+sol_key);
+					}
+				}
+				
+				__file=new File();
+				__file.addEventListener(Event.SELECT,select);
+				
+				if(dragDropClient){
+				}else{
+					dragDropClient=this.parentApplication as InteractiveObject;
+					//trace("dragDropClient="+dragDropClient);
+				}
+				dragDropClient.addEventListener(NativeDragEvent.NATIVE_DRAG_ENTER,nativeDragEnter);
+				dragDropClient.addEventListener(NativeDragEvent.NATIVE_DRAG_DROP,nativeDragDrop);
+				
+				txt.text=description+"：";
+				btn.label=btnLabel;
+				//cb.left=txt.text.length*10;
+				
+				updateFileURLArr(null);
+			}
+			public function updateFileURLArr(_fileURLArr:Array):void{
+				var oldFileURL:String;
+				if(cb.selectedItem){
+					oldFileURL=cb.selectedItem.toString();
+				}else{
+					oldFileURL=null;
+				}
+				
+				var fileURL:String;
+				if(_fileURLArr){
+					fileURLArr=_fileURLArr;
+					if(sol.getValue(sol_key)){
+						fileURL=sol.getValue(sol_key).fileURL;
+					}else{
+						fileURL=null;
+					}
+				}else{
+					if(sol.xml.@currSettingName.toString()=="默认"){
+						fileURLArr=[];
+						fileURL=null;
+					}else{
+						if(sol.getValue(sol_key)){
+							fileURLArr=sol.getValue(sol_key).fileURLArr;
+							fileURL=sol.getValue(sol_key).fileURL;
+						}else{
+							fileURLArr=[];
+							fileURL=null;
+						}
+					}
+				}
+				
+				if(fileURL&&fileURLArr.indexOf(fileURL)>-1){
+				}else{
+					fileURL=fileURLArr[0];
+				}
+				
+				cb.dataProvider=fileURLArr;
+				cb.selectedItem=fileURL;
+				
+				sol.setValue(sol_key,{
+					fileURL:fileURL,
+					fileURLArr:fileURLArr
+				});
+				
+				//trace("fileURL="+fileURL);
+				if(fileURL){
+					__file.url=fileURL;
+				}
+				
+				if(oldFileURL==fileURL){
+				}else{
+					if(onChange==null){
+					}else{
+						onChange();
+					}
+				}
+			}
+			
+			private function nativeDragEnter(event:NativeDragEvent):void{
+				var fileArr:Array=event.clipboard.getData(ClipboardFormats.FILE_LIST_FORMAT) as Array;
+				if(fileArr){
+					if(fileArr.length==1){
+						if(checkIsMatchType(fileArr[0])){
+							NativeDragManager.acceptDragDrop(event.currentTarget as InteractiveObject);
+						}
+					}
+				}
+			}
+			private function nativeDragDrop(event:NativeDragEvent):void{
+				var fileArr:Array=event.clipboard.getData(ClipboardFormats.FILE_LIST_FORMAT) as Array;
+				if(fileArr){
+					if(fileArr.length==1){
+						if(checkIsMatchType(fileArr[0])){
+							addFile(fileArr[0]);
+							//(this.parentApplication as WindowedApplication).nativeWindow.activate();
+							//(this.parentApplication as WindowedApplication).activate();
+							//stage.nativeWindow.activate();
+							if(onDragDrop==null){
+							}else{
+								onDragDrop();
+							}
+						}
+					}
+				}
+			}
+			public function checkIsMatchType(file:File):Boolean{
+				if(extension.indexOf("*.*")==-1){
+					return new RegExp("^("+extension.replace(/;/g,"|").replace(/\./g,"\\.").replace(/\*/g,".*")+")$","i").test(decodeURI(file.url));
+				}
+				return true;
+			}
+			
+			private function browse():void{
+				__file.browseForOpen("选择一个 "+description+"：",[new FileFilter(description,extension)]);
+			}
+			private function select(event:Event):void{
+				addFile(__file);
+			}
+			
+			public function addFile(_file:File,needCallBack:Boolean=true):void{
+				__file.url=_file.url;
+				var oldFileURL:String;
+				if(cb.selectedItem){
+					oldFileURL=cb.selectedItem.toString();
+				}else{
+					oldFileURL=null;
+				}
+				var fileURL:String=decodeURI(__file.url);
+				if(fileURLArr.indexOf(fileURL)==-1){
+					fileURLArr.push(fileURL);
+					fileURLArr.sort(Array.CASEINSENSITIVE);
+					cb.dataProvider=fileURLArr;
+				}
+				//if(oldFileURL==fileURL){
+				//}else{
+					cb.selectedItem=fileURL;
+					sol.setValue(sol_key,{
+						fileURL:fileURL,
+						fileURLArr:fileURLArr
+					});
+					if(needCallBack){
+						if(onChange==null){
+						}else{
+							onChange();
+						}
+					}
+				//}
+			}
+			private function change():void{
+				__file.url=cb.selectedItem.toString();
+				sol.setValue(sol_key,{
+					fileURL:decodeURI(__file.url),
+					fileURLArr:fileURLArr
+				});
+				if(onChange==null){
+				}else{
+					onChange();
+				}
+			}
+			
+			public function get file():File{
+				if(cb.selectedItem){
+					return new File(cb.selectedItem.toString());
+				}
+				return null;
+			}
+		]]>
+	</fx:Script>
+</s:Group>

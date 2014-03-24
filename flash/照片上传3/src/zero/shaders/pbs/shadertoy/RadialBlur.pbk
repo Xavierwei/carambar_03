@@ -1,0 +1,695 @@
+<languageVersion: 1.0;>
+
+/***
+RadialBlur
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月07日 09:54:39
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel RadialBlur
+<
+	namespace:"zero.shaders.shadertoy";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"Radial Blur（非常卡）";
+>
+{
+	
+	parameter float alpha;
+	parameter float time;
+	parameter float2 srcSize
+	<
+		description:"输入图像的宽高";
+		parameterType:"inputSize";
+		inputSizeName:"src";
+	>;
+	
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			
+			float2 p =(2.0*(outCoord()/srcSize))-1.0;
+			float2 s=float2(p.x,p.y);
+			
+			pixel4 total = pixel4(0.0,0.0,0.0,1.0);
+			float2 d =(float2(0.0,0.0)-p)/40.0;
+			float w = 1.0;
+			
+			float2 deform_uv=float2(0,0);
+			float2 deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			float deform_a = atan(deform_q.y,deform_q.x);
+			float deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			pixel4 res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			deform_q = float2( sin(1.1*time+s.x),sin(1.2*time+s.y) );
+			
+			deform_a = atan(deform_q.y,deform_q.x);
+			deform_r = sqrt(dot(deform_q,deform_q));
+			
+			deform_uv.x = sin(0.0+1.0*time)+s.x*sqrt(deform_r*deform_r+1.0);
+			deform_uv.y = sin(0.6+1.1*time)+s.y*sqrt(deform_r*deform_r+1.0);
+			
+			deform_uv=deform_uv*0.5;
+			deform_uv.y=1.0-deform_uv.y;
+			res = sampleNearest(src,mod(deform_uv,1.0)*((srcSize-1.0)));
+			
+			res = smoothStep(0.1,1.0,res*res);
+			total =total+(w*res);
+			w *= .99;
+			s =s+d;
+			
+			total =total/40.0;
+			float r = 1.5/(1.0+dot(p,p));
+			dst = pixel4( total.r*r,total.g*r,total.b*r,alpha);
+			
+		}else{
+			dst=sampleNearest(src,float2(0,0));//- -
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

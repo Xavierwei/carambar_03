@@ -14,7 +14,7 @@
             <th>Title</th>
             <th>Youtube ID</th>
             <th>Ribbon</th>
-            <th>Position</th>
+            <th>Top</th>
             <th>Phase</th>
 	        <td>No.</td>
             <th>Action</th>
@@ -23,7 +23,7 @@
             <td>{{video.title}}</td>
             <td>{{video.mid}}</td>
             <td>{{video.ribbon | ribbon}}</td>
-            <td>{{video.position | videoposition}}</td>
+            <td>{{video.position | showtop}}</td>
             <td>{{video.phase}}</td>
 	        <td><select ng-model="video.rank"
 	                    data-ng-options="v.title for v in videoranks">

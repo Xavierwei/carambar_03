@@ -1,0 +1,23 @@
+/***
+Test
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月01日 18:06:42
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+sub ft0.xy,v0.xy,fc1.xy
+div ft0.xy,ft0.xy,fc1.zw
+add ft0.xy,ft0.xy,fc2.yy
+frc ft1.xy,ft0.xy
+sub ft0.xy,ft0.xy,ft1.xy
+mul ft0.xy,ft0.xy,fc1.zw
+add ft0.xy,ft0.xy,fc1.xy
+sub ft0.xy,ft0.xy,fc0.xy
+div ft0.xy,ft0.xy,fc0.zw
+sat ft0.xy,ft0.xy
+mul ft0.xy,ft0.xy,fc0.zw
+add ft0.xy,ft0.xy,fc0.xy
+tex ft0,ft0.xy,fs0<2d>
+mul ft0,ft0,fc2.xxxx
+mov oc,ft0

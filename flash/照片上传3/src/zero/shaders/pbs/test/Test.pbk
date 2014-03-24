@@ -1,0 +1,52 @@
+<languageVersion: 1.0;>
+
+/***
+Test
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月01日 18:06:42
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Test
+<
+	namespace:"zero.shaders.test";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"测试";
+>
+{
+	
+	parameter float alpha;
+	parameter float2 center;
+	parameter float dimension;
+	parameter float2 srcSize
+	<
+		description:"输入图像的宽高";
+		parameterType:"inputSize";
+		inputSizeName:"src";
+	>;
+	
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			float2 oc=outCoord();
+			float x=oc.x-center.x;
+			float y=oc.y-center.y;
+			x=floor(x/dimension+0.5)*dimension;
+			y=floor(y/dimension+0.5)*dimension;
+			x+=center.x;
+			y+=center.y;
+			x=clamp(x,0.0,srcSize.x-1.0);
+			y=clamp(y,0.0,srcSize.y-1.0);
+			dst=sampleNearest(src,float2(x,y));
+			dst.a*=alpha;
+		}else{
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

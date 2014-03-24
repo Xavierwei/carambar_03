@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+/***
+FileTree
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2011年9月19日 11:49:40
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+-->
+
+<s:Group
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:ui="zero.ui.*"
+	xmlns:local="*"
+>
+	<mx:Tree width="100%" height="100%" id="tree" change="change()" itemOpen="saveSetting()" itemClose="saveSetting()" mouseUp="saveSetting()" doubleClickEnabled="true" itemDoubleClick="itemDoubleClick(event)"/>
+	<fx:Script>
+		<![CDATA[
+			import flash.net.navigateToURL;
+			
+			import mx.collections.XMLListCollection;
+			import mx.events.ListEvent;
+			
+			import zero.output;
+			import zero.outputError;
+			
+			private var iconsXMLLoader:URLLoader;
+			private var iconLoader:Loader;
+			private var fileListXLC:XMLListCollection;
+			private var onInitComplete:Function;
+			
+			private var iconsXMLPath:String;
+			private var iconsXML:XML;
+			private var currLoadingIconId:int;
+			
+			private var onChange:Function;
+			public var sol_key:String;
+			public var sol:Sol;
+			
+			public var onDoubleClickItem:Function=defaultOnDoubleClickItem;
+			private function defaultOnDoubleClickItem():void{
+				navigateToURL(new URLRequest(tree.selectedItem.@url.toString()));
+			}
+			
+			public function init(_sol:Sol,_iconsXMLPath:String,_onInitComplete:Function,_onChange:Function):void{
+				// ^_^
+				if(sol_key){
+				}else{
+					sol_key=this.id;
+				}
+				
+				sol=_sol;
+				iconsXMLPath=_iconsXMLPath;
+				onInitComplete=_onInitComplete;
+				onChange=_onChange;
+				
+				iconsXMLLoader=new URLLoader();
+				iconsXMLLoader.addEventListener(Event.COMPLETE,loadIconsXMLComplete);
+				iconsXMLLoader.addEventListener(IOErrorEvent.IO_ERROR,loadIconsXMLError);
+				iconsXMLLoader.load(new URLRequest(iconsXMLPath));
+			}
+			private function loadIconsXMLComplete(event:Event):void{
+				iconsXMLLoader.removeEventListener(Event.COMPLETE,loadIconsXMLComplete);
+				iconsXMLLoader.removeEventListener(IOErrorEvent.IO_ERROR,loadIconsXMLError);
+				iconsXML=new XML(iconsXMLLoader.data);
+				iconsXMLLoader=null;
+				
+				FileTreeIcon.iconBmds=new Object();
+				currLoadingIconId=-1;
+				iconLoader=new Loader();
+				iconLoader.contentLoaderInfo.addEventListener(Event.COMPLETE,loadIconComplete);
+				iconLoader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,loadIconError);
+				loadIcon();
+			}
+			private function loadIconsXMLError(event:IOErrorEvent):void{
+				iconsXMLLoader.removeEventListener(Event.COMPLETE,loadIconsXMLComplete);
+				iconsXMLLoader.removeEventListener(IOErrorEvent.IO_ERROR,loadIconsXMLError);
+				iconsXMLLoader=null;
+				outputError("加载 "+iconsXMLPath+" 出错");
+			}
+			private function loadIcon():void{
+				if(++currLoadingIconId>=iconsXML.icon.length()){
+					iconLoader.contentLoaderInfo.removeEventListener(Event.COMPLETE,loadIconComplete);
+					iconLoader.contentLoaderInfo.removeEventListener(IOErrorEvent.IO_ERROR,loadIconError);
+					iconLoader=null;
+					loadIconsComplete();
+					return;
+				}
+				iconLoader.load(new URLRequest(iconsXMLPath.replace(/^(.*\/).*?$/,"$1"+iconsXML.icon[currLoadingIconId].@src.toString())));
+			}
+			private function loadIconComplete(event:Event):void{
+				for each(var type:String in iconsXML.icon[currLoadingIconId].@type.toString().replace(/\s+/g,"").split("|")){
+					FileTreeIcon.iconBmds[type]=(iconLoader.content as Bitmap).bitmapData;
+				}
+				loadIcon();
+			}
+			private function loadIconError(event:IOErrorEvent):void{
+				outputError("加载 "+iconsXML.icon[currLoadingIconId].@src.toString()+" 出错");
+				loadIcon();
+			}
+			private function loadIconsComplete():void{
+				
+				tree.labelField="@name";
+				tree.iconFunction=treeIconFun;
+				
+				if(onInitComplete==null){
+				}else{
+					onInitComplete();
+				}
+			}
+			public function clear():void{
+				//^_^ 
+				
+				if(iconsXMLLoader){
+					iconsXMLLoader.removeEventListener(Event.COMPLETE,loadIconsXMLComplete);
+					iconsXMLLoader.removeEventListener(IOErrorEvent.IO_ERROR,loadIconsXMLError);
+					iconsXMLLoader=null;
+				}
+				
+				if(iconLoader){
+					iconLoader.contentLoaderInfo.removeEventListener(Event.COMPLETE,loadIconComplete);
+					iconLoader.contentLoaderInfo.removeEventListener(IOErrorEvent.IO_ERROR,loadIconError);
+					iconLoader=null;
+				}
+				
+				FileTreeIcon.iconBmds=null;
+				sol=null;
+				onInitComplete=null;
+				onChange=null;
+				onDoubleClickItem=null;
+			}
+			public function update(fileListXML:XML):void{
+				
+				tree.dataProvider=fileListXLC=new XMLListCollection(new XMLList(fileListXML));
+				openItems();
+				
+				selectURL(sol.getValue(sol_key+"_selectedFileURL"));
+				
+				tree.verticalScrollPosition=sol.getValue(sol_key+"_verticalScrollPosition");
+				
+				change();
+			}
+			private function openItems():void{
+				var openItems:Object=new Object();
+				for each(var openItem:XML in sol.getValue(sol_key+"_openItems")){
+					openItems[openItem.toXMLString()]=true;
+				}
+				_openItems(fileListXLC.source[0],openItems);
+			}
+			private function _openItems(itemXML:XML,openItems:Object):void{
+				if(openItems[itemXML.toXMLString()]){
+					//output("open："+itemXML.@name.toString());
+					tree.validateNow();
+					tree.expandItem(itemXML,true);
+				}
+				for each(var subItemXML:XML in itemXML.node){
+					_openItems(subItemXML,openItems);
+				}
+			}
+			
+			/*
+			public function selectItem(itemXML:XML):void{
+				if(itemXML){
+					selectURL(itemXML.@url.toString());
+				}else{
+					selectURL("");
+				}
+			}
+			*/
+			
+			public function selectURL(url:String):void{
+				if(tree.selectedItem&&tree.selectedItem.@url.toString()==url){
+					return;
+				}
+				//trace("selectURL "+url);
+				if(url){
+					sol.setValue(sol_key+"_selectedFileURL",url);
+				}else{
+					sol.setValue(sol_key+"_selectedFileURL","");
+				}
+				
+				if(fileListXLC){
+					tree.selectedItem=null;
+					_select(fileListXLC.source[0],url);
+				}
+			}
+			private function _select(xml:XML,url:String):void{
+				if(tree.selectedItem){
+					return;
+				}
+				//trace("_select url="+url);
+				if(xml.@url.toString()==url){
+					var xmlArr:Array=new Array();
+					while(xml){
+						xmlArr.unshift(xml);
+						xml=xml.parent();
+					}
+					for each(xml in xmlArr){
+						tree.validateNow();
+						tree.expandItem(xml,true);
+					}
+					tree.selectedItem=xml;
+					return;
+				}
+				for each(var node:XML in xml.node){
+					_select(node,url);
+				}
+			}
+			
+			private function saveSetting():void{
+				sol.setValue(sol_key+"_openItems",tree.openItems);
+				if(tree.verticalScrollPosition>0){
+					sol.setValue(sol_key+"_verticalScrollPosition",tree.verticalScrollPosition);
+				}else{
+					sol.setValue(sol_key+"_verticalScrollPosition",0);
+				}
+			}
+			private function change():void{
+				//trace("tree.selectedItem="+tree.selectedItem);
+				if(tree.selectedItem){
+					sol.setValue(sol_key+"_selectedFileURL",tree.selectedItem.@url.toString());
+					saveSetting();
+					if(onChange==null){
+					}else{
+						onChange(tree.selectedItem);
+					}
+				}
+			}
+			private function treeIconFun(item:XML):Class{
+				return FileTreeIcon;
+			}
+			
+			private function itemDoubleClick(event:ListEvent):void{
+				if(tree.selectedItem){
+					if(onDoubleClickItem==null){
+					}else{
+						onDoubleClickItem(tree.selectedItem);
+					}
+				}
+			}
+			
+		]]>
+	</fx:Script>
+</s:Group>

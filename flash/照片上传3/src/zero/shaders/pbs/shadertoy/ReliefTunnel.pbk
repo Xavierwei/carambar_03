@@ -1,0 +1,66 @@
+<languageVersion: 1.0;>
+
+/***
+ReliefTunnel
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月07日 16:51:25
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel ReliefTunnel
+<
+	namespace:"zero.shaders.shadertoy";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"Relief Tunnel";
+>
+{
+	
+	parameter float alpha;
+	parameter float time;
+	parameter float2 srcSize
+	<
+		description:"输入图像的宽高";
+		parameterType:"inputSize";
+		inputSizeName:"src";
+	>;
+	
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			
+			float2 p =(2.0*(outCoord()/srcSize))-1.0;
+			float2 uv=float2(0.0,0.0);
+			
+			float r = sqrt( dot(p,p) );
+			float a = atan(p.y,p.x) + 0.5*sin(0.5*r-0.5*time);
+			
+			float s = 0.5 + 0.5*cos(7.0*a);
+			s = smoothStep(0.0,1.0,s);
+			s = smoothStep(0.0,1.0,s);
+			s = smoothStep(0.0,1.0,s);
+			s = smoothStep(0.0,1.0,s);
+			
+			uv.x = time + 1.0/( r + .2*s);
+			uv.y = 3.0*a/3.1416;
+			
+			float w = (0.5 + 0.5*s)*r*r;
+			
+			float ao = 0.5 + 0.5*cos(7.0*a);
+			ao = smoothStep(0.0,0.4,ao)-smoothStep(0.4,0.7,ao);
+			ao = 1.0-0.5*ao*r;
+			
+			uv.y=1.0-uv.y;
+			dst =(sampleNearest(src,mod(uv,1.0)*((srcSize-1.0))))*(w*ao);
+			dst.a=alpha;
+			
+		}else{
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

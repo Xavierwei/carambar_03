@@ -370,17 +370,11 @@ easily in the skin designer. http://designer.videojs.com/
   left: 50%;
   font-size: 4em;
   line-height: 1;
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-  margin-top: -10px;
-  opacity: 0.75;
-  background: url(../img/loading_trans_white.png);
-  /* animation */
-  -webkit-animation: spin 1.5s infinite linear;
-  -moz-animation: spin 1.5s infinite linear;
-  -o-animation: spin 1.5s infinite linear;
-  animation: spin 1.5s infinite linear;
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  margin-top: -8px;
+  background: url(../images/loading.gif) no-repeat;
 }
 
 @-moz-keyframes spin {

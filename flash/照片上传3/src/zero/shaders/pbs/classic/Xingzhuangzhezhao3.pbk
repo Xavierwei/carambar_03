@@ -1,0 +1,104 @@
+<languageVersion: 1.0;>
+
+/***
+Xingzhuangzhezhao3
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月05日 16:02:40
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Xingzhuangzhezhao3
+<
+	namespace:"zero.shaders.classic";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"形状遮罩（方阵）";
+>
+{
+	
+	parameter float alpha;
+	parameter int style;
+	parameter bool isMask;
+	parameter float width;
+	parameter float height;
+	parameter float disX;
+	parameter float disY;
+	parameter bool follow;
+	parameter float2 o;
+	parameter float tranParam1;
+	parameter float tranParam2;
+	parameter float tranParam3;
+	parameter float tranParam4;
+	parameter float tranParam5;
+	parameter float tranParam6;
+	parameter float tranParam7;
+	parameter float tranParam8;
+	parameter float tranParam9;
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			if(width==0.0||height==0.0){
+				
+				if(isMask){
+					dst=float4(0.0,0.0,0.0,0.0);
+				}else{
+					dst=sampleNearest(src,outCoord());
+					dst.a*=alpha;
+				}
+				
+			}else{
+				float2 oc=outCoord();
+				
+				float tranParamKK=tranParam1+tranParam2*oc.x+tranParam3*oc.y;
+				float x=(tranParam4+tranParam5*oc.x+tranParam6*oc.y)/tranParamKK;
+				float y=(tranParam7+tranParam8*oc.x+tranParam9*oc.y)/-tranParamKK;
+				
+				if(follow){
+					oc.x=x;
+					oc.y=y;
+				}
+				
+				x-=o.x;
+				y-=o.y;
+				
+				x-=floor(x/(width+disX)+0.5)*(width+disX);
+				y-=floor(y/(height+disY)+0.5)*(height+disY);
+				
+				x*=2.0/width;
+				y*=2.0/height;
+				
+				bool draw;
+				if(style==1){//矩形
+					draw=x>-1.0&&x<1.0&&y>-1.0&&y<1.0;
+				}else if(style==2){//菱形
+					draw=x+y<1.0&&x-y<1.0&&-x+y<1.0&&-x-y<1.0;
+				}else if(style==3){//心形
+					y-=0.213;
+					y*=1.299;
+					if(x<0.0){
+						x*=-1.0;
+					}
+					float y_sqrt_x=y+sqrt(x);
+					draw=x*x+y_sqrt_x*y_sqrt_x<1.0;
+				}else{//椭圆形
+					draw=x*x+y*y<1.0;
+				}
+				
+				if(isMask^^draw){
+					dst=float4(0.0,0.0,0.0,0.0);
+				}else{
+					dst=sampleNearest(src,oc);
+					dst.a*=alpha;
+				}
+				
+			}
+		}else{
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

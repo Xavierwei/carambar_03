@@ -74,7 +74,7 @@ class FacebookController extends Controller {
 			}
 			else {
 				Yii::app()->user->login($userIdentify);
-				$this->redirect('/test/index#support-carambar');
+				$this->redirect('/index#support-carambar');
 			}
 		}
 	}
@@ -169,6 +169,17 @@ class FacebookController extends Controller {
 		$request = Yii::app()->getRequest();
 		$content = htmlspecialchars($request->getPost("content"));
 		$img = $request->getPost("img");
+		$_x = $request->getPost("x");
+		if($img && $_x) {
+			$_y = $request->getPost("y");
+			$_width = $request->getPost("width");
+			$_scale_size = $request->getPost("size");
+			$newfile =  NodeAR::model()->cropPhoto($img, $_x, $_y, $_width, $_scale_size);
+		}
+		else if($img) {
+			$newfile = NodeAR::model()->saveBase64Image($img);
+		}
+
 		if(strlen($content) == 0) {
 			return $this->responseError(702);
 		}
@@ -180,12 +191,12 @@ class FacebookController extends Controller {
 		$access_token = Yii::app()->session['fb_access_token'];
 		$this->facebook->setAccessToken($access_token);
 
-		if(!empty($img)) {
+		if(!empty($newfile)) {
 			$type = 'photo';
 			$mid = $results = $this->facebook->api('/me/photos', 'POST',
 				array(
 					'source'=>'multipart/form-data',
-					'url'=> Yii::app()->params['siteurl'].$img,
+					'url'=> Yii::app()->params['siteurl'].$newfile,
 					//'url' => 'http://media-cache-ec0.pinimg.com/736x/65/28/16/6528164aaeac05e248f949d6b137750b.jpg',
 					'message' => $content
 				));
@@ -204,20 +215,14 @@ class FacebookController extends Controller {
 
 			$node->type = $type;
 			$node->media = 'facebook';
-			$_x = $request->getPost("x");
-			if($img && $_x) {
-				$_y = $request->getPost("y");
-				$_width = $request->getPost("width");
-				$_scale_size = $request->getPost("size");
-				$node->file =  $node->cropPhoto($img, $_x, $_y, $_width, $_scale_size);
-			}
-			else if($img) {
-				$node->file = NodeAR::model()->saveBase64Image($img);
-			}
+
 			$node->mid = isset($mid['post_id']) ? $mid['post_id'] : $mid['id'];
 			$node->description = $content;
 			$node->screen_name = Yii::app()->user->screen_name;
 			$node->email = Yii::app()->user->personal_email;
+			if(isset($newfile)) {
+				$node->file = $newfile;
+			}
 			$node->datetime = time();
 			$node->status = 0;
 			if ($node->validate()) {

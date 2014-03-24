@@ -6668,3 +6668,945 @@ REQUEST_URI=/carambar/
 in /Applications/MAMP/htdocs/carambar/protected/views/index/index.php (195)
 in /Applications/MAMP/htdocs/carambar/protected/controllers/IndexController.php (36)
 in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/24 11:15:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/video-js/instagram.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/video-js/ins...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/video-js/instagram.js
+HTTP_REFERER=http://localhost:8888/carambar_03/instagram.php?url=http://distilleryimage11.s3.amazonaws.com/bfd1158eb05811e39c801279d348a7e3_101.mp4
+---
+2014/03/24 11:16:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/video-js/instagram.js".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/video-js/ins...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/js/video-js/instagram.js
+HTTP_REFERER=http://localhost:8888/carambar_03/instagram.php?url=http://distilleryimage11.s3.amazonaws.com/bfd1158eb05811e39c801279d348a7e3_101.mp4
+---
+2014/03/24 19:53:44 [error] [exception.FacebookApiException] OAuthException: An unknown error has occurred.
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/?ie=true
+---
+2014/03/24 19:59:12 [error] [exception.FacebookApiException] CurlException: 7: Failed to connect to 2a03:2880:2050:3f07:face:b00c::1: No route to host
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/?ie=true
+---
+2014/03/24 20:34:59 [error] [php] Memcache::get(): Server 127.0.0.1 (tcp 11211) failed with: Connection refused (61) (/Applications/MAMP/htdocs/carambar_03/yii/framework/caching/CMemCache.php:149)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CUrlManager.php(219): CMemCache->get()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CModule.php(387): CUrlManager->init()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(522): CWebApplication->getComponent()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:31:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:32:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:33:09 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:33:09 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:33:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:33:36 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:33:36 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:34:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:34:43 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:34:43 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:39:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:39:53 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:39:53 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:39:58 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:39:58 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:40:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:40:01 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:40:01 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:40:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:40:03 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:40:03 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:40:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:40:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:40:48 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:40:48 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:40:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:40:53 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:40:53 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:41:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:41:08 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:08 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:41:12 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:12 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:41:17 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:17 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:41:35 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:35 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:41:39 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:39 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:41:44 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:41:44 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:42:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:42:10 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:42:10 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:42:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:42:48 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:42:48 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:42:57 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:42:57 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:42:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:43:00 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:43:00 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:43:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:43:03 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:43:03 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:43:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:43:15 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:43:15 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:43:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:43:19 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:43:19 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:43:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:43:22 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:43:22 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:44:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:44:11 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:44:11 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:44:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:44:14 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:44:14 [warning] [application] Failed to set unsafe attribute "showtop" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:44:14 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:44:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:44:17 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:44:17 [warning] [application] Failed to set unsafe attribute "showtop" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:44:17 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:44:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:44:19 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:44:19 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:45:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:45:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:45:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:45:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:47:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:47:04 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:47:04 [warning] [application] Failed to set unsafe attribute "showtop" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:47:04 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:47:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:47:06 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:47:06 [warning] [application] Failed to set unsafe attribute "showtop" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:47:06 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:48:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:48:26 [error] [php] Undefined index: del (/Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php:84)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): VideoController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): VideoController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): VideoController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/video/update
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (84)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:48:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:48:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:49:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:50:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:50:22 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:50:22 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:50:25 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:50:25 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:50:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:50:29 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:50:29 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:50:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:50:33 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:50:33 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:51:00 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:51:00 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:52:39 [warning] [application] Failed to set unsafe attribute "showtop" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (190)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:53:16 [warning] [application] Failed to set unsafe attribute "showtop" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (190)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:55:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:55:19 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:55:19 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:56:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('undefined')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/undefined
+HTTP_REFERER=http://localhost:8888/carambar_03/admin/index
+---
+2014/03/24 21:56:11 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:56:11 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:56:16 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:56:16 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:56:37 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:56:37 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:56:38 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 21:56:38 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:12 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:12 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:16 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:16 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:22 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:22 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:27 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:27 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:27 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:27 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:28 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:00:28 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:19:15 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:19:15 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:19:17 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:19:17 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:21:10 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:21:10 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:21:13 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:21:13 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:21:24 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:21:24 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:23:53 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:23:53 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:24:02 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:24:02 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:50:55 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 22:50:55 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:08:11 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:08:11 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:08:21 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:08:21 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:08:30 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:08:30 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:08:40 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:08:40 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:10:47 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:10:47 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:10:49 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:10:49 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:04 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:04 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:06 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:06 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:21 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:21 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:29 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:29 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:29 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:29 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:30 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/24 23:11:30 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)

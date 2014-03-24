@@ -1,0 +1,120 @@
+<languageVersion: 1.0;>
+
+/***
+Pixelate
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月03日 09:23:58
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Pixelate
+<
+	namespace:"zero.shaders.classic";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"像素化";
+>
+{
+	
+	parameter float alpha;
+	parameter float focalLength;
+	parameter int style;
+	parameter float dimension;
+	parameter float dis;
+	parameter float2 o;
+	parameter float ma;
+	parameter float mb;
+	parameter float mc;
+	parameter float md;
+	parameter float me;
+	parameter float mf;
+	parameter float mtx;
+	parameter float mty;
+	parameter float mtz;
+	parameter float tranParam1;
+	parameter float tranParam2;
+	parameter float tranParam3;
+	parameter float tranParam4;
+	parameter float tranParam5;
+	parameter float tranParam6;
+	parameter float tranParam7;
+	parameter float tranParam8;
+	parameter float tranParam9;
+	parameter float2 cc;
+	parameter float2 srcSize
+	<
+		description:"输入图像的宽高";
+		parameterType:"inputSize";
+		inputSizeName:"src";
+	>;
+	
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			
+			float2 oc=outCoord();
+				
+			float tranParamKK=tranParam1+tranParam2*oc.x+tranParam3*oc.y;
+			float x=(tranParam4+tranParam5*oc.x+tranParam6*oc.y)/tranParamKK;
+			float y=(tranParam7+tranParam8*oc.x+tranParam9*oc.y)/-tranParamKK;
+			
+			float x1=floor((x-cc.x)/(dimension+dis))*(dimension+dis)+cc.x;
+			float y1=floor((y-cc.y)/(dimension+dis))*(dimension+dis)+cc.y;
+			float x2=x1+(dimension+dis);
+			float y2=y1+(dimension+dis);
+			float x0=(x1+x2)*0.5;
+			float y0=(y1+y2)*0.5;
+			
+			x-=x0;
+			y-=y0;
+			
+			x*=2.0/dimension;
+			y*=2.0/dimension;
+			
+			float z;
+			
+			bool draw;
+			if(style==1){//矩形
+				if(dis==0.0){//否则可能会出现裂缝
+					draw=true;
+				}else{
+					draw=x>-1.0&&x<1.0&&y>-1.0&&y<1.0;
+				}
+			}else if(style==2){//菱形
+				draw=x+y<1.0&&x-y<1.0&&-x+y<1.0&&-x-y<1.0;
+			}else if(style==3){//心形
+				y-=0.213;
+				y*=1.299;
+				if(x<0.0){
+					x*=-1.0;
+				}
+				float y_sqrt_x=y+sqrt(x);
+				draw=x*x+y_sqrt_x*y_sqrt_x<1.0;
+			}else{//椭圆形
+				draw=x*x+y*y<1.0;
+			}
+			
+			if(draw){
+				x=x0*ma+y0*md+mtx;
+				y=x0*mb+y0*me+mty;
+				z=x0*mc+y0*mf+mtz;
+				x=x*focalLength/(focalLength+z)+o.x;
+				y=y*focalLength/(focalLength+z)+o.y;
+				x=clamp(x,0.0,srcSize.x-1.0);
+				y=clamp(y,0.0,srcSize.y-1.0);
+				dst=sampleNearest(src,float2(x,y));
+				dst.a*=alpha;
+			}else{
+				dst=float4(0.0,0.0,0.0,0.0);
+			}
+			
+		}else{
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

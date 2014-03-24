@@ -1,0 +1,26 @@
+/***
+Chessboard
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月05日 00:36:16
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+tex ft0,v0,fs0<2d>
+mul ft1,ft0,fc0
+mul ft1.xyz,ft1.xyz,fc0.www
+mul ft2,ft0,fc1
+mul ft2.xyz,ft2.xyz,fc1.www
+div ft3.xy,v0.xy,fc2.xy
+frc ft4.xy,ft3.xy
+sub ft3.xy,ft3.xy,ft4.xy
+add ft3.x,ft3.x,ft3.y
+div ft3.x,ft3.x,fc2.z
+frc ft3.x,ft3.x
+seq ft3.x,ft3.x,fc2.w
+mul ft1,ft1,ft3.xxxx
+sub ft3.x,fc3.x,ft3.x
+mul ft2,ft2,ft3.xxxx
+add ft0,ft1,ft2
+mul ft0,ft0,fc3.yyyy
+mov oc,ft0

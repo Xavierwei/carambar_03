@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/***
+FileBar
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；已婚（单身美女们没机会了~~）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2013年07月25日 17:36:09
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+-->
+
+<s:Group
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:local="*"
+>
+	
+	<mx:TextInput id="txt" left="0" right="50" change="changeTxt()"/>
+	<s:Button label="浏览" width="45" right="0" click="browse()"/>
+	
+	<fx:Script>
+		<![CDATA[
+			import zero.ui.So;
+			
+			private var so_key:String;
+			private var description:String;
+			private var extension:String;
+			private var dragDropClient:InteractiveObject;
+			private var onChange:Function;
+			private var delay:Boolean;
+			private var timeoutId:int;
+			
+			protected var file:File;
+			
+			/**
+			 * @param _url 路径
+			 * @param _onChange 当变化时
+			 * @param _delay 当变化时延时触发
+			 * @param _description 描述，比如："图片文件"，默认："文件"
+			 * @param _extension 扩展名，比如："*.jpg;*.png;*.gif;*.bmp"，默认："*.*"
+			 * @param _dragDropClient 拖放对象，默认为this
+			 * @return 
+			 * 
+			 */
+			public function init(
+				_so_key:String,
+				_defaultURL:String=null,
+				_onChange:Function=null,
+				_delay:Boolean=true,
+				_description:String=null,
+				_extension:String=null,
+				_dragDropClient:InteractiveObject=null
+			):void{
+				
+				so_key=_so_key;
+				description=_description||"文件";
+				extension=_extension||"*.*";
+				dragDropClient=_dragDropClient||this;
+				onChange=_onChange;
+				delay=_delay;
+				
+				file=new File();
+				file.addEventListener(Event.SELECT,select);
+				
+				dragDropClient.addEventListener(NativeDragEvent.NATIVE_DRAG_ENTER,nativeDragEnter);
+				dragDropClient.addEventListener(NativeDragEvent.NATIVE_DRAG_DROP,nativeDragDrop);
+				
+				var _url:String=So.read(so_key);
+				if(_url is String){
+				}else{
+					_url=_defaultURL;
+				}
+				if(_url){
+					txt.text=decodeURI(_url.replace(/\\/g,"/"));
+					changeTxt();
+				}else{
+					txt.text="";
+				}
+				
+			}
+			private function browse():void{
+				var fileFilterArr:Array=[new FileFilter(description+"（"+extension+"）",extension)];
+				var matchArr:Array=extension.match(/\*\.[^\.;]+/g);
+				if(matchArr&&matchArr.length>1){
+					for each(var matchStr:String in matchArr){
+						fileFilterArr.push(new FileFilter(matchStr,matchStr));
+					}
+				}
+				file.browseForOpen("选择一个 "+description+"：",fileFilterArr);
+			}
+			private function select(...args):void{
+				txt.text=decodeURI(file.url);
+				change();
+			}
+			private function nativeDragEnter(event:NativeDragEvent):void{
+				var fileArr:Array=event.clipboard.getData(ClipboardFormats.FILE_LIST_FORMAT) as Array;
+				if(fileArr){
+					if(fileArr.length==1){
+						if(checkIsMatchType(fileArr[0])){
+							NativeDragManager.acceptDragDrop(event.currentTarget as InteractiveObject);
+						}
+					}
+				}
+			}
+			private function nativeDragDrop(event:NativeDragEvent):void{
+				var fileArr:Array=event.clipboard.getData(ClipboardFormats.FILE_LIST_FORMAT) as Array;
+				if(fileArr){
+					if(fileArr.length==1){
+						if(checkIsMatchType(fileArr[0])){
+							txt.text=decodeURI(fileArr[0].url);
+							changeTxt();
+						}
+					}
+				}
+			}
+			private function checkIsMatchType(file:File):Boolean{
+				if(extension.indexOf("*.*")==-1){
+					return new RegExp("^("+extension.replace(/;/g,"|").replace(/\./g,"\\.").replace(/\*/g,".*")+")$","i").test(decodeURI(file.url));
+				}
+				return true;
+			}
+			
+			private function changeTxt():void{
+				var url:String=formatURL(txt.text);
+				try{
+					file.url=url;
+				}catch(e:Error){}
+				change();
+			}
+			private function change():void{
+				//try{
+				//	trace("file.url="+decodeURI(file.url));
+				//}catch(e:Error){}
+				So.write(so_key,txt.text);
+				if(delay){
+					clearTimeout(timeoutId);
+					timeoutId=setTimeout(changeDelay,500);
+				}else{
+					if(onChange==null){
+					}else{
+						onChange();
+					}
+				}
+			}
+			private function changeDelay():void{
+				clearTimeout(timeoutId);
+				if(onChange==null){
+				}else{
+					onChange();
+				}
+			}
+			
+			private function formatURL(url:String):String{
+				url=decodeURI(url).replace(/\\/g,"/");
+				if(url.toLowerCase().indexOf("file:///")==0){
+				}else{
+					url="file:///"+url;
+				}
+				return url;
+			}
+			public function getData():ByteArray{
+				var file:File=getFile();
+				if(file){
+					if(file.exists){
+						if(file.isDirectory){
+						}else{
+							if(checkIsMatchType(file)){
+								return ReadAndWriteFile.readDataFromFile(file);
+							}
+						}
+					}
+				}
+				return null;
+			}
+			public function getFile():File{
+				var url:String=formatURL(txt.text);
+				try{
+					var file:File=new File(url);
+				}catch(e:Error){
+					file=null;
+				}
+				if(file){
+					return file;
+				}
+				return null;
+			}
+			
+		]]>
+	</fx:Script>
+	
+</s:Group>

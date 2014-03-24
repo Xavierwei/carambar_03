@@ -1,0 +1,59 @@
+<languageVersion: 1.0;>
+
+/***
+Pingpu
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2012年12月05日 00:12:48
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+kernel Pingpu
+<
+	namespace:"zero.shaders.classic";
+	vendor:"ZЁЯ¤";
+	version:2;
+	description:"平铺";
+>
+{
+	
+	parameter float alpha;
+	parameter float dis;
+	parameter float tranParam1;
+	parameter float tranParam2;
+	parameter float tranParam3;
+	parameter float tranParam4;
+	parameter float tranParam5;
+	parameter float tranParam6;
+	parameter float tranParam7;
+	parameter float tranParam8;
+	parameter float tranParam9;
+	parameter float2 srcSize
+	<
+		description:"输入图像的宽高";
+		parameterType:"inputSize";
+		inputSizeName:"src";
+	>;
+	
+
+	input image4 src;
+	output pixel4 dst;
+	
+	void evaluatePixel()
+	{
+		if(alpha>0.0){
+			float2 oc=outCoord();
+			float tranParamKK=tranParam1+tranParam2*oc.x+tranParam3*oc.y;
+			float x=(tranParam4+tranParam5*oc.x+tranParam6*oc.y)/tranParamKK;
+			float y=(tranParam7+tranParam8*oc.x+tranParam9*oc.y)/-tranParamKK;
+			
+			x=mod(x+dis*0.5,srcSize.x+dis)-dis*0.5;
+			y=mod(y+dis*0.5,srcSize.y+dis)-dis*0.5;
+			
+			dst=sampleNearest(src,float2(x,y));
+			dst.a*=alpha;
+		}else{
+			dst=float4(0.0,0.0,0.0,0.0);
+		}
+	}
+}

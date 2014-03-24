@@ -1,0 +1,129 @@
+http://www.iquilezles.org/apps/shadertoy/
+
+
+
+A tool for shader editing, using the following crazy layering of APIs.... GLSL > OpenGL > WebGL > JavaScript > HTML.
+
+This help only covers the parts of GLSL ES that are relevant for ShaderToy. For the complete specification please have a look at GLSL ES specification
+
+Language:
+Preprocessor: # #define #undef #if #ifdef #ifndef #else #elif #endif #error #pragma #extension #version #line
+Operators: () + - ~ ! * / % << >> < > <= >= == != & ^ | && ||
+Comments: // /* */
+Types: void bool int float vec2 vec3 vec4 bvec2 bvec3 bvec4 ivec2 ivec3 ivec4 mat2 mat3 mat4 sampler2D
+Function Parameter Qualifiers: [none], in, out, inout
+Global Variable Qualifiers: const
+Vector Components: .xyzw .rgba .stpq
+Flow Control: if else for while do-while discard return break continue
+Output: vec2 gl_FragColor
+Input: vec4 gl_FragCoord
+Built-in Functions:
+
+    type radians (type degrees)
+    type degrees (type radians)
+    type sin (type angle)
+    type cos (type angle)
+    type tan (type angle)
+    type asin (type x)
+    type acos (type x)
+    type atan (type y, type x)
+    type atan (type y_over_x)
+
+	
+
+    type pow (type x, type y)
+    type exp (type x)
+    type log (type x)
+    type exp2 (type x)
+    type log2 (type x)
+    type sqrt (type x)
+    type inversesqrt (type x)
+
+    type abs (type x)
+    type sign (type x)
+    type floor (type x)
+    type ceil (type x)
+    type fract (type x)
+    type mod (type x, float y)
+    type mod (type x, type y)
+    type min (type x, type y)
+    type min (type x, float y)
+    type max (type x, type y)
+    type max (type x, float y)
+    type clamp (type x, type minV, type maxV)
+    type clamp (type x, float minV, float maxV)
+    type mix (type x, type y, type a)
+    type mix (type x, type y, float a)
+    type step (type edge, type x)
+    type step (float edge, type x)
+    type smoothstep (type a, type b, type x)
+    type smoothstep (float a, float b, type x)
+    mat matrixCompMult (mat x, mat y)
+
+	
+
+    float length (type x)
+    float distance (type p0, type p1)
+    float dot (type x, type y)
+    vec3 cross (vec3 x, vec3 y)
+    type normalize (type x)
+    type faceforward (type N, type I, type Nref)
+    type reflect (type I, type N)
+    type refract (type I, type N,float eta)
+
+    bvec lessThan(vec x, vec y)
+    bvec lessThan(ivec x, ivec y)
+    bvec lessThanEqual(vec x, vec y)
+    bvec lessThanEqual(ivec x, ivec y)
+    bvec greaterThan(vec x, vec y)
+    bvec greaterThan(ivec x, ivec y)
+    bvec greaterThanEqual(vec x, vec y)
+    bvec greaterThanEqual(ivec x, ivec y)
+    bvec equal(vec x, vec y)
+    bvec equal(ivec x, ivec y)
+    bvec equal(bvec x, bvec y)
+    bvec notEqual(vec x, vec y)
+    bvec notEqual(ivec x, ivec y)
+    bvec notEqual(bvec x, bvec y)
+    bool any(bvec x)
+    bool all(bvec x)
+    bvec not(bvec x)
+
+	
+
+    vec4 texture2D(sampler2D sampler, vec2 coord )
+    vec4 texture2D(sampler2D sampler, vec2 coord, float bias)
+    vec4 texture2DProj(sampler2D sampler, vec3 coord )
+    vec4 texture2DProj(sampler2D sampler, vec3 coord, float bias)
+    vec4 texture2DProj(sampler2D sampler, vec4 coord)
+    vec4 texture2DProj(sampler2D sampler, vec4 coord, float bias)
+    vec4 texture2DLod(sampler2D sampler, vec2 coord, float lod)
+    vec4 texture2DProjLod(sampler2D sampler, vec3 coord, float lod)
+    vec4 texture2DProjLod(sampler2D sampler, vec4 coord, float lod)
+
+
+
+How-to
+Use structs: struct myDataType { float pedo; vec3 color; }; myDataType myData = myDataType(3.0, vec3(1.0, 2.0, 3.0));
+Initialize arrays: vec4 mydata[7] = vec4[]( vec4(...), vec4(...), ...);
+Do convertions: int b = 3; float b = float(a);
+Do component switzzling: vec4 a = vec4(1.0,2.0,3.0,4.0); vec4 b = a.zyyw;
+Access matrix components: mat4 m; m[1] = vec4(2.0); m[0][0] = 1.0; m[2][3] = 2.0;
+Use extensions: #extension {extension_name, all} : {require, enable, warn, disable }
+
+
+What is NOT legal
+the f suffix for floating pont numbers: 1.0f is illegal in GLSL. You must use 1.0
+saturate(): saturate(x) doesn't exist in GLSL. Use clamp(x,0.0,1.0) instead
+
+
+Shader Toy specific input
+uniform vec4 mouse: xy contain the current pixel coords (if LMB is down). zw contain the click pixel.
+uniform vec2 resolution: the rendering vieport resolution.
+uniform float time: current time in seconds.
+uniform sampler2D tex0: sampler for input texture 0.
+uniform sampler2D tex1: sampler for input texture 1.
+uniform sampler2D tex2: sampler for input texture 2.
+uniform sampler2D tex3: sampler for input texture 3.
+
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+/***
+HotkeyButton
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2011年10月7日 11:10:36
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+-->
+
+<s:Button
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:ui="zero.ui.*"
+	xmlns:local="*"
+	addedToStage="added()"
+>
+	<fx:Script>
+		<![CDATA[
+			import flash.utils.describeType;
+			
+			import mx.events.FlexEvent;
+			
+			private var __ctrlKey:Boolean;
+			public function set ctrlKey(_ctrlKey:Boolean):void{
+				__ctrlKey=_ctrlKey;
+				updateToolTip();
+			}
+			
+			private var __shiftKey:Boolean;
+			public function set shiftKey(_shiftKey:Boolean):void{
+				__shiftKey=_shiftKey;
+				updateToolTip();
+			}
+			
+			private var __altKey:Boolean;
+			public function set altKey(_altKey:Boolean):void{
+				__altKey=_altKey;
+				updateToolTip();
+			}
+			
+			private var __keyCode:int=-1;
+			public function set key(_key:String):void{
+				__keyCode=_key.toUpperCase().charCodeAt(0);
+				updateToolTip();
+			}
+			public function set keyCode(_keyCode:int):void{
+				__keyCode=_keyCode;
+				updateToolTip();
+			}
+			
+			private function updateToolTip():void{
+				if(__keyCode>-1){
+					var keyCodeXML:XML=null;
+					var constantXML:XML;
+					for each(constantXML in describeType(Keyboard).constant){
+						if(constantXML.@type.toString()=="uint"){
+							if(Keyboard[constantXML.@name.toString()]==__keyCode){
+								keyCodeXML=constantXML;
+								break;
+							}
+						}
+					}
+					if(keyCodeXML){
+					}else{
+						throw new Error("找不到 keyCodeXML："+__keyCode);
+					}
+					
+					toolTip="快捷键："+(__ctrlKey?"Ctrl + ":"")+(__shiftKey?"Shift + ":"")+(__altKey?"Alt + ":"")+(Keyboard["KEYNAME_"+keyCodeXML.@name.toString()]||String.fromCharCode(__keyCode).replace(/\s+/g,"")||(keyCodeXML.@name.toString().toUpperCase().charAt(0)+keyCodeXML.@name.toString().toLowerCase().substr(1)));
+				}
+			}
+			
+			private function added():void{
+				stage.addEventListener(KeyboardEvent.KEY_UP,keyUp);
+			}
+			private function keyUp(event:KeyboardEvent):void{
+				if(__keyCode>-1){
+					if(
+						__ctrlKey==event.ctrlKey
+						&&
+						__shiftKey==event.shiftKey
+						&&
+						__altKey==event.altKey
+					){
+						if(event.keyCode==__keyCode){
+							dispatchEvent(new FlexEvent(FlexEvent.BUTTON_DOWN));
+							dispatchEvent(new MouseEvent(MouseEvent.CLICK));
+							//stage.focus=this;
+						}
+					}
+				}
+			}
+			
+		]]>
+	</fx:Script>
+</s:Button>

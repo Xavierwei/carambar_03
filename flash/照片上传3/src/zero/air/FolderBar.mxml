@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/***
+FolderBar
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；已婚（单身美女们没机会了~~）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2013年07月26日 14:53:13
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+-->
+
+<s:Group
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:local="*"
+>
+	
+	<mx:TextInput id="txt" left="0" right="50" change="changeTxt()"/>
+	<s:Button label="浏览" width="45" right="0" click="browse()"/>
+	
+	<fx:Script>
+		<![CDATA[
+			import zero.ui.So;
+			
+			private var so_key:String;
+			private var description:String;
+			private var dragDropClient:InteractiveObject;
+			private var onChange:Function;
+			private var delay:Boolean;
+			private var timeoutId:int;
+			
+			protected var folder:File;
+			
+			/**
+			 * @param _so_key 记忆字段
+			 * @param _defaultURL 默认路径
+			 * @param _onChange 当变化时
+			 * @param _delay 当变化时延时触发
+			 * @param _description 描述，比如："文件夹"，默认："文件夹"
+			 * @param _dragDropClient 拖放对象，默认为this
+			 * @return 
+			 * 
+			 */
+			public function init(
+				_so_key:String,
+				_defaultURL:String=null,
+				_onChange:Function=null,
+				_delay:Boolean=true,
+				_description:String=null,
+				_dragDropClient:InteractiveObject=null
+			):void{
+				
+				so_key=_so_key;
+				description=_description||"文件夹";
+				dragDropClient=_dragDropClient||this;
+				onChange=_onChange;
+				delay=_delay;
+				
+				folder=new File();
+				folder.addEventListener(Event.SELECT,select);
+				
+				dragDropClient.addEventListener(NativeDragEvent.NATIVE_DRAG_ENTER,nativeDragEnter);
+				dragDropClient.addEventListener(NativeDragEvent.NATIVE_DRAG_DROP,nativeDragDrop);
+				
+				var _url:String=So.read(so_key);
+				if(_url is String){
+				}else{
+					_url=_defaultURL;
+				}
+				if(_url){
+					txt.text=decodeURI(_url.replace(/\\/g,"/"));
+					changeTxt();
+				}else{
+					txt.text="";
+				}
+				
+			}
+			private function browse():void{
+				folder.browseForDirectory("选择一个 "+description+"：");
+			}
+			private function select(...args):void{
+				txt.text=decodeURI(folder.url);
+				change();
+			}
+			private function nativeDragEnter(event:NativeDragEvent):void{
+				var fileArr:Array=event.clipboard.getData(ClipboardFormats.FILE_LIST_FORMAT) as Array;
+				if(fileArr){
+					if(fileArr.length==1){
+						if(fileArr[0].isDirectory){
+							NativeDragManager.acceptDragDrop(event.currentTarget as InteractiveObject);
+						}
+					}
+				}
+			}
+			private function nativeDragDrop(event:NativeDragEvent):void{
+				var fileArr:Array=event.clipboard.getData(ClipboardFormats.FILE_LIST_FORMAT) as Array;
+				if(fileArr){
+					if(fileArr.length==1){
+						if(fileArr[0].isDirectory){
+							txt.text=decodeURI(fileArr[0].url);
+							changeTxt();
+						}
+					}
+				}
+			}
+			
+			private function changeTxt():void{
+				var url:String=formatURL(txt.text);
+				try{
+					folder.url=url;
+				}catch(e:Error){}
+				change();
+			}
+			private function change():void{
+				//try{
+				//	trace("folder.url="+decodeURI(folder.url));
+				//}catch(e:Error){}
+				So.write(so_key,txt.text);
+				if(delay){
+					clearTimeout(timeoutId);
+					timeoutId=setTimeout(changeDelay,500);
+				}else{
+					if(onChange==null){
+					}else{
+						onChange();
+					}
+				}
+			}
+			private function changeDelay():void{
+				clearTimeout(timeoutId);
+				if(onChange==null){
+				}else{
+					onChange();
+				}
+			}
+			
+			private function formatURL(url:String):String{
+				url=decodeURI(url).replace(/\\/g,"/");
+				if(url.toLowerCase().indexOf("file:///")==0){
+				}else{
+					url="file:///"+url;
+				}
+				return url;
+			}
+			/*public function getFolder():File{
+				var url:String=formatURL(txt.text);
+				try{
+					var folder:File=new File(url);
+				}catch(e:Error){
+					folder=null;
+				}
+				if(folder){
+					if(folder.exists){
+						if(folder.isDirectory){
+							return folder;
+						}
+					}
+				}
+				return null;
+			}*/
+			
+		]]>
+	</fx:Script>
+	
+</s:Group>

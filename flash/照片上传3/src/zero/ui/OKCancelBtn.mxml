@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+/***
+OKCancelBtn
+创建人：ZЁЯ¤　身高：168cm+；体重：57kg+；未婚（已有女友）；最爱的运动：睡觉；格言：路见不平，拔腿就跑。QQ：358315553。
+创建时间：2011年7月30日 19:09:42
+简要说明：这家伙很懒什么都没写。
+用法举例：这家伙还是很懒什么都没写。
+*/
+
+-->
+
+<s:Button
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:ui="zero.ui.*"
+	xmlns:local="*"
+	click="click()"
+>
+	<fx:Script>
+		<![CDATA[
+			public function init():void{
+				// ^_^
+				
+				label0=label;
+				flag=false;
+			}
+			public function clear():void{
+				//^_^ 
+				
+				onClick=null;
+			}
+			
+			private var label0:String;
+			public var onClick:Function;
+			
+			private var __flag:Boolean;
+			public function get flag():Boolean{
+				return __flag;
+			}
+			public function set flag(_flag:Boolean):void{
+				__flag=_flag;
+				if(__flag){
+					label="取消";
+				}else{
+					label=label0;
+				}
+			}
+			public function reset():void{
+				flag=false;
+			}
+			public function click():void{
+				flag=!flag;
+				if(onClick==null){
+				}else{
+					onClick(flag);
+				}
+			}
+			
+			/*
+			public function setProgress(value:int,total:int):void{
+				//label="取消("+value+"/"+total+")";
+				label="取消 "+int(value/total*100)+"%";
+			}
+			*/
+		]]>
+	</fx:Script>
+</s:Button>
