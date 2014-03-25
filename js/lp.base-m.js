@@ -17,6 +17,7 @@ LP.use(['jquery', 'api', 'easing','transit','hammer', 'mousewheel', 'scrollfix']
     var ITEM_WIDTH = MIN_WIDTH;
     var WIN_WIDTH = $(window).width();
 	var $mainWrap = $('.main-wrap');
+    var styleIndex = 0;
 
 	var scrollTimeout;
     var monthsShort = ["Jan", "Feb", "Mars", "Apr", "Mai", "Juin", "Départ", "Août", "Sept", "Oct", "Nov", "Déc"];

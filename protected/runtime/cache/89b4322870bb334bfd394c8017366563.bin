@@ -1,4 +1,4 @@
-a:2:{i:0;a:2:{i:0;s:13718:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+a:2:{i:0;a:2:{i:0;s:13717:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -18,7 +18,7 @@ a:2:{i:0;a:2:{i:0;s:13718:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-49326918-1', 'goodluckcarambar.com');
+		ga('create', 'UA-49226115-1', 'goodluckcarambar.com');
 		ga('send', 'pageview');
 
 	</script>
@@ -61,7 +61,6 @@ a:2:{i:0;a:2:{i:0;s:13718:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 		try{adperfTracker.track( adperftrackobj );}catch(err){}
 	}
 </script>
-
 <div class="loading-overlay">
 	<div class="loading-logo"><img src="images/loading_logo.png" /></div>
 </div>
