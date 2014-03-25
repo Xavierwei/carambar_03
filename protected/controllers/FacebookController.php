@@ -31,7 +31,7 @@ class FacebookController extends Controller {
 		$_ = $request->getParam("code");
 
 		if(!$_) {
-			$access_token = Yii::app()->session['fb_access_token'];
+			$access_token = Drtool::getMyCookie('fb_token');
 			$this->facebook->setAccessToken($access_token);
 			$user_id = $this->facebook->getUser();
 			if(!$user_id) {
@@ -59,6 +59,7 @@ class FacebookController extends Controller {
 //					. $params['access_token'];
 
 			$access_token = Yii::app()->session['fb_access_token'] = $params['access_token'];
+			Drtool::setMyCookie('fb_token',$params['access_token'],1);
 			$this->facebook->setAccessToken($access_token);
 			$user_profile = $this->facebook->api('/me','GET');
 			// Create the new user if user doesn't exist in database
@@ -194,8 +195,11 @@ class FacebookController extends Controller {
 			return $this->responseError(703);
 		}
 
-		$access_token = Yii::app()->session['fb_access_token'];
+
+		//$access_token = Yii::app()->session['fb_access_token'];
+		$access_token = Drtool::getMyCookie('fb_token');
 		$this->facebook->setAccessToken($access_token);
+		$user_profile = $this->facebook->api('/me','GET');
 
 		if(!empty($newfile)) {
 			$type = 'photo';
@@ -224,8 +228,8 @@ class FacebookController extends Controller {
 
 			$node->mid = isset($mid['post_id']) ? $mid['post_id'] : $mid['id'];
 			$node->description = $content;
-			$node->screen_name = Yii::app()->user->screen_name;
-			$node->email = Yii::app()->user->personal_email;
+			$node->screen_name = $user_profile['username'];
+			$node->email = $user_profile['email'];
 			if(isset($newfile)) {
 				$node->file = $newfile;
 			}
