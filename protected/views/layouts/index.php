@@ -61,7 +61,6 @@
 		try{adperfTracker.track( adperftrackobj );}catch(err){}
 	}
 </script>
-
 <?php echo $content;?>
 
 <script type="text/javascript" src="./js/plugin/modernizr-2.5.3.min.js"></script>

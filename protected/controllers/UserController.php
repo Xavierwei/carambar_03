@@ -19,7 +19,7 @@ class UserController extends Controller {
 		if (!$userIdentify->authenticate()) {
 		}
 		else {
-			Yii::app()->user->login($userIdentify);
+			Yii::app()->user->login($userIdentify,3600*24*1);
 			$this->redirect('../admin/index');
 		}
 	}

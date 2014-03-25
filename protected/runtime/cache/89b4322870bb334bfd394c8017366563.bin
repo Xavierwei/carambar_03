@@ -1,4 +1,4 @@
-a:2:{i:0;a:2:{i:0;s:13434:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+a:2:{i:0;a:2:{i:0;s:13718:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -18,7 +18,7 @@ a:2:{i:0;a:2:{i:0;s:13434:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-49226115-1', 'goodluckcarambar.com');
+		ga('create', 'UA-49326918-1', 'goodluckcarambar.com');
 		ga('send', 'pageview');
 
 	</script>
@@ -70,7 +70,8 @@ a:2:{i:0;a:2:{i:0;s:13434:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
      data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
 	<div class="hdcontent">
 		<a class="nav1 nav1on" href="./"></a>
-		<a class="nav2" href="./photowall.php"></a>
+		<a class="nav2 show-desktop" href="./photowall.php"></a>
+		<a class="nav2 show-mobile" href="./photowall-m.php"></a>
 	</div>
 </div>
 <!--  -->
@@ -164,7 +165,7 @@ a:2:{i:0;a:2:{i:0;s:13434:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 			<div class="share-t">
 				<textarea class="share-txt" id="twitter-content"></textarea>
 				<p class="share-t-num" id="twitter-words-limit"><span>122</span>/140</p>
-				<a target="_blank" href="javascript:void(0)" class="share-tbtn disabled" data-a="share_twitter"></a>
+				<a target="_blank" href="javascript:transfoWebo(86)" class="share-tbtn disabled" data-a="share_twitter"></a>
 
 			</div>
 			<div class="share-i cs-clear">
@@ -187,7 +188,8 @@ a:2:{i:0;a:2:{i:0;s:13434:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 		</div>
 		<!-- line -->
 		<div class="line line3">
-			<a href="photowall.php" class="line-com3"></a>
+			<a href="./photowall.php" class="line-com3 show-desktop"></a>
+			<a href="./photowall-m.php" class="line-com3 show-mobile"></a>
 		</div>
 		<!--  -->
 	</div>
@@ -290,7 +292,10 @@ a:2:{i:0;a:2:{i:0;s:13434:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 
 <!-- #photowall-item-tpl -->
 <script type="text/tpl" id="photowall-item-template">
-	<a href="photowall.php#/nid/{{nid}}" class="phoitem">
+	<a href="./photowall.php#/nid/{{nid}}" class="phoitem show-desktop">
+		<img src="./{{thumbnail}}">
+	</a>
+	<a href="./photowall-m.php#/nid/{{nid}}" class="phoitem show-mobile">
 		<img src="./{{thumbnail}}">
 	</a>
 </script>

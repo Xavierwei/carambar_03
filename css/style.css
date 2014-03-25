@@ -24,7 +24,7 @@ a:hover{color:#e82426}
 .cs-clear{+zoom:1;}
 .cs-clear:before,
 .cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
-.show-mobile {display:none;}
+.show-mobile {display:none!important;}
 
 /* Loading Used
 ================================================================================================= */
@@ -35,11 +35,11 @@ a:hover{color:#e82426}
 ================================================================================================= */
 .header{min-width: 900px;height: 164px;background: url('../images/hdbg.png') no-repeat bottom center;width:100%;position: absolute;top:10px;z-index:11;}
     .hdcontent{margin: 0 auto;position: relative;}
-        .nav1{background: url('../images/nav.png') no-repeat -12px -119px;width: 120px;height: 25px;position: absolute;top:27px;left:50%;margin: 0 0 0 -300px}
+        .nav1{background: url('../images/nav.png') no-repeat -12px -114px;width: 120px;height: 30px;position: absolute;top:21px;left:50%;margin: 0 0 0 -300px}
         .nav2{background: url('../images/nav.png') no-repeat 0 0;width: 150px;height: 25px;position: absolute;top:27px;left:50%;margin: 0 0 0 190px}
-        .nav1:hover {background-position:-416px -119px;}
+        .nav1:hover {background-position:-416px -114px;}
         .nav2:hover {background-position:-404px 0;}
-        .nav1on, .nav1:active{background-position:-835px -119px;}
+        .nav1on, .nav1:active{background-position:-835px -114px;}
         .nav2on, .nav2:active{background-position:-819px 0;}
 
 .page {min-width: 900px;}
@@ -213,7 +213,7 @@ a:hover{color:#e82426}
 .presentation-box {width:1000px;height:430px;margin:80px auto 0 auto;position: relative;}
 .carambar-man {background: url(../images/carambar-man.png) no-repeat;width:240px;height:382px;left:85px;position: absolute;}
 .tooltip {background:url(../images/tooltip_bg.png) no-repeat;width:593px;height:168px;position: absolute;top:66px;left:249px;}
-    .tips-content {background: url(../images/tooltip_content.png) no-repeat;width:246px;height:123px;float: left;margin:20px 0 0 70px;}
+    .tips-content {background: url(../images/tooltip_content.png) no-repeat;width:246px;height:131px;float: left;margin:20px 0 0 70px;}
     .tips-content-p3 {background: url(../images/tooltip_content_p3.png) no-repeat;width:516px;height:133px;margin:14px 0 0 60px;position:relative;}
     .tips-content-p3 .countdown {position:absolute;right:16px;bottom:16px;font-family:'Arial Narrow';color:#2f3688;font-size:21px;}
     .tips-content-p3 .countdown span {margin:0 0 0 12px;display:block;float:left;width:24px;}
@@ -248,7 +248,7 @@ a:hover{color:#e82426}
     .digit8 {background-position:0 -1729px;}
     .digit9 {background-position:0 -1945px;}
     .goto-support-bg {background: url(../images/goto_star.png) no-repeat center;width:100%;height:46px;position: relative;z-index:10;}
-    .goto-support {background:url(../images/goto_btn.gif) no-repeat center;width:406px;height:46px;text-indent:-999em;margin:0 auto;display: block;}
+    .goto-support {background:url(../images/goto_btn.gif) no-repeat center;width:502px;height:46px;text-indent:-999em;margin:0 auto;display: block;}
     .phase4 .goto-support-bg {margin-top:20px;}
 
 /* challenge
@@ -333,8 +333,8 @@ a:hover{color:#e82426}
 /* Mobile Used
 ================================================================================================= */
 @media screen and (max-width:825px){
-    .show-mobile {display:block;}
-    .show-desktop {display:none;}
+    .show-mobile {display:block!important;}
+    .show-desktop {display:none!important;}
     .page {min-width:640px;}
     body{overflow-x:hidden;}
     .overlay {cursor: pointer;}
@@ -342,7 +342,7 @@ a:hover{color:#e82426}
     .header{background: url('../mobileimg/hdbg.png') no-repeat center;height: 88px;min-width:640px;}
     .page{overflow: hidden;}
     .footer{width:640px;overflow: hidden;border:0;margin: 30px 0}
-    .nav1{margin:0 0 0 -261px;width:114px;top:19px;background-image: url('../mobileimg/nav.png');background-position: -701px -100px;}
+    .nav1{margin:0 0 0 -261px;width:114px;top:15px;background-image: url('../mobileimg/nav.png');background-position: -701px -95px;}
     .nav1:hover {background-position:-701px -100px;}
     .nav2{margin:0 0 0 144px;width:120px;top:19px;background-image: url('../mobileimg/nav.png');}
     .nav2:hover {background-position:-338px 0;}
@@ -392,6 +392,7 @@ a:hover{color:#e82426}
     .pholist{background: url('../mobileimg/pholist.png') repeat-x center;height: 203px;margin: 15px auto 0;width:572px;padding:10px 0 0 8px;overflow: hidden}
     .phoitem{width:156px;height: 156px;}
     .phoitem img{width:156px;height: 156px;}
+    .pholist-loading {display: none;}
     .line-com3{background:#ffeb00 url('../mobileimg/line_com3.png') no-repeat center;width: 380px;height: 65px;margin: 0 auto}
 
     .sec-blue{background: url('../mobileimg/sec1_blue.png') repeat-x top ;height: 840px;}
@@ -451,7 +452,7 @@ a:hover{color:#e82426}
     .presentation-box .carambar-man {left:-25px!important;top:-30px!important;z-index: 2;}
     .tooltip {background:url('../mobileimg/tooltip_bg.png') no-repeat;width:487px;height:221px;top:30px!important;left:140px!important;}
         .phase3 .tooltip {background:url('../mobileimg/tooltip_bg2.png') no-repeat;width:473px;height:177px;top:30px!important;left:140px!important;}
-    .tips-content {background: url('../mobileimg/tooltip_content.png') no-repeat;width:405px;height:159px;}
+    .tips-content {background: url('../mobileimg/tooltip_content.png') no-repeat;width:405px;height:181px;margin-left:87px;}
     .tips-video {margin:0;left:72px;top:108px;position:absolute;}
     .tips-video img {width:165px;}
     .tips-video .video-play {background-size:300px auto;background-position:55px 15px;}

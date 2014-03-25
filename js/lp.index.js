@@ -246,13 +246,13 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
         $('.vote-btn').not(this).addClass('disabled');
         $(this).addClass('voted');
         switch(data.cid) {
-            case 1:
+            case '1':
                 transfoWebo(83);
                 break;
-            case 2:
+            case '2':
                 transfoWebo(84);
                 break;
-            case 3:
+            case '3':
                 transfoWebo(85);
                 break;
         }

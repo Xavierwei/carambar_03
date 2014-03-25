@@ -34,8 +34,8 @@ a{text-decoration:none;}
 .header{background: url('../../mobileimg/hdbg.png') no-repeat center;height: 123px;min-width:640px;border-bottom:1px solid #2f3688;}
 .page{overflow: hidden;}
 .footer{width:640px;overflow: hidden;border:0;margin: 30px 0}
-.nav1{position:absolute;display:block;width:96px;height:21px;left:57px;top:37px;background: url('../img/nav.png') no-repeat -11px -100px;}
-.nav1:hover {background-position:-701px -100px;}
+.nav1{position:absolute;display:block;width:96px;height:25px;left:57px;top:36px;background: url('../img/nav.png') no-repeat -11px -95px;}
+.nav1:hover {background-position:-701px -95px;}
 .nav2{position:absolute;display:block;width:120px;height:25px;left:466px;top:37px;background: url('../img/nav.png') no-repeat -686px 0;}
 .hdcontent a {-webkit-transition:   all 0s ease;-moz-transition:  all 0s ease;-o-transition:  all 0s ease;-ms-transition:  all 0s ease;transition:  all 0s ease;}
 

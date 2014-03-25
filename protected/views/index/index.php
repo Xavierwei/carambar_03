@@ -6,7 +6,8 @@
      data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
 	<div class="hdcontent">
 		<a class="nav1 nav1on" href="./"></a>
-		<a class="nav2" href="./photowall.php"></a>
+		<a class="nav2 show-desktop" href="./photowall.php"></a>
+		<a class="nav2 show-mobile" href="./photowall-m.php"></a>
 	</div>
 </div>
 <!--  -->
@@ -268,7 +269,7 @@
 			<div class="share-t">
 				<textarea class="share-txt" id="twitter-content"></textarea>
 				<p class="share-t-num" id="twitter-words-limit"><span>122</span>/140</p>
-				<a target="_blank" href="javascript:void(0)" class="share-tbtn disabled" data-a="share_twitter"></a>
+				<a target="_blank" href="javascript:transfoWebo(86)" class="share-tbtn disabled" data-a="share_twitter"></a>
 
 			</div>
 			<div class="share-i cs-clear">
@@ -292,7 +293,8 @@
 		</div>
 		<!-- line -->
 		<div class="line line3">
-			<a href="photowall.php" class="line-com3"></a>
+			<a href="./photowall.php" class="line-com3 show-desktop"></a>
+			<a href="./photowall-m.php" class="line-com3 show-mobile"></a>
 		</div>
 		<!--  -->
 	</div>
@@ -395,7 +397,10 @@
 
 <!-- #photowall-item-tpl -->
 <script type="text/tpl" id="photowall-item-template">
-	<a href="photowall.php#/nid/{{nid}}" class="phoitem">
+	<a href="./photowall.php#/nid/{{nid}}" class="phoitem show-desktop">
+		<img src="./{{thumbnail}}">
+	</a>
+	<a href="./photowall-m.php#/nid/{{nid}}" class="phoitem show-mobile">
 		<img src="./{{thumbnail}}">
 	</a>
 </script>

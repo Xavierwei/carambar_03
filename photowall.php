@@ -4,7 +4,7 @@ if (preg_match('/(P7100|P5100|P5210|T310|T210|T311|T520|T320|T110|T520|P1000|I80
 	$ipad = true;
 }
 if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|mobile|bb)/i', strtolower($_SERVER['HTTP_USER_AGENT'])) && !$ipad) {
-	header("Location: photowall-m.php",true,303);
+	header("Location: photowall-m",true,303);
 	die();
 }
 ?>
