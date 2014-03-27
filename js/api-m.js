@@ -40,17 +40,6 @@ define(function( require , exports , model ){
 		login: {path: './index.php/user/login'},
 		logout: {path: './index.php/user/logout'},
 		user: {path: './index.php/user/getcurrent' , method: 'get'},
-		token: {path: './index.php/user/gettoken' , method: 'get'},
-		//user: {path: './json/user.json' , method: 'get'},
-		saveUser: {path: './index.php/user/put' , method: 'post'},
-		saveAvatar: {path: './index.php/user/saveavatar' , method: 'post'},
-		// get user's nodes
-		userNode: {path: './admin/app/json/node/recent.json' , data:{ uid: 0 , page: 1 }, method: 'get'},
-		saveNode: {path: './index.php/node/post'},
-		neighbor: {path: './index.php/node/getneighbor', method:'get'},
-		countryList: {path: './json/country.json', method:'get', cache: true},
-		i18n_en: {path: './lang/en.json', method:'get', async: false, cache:true},
-		i18n_fr: {path: './lang/fr.json', method:'get', async: false, cache:true},
 
 
 		indicate: {path: './index.php/setting/praise', method:'post'},

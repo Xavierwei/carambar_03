@@ -403,7 +403,11 @@ class NodeController extends Controller {
 			$params[":status"] = $status;
 		}
 
-		if($reward) {
+		if($reward == 2) {
+			$query->addCondition($nodeAr->getTableAlias().".reward != :reward", "AND");
+			$params[":reward"] = 1;
+		}
+		else if($reward) {
 			$query->addCondition($nodeAr->getTableAlias().".reward = :reward", "AND");
 			$params[":reward"] = 1;
 		}

@@ -218,11 +218,11 @@
 					<?php endforeach;?>
 					<?php if($video6 == 0):?>
 						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit6"></div>
+							<div class="videolist-item-tit videolist-item-tit6-2"></div>
 							<div class="videolist-boxnull">
-								<img src="./pic/whitehouse.jpg" />
+								<img src="./pic/vos3.jpg" />
 							</div>
-							<div class="videolist-txt">faire rire barack à UNE BLAGUE CARAMBAR</div>
+							<div class="videolist-txt">Arriver à faire rire un staDE, <br/>UNE STAR ET UN MAX D’américains ! </div>
 						</div>
 					<?php endif;?>
 					<div class="cs-clear"></div>
@@ -242,7 +242,7 @@
 			<div class="line-com-p1"></div>
 		</div>
 		<?php endif;?>
-		<?php if($phase == 3 || $phase == 4):?>
+		<?php if(0):?>
 		<!-- #barack -->
 		<div class="barack">
 			<div class="baracktit"></div>
@@ -305,10 +305,10 @@
 		<div class="footer-inner">
 			jeu gratuit sans obligation d’achat du 25/03/2014 au 11/04/2014. à gagner 360 kits supporters collectors d’une valeur commerciale approximative de 12,50€. retrouvez l’ensemble des modalités en consultant le <a target="_blank" href="./pdf/reglement_glc.pdf">reglement complet du jeu</a>.
 			<div class="footer-links">
-				<a href="./pdf/vie_privee_glc.pdf">Vie privée</a> /
-				<a href="./pdf/cookies_glc.pdf">Cookies</a> /
-				<a href="#">Mentions légales</a> /
-				<a href="./pdf/mentions_sanitaires_glc.pdf">Mentions sanitaires</a>
+				<a target="_blank" href="./pdf/vie_privee_glc.pdf">Vie privée</a> /
+				<a target="_blank" href="./pdf/cookies_glc.pdf">Cookies</a> /
+				<a target="_blank" href="./pdf/mentions_legales_glc.pdf">Mentions légales</a> /
+				<a target="_blank" href="./pdf/mentions_sanitaires_glc.pdf">Mentions sanitaires</a>
 			</div>
 		</div>
 	</div>

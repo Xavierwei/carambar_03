@@ -29,6 +29,11 @@ if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|mobil
 	<meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
+	<meta property="og:title" content="Good Luck Carambar" />
+	<meta property="og:url" content="http://www.goodluckcarambar.com/photowall.php" />
+	<meta property="og:description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission !" />
+	<meta property="og:site_name" content="Good Luck Carambar" />
+	<meta property="og:image" content="http://www.goodluckcarambar.com/logo.jpg" />
     <link href="css/jsPane.css" rel="stylesheet" type="text/css" />
     <link href="css/layout.css" rel="stylesheet" type="text/css" />
     <link href="css/fonts.css" rel="stylesheet" type="text/css" />

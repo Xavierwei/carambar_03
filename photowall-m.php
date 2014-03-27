@@ -6,6 +6,11 @@
 	<meta name="description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission ! " />
 	<meta name="viewport" content="width=640, minimum-scale=0.5, maximum-scale=0.5, target-densityDpi=290,user-scalable=no" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
+	<meta property="og:title" content="Good Luck Carambar" />
+	<meta property="og:url" content="http://www.goodluckcarambar.com/photowall-m.php" />
+	<meta property="og:description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission !" />
+	<meta property="og:site_name" content="Good Luck Carambar" />
+	<meta property="og:image" content="http://www.goodluckcarambar.com/logo.jpg" />
 	<link href="css/jsPane.css" rel="stylesheet" type="text/css" />
 	<link href="m/css/layout.css" rel="stylesheet" type="text/css" />
 	<link href="m/css/photoitem.css" rel="stylesheet" type="text/css" />

@@ -14,6 +14,7 @@ WallAdminController
         $scope.end = true;
         // Get node list by recent
         $scope.filter.status = 'all';
+        $scope.filter.reward = 'all';
 		$scope.page = 1;
 		params.orderby = "datetime";
 		params.pagenum = 20;
@@ -32,11 +33,15 @@ WallAdminController
             $('.pagination li').eq(2).addClass('active');
         });
 
-		$scope.$watch('filter.type + filter.status + currentPage', function() {
+		$scope.$watch('filter.type + filter.status + filter.reward + currentPage', function() {
             params.type = $scope.filter.type;
+            params.reward = $scope.filter.reward;
 			if($scope.filter.type == 'all') {
 				delete params.type;
 			}
+            if($scope.filter.reward == 'all') {
+                delete params.reward;
+            }
             if($scope.filter.status != 'all') {
                 params.status = $scope.filter.status;
             }

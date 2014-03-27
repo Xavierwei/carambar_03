@@ -63,7 +63,7 @@
 
         if( url && !imageCache[ url ] ){
             imageCounter++;
-            imageCache[ url ] = url + "?" + (+ new Date());
+            imageCache[ url ] = url;
         }
     }
 

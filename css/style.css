@@ -102,6 +102,7 @@ a:hover{color:#e82426}
     .barackbtn{cursor:pointer;background: url('../images/barackbtn.png') no-repeat;width: 163px;height: 27px;position: absolute;top:78px;left:50%;margin-left:-81px;}
 
 .support-carambar-wrap{background:url('../images/linebg.png') repeat-x center 204px;}
+.phase3 .support-carambar-wrap {margin-top:25px;}
 .img{height: 308px;margin:0 auto 0;position: relative;width:634px;}
     .img1{background: url('../images/img1.png') no-repeat;position: absolute;width: 466px;height: 249px;left:84px;top:-3px; }
     .img2{background: url('../images/img2.png') no-repeat;position: absolute;width: 695px;height: 88px;left:-27px;top:190px;}
@@ -213,9 +214,10 @@ a:hover{color:#e82426}
 .presentation-box {width:1000px;height:430px;margin:80px auto 0 auto;position: relative;}
 .carambar-man {background: url(../images/carambar-man.png) no-repeat;width:240px;height:382px;left:85px;position: absolute;}
 .tooltip {background:url(../images/tooltip_bg.png) no-repeat;width:593px;height:168px;position: absolute;top:66px;left:249px;}
+    .phase3 .tooltip {background: url(../images/tooltip_bg3.png) no-repeat;width:525px;height:151px;}
     .tips-content {background: url(../images/tooltip_content.png) no-repeat;width:246px;height:131px;float: left;margin:20px 0 0 70px;}
-    .tips-content-p3 {background: url(../images/tooltip_content_p3.png) no-repeat;width:516px;height:133px;margin:14px 0 0 60px;position:relative;}
-    .tips-content-p3 .countdown {position:absolute;right:16px;bottom:16px;font-family:'Arial Narrow';color:#2f3688;font-size:21px;}
+    .tips-content-p3 {background: url(../images/tooltip_content_p3.png) no-repeat;width:397px;height:128px;margin:14px 0 0 79px;position:relative;}
+    .tips-content-p3 .countdown {position:absolute;right:-2px;bottom:16px;font-family:'Arial Narrow';color:#2f3688;font-size:21px;}
     .tips-content-p3 .countdown span {margin:0 0 0 12px;display:block;float:left;width:24px;}
     .tips-content-p3 .countdown span#countdown-hours {margin-left:12px;}
     .tips-content-p3 .countdown span#countdown-minutes {margin-left:13px;}
@@ -285,12 +287,12 @@ a:hover{color:#e82426}
     .video-con{width:798px;margin: 0 auto 20px auto;padding:80px 10px 0;background:#eb212e;-webkit-box-shadow: 10px 10px 20px 0 #363636;box-shadow: 10px 10px 20px 0 #363636;}
     .phase4 .video-con {}
     .phase5 .video-con {margin-top:32px;padding-top:20px;}
-    .videolist-item{float:left;position: relative;width: 250px;height: 225px;text-align: center;font-size:13px;color:#fff;display: inline;margin-left:12px;}
+    .videolist-item{float:left;position: relative;width: 250px;height: 237px;text-align: center;font-size:13px;color:#fff;display: inline;margin-left:12px;}
     .videolist-box{background: #fff;width:248px;height: 132px;padding:2px;position: relative;}
     .videolist-item .video-play {background: url(../images/btn_play2.png) no-repeat 105px 33px;position: absolute;top:0;left:0;width:100%;height:100%;}
     .videolist-item .video-play:hover {background-position: -166px 33px;}
     .videolist-txt {line-height: 16px;margin-top:8px;text-transform:uppercase;}
-    .videolist-item-tit {width:242px;height:27px;margin-bottom:10px;}
+    .videolist-item-tit {width:242px;height:37px;margin-bottom:3px;}
     .videolist-item-tit1 {background: url(../images/video_defi1.png) no-repeat center;}
     .videolist-item-tit2 {background: url(../images/video_defi2.png) no-repeat center;}
     .videolist-item-tit3 {background: url(../images/video_defi3.png) no-repeat center;}
@@ -300,13 +302,14 @@ a:hover{color:#e82426}
     .videolist-item-tit4 {background: url(../images/video_defi4.png) no-repeat center;}
     .videolist-item-tit5 {background: url(../images/video_defi5.png) no-repeat center;}
     .videolist-item-tit6 {background: url(../images/video_defi3_2.gif) no-repeat center;}
+    .videolist-item-tit6-2 {background: url(../images/video_defi6_2.png) no-repeat center;}
     .videolist-item-tit0 {background: url(../images/video_defi2_2.gif) no-repeat center;}
     .video-icon {position: absolute;left:-23px;top:11px}
     .video-icon-1 {background: url('../images/video_icon_1.png') no-repeat;width: 64px;height: 98px;}
     .video-icon-2 {background: url('../images/video_icon_2.png') no-repeat;width: 84px;height: 98px;left:-25px;}
-    .videolist-boxnull{border: #fff dotted 5px;height:126px;width: 242px; display: table-cell;vertical-align: middle;text-transform: uppercase;font-size:14px;}
+    .videolist-boxnull{border: #fff dotted 5px;height:132px;width: 242px; display: table-cell;vertical-align: middle;text-transform: uppercase;font-size:14px;}
     .videolist-pro{position: absolute;background: url('../images/videolist_pro.png') no-repeat;width: 208px;height: 239px;bottom:0;right:30px;}
-    .videolist-tit{background: url('../images/videolist_tit.png') no-repeat;width: 569px;height: 66px;position: absolute;top:-15px;left:50%;margin-left:-275px;z-index:13;}
+    .videolist-tit{background: url('../images/videolist_tit.png') no-repeat;width: 629px;height: 66px;position: absolute;top:-15px;left:50%;margin-left:-315px;z-index:13;}
 
     .videolistbg2{margin: 55px 0 50px;background:#d4d4d4}
     .videolist2{background: url('../images/videolist2.jpg') no-repeat center;height: 496px;margin: 40px 0 0;position: relative;}
@@ -360,6 +363,7 @@ a:hover{color:#e82426}
     .videotxt-item span{line-height: 999em;overflow: hidden;height: 10px;}
     .line4{height: 0;overflow: hidden}
     .videolist-tit2{background-image: url('../mobileimg/videolist_tit2.png');width: 600px;height: 60px;margin-left:-310px}
+    .videolist-tit{background: url('../mobileimg/videolist_tit.png') no-repeat;width: 555px;height: 59px;position: absolute;top:-15px;left:50%;margin-left:-275px;z-index:13;}
     .videolist,
     .videolist2{background-image: url('../mobileimg/videolist2.jpg') ;height:auto;padding: 30px 0 0;position: relative;}
     .videolist{margin-top:50px;}
@@ -458,7 +462,7 @@ a:hover{color:#e82426}
     .tips-video .video-play {background-size:300px auto;background-position:55px 15px;}
     .tips-video .video-play:hover {background-position:55px 15px;}
 
-    .tips-content-p3 {background: url('../mobileimg/tooltip_content_p3.png') no-repeat;width:406px;height:133px;}
+    .tips-content-p3 {background: url('../mobileimg/tooltip_content_p3.png') no-repeat;width:406px;height:133px;margin:22px 0 0 51px;}
     .tips-content-p3 .countdown {right:-7px;bottom:22px;}
     .tips-content-p3 .countdown span {width:32px;}
 

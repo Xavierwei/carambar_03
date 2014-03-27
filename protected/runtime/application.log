@@ -7610,3 +7610,114 @@ in /Applications/MAMP/htdocs/carambar_03/index.php (30)
 2014/03/24 23:11:30 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
 in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
 in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/26 14:34:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('facebook')
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/carambar_03/facebook/
+---
+2014/03/26 14:38:22 [error] [exception.FacebookApiException] CurlException: 28: SSL connection timeout
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/26 14:39:33 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php:229) (/Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php:165)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php(246): FacebookController->responseJSON()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/actions/CInlineAction.php(49): FacebookController->actionPost()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): FacebookController->runAction()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): FacebookController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): FacebookController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/facebook/post
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (165)
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (147)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php (246)
+2014/03/26 14:44:24 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php:229) (/Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php:165)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php(246): FacebookController->responseJSON()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/actions/CInlineAction.php(49): FacebookController->actionPost()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): FacebookController->runAction()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): FacebookController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): FacebookController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/facebook/post
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (165)
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (147)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php (246)
+2014/03/26 14:47:21 [error] [exception.FacebookApiException] OAuthException: An unknown error has occurred.
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/26 14:49:18 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php:229) (/Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php:165)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php(246): FacebookController->responseJSON()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/actions/CInlineAction.php(49): FacebookController->actionPost()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): FacebookController->runAction()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): FacebookController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): FacebookController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/facebook/post
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (165)
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (147)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php (246)
+2014/03/26 14:51:15 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php:229) (/Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php:165)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php(246): FacebookController->responseJSON()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/actions/CInlineAction.php(49): FacebookController->actionPost()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): FacebookController->runAction()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): FacebookController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): FacebookController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/facebook/post
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (165)
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (147)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php (246)
+2014/03/26 14:52:47 [error] [exception.FacebookApiException] CurlException: 28: SSL connection timeout
+REQUEST_URI=/carambar_03/facebook/login?code=AQAEZfAt3wmzvL2_7JCZdRFklI6Mg5SqXTTu_Xg44HYpfSQOxVucpmh8avqF_LiVf0CAYjECZqr215sdXazI9-Vn4m0mveZKn4NjBRui1_UMV2hNu4FeakjWAfy4y0joSwCiBFZiijwViZ6osu8R_Yh_s2wskeOi1Xd3LlV-ovg53hQyhkmKELMn0z-Phge0YGiWfwPmcRTYkm89pdmaT9U0dUON7sPvLac9gZS-MlREI1MqjofwSEOHLOmIhXiYO5T9lS-2DQ_tJVyyGFrD2L0D-jY49nnAMK3hW3jJO0K5fnRRIu0E6pW8PKVyR4JgTM4&state=35211a9b3008375839e8686c8bd4fffa
+---
+2014/03/26 14:53:00 [error] [php] Undefined index: access_token (/Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php:61)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): FacebookController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): FacebookController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): FacebookController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/facebook/login?code=AQAEZfAt3wmzvL2_7JCZdRFklI6Mg5SqXTTu_Xg44HYpfSQOxVucpmh8avqF_LiVf0CAYjECZqr215sdXazI9-Vn4m0mveZKn4NjBRui1_UMV2hNu4FeakjWAfy4y0joSwCiBFZiijwViZ6osu8R_Yh_s2wskeOi1Xd3LlV-ovg53hQyhkmKELMn0z-Phge0YGiWfwPmcRTYkm89pdmaT9U0dUON7sPvLac9gZS-MlREI1MqjofwSEOHLOmIhXiYO5T9lS-2DQ_tJVyyGFrD2L0D-jY49nnAMK3hW3jJO0K5fnRRIu0E6pW8PKVyR4JgTM4&state=35211a9b3008375839e8686c8bd4fffa
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php (61)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/26 14:53:16 [error] [exception.FacebookApiException] FacebookApiException: This status update is identical to the last one you posted. Try posting something different, or delete your previous update.
+REQUEST_URI=/carambar_03/index.php/facebook/post
+HTTP_REFERER=http://lily.local:8888/carambar_03/
+---
+2014/03/26 14:54:23 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php:229) (/Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php:165)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php(246): FacebookController->responseJSON()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/actions/CInlineAction.php(49): FacebookController->actionPost()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): FacebookController->runAction()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): FacebookController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): FacebookController->run()
+#6 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/index.php/facebook/post
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (165)
+in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (147)
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php (246)

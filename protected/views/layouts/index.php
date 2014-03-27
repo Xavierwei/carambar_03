@@ -8,7 +8,7 @@
 	<title>Good Luck Carambar - Les défis</title>
 	<meta name="description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission ! " />
 	<meta property="og:title" content="Good Luck Carambar" />
-	<meta property="og:url" content="http://www.goodluckcarambar.com" />
+	<meta property="og:url" content="http://www.goodluckcarambar.com/index" />
 	<meta property="og:description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission !" />
 	<meta property="og:site_name" content="Good Luck Carambar" />
 	<meta property="og:image" content="http://www.goodluckcarambar.com/logo.jpg" />

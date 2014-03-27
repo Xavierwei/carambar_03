@@ -268,12 +268,12 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
 //				});
 			}
 			else {
-				if(result.message == 902) {
-					alert('You have voted today!');
-				}
-				else {
-					alert('Too busy, please try again');
-				}
+//				if(result.message == 902) {
+//					alert('You have voted today!');
+//				}
+//				else {
+//					alert('Too busy, please try again');
+//				}
 			}
 		});
 	});
@@ -434,6 +434,9 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
 
 		api.ajax('countdown', function( result ){
 			time_left = result.data;
+            if(time_left < 0) {
+                time_left = 0;
+            }
 			var timeInterval = setInterval(function(){
 				if(time_left < 0) {
 					clearInterval(timeInterval);

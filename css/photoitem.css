@@ -62,7 +62,7 @@ body{
     width: 180px;
 }
 .main-item a {display:block;border:2px solid #fff;overflow:hidden;}
-.pic-item .item-reward{position: absolute;top:0;left:0;width: 54px;height: 55px;background: url(../img/node-tag.png) no-repeat;}
+.pic-item .item-reward{position: absolute;top:0;left:6px;width: 54px;height: 55px;background: url(../img/node-tag.png) no-repeat;}
 /*.pic-item.reward-item{background: #ce232d;}*/
 .text-item{background: #2f3688;color: #fcea2f;font-size: 16px;}
 .text-item.style-1 {background: #ce232d;color: #fcea2f;}

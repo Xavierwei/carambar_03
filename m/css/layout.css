@@ -60,7 +60,7 @@ a{text-decoration:none;}
     .pic-item {height: 540px;width:540px;overflow:hidden;background:url('../img/loading.gif') no-repeat center;position:relative;}
     .pic-item img {display: block;}
     .pic-item.active {opacity: 0.6;}
-    .pic-item .item-reward{position: absolute;top:0;left:0;width: 54px;height: 55px;background: url(../img/node-tag.png) no-repeat;}
+    .pic-item .item-reward{position: absolute;top:6px;left:15px;width: 54px;height: 85px;background: url(../img/node-tag.png) no-repeat;}
 
     .item-info{display: none}
     .item-icon {position: absolute;right:30px;bottom:30px;}
