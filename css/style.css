@@ -131,7 +131,7 @@ a:hover{color:#e82426}
 .photit{background: url('../images/photit.png') no-repeat top center;height: 93px;margin: 15px auto 0}
     .pholist{background: url('../images/pholist.png') repeat-x center;height: 153px;margin: 15px auto 0;width:812px;padding:0 0 0 24px;position: relative;}
     .pholist-loading {background: url('../images/loading.gif') no-repeat;position: absolute;top:50%;left:50%;margin:-8px 0 0 -8px;width:16px;height:16px;}
-    .phoitem{float:left;background:#000;padding: 3px;width: 126px;height: 126px;display: inline;margin:15px 13px;}
+    .phoitem{float:left;background:#000;padding: 3px;width: 126px;height: 126px;display: inline;margin:11px 13px;}
 
 
 
@@ -212,7 +212,7 @@ a:hover{color:#e82426}
     .phase5 .skyline {height:780px;}
 .blue-road {background: url(../images/blue_road.png) no-repeat center;height:162px;position:absolute;top:331px;width:100%;}
 .presentation-box {width:1000px;height:430px;margin:80px auto 0 auto;position: relative;}
-.carambar-man {background: url(../images/carambar-man.png) no-repeat;width:240px;height:382px;left:85px;position: absolute;}
+.carambar-man {background: url(../images/carambar-man.png) no-repeat;width:240px;height:382px;left:85px;position: absolute;z-index:1;}
 .tooltip {background:url(../images/tooltip_bg.png) no-repeat;width:593px;height:168px;position: absolute;top:66px;left:249px;}
     .phase3 .tooltip {background: url(../images/tooltip_bg3.png) no-repeat;width:525px;height:151px;}
     .tips-content {background: url(../images/tooltip_content.png) no-repeat;width:246px;height:131px;float: left;margin:20px 0 0 70px;}

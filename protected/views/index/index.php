@@ -21,15 +21,12 @@
 		<?php endif;?>
 		<?php if($phase == 1 || $phase == 2 || $phase == 3):?>
 		<div class="blue-road"
-		     data-style="opacity:0;" data-animate="opacity:1;" data-delay="0" data-time="800"
-		     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,60px,0);"></div>
+		     data-style="opacity:0;" data-animate="opacity:1;" data-delay="0" data-time="800"></div>
 		<div class="presentation-box">
-			<div class="carambar-man" data-style="left:-1000px" data-animate="left:85px" data-delay="0" data-time="800" data-easing="easeOutQuart"
-				 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,60px,0);"></div>
+			<div class="carambar-man" data-style="left:-1000px" data-animate="left:85px" data-delay="0" data-time="800" data-easing="easeOutQuart"></div>
 			<?php if($phase == 1 || $phase == 2):?>
 				<?php if($topVideo):?>
-				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500"
-					 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,30px,0);">
+				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500">
 					<div class="tips-content"></div>
 					<div class="tips-video">
 						<img src="./<?php echo str_replace('.jpg', '_224_115.jpg', $topVideo->thumbnail);?>" />
@@ -40,8 +37,7 @@
 				<?php endif;?>
 			<?php endif;?>
 			<?php if($phase == 3):?>
-				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500"
-					 data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,30px,0);">
+				<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500">
 					<div class="tips-content-p3">
 						<div class="countdown">
 							<span id="countdown-days"></span>
@@ -53,8 +49,7 @@
 				</div>
 			<?php endif;?>
 			<div class="indicator-count-wrap"
-			     data-style="opacity:0;" data-animate="opacity:1;" data-delay="1000" data-time="500"
-			     data-0="transform:translate3d(0,0px,0);" data-500="transform:translate3d(0,50px,0);">
+			     data-style="opacity:0;" data-animate="opacity:1;" data-delay="1000" data-time="500">
 				<div class="indicator-title">Nombre de soutiens récoltés</div>
 				<div class="indicator-count"></div>
 				<div class="indicator-count-num"></div>

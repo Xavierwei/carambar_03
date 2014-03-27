@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/line_com_p1.png" afterPath="$PROJECT_DIR$/images/line_com_p1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobileimg/line_com_p1.png" afterPath="$PROJECT_DIR$/mobileimg/line_com_p1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/node-tag.png" afterPath="$PROJECT_DIR$/img/node-tag.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/m/img/node-tag.png" afterPath="$PROJECT_DIR$/m/img/node-tag.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/tooltip_content_p3.png" afterPath="$PROJECT_DIR$/images/tooltip_content_p3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/videolist_tit.png" afterPath="$PROJECT_DIR$/images/videolist_tit.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/cache/89b4322870bb334bfd394c8017366563.bin" afterPath="$PROJECT_DIR$/protected/runtime/cache/89b4322870bb334bfd394c8017366563.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/NodeController.php" afterPath="$PROJECT_DIR$/protected/controllers/NodeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/api-m.js" afterPath="$PROJECT_DIR$/js/api-m.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/api.js" afterPath="$PROJECT_DIR$/js/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/index/index.php" afterPath="$PROJECT_DIR$/protected/views/index/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/index.php" afterPath="$PROJECT_DIR$/protected/views/layouts/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/plugin/jquery.queryloader22.js" afterPath="$PROJECT_DIR$/js/plugin/jquery.queryloader22.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/m/css/layout.css" afterPath="$PROJECT_DIR$/m/css/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/tmp/node/list.html" afterPath="$PROJECT_DIR$/admin_asset/tmp/node/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.index.js" afterPath="$PROJECT_DIR$/js/lp.index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_asset/js/controllers/node.js" afterPath="$PROJECT_DIR$/admin_asset/js/controllers/node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/photoitem.css" afterPath="$PROJECT_DIR$/css/photoitem.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photowall-m.php" afterPath="$PROJECT_DIR$/photowall-m.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photowall.php" afterPath="$PROJECT_DIR$/photowall.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -81,7 +62,7 @@
     <file path="$PROJECT_DIR$/../avene_redness/0110/css/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390621149917" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/video.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/testimonial.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
-    <file path="/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395917276248" ignored="false" />
+    <file path="/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395924051176" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/story.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
     <file path="$PROJECT_DIR$/../lighthouse/sites/default/settings.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390033191696" ignored="false" />
     <file path="/animate-custom.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390051249512" ignored="false" />
@@ -507,10 +488,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="365" column="159" selection-start="29485" selection-end="29485" vertical-scroll-proportion="-15.576923">
+            <state line="133" column="105" selection-start="10748" selection-end="10748" vertical-scroll-proportion="0.41923776">
               <folding />
             </state>
           </provider>
@@ -558,10 +539,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="224" column="91" selection-start="9837" selection-end="9837" vertical-scroll-proportion="0.52181816">
+            <state line="19" column="33" selection-start="908" selection-end="908" vertical-scroll-proportion="-5.428571">
               <folding />
             </state>
           </provider>
@@ -626,8 +607,8 @@
         <option value="$PROJECT_DIR$/photowall.php" />
         <option value="$PROJECT_DIR$/photowall-m.php" />
         <option value="$PROJECT_DIR$/js/lp.index.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/protected/views/index/index.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -1070,16 +1051,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="365" column="159" selection-start="29485" selection-end="29485" vertical-scroll-proportion="-15.576923">
+        <state line="19" column="33" selection-start="908" selection-end="908" vertical-scroll-proportion="-5.428571">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="91" selection-start="9837" selection-end="9837" vertical-scroll-proportion="0.52181816">
+        <state line="133" column="105" selection-start="10748" selection-end="10748" vertical-scroll-proportion="0.41923776">
           <folding />
         </state>
       </provider>
