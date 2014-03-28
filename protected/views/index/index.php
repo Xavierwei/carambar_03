@@ -60,10 +60,12 @@
 		<?php endif;?>
 		<?php if($phase == 4 || $phase == 5):?>
 		<div class="videopart cs-clear">
+			<?php if($topVideo): ?>
 			<div class="videopart-tit">
 				<div class="robbion-icon"></div>
 				<div class="videopart-tit-defi videopart-tit-defi<?php echo $topVideo->rank;?>"><?php echo $topVideo->title;?></div>
 			</div>
+			<?php endif;?>
 			<!-- Video -->
 			<div class="videomod">
 			<?php if($topVideo): ?>
@@ -71,7 +73,9 @@
 			<?php endif;?>
 			</div>
 			<!-- Twitter -->
-			<div class="videotxt"></div>
+			<div class="videotxt-wrap">
+				<div class="videotxt"></div>
+			</div>
 			<!--  -->
 			<div class="videobot"></div>
 			<!-- 分享 -->
@@ -81,7 +85,7 @@
 				<!-- <a href="#" class="videoshare-y"></a> -->
 				<!-- <a href="#" class="videoshare-i"></a> -->
 			</div>
-			<a href="photowall.php" class="btn-other-challenges"></a>
+			<a href="javascript:;" data-a="goto_challenge" class="btn-other-challenges"></a>
 		</div>
 
 			<?php if($phase == 4):?>
@@ -165,7 +169,7 @@
 		<?php else:?>
 			<div class="videolist-tit"></div>
 		<?php endif;?>
-		<div class="videolist" data-826="transform:translate3d(0,0px,0);" data-1400="transform:translate3d(0,100px,0);">
+		<div class="videolist">
 			<div class="videolistshare">
 				<div class="video-con">
 					<?php

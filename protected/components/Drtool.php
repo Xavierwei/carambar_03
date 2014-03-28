@@ -70,13 +70,13 @@ class Drtool
 
         if(is_null($cookieTemp))												//判断本地是否存在cookie
         {
-            Drtool::setMyCookie($name,time(),3);	//写入客户端cookie
+            Drtool::setMyCookie($name,time(),1);
             return false;
         }
         else
         {
             $timeVal=time()-$cookieTemp; //获取时间差
-            $oneDay=60*60*24*3; //3天时间
+            $oneDay=60*60*24*1; 
             if($timeVal < $oneDay)
                 return $oneDay-$timeVal;
             else

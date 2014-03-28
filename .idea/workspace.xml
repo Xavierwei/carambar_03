@@ -2,18 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/btn_other_challenges.png" afterPath="$PROJECT_DIR$/images/btn_other_challenges.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobileimg/btn_other_challenges.png" afterPath="$PROJECT_DIR$/mobileimg/btn_other_challenges.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobileimg/sec1_bluepho1.png" afterPath="$PROJECT_DIR$/mobileimg/sec1_bluepho1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobileimg/tooltip_content_p3.png" afterPath="$PROJECT_DIR$/mobileimg/tooltip_content_p3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/video_defi6_2.png" afterPath="$PROJECT_DIR$/images/video_defi6_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/video_title_1.gif" afterPath="$PROJECT_DIR$/images/video_title_1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/video_title_2.gif" afterPath="$PROJECT_DIR$/images/video_title_2.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/video_title_3.gif" afterPath="$PROJECT_DIR$/images/video_title_3.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/video_title_4.gif" afterPath="$PROJECT_DIR$/images/video_title_4.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/video_title_5.gif" afterPath="$PROJECT_DIR$/images/video_title_5.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/video_title_6.gif" afterPath="$PROJECT_DIR$/images/video_title_6.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/cache/89b4322870bb334bfd394c8017366563.bin" afterPath="$PROJECT_DIR$/protected/runtime/cache/89b4322870bb334bfd394c8017366563.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Drtool.php" afterPath="$PROJECT_DIR$/protected/components/Drtool.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/index/index.php" afterPath="$PROJECT_DIR$/protected/views/index/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/index.php" afterPath="$PROJECT_DIR$/protected/views/layouts/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.index.js" afterPath="$PROJECT_DIR$/js/lp.index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bank_wall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395806894010" ignored="false" />
+    <file path="/Dummy.txt" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395973607927" ignored="false" />
     <file path="/controllers.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391781932373" ignored="false" />
     <file path="/partial1.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387685938508" ignored="false" />
     <file path="/list.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395822351373" ignored="false" />
-    <file path="/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395304677434" ignored="false" />
+    <file path="/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396013640496" ignored="false" />
     <file path="/a.dummy" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395329098571" ignored="false" />
     <file path="/filters.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395548418280" ignored="false" />
     <file path="/edit.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395668637623" ignored="false" />
@@ -21,7 +36,7 @@
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/hh25th/win/terms/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387806561214" ignored="false" />
     <file path="$PROJECT_DIR$/../gar_nier/psshangfengmian/m/photowall.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387809087734" ignored="false" />
     <file path="/main.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390136965386" ignored="false" />
-    <file path="/index.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395921260349" ignored="false" />
+    <file path="/index.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396014345598" ignored="false" />
     <file path="$PROJECT_DIR$/../gar_nier/psshangfengmian/css/layout.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387810013579" ignored="false" />
     <file path="/layout.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395814621675" ignored="false" />
     <file path="$PROJECT_DIR$/../gar_nier/psshangfengmian/css/layoutIE.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387812982125" ignored="false" />
@@ -30,7 +45,7 @@
     <file path="/lib.controllers.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388409704965" ignored="false" />
     <file path="/popup.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388414407045" ignored="false" />
     <file path="/recent.jsons" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388668209640" ignored="false" />
-    <file path="/lp.base.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395401005366" ignored="false" />
+    <file path="/lp.base.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396013826876" ignored="false" />
     <file path="/pop.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388810765330" ignored="false" />
     <file path="/user.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388816929585" ignored="false" />
     <file path="/api.suite.yml" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1388817806141" ignored="false" />
@@ -62,7 +77,7 @@
     <file path="$PROJECT_DIR$/../avene_redness/0110/css/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390621149917" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/video.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/testimonial.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
-    <file path="/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395924051176" ignored="false" />
+    <file path="/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396013808225" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/story.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
     <file path="$PROJECT_DIR$/../lighthouse/sites/default/settings.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390033191696" ignored="false" />
     <file path="/animate-custom.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390051249512" ignored="false" />
@@ -218,7 +233,7 @@
     <file path="/player.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391872524814" ignored="false" />
     <file path="/wmv_player.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394640423503" ignored="false" />
     <file path="/upload.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392442594943" ignored="false" />
-    <file path="/ie8.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393771683099" ignored="false" />
+    <file path="/ie8.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395994489556" ignored="false" />
     <file path="/post.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394631625399" ignored="false" />
     <file path="/ie8.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394640378527" ignored="false" />
     <file path="/test.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391953504493" ignored="false" />
@@ -245,7 +260,7 @@
     <file path="/Controller.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393166412023" ignored="false" />
     <file path="/OauthAR.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1394283277571" ignored="false" />
     <file path="/OauthController.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393642833321" ignored="false" />
-    <file path="/TwitterController.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395546302572" ignored="false" />
+    <file path="/TwitterController.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396003305815" ignored="false" />
     <file path="/twitteroauth.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393652519869" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/m/css/layout.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393667135915" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/js/lp.base-m.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395584376951" ignored="false" />
@@ -460,6 +475,26 @@
     <file path="/zh.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395830962637" ignored="false" />
     <file path="/page-news.tpl.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395831660588" ignored="false" />
     <file path="/photowall-m.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395891064468" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396013640209" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/css/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396013809009" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/js/lp.base.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396013828320" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/page1.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395992746622" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/page2.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395992923448" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/page3.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395993065085" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/page4.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395992756078" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/page5.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395992760317" ignored="false" />
+    <file path="/page2.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395992922675" ignored="false" />
+    <file path="/page3.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395993064572" ignored="false" />
+    <file path="/page4.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395988715840" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/js/plugin/jquery.queryloader22.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395994149924" ignored="false" />
+    <file path="/jquery.queryloader22.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395992658640" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/experts.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395995078468" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/family.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395995083342" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/kol.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395995096791" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/reflexe.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395995062754" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/css/ie8.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395994489890" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_sun/ask.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395994516282" ignored="false" />
+    <file path="/reflexe.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395994774920" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -482,16 +517,43 @@
       <file leaf-file-name="layout.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/m/css/layout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="105" selection-start="10748" selection-end="10748" vertical-scroll-proportion="0.41923776">
+            <state line="495" column="46" selection-start="38946" selection-end="38946" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/NodeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="403" column="9" selection-start="10644" selection-end="10644" vertical-scroll-proportion="-0.6785714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SettingController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="26" selection-start="254" selection-end="254" vertical-scroll-proportion="-8.142858">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwitterController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/TwitterController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="127" selection-start="2625" selection-end="2625" vertical-scroll-proportion="-16.964285">
               <folding />
             </state>
           </provider>
@@ -500,7 +562,7 @@
       <file leaf-file-name="lp.index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/lp.index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="437" column="30" selection-start="15745" selection-end="15745" vertical-scroll-proportion="0.0">
+            <state line="217" column="47" selection-start="9136" selection-end="9136" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -508,10 +570,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/api.js">
+      <file leaf-file-name="lp.base.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/lp.base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="59" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.0">
+            <state line="636" column="59" selection-start="23436" selection-end="23487" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -519,30 +581,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api-m.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/api-m.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="68" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="node.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/node.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="26" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="33" selection-start="908" selection-end="908" vertical-scroll-proportion="-5.428571">
+            <state line="171" column="30" selection-start="7076" selection-end="7076" vertical-scroll-proportion="0.66">
               <folding />
             </state>
           </provider>
@@ -551,25 +593,16 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="57" selection-start="1263" selection-end="1263" vertical-scroll-proportion="-10.857142">
+            <state line="8" column="59" selection-start="614" selection-end="614" vertical-scroll-proportion="-5.428571">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photowall.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photowall.php">
+      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="61" selection-start="1278" selection-end="1362" vertical-scroll-proportion="-21.035715">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="photowall-m.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photowall-m.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="26" selection-start="876" selection-end="876" vertical-scroll-proportion="-8.142858">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -593,8 +626,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/lp.base-m.js" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/index.php" />
         <option value="$PROJECT_DIR$/js/plugin/jquery.queryloader22.js" />
         <option value="$PROJECT_DIR$/css/photoitem.css" />
         <option value="$PROJECT_DIR$/m/css/layout.css" />
@@ -606,9 +637,11 @@
         <option value="$PROJECT_DIR$/js/api-m.js" />
         <option value="$PROJECT_DIR$/photowall.php" />
         <option value="$PROJECT_DIR$/photowall-m.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/index.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/protected/controllers/TwitterController.php" />
         <option value="$PROJECT_DIR$/js/lp.index.js" />
         <option value="$PROJECT_DIR$/protected/views/index/index.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -750,6 +783,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -764,7 +815,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -945,68 +1000,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="358" column="45" selection-start="28811" selection-end="28811" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/photoitem.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="56" selection-start="2017" selection-end="2017" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/FacebookController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="0" selection-start="6382" selection-end="6382" vertical-scroll-proportion="-21.428572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_asset/tmp/node/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="103" selection-start="1680" selection-end="1680" vertical-scroll-proportion="-18.321428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/NodeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="403" column="9" selection-start="10644" selection-end="10644" vertical-scroll-proportion="-12.357142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="59" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/api-m.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="68" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/node.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="26" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
@@ -1028,39 +1021,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/avene_redness/0110/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="75" selection-start="581" selection-end="581" vertical-scroll-proportion="-7.464286">
+          <folding>
+            <marker date="1390816975000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/m/css/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SettingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="26" selection-start="254" selection-end="254" vertical-scroll-proportion="-8.142858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jsPane.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="57" selection-start="1263" selection-end="1263" vertical-scroll-proportion="-10.857142">
+        <state line="8" column="59" selection-start="614" selection-end="614" vertical-scroll-proportion="-5.428571">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.index.js">
+    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="437" column="30" selection-start="15745" selection-end="15745" vertical-scroll-proportion="0.0">
+        <state line="636" column="59" selection-start="23436" selection-end="23487" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/TwitterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="908" selection-end="908" vertical-scroll-proportion="-5.428571">
+        <state line="68" column="127" selection-start="2625" selection-end="2625" vertical-scroll-proportion="-16.964285">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="105" selection-start="10748" selection-end="10748" vertical-scroll-proportion="0.41923776">
+        <state line="495" column="46" selection-start="38946" selection-end="38946" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lp.index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="47" selection-start="9136" selection-end="9136" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/NodeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="403" column="9" selection-start="10644" selection-end="10644" vertical-scroll-proportion="-0.6785714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="30" selection-start="7076" selection-end="7076" vertical-scroll-proportion="0.66">
           <folding />
         </state>
       </provider>

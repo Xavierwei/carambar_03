@@ -12,6 +12,7 @@
 	<meta property="og:description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission !" />
 	<meta property="og:site_name" content="Good Luck Carambar" />
 	<meta property="og:image" content="http://www.goodluckcarambar.com/logo.jpg" />
+	<link href="./css/jsPane.css" rel="stylesheet" type="text/css" />
 	<link href="./css/style.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 8]>
 	<link href="css/ie8.css" rel="stylesheet" type="text/css" />

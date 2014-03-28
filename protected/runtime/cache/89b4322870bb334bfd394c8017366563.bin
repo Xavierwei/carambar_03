@@ -1,4 +1,4 @@
-a:2:{i:0;a:2:{i:0;s:13381:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+a:2:{i:0;a:2:{i:0;s:16254:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -12,6 +12,7 @@ a:2:{i:0;a:2:{i:0;s:13381:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 	<meta property="og:description" content="La petite blague Carambar se lance un énorme défi, faire rire les USA. Soutenez notre folle mission !" />
 	<meta property="og:site_name" content="Good Luck Carambar" />
 	<meta property="og:image" content="http://www.goodluckcarambar.com/logo.jpg" />
+	<link href="./css/jsPane.css" rel="stylesheet" type="text/css" />
 	<link href="./css/style.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 8]>
 	<link href="css/ie8.css" rel="stylesheet" type="text/css" />
@@ -79,16 +80,39 @@ a:2:{i:0;a:2:{i:0;s:13381:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 	</div>
 </div>
 <!--  -->
-<div class="page phase3">
+<div class="page phase4">
 	<!-- #Presentation Block -->
 	<div class="presentation">
-					<div class="skyline" style="background-position:center 90px" data-0="background-position:center 90px;" data-800="background-position:center -50px;"></div>
-						<div class="blue-road"
-		     data-style="opacity:0;" data-animate="opacity:1;" data-delay="0" data-time="800"></div>
-		<div class="presentation-box">
-			<div class="carambar-man" data-style="left:-1000px" data-animate="left:85px" data-delay="0" data-time="800" data-easing="easeOutQuart"></div>
-										<div class="tooltip" data-style="left:149px;opacity:0;" data-animate="left:249px;opacity:1;" data-delay="800" data-time="500">
-					<div class="tips-content-p3">
+					<div class="skyline" style="background-position:center 190px" data-0="background-position:center 190px;" data-800="background-position:center -100px;"></div>
+								<div class="videopart cs-clear">
+						<div class="videopart-tit">
+				<div class="robbion-icon"></div>
+				<div class="videopart-tit-defi videopart-tit-defi4">Tuto Fimo : Carambar</div>
+			</div>
+						<!-- Video -->
+			<div class="videomod">
+							<iframe width="548" height="304" src="//www.youtube.com/embed/m4ASUibmfos?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+			<!-- Twitter -->
+			<div class="videotxt-wrap">
+				<div class="videotxt"></div>
+			</div>
+			<!--  -->
+			<div class="videobot"></div>
+			<!-- 分享 -->
+			<div class="videoshare">
+				<!-- <a href="#" class="videoshare-fb"></a> -->
+				<a href="#" class="videoshare-t"></a>
+				<!-- <a href="#" class="videoshare-y"></a> -->
+				<!-- <a href="#" class="videoshare-i"></a> -->
+			</div>
+			<a href="javascript:;" data-a="goto_challenge" class="btn-other-challenges"></a>
+		</div>
+
+						<!-- section blue -->
+			<div class="sec-blue">
+				<div class="sec-bluecon cs-clear">
+					<div class="sec-bluepho">
 						<div class="countdown">
 							<span id="countdown-days"></span>
 							<span id="countdown-hours"></span>
@@ -96,17 +120,17 @@ a:2:{i:0;a:2:{i:0;s:13381:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 							<span id="countdown-seconds"></span>
 						</div>
 					</div>
+					<div class="indicator-count-wrap">
+						<div class="indicator-title">Nombre de soutiens récoltés</div>
+						<div class="indicator-count"></div>
+						<div class="indicator-count-num"></div>
+						<div class="indicator-hashtag">#GOODLUCKCARAMBAR</div>
+						<div class="indicator-btn" data-a="indicate"></div>
+					</div>
 				</div>
-						<div class="indicator-count-wrap"
-			     data-style="opacity:0;" data-animate="opacity:1;" data-delay="1000" data-time="500">
-				<div class="indicator-title">Nombre de soutiens récoltés</div>
-				<div class="indicator-count"></div>
-				<div class="indicator-count-num"></div>
-				<div class="indicator-hashtag">#GOODLUCKCARAMBAR</div>
-				<div class="indicator-btn" data-a="indicate"></div>
 			</div>
-		</div>
-				
+			
+		
 				<div class="goto-support-bg">
 			<a href="javascript:;" data-a="goto_support" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
 		</div>
@@ -122,6 +146,46 @@ a:2:{i:0;a:2:{i:0;s:13381:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 				<div class="videolist" data-826="transform:translate3d(0,0px,0);" data-1400="transform:translate3d(0,100px,0);">
 			<div class="videolistshare">
 				<div class="video-con">
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit1"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/21/video17_248_132.jpg" />
+								<a data-d="mid=wyhqQX0szXY" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=wyhqQX0szXY" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">Recette de Gâteau au Carambar</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video13_248_132.jpg" />
+								<a data-d="mid=RaNfoclPlRo" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=RaNfoclPlRo" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">CARAMBAR THE COUNTRYWIDE JOKE</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit3"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/21/video19_248_132.jpg" />
+								<a data-d="mid=o70njAPqA0Q" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=o70njAPqA0Q" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">Tuto fimo carambar + Petit BONUS</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit4"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video15_248_132.jpg" />
+								<a data-d="mid=m4ASUibmfos" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=m4ASUibmfos" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">Tuto Fimo : Carambar</div>
+							<div class="video-icon video-icon-2"></div>
+						</div>
 																<div class="videolist-item">
 							<div class="videolist-item-tit videolist-item-tit0"></div>
 							<div class="videolist-boxnull">des défis de plus en plus fous...</div>
@@ -327,4 +391,4 @@ a:2:{i:0;a:2:{i:0;s:13381:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 <script type="text/javascript" src="./js/lp.core.js"></script>
 <script type="text/javascript" src="./js/lp.index.js"></script>
 </body>
-</html>";i:1;N;}i:1;O:18:"CDbCacheDependency":9:{s:12:"connectionID";s:2:"db";s:3:"sql";s:77:"SELECT setting.setting_value FROM setting WHERE setting.setting_key = "phase"";s:6:"params";N;s:23:" CDbCacheDependency _db";N;s:18:"reuseDependentData";b:0;s:23:" CCacheDependency _hash";N;s:23:" CCacheDependency _data";a:1:{s:13:"setting_value";s:1:"3";}s:14:" CComponent _e";N;s:14:" CComponent _m";N;}}
+</html>";i:1;N;}i:1;O:18:"CDbCacheDependency":9:{s:12:"connectionID";s:2:"db";s:3:"sql";s:77:"SELECT setting.setting_value FROM setting WHERE setting.setting_key = "phase"";s:6:"params";N;s:23:" CDbCacheDependency _db";N;s:18:"reuseDependentData";b:0;s:23:" CCacheDependency _hash";N;s:23:" CCacheDependency _data";a:1:{s:13:"setting_value";s:1:"4";}s:14:" CComponent _e";N;s:14:" CComponent _m";N;}}

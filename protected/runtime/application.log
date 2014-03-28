@@ -7721,3 +7721,195 @@ REQUEST_URI=/carambar_03/index.php/facebook/post
 in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (165)
 in /Applications/MAMP/htdocs/carambar_03/protected/components/Controller.php (147)
 in /Applications/MAMP/htdocs/carambar_03/protected/controllers/FacebookController.php (246)
+2014/03/28 17:28:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/css/style.css
+---
+2014/03/28 17:28:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/
+---
+2014/03/28 17:30:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/css/style.css
+---
+2014/03/28 17:30:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/
+---
+2014/03/28 17:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/css/style.css
+---
+2014/03/28 17:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/
+---
+2014/03/28 17:30:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/css/style.css
+---
+2014/03/28 17:30:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/
+---
+2014/03/28 17:32:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/css/style.css
+---
+2014/03/28 17:32:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/
+---
+2014/03/28 18:41:25 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php:70)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/twitter/fetch
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (70)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/28 18:42:26 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php:71)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/twitter/fetch
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (71)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/28 19:08:32 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/28 19:08:32 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)
+2014/03/28 19:22:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/
+---
+2014/03/28 19:24:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/
+---
+2014/03/28 19:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/
+---
+2014/03/28 20:10:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/css/style.css
+---
+2014/03/28 20:11:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/css/style.css
+---
+2014/03/28 20:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/css/style.css
+---
+2014/03/28 20:11:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mobileimg/video_defi6_2.png".' in /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mobileimg/video...')
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/carambar_03/index.php(30): CApplication->run()
+#3 {main}
+REQUEST_URI=/carambar_03/mobileimg/video_defi6_2.png
+HTTP_REFERER=http://localhost:8888/carambar_03/
+---
+2014/03/28 21:21:22 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php:71)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(286): TwitterController->runAction()
+#1 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CController.php(265): TwitterController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(282): TwitterController->run()
+#3 /Applications/MAMP/htdocs/carambar_03/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/carambar_03/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/carambar_03/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar_03/twitter/fetch
+in /Applications/MAMP/htdocs/carambar_03/protected/controllers/TwitterController.php (71)
+in /Applications/MAMP/htdocs/carambar_03/index.php (30)

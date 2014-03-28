@@ -220,6 +220,14 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
 	});
 
     /**
+     * goto_challenge
+     */
+    LP.action('goto_challenge', function(){
+        var top = $('.videolistbg').position().top - 20;
+        $('body,html').animate({'scrollTop':top});
+    });
+
+    /**
      * Indicator
      */
     LP.action('indicate', function(data){
@@ -498,20 +506,23 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
 		});
 
 		// get twitter text list
-		if($('.videotxt')) {
-			api.ajax('recent', {type:'text', pagenum:3, orderby:'datetime'}, function( result ){
-				$.each(result.data,function(index,node){
-                    var desc = node.description.replace('#GOODLUCKCARAMBAR','');
-                    if(desc.length > 60) {
-                        desc = desc.substr(0,60)+'...';
-                    }
-					node.description = desc;
-					LP.compile( 'videotxt-item-template' , node , function( html ){
-						$('.videotxt').append(html);
-					});
-				});
-			});
-		}
+        LP.use(['jscrollpane' , 'mousewheel'] , function(){
+            if($('.videotxt')) {
+                $('.videotxt-wrap').jScrollPane({autoReinitialise:true});
+                api.ajax('recent', {type:'text', pagenum:10, orderby:'datetime'}, function( result ){
+                    $.each(result.data,function(index,node){
+                        var desc = node.description.replace('#GOODLUCKCARAMBAR','');
+                        if(desc.length > 60) {
+                            desc = desc.substr(0,60)+'...';
+                        }
+                        node.description = desc;
+                        LP.compile( 'videotxt-item-template' , node , function( html ){
+                            $('.videotxt').append(html);
+                        });
+                    });
+                });
+            }
+        });
 
 
 //		api.ajax('twitterLogin', function( result ){
