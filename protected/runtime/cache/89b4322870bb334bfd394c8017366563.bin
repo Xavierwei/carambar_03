@@ -1,4 +1,4 @@
-a:2:{i:0;a:2:{i:0;s:16254:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+a:2:{i:0;a:2:{i:0;s:16183:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -91,7 +91,7 @@ a:2:{i:0;a:2:{i:0;s:16254:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 			</div>
 						<!-- Video -->
 			<div class="videomod">
-							<iframe width="548" height="304" src="//www.youtube.com/embed/m4ASUibmfos?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
+							<iframe width="548" height="304" src="//www.youtube.com/embed/m4ASUibmfos?autoplay=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
 						</div>
 			<!-- Twitter -->
 			<div class="videotxt-wrap">
@@ -143,7 +143,7 @@ a:2:{i:0;a:2:{i:0;s:16254:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 	</div>
 			<div class="videolistbg">
 					<div class="videolist-tit"></div>
-				<div class="videolist" data-826="transform:translate3d(0,0px,0);" data-1400="transform:translate3d(0,100px,0);">
+				<div class="videolist">
 			<div class="videolistshare">
 				<div class="video-con">
 											<div class="videolist-item">
