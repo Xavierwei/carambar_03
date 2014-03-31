@@ -71,7 +71,10 @@ WallAdminController
 			{'title':3},
 			{'title':4},
 			{'title':5},
-			{'title':6}
+			{'title':6},
+			{'title':7},
+			{'title':8},
+			{'title':9}
 		];
 
 		VideoService.list({phase:$routeParams.phaseid},function(data){

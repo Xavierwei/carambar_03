@@ -1,4 +1,4 @@
-a:2:{i:0;a:2:{i:0;s:12620:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+a:2:{i:0;a:2:{i:0;s:19312:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -102,13 +102,18 @@ a:2:{i:0;a:2:{i:0;s:12620:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 	</div>
 </div>
 <!--  -->
-<div class="page phase5">
+<div class="page phase4">
 	<!-- #Presentation Block -->
 	<div class="presentation">
 					<div class="skyline" style="background-position:center 190px" data-0="background-position:center 190px;" data-800="background-position:center -100px;"></div>
 								<div class="videopart cs-clear">
+						<div class="videopart-tit">
+				<div class="robbion-icon"></div>
+				<div class="videopart-tit-defi videopart-tit-defi1">Peanuts | Teaser Trailer [HD] | FOX Family</div>
+			</div>
 						<!-- Video -->
 			<div class="videomod">
+							<iframe width="548" height="304" src="//www.youtube.com/embed/N1FNL_iIp5c?rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
 						</div>
 			<!-- Twitter -->
 			<div class="videotxt-wrap">
@@ -126,18 +131,31 @@ a:2:{i:0;a:2:{i:0;s:12620:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 			<a href="javascript:;" data-a="goto_challenge" class="btn-other-challenges"></a>
 		</div>
 
-							<div class="sec-blue2">
-					<div class="sec-blue2txt">
-						<div class="indicator-count-wrap">
-							<div class="indicator-count"></div>
-							<div class="indicator-count-num"></div>
+						<!-- section blue -->
+			<div class="sec-blue">
+				<div class="sec-bluecon cs-clear">
+					<div class="sec-bluepho">
+						<div class="countdown">
+							<span id="countdown-days"></span>
+							<span id="countdown-hours"></span>
+							<span id="countdown-minutes"></span>
+							<span id="countdown-seconds"></span>
 						</div>
 					</div>
-
+					<div class="indicator-count-wrap">
+						<div class="indicator-title">Nombre de soutiens récoltés</div>
+						<div class="indicator-count"></div>
+						<div class="indicator-count-num"></div>
+						<div class="indicator-hashtag">#GOODLUCKCARAMBAR</div>
+						<div class="indicator-btn" data-a="indicate"></div>
+					</div>
 				</div>
-				<div class="line line4"></div>
+			</div>
 			
 		
+				<div class="goto-support-bg">
+			<a href="javascript:;" data-a="goto_support" class="goto-support">ET TENTEZ DE GAGNER DE NOMBREUX CADEAUX ICI</a>
+		</div>
 			</div>
 	<!-- /Presentation Block -->
 	<!-- #Challenge Block -->
@@ -146,16 +164,92 @@ a:2:{i:0;a:2:{i:0;s:12620:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 		     data-0="transform:translate3d(0,0px,0);" data-1500="transform:translate3d(0,-400px,0);"></div>
 	</div>
 			<div class="videolistbg">
-					<div class="videolist-tit2"></div>
+					<div class="videolist-tit"></div>
 				<div class="videolist">
 			<div class="videolistshare">
 				<div class="video-con">
-																<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit0"></div>
-							<div class="videolist-boxnull">des défis de plus en plus fous...</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit1"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/19/video14_248_132.jpg" />
+								<a data-d="mid=N1FNL_iIp5c" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=N1FNL_iIp5c" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">Peanuts | Teaser Trailer [HD] | FOX Family</div>
+							<div class="video-icon video-icon-0"></div>
 						</div>
-																					<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit6-2"></div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit2"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video16_248_132.jpg" />
+								<a data-d="mid=a70cSWn3E9k" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=a70cSWn3E9k" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">Maleficent Official Trailer #4 (2014) Angelina Jolie HD</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit3"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video20_248_132.jpg" />
+								<a data-d="mid=pgHrmvkrEZo" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=pgHrmvkrEZo" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">Teen Wolf | Dylan O'Brien Interviews | Best Moments</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit4"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video21_248_132.jpg" />
+								<a data-d="mid=1mutNFIu8iU" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=1mutNFIu8iU" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">'Teen Wolf': T</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit5"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video19_248_132.jpg" />
+								<a data-d="mid=Wla4GBkN0k8" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=Wla4GBkN0k8" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">Teen Wolf Funny Cast Moments</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit6"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video15_248_132.jpg" />
+								<a data-d="mid=oYZxZups06w" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=oYZxZups06w" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">The Giver Official Trailer (2014) Meryl Streep, Sci Fi HD</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit7"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video18_248_132.jpg" />
+								<a data-d="mid=T4OfVYoWkoA" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=T4OfVYoWkoA" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">The Maze Runner Official Trailer</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+											<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit8"></div>
+							<div class="videolist-box">
+								<img src=".//uploads/2014/3/20/video17_248_132.jpg" />
+								<a data-d="mid=5REILEpGCx0" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
+								<a href="https://www.youtube.com/watch?v=5REILEpGCx0" target="_blank" class="video-play show-mobile"></a>
+							</div>
+							<div class="videolist-txt">Maleficent Official Teaser Trailer</div>
+							<div class="video-icon video-icon-1"></div>
+						</div>
+																										<div class="videolist-item">
+							<div class="videolist-item-tit videolist-item-tit9-2"></div>
 							<div class="videolist-boxnull">
 								<img src="./pic/vos3.jpg" />
 							</div>
@@ -165,13 +259,46 @@ a:2:{i:0;a:2:{i:0;s:12620:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 				</div>
 			</div>
 		</div>
-		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
+		<div class="challenge-man" data-700="transform:translate3d(0,0px,0);" data-900="transform:translate3d(0,-259px,0);"></div>
 	</div>
 	
 	<!-- /Challenge Block -->
 
 	<div class="yellow-wrap">
 				
+				<!--  -->
+		<div class="support-carambar-wrap">
+			<div id="support-carambar" class="img">
+				<div class="img1"></div>
+				<div class="img2"></div>
+				<div class="img3"></div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="share">
+			<div class="share-fb">
+<!--				<a href="javascript:void(0)" data-a="open_facebook" class="share-fbbtn"></a>-->
+				<a href="javascript:void(0)" id="facebook-login-link" class="share-fbbtn"></a>
+			</div>
+			<div class="share-t">
+				<textarea class="share-txt" id="twitter-content"></textarea>
+				<p class="share-t-num" id="twitter-words-limit"><span>122</span>/140</p>
+				<a target="_blank" href="javascript:transfoWebo(86)" class="share-tbtn disabled" data-a="share_twitter"></a>
+
+			</div>
+			<div class="share-i cs-clear">
+				<a target="_blank" href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=fr" class="share-iandroid"></a>
+				<a target="_blank" href="https://itunes.apple.com/fr/app/instagram/id389801252?mt=8" class="share-iios"></a>
+			</div>
+		</div>
+		<!--  -->
+		<div class="tshirttit"></div>
+		<!--  -->
+		<div class="tshirt">
+			<div class="tshirt1"></div>
+			<div class="tshirt2"></div>
+		</div>
+		<!--  -->
 				<div class="photit"></div>
 		<!--  -->
 		<div class="pholist cs-clear">
@@ -322,4 +449,4 @@ a:2:{i:0;a:2:{i:0;s:12620:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 <script type="text/javascript" src="./js/lp.core.js"></script>
 <script type="text/javascript" src="./js/lp.index.js"></script>
 </body>
-</html>";i:1;N;}i:1;O:18:"CDbCacheDependency":9:{s:12:"connectionID";s:2:"db";s:3:"sql";s:77:"SELECT setting.setting_value FROM setting WHERE setting.setting_key = "phase"";s:6:"params";N;s:23:" CDbCacheDependency _db";N;s:18:"reuseDependentData";b:0;s:23:" CCacheDependency _hash";N;s:23:" CCacheDependency _data";a:1:{s:13:"setting_value";s:1:"5";}s:14:" CComponent _e";N;s:14:" CComponent _m";N;}}
+</html>";i:1;N;}i:1;O:18:"CDbCacheDependency":9:{s:12:"connectionID";s:2:"db";s:3:"sql";s:77:"SELECT setting.setting_value FROM setting WHERE setting.setting_key = "phase"";s:6:"params";N;s:23:" CDbCacheDependency _db";N;s:18:"reuseDependentData";b:0;s:23:" CCacheDependency _hash";N;s:23:" CCacheDependency _data";a:1:{s:13:"setting_value";s:1:"4";}s:14:" CComponent _e";N;s:14:" CComponent _m";N;}}

@@ -7924,3 +7924,92 @@ Stack trace:
 #6 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
 REQUEST_URI=/carambar/
 in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:38:09 [error] [php] Memcache::get(): Server 127.0.0.1 (tcp 11211) failed with: Connection refused (61) (/Applications/MAMP/htdocs/carambar/yii/framework/caching/CMemCache.php:149)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CUrlManager.php(219): CMemCache->get()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/base/CModule.php(387): CUrlManager->init()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(522): CWebApplication->getComponent()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:44:33 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:44:33 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:44:35 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:44:35 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:44:40 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:44:40 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:44:47 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:44:47 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:44:49 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:44:49 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:45:55 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:45:55 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:46:16 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:46:16 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:46:23 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:46:23 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:48:29 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:48:29 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:48:36 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:48:36 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:48:39 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:48:39 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:48:42 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:48:42 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:48:54 [warning] [application] Failed to set unsafe attribute "del" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)
+2014/03/31 14:48:54 [warning] [application] Failed to set unsafe attribute "vid" of "VideoAR".
+in /Applications/MAMP/htdocs/carambar/protected/controllers/VideoController.php (113)
+in /Applications/MAMP/htdocs/carambar/index.php (30)

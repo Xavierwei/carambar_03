@@ -175,7 +175,7 @@
 					<?php
 						$videoCount = 0;
 						foreach($homeVideos as $index=>$video):
-							if($video->rank == 6 || $videoCount == 5) {continue;}
+							if($video->rank == 9 || $videoCount == 8) {continue;}
 							$videoCount++;
 
 					?>
@@ -191,7 +191,7 @@
 						</div>
 					<?php endforeach;?>
 					<?php
-						if($videoCount < 5):
+						if($videoCount < 8):
 					?>
 						<div class="videolist-item">
 							<div class="videolist-item-tit videolist-item-tit0"></div>
@@ -201,7 +201,7 @@
 					<?php
 					$video6 = 0;
 					foreach($homeVideos as $index=>$video):
-						if($video->rank != 6) {continue;}
+						if($video->rank != 9) {continue;}
 						$video6++;
 						?>
 						<div class="videolist-item">
@@ -217,7 +217,7 @@
 					<?php endforeach;?>
 					<?php if($video6 == 0):?>
 						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit6-2"></div>
+							<div class="videolist-item-tit videolist-item-tit9-2"></div>
 							<div class="videolist-boxnull">
 								<img src="./pic/vos3.jpg" />
 							</div>
@@ -228,7 +228,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="challenge-man" data-300="transform:translate3d(0,0px,0);" data-400="transform:translate3d(0,-259px,0);"></div>
+		<div class="challenge-man" data-700="transform:translate3d(0,0px,0);" data-900="transform:translate3d(0,-259px,0);"></div>
 	</div>
 	<?php endif;?>
 

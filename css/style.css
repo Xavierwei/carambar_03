@@ -257,7 +257,7 @@ a:hover{color:#e82426}
 /* challenge
 ================================================================================================= */
 .challenge_bg {position:fixed;z-index:1;top:0;bottom:0;width:100%;}
-    .map_bg {position: absolute;background:url(../images/map_bg.jpg) no-repeat top;background-size:cover;width:100%;height:120%;}
+    .map_bg {position: absolute;background:url(../images/map_bg.jpg) no-repeat top;background-size:auto 100%;width:100%;height:1400px;}
     .phase5 .map_bg {height:1300px;}
     .challenge {position: relative;}
     .challenge-title {background:#e3142a url(../images/challenge_title.gif) no-repeat center;width:745px;height:88px;position: absolute;z-index:13;top:-70px;left:50%;margin-left:-372px;}
@@ -302,8 +302,11 @@ a:hover{color:#e82426}
     /*.phase5 .videolist-item-tit3 {background: url(../images/video_defi3.png) no-repeat center;}*/
     .videolist-item-tit4 {background: url(../images/video_defi4.png) no-repeat center;}
     .videolist-item-tit5 {background: url(../images/video_defi5.png) no-repeat center;}
-    .videolist-item-tit6 {background: url(../images/video_defi3_2.gif) no-repeat center;}
-    .videolist-item-tit6-2 {background: url(../images/video_defi6_2.png) no-repeat center;}
+    .videolist-item-tit6 {background: url(../images/video_defi5.png) no-repeat center;}
+    .videolist-item-tit7 {background: url(../images/video_defi5.png) no-repeat center;}
+    .videolist-item-tit8 {background: url(../images/video_defi5.png) no-repeat center;}
+    .videolist-item-tit9 {background: url(../images/video_defi3_2.gif) no-repeat center;}
+    .videolist-item-tit9-2 {background: url(../images/video_defi6_2.png) no-repeat center;}
     .videolist-item-tit0 {background: url(../images/video_defi2_2.gif) no-repeat center;}
     .video-icon {position: absolute;left:-23px;top:11px}
     .video-icon-1 {background: url('../images/video_icon_1.png') no-repeat;width: 64px;height: 98px;}
@@ -390,9 +393,12 @@ a:hover{color:#e82426}
     .videolist-item-tit3 {background: url(../mobileimg/video_defi3.png) no-repeat center;}
     .videolist-item-tit4 {background: url(../mobileimg/video_defi4.png) no-repeat center;}
     .videolist-item-tit5 {background: url(../mobileimg/video_defi5.png) no-repeat center;}
-    .videolist-item-tit6 {background: url(../mobileimg/video_defi3_2.png) no-repeat center;}
+    .videolist-item-tit6 {background: url(../mobileimg/video_defi5.png) no-repeat center;}
+    .videolist-item-tit7 {background: url(../mobileimg/video_defi5.png) no-repeat center;}
+    .videolist-item-tit8 {background: url(../mobileimg/video_defi5.png) no-repeat center;}
+    .videolist-item-tit9 {background: url(../mobileimg/video_defi3_2.png) no-repeat center;}
     .videolist-item-tit0 {background: url(../mobileimg/video_defi2_2.png) no-repeat center;}
-    .videolist-item-tit6-2 {background: url(../mobileimg/video_defi6_2.png) no-repeat center;}
+    .videolist-item-tit9-2 {background: url(../mobileimg/video_defi6_2.png) no-repeat center;}
 
     .photit{background: url('../mobileimg/photit.png') no-repeat top center;height: 81px;margin: 15px auto 0;width: 640px;}
     .pholist{background: url('../mobileimg/pholist.png') repeat-x center;height: 194px;margin: 15px auto 0;width:572px;padding:10px 0 0 8px;overflow: hidden}
