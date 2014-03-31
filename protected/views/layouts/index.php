@@ -28,6 +28,28 @@
 		ga('send', 'pageview');
 
 	</script>
+	<script type="text/javascript">
+		var fb_param = {};
+		fb_param.pixel_id = '6015172332818';
+		fb_param.value = '0.01';
+		fb_param.currency = 'EUR';
+		(function(){
+			var fpw = document.createElement('script');
+			fpw.async = true;
+			fpw.src = '//connect.facebook.net/en_US/fp.js';
+			var ref = document.getElementsByTagName('script')[0];
+			ref.parentNode.insertBefore(fpw, ref);
+		})();
+	</script>
+	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6015172332818&value=0.01&currency=EUR" /></noscript>
+
+	<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		twttr.conversion.trackPid('l4dgx');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l4dgx&p_id=Twitter" />
+	</noscript>
 </head>
 <!--[if IE 6]>
 <body class="ie6"><![endif]-->

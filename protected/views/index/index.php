@@ -69,7 +69,7 @@
 			<!-- Video -->
 			<div class="videomod">
 			<?php if($topVideo): ?>
-				<iframe width="548" height="304" src="//www.youtube.com/embed/<?php echo $topVideo->mid;?>?autoplay=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+				<iframe width="548" height="304" src="//www.youtube.com/embed/<?php echo $topVideo->mid;?>?rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
 			<?php endif;?>
 			</div>
 			<!-- Twitter -->
