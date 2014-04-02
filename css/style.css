@@ -51,11 +51,11 @@ a:hover{color:#e82426}
 .videopart-tit-defi1 {background: url(../images/video_title_1.gif) no-repeat;}
 .videopart-tit-defi2 {background: url(../images/video_title_2.gif) no-repeat;}
 .videopart-tit-defi3 {background: url(../images/video_title_3.gif) no-repeat;}
-.videopart-tit-defi4 {background: url(../images/video_title_4.gif) no-repeat;}
-.videopart-tit-defi5 {background: url(../images/video_title_5.gif) no-repeat;}
-.videopart-tit-defi6 {background: url(../images/video_title_6.gif) no-repeat;}
-.videopart-tit-defi7 {background: url(../images/video_title_7.gif) no-repeat;}
-.videopart-tit-defi8 {background: url(../images/video_title_8.gif) no-repeat;}
+.videopart-tit-defi4 {background: url(../images/video_title_3.gif) no-repeat;}
+.videopart-tit-defi5 {background: url(../images/video_title_4.gif) no-repeat;}
+.videopart-tit-defi6 {background: url(../images/video_title_5.gif) no-repeat;}
+.videopart-tit-defi7 {background: url(../images/video_title_6.gif) no-repeat;}
+.videopart-tit-defi8 {background: url(../images/video_title_7.gif) no-repeat;}
 .videopart-tit-defi9 {background: url(../images/video_title_9.gif) no-repeat;padding:0 0 0 107px;}
 .videopart-tit .robbion-icon {background: url(../images/video_icon_2_big.png) no-repeat;width:160px;height:176px;position: absolute;top:-37px;left:-20px;}
 .videopart1{width:598px;}
@@ -303,11 +303,11 @@ a:hover{color:#e82426}
     /*.phase5 .videolist-item-tit1 {background: url(../images/video_defi1.png) no-repeat center;}*/
     /*.phase5 .videolist-item-tit2 {background: url(../images/video_defi2.png) no-repeat center;}*/
     /*.phase5 .videolist-item-tit3 {background: url(../images/video_defi3.png) no-repeat center;}*/
-    .videolist-item-tit4 {background: url(../images/video_defi4.png) no-repeat center;}
-    .videolist-item-tit5 {background: url(../images/video_defi5.png) no-repeat center;}
-    .videolist-item-tit6 {background: url(../images/video_defi6.png) no-repeat center;}
-    .videolist-item-tit7 {background: url(../images/video_defi7.png) no-repeat center;}
-    .videolist-item-tit8 {background: url(../images/video_defi8.png) no-repeat center;}
+    .videolist-item-tit4 {background: url(../images/video_defi3.png) no-repeat center;}
+    .videolist-item-tit5 {background: url(../images/video_defi4.png) no-repeat center;}
+    .videolist-item-tit6 {background: url(../images/video_defi5.png) no-repeat center;}
+    .videolist-item-tit7 {background: url(../images/video_defi6.png) no-repeat center;}
+    .videolist-item-tit8 {background: url(../images/video_defi7.png) no-repeat center;}
     .videolist-item-tit9 {background: url(../images/video_defi3_2.gif) no-repeat center;}
     .videolist-item-tit9-2 {background: url(../images/video_defi6_2.png) no-repeat center;}
     .videolist-item-tit0 {background: url(../images/video_defi2_2.gif) no-repeat center;}
@@ -394,11 +394,11 @@ a:hover{color:#e82426}
     .videolist-item-tit1 {background: url(../mobileimg/video_defi1.png) no-repeat center;}
     .videolist-item-tit2 {background: url(../mobileimg/video_defi2.png) no-repeat center;}
     .videolist-item-tit3 {background: url(../mobileimg/video_defi3.png) no-repeat center;}
-    .videolist-item-tit4 {background: url(../mobileimg/video_defi4.png) no-repeat center;}
-    .videolist-item-tit5 {background: url(../mobileimg/video_defi5.png) no-repeat center;}
-    .videolist-item-tit6 {background: url(../mobileimg/video_defi6.png) no-repeat center;}
-    .videolist-item-tit7 {background: url(../mobileimg/video_defi7.png) no-repeat center;}
-    .videolist-item-tit8 {background: url(../mobileimg/video_defi8.png) no-repeat center;}
+    .videolist-item-tit4 {background: url(../mobileimg/video_defi3.png) no-repeat center;}
+    .videolist-item-tit5 {background: url(../mobileimg/video_defi4.png) no-repeat center;}
+    .videolist-item-tit6 {background: url(../mobileimg/video_defi5.png) no-repeat center;}
+    .videolist-item-tit7 {background: url(../mobileimg/video_defi6.png) no-repeat center;}
+    .videolist-item-tit8 {background: url(../mobileimg/video_defi7.png) no-repeat center;}
     .videolist-item-tit9 {background: url(../mobileimg/video_defi3_2.png) no-repeat center;}
     .videolist-item-tit0 {background: url(../mobileimg/video_defi2_2.png) no-repeat center;}
     .videolist-item-tit9-2 {background: url(../mobileimg/video_defi6_2.png) no-repeat center;}
