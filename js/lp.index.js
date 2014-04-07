@@ -4,8 +4,15 @@
 LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'queryloader'] , function( $ , api ){
     'use strict'
 
+	var isIpad = navigator.userAgent.toLowerCase().indexOf('ipad') > 0;
     var API_FOLDER = "./api";
 	var time_left;
+
+	if(isIpad)
+	{
+		$('meta[name=viewport]').attr('content','width=1000, minimum-scale=0.77, maximum-scale=0.77, target-densityDpi=290,user-scalable=no');
+	}
+
     $(document.body)
         .delegate('#twitter-content', 'keyup', function(){
             var leftLength = 140 - 18 - $(this).val().length;

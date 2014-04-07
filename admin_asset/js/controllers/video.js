@@ -127,10 +127,10 @@ WallAdminController
 					videoSectionCount ++;
 				}
 			});
-			if(videoSectionCount >= 6) {
-				$scope.errorMaxVideoSection = true;
-				return;
-			}
+//			if(videoSectionCount >= 6) {
+//				$scope.errorMaxVideoSection = true;
+//				return;
+//			}
             video.phase = $routeParams.phaseid;
             video.del = 0;
 			VideoService.update(video, function(data){

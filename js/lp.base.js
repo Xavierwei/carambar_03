@@ -24,6 +24,7 @@ LP.use(['jquery', 'api', 'easing', /*'fileupload', 'flash-detect', 'swfupload', 
 	var styleIndex = 0;
 
     if(isPad) {
+		$('meta[name=viewport]').attr('content','width=1000, minimum-scale=0.77, maximum-scale=0.77, target-densityDpi=290,user-scalable=no');
 		$(window).bind('orientationchange', function() {
 			var o = window.orientation;
 			if (o != 90 && o != -90) {

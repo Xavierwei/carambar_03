@@ -205,7 +205,7 @@
 						$video6++;
 						?>
 						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit6"></div>
+							<div class="videolist-item-tit videolist-item-tit9"></div>
 							<div class="videolist-box">
 								<img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" />
 								<a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
@@ -228,7 +228,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="challenge-man" data-700="transform:translate3d(0,0px,0);" data-900="transform:translate3d(0,-259px,0);"></div>
+		<div class="challenge-man" data-600="transform:translate3d(0,0px,0);" data-700="transform:translate3d(0,-259px,0);"></div>
 	</div>
 	<?php endif;?>
 
