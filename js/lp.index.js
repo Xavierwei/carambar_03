@@ -451,9 +451,15 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
 			time_left = result.data;
             if(time_left < 0) {
                 time_left = 0;
+				$('.sec-bluepho-end').fadeIn();
             }
+			else {
+				$('.sec-bluepho').fadeIn();
+			}
 			var timeInterval = setInterval(function(){
 				if(time_left < 0) {
+					$('.sec-bluepho-end').fadeIn();
+					$('.sec-bluepho').fadeOut();
 					clearInterval(timeInterval);
 					return;
 				}

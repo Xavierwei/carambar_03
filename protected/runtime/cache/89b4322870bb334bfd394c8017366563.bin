@@ -1,4 +1,4 @@
-a:2:{i:0;a:2:{i:0;s:17058:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+a:2:{i:0;a:2:{i:0;s:17099:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -134,6 +134,7 @@ a:2:{i:0;a:2:{i:0;s:17058:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 						<!-- section blue -->
 			<div class="sec-blue">
 				<div class="sec-bluecon cs-clear">
+					<div class="sec-bluepho-end"></div>
 					<div class="sec-bluepho">
 						<div class="countdown">
 							<span id="countdown-days"></span>
@@ -213,7 +214,7 @@ a:2:{i:0;a:2:{i:0;s:17058:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 							<div class="videolist-boxnull">des défis de plus en plus fous...</div>
 						</div>
 																					<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit9-2"></div>
+							<div class="videolist-item-tit videolist-item-tit8-2"></div>
 							<div class="videolist-boxnull">
 								<img src="./pic/vos3.jpg" />
 							</div>
@@ -223,7 +224,7 @@ a:2:{i:0;a:2:{i:0;s:17058:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transiti
 				</div>
 			</div>
 		</div>
-		<div class="challenge-man" data-700="transform:translate3d(0,0px,0);" data-900="transform:translate3d(0,-259px,0);"></div>
+		<div class="challenge-man" data-600="transform:translate3d(0,0px,0);" data-700="transform:translate3d(0,-259px,0);"></div>
 	</div>
 	
 	<!-- /Challenge Block -->

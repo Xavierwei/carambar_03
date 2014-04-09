@@ -92,6 +92,7 @@
 			<!-- section blue -->
 			<div class="sec-blue">
 				<div class="sec-bluecon cs-clear">
+					<div class="sec-bluepho-end"></div>
 					<div class="sec-bluepho">
 						<div class="countdown">
 							<span id="countdown-days"></span>
@@ -175,7 +176,7 @@
 					<?php
 						$videoCount = 0;
 						foreach($homeVideos as $index=>$video):
-							if($video->rank == 9 || $videoCount == 8) {continue;}
+							if($video->rank == 8 || $videoCount == 7) {continue;}
 							$videoCount++;
 
 					?>
@@ -191,7 +192,7 @@
 						</div>
 					<?php endforeach;?>
 					<?php
-						if($videoCount < 8):
+						if($videoCount < 7):
 					?>
 						<div class="videolist-item">
 							<div class="videolist-item-tit videolist-item-tit0"></div>
@@ -201,11 +202,11 @@
 					<?php
 					$video6 = 0;
 					foreach($homeVideos as $index=>$video):
-						if($video->rank != 9) {continue;}
+						if($video->rank != 8) {continue;}
 						$video6++;
 						?>
 						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit9"></div>
+							<div class="videolist-item-tit videolist-item-tit8"></div>
 							<div class="videolist-box">
 								<img src="./<?php echo str_replace('.jpg', '_248_132.jpg', $video->thumbnail);?>" />
 								<a data-d="mid=<?php echo $video->mid;?>" data-a="open_video" href="javascript:void(0);" class="video-play show-desktop"></a>
@@ -217,7 +218,7 @@
 					<?php endforeach;?>
 					<?php if($video6 == 0):?>
 						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit9-2"></div>
+							<div class="videolist-item-tit videolist-item-tit8-2"></div>
 							<div class="videolist-boxnull">
 								<img src="./pic/vos3.jpg" />
 							</div>

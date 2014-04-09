@@ -76,7 +76,8 @@ a:hover{color:#e82426}
 
 .sec-blue{background: url('../images/sec1_blue.png') repeat-x;height: 174px;width:100%;margin: 20px 0 0;position: relative;}
     .sec-bluecon{width:800px;margin: 0 auto;position: relative;}
-    .sec-bluepho{width:265px;height: 135px;background: url('../images/sec1-bluepho-countdown.png') no-repeat;position: absolute;top:30px;left:0}
+    .sec-bluepho-end {display:none;background: url('../images/sec_bluepho_end.jpg') no-repeat;width:318px;height:95px;position: absolute;top:50px;left:-37px;}
+    .sec-bluepho{display:none;width:265px;height: 135px;background: url('../images/sec1-bluepho-countdown.png') no-repeat;position: absolute;top:30px;left:0}
     .sec-bluepho .countdown {position:absolute;right:26px;bottom:81px;font-family:'Arial Narrow', 'Arial';color:#2f3688;font-size:37px;}
     .sec-bluepho .countdown span {margin:0 0 0 12px;display:block;float:left;width:47px;}
     .sec-bluepho .countdown span#countdown-hours {margin-left:12px;}
@@ -307,7 +308,8 @@ a:hover{color:#e82426}
     .videolist-item-tit5 {background: url(../images/video_defi4.png) no-repeat center;}
     .videolist-item-tit6 {background: url(../images/video_defi5.png) no-repeat center;}
     .videolist-item-tit7 {background: url(../images/video_defi6.png) no-repeat center;}
-    .videolist-item-tit8 {background: url(../images/video_defi7.png) no-repeat center;}
+    .videolist-item-tit8 {background: url(../images/video_defi3_2.gif) no-repeat center;}
+    .videolist-item-tit8-2 {background: url(../images/video_defi6_2.png) no-repeat center;}
     .videolist-item-tit9 {background: url(../images/video_defi3_2.gif) no-repeat center;}
     .videolist-item-tit9-2 {background: url(../images/video_defi6_2.png) no-repeat center;}
     .videolist-item-tit0 {background: url(../images/video_defi2_2.gif) no-repeat center;}
@@ -316,7 +318,7 @@ a:hover{color:#e82426}
     .video-icon-2 {background: url('../images/video_icon_2.png') no-repeat;width: 84px;height: 98px;left:-25px;}
     .videolist-boxnull{border: #fff dotted 5px;height:132px;width: 242px; display: table-cell;vertical-align: middle;text-transform: uppercase;font-size:14px;}
     .videolist-pro{position: absolute;background: url('../images/videolist_pro.png') no-repeat;width: 208px;height: 239px;bottom:0;right:30px;}
-    .videolist-tit{background: url('../images/videolist_tit.png') no-repeat;width: 629px;height: 66px;position: absolute;top:-15px;left:50%;margin-left:-315px;z-index:13;}
+    .videolist-tit{background: url('../images/videolist_tit.png') no-repeat;width: 639px;height: 66px;position: absolute;top:-15px;left:50%;margin-left:-315px;z-index:13;}
 
     .videolistbg2{margin: 55px 0 50px;background:#d4d4d4}
     .videolist2{background: url('../images/videolist2.jpg') no-repeat center;height: 496px;margin: 40px 0 0;position: relative;}
@@ -370,7 +372,7 @@ a:hover{color:#e82426}
     .videotxt-item span{line-height: 999em;overflow: hidden;height: 10px;}
     .line4{height: 0;overflow: hidden}
     .videolist-tit2{background-image: url('../mobileimg/videolist_tit2.png');width: 600px;height: 60px;margin-left:-310px}
-    .videolist-tit{background: url('../mobileimg/videolist_tit.png') no-repeat;width: 555px;height: 59px;position: absolute;top:-15px;left:50%;margin-left:-275px;z-index:13;}
+    .videolist-tit{background: url('../mobileimg/videolist_tit.png') no-repeat;width: 570px;height: 78px;position: absolute;top:-15px;left:50%;margin-left:-281px;z-index:13;}
     .videolist,
     .videolist2{background-image: url('../mobileimg/videolist2.jpg') ;height:auto;padding: 30px 0 0;position: relative;}
     .videolist{margin-top:50px;}
@@ -413,6 +415,7 @@ a:hover{color:#e82426}
     .sec-blue{background: url('../mobileimg/sec1_blue.png') repeat-x top ;height: 840px;}
     .phase4 .sec-blue {height:804px;}
     .sec-bluecon {width:100%;}
+    .sec-bluepho-end {background:url('../mobileimg/sec_bluepho_end.png') no-repeat;width:523px;height:249px;left:50%;margin-left:-261px;}
     .sec-bluepho{background: url('../mobileimg/sec1_bluepho1.png') no-repeat;width: 469px;height:274px;top:16px;left:86px;}
     .phase4 .sec-bluepho {left:50%;margin-left:-218px;margin-top:30px;}
     .phase4 .sec-bluepho .countdown {right:18px;bottom:178px;font-size:53px;}
