@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/map_bg.jpg" afterPath="$PROJECT_DIR$/images/map_bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/videolist_tit.png" afterPath="$PROJECT_DIR$/images/videolist_tit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobileimg/videolist_tit.png" afterPath="$PROJECT_DIR$/mobileimg/videolist_tit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/cache/89b4322870bb334bfd394c8017366563.bin" afterPath="$PROJECT_DIR$/protected/runtime/cache/89b4322870bb334bfd394c8017366563.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/IndexController.php" afterPath="$PROJECT_DIR$/protected/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/index/index.php" afterPath="$PROJECT_DIR$/protected/views/index/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.index.js" afterPath="$PROJECT_DIR$/js/lp.index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sec_bluepho_end.jpg" afterPath="$PROJECT_DIR$/images/sec_bluepho_end.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobileimg/sec_bluepho_end.png" afterPath="$PROJECT_DIR$/mobileimg/sec_bluepho_end.png" />
     </list>
     <ignored path="bank_wall.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -243,7 +237,7 @@
     <file path="/Image.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392726700194" ignored="false" />
     <file path="/Image_GD.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1392727144984" ignored="false" />
     <file path="/node.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395822434479" ignored="false" />
-    <file path="/comment.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397041054799" ignored="false" />
+    <file path="/comment.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397042446127" ignored="false" />
     <file path="/unflag.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393077818601" ignored="false" />
     <file path="/FlagAR.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393429055992" ignored="false" />
     <file path="/Controller.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1393166412023" ignored="false" />
@@ -548,7 +542,7 @@
     <file path="$PROJECT_DIR$/../bank_wall/lang/fr.json" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396770546401" ignored="false" />
     <file path="$PROJECT_DIR$/../bank_wall/api/css/ie.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396767760223" ignored="false" />
     <file path="/ie.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396767736481" ignored="false" />
-    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/controllers/comment.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397041118639" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/admin_asset/js/controllers/comment.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397042492546" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
