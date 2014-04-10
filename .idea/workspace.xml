@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sec_bluepho_end.jpg" afterPath="$PROJECT_DIR$/images/sec_bluepho_end.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobileimg/sec_bluepho_end.png" afterPath="$PROJECT_DIR$/mobileimg/sec_bluepho_end.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/index/index.php" afterPath="$PROJECT_DIR$/protected/views/index/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bank_wall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397035443723" ignored="false" />
+    <file path="/Dummy.txt" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397059213878" ignored="false" />
     <file path="/controllers.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391781932373" ignored="false" />
     <file path="/partial1.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387685938508" ignored="false" />
     <file path="/list.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395822351373" ignored="false" />
@@ -565,25 +565,25 @@
       <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="-12.214286">
+            <state line="18" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="22" selection-start="8113" selection-end="8113" vertical-scroll-proportion="-3.357143">
+            <state line="201" column="25" selection-start="8336" selection-end="8336" vertical-scroll-proportion="0.24953096">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="316" column="19" selection-start="26685" selection-end="26685" vertical-scroll-proportion="0.42228463">
+            <state line="318" column="16" selection-start="26897" selection-end="26897" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -620,9 +620,9 @@
         <option value="$PROJECT_DIR$/protected/controllers/SettingController.php" />
         <option value="$PROJECT_DIR$/js/lp.index.js" />
         <option value="$PROJECT_DIR$/admin_asset/js/controllers/video.js" />
-        <option value="$PROJECT_DIR$/protected/views/index/index.php" />
         <option value="$PROJECT_DIR$/protected/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/protected/views/index/index.php" />
       </list>
     </option>
   </component>
@@ -659,95 +659,27 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
+              <option name="myItemId" value="carambar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
+              <option name="myItemId" value="carambar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carambar_03" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="carambar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -757,8 +689,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -830,7 +762,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979952" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21325916" sideWeight="0.7550661" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21511358" sideWeight="0.7550661" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -937,77 +869,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/SettingController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="19" selection-start="411" selection-end="411" vertical-scroll-proportion="0.017608898">
-          <folding />
-        </state>
+        <state line="17" column="19" selection-start="411" selection-end="411" vertical-scroll-proportion="0.017608898" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lp.index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="263" column="21" selection-start="10527" selection-end="10527" vertical-scroll-proportion="0.017367458">
-          <folding />
-        </state>
+        <state line="263" column="21" selection-start="10527" selection-end="10527" vertical-scroll-proportion="0.017367458" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lp.core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="314" column="7" selection-start="10683" selection-end="10683" vertical-scroll-proportion="0.017163506">
-          <folding />
-        </state>
+        <state line="314" column="7" selection-start="10683" selection-end="10683" vertical-scroll-proportion="0.017163506" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photowall-m.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="53" selection-start="3089" selection-end="3089" vertical-scroll-proportion="0.28705442">
-          <folding />
-        </state>
+        <state line="61" column="53" selection-start="3089" selection-end="3089" vertical-scroll-proportion="0.28705442" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_asset/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="321" selection-end="329" vertical-scroll-proportion="0.017163506">
-          <folding />
-        </state>
+        <state line="13" column="25" selection-start="321" selection-end="329" vertical-scroll-proportion="0.017163506" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_asset/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="39" selection-start="254" selection-end="254" vertical-scroll-proportion="0.15447155">
-          <folding />
-        </state>
+        <state line="9" column="39" selection-start="254" selection-end="254" vertical-scroll-proportion="0.15447155" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_asset/js/controllers/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="49" selection-start="2863" selection-end="2863" vertical-scroll-proportion="0.017163506">
-          <folding />
-        </state>
+        <state line="102" column="49" selection-start="2863" selection-end="2863" vertical-scroll-proportion="0.017163506" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="64" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.24953096">
-          <folding />
-        </state>
+        <state line="14" column="64" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.24953096" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="-12.214286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="22" selection-start="8113" selection-end="8113" vertical-scroll-proportion="-3.357143">
+        <state line="18" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="316" column="19" selection-start="26685" selection-end="26685" vertical-scroll-proportion="0.42228463">
+        <state line="318" column="16" selection-start="26897" selection-end="26897" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="201" column="25" selection-start="8336" selection-end="8336" vertical-scroll-proportion="0.24953096">
           <folding />
         </state>
       </provider>

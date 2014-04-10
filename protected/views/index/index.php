@@ -216,15 +216,6 @@
 							<div class="video-icon video-icon-<?php echo $video->ribbon;?>"></div>
 						</div>
 					<?php endforeach;?>
-					<?php if($video6 == 0):?>
-						<div class="videolist-item">
-							<div class="videolist-item-tit videolist-item-tit8-2"></div>
-							<div class="videolist-boxnull">
-								<img src="./pic/vos3.jpg" />
-							</div>
-							<div class="videolist-txt">Arriver à faire rire un staDE, <br/>UNE STAR ET UN MAX D’américains ! </div>
-						</div>
-					<?php endif;?>
 					<div class="cs-clear"></div>
 				</div>
 			</div>
