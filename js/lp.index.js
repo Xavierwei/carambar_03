@@ -677,7 +677,7 @@ LP.use(['jquery', 'api', 'easing', 'cookie','fileupload', 'skrollr', 'exif', 'qu
         var init = function( num ){
             // init digit count
             num = num + '';
-            num = "000000".substr(num.length) + num;
+            num = "00000".substr(num.length) + num;
             var aHtml = [];
             $.each( num.split('') , function( i , n ){
                 aHtml.push( '<span class="digit digit' + n + '" data-num="' + n + '" ></span>' );

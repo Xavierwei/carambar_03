@@ -240,7 +240,7 @@ a:hover{color:#e82426}
         .indicator-btn:hover {background-position:-365px 0;}
         .indicator-btn:active {background-position:-794px 0;}
         .phase4 .indicator-btn {left:-15px;}
-        .phase4 .indicator-count {margin-left:284px}
+        .phase4 .indicator-count {margin-left:308px}
         .phase4 .indicator-hashtag {margin-left:269px}
         .phase4 .indicator-title {margin-left:272px}
     .digit {background: url(../images/countdown_digit.png) no-repeat no-repeat;float:left;width:42px;height:53px;}
