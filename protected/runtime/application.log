@@ -8043,3 +8043,14 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/carambar/photowall-m
 ---
+2014/04/14 17:51:36 [error] [php] Memcache::get(): Server 127.0.0.1 (tcp 11211) failed with: Connection refused (61) (/Applications/MAMP/htdocs/carambar/yii/framework/caching/CMemCache.php:149)
+Stack trace:
+#0 /Applications/MAMP/htdocs/carambar/yii/framework/web/CUrlManager.php(219): CMemCache->get()
+#1 /Applications/MAMP/htdocs/carambar/yii/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#2 /Applications/MAMP/htdocs/carambar/yii/framework/base/CModule.php(387): CUrlManager->init()
+#3 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(522): CWebApplication->getComponent()
+#4 /Applications/MAMP/htdocs/carambar/yii/framework/web/CWebApplication.php(140): CWebApplication->getUrlManager()
+#5 /Applications/MAMP/htdocs/carambar/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/carambar/index.php(30): CWebApplication->run()
+REQUEST_URI=/carambar/
+in /Applications/MAMP/htdocs/carambar/index.php (30)

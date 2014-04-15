@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42473275-89a1-490d-a9d6-4366751af6c5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/runtime/cache/6799baa7392fd1674b9645a84797a688.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/runtime/cache/89b4322870bb334bfd394c8017366563.bin" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sec2_bluetxt.png" afterPath="$PROJECT_DIR$/images/sec2_bluetxt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobileimg/sec2_bluetxt.png" afterPath="$PROJECT_DIR$/mobileimg/sec2_bluetxt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/index/index.php" afterPath="$PROJECT_DIR$/protected/views/index/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bank_wall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397137854041" ignored="false" />
+    <file path="/Dummy.txt" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397490787073" ignored="false" />
     <file path="/controllers.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1391781932373" ignored="false" />
     <file path="/partial1.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387685938508" ignored="false" />
     <file path="/list.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1395822351373" ignored="false" />
@@ -18,7 +25,7 @@
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/hh25th/win/terms/index.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387806561214" ignored="false" />
     <file path="$PROJECT_DIR$/../gar_nier/psshangfengmian/m/photowall.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387809087734" ignored="false" />
     <file path="/main.js" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396159816763" ignored="false" />
-    <file path="/index.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396281619162" ignored="false" />
+    <file path="/index.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397491818466" ignored="false" />
     <file path="$PROJECT_DIR$/../gar_nier/psshangfengmian/css/layout.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387810013579" ignored="false" />
     <file path="/layout.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396784137876" ignored="false" />
     <file path="$PROJECT_DIR$/../gar_nier/psshangfengmian/css/layoutIE.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1387812982125" ignored="false" />
@@ -59,7 +66,7 @@
     <file path="$PROJECT_DIR$/../avene_redness/0110/css/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390621149917" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/video.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1396094709918" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/testimonial.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
-    <file path="/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397037050047" ignored="false" />
+    <file path="/style.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1397493120175" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/story.html" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390227513645" ignored="false" />
     <file path="$PROJECT_DIR$/../lighthouse/sites/default/settings.php" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390033191696" ignored="false" />
     <file path="/animate-custom.css" changelist="42473275-89a1-490d-a9d6-4366751af6c5" time="1390051249512" ignored="false" />
@@ -564,25 +571,25 @@
       <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
+            <state line="11" column="22" selection-start="368" selection-end="368" vertical-scroll-proportion="-7.464286">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="318" column="16" selection-start="26897" selection-end="26897" vertical-scroll-proportion="0.0">
+            <state line="409" column="0" selection-start="32904" selection-end="32904" vertical-scroll-proportion="0.41864717">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="206" column="26" selection-start="8465" selection-end="8465" vertical-scroll-proportion="0.10694184">
+            <state line="216" column="78" selection-start="8820" selection-end="8839" vertical-scroll-proportion="-16.285715">
               <folding />
             </state>
           </provider>
@@ -620,8 +627,8 @@
         <option value="$PROJECT_DIR$/js/lp.index.js" />
         <option value="$PROJECT_DIR$/admin_asset/js/controllers/video.js" />
         <option value="$PROJECT_DIR$/protected/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/protected/views/index/index.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -658,6 +665,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -686,13 +694,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carambar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -702,8 +723,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -769,13 +790,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="100" y="29" width="2203" height="1255" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979952" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21696801" sideWeight="0.7550661" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21882243" sideWeight="0.7550661" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -922,21 +943,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="318" column="16" selection-start="26897" selection-end="26897" vertical-scroll-proportion="0.0">
+        <state line="11" column="22" selection-start="368" selection-end="368" vertical-scroll-proportion="-7.464286">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="26" selection-start="8465" selection-end="8465" vertical-scroll-proportion="0.10694184">
+        <state line="216" column="78" selection-start="8820" selection-end="8839" vertical-scroll-proportion="-16.285715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="409" column="0" selection-start="32904" selection-end="32904" vertical-scroll-proportion="0.41864717">
           <folding />
         </state>
       </provider>

@@ -61,10 +61,17 @@
 		<?php if($phase == 4 || $phase == 5):?>
 		<div class="videopart cs-clear">
 			<?php if($topVideo): ?>
-			<div class="videopart-tit">
-				<div class="robbion-icon"></div>
-				<div class="videopart-tit-defi videopart-tit-defi<?php echo $topVideo->rank;?>"><?php echo $topVideo->title;?></div>
-			</div>
+				<?php if($phase == 4):?>
+					<div class="videopart-tit">
+						<div class="robbion-icon"></div>
+						<div class="videopart-tit-defi videopart-tit-defi<?php echo $topVideo->rank;?>"><?php echo $topVideo->title;?></div>
+					</div>
+				<?php else:?>
+					<div class="videopart-tit">
+						<div class="robbion-icon"></div>
+						<div class="videopart-tit-defi videopart-tit-last"></div>
+					</div>
+				<?php endif;?>
 			<?php endif;?>
 			<!-- Video -->
 			<div class="videomod">
@@ -116,6 +123,7 @@
 						<div class="indicator-count-wrap">
 							<div class="indicator-count"></div>
 							<div class="indicator-count-num"></div>
+							<div class="indicator-btn" data-a="indicate"></div>
 						</div>
 					</div>
 

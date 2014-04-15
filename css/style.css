@@ -57,6 +57,7 @@ a:hover{color:#e82426}
 .videopart-tit-defi7 {background: url(../images/video_title_6.gif) no-repeat;}
 .videopart-tit-defi8 {background: url(../images/video_title_7.gif) no-repeat;}
 .videopart-tit-defi9 {background: url(../images/video_title_9.gif) no-repeat;padding:0 0 0 107px;}
+.videopart-tit-last {background: url(../images/video_title_last.gif) no-repeat;}
 .videopart-tit .robbion-icon {background: url(../images/video_icon_2_big.png) no-repeat;width:160px;height:176px;position: absolute;top:-37px;left:-20px;}
 .videopart1{width:598px;}
     .videomod{float: left;width: 556px;height: 309px}
@@ -231,7 +232,7 @@ a:hover{color:#e82426}
 .tips-video .video-play:hover {background-position:-342px 13px;}
 .indicator-count-wrap {width:600px;position: absolute;top:275px;left:325px;}
     .phase4 .indicator-count-wrap {top:46px;left:288px;width:480px;}
-    .phase5 .indicator-count-wrap {width:290px;top:139px;left:50%;margin-left:-95px;}
+    .phase5 .indicator-count-wrap {width:290px;top:123px;left:50%;margin-left:-164px;}
     .indicator-count {height:62px;width:300px;margin-left:14px;}
     .indicator-count-num {display:none;}
     .indicator-title {color:#fff;text-transform:uppercase;width:283px;text-align: center;}
@@ -243,7 +244,9 @@ a:hover{color:#e82426}
         .phase4 .indicator-count {margin-left:308px}
         .phase4 .indicator-hashtag {margin-left:269px}
         .phase4 .indicator-title {margin-left:272px}
-    .digit {background: url(../images/countdown_digit.png) no-repeat no-repeat;float:left;width:42px;height:53px;}
+        .phase5 .indicator-btn {top:-124px;left:369px;}
+        .phase5 .indicator-count {margin-left:9px;transform:scale(0.9);-webkit-transform:scale(0.9);}
+    .digit {background: url(../images/countdown_digit.png) no-repeat no-repeat;float:left;width:40px;height:51px;}
     .digit0 {background-position:0 0;}
     .digit1 {background-position:0 -217px;}
     .digit2 {background-position:0 -433px;}
@@ -308,7 +311,7 @@ a:hover{color:#e82426}
     .videolist-item-tit5 {background: url(../images/video_defi4.png) no-repeat center;}
     .videolist-item-tit6 {background: url(../images/video_defi5.png) no-repeat center;}
     .videolist-item-tit7 {background: url(../images/video_defi6.png) no-repeat center;}
-    .videolist-item-tit8 {background: url(../images/video_defi3_2.gif) no-repeat center;}
+    .videolist-item-tit8 {background: url(../images/video_defi_best.gif) no-repeat center;}
     .videolist-item-tit8-2 {background: url(../images/video_defi6_2.png) no-repeat center;}
     .videolist-item-tit9 {background: url(../images/video_defi3_2.gif) no-repeat center;}
     .videolist-item-tit9-2 {background: url(../images/video_defi6_2.png) no-repeat center;}
@@ -400,7 +403,7 @@ a:hover{color:#e82426}
     .videolist-item-tit5 {background: url(../mobileimg/video_defi4.png) no-repeat center;}
     .videolist-item-tit6 {background: url(../mobileimg/video_defi5.png) no-repeat center;}
     .videolist-item-tit7 {background: url(../mobileimg/video_defi6.png) no-repeat center;}
-    .videolist-item-tit8 {background: url(../mobileimg/video_defi7.png) no-repeat center;}
+    .videolist-item-tit8 {background: url(../mobileimg/video_defi_best.png) no-repeat center;}
     .videolist-item-tit9 {background: url(../mobileimg/video_defi3_2.png) no-repeat center;}
     .videolist-item-tit0 {background: url(../mobileimg/video_defi2_2.png) no-repeat center;}
     .videolist-item-tit9-2 {background: url(../mobileimg/video_defi6_2.png) no-repeat center;}
@@ -464,7 +467,7 @@ a:hover{color:#e82426}
     .presentation {box-shadow:0px 0px 0px;-webkit-box-shadow:0px 0px 0px;height:984px;}
         .phase3 .presentation {height:924px;}
         .phase4 .presentation {height:1724px;-webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);}
-        .phase5 .presentation {height:1312px;-webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);}
+        .phase5 .presentation {height:1583px;-webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);}
     .presentation-box {width:100%;height:756px;}
         .phase3 .presentation-box {height:762px;}
     .presentation-box .carambar-man {left:-25px!important;top:-30px!important;z-index: 2;}
@@ -490,14 +493,16 @@ a:hover{color:#e82426}
     .phase5 .video-con {margin-top:0px;padding-top:50px;}
 
     .indicator-count-wrap {position:relative;left:0;right:0;background:url('../mobileimg/indicator_count_wrap_bg.jpg') no-repeat center bottom;height:487px;width:100%;}
-    .phase5 .indicator-count-wrap {background: none;height: 65px;top:294px;margin-left:-135px}
+    .phase5 .indicator-count-wrap {background: none;height: 65px;top:313px;margin-left:-135px}
     .phase4 .indicator-count-wrap {background: none;top:327px;left:50%;margin-left:-240px;}
     .phase4 .indicator-btn {left:230px;top:210px;}
     .phase4 .indicator-count {margin:20px 0 0 118px;}
     .phase4 .indicator-hashtag {margin: 20px 0 100px;background:url('../mobileimg/indicator_hashtag_4.png') no-repeat;width:479px;height:34px;}
     .phase4 .indicator-title {margin-left:0px}
+    .phase5 .indicator-count {margin-left:41px;-webkit-transform: scale(1.4);transform: scale(1.4);}
 
     .indicator-btn {background:url('../mobileimg/indicator_btn.png') no-repeat;width:379px;height:274px;top:170px;left:50%;margin-left:-190px;}
+    .phase5 .indicator-btn {left:50%;margin-left:-190px;top:170px;}
     .indicator-btn:hover {background-position:0 0;}
     .indicator-btn.click {background-position:-1111px 0;}
 
@@ -526,7 +531,8 @@ a:hover{color:#e82426}
     .phase5 .btn-other-challenges {display:none;}
     .videoshare .videoshare-t {display: none;}
     .sec-blue2 {background:#201e43;height:500px;padding:20px 0 0;}
-    .sec-blue2txt {background: url(../mobileimg/sec2_bluetxt.png) no-repeat center;height:447px;}
+    .phase5 .sec-blue2 {height:780px;}
+    .sec-blue2txt {background: url(../mobileimg/sec2_bluetxt.png) no-repeat center;height:461px;}
 
     .barack {height:157px;}
     .baracktit {background: url(../mobileimg/baracktit.png) no-repeat;width:346px;height:53px;margin-left:-173px;}
